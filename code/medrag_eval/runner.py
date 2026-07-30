@@ -11,7 +11,7 @@ from typing import Iterable
 from . import db
 from .config import Settings
 from .parser import parse_openai_response, parse_with_fallback
-from .prompting import SHARED_PROMPT_VERSION, render_shared_prompt
+from .prompting import BENCHMARK_PROMPT_VERSION, render_benchmark_prompt
 from .providers import GIFT_MCQ_PROMPT_ID, get_provider
 from .providers.base import ProviderRequest, ProviderResponse
 from .scoring import ScoreResult, score_answer
@@ -202,8 +202,8 @@ def plan_calls(
         for question in questions:
             for pair in provider_pairs:
                 provider_name = db.normalize_provider(pair.provider)
-                # Both providers receive the same user prompt regime. GIFT also
-                # receives its mandatory stored MCQ wrapper via X-Prompt-ID.
+                # The experiment version identifies the provider-aware regime:
+                # question-only for GIFT, instructed MCQ prompt for OpenRouter.
                 skipped = False if force else db.has_completed_logical_call(
                     conn,
                     experiment_id=experiment["id"],
@@ -238,7 +238,7 @@ def run_benchmark(
     offset: int = 0,
     question_id: str | None = None,
     temperature: float = 0,
-    prompt_version: str = SHARED_PROMPT_VERSION,
+    prompt_version: str = BENCHMARK_PROMPT_VERSION,
     force: bool = False,
     dry_run: bool = False,
     no_retry: bool = False,
@@ -621,11 +621,14 @@ def _execute_call_with_conn(
     question = db.get_question_by_pk(conn, call.question_pk)
     is_tailscale = call.provider == TAILSCALE_PROVIDER
 
-    # Shared prompt regime: a single user message with English instructions,
-    # the JSON output contract, and the Spanish question content. No system
-    # role on either provider. TailScale ignores systems anyway; OpenRouter
-    # carries the instruction in-message for symmetry.
-    prompt = render_shared_prompt(question, prompt_version=call.prompt_version)
+    # Provider-specific user messages: GIFT receives only the question and
+    # options because prompt 13 supplies the MCQ instructions server-side;
+    # OpenRouter receives those instructions in-message.
+    prompt = render_benchmark_prompt(
+        question,
+        provider=call.provider,
+        prompt_version=call.prompt_version,
+    )
     messages = [{"role": "user", "content": prompt.user_prompt}]
 
     logical_call = db.get_or_create_logical_call(

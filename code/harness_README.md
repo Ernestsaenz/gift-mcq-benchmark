@@ -42,6 +42,11 @@ Every GIFT/TailScale benchmark request is pinned to the stored multiple-choice
 prompt with `X-Prompt-ID: 13`. The runner applies ID 13 automatically and rejects
 any other value; `--tailscale-prompt-id 13` may be supplied explicitly.
 
+The default live regime is `mcq_provider_v3`. GIFT receives only the question
+and its four answer options because prompt 13 already supplies the instructions.
+OpenRouter receives the equivalent MCQ reasoning rules and JSON output contract
+in its user message.
+
 The benchmark workbook is intentionally not committed. Place it locally and pass
 its path to `import-questions`. The original `questions-first-50.xlsx` contains
 50 workbook rows. Rows `g25` and

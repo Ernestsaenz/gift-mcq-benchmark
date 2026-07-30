@@ -5,12 +5,13 @@ import json
 import httpx
 import pytest
 from medrag_eval import db
+from medrag_eval.prompting import BENCHMARK_PROMPT_VERSION
 from medrag_eval.providers.base import ProviderRequest, ProviderStatus
 from medrag_eval.providers.tailscale_medical_rag import (
     GIFT_MCQ_PROMPT_ID,
     TailScaleMedicalRAGProvider,
 )
-from medrag_eval.runner import ProviderModel, plan_calls
+from medrag_eval.runner import ProviderModel, plan_calls, run_benchmark
 
 
 def _seed_dataset(db_path) -> None:
@@ -57,7 +58,7 @@ def test_gift_plan_defaults_to_prompt_13(tmp_path) -> None:
             limit=None,
             offset=0,
             question_id=None,
-            prompt_version="mcq_shared_v2",
+            prompt_version=BENCHMARK_PROMPT_VERSION,
             force=False,
         )
         experiment = conn.execute(
@@ -65,6 +66,31 @@ def test_gift_plan_defaults_to_prompt_13(tmp_path) -> None:
         ).fetchone()
 
     assert len(planned) == 1
+    assert json.loads(experiment["config_json"])["tailscale_prompt_id"] == 13
+
+
+def test_live_run_defaults_to_provider_specific_prompt_regime(tmp_path) -> None:
+    db_path = tmp_path / "benchmark.sqlite"
+    _seed_dataset(db_path)
+
+    summary = run_benchmark(
+        db_path=db_path,
+        dataset="test_dataset",
+        experiment_name="provider_specific_prompt",
+        provider_models=[ProviderModel("tailscale", "model")],
+        runs=1,
+        limit=None,
+        dry_run=True,
+    )
+
+    with db.connect(db_path) as conn:
+        experiment = conn.execute(
+            "SELECT prompt_version, config_json FROM experiments WHERE name = ?",
+            ("provider_specific_prompt",),
+        ).fetchone()
+
+    assert summary.dry_run is True
+    assert experiment["prompt_version"] == BENCHMARK_PROMPT_VERSION
     assert json.loads(experiment["config_json"])["tailscale_prompt_id"] == 13
 
 
@@ -83,7 +109,7 @@ def test_gift_plan_rejects_any_other_prompt(tmp_path) -> None:
                 limit=None,
                 offset=0,
                 question_id=None,
-                prompt_version="mcq_shared_v2",
+                prompt_version=BENCHMARK_PROMPT_VERSION,
                 force=False,
                 tailscale_prompt_id=7,
             )

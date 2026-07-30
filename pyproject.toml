@@ -46,6 +46,9 @@ medrag-eval = "medrag_eval.cli:app"
 where = ["code"]
 include = ["medrag_eval*"]
 
+[tool.setuptools.package-data]
+medrag_eval = ["prompts/*.txt"]
+
 [tool.pytest.ini_options]
 testpaths = ["code/tests"]
 pythonpath = ["code"]
