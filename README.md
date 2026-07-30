@@ -101,10 +101,10 @@ are in **[reproduction.md](reproduction.md)**.
 ├── pyproject.toml
 ├── Makefile
 ├── code/
-│   ├── medrag_eval/                the benchmark harness (CLI, providers, parser, scorer)
-│   ├── tests/                      39 regression tests, mutation-verified
+│   ├── medrag_eval/                the benchmark harness and packaged live prompts
+│   ├── tests/                      regression tests
 │   ├── harness_README.md           harness operating notes
-│   └── mcq_shared_v2_user_template.txt   the shared prompt, identical for both arms
+│   └── mcq_shared_v2_user_template.txt   historical prompt used by the committed run
 └── data/
     ├── README.md                   data provenance, privacy audit, licensing
     ├── medrag_eval.sqlite          raw per-call logs (2,520 calls) — the ground truth
@@ -150,6 +150,12 @@ Notes:
   `data/medrag_eval.sqlite` — that is the committed ground truth.
 - The GIFT (`tailscale_medical_rag`) provider needs a reachable GIFT deployment;
   without one, only the `openrouter` arm can be reproduced live.
+- Every GIFT benchmark call sends `X-Prompt-ID: 13`, the stored multiple-choice
+  prompt. The harness applies it automatically and rejects any other prompt ID
+  so the backend cannot silently fall back to its default `Conciso` prompt.
+- Under the live `mcq_provider_v3` regime, GIFT receives only the question and
+  four options because prompt 13 already contains the MCQ instructions.
+  OpenRouter receives the equivalent instructions in-message.
 - Results will not match the committed database exactly. These are non-deterministic
   models and the served model versions have moved on. The committed database is the
   reproducible artifact; a live re-run is a *new experiment*.

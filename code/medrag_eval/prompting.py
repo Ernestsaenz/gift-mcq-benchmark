@@ -1,28 +1,29 @@
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 from functools import lru_cache
 from hashlib import sha256
 from pathlib import Path
 from string import Formatter
-from typing import Any, Mapping
+from typing import Any
 
-
-# The canonical prompt regime. Both providers use it: a single user-only message
-# carrying English instructions, the JSON output contract, and the Spanish
-# question content (question_text + four options).
-#
-# Why one shared regime instead of per-provider prompts:
-#   * Symmetry — the accuracy delta between arms isolates model + platform
-#     features (RAG retrieval, structured-output enforcement), not prompt
-#     phrasing.
-#   * TailScale ignores `role: "system"` — the real prompt control is the
-#     X-Prompt-ID header. Sending a system message would be misleading.
-#   * OpenRouter has no analogue of a server-side stored prompt, so it must
-#     receive the instruction in-message.
-#
-# A single user-only template satisfies both constraints.
+# Historical regime used by the committed evidence package.
 SHARED_PROMPT_VERSION = "mcq_shared_v2"
+
+# Live benchmark regime. OpenRouter receives the MCQ instructions in-message;
+# GIFT receives only the question and options because the same instructions are
+# already provided server-side by X-Prompt-ID: 13.
+BENCHMARK_PROMPT_VERSION = "mcq_provider_v3"
+GIFT_PROVIDERS = frozenset({"tailscale", "tailscale_medical_rag"})
+OPENROUTER_PROVIDER = "openrouter"
+
+GIFT_QUESTION_TEMPLATE = """{question_text}
+
+a) {option_a}
+b) {option_b}
+c) {option_c}
+d) {option_d}"""
 
 # Empty-string sentinel for system_prompt_sha256 when no system role is sent.
 # Stored verbatim in the DB so a query like `WHERE system_prompt_sha256 = ''`
@@ -60,16 +61,44 @@ def render_shared_prompt(
     content (question_text + options a–d).
     """
     user_template = _load_user_only_template(prompt_version, prompt_dir)
+    values = _prompt_values(question)
+    return _render(prompt_version, "", user_template, values)
+
+
+def render_benchmark_prompt(
+    question: Any,
+    *,
+    provider: str,
+    prompt_dir: str | Path | None = None,
+    prompt_version: str = BENCHMARK_PROMPT_VERSION,
+) -> RenderedPrompt:
+    """Render the provider-specific user message for a live benchmark call."""
+    if provider in GIFT_PROVIDERS:
+        return _render(
+            prompt_version,
+            "",
+            GIFT_QUESTION_TEMPLATE,
+            _prompt_values(question),
+        )
+    if provider == OPENROUTER_PROVIDER:
+        return render_shared_prompt(
+            question,
+            prompt_dir=prompt_dir,
+            prompt_version=prompt_version,
+        )
+    raise ValueError(f"Unsupported prompt provider: {provider}")
+
+
+def _prompt_values(question: Any) -> dict[str, str]:
     options = _options(question)
-    values = {
-        "question_id": _field(question, "question_id"),
-        "question_text": _field(question, "question_text"),
+    return {
+        "question_id": str(_field(question, "question_id")),
+        "question_text": str(_field(question, "question_text")),
         "option_a": options["a"],
         "option_b": options["b"],
         "option_c": options["c"],
         "option_d": options["d"],
     }
-    return _render(prompt_version, "", user_template, values)
 
 
 def _render(
@@ -137,7 +166,7 @@ def _load_user_only_template_cached(version: str, prompt_dir: str) -> str:
 
 
 def _default_prompt_dir() -> Path:
-    return Path(__file__).resolve().parents[2] / "prompts"
+    return Path(__file__).resolve().parent / "prompts"
 
 
 def _hash_text(text: str) -> str:

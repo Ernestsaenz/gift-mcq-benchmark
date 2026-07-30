@@ -11,8 +11,8 @@ from typing import Iterable
 from . import db
 from .config import Settings
 from .parser import parse_openai_response, parse_with_fallback
-from .prompting import SHARED_PROMPT_VERSION, render_shared_prompt
-from .providers import get_provider, normalize_provider_name
+from .prompting import BENCHMARK_PROMPT_VERSION, render_benchmark_prompt
+from .providers import GIFT_MCQ_PROMPT_ID, get_provider
 from .providers.base import ProviderRequest, ProviderResponse
 from .scoring import ScoreResult, score_answer
 
@@ -173,22 +173,7 @@ def plan_calls(
     if dataset_row is None:
         raise ValueError(f"Dataset not found: {dataset}")
     provider_pairs = list(provider_models)
-    if any(db.normalize_provider(pair.provider) == TAILSCALE_PROVIDER for pair in provider_pairs):
-        if tailscale_prompt_id is None:
-            # The 2026-05-25 characterization showed that omitting X-Prompt-ID
-            # works on every (model, question) cell tested: TailScale falls back
-            # to its internal default template. This is a defensible benchmark
-            # condition — it measures "medical-rag's default behavior" rather
-            # than a specific stored prompt. We surface this choice as a warning
-            # so the operator never runs blind by accident, but we no longer
-            # refuse to run.
-            print(
-                "[warning] TailScale arm running WITHOUT --tailscale-prompt-id. "
-                "The X-Prompt-ID header will be omitted; the backend will resolve "
-                "the template internally. Pass --tailscale-prompt-id <int> to pin "
-                "a specific template once you have the canonical value.",
-                flush=True,
-            )
+    tailscale_prompt_id = _resolve_gift_prompt_id(provider_pairs, tailscale_prompt_id)
     # `runs` is intentionally NOT stored in the experiment config — it is a
     # planning parameter, not part of the experiment identity. This lets the
     # operator extend an existing experiment with additional runs by re-launching
@@ -217,11 +202,8 @@ def plan_calls(
         for question in questions:
             for pair in provider_pairs:
                 provider_name = db.normalize_provider(pair.provider)
-                # Both providers now use the same prompt regime (the version
-                # passed via --prompt-version, default mcq_shared_v2).
-                # logical_calls.prompt_version is therefore identical across arms,
-                # which is exactly the methodological property we want: any
-                # accuracy delta isolates model + platform features, not prompt.
+                # The experiment version identifies the provider-aware regime:
+                # question-only for GIFT, instructed MCQ prompt for OpenRouter.
                 skipped = False if force else db.has_completed_logical_call(
                     conn,
                     experiment_id=experiment["id"],
@@ -256,7 +238,7 @@ def run_benchmark(
     offset: int = 0,
     question_id: str | None = None,
     temperature: float = 0,
-    prompt_version: str = SHARED_PROMPT_VERSION,
+    prompt_version: str = BENCHMARK_PROMPT_VERSION,
     force: bool = False,
     dry_run: bool = False,
     no_retry: bool = False,
@@ -265,6 +247,9 @@ def run_benchmark(
     openrouter_concurrency: int = 18,
     tailscale_concurrency: int = 5,
 ) -> RunSummary:
+    tailscale_prompt_id = _resolve_gift_prompt_id(
+        provider_models, tailscale_prompt_id
+    )
     with db.connect(db_path) as conn:
         experiment_id, planned = plan_calls(
             conn,
@@ -311,6 +296,28 @@ def run_benchmark(
             _close_adapters(adapters)
 
         return RunSummary(experiment_name, len(planned), tracker.completed, sum(call.skipped for call in planned), False)
+
+
+def _resolve_gift_prompt_id(
+    provider_models: Iterable[ProviderModel],
+    tailscale_prompt_id: int | None,
+) -> int | None:
+    """Apply the required MCQ prompt whenever the benchmark includes GIFT."""
+    includes_gift = any(
+        db.normalize_provider(pair.provider) == TAILSCALE_PROVIDER
+        for pair in provider_models
+    )
+    if not includes_gift:
+        return tailscale_prompt_id
+    if tailscale_prompt_id is None:
+        return GIFT_MCQ_PROMPT_ID
+    if tailscale_prompt_id != GIFT_MCQ_PROMPT_ID:
+        raise ValueError(
+            "GIFT benchmark runs must use "
+            f"--tailscale-prompt-id {GIFT_MCQ_PROMPT_ID}; "
+            f"received {tailscale_prompt_id}"
+        )
+    return tailscale_prompt_id
 
 
 _RUN_EXTENSIBLE_KEYS = {"runs"}
@@ -614,11 +621,14 @@ def _execute_call_with_conn(
     question = db.get_question_by_pk(conn, call.question_pk)
     is_tailscale = call.provider == TAILSCALE_PROVIDER
 
-    # Shared prompt regime: a single user message with English instructions,
-    # the JSON output contract, and the Spanish question content. No system
-    # role on either provider. TailScale ignores systems anyway; OpenRouter
-    # carries the instruction in-message for symmetry.
-    prompt = render_shared_prompt(question, prompt_version=call.prompt_version)
+    # Provider-specific user messages: GIFT receives only the question and
+    # options because prompt 13 supplies the MCQ instructions server-side;
+    # OpenRouter receives those instructions in-message.
+    prompt = render_benchmark_prompt(
+        question,
+        provider=call.provider,
+        prompt_version=call.prompt_version,
+    )
     messages = [{"role": "user", "content": prompt.user_prompt}]
 
     logical_call = db.get_or_create_logical_call(

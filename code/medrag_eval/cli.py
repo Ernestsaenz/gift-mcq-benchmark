@@ -11,7 +11,7 @@ from . import db
 from .config import DEFAULT_DB_PATH, Settings
 from .excel_io import import_questions_from_workbook
 from .export import export_raw, export_summary
-from .prompting import SHARED_PROMPT_VERSION
+from .prompting import BENCHMARK_PROMPT_VERSION
 from .providers import get_provider, normalize_provider_name
 from .runner import parse_provider_models, run_benchmark
 
@@ -78,8 +78,8 @@ def run(
     offset: Annotated[int, typer.Option("--offset", min=0)] = 0,
     question_id: Annotated[Optional[str], typer.Option("--question-id")] = None,
     temperature: Annotated[float, typer.Option("--temperature")] = 0,
-    prompt_version: Annotated[str, typer.Option("--prompt-version", help="Shared prompt regime used by every arm (user-only, English instructions, JSON output contract, Spanish content). Both providers receive identical messages.")] = SHARED_PROMPT_VERSION,
-    tailscale_prompt_id: Annotated[Optional[int], typer.Option("--tailscale-prompt-id", help="Integer ID of the GIFT-stored prompt template (X-Prompt-ID). Optional; when omitted, TailScale uses the backend default template.")] = None,
+    prompt_version: Annotated[str, typer.Option("--prompt-version", help="Benchmark prompt regime. GIFT receives question plus options; OpenRouter also receives the MCQ instructions.")] = BENCHMARK_PROMPT_VERSION,
+    tailscale_prompt_id: Annotated[Optional[int], typer.Option("--tailscale-prompt-id", help="GIFT MCQ prompt ID. GIFT runs default to the required ID 13; any other value is rejected.")] = None,
     tailscale_top_k: Annotated[Optional[int], typer.Option("--tailscale-top-k", help="Retrieval depth for TailScale (X-Top-K header). Optional.", min=1)] = None,
     force: Annotated[bool, typer.Option("--force")] = False,
     dry_run: Annotated[bool, typer.Option("--dry-run")] = False,
@@ -91,11 +91,10 @@ def run(
     """Run or plan benchmark calls.
 
     Methodology:
-    - Both providers receive identical messages: a single user role carrying
-      English instructions, the JSON output contract, and the Spanish question
-      content (default: mcq_shared_v2). Neither receives a system role.
-    - TailScale additionally sends X-Prompt-ID (and optionally X-Top-K) so the
-      backend can wrap the user message with its stored RAG template.
+    - GIFT receives one user message containing only the Spanish question and
+      its four options. X-Prompt-ID: 13 supplies the MCQ instructions server-side.
+    - OpenRouter receives the same question and options plus the equivalent MCQ
+      instructions and JSON output contract in its user message.
     - OpenRouter retains response_format: json_schema enforcement. TailScale
       does not honor it per the API characterization. This is the one
       remaining asymmetry between arms and is recorded in the DB.
