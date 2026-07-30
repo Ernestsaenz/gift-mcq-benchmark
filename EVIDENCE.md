@@ -129,6 +129,26 @@ JSON output (`selected_letter`, `selected_option_text`)
 providers, so the GIFT-vs-OpenRouter contrast is apples-to-apples **at the prompt
 level**.
 
+⚠️ **Which GIFT prompt produced these results (important — added post-publication).**
+The `bench_315_v2` run sent **no `X-Prompt-ID` header at all**: `prompt_id` is NULL
+on all 2,966 GIFT attempt rows, `experiments.config_json` records
+`"tailscale_prompt_id": null`, and no request headers were persisted. The GIFT
+backend therefore resolved its own template internally. Per **@carneiran, author of
+the GIFT/TailScale system**, that default is the **`Conciso`** prompt — *not* the
+stored multiple-choice prompt (ID **13**).
+
+So every published Tier-1 GIFT figure was produced with the backend's general-purpose
+`Conciso` prompt, while the MCQ instructions came from the client-side
+`mcq_shared_v2` user message. This is attributed to the system author; it is **not**
+independently verifiable from this repository, because the header was never sent and
+the backend template is not recorded here.
+
+The harness now **pins `X-Prompt-ID: 13` and rejects any other value**
+(`code/medrag_eval/providers/tailscale_medical_rag.py`), so no future run can
+silently fall back. That change applies to **new runs only** — it does not alter
+`bench_315_v2` or any figure in this document. See PR #1 and
+`code/harness_README.md`.
+
 ⚠️ **Extraction asymmetry (added post-audit; see `CORRECTION_NOTE.md` §3).** The
 prompt is identical, but the *extraction path* was not. In the published run the
 GIFT arm resolved **31.5% of answers via regex fallback (397/1260)** versus **0.5%

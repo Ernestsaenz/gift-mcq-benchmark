@@ -121,6 +121,7 @@ are in **[reproduction.md](reproduction.md)**.
 | **Models** | `google/gemini-3.5-flash`, `qwen/qwen3.7-max`, `qwen/qwen3.6-35b-a3b`, `google/gemma-4-26b-a4b-it` |
 | **Arms** | GIFT (retrieval-augmented) and OpenRouter (same base models, direct) |
 | **Calls** | 2,520 = 315 × 4 × 2, single-shot (`run_index = 1` throughout) |
+| **Prompt (as run)** | one shared user-only message, byte-identical across arms; **no `X-Prompt-ID` was sent**, so GIFT used its backend default (`Conciso`), *not* prompt 13 — see [EVIDENCE.md §5](EVIDENCE.md) |
 | **Outcome** | `strict_correct` — see the caveat in [EVIDENCE.md §5](EVIDENCE.md) |
 | **Tests** | Cochran's Q (omnibus), exact McNemar (pairwise), Holm correction |
 
