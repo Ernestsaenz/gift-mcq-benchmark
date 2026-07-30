@@ -71,7 +71,7 @@ Single sheet `total-gal`, 315 data rows, 17 columns:
 | `question_text` | the stem (Spanish) |
 | `option_a` … `option_d` | the four options |
 | `correct_letter`, `correct_option_text` | gold answer, from the official answer key |
-| `flags` | data-quality and question-type markers (below) |
+| `flags` | question-type and extraction markers (below) |
 | `page_in_exam_pdf`, `source_exam_pdf`, `source_answer_key_pdf` | provenance back to the published SERGAS exam and answer-key PDFs |
 
 Gold-answer distribution: `a` 64, `b` 68, `c` 102, `d` 81 — not uniform, so a
@@ -79,20 +79,39 @@ letter-biased model is not automatically at chance.
 
 ### `flags` values
 
+These are **descriptive**, not quality judgements. They record what *kind* of item
+each question is so that downstream tooling can handle it correctly.
+
+**Question-type flags — all of these are valid, well-formed exam items:**
+
 | Flag | Count | Meaning |
 |---|---|---|
-| *(none)* | 136 | plain positive-stem item |
-| `negated` | 128 | negative stem — "which is **INCORRECT** / **NOT** true" |
+| *(none)* | 136 | positive-stem item |
+| `negated` | 128 | negative stem — "señale la **INCORRECTA**", "¿cuál **NO** es cierta?" |
 | `clinical_case` | 43 | vignette-style stem |
-| `clinical_case,negated` | 6 | both |
-| `clinical_case,missing_option_a` | 1 | option A absent in the source exam; retained as published |
-| `inline_options_split` | 1 | options were inline in the source PDF and were split during extraction |
+| `clinical_case,negated` | 6 | both of the above |
 
-**`negated` matters for answer extraction.** 134 of 315 items (42.5%) have a
-negative stem, so models frequently answer with phrasing like *"La respuesta
-**INCORRECTA** es la **c**"*. An extractor that only recognises "the correct answer
-is X" will mis-handle a large fraction of this set — this is precisely the defect
-described in `../CORRECTION_NOTE.md` §2, and why the fixed parser matches
+Negative-stem items are a standard and deliberate device in Spanish OPE/MIR-style
+examinations — they test whether a candidate can identify the one false statement
+among four, which is a different and often harder discrimination than picking the
+true one. They are flagged here **only because they affect answer extraction**, not
+because they are weaker questions.
+
+**Source/extraction notes — these two concern how the item was digitised, not its
+quality as a question:**
+
+| Flag | Count | Meaning |
+|---|---|---|
+| `clinical_case,missing_option_a` | 1 | option A absent in the source exam PDF; retained exactly as published |
+| `inline_options_split` | 1 | options were laid out inline in the source PDF and were split during extraction |
+
+### Why `negated` matters to the harness
+
+134 of 315 items (42.5%) have a negative stem, so models routinely answer with
+phrasing like *"La respuesta **INCORRECTA** es la **c**"*. An extractor that only
+recognises "the correct answer is X" will mis-handle a large fraction of this set.
+That is exactly the defect described in `../CORRECTION_NOTE.md` §2 — a parser
+limitation, not a dataset limitation — and it is why the fixed parser matches
 `correcta|incorrecta` symmetrically.
 
 > **Licensing.** These items are third-party content, reproduced here only so the
