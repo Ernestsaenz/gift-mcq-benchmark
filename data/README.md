@@ -59,6 +59,42 @@ benchmark is therefore a *gastroenterology-and-hepatology* set in which hepatolo
 is a substantial minority, not half — results should not be generalised beyond
 this exam domain.
 
+### Workbook schema
+
+Single sheet `total-gal`, 315 data rows, 17 columns:
+
+| Column | Meaning |
+|---|---|
+| `question_id` | stable identifier (`g1`…`g315`); the join key used throughout the database |
+| `region`, `specialty` | constant: `galicia`, `aparato-digestivo` |
+| `year`, `exam_part`, `question_number` | position in the source exam |
+| `question_text` | the stem (Spanish) |
+| `option_a` … `option_d` | the four options |
+| `correct_letter`, `correct_option_text` | gold answer, from the official answer key |
+| `flags` | data-quality and question-type markers (below) |
+| `page_in_exam_pdf`, `source_exam_pdf`, `source_answer_key_pdf` | provenance back to the published SERGAS exam and answer-key PDFs |
+
+Gold-answer distribution: `a` 64, `b` 68, `c` 102, `d` 81 — not uniform, so a
+letter-biased model is not automatically at chance.
+
+### `flags` values
+
+| Flag | Count | Meaning |
+|---|---|---|
+| *(none)* | 136 | plain positive-stem item |
+| `negated` | 128 | negative stem — "which is **INCORRECT** / **NOT** true" |
+| `clinical_case` | 43 | vignette-style stem |
+| `clinical_case,negated` | 6 | both |
+| `clinical_case,missing_option_a` | 1 | option A absent in the source exam; retained as published |
+| `inline_options_split` | 1 | options were inline in the source PDF and were split during extraction |
+
+**`negated` matters for answer extraction.** 134 of 315 items (42.5%) have a
+negative stem, so models frequently answer with phrasing like *"La respuesta
+**INCORRECTA** es la **c**"*. An extractor that only recognises "the correct answer
+is X" will mis-handle a large fraction of this set — this is precisely the defect
+described in `../CORRECTION_NOTE.md` §2, and why the fixed parser matches
+`correcta|incorrecta` symmetrically.
+
 > **Licensing.** These items are third-party content, reproduced here only so the
 > published results can be reproduced. They are **not** covered by this
 > repository's MIT license. See `LICENSE`.
