@@ -79,7 +79,7 @@ def run(
     question_id: Annotated[Optional[str], typer.Option("--question-id")] = None,
     temperature: Annotated[float, typer.Option("--temperature")] = 0,
     prompt_version: Annotated[str, typer.Option("--prompt-version", help="Shared prompt regime used by every arm (user-only, English instructions, JSON output contract, Spanish content). Both providers receive identical messages.")] = SHARED_PROMPT_VERSION,
-    tailscale_prompt_id: Annotated[Optional[int], typer.Option("--tailscale-prompt-id", help="Integer ID of the GIFT-stored prompt template (X-Prompt-ID). Optional; when omitted, TailScale uses the backend default template.")] = None,
+    tailscale_prompt_id: Annotated[Optional[int], typer.Option("--tailscale-prompt-id", help="GIFT MCQ prompt ID. GIFT runs default to the required ID 13; any other value is rejected.")] = None,
     tailscale_top_k: Annotated[Optional[int], typer.Option("--tailscale-top-k", help="Retrieval depth for TailScale (X-Top-K header). Optional.", min=1)] = None,
     force: Annotated[bool, typer.Option("--force")] = False,
     dry_run: Annotated[bool, typer.Option("--dry-run")] = False,
@@ -94,8 +94,8 @@ def run(
     - Both providers receive identical messages: a single user role carrying
       English instructions, the JSON output contract, and the Spanish question
       content (default: mcq_shared_v2). Neither receives a system role.
-    - TailScale additionally sends X-Prompt-ID (and optionally X-Top-K) so the
-      backend can wrap the user message with its stored RAG template.
+    - TailScale additionally sends X-Prompt-ID: 13 (and optionally X-Top-K) so
+      the backend uses the stored multiple-choice prompt instead of Conciso.
     - OpenRouter retains response_format: json_schema enforcement. TailScale
       does not honor it per the API characterization. This is the one
       remaining asymmetry between arms and is recorded in the DB.

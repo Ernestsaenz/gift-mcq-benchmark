@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import threading
+from dataclasses import replace
 from typing import Any, Mapping
 from urllib.parse import urlparse
 
@@ -16,6 +17,9 @@ from .base import (
     sanitize_request_json,
     status_from_code,
 )
+
+
+GIFT_MCQ_PROMPT_ID = 13
 
 
 class TailScaleMedicalRAGProvider:
@@ -90,6 +94,7 @@ class TailScaleMedicalRAGProvider:
             raise RuntimeError(response.error or f"TailScale auth check failed: {response.status.value}")
 
     def chat(self, request: ProviderRequest, retry: bool = True) -> ProviderResponse:
+        request = self._with_mandatory_mcq_prompt(request)
         payload = self._chat_payload(request)
         extra_headers = self._extra_headers(request)
         config_error = self._config_error(model=request.model, request_json=payload)
@@ -411,3 +416,15 @@ class TailScaleMedicalRAGProvider:
         if not extra_headers:
             return None
         return dict(extra_headers)
+
+    @staticmethod
+    def _with_mandatory_mcq_prompt(request: ProviderRequest) -> ProviderRequest:
+        """Pin every GIFT benchmark request to the MCQ prompt."""
+        if request.prompt_id is None:
+            return replace(request, prompt_id=GIFT_MCQ_PROMPT_ID)
+        if request.prompt_id != GIFT_MCQ_PROMPT_ID:
+            raise ValueError(
+                "GIFT benchmark requests must use "
+                f"prompt_id={GIFT_MCQ_PROMPT_ID}, got {request.prompt_id}"
+            )
+        return request

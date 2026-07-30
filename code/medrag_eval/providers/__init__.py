@@ -4,7 +4,10 @@ from typing import Any
 
 from .base import ProviderRequest, ProviderResponse, ProviderStatus
 from .openrouter import OpenRouterProvider
-from .tailscale_medical_rag import TailScaleMedicalRAGProvider
+from .tailscale_medical_rag import (
+    GIFT_MCQ_PROMPT_ID,
+    TailScaleMedicalRAGProvider,
+)
 
 
 PROVIDER_ALIASES = {
@@ -41,6 +44,7 @@ def normalize_provider_name(name: str) -> str:
 __all__ = [
     "OpenRouterProvider",
     "PROVIDER_ALIASES",
+    "GIFT_MCQ_PROMPT_ID",
     "ProviderRequest",
     "ProviderResponse",
     "ProviderStatus",

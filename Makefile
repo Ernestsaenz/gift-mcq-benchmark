@@ -6,7 +6,7 @@ help:
 	@echo "GIFT MCQ Benchmark — Tier 1"
 	@echo ""
 	@echo "  make verify       re-derive all statistics from the raw DB and assert the audit findings"
-	@echo "  make test         run the 39 regression tests (needs: make install-dev)"
+	@echo "  make test         run the regression tests (needs: make install-dev)"
 	@echo "  make integrity    verify the ground-truth database checksum"
 	@echo "  make check        integrity + verify + test"
 	@echo ""

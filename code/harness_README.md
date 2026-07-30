@@ -38,6 +38,10 @@ medrag-eval status --experiment-name smoke002
 medrag-eval export --experiment-name smoke002 --format csv
 ```
 
+Every GIFT/TailScale benchmark request is pinned to the stored multiple-choice
+prompt with `X-Prompt-ID: 13`. The runner applies ID 13 automatically and rejects
+any other value; `--tailscale-prompt-id 13` may be supplied explicitly.
+
 The benchmark workbook is intentionally not committed. Place it locally and pass
 its path to `import-questions`. The original `questions-first-50.xlsx` contains
 50 workbook rows. Rows `g25` and
