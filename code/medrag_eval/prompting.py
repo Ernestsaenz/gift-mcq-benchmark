@@ -11,14 +11,26 @@ from typing import Any
 # Historical regime used by the committed evidence package.
 SHARED_PROMPT_VERSION = "mcq_shared_v2"
 
-# Live benchmark regime. OpenRouter receives the MCQ instructions in-message;
-# GIFT receives only the question and options because the same instructions are
-# already provided server-side by X-Prompt-ID: 13.
-BENCHMARK_PROMPT_VERSION = "mcq_provider_v3"
+# Live benchmark regime. Both arms now run the SAME Spanish instructions:
+# OpenRouter receives them in-message via `mcq_es_v4_user_template.txt`; GIFT
+# receives them server-side from stored prompt 13, whose canonical text is kept
+# alongside at `prompts/gift_stored_prompt_13_es.txt`. Those two files are
+# asserted identical except for the question section and the question_id line
+# (see tests/test_prompt_es_parity.py), which restores the verifiable
+# instruction symmetry that mcq_provider_v3 gave up.
+BENCHMARK_PROMPT_VERSION = "mcq_es_v4"
 GIFT_PROVIDERS = frozenset({"tailscale", "tailscale_medical_rag"})
 OPENROUTER_PROVIDER = "openrouter"
 
-GIFT_QUESTION_TEMPLATE = """{question_text}
+# The GIFT arm's user message. Instructions come from the stored prompt
+# (X-Prompt-ID 13), so only the question travels in-message — but question_id
+# MUST be included: prompt 13 requires it in the returned JSON, and
+# `parser._parse_answer_object` rejects a mismatch. Omitting it (as
+# mcq_provider_v3 did) makes every GIFT response fail structured parsing and
+# fall through to the regex path.
+GIFT_QUESTION_TEMPLATE = """question_id: {question_id}
+
+{question_text}
 
 a) {option_a}
 b) {option_b}

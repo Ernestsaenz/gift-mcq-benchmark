@@ -16,7 +16,10 @@ QUESTION = {
 }
 
 
-def test_gift_receives_only_question_and_options() -> None:
+def test_gift_receives_question_id_question_and_options_only() -> None:
+    """GIFT gets no instructions — those come from stored prompt 13 — but it DOES
+    need question_id, which prompt 13 requires back in the JSON and which the
+    parser validates. mcq_provider_v3 omitted it; mcq_es_v4 restores it."""
     prompt = render_benchmark_prompt(
         QUESTION,
         provider="tailscale_medical_rag",
@@ -26,15 +29,16 @@ def test_gift_receives_only_question_and_options() -> None:
     assert prompt.system_prompt == ""
     assert prompt.system_sha256 == NO_SYSTEM_PROMPT_SHA256
     assert prompt.user_prompt == (
+        "question_id: g001\n\n"
         "¿Cuál es la respuesta correcta?\n\n"
         "a) Opción A\n"
         "b) Opción B\n"
         "c) Opción C\n"
         "d) Opción D"
     )
-    assert "You are" not in prompt.user_prompt
-    assert "Output exactly" not in prompt.user_prompt
-    assert "question_id" not in prompt.user_prompt
+    # No instructions travel in-message to GIFT.
+    assert "Eres un especialista" not in prompt.user_prompt
+    assert "Devuelve exactamente un objeto JSON" not in prompt.user_prompt
 
 
 def test_openrouter_receives_mcq_instructions_and_same_question() -> None:
@@ -42,12 +46,12 @@ def test_openrouter_receives_mcq_instructions_and_same_question() -> None:
 
     assert prompt.version == BENCHMARK_PROMPT_VERSION
     assert prompt.system_prompt == ""
-    assert "select the single best answer" in prompt.user_prompt
-    assert "Output exactly one JSON object" in prompt.user_prompt
+    assert "seleccionar la\núnica mejor respuesta" in prompt.user_prompt
+    assert "Devuelve exactamente un objeto JSON" in prompt.user_prompt
     assert '"question_id": "g001"' in prompt.user_prompt
     assert "¿Cuál es la respuesta correcta?" in prompt.user_prompt
-    assert "a. Opción A" in prompt.user_prompt
-    assert "d. Opción D" in prompt.user_prompt
+    assert "a) Opción A" in prompt.user_prompt
+    assert "d) Opción D" in prompt.user_prompt
 
 
 def test_provider_payloads_have_distinct_auditable_hashes() -> None:
