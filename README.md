@@ -1,6 +1,6 @@
 # GIFT MCQ Benchmark — Tier 1
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/Ernestsaenz/gift-mcq-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/Ernestsaenz/gift-mcq-benchmark/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
@@ -31,8 +31,8 @@ reproduce the results offline, with no API keys and no network access.
 No credentials, no network, no third-party packages. Two commands:
 
 ```bash
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/Ernestsaenz/gift-mcq-benchmark.git
+cd gift-mcq-benchmark
 
 # 1. Re-derive every statistic from the raw database and assert the audit's findings
 python3 rescore_with_fixed_parser.py --check
