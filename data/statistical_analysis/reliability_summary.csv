@@ -1,0 +1,9 @@
+provider,model,provider_label,model_label,logical_calls,total_attempts,mean_attempts,max_attempts,calls_needing_retry,initial_api_failures,initial_parse_failures,attempt_status_counts
+openrouter,google/gemini-3.5-flash,OpenRouter,Gemini,315,878,2.787301587301587,4,280,280,0,"{""ok"": 315, ""request_error"": 560, ""timeout"": 3}"
+openrouter,google/gemma-4-26b-a4b-it,OpenRouter,Gemma,315,879,2.7904761904761903,5,280,280,0,"{""ok"": 315, ""request_error"": 561, ""timeout"": 3}"
+openrouter,qwen/qwen3.6-35b-a3b,OpenRouter,Qwen 3.6,315,903,2.8666666666666667,5,281,281,0,"{""malformed_json"": 1, ""ok"": 315, ""request_error"": 566, ""timeout"": 21}"
+openrouter,qwen/qwen3.7-max,OpenRouter,Qwen 3.7 Max,315,889,2.8222222222222224,5,281,281,0,"{""ok"": 315, ""request_error"": 564, ""timeout"": 10}"
+tailscale_medical_rag,google/gemini-3.5-flash,TailScale,Gemini,315,758,2.4063492063492062,4,280,280,0,"{""auth_error"": 5, ""failed_no_answer_found"": 155, ""ok"": 315, ""ok_conflict"": 1, ""request_error"": 280, ""server_error"": 1, ""timeout"": 1}"
+tailscale_medical_rag,google/gemma-4-26b-a4b-it,TailScale,Gemma,315,679,2.1555555555555554,6,280,280,0,"{""auth_error"": 3, ""failed_no_answer_found"": 77, ""ok"": 315, ""request_error"": 280, ""timeout"": 4}"
+tailscale_medical_rag,qwen/qwen3.6-35b-a3b,TailScale,Qwen 3.6,315,751,2.384126984126984,4,281,281,0,"{""auth_error"": 3, ""failed_no_answer_found"": 149, ""ok"": 315, ""request_error"": 280, ""server_error"": 3, ""timeout"": 1}"
+tailscale_medical_rag,qwen/qwen3.7-max,TailScale,Qwen 3.7 Max,315,778,2.46984126984127,5,284,283,1,"{""auth_error"": 4, ""failed_no_answer_found"": 172, ""ok"": 315, ""request_error"": 280, ""server_error"": 6, ""timeout"": 1}"

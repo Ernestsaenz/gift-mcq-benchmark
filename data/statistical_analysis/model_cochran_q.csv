@@ -1,0 +1,3 @@
+provider,provider_label,cochran_q_statistic,df,p_value
+openrouter,OpenRouter,121.0,3,4.699615549210572e-26
+tailscale_medical_rag,TailScale,117.45425867507886,3,2.726827695221804e-25

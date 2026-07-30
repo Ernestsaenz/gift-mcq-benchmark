@@ -1,0 +1,9 @@
+provider,model,provider_label,model_label,n,mean_ms,median_ms,p90_ms,p95_ms,max_ms
+openrouter,google/gemini-3.5-flash,OpenRouter,Gemini,315,6882.860317460318,4952.0,7972.4,9929.300000000001,240176
+openrouter,google/gemma-4-26b-a4b-it,OpenRouter,Gemma,315,2564.3873015873014,1689.0,3295.8,4558.300000000005,61880
+openrouter,qwen/qwen3.6-35b-a3b,OpenRouter,Qwen 3.6,315,38438.12698412698,35069.0,65174.40000000003,79828.80000000002,308133
+openrouter,qwen/qwen3.7-max,OpenRouter,Qwen 3.7 Max,315,20254.71111111111,16500.0,33728.20000000001,44788.00000000001,105221
+tailscale_medical_rag,google/gemini-3.5-flash,TailScale,Gemini,315,28393.955555555556,25390.0,45388.0,48750.40000000001,109326
+tailscale_medical_rag,google/gemma-4-26b-a4b-it,TailScale,Gemma,315,17097.190476190477,14364.0,25623.0,30680.700000000004,73055
+tailscale_medical_rag,qwen/qwen3.6-35b-a3b,TailScale,Qwen 3.6,315,27481.879365079367,23659.0,43707.600000000006,52312.60000000001,94667
+tailscale_medical_rag,qwen/qwen3.7-max,TailScale,Qwen 3.7 Max,315,31085.2,27779.0,43859.8,58943.20000000001,112581

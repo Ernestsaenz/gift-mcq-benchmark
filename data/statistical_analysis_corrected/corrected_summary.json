@@ -1,0 +1,35 @@
+{
+  "experiment": "bench_315_v2",
+  "source_db": "data/medrag_eval.sqlite",
+  "db_opened_read_only": true,
+  "score_changes": 2,
+  "parse_method_only_changes": 313,
+  "providers": {
+    "tailscale_medical_rag": {
+      "aggregate_correct": 1097,
+      "aggregate_calls": 1260,
+      "accuracy": {
+        "Gemini": 303,
+        "Gemma": 232,
+        "Qwen 3.6": 265,
+        "Qwen 3.7 Max": 297
+      },
+      "cochran_q": 124.04180064308682,
+      "cochran_p": 1.0395589636238307e-26,
+      "gemini_vs_qwen37_holm_p": 0.26317596435546875
+    },
+    "openrouter": {
+      "aggregate_correct": 1108,
+      "aggregate_calls": 1260,
+      "accuracy": {
+        "Gemini": 303,
+        "Gemma": 232,
+        "Qwen 3.6": 275,
+        "Qwen 3.7 Max": 298
+      },
+      "cochran_q": 121.0,
+      "cochran_p": 4.6996155492105707e-26,
+      "gemini_vs_qwen37_holm_p": 0.359283447265625
+    }
+  }
+}

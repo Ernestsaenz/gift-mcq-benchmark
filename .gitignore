@@ -1,0 +1,41 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Secrets ---
+# The harness reads GIFT_API / GIFT_EMAIL / GIFT_PASSWORD / OPENROUTER_API_KEY.
+# Never commit a real .env — copy .env.example instead.
+.env
+.env.*
+!.env.example
+
+# --- SQLite sidecars ---
+# `data/medrag_eval.sqlite` IS committed (it is the ground-truth artifact).
+# Its WAL/SHM sidecars are transient and must not be: they are recreated on open
+# and committing them can make a clone disagree with the published md5.
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+
+# --- Live-run outputs ---
+# Produced by `medrag-eval run`. The committed evidence lives in data/ and
+# data/statistical_analysis*/ — new runs must not overwrite or pollute it.
+/runs/
+/reports/
+/exports/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

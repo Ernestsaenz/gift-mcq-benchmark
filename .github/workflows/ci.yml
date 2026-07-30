@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Verify results reproduce (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # The ground-truth DB is the reproduction anchor for every published
+      # figure. If it does not match, nothing downstream is meaningful.
+      - name: Verify ground-truth database integrity
+        run: |
+          echo "c6eb43ede71c1c61ffa87f96e5e070f7  data/medrag_eval.sqlite" | md5sum -c -
+
+      # Deliberately BEFORE any pip install: this asserts the reproduction path
+      # genuinely needs nothing but the standard library.
+      - name: Re-derive statistics with no dependencies installed
+        run: python3 rescore_with_fixed_parser.py --check
+
+      - name: Confirm the database was not modified
+        run: |
+          echo "c6eb43ede71c1c61ffa87f96e5e070f7  data/medrag_eval.sqlite" | md5sum -c -
+
+      - name: Install with test dependencies
+        run: python -m pip install -e ".[dev]"
+
+      - name: Run regression tests
+        run: pytest
+
+      - name: Confirm the package imports as installed
+        run: python -c "import medrag_eval; from medrag_eval.parser import parse_with_fallback; print('ok')"
+
+      - name: Confirm the CLI entry point resolves
+        run: medrag-eval --help

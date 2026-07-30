@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, its harness, or its data, please cite it as below."
+title: "GIFT MCQ Benchmark — Tier 1: a 315-item Spanish gastroenterology/hepatology MCQ evaluation of retrieval-augmented LLMs"
+abstract: >-
+  A reproducible evaluation of four large language models on 315 Spanish
+  gastroenterology and hepatology multiple-choice items drawn from Galicia
+  (SERGAS) public-employment specialist examinations, served both through the
+  GIFT retrieval-augmented system and directly via OpenRouter. The package ships
+  the complete raw per-call database (2,520 calls), the benchmark harness, and
+  standard-library-only scripts that re-derive every published statistic.
+type: software
+version: 0.2.0
+date-released: 2026-07-30
+license: MIT
+keywords:
+  - large language models
+  - retrieval-augmented generation
+  - medical question answering
+  - benchmark
+  - reproducibility
+  - hepatology
+  - gastroenterology
+  - Spanish
+
+# ---------------------------------------------------------------------------
+# TODO before publishing: replace the placeholder author entry below with the
+# real author list. Names are intentionally NOT guessed here — an incorrect
+# author list on a citation file is a research-integrity problem, not a typo.
+# Add one `- family-names: / given-names: / orcid:` block per author.
+# ---------------------------------------------------------------------------
+authors:
+  - name: "GIFT project"
+    # website: https://...
+    # Replace with individual authors, e.g.:
+    # - family-names: Surname
+    #   given-names: Given
+    #   orcid: "https://orcid.org/0000-0000-0000-0000"
+    #   affiliation: "Instituto de Investigación Sanitaria Galicia Sur"
+
+repository-code: "https://github.com/OWNER/REPO"
+
+references:
+  - type: article
+    title: >-
+      Balduzzi et al. — UEG Guidelines app: guideline and interactive-tool
+      inventory, and clinician familiarity survey
+    journal: "United European Gastroenterology Journal"
+    year: 2023
+    volume: "11"
+    issue: "7"
+    start: 704
+    end: 707
+    authors:
+      - family-names: Balduzzi
+        given-names: S.
+    notes: >-
+      Cited as background in the associated abstract. The "34 guidelines / 109
+      tools / 18 societies" figures describe the UEG app, NOT this benchmark's
+      knowledge base.
+  - type: article
+    title: >-
+      Kanazaki et al. — Barriers to guideline adherence among gastroenterologists
+    journal: "Internal Medicine Journal"
+    year: 2022
+    volume: "52"
+    issue: "8"
+    start: 1330
+    end: 1338
+    authors:
+      - family-names: Kanazaki
+        given-names: R.

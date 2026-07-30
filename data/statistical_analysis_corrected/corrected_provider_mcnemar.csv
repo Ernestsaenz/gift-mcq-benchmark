@@ -1,0 +1,5 @@
+model,model_label,openrouter_accuracy,tailscale_accuracy,paired_diff_openrouter_minus_tailscale,openrouter_only_correct_b,tailscale_only_correct_c,discordant_pairs,p_value,p_holm,reject_holm_0_05
+google/gemini-3.5-flash,Gemini,0.9619047619047619,0.9619047619047619,0.0,1,1,2,1.0,1.0,False
+google/gemma-4-26b-a4b-it,Gemma,0.7365079365079366,0.7365079365079366,0.0,14,14,28,1.0,1.0,False
+qwen/qwen3.6-35b-a3b,Qwen 3.6,0.873015873015873,0.8412698412698413,0.031746031746031744,19,9,28,0.08715855330228806,0.3486342132091522,False
+qwen/qwen3.7-max,Qwen 3.7 Max,0.946031746031746,0.9428571428571428,0.0031746031746031746,7,6,13,1.0,1.0,False

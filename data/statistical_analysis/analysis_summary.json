@@ -1,0 +1,16 @@
+{
+  "experiment": "bench_315_v2",
+  "db_path": "runs/medrag_eval.sqlite",
+  "rows": 2520,
+  "questions": 315,
+  "arms": 8,
+  "gee_meta": {
+    "formula": "strict_correct ~ provider_c * model_c",
+    "cluster": "question_id",
+    "family": "Binomial",
+    "reference_provider": "openrouter",
+    "reference_model": "google/gemini-3.5-flash",
+    "n_rows": 2520,
+    "n_clusters": 315
+  }
+}

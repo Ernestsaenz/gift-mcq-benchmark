@@ -1,0 +1,13 @@
+provider,provider_label,model_a,model_a_label,model_b,model_b_label,accuracy_a,accuracy_b,paired_diff_b_minus_a,a_only_correct_b,b_only_correct_c,discordant_pairs,mcnemar_exact,p_value,p_holm_within_provider,reject_holm_0_05
+openrouter,OpenRouter,google/gemini-3.5-flash,Gemini,google/gemma-4-26b-a4b-it,Gemma,0.9619047619047619,0.7365079365079366,-0.22539682539682537,75,4,79,True,5.2434681244715905e-18,3.1460808746829543e-17,True
+openrouter,OpenRouter,google/gemini-3.5-flash,Gemini,qwen/qwen3.6-35b-a3b,Qwen 3.6,0.9619047619047619,0.873015873015873,-0.0888888888888889,32,4,36,True,1.941574737429619e-06,5.8247242122888565e-06,True
+openrouter,OpenRouter,google/gemini-3.5-flash,Gemini,qwen/qwen3.7-max,Qwen 3.7 Max,0.9619047619047619,0.946031746031746,-0.015873015873015928,12,7,19,True,0.359283447265625,0.359283447265625,False
+openrouter,OpenRouter,google/gemma-4-26b-a4b-it,Gemma,qwen/qwen3.6-35b-a3b,Qwen 3.6,0.7365079365079366,0.873015873015873,0.13650793650793647,11,54,65,True,6.027539034309403e-08,2.411015613723761e-07,True
+openrouter,OpenRouter,google/gemma-4-26b-a4b-it,Gemma,qwen/qwen3.7-max,Qwen 3.7 Max,0.7365079365079366,0.946031746031746,0.20952380952380945,5,71,76,True,5.249233110119942e-16,2.624616555059971e-15,True
+openrouter,OpenRouter,qwen/qwen3.6-35b-a3b,Qwen 3.6,qwen/qwen3.7-max,Qwen 3.7 Max,0.873015873015873,0.946031746031746,0.07301587301587298,7,30,37,True,0.00019107642583549023,0.00038215285167098045,True
+tailscale_medical_rag,TailScale,google/gemini-3.5-flash,Gemini,google/gemma-4-26b-a4b-it,Gemma,0.9555555555555556,0.7365079365079366,-0.21904761904761905,71,2,73,True,5.721707558702799e-19,3.4330245352216793e-18,True
+tailscale_medical_rag,TailScale,google/gemini-3.5-flash,Gemini,qwen/qwen3.6-35b-a3b,Qwen 3.6,0.9555555555555556,0.8412698412698413,-0.11428571428571432,43,7,50,True,2.098677427397888e-07,8.394709709591552e-07,True
+tailscale_medical_rag,TailScale,google/gemini-3.5-flash,Gemini,qwen/qwen3.7-max,Qwen 3.7 Max,0.9555555555555556,0.9428571428571428,-0.012698412698412764,13,9,22,True,0.5234670639038086,0.5234670639038086,False
+tailscale_medical_rag,TailScale,google/gemma-4-26b-a4b-it,Gemma,qwen/qwen3.6-35b-a3b,Qwen 3.6,0.7365079365079366,0.8412698412698413,0.10476190476190472,11,44,55,True,8.699371704778969e-06,1.7398743409557937e-05,True
+tailscale_medical_rag,TailScale,google/gemma-4-26b-a4b-it,Gemma,qwen/qwen3.7-max,Qwen 3.7 Max,0.7365079365079366,0.9428571428571428,0.20634920634920628,3,68,71,True,5.057803134644878e-17,2.528901567322439e-16,True
+tailscale_medical_rag,TailScale,qwen/qwen3.6-35b-a3b,Qwen 3.6,qwen/qwen3.7-max,Qwen 3.7 Max,0.8412698412698413,0.9428571428571428,0.10158730158730156,7,39,46,True,1.831543272601266e-06,5.494629817803798e-06,True

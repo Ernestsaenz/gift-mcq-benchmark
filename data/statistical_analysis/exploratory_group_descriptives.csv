@@ -1,0 +1,7 @@
+source_type,size_class,provider,calls,correct,accuracy
+closed_source,big,openrouter,315,303,0.9619047619047619
+closed_source,big,tailscale_medical_rag,315,301,0.9555555555555556
+open_source,big,openrouter,315,298,0.946031746031746
+open_source,big,tailscale_medical_rag,315,297,0.9428571428571428
+open_source,small,openrouter,630,507,0.8047619047619048
+open_source,small,tailscale_medical_rag,630,497,0.7888888888888889
