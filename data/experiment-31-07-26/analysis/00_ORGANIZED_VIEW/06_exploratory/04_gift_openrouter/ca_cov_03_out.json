@@ -1,0 +1,907 @@
+{
+ "n": 99,
+ "gift": 76,
+ "orr": 71,
+ "b": 9,
+ "c": 4,
+ "delta": 0.050505050505050504,
+ "ci": [
+  -0.010309278350515464,
+  0.1134020618556701
+ ],
+ "or_all_uncovered": 0.8369747899159664,
+ "n_all_uncovered": 595,
+ "cells": [
+  {
+   "question_id": "b48",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 41
+  },
+  {
+   "question_id": "b48",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 41
+  },
+  {
+   "question_id": "b48",
+   "model": "z-ai/glm-5.2",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 41
+  },
+  {
+   "question_id": "b108",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 0,
+   "region": "Illes Balears",
+   "order": 101
+  },
+  {
+   "question_id": "b108",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Illes Balears",
+   "order": 101
+  },
+  {
+   "question_id": "b108",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Illes Balears",
+   "order": 101
+  },
+  {
+   "question_id": "b109",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Illes Balears",
+   "order": 102
+  },
+  {
+   "question_id": "b109",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Illes Balears",
+   "order": 102
+  },
+  {
+   "question_id": "b109",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 102
+  },
+  {
+   "question_id": "b111",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 104
+  },
+  {
+   "question_id": "b111",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 104
+  },
+  {
+   "question_id": "b111",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 104
+  },
+  {
+   "question_id": "b120",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 113
+  },
+  {
+   "question_id": "b120",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 113
+  },
+  {
+   "question_id": "b120",
+   "model": "z-ai/glm-5.2",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Illes Balears",
+   "order": 113
+  },
+  {
+   "question_id": "b177",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 170
+  },
+  {
+   "question_id": "b177",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 170
+  },
+  {
+   "question_id": "b184",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 177
+  },
+  {
+   "question_id": "b184",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 177
+  },
+  {
+   "question_id": "b184",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 177
+  },
+  {
+   "question_id": "b189",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 182
+  },
+  {
+   "question_id": "b189",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 182
+  },
+  {
+   "question_id": "b189",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 182
+  },
+  {
+   "question_id": "b191",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 184
+  },
+  {
+   "question_id": "b191",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 184
+  },
+  {
+   "question_id": "b191",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "Galicia",
+   "order": 184
+  },
+  {
+   "question_id": "b193",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 186
+  },
+  {
+   "question_id": "b193",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 186
+  },
+  {
+   "question_id": "b193",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 186
+  },
+  {
+   "question_id": "b199",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 0,
+   "region": "Andaluc\u00eda",
+   "order": 192
+  },
+  {
+   "question_id": "b199",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Andaluc\u00eda",
+   "order": 192
+  },
+  {
+   "question_id": "b199",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Andaluc\u00eda",
+   "order": 192
+  },
+  {
+   "question_id": "b201",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 194
+  },
+  {
+   "question_id": "b201",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 194
+  },
+  {
+   "question_id": "b201",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 194
+  },
+  {
+   "question_id": "b211",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 203
+  },
+  {
+   "question_id": "b211",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 203
+  },
+  {
+   "question_id": "b211",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 3,
+   "region": "Galicia",
+   "order": 203
+  },
+  {
+   "question_id": "b215",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 207
+  },
+  {
+   "question_id": "b215",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 207
+  },
+  {
+   "question_id": "b215",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 207
+  },
+  {
+   "question_id": "b240",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 229
+  },
+  {
+   "question_id": "b240",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 229
+  },
+  {
+   "question_id": "b240",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 229
+  },
+  {
+   "question_id": "b245",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 0,
+   "region": "Comunitat Valenciana",
+   "order": 232
+  },
+  {
+   "question_id": "b245",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Comunitat Valenciana",
+   "order": 232
+  },
+  {
+   "question_id": "b245",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Comunitat Valenciana",
+   "order": 232
+  },
+  {
+   "question_id": "b248",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 0,
+   "region": "Comunidad de Madrid",
+   "order": 235
+  },
+  {
+   "question_id": "b248",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 0,
+   "region": "Comunidad de Madrid",
+   "order": 235
+  },
+  {
+   "question_id": "b248",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 0,
+   "region": "Comunidad de Madrid",
+   "order": 235
+  },
+  {
+   "question_id": "b260",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 246
+  },
+  {
+   "question_id": "b260",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 246
+  },
+  {
+   "question_id": "b260",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 3,
+   "region": "Galicia",
+   "order": 246
+  },
+  {
+   "question_id": "b264",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "Galicia",
+   "order": 250
+  },
+  {
+   "question_id": "b264",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 250
+  },
+  {
+   "question_id": "b264",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 250
+  },
+  {
+   "question_id": "b265",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "Galicia",
+   "order": 251
+  },
+  {
+   "question_id": "b265",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 251
+  },
+  {
+   "question_id": "b265",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Galicia",
+   "order": 251
+  },
+  {
+   "question_id": "b285",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "La Rioja",
+   "order": 271
+  },
+  {
+   "question_id": "b285",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "La Rioja",
+   "order": 271
+  },
+  {
+   "question_id": "b285",
+   "model": "z-ai/glm-5.2",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "La Rioja",
+   "order": 271
+  },
+  {
+   "question_id": "b308",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 0,
+   "region": "Castilla y Le\u00f3n",
+   "order": 291
+  },
+  {
+   "question_id": "b308",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Castilla y Le\u00f3n",
+   "order": 291
+  },
+  {
+   "question_id": "b308",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Castilla y Le\u00f3n",
+   "order": 291
+  },
+  {
+   "question_id": "b316",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Arag\u00f3n",
+   "order": 299
+  },
+  {
+   "question_id": "b316",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Arag\u00f3n",
+   "order": 299
+  },
+  {
+   "question_id": "b316",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Arag\u00f3n",
+   "order": 299
+  },
+  {
+   "question_id": "b320",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": null,
+   "region": "Comunitat Valenciana",
+   "order": 303
+  },
+  {
+   "question_id": "b320",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": null,
+   "region": "Comunitat Valenciana",
+   "order": 303
+  },
+  {
+   "question_id": "b320",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": null,
+   "region": "Comunitat Valenciana",
+   "order": 303
+  },
+  {
+   "question_id": "b322",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Comunidad de Madrid",
+   "order": 305
+  },
+  {
+   "question_id": "b322",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Comunidad de Madrid",
+   "order": 305
+  },
+  {
+   "question_id": "b322",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 0,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 305
+  },
+  {
+   "question_id": "b326",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Andaluc\u00eda",
+   "order": 309
+  },
+  {
+   "question_id": "b326",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 1,
+   "region": "Andaluc\u00eda",
+   "order": 309
+  },
+  {
+   "question_id": "b326",
+   "model": "z-ai/glm-5.2",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 0,
+   "region": "Andaluc\u00eda",
+   "order": 309
+  },
+  {
+   "question_id": "b336",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 319
+  },
+  {
+   "question_id": "b336",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 319
+  },
+  {
+   "question_id": "b336",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Regi\u00f3n de Murcia",
+   "order": 319
+  },
+  {
+   "question_id": "b375",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Galicia",
+   "order": 355
+  },
+  {
+   "question_id": "b375",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Galicia",
+   "order": 355
+  },
+  {
+   "question_id": "b375",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Galicia",
+   "order": 355
+  },
+  {
+   "question_id": "b379",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Andaluc\u00eda",
+   "order": 359
+  },
+  {
+   "question_id": "b379",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 3,
+   "region": "Andaluc\u00eda",
+   "order": 359
+  },
+  {
+   "question_id": "b379",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Andaluc\u00eda",
+   "order": 359
+  },
+  {
+   "question_id": "b382",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 362
+  },
+  {
+   "question_id": "b382",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 362
+  },
+  {
+   "question_id": "b382",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Navarra",
+   "order": 362
+  },
+  {
+   "question_id": "b383",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunitat Valenciana",
+   "order": 363
+  },
+  {
+   "question_id": "b383",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunitat Valenciana",
+   "order": 363
+  },
+  {
+   "question_id": "b383",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunitat Valenciana",
+   "order": 363
+  },
+  {
+   "question_id": "b384",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 364
+  },
+  {
+   "question_id": "b384",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 364
+  },
+  {
+   "question_id": "b384",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 3,
+   "region": "Comunidad de Madrid",
+   "order": 364
+  },
+  {
+   "question_id": "b414",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 1,
+   "region": "Navarra",
+   "order": 388
+  },
+  {
+   "question_id": "b414",
+   "model": "google/gemma-4-26b-a4b-it",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Navarra",
+   "order": 388
+  },
+  {
+   "question_id": "b414",
+   "model": "qwen/qwen3.6-35b-a3b",
+   "gift_correct": 0,
+   "or_correct": 0,
+   "loo_k": 2,
+   "region": "Navarra",
+   "order": 388
+  },
+  {
+   "question_id": "b417",
+   "model": "google/gemini-3.6-flash",
+   "gift_correct": 1,
+   "or_correct": 1,
+   "loo_k": 2,
+   "region": "Comunitat Valenciana",
+   "order": 391
+  }
+ ]
+}

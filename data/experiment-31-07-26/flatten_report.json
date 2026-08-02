@@ -1,0 +1,4829 @@
+{
+  "source_workbook": "balanced-clinical-questionnaire-500-no-image.xlsx",
+  "swap_text": "Ninguna de las respuestas anteriores es correcta.",
+  "counts": {
+    "source": 500,
+    "dataset_a": 474,
+    "dataset_b": 423,
+    "dropped_three_option": 17,
+    "dropped_affirm_broken": 30,
+    "dropped_distractor_none": 5,
+    "b_semantic_noops": 2,
+    "items_with_resolved_context": 203,
+    "qa_dropped_from_both": 9,
+    "qa_dropped_from_b_only": 16
+  },
+  "qa_exclusions": {
+    "method": "Two 12-shard adversarial QA fleets (163 agents): every item read by a reviewer, every finding attacked by an independent refuter. A fleet upheld 8/54 flags, B fleet 18/85. A final broad regex sweep for meta-option answers caught 2 more (b152, b458) that both fleets and the original narrow pattern missed.",
+    "both_datasets": {
+      "b10": {
+        "code": "dangling_reference_no_context",
+        "evidence": "'control endoscopico de la lesion descrita' — the 15 mm adenoma is described only in b9's stem, never in the shared context"
+      },
+      "b14": {
+        "code": "dangling_reference_no_context",
+        "evidence": "'dado el estadio y la ubicacion' — T1N0M0 is in b13, '30 cm del margen anal' is in b9; neither is present here"
+      },
+      "b16": {
+        "code": "dangling_reference_no_context",
+        "evidence": "'seguimiento endoscopico de este paciente' — the curative pT1 resection justifying 6-month control is in b13-b15"
+      },
+      "b18": {
+        "code": "dangling_reference_no_context",
+        "evidence": "'En este paciente' — the twelve polyps justifying high-risk referral are in b17; on the visible text, option a) is true"
+      },
+      "b19": {
+        "code": "context_missing_for_answerability",
+        "evidence": "'el cuadro descrito' is b17's twelve sub-centimetre polyps; the vignette states there is NO family history"
+      },
+      "b202": {
+        "code": "multiple_correct_answers",
+        "evidence": "stem asks for the single false statement about functional rectal pain; options c and d are both false"
+      },
+      "b228": {
+        "code": "references_another_question",
+        "evidence": "'Teniendo en cuenta su anterior respuesta' — depends on an answer the model never gave"
+      },
+      "b23": {
+        "code": "dangling_reference_no_context",
+        "evidence": "'la entidad que afecta a esta familia' — the Lynch-like diagnosis is in b22; the vignette says 'sin antecedentes'"
+      },
+      "b408": {
+        "code": "source_answer_key_error",
+        "evidence": "key says 'Tos' is NOT a Zenker's symptom; chronic cough is a well-documented Zenker's symptom. Defect in the source exam key."
+      }
+    },
+    "b_only": {
+      "b152": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todos los anteriores son objetivos esperables...' — removing the aggregator leaves all three survivors individually true. Missed by the narrow pattern (masculine 'todos')."
+      },
+      "b188": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todos los anteriores' — ascites, encephalopathy and hypoglycaemia each independently indicate admission"
+      },
+      "b191": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "'Todo paciente con hepatitis aguda por VHC debe recibir tratamiento antiviral' is true under current guidance"
+      },
+      "b204": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas son correctas.' — indocyanine green, aminopyrine breath test etc. are each valid"
+      },
+      "b245": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "with 'Mama' removed, 'Melanoma' is defensibly correct; the literature is split"
+      },
+      "b257": {
+        "code": "swap_is_noop",
+        "evidence": "correct answer was already 'Ninguno de las anteriores' — the swap changes nothing and tests nothing"
+      },
+      "b292": {
+        "code": "semantic_duplicate",
+        "evidence": "option d was already 'Ninguna es correcta.'; the swap creates two none-of-the-above options"
+      },
+      "b303": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "with primary sclerosing cholangitis removed, 'Cirrosis de cualquier etiologia' is itself correct"
+      },
+      "b342": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas las afirmaciones anteriores son correctas.' — the exam itself certifies every survivor as true"
+      },
+      "b398": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "removed key was 'No recomendado como monoterapia'; a survivor is defensibly correct"
+      },
+      "b428": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "most frequent gastric polypoid lesion — a survivor is defensible once fundic-gland polyp is removed"
+      },
+      "b430": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas las afirmaciones anteriores son correctas' — every survivor is certified true by the key"
+      },
+      "b437": {
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas son ciertas.' — every surviving distractor is individually true"
+      },
+      "b458": {
+        "code": "swap_is_noop",
+        "evidence": "correct answer was already 'Todas las anteriores son falsas.' — semantically identical to the swap string"
+      },
+      "b491": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "stem's bar is very low ('se han relacionado con'); survivors also qualify"
+      },
+      "b497": {
+        "code": "surviving_distractor_is_true",
+        "evidence": "acute severe UC with fever after infliximab — a surviving option is also correct"
+      }
+    }
+  },
+  "items": {
+    "1": {
+      "question_id": "b1",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "2": {
+      "question_id": "b2",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "3": {
+      "question_id": "b3",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "4": {
+      "question_id": "b4",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "5": {
+      "question_id": "b5",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "6": {
+      "question_id": "b6",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "7": {
+      "question_id": "b7",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "8": {
+      "question_id": "b8",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "9": {
+      "question_id": "b9",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "10": {
+      "question_id": "b10",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "dangling_reference_no_context",
+        "evidence": "'control endoscopico de la lesion descrita' — the 15 mm adenoma is described only in b9's stem, never in the shared context"
+      }
+    },
+    "11": {
+      "question_id": "b11",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "12": {
+      "question_id": "b12",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "13": {
+      "question_id": "b13",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "14": {
+      "question_id": "b14",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "dangling_reference_no_context",
+        "evidence": "'dado el estadio y la ubicacion' — T1N0M0 is in b13, '30 cm del margen anal' is in b9; neither is present here"
+      }
+    },
+    "15": {
+      "question_id": "b15",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "16": {
+      "question_id": "b16",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "dangling_reference_no_context",
+        "evidence": "'seguimiento endoscopico de este paciente' — the curative pT1 resection justifying 6-month control is in b13-b15"
+      }
+    },
+    "17": {
+      "question_id": "b17",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "18": {
+      "question_id": "b18",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "dangling_reference_no_context",
+        "evidence": "'En este paciente' — the twelve polyps justifying high-risk referral are in b17; on the visible text, option a) is true"
+      }
+    },
+    "19": {
+      "question_id": "b19",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "context_missing_for_answerability",
+        "evidence": "'el cuadro descrito' is b17's twelve sub-centimetre polyps; the vignette states there is NO family history"
+      }
+    },
+    "20": {
+      "question_id": "b20",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "21": {
+      "question_id": "b21",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "22": {
+      "question_id": "b22",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": null
+    },
+    "23": {
+      "question_id": "b23",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": "negate_equivalent_noop",
+      "context_resolved": true,
+      "context_chars": 302,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "dangling_reference_no_context",
+        "evidence": "'la entidad que afecta a esta familia' — the Lynch-like diagnosis is in b22; the vignette says 'sin antecedentes'"
+      }
+    },
+    "24": {
+      "question_id": "b24",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "25": {
+      "question_id": "b25",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "26": {
+      "question_id": "b26",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "27": {
+      "question_id": "b27",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "28": {
+      "question_id": "b28",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "29": {
+      "question_id": "b29",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "30": {
+      "question_id": "b30",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "31": {
+      "question_id": "b31",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "32": {
+      "question_id": "b32",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "33": {
+      "question_id": "b33",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "34": {
+      "question_id": "b34",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "35": {
+      "question_id": "b35",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "36": {
+      "question_id": "b36",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "37": {
+      "question_id": "b37",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "38": {
+      "question_id": "b38",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "39": {
+      "question_id": "b39",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "40": {
+      "question_id": "b40",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "41": {
+      "question_id": "b41",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "42": {
+      "question_id": "b42",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "43": {
+      "question_id": "b43",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "44": {
+      "question_id": "b44",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "45": {
+      "question_id": "b45",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "46": {
+      "question_id": "b46",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1303,
+      "qa_exclusion": null
+    },
+    "47": {
+      "question_id": "b47",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "48": {
+      "question_id": "b48",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "49": {
+      "question_id": "b49",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "50": {
+      "question_id": "b50",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "51": {
+      "question_id": "b51",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "52": {
+      "question_id": "b52",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1203,
+      "qa_exclusion": null
+    },
+    "53": {
+      "question_id": "b53",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "54": {
+      "question_id": "b54",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "55": {
+      "question_id": "b55",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "56": {
+      "question_id": "b56",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "57": {
+      "question_id": "b57",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "58": {
+      "question_id": "b58",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "59": {
+      "question_id": "b59",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1331,
+      "qa_exclusion": null
+    },
+    "60": {
+      "question_id": "b60",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1610,
+      "qa_exclusion": null
+    },
+    "61": {
+      "question_id": "b61",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "62": {
+      "question_id": "b62",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "63": {
+      "question_id": "b63",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "64": {
+      "question_id": "b64",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "65": {
+      "question_id": "b65",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "66": {
+      "question_id": "b66",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "67": {
+      "question_id": "b67",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "68": {
+      "question_id": "b68",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "69": {
+      "question_id": "b69",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "70": {
+      "question_id": "b70",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1950,
+      "qa_exclusion": null
+    },
+    "71": {
+      "question_id": "b71",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "72": {
+      "question_id": "b72",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "73": {
+      "question_id": "b73",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "74": {
+      "question_id": "b74",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "75": {
+      "question_id": "b75",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "76": {
+      "question_id": "b76",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "77": {
+      "question_id": "b77",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "78": {
+      "question_id": "b78",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "79": {
+      "question_id": "b79",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "80": {
+      "question_id": "b80",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "81": {
+      "question_id": "b81",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "82": {
+      "question_id": "b82",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "83": {
+      "question_id": "b83",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "84": {
+      "question_id": "b84",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "85": {
+      "question_id": "b85",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "86": {
+      "question_id": "b86",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "87": {
+      "question_id": "b87",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "88": {
+      "question_id": "b88",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "89": {
+      "question_id": "b89",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "90": {
+      "question_id": "b90",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "91": {
+      "question_id": "b91",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "92": {
+      "question_id": "b92",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "93": {
+      "question_id": "b93",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1298,
+      "qa_exclusion": null
+    },
+    "94": {
+      "question_id": "b94",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 794,
+      "qa_exclusion": null
+    },
+    "95": {
+      "question_id": "b95",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 794,
+      "qa_exclusion": null
+    },
+    "96": {
+      "question_id": "b96",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 794,
+      "qa_exclusion": null
+    },
+    "97": {
+      "question_id": "b97",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 794,
+      "qa_exclusion": null
+    },
+    "98": {
+      "question_id": "b98",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 794,
+      "qa_exclusion": null
+    },
+    "99": {
+      "question_id": "b99",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1751,
+      "qa_exclusion": null
+    },
+    "100": {
+      "question_id": "b100",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1751,
+      "qa_exclusion": null
+    },
+    "101": {
+      "question_id": "b101",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1751,
+      "qa_exclusion": null
+    },
+    "102": {
+      "question_id": "b102",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1942,
+      "qa_exclusion": null
+    },
+    "103": {
+      "question_id": "b103",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1942,
+      "qa_exclusion": null
+    },
+    "104": {
+      "question_id": "b104",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1942,
+      "qa_exclusion": null
+    },
+    "105": {
+      "question_id": "b105",
+      "in_a": true,
+      "exclusion_reasons": [
+        "distractor_already_none_of_the_above"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1942,
+      "qa_exclusion": null
+    },
+    "106": {
+      "question_id": "b106",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2159,
+      "qa_exclusion": null
+    },
+    "107": {
+      "question_id": "b107",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2159,
+      "qa_exclusion": null
+    },
+    "108": {
+      "question_id": "b108",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "109": {
+      "question_id": "b109",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "110": {
+      "question_id": "b110",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "111": {
+      "question_id": "b111",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "112": {
+      "question_id": "b112",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "113": {
+      "question_id": "b113",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "114": {
+      "question_id": "b114",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "115": {
+      "question_id": "b115",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "116": {
+      "question_id": "b116",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "117": {
+      "question_id": "b117",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3155,
+      "qa_exclusion": null
+    },
+    "118": {
+      "question_id": "b118",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2565,
+      "qa_exclusion": null
+    },
+    "119": {
+      "question_id": "b119",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2565,
+      "qa_exclusion": null
+    },
+    "120": {
+      "question_id": "b120",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "121": {
+      "question_id": "b121",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "122": {
+      "question_id": "b122",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "123": {
+      "question_id": "b123",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "124": {
+      "question_id": "b124",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "125": {
+      "question_id": "b125",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "126": {
+      "question_id": "b126",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "127": {
+      "question_id": "b127",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "128": {
+      "question_id": "b128",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "129": {
+      "question_id": "b129",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "130": {
+      "question_id": "b130",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "131": {
+      "question_id": "b131",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "132": {
+      "question_id": "b132",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "133": {
+      "question_id": "b133",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "134": {
+      "question_id": "b134",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2814,
+      "qa_exclusion": null
+    },
+    "135": {
+      "question_id": "b135",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2944,
+      "qa_exclusion": null
+    },
+    "136": {
+      "question_id": "b136",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2944,
+      "qa_exclusion": null
+    },
+    "137": {
+      "question_id": "b137",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3622,
+      "qa_exclusion": null
+    },
+    "138": {
+      "question_id": "b138",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3622,
+      "qa_exclusion": null
+    },
+    "139": {
+      "question_id": "b139",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 3622,
+      "qa_exclusion": null
+    },
+    "140": {
+      "question_id": "b140",
+      "in_a": true,
+      "exclusion_reasons": [
+        "distractor_already_none_of_the_above"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 4601,
+      "qa_exclusion": null
+    },
+    "141": {
+      "question_id": "b141",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 4601,
+      "qa_exclusion": null
+    },
+    "142": {
+      "question_id": "b142",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "143": {
+      "question_id": "b143",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "144": {
+      "question_id": "b144",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "145": {
+      "question_id": "b145",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "146": {
+      "question_id": "b146",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "147": {
+      "question_id": "b147",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "148": {
+      "question_id": "b148",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "149": {
+      "question_id": "b149",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "150": {
+      "question_id": "b150",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "151": {
+      "question_id": "b151",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "152": {
+      "question_id": "b152",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todos los anteriores son objetivos esperables...' — removing the aggregator leaves all three survivors individually true. Missed by the narrow pattern (masculine 'todos')."
+      }
+    },
+    "153": {
+      "question_id": "b153",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "154": {
+      "question_id": "b154",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "155": {
+      "question_id": "b155",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "156": {
+      "question_id": "b156",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "157": {
+      "question_id": "b157",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "158": {
+      "question_id": "b158",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "159": {
+      "question_id": "b159",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "160": {
+      "question_id": "b160",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "161": {
+      "question_id": "b161",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "162": {
+      "question_id": "b162",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "163": {
+      "question_id": "b163",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "164": {
+      "question_id": "b164",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "165": {
+      "question_id": "b165",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 5527,
+      "qa_exclusion": null
+    },
+    "166": {
+      "question_id": "b166",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "167": {
+      "question_id": "b167",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "168": {
+      "question_id": "b168",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "169": {
+      "question_id": "b169",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "170": {
+      "question_id": "b170",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "171": {
+      "question_id": "b171",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "172": {
+      "question_id": "b172",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "173": {
+      "question_id": "b173",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "174": {
+      "question_id": "b174",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "175": {
+      "question_id": "b175",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "176": {
+      "question_id": "b176",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "177": {
+      "question_id": "b177",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "178": {
+      "question_id": "b178",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "179": {
+      "question_id": "b179",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "180": {
+      "question_id": "b180",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "181": {
+      "question_id": "b181",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "182": {
+      "question_id": "b182",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "183": {
+      "question_id": "b183",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "184": {
+      "question_id": "b184",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 844,
+      "qa_exclusion": null
+    },
+    "185": {
+      "question_id": "b185",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 89,
+      "qa_exclusion": null
+    },
+    "186": {
+      "question_id": "b186",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1087,
+      "qa_exclusion": null
+    },
+    "187": {
+      "question_id": "b187",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "188": {
+      "question_id": "b188",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todos los anteriores' — ascites, encephalopathy and hypoglycaemia each independently indicate admission"
+      }
+    },
+    "189": {
+      "question_id": "b189",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "190": {
+      "question_id": "b190",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "191": {
+      "question_id": "b191",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "'Todo paciente con hepatitis aguda por VHC debe recibir tratamiento antiviral' is true under current guidance"
+      }
+    },
+    "192": {
+      "question_id": "b192",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "193": {
+      "question_id": "b193",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 736,
+      "qa_exclusion": null
+    },
+    "194": {
+      "question_id": "b194",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "195": {
+      "question_id": "b195",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "196": {
+      "question_id": "b196",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "197": {
+      "question_id": "b197",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "198": {
+      "question_id": "b198",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "199": {
+      "question_id": "b199",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1413,
+      "qa_exclusion": null
+    },
+    "200": {
+      "question_id": "b200",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "201": {
+      "question_id": "b201",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "202": {
+      "question_id": "b202",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "multiple_correct_answers",
+        "evidence": "stem asks for the single false statement about functional rectal pain; options c and d are both false"
+      }
+    },
+    "203": {
+      "question_id": "b203",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "204": {
+      "question_id": "b204",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas son correctas.' — indocyanine green, aminopyrine breath test etc. are each valid"
+      }
+    },
+    "205": {
+      "question_id": "b205",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "206": {
+      "question_id": "b206",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "207": {
+      "question_id": "b207",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "208": {
+      "question_id": "b208",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "209": {
+      "question_id": "b209",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "210": {
+      "question_id": "b210",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "211": {
+      "question_id": "b211",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "212": {
+      "question_id": "b212",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "213": {
+      "question_id": "b213",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "214": {
+      "question_id": "b214",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "215": {
+      "question_id": "b215",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "216": {
+      "question_id": "b216",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "217": {
+      "question_id": "b217",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 608,
+      "qa_exclusion": null
+    },
+    "218": {
+      "question_id": "b218",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "219": {
+      "question_id": "b219",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "220": {
+      "question_id": "b220",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "221": {
+      "question_id": "b221",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "222": {
+      "question_id": "b222",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "223": {
+      "question_id": "b223",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "224": {
+      "question_id": "b224",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "225": {
+      "question_id": "b225",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "226": {
+      "question_id": "b226",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "227": {
+      "question_id": "b227",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "228": {
+      "question_id": "b228",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1194,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "references_another_question",
+        "evidence": "'Teniendo en cuenta su anterior respuesta' — depends on an answer the model never gave"
+      }
+    },
+    "229": {
+      "question_id": "b229",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "230": {
+      "question_id": "b230",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "231": {
+      "question_id": "b231",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "232": {
+      "question_id": "b232",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "233": {
+      "question_id": "b233",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "234": {
+      "question_id": "b234",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "235": {
+      "question_id": "b235",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "236": {
+      "question_id": "b236",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "237": {
+      "question_id": "b237",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "238": {
+      "question_id": "b238",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "239": {
+      "question_id": "b239",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "240": {
+      "question_id": "b240",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 428,
+      "qa_exclusion": null
+    },
+    "241": {
+      "question_id": "b241",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "242": {
+      "question_id": "b242",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "243": {
+      "question_id": "b243",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "244": {
+      "question_id": "b244",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "245": {
+      "question_id": "b245",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "with 'Mama' removed, 'Melanoma' is defensibly correct; the literature is split"
+      }
+    },
+    "246": {
+      "question_id": "b246",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "247": {
+      "question_id": "b247",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "248": {
+      "question_id": "b248",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "249": {
+      "question_id": "b249",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "250": {
+      "question_id": "b250",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "251": {
+      "question_id": "b251",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "252": {
+      "question_id": "b252",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "253": {
+      "question_id": "b253",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "254": {
+      "question_id": "b254",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "255": {
+      "question_id": "b255",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "256": {
+      "question_id": "b256",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "257": {
+      "question_id": "b257",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "swap_is_noop",
+        "evidence": "correct answer was already 'Ninguno de las anteriores' — the swap changes nothing and tests nothing"
+      }
+    },
+    "258": {
+      "question_id": "b258",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1180,
+      "qa_exclusion": null
+    },
+    "259": {
+      "question_id": "b259",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "260": {
+      "question_id": "b260",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "261": {
+      "question_id": "b261",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "262": {
+      "question_id": "b262",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "263": {
+      "question_id": "b263",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "264": {
+      "question_id": "b264",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "265": {
+      "question_id": "b265",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "266": {
+      "question_id": "b266",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "267": {
+      "question_id": "b267",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "268": {
+      "question_id": "b268",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "269": {
+      "question_id": "b269",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "270": {
+      "question_id": "b270",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "271": {
+      "question_id": "b271",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1052,
+      "qa_exclusion": null
+    },
+    "272": {
+      "question_id": "b272",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "273": {
+      "question_id": "b273",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "274": {
+      "question_id": "b274",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "275": {
+      "question_id": "b275",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "276": {
+      "question_id": "b276",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "277": {
+      "question_id": "b277",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "278": {
+      "question_id": "b278",
+      "in_a": true,
+      "exclusion_reasons": [
+        "distractor_already_none_of_the_above"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "279": {
+      "question_id": "b279",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "280": {
+      "question_id": "b280",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "281": {
+      "question_id": "b281",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "282": {
+      "question_id": "b282",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "283": {
+      "question_id": "b283",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "284": {
+      "question_id": "b284",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "285": {
+      "question_id": "b285",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "286": {
+      "question_id": "b286",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "287": {
+      "question_id": "b287",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "288": {
+      "question_id": "b288",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "289": {
+      "question_id": "b289",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "290": {
+      "question_id": "b290",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "291": {
+      "question_id": "b291",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "292": {
+      "question_id": "b292",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "semantic_duplicate",
+        "evidence": "option d was already 'Ninguna es correcta.'; the swap creates two none-of-the-above options"
+      }
+    },
+    "293": {
+      "question_id": "b293",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "294": {
+      "question_id": "b294",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "295": {
+      "question_id": "b295",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "296": {
+      "question_id": "b296",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "297": {
+      "question_id": "b297",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "298": {
+      "question_id": "b298",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "299": {
+      "question_id": "b299",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "300": {
+      "question_id": "b300",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "301": {
+      "question_id": "b301",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "302": {
+      "question_id": "b302",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "303": {
+      "question_id": "b303",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "with primary sclerosing cholangitis removed, 'Cirrosis de cualquier etiologia' is itself correct"
+      }
+    },
+    "304": {
+      "question_id": "b304",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "305": {
+      "question_id": "b305",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "306": {
+      "question_id": "b306",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "307": {
+      "question_id": "b307",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "308": {
+      "question_id": "b308",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "309": {
+      "question_id": "b309",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "310": {
+      "question_id": "b310",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "311": {
+      "question_id": "b311",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "312": {
+      "question_id": "b312",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "313": {
+      "question_id": "b313",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "314": {
+      "question_id": "b314",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "315": {
+      "question_id": "b315",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "316": {
+      "question_id": "b316",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "317": {
+      "question_id": "b317",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "318": {
+      "question_id": "b318",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "319": {
+      "question_id": "b319",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "320": {
+      "question_id": "b320",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "321": {
+      "question_id": "b321",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "322": {
+      "question_id": "b322",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "323": {
+      "question_id": "b323",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "324": {
+      "question_id": "b324",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "325": {
+      "question_id": "b325",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "326": {
+      "question_id": "b326",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "327": {
+      "question_id": "b327",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1125,
+      "qa_exclusion": null
+    },
+    "328": {
+      "question_id": "b328",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "329": {
+      "question_id": "b329",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2232,
+      "qa_exclusion": null
+    },
+    "330": {
+      "question_id": "b330",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "331": {
+      "question_id": "b331",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "332": {
+      "question_id": "b332",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "333": {
+      "question_id": "b333",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "334": {
+      "question_id": "b334",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "335": {
+      "question_id": "b335",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1193,
+      "qa_exclusion": null
+    },
+    "336": {
+      "question_id": "b336",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "337": {
+      "question_id": "b337",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "338": {
+      "question_id": "b338",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "339": {
+      "question_id": "b339",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "340": {
+      "question_id": "b340",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "341": {
+      "question_id": "b341",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "342": {
+      "question_id": "b342",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1413,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas las afirmaciones anteriores son correctas.' — the exam itself certifies every survivor as true"
+      }
+    },
+    "343": {
+      "question_id": "b343",
+      "in_a": true,
+      "exclusion_reasons": [
+        "distractor_already_none_of_the_above"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "344": {
+      "question_id": "b344",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "345": {
+      "question_id": "b345",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "346": {
+      "question_id": "b346",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "347": {
+      "question_id": "b347",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "348": {
+      "question_id": "b348",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "349": {
+      "question_id": "b349",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "350": {
+      "question_id": "b350",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "351": {
+      "question_id": "b351",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "352": {
+      "question_id": "b352",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "353": {
+      "question_id": "b353",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "354": {
+      "question_id": "b354",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "355": {
+      "question_id": "b355",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "356": {
+      "question_id": "b356",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "357": {
+      "question_id": "b357",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "358": {
+      "question_id": "b358",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "359": {
+      "question_id": "b359",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "360": {
+      "question_id": "b360",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "361": {
+      "question_id": "b361",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "362": {
+      "question_id": "b362",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "363": {
+      "question_id": "b363",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "364": {
+      "question_id": "b364",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "365": {
+      "question_id": "b365",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "366": {
+      "question_id": "b366",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "367": {
+      "question_id": "b367",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "368": {
+      "question_id": "b368",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "369": {
+      "question_id": "b369",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "370": {
+      "question_id": "b370",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "371": {
+      "question_id": "b371",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "372": {
+      "question_id": "b372",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "373": {
+      "question_id": "b373",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "374": {
+      "question_id": "b374",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "375": {
+      "question_id": "b375",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "376": {
+      "question_id": "b376",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "377": {
+      "question_id": "b377",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "378": {
+      "question_id": "b378",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "379": {
+      "question_id": "b379",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 736,
+      "qa_exclusion": null
+    },
+    "380": {
+      "question_id": "b380",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "381": {
+      "question_id": "b381",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "382": {
+      "question_id": "b382",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "383": {
+      "question_id": "b383",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "384": {
+      "question_id": "b384",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "385": {
+      "question_id": "b385",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "386": {
+      "question_id": "b386",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "387": {
+      "question_id": "b387",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "388": {
+      "question_id": "b388",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "389": {
+      "question_id": "b389",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "390": {
+      "question_id": "b390",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "391": {
+      "question_id": "b391",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "392": {
+      "question_id": "b392",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "393": {
+      "question_id": "b393",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "394": {
+      "question_id": "b394",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "395": {
+      "question_id": "b395",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "396": {
+      "question_id": "b396",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "397": {
+      "question_id": "b397",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "398": {
+      "question_id": "b398",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "removed key was 'No recomendado como monoterapia'; a survivor is defensibly correct"
+      }
+    },
+    "399": {
+      "question_id": "b399",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "400": {
+      "question_id": "b400",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "401": {
+      "question_id": "b401",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "402": {
+      "question_id": "b402",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "403": {
+      "question_id": "b403",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "404": {
+      "question_id": "b404",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "405": {
+      "question_id": "b405",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "406": {
+      "question_id": "b406",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "407": {
+      "question_id": "b407",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "408": {
+      "question_id": "b408",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "both",
+        "code": "source_answer_key_error",
+        "evidence": "key says 'Tos' is NOT a Zenker's symptom; chronic cough is a well-documented Zenker's symptom. Defect in the source exam key."
+      }
+    },
+    "409": {
+      "question_id": "b409",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "410": {
+      "question_id": "b410",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "411": {
+      "question_id": "b411",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "412": {
+      "question_id": "b412",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "413": {
+      "question_id": "b413",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "414": {
+      "question_id": "b414",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "415": {
+      "question_id": "b415",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "416": {
+      "question_id": "b416",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "417": {
+      "question_id": "b417",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "418": {
+      "question_id": "b418",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "419": {
+      "question_id": "b419",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "420": {
+      "question_id": "b420",
+      "in_a": true,
+      "exclusion_reasons": [
+        "affirm_broken_no_correct_answer_after_swap"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "421": {
+      "question_id": "b421",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "422": {
+      "question_id": "b422",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "423": {
+      "question_id": "b423",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "424": {
+      "question_id": "b424",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "425": {
+      "question_id": "b425",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "426": {
+      "question_id": "b426",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "427": {
+      "question_id": "b427",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "428": {
+      "question_id": "b428",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "most frequent gastric polypoid lesion — a survivor is defensible once fundic-gland polyp is removed"
+      }
+    },
+    "429": {
+      "question_id": "b429",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "430": {
+      "question_id": "b430",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas las afirmaciones anteriores son correctas' — every survivor is certified true by the key"
+      }
+    },
+    "431": {
+      "question_id": "b431",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "432": {
+      "question_id": "b432",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 736,
+      "qa_exclusion": null
+    },
+    "433": {
+      "question_id": "b433",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "434": {
+      "question_id": "b434",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "435": {
+      "question_id": "b435",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "436": {
+      "question_id": "b436",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "437": {
+      "question_id": "b437",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "aggregator_correct_answer",
+        "evidence": "'Todas son ciertas.' — every surviving distractor is individually true"
+      }
+    },
+    "438": {
+      "question_id": "b438",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "439": {
+      "question_id": "b439",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "440": {
+      "question_id": "b440",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "441": {
+      "question_id": "b441",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "442": {
+      "question_id": "b442",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "443": {
+      "question_id": "b443",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "444": {
+      "question_id": "b444",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "445": {
+      "question_id": "b445",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "446": {
+      "question_id": "b446",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "447": {
+      "question_id": "b447",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "448": {
+      "question_id": "b448",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "449": {
+      "question_id": "b449",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "450": {
+      "question_id": "b450",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "451": {
+      "question_id": "b451",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "452": {
+      "question_id": "b452",
+      "in_a": true,
+      "exclusion_reasons": [
+        "distractor_already_none_of_the_above"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "453": {
+      "question_id": "b453",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "454": {
+      "question_id": "b454",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "455": {
+      "question_id": "b455",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "456": {
+      "question_id": "b456",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "457": {
+      "question_id": "b457",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "458": {
+      "question_id": "b458",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": "negate_equivalent_noop",
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "swap_is_noop",
+        "evidence": "correct answer was already 'Todas las anteriores son falsas.' — semantically identical to the swap string"
+      }
+    },
+    "459": {
+      "question_id": "b459",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "460": {
+      "question_id": "b460",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "461": {
+      "question_id": "b461",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "462": {
+      "question_id": "b462",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "463": {
+      "question_id": "b463",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "464": {
+      "question_id": "b464",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "465": {
+      "question_id": "b465",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "466": {
+      "question_id": "b466",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "467": {
+      "question_id": "b467",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "468": {
+      "question_id": "b468",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "469": {
+      "question_id": "b469",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "470": {
+      "question_id": "b470",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "471": {
+      "question_id": "b471",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "472": {
+      "question_id": "b472",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "473": {
+      "question_id": "b473",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 1180,
+      "qa_exclusion": null
+    },
+    "474": {
+      "question_id": "b474",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "475": {
+      "question_id": "b475",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "476": {
+      "question_id": "b476",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "477": {
+      "question_id": "b477",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "478": {
+      "question_id": "b478",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "479": {
+      "question_id": "b479",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "480": {
+      "question_id": "b480",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "481": {
+      "question_id": "b481",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "482": {
+      "question_id": "b482",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "483": {
+      "question_id": "b483",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "484": {
+      "question_id": "b484",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 318,
+      "qa_exclusion": null
+    },
+    "485": {
+      "question_id": "b485",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "486": {
+      "question_id": "b486",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "487": {
+      "question_id": "b487",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "488": {
+      "question_id": "b488",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "489": {
+      "question_id": "b489",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "490": {
+      "question_id": "b490",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "491": {
+      "question_id": "b491",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "stem's bar is very low ('se han relacionado con'); survivors also qualify"
+      }
+    },
+    "492": {
+      "question_id": "b492",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "493": {
+      "question_id": "b493",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "494": {
+      "question_id": "b494",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 471,
+      "qa_exclusion": null
+    },
+    "495": {
+      "question_id": "b495",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "496": {
+      "question_id": "b496",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "497": {
+      "question_id": "b497",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": true,
+      "context_chars": 2232,
+      "qa_exclusion": {
+        "scope": "b_only",
+        "code": "surviving_distractor_is_true",
+        "evidence": "acute severe UC with fever after infliximab — a surviving option is also correct"
+      }
+    },
+    "498": {
+      "question_id": "b498",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "499": {
+      "question_id": "b499",
+      "in_a": true,
+      "exclusion_reasons": [],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    },
+    "500": {
+      "question_id": "b500",
+      "in_a": false,
+      "exclusion_reasons": [
+        "three_option_no_option_d"
+      ],
+      "b_note": null,
+      "context_resolved": false,
+      "context_chars": 0,
+      "qa_exclusion": null
+    }
+  }
+}

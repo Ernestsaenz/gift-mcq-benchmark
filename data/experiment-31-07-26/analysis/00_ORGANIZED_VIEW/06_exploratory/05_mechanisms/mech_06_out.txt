@@ -1,0 +1,92 @@
+========================================================================================================
+(iii) ITEM DIFFICULTY AND THE A->B DROP
+========================================================================================================
+Item difficulty distribution (models correct in A, out of 4):
+   0/4 models correct in A :    3 items
+   1/4 models correct in A :    9 items
+   2/4 models correct in A :   23 items
+   3/4 models correct in A :   49 items
+   4/4 models correct in A :  241 items
+
+--------------------------------------------------------------------------------------------------------
+[NAIVE, artifact-prone]  item-level mean drop by number of models correct in A
+--------------------------------------------------------------------------------------------------------
+ diff_A  items  mean acc A  mean acc B  mean drop
+      0      3       0.000       0.583     -0.583
+      1      9       0.250       0.333     -0.083
+      2     23       0.507       0.529     -0.022
+      3     49       0.750       0.633     +0.117
+      4    241       1.000       0.802     +0.198
+   OLS slope of item drop on diff_A = +0.1179 per model-correct  95% CI [+0.0003,+0.0281] (cluster bootstrap)
+   PARAMETRIC NULL simulation (2000 draws; every cell an independent
+   Bernoulli at its model's marginal rate, i.e. items are all equally
+   hard and A/B are unlinked):  expected slope = +0.2482 [+0.2095,+0.2877]
+   -> the naive gradient is essentially entirely a ceiling artifact.
+
+--------------------------------------------------------------------------------------------------------
+[LOMO, clean]  model m's own A and B rates by how many of the OTHER 3
+models got the item right in A.  Exact Clopper-Pearson 95% CIs.
+--------------------------------------------------------------------------------------------------------
+peers correct  cells   acc A       acc A 95% CI   acc B       acc B 95% CI     drop  retention     retention 95% CI
+            0     21   0.429 [0.218,0.660]        0.571 [0.340,0.782]        -0.143      0.556 [0.212,0.863]     
+            1     71   0.620 [0.497,0.732]        0.563 [0.440,0.681]        +0.056      0.750 [0.597,0.868]     
+            2    191   0.770 [0.703,0.827]        0.623 [0.550,0.692]        +0.147      0.721 [0.641,0.792]     
+            3   1013   0.952 [0.937,0.964]        0.781 [0.754,0.806]        +0.171      0.802 [0.775,0.827]     
+
+   weighted OLS slope of DROP on peer-difficulty = +0.0639 per peer-correct
+      95% CI [-0.0034,+0.1301]  p_boot=0.06548 (cluster bootstrap, 208 clusters, 4000 reps)
+   weighted OLS slope of RETENTION (P(B ok | A ok)) on peer-difficulty = +0.0562
+      95% CI [+0.0109,+0.1032]  p_boot=0.014
+   RETENTION is the artifact-free statistic: it conditions on A_correct==1
+   and its predictor uses only the other three models.
+
+model               peers  n(A=1)  retention             95% CI
+gemini-3.6-flash        0       7      0.714 [0.290,0.963]
+gemini-3.6-flash        1      21      0.952 [0.762,0.999]
+gemini-3.6-flash        2      48      0.812 [0.674,0.911]
+gemini-3.6-flash        3     241      0.921 [0.880,0.952]
+gemma-4-26b             0       1      0.000 [0.000,0.975]
+gemma-4-26b             1       3      0.667 [0.094,0.992]
+gemma-4-26b             2      13      0.308 [0.091,0.614]
+gemma-4-26b             3     241      0.705 [0.643,0.762]
+qwen3.6-35b             1       5      0.400 [0.053,0.853]
+qwen3.6-35b             2      41      0.780 [0.624,0.894]
+qwen3.6-35b             3     241      0.772 [0.714,0.823]
+glm-5.2                 0       1      0.000 [0.000,0.975]
+glm-5.2                 1      15      0.600 [0.323,0.837]
+glm-5.2                 2      45      0.689 [0.534,0.818]
+glm-5.2                 3     241      0.809 [0.754,0.857]
+
+--------------------------------------------------------------------------------------------------------
+Logistic MLE (own Newton-Raphson), pooled over models with model dummies:
+  B_correct ~ 1 + A_correct + lomo_peers_correct + model dummies
+  Wald p from the inverse observed information; cluster-bootstrap CI too.
+--------------------------------------------------------------------------------------------------------
+   intercept            b= -0.1593  se=0.3248  OR= 0.853  p_wald=0.6238
+   A_correct            b= +1.3965  se=0.2205  OR= 4.041  p_wald=2.411e-10
+   lomo_peers           b= +0.3856  se=0.1114  OR= 1.470  p_wald=0.0005378
+   gemma-4-26b          b= -1.6237  se=0.2299  OR= 0.197  p_wald=1.616e-12
+   qwen3.6-35b          b= -1.1012  se=0.2301  OR= 0.332  p_wald=1.699e-06
+   glm-5.2              b= -1.0259  se=0.2292  OR= 0.358  p_wald=7.615e-06
+   lomo_peers cluster-bootstrap 95% CI [+0.0875,+0.6687]  p_boot=0.01599
+
+--------------------------------------------------------------------------------------------------------
+[EFFORT difficulty]  difficulty measured by how much the OTHER reasoning
+models thought in condition A (mean z of log2 reasoning tokens).
+Retention P(B ok | A ok) by tercile of that score.
+--------------------------------------------------------------------------------------------------------
+  tercile of peer effort      n  retention             95% CI
+    low (least thinking)    389      0.879 [0.843,0.910]
+                     mid    389      0.805 [0.762,0.843]
+    high (most thinking)    388      0.680 [0.631,0.727]
+   logistic B_correct ~ peer_effort + model dummies (A_correct==1 only):
+      b(peer effort, per 1 SD) = -0.7454  OR=0.475  p_wald=4.087e-14  cluster-boot 95% CI [-0.9720,-0.5476]  p_boot=0.0009995
+
+--------------------------------------------------------------------------------------------------------
+The other half of the picture: items the model got WRONG in A
+--------------------------------------------------------------------------------------------------------
+model               n(A=0)  P(B correct | A wrong)             95% CI  P(B ok | A ok)
+gemini-3.6-flash         7                   0.571 [0.184,0.901]                0.903
+gemma-4-26b             67                   0.269 [0.168,0.391]                0.682
+qwen3.6-35b             37                   0.405 [0.248,0.579]                0.767
+glm-5.2                 22                   0.364 [0.172,0.593]                0.778

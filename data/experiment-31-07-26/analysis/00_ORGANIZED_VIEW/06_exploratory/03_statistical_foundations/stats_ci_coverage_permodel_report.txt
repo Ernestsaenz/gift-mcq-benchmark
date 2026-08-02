@@ -1,0 +1,10 @@
+================================================================================================
+PER-MODEL coverage of nominal 95% RD intervals (4000 sims each, direction-ICC model calibrated per model)
+================================================================================================
+stratum                      DEFF  rho_dir  cov_exact  w_exact  cov_robust  w_robust
+google/gemini-3.6-flash     1.024    0.282      0.791   0.0487       0.939    0.0698
+google/gemma-4-26b-a4b-it   1.325    0.383      0.856   0.0967       0.939    0.1305
+qwen/qwen3.6-35b-a3b        0.863    0.000      0.909   0.0887       0.938    0.1020
+z-ai/glm-5.2                0.918    0.000      0.820   0.0692       0.937    0.0957
+
+MC SE at coverage ~0.9 with 4000 sims = 0.0047

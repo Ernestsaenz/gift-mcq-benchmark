@@ -1,0 +1,36 @@
+========================================================================================================
+(iii-supplement) ITEM PROPERTIES vs RETENTION  P(B correct | A correct)
+n = 1166 retained cells of 1299
+========================================================================================================
+   intercept                b= +2.0738 OR= 7.955 p_wald=5.229e-23 cluster-boot 95% CI [+1.5850,+2.6434] p_boot=0.001332
+   z_qlen                   b= -0.0720 OR= 0.931 p_wald=   0.4688 cluster-boot 95% CI [-0.4700,+0.2937] p_boot=0.4584
+   z_deleted_answer_chars   b= -0.1546 OR= 0.857 p_wald=   0.0277 cluster-boot 95% CI [-0.3185,+0.0072] p_boot=0.06129
+   has_context              b= +0.3718 OR= 1.450 p_wald=  0.06944 cluster-boot 95% CI [-0.4092,+1.0105] p_boot=0.2612
+   negated_stem             b= +0.0400 OR= 1.041 p_wald=   0.8125 cluster-boot 95% CI [-0.3879,+0.4871] p_boot=0.8741
+   gemma-4-26b              b= -1.4774 OR= 0.228 p_wald=2.076e-10 cluster-boot 95% CI [-1.9802,-1.0550] p_boot=0.001332
+   qwen3.6-35b              b= -1.0438 OR= 0.352 p_wald= 9.47e-06 cluster-boot 95% CI [-1.4665,-0.6578] p_boot=0.001332
+   glm-5.2                  b= -0.9799 OR= 0.375 p_wald=3.072e-05 cluster-boot 95% CI [-1.4273,-0.6247] p_boot=0.001332
+
+--------------------------------------------------------------------------------------------------------
+Marginal view: retention by tercile of the deleted correct-option length
+--------------------------------------------------------------------------------------------------------
+   terciles of deleted-answer length: <= 36, 36-94, > 94 chars
+                        band      n  retention     95% CI (Clopper-Pearson)
+         short (<= 36 chars)    392      0.804 [0.761,0.842]          
+                 mid (36-94)    386      0.816 [0.774,0.853]          
+           long (> 94 chars)    388      0.745 [0.698,0.787]          
+
+--------------------------------------------------------------------------------------------------------
+Retention by question length (qlen) tercile
+--------------------------------------------------------------------------------------------------------
+        short (<= 137 chars)    392      0.768 [0.723,0.809]
+              mid (137-1226)    387      0.783 [0.738,0.823]
+         long (> 1226 chars)    387      0.814 [0.772,0.851]
+
+--------------------------------------------------------------------------------------------------------
+Sanity: is qlen actually a difficulty proxy?  correlation with A accuracy
+--------------------------------------------------------------------------------------------------------
+   gemini-3.6-flash   spearman(qlen, A_correct) = +0.033   spearman(qlen, A_reason) = +0.153
+   gemma-4-26b        spearman(qlen, A_correct) = +0.090   spearman(qlen, A_reason) = +nan
+   qwen3.6-35b        spearman(qlen, A_correct) = +0.070   spearman(qlen, A_reason) = +0.200
+   glm-5.2            spearman(qlen, A_correct) = +0.014   spearman(qlen, A_reason) = +0.206

@@ -1,0 +1,92 @@
+==============================================================================
+(a) CEILING COMPRESSION -- local sensitivity of the percentage-point scale
+==============================================================================
+slope of probability w.r.t. latent ability at the model's own operating
+point in condition A:  dp/dtheta = pA*(1-pA).  A flat slope means a large
+latent degradation is squeezed into a small pp delta.
+
+model                             pA    errA  pA(1-pA)   compression vs gemma
+google/gemini-3.6-flash       0.9785  0.0215   0.02107                   7.77x
+google/gemma-4-26b-a4b-it     0.7938  0.2062   0.16365                   1.00x
+qwen/qwen3.6-35b-a3b          0.8862  0.1138   0.10089                   1.62x
+z-ai/glm-5.2                  0.9321  0.0679   0.06329                   2.59x
+(reference = google/gemma-4-26b-a4b-it, the least ceiling-compressed model)
+
+error-rate multiplication (ceiling-free, directly interpretable):
+model                           err_A    err_B  err ratio
+google/gemini-3.6-flash        0.0215   0.1046      4.857x
+google/gemma-4-26b-a4b-it      0.2062   0.4031      1.955x
+qwen/qwen3.6-35b-a3b           0.1138   0.2738      2.405x
+z-ai/glm-5.2                   0.0679   0.2500      3.682x
+
+COUNTERFACTUAL: give every model the SAME latent (log-odds) degradation,
+then read off what the raw pp delta would look like.
+  if all models suffered gemini-3.6-flash's log-odds shift (1.6146):
+      gemini-3.6-flash: delta=0.0843 | gemma-4-26b-a4b-it: delta=0.3614 | qwen3.6-35b-a3b: delta=0.2813 | glm-5.2: delta=0.2042
+  if all models suffered gemma-4-26b-a4b-it's log-odds shift (0.9513):
+      gemini-3.6-flash: delta=0.0359 | gemma-4-26b-a4b-it: delta=0.1972 | qwen3.6-35b-a3b: delta=0.1380 | glm-5.2: delta=0.0936
+  if all models suffered qwen3.6-35b-a3b's log-odds shift (1.0686):
+      gemini-3.6-flash: delta=0.0426 | gemma-4-26b-a4b-it: delta=0.2257 | qwen3.6-35b-a3b: delta=0.1607 | glm-5.2: delta=0.1101
+  if all models suffered glm-5.2's log-odds shift (1.5041):
+      gemini-3.6-flash: delta=0.0743 | gemma-4-26b-a4b-it: delta=0.3341 | qwen3.6-35b-a3b: delta=0.2552 | glm-5.2: delta=0.1829
+
+=> identical latent damage yields raw deltas that differ by an order of
+   magnitude purely because of where each model sits on the curve.
+
+==============================================================================
+(b) CONDITIONAL RETENTION -- P(B wrong | A right), base-rate free
+==============================================================================
+model                         A-right  lost  loss rate  retention  A-wrong  gained  gain rate
+google/gemini-3.6-flash           318    31     0.0975     0.9025        7       4     0.5714
+google/gemma-4-26b-a4b-it         258    82     0.3178     0.6822       67      18     0.2687
+qwen/qwen3.6-35b-a3b              288    67     0.2326     0.7674       37      15     0.4054
+z-ai/glm-5.2                      302    67     0.2219     0.7781       22       8     0.3636
+
+==============================================================================
+RANKING UNDER EVERY CANDIDATE METRIC (1 = worst / least robust)
+==============================================================================
+metric                gemini-3.6-fla  gemma-4-26b-a4  qwen3.6-35b-a3         glm-5.2
+raw_delta                          4               1               3               2
+delta/pA                           4               1               3               2
+delta/(pA-.25)                     4               1               3               2
+log_odds_shift                     1               4               3               2
+err_multiplier                     1               4               3               2
+loss_rate                          4               1               2               3
+cond_logOR                         2               3               4               1
+
+  raw_delta           : gemma-4-26b-a4b-it(0.197) > glm-5.2(0.182) > qwen3.6-35b-a3b(0.160) > gemini-3.6-flash(0.083)
+  delta/pA            : gemma-4-26b-a4b-it(0.248) > glm-5.2(0.195) > qwen3.6-35b-a3b(0.181) > gemini-3.6-flash(0.085)
+  delta/(pA-.25)      : gemma-4-26b-a4b-it(0.362) > glm-5.2(0.267) > qwen3.6-35b-a3b(0.252) > gemini-3.6-flash(0.114)
+  log_odds_shift      : gemini-3.6-flash(1.615) > glm-5.2(1.504) > qwen3.6-35b-a3b(1.069) > gemma-4-26b-a4b-it(0.951)
+  err_multiplier      : gemini-3.6-flash(4.857) > glm-5.2(3.682) > qwen3.6-35b-a3b(2.405) > gemma-4-26b-a4b-it(1.955)
+  loss_rate           : gemma-4-26b-a4b-it(0.318) > qwen3.6-35b-a3b(0.233) > glm-5.2(0.222) > gemini-3.6-flash(0.097)
+  cond_logOR          : glm-5.2(2.072) > gemini-3.6-flash(1.946) > gemma-4-26b-a4b-it(1.495) > qwen3.6-35b-a3b(1.471)
+
+==============================================================================
+(c) BETWEEN-MODEL CONTRASTS -- 6 pairwise 'X degrades more than Y' claims
+cluster-level label-swap permutation on shared items, NPERM=50000, seed=20260731
+==============================================================================
+contrast                                                      n    d1-d2    p_perm      Holm        BH  surv
+gemini-3.6-flash vs gemma-4-26b-a4b-it                      325  -0.1138   0.00450   0.02250   0.01350   YES
+gemini-3.6-flash vs qwen3.6-35b-a3b                         325  -0.0769   0.01116   0.04464   0.02232   YES
+gemini-3.6-flash vs glm-5.2                                 324  -0.0988   0.00030   0.00180   0.00180   YES
+gemma-4-26b-a4b-it vs qwen3.6-35b-a3b                       325   0.0369   0.39931   1.00000   0.59897    no
+gemma-4-26b-a4b-it vs glm-5.2                               324   0.0154   0.71931   1.00000   0.71931    no
+qwen3.6-35b-a3b vs glm-5.2                                  324  -0.0216   0.55691   1.00000   0.66829    no
+  Holm thresholds (m=6): 0.00833, 0.01000, 0.01250, 0.01667, 0.02500, 0.05000
+  BH   thresholds (m=6): 0.00833, 0.01667, 0.02500, 0.03333, 0.04167, 0.05000
+
+Same 6 contrasts on the LOG-ODDS scale (cluster bootstrap B=20000):
+contrast                                                        dLO               95% CI   p_boot     Holm  surv
+gemini-3.6-flash vs gemma-4-26b-a4b-it                       0.6633 [ -0.0352,  1.6543]  0.06300  0.31500    no
+gemini-3.6-flash vs qwen3.6-35b-a3b                          0.5460 [ -0.0975,  1.4387]  0.09620  0.33680    no
+gemini-3.6-flash vs glm-5.2                                  0.1106 [ -0.6466,  1.0848]  0.76610  1.00000    no
+gemma-4-26b-a4b-it vs qwen3.6-35b-a3b                       -0.1173 [ -0.5917,  0.3169]  0.60750  1.00000    no
+gemma-4-26b-a4b-it vs glm-5.2                               -0.5527 [ -1.0718, -0.1359]  0.00860  0.05160    no
+qwen3.6-35b-a3b vs glm-5.2                                  -0.4354 [ -0.9977,  0.0610]  0.08420  0.33680    no
+
+Cluster-bootstrap 95% CI on loss rate P(B wrong | A right), B=20000:
+  google/gemini-3.6-flash      0.0975  95% CI [0.0674, 0.1329]
+  google/gemma-4-26b-a4b-it    0.3178  95% CI [0.2509, 0.3897]
+  qwen/qwen3.6-35b-a3b         0.2326  95% CI [0.1899, 0.2803]
+  z-ai/glm-5.2                 0.2219  95% CI [0.1785, 0.2721]

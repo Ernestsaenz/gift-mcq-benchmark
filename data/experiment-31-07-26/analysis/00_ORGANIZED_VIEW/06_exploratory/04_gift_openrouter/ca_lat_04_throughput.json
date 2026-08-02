@@ -1,0 +1,42 @@
+{
+ "per_model": {
+  "google/gemini-3.6-flash": {
+   "net": -3,
+   "dpp": -0.9646302250803859,
+   "gift_wall_s": 5093.637,
+   "or_wall_s": 70.58965290394649,
+   "s_per_extra_correct": null
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "net": 17,
+   "dpp": 5.466237942122186,
+   "gift_wall_s": 5085.915,
+   "or_wall_s": 28.650737062372393,
+   "s_per_extra_correct": 297.4861331139781
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "net": -2,
+   "dpp": -0.6430868167202572,
+   "gift_wall_s": 8358.474,
+   "or_wall_s": 425.3894698153635,
+   "s_per_extra_correct": null
+  },
+  "z-ai/glm-5.2": {
+   "net": 10,
+   "dpp": 3.215434083601286,
+   "gift_wall_s": 7584.238,
+   "or_wall_s": 216.37383797769675,
+   "s_per_extra_correct": 736.7864162022304
+  },
+  "POOLED": {
+   "net": 22,
+   "dpp": 1.7684887459807075,
+   "gift_wall_s": 26122.264,
+   "or_wall_s": 741.0036977593792,
+   "s_per_extra_correct": 1153.6936501018463
+  }
+ },
+ "throughput_gift": 0.04102564650749128,
+ "throughput_or": 0.6296220409740833,
+ "ratio": 15.347035198070904
+}

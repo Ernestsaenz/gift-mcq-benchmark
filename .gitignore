@@ -26,6 +26,21 @@ venv/
 *.sqlite-shm
 *.sqlite-journal
 
+# --- Oversized run databases ---
+# GitHub hard-rejects any single blob over 100 MB. The 2026-07-31 experiment DB is
+# 167 MB, so it cannot be pushed. It is NOT deleted — it stays on disk and remains the
+# working database; git simply does not track it. Its SHA-256 is pinned in that
+# experiment's analysis/RELEASE_MANIFEST.json, so every committed analysis artifact is
+# still verifiable against it. See data/experiment-31-07-26/DATABASE_NOT_IN_GIT.md.
+data/experiment-31-07-26/experiment.sqlite
+
+# --- Symlinks to ignored targets ---
+# The `__pycache__/` rule above ends in a slash, so it matches directories but NOT a
+# symlink named `__pycache__`. The organized-view navigation tree contains one such
+# symlink; committing it would produce a link that dangles in every clone, because its
+# target is itself ignored. The symlink stays on disk — git just skips it.
+data/experiment-31-07-26/analysis/00_ORGANIZED_VIEW/99_preserved_system/__pycache__
+
 # --- Live-run outputs ---
 # Produced by `medrag-eval run`. The committed evidence lives in data/ and
 # data/statistical_analysis*/ — new runs must not overwrite or pollute it.

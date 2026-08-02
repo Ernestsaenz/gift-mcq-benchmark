@@ -1,0 +1,16 @@
+====================================================================================================
+PAIRWISE MODEL CONTRASTS in the A->B drop (item-paired), cluster bootstrap 10000 reps, seed 31071977
+====================================================================================================
+contrast (RD_i - RD_j)                                          est                95% CI      SE   MDE80
+gemini-3.6-flash - gemma-4-26b-a4b-it (n=325)                11.38p[   4.26,  18.11]pp    3.56    9.98   p_boot=0.0016
+gemini-3.6-flash - qwen3.6-35b-a3b (n=325)                    7.69p[   2.25,  13.01]pp    2.75    7.70   p_boot=0.0072
+gemini-3.6-flash - glm-5.2 (n=324)                            9.88p[   4.97,  14.95]pp    2.54    7.11   p_boot=0.0000
+gemma-4-26b-a4b-it - qwen3.6-35b-a3b (n=325)                 -3.69p[ -11.46,   4.19]pp    3.98   11.14   p_boot=0.3646
+gemma-4-26b-a4b-it - glm-5.2 (n=324)                         -1.54p[  -8.00,   5.30]pp    3.38    9.46   p_boot=0.6856
+qwen3.6-35b-a3b - glm-5.2 (n=324)                             2.16p[  -3.74,   8.62]pp    3.19    8.93   p_boot=0.4774
+
+per-model RD for reference: gemini-3.6-flash=-8.31pp  gemma-4-26b-a4b-it=-19.69pp  qwen3.6-35b-a3b=-16.00pp  glm-5.2=-18.21pp
+observed spread across models = 11.38 pp
+MDE for a pairwise model contrast: 7.11 - 11.14 pp (median 9.20 pp)
+3/6 pairwise contrasts have a CI excluding 0
+[wrote stats_model_contrasts_out.json]

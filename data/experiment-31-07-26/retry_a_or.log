@@ -1,0 +1,20 @@
+########## expA_or_310726 — pass 1/3 — 04:53:59 ##########
+[note] Progress counter reflects completion order, not plan order.
+[03:07:46] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  826.2s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 2/3 — 05:07:46 ##########
+[note] Progress counter reflects completion order, not plan order.
+[03:18:38] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  651.2s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 3/3 — 05:18:38 ##########
+[note] Progress counter reflects completion order, not plan order.
+[03:31:41] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  782.5s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+!!! expA_or_310726 did NOT converge in 3 passes
+===== A retry finished Fri Jul 31 05:31:41 CEST 2026 =====

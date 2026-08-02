@@ -1,0 +1,150 @@
+{
+ "export_version": "v3",
+ "export_note": "v3 preserves the v2 analytical population and fixes the scored-parse join and deterministic metadata generation. It supersedes all v1 result artifacts.",
+ "source_db": "experiment.sqlite",
+ "arm_ab": "openrouter",
+ "runs_per_cell": 1,
+ "temperature": 0,
+ "prompt_version": "mcq_es_v4",
+ "experiments": {
+  "or_a": "expA_or_310726",
+  "or_b": "expB_or_310726",
+  "gift_a": "expA_gift_310726",
+  "gift_b": "expB_gift_310726"
+ },
+ "datasets": {
+  "A": "balanced_a_310726",
+  "B": "balanced_b_310726"
+ },
+ "swap_string": "Ninguna de las respuestas anteriores es correcta.",
+ "exclusions": {
+  "out_of_domain_law": [
+   "b205",
+   "b213",
+   "b238",
+   "b293",
+   "b331",
+   "b341",
+   "b343",
+   "b361",
+   "b378",
+   "b385",
+   "b391",
+   "b396",
+   "b401",
+   "b407",
+   "b420",
+   "b430",
+   "b433",
+   "b445",
+   "b451"
+  ],
+  "adjudicated_key_defect": [
+   "b178",
+   "b197",
+   "b496"
+  ],
+  "nota_position_a": {
+   "rule": "correct_letter == 'a'",
+   "why": "inserted string says 'respuestas ANTERIORES' but occupies the FIRST slot",
+   "scope": "A-vs-B contrast only"
+  },
+  "unparsed_cells": "dropped; never scored as incorrect"
+ },
+ "counts": {
+  "ab_cells_all": 1691,
+  "ab_cells_analysis": 1271,
+  "ab_items_analysis": 318,
+  "ab_clusters_analysis": 201,
+  "declared_item_defects": 22,
+  "item_defects_present_in_ab": 19,
+  "nota_position_a_items_in_ab": 91,
+  "cross_cells_analysis": 1224,
+  "cross_items_analysis": 306,
+  "cross_clusters_analysis": 178,
+  "gift_items_complete_all_models": 319,
+  "models": [
+   "google/gemini-3.6-flash",
+   "google/gemma-4-26b-a4b-it",
+   "qwen/qwen3.6-35b-a3b",
+   "z-ai/glm-5.2"
+  ]
+ },
+ "experiment_status": {
+  "expA_or_310726": {
+   "planned_cells": 1896,
+   "logical_calls_created": 1896,
+   "scored_cells": 1895,
+   "logical_progress_fraction": 1.0,
+   "scored_fraction": 0.9994725738396625
+  },
+  "expB_or_310726": {
+   "planned_cells": 1692,
+   "logical_calls_created": 1692,
+   "scored_cells": 1692,
+   "logical_progress_fraction": 1.0,
+   "scored_fraction": 1.0
+  },
+  "expA_gift_310726": {
+   "planned_cells": 1896,
+   "logical_calls_created": 1566,
+   "scored_cells": 1384,
+   "logical_progress_fraction": 0.8259493670886076,
+   "scored_fraction": 0.729957805907173
+  },
+  "expB_gift_310726": {
+   "planned_cells": 1692,
+   "logical_calls_created": 0,
+   "scored_cells": 0,
+   "logical_progress_fraction": 0.0,
+   "scored_fraction": 0.0
+  }
+ },
+ "coverage_diagnostics": {
+  "openrouter_a_covered": 0.9106583072100314,
+  "openrouter_a_uncovered": 0.8287560581583199,
+  "difference_covered_minus_uncovered": 0.0819022490517115
+ },
+ "backend_total_variation_a_vs_b": {
+  "google/gemini-3.6-flash": 0.0,
+  "google/gemma-4-26b-a4b-it": 0.8144654088050315,
+  "qwen/qwen3.6-35b-a3b": 0.2358490566037736,
+  "z-ai/glm-5.2": 0.30283911671924296
+ },
+ "caveats": [
+  "GIFT experiment A is partial: logical-call creation reached 82.6% of planned cells, but only 73.0% produced scores. Coverage is a sequential prefix, not a random sample.",
+  "GIFT experiment B was never run; there is no retrieval-arm A/B contrast.",
+  "OpenRouter backend routing was not pinned and differed between arms. Use same_backend and backend_total_variation_a_vs_b to assess this confound.",
+  "runs=1: no within-item variance, so per-item claims are unsupportable.",
+  "Completion-token counts include the emitted answer text and are not a clean measure of deliberation across conditions.",
+  "Latency is not directly comparable across asynchronous provider runs because serving throughput and routing changed.",
+  "A cluster drawn repeatedly in a bootstrap must retain a draw index; regrouping only by question_id merges duplicate draws."
+ ],
+ "superseded_v1_counts": {
+  "ab_items": 325,
+  "ab_cells": 1299,
+  "ab_clusters": 208,
+  "cross_items": 311,
+  "cross_cells": 1244,
+  "cross_clusters": 183
+ },
+ "input_sha256": {
+  "source_workbook": "807e83ee0bdaf47a0443b60219764ddf2ee259ac1a683839236ec067da3ca1e5",
+  "flat_a_workbook": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "flat_b_workbook": "705a651b372a2d0d027f4028cd928c473c5a441445d9c9f4f35b2c3dd0869e84",
+  "flatten_script": "ddd9497368cb8bfd151971d58cba0752da7cca4c1a560beabbd342d788013173",
+  "flatten_report": "4ad30406c24126948800ab12e026c47b8e262d64b54c8dc77dbe3690763caeea",
+  "experiment_database": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748",
+  "analysis_builder": "c78893cc4a9082afb1b43f7b301461ee76d96afa05115383a2e76ab2030f71b9"
+ },
+ "output_sha256": {
+  "paired_clean.json": "76b9059cd67a1024cde1655dd3f32083bbfbbb40609728dc65173b25b8835187",
+  "cross_arm_A.json": "987c632976260d4614056afcc9210fcd4902d322fcfe28b480ebc2e6216c8120",
+  "gift_coverage.json": "3291caae151082f7be97c7a256e81e63da74052c5ce1b0d5b636e21dbbc942c9"
+ },
+ "output_md5": {
+  "paired_clean.json": "0b25b95d082cf00900443d262c84427e",
+  "cross_arm_A.json": "39148f1f6ae007c0ec549e8e5d5f3d79",
+  "gift_coverage.json": "09c54f535cf7c7171b99be1232866009"
+ }
+}

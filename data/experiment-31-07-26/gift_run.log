@@ -1,0 +1,27 @@
+===== GIFT ARM start Fri Jul 31 01:40:19 CEST 2026 =====
+########## expA_gift_310726 — pass 1/40 — 01:40:19 ##########
+[08:16:38] [1541/1896 (81%)] tailscale_medical_rag/google/gemini-3.6-flash q=b411 r=1  parse=ok letter=c/c ✓  15.6s
+[08:16:56] [1542/1896 (81%)] tailscale_medical_rag/z-ai/glm-5.2 q=b411 r=1  parse=ok letter=c/c ✓  18.3s
+[08:17:17] [1543/1896 (81%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b411 r=1  parse=ok letter=c/c ✓  20.8s
+[08:17:30] [1544/1896 (81%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b411 r=1  parse=ok letter=c/c ✓  13.2s
+[08:17:47] [1545/1896 (81%)] tailscale_medical_rag/google/gemini-3.6-flash q=b412 r=1  parse=ok letter=a/a ✓  16.1s
+[08:18:04] [1546/1896 (82%)] tailscale_medical_rag/z-ai/glm-5.2 q=b412 r=1  parse=ok letter=a/a ✓  17.7s
+[08:18:27] [1547/1896 (82%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b412 r=1  parse=ok letter=a/a ✓  22.5s
+[08:18:55] [1548/1896 (82%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b412 r=1  parse=ok letter=a/a ✓  28.2s
+[08:19:20] [1549/1896 (82%)] tailscale_medical_rag/google/gemini-3.6-flash q=b413 r=1  parse=ok letter=a/d ✗  25.0s
+[08:20:14] [1550/1896 (82%)] tailscale_medical_rag/z-ai/glm-5.2 q=b413 r=1  parse=ok letter=c/d ✗  54.0s
+[08:20:54] [1551/1896 (82%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b413 r=1  parse=ok letter=a/d ✗  39.9s
+[08:21:17] [1552/1896 (82%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b413 r=1  parse=ok letter=a/d ✗  23.0s
+[08:21:39] [1553/1896 (82%)] tailscale_medical_rag/google/gemini-3.6-flash q=b414 r=1  parse=ok letter=b/b ✓  22.5s
+[08:22:40] [1554/1896 (82%)] tailscale_medical_rag/z-ai/glm-5.2 q=b414 r=1  API_ERROR=server_error  60.1s
+[08:23:31] [1555/1896 (82%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b414 r=1  parse=ok letter=d/b ✗  51.3s
+[08:24:16] [1556/1896 (82%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b414 r=1  parse=ok letter=d/b ✗  45.5s
+[08:24:30] [1557/1896 (82%)] tailscale_medical_rag/google/gemini-3.6-flash q=b415 r=1  parse=ok letter=b/b ✓  13.8s
+[08:24:47] [1558/1896 (82%)] tailscale_medical_rag/z-ai/glm-5.2 q=b415 r=1  parse=ok letter=b/b ✓  16.5s
+[08:25:06] [1559/1896 (82%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b415 r=1  parse=ok letter=b/b ✓  19.2s
+[08:25:19] [1560/1896 (82%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b415 r=1  parse=ok letter=b/b ✓  13.6s
+[08:25:34] [1561/1896 (82%)] tailscale_medical_rag/google/gemini-3.6-flash q=b416 r=1  parse=ok letter=c/c ✓  14.2s
+[08:25:54] [1562/1896 (82%)] tailscale_medical_rag/z-ai/glm-5.2 q=b416 r=1  parse=ok letter=c/c ✓  20.7s
+[08:26:20] [1563/1896 (82%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=b416 r=1  parse=ok letter=c/c ✓  25.8s
+[08:26:44] [1564/1896 (82%)] tailscale_medical_rag/google/gemma-4-26b-a4b-it q=b416 r=1  parse=ok letter=c/c ✓  24.0s
+[08:26:58] [1565/1896 (83%)] tailscale_medical_rag/google/gemini-3.6-flash q=b417 r=1  parse=ok letter=b/b ✓  13.6s

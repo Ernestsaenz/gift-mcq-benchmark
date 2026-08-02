@@ -1,0 +1,2016 @@
+{
+  "analysis_version": "v3.3-final",
+  "bootstrap_replicates": 100000,
+  "input_sha256": {
+    "paired_clean.json": "76b9059cd67a1024cde1655dd3f32083bbfbbb40609728dc65173b25b8835187",
+    "cross_arm_A.json": "987c632976260d4614056afcc9210fcd4902d322fcfe28b480ebc2e6216c8120",
+    "dataset_meta.json": "98562f1c3c8d518e5d88839f5380844a82f31fbcb02e14dc6c95994ba81f0da2",
+    "experiment.sqlite": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748",
+    "audited_secondary_results.json": "1554f1fa2edbbed41b5a28638c946851288b731a0cccc11e56bdf766a7ff4667"
+  },
+  "code_sha256": {
+    "final_analysis.py": "d7820aa4d056194034db7705d888c573137f4c83404107660924ea3ade5c4dbc"
+  },
+  "execution_environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.1",
+    "sqlite": "3.53.0",
+    "quantile_method": "numpy default linear",
+    "bootstrap_seed": 20260731
+  },
+  "audited_source_sha256": {
+    "qa_workflows/QA03_PRIMARY_STATS.md": "23c01182b7dd03c65026bc67bcdfac1d1b32b8cb179f30064fca177b0907d6b9",
+    "qa_workflows/QA05_SENSITIVITY.md": "7ef0d4d3ac133e39a1a58e7c16138acd30ec0daa7297d590280e3543db067e75",
+    "qa_workflows/QA06_CROSS_ARM.md": "2a507249d68b8e5a9642db8a98be7eba107c0b72d7756d4ae4fc72fcda319d22"
+  },
+  "within_condition_model_comparisons": {
+    "A": {
+      "population": {
+        "items": 317,
+        "cells": 1268,
+        "clinical_clusters": 200,
+        "excluded_for_complete_case": [
+          "b320"
+        ]
+      },
+      "outcome": "binary keyed-answer correctness",
+      "by_model": {
+        "gemini-3.6-flash": {
+          "n": 317,
+          "correct": 310,
+          "accuracy": 0.9779179810725552,
+          "cluster_bootstrap_ci95": [
+            0.959349593495935,
+            0.9926108374384236
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.92578125,
+            "q1": 0.9723926380368099,
+            "median": 0.9783393501805054,
+            "q3": 0.9837133550488599,
+            "maximum": 1.0
+          }
+        },
+        "glm-5.2": {
+          "n": 317,
+          "correct": 295,
+          "accuracy": 0.9305993690851735,
+          "cluster_bootstrap_ci95": [
+            0.8989169675090253,
+            0.9578313253012049
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.8478260869565217,
+            "q1": 0.9205776173285198,
+            "median": 0.930835734870317,
+            "q3": 0.940625,
+            "maximum": 0.9856115107913669
+          }
+        },
+        "qwen3.6-35b-a3b": {
+          "n": 317,
+          "correct": 280,
+          "accuracy": 0.8832807570977917,
+          "cluster_bootstrap_ci95": [
+            0.8436482084690554,
+            0.9171597633136095
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.7714285714285715,
+            "q1": 0.8703170028818443,
+            "median": 0.8832807570977917,
+            "q3": 0.8956228956228957,
+            "maximum": 0.9491525423728814
+          }
+        },
+        "gemma-4-26b-a4b-it": {
+          "n": 317,
+          "correct": 251,
+          "accuracy": 0.7917981072555205,
+          "cluster_bootstrap_ci95": [
+            0.7380952380952381,
+            0.8360128617363344
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.6619718309859155,
+            "q1": 0.77431906614786,
+            "median": 0.7916666666666666,
+            "q3": 0.8078078078078078,
+            "maximum": 0.8808139534883721
+          }
+        }
+      },
+      "omnibus": {
+        "method": "CR1 clinical-cluster-robust linear-probability Wald F test",
+        "null_hypothesis": "equal marginal keyed-answer accuracy across the four models",
+        "f_statistic": 22.745836695564353,
+        "numerator_df": 3,
+        "denominator_df": 199,
+        "wald_chi_square": 68.23751008669306,
+        "p_value": 1.0527351540973893e-12,
+        "cells": 1268,
+        "clinical_clusters": 200,
+        "reference_model": "gemini-3.6-flash",
+        "coefficients_vs_reference": {
+          "glm-5.2": -0.047318611987381826,
+          "qwen3.6-35b-a3b": -0.09463722397476332,
+          "gemma-4-26b-a4b-it": -0.18611987381703518
+        }
+      },
+      "pairwise": [
+        {
+          "contrast_id": "gemini-3.6-flash_minus_glm-5.2",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "glm-5.2",
+          "paired_n": 317,
+          "first_correct": 310,
+          "second_correct": 295,
+          "risk_difference_first_minus_second": 0.0473186119873817,
+          "cluster_bootstrap_ci95": [
+            0.01910828025477707,
+            0.0782312925170068
+          ],
+          "exact_cluster_signflip_p": 0.00331878662109375,
+          "discordant_items": 21,
+          "holm_adjusted_cluster_signflip_p": 0.0066375732421875
+        },
+        {
+          "contrast_id": "gemini-3.6-flash_minus_qwen3.6-35b-a3b",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "first_correct": 310,
+          "second_correct": 280,
+          "risk_difference_first_minus_second": 0.0946372239747634,
+          "cluster_bootstrap_ci95": [
+            0.06388206388206388,
+            0.1299638989169675
+          ],
+          "exact_cluster_signflip_p": 5.4016709327697754e-08,
+          "discordant_items": 32,
+          "holm_adjusted_cluster_signflip_p": 2.1606683731079102e-07
+        },
+        {
+          "contrast_id": "gemini-3.6-flash_minus_gemma-4-26b-a4b-it",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 310,
+          "second_correct": 251,
+          "risk_difference_first_minus_second": 0.1861198738170347,
+          "cluster_bootstrap_ci95": [
+            0.1424579016059463,
+            0.23809523809523808
+          ],
+          "exact_cluster_signflip_p": 5.773159728050814e-15,
+          "discordant_items": 65,
+          "holm_adjusted_cluster_signflip_p": 3.4638958368304884e-14
+        },
+        {
+          "contrast_id": "glm-5.2_minus_qwen3.6-35b-a3b",
+          "first_model": "glm-5.2",
+          "second_model": "qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "first_correct": 295,
+          "second_correct": 280,
+          "risk_difference_first_minus_second": 0.0473186119873817,
+          "cluster_bootstrap_ci95": [
+            0.011527377521613832,
+            0.08544303797468354
+          ],
+          "exact_cluster_signflip_p": 0.01930037885904312,
+          "discordant_items": 33,
+          "holm_adjusted_cluster_signflip_p": 0.01930037885904312
+        },
+        {
+          "contrast_id": "glm-5.2_minus_gemma-4-26b-a4b-it",
+          "first_model": "glm-5.2",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 295,
+          "second_correct": 251,
+          "risk_difference_first_minus_second": 0.138801261829653,
+          "cluster_bootstrap_ci95": [
+            0.0960591133004926,
+            0.18661971830985916
+          ],
+          "exact_cluster_signflip_p": 3.5870755255018594e-09,
+          "discordant_items": 58,
+          "holm_adjusted_cluster_signflip_p": 1.7935377627509297e-08
+        },
+        {
+          "contrast_id": "qwen3.6-35b-a3b_minus_gemma-4-26b-a4b-it",
+          "first_model": "qwen3.6-35b-a3b",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 280,
+          "second_correct": 251,
+          "risk_difference_first_minus_second": 0.0914826498422713,
+          "cluster_bootstrap_ci95": [
+            0.04823151125401929,
+            0.1392857142857143
+          ],
+          "exact_cluster_signflip_p": 7.867999374866486e-05,
+          "discordant_items": 53,
+          "holm_adjusted_cluster_signflip_p": 0.00023603998124599457
+        }
+      ],
+      "pairwise_multiplicity": "Holm adjustment across six model contrasts within condition",
+      "normality": "Not applicable: correctness is binary; the tests do not assume normal 0/1 outcomes."
+    },
+    "B": {
+      "population": {
+        "items": 317,
+        "cells": 1268,
+        "clinical_clusters": 200,
+        "excluded_for_complete_case": [
+          "b320"
+        ]
+      },
+      "outcome": "binary keyed-answer correctness",
+      "by_model": {
+        "gemini-3.6-flash": {
+          "n": 317,
+          "correct": 283,
+          "accuracy": 0.8927444794952681,
+          "cluster_bootstrap_ci95": [
+            0.8547001153402537,
+            0.9257142857142857
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.7942386831275721,
+            "q1": 0.8805460750853242,
+            "median": 0.8929663608562691,
+            "q3": 0.9048664466560099,
+            "maximum": 0.9558823529411765
+          }
+        },
+        "glm-5.2": {
+          "n": 317,
+          "correct": 237,
+          "accuracy": 0.7476340694006309,
+          "cluster_bootstrap_ci95": [
+            0.6947368421052632,
+            0.7927170868347339
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.6206896551724138,
+            "q1": 0.7304964539007093,
+            "median": 0.7475083056478405,
+            "q3": 0.7637795275590551,
+            "maximum": 0.8584070796460177
+          }
+        },
+        "qwen3.6-35b-a3b": {
+          "n": 317,
+          "correct": 230,
+          "accuracy": 0.7255520504731862,
+          "cluster_bootstrap_ci95": [
+            0.6749107904402166,
+            0.7717041800643086
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.5977443609022557,
+            "q1": 0.7086092715231788,
+            "median": 0.7254237288135593,
+            "q3": 0.7416107382550335,
+            "maximum": 0.8256227758007118
+          }
+        },
+        "gemma-4-26b-a4b-it": {
+          "n": 317,
+          "correct": 189,
+          "accuracy": 0.5962145110410094,
+          "cluster_bootstrap_ci95": [
+            0.5302013422818792,
+            0.657243816254417
+          ],
+          "bootstrap_boxplot": {
+            "minimum": 0.4349442379182156,
+            "q1": 0.5739130434782609,
+            "median": 0.5959079283887468,
+            "q3": 0.6174496644295302,
+            "maximum": 0.7319277108433735
+          }
+        }
+      },
+      "omnibus": {
+        "method": "CR1 clinical-cluster-robust linear-probability Wald F test",
+        "null_hypothesis": "equal marginal keyed-answer accuracy across the four models",
+        "f_statistic": 31.843307958925394,
+        "numerator_df": 3,
+        "denominator_df": 199,
+        "wald_chi_square": 95.52992387677618,
+        "p_value": 7.420609949284677e-17,
+        "cells": 1268,
+        "clinical_clusters": 200,
+        "reference_model": "gemini-3.6-flash",
+        "coefficients_vs_reference": {
+          "glm-5.2": -0.1451104100946376,
+          "qwen3.6-35b-a3b": -0.16719242902208198,
+          "gemma-4-26b-a4b-it": -0.2965299684542593
+        }
+      },
+      "pairwise": [
+        {
+          "contrast_id": "gemini-3.6-flash_minus_glm-5.2",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "glm-5.2",
+          "paired_n": 317,
+          "first_correct": 283,
+          "second_correct": 237,
+          "risk_difference_first_minus_second": 0.14511041009463724,
+          "cluster_bootstrap_ci95": [
+            0.1,
+            0.19272836801752438
+          ],
+          "exact_cluster_signflip_p": 2.44305446983617e-08,
+          "discordant_items": 62,
+          "holm_adjusted_cluster_signflip_p": 9.77221787934468e-08
+        },
+        {
+          "contrast_id": "gemini-3.6-flash_minus_qwen3.6-35b-a3b",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "first_correct": 283,
+          "second_correct": 230,
+          "risk_difference_first_minus_second": 0.167192429022082,
+          "cluster_bootstrap_ci95": [
+            0.1188118811881188,
+            0.21712581913499335
+          ],
+          "exact_cluster_signflip_p": 5.171010279692023e-09,
+          "discordant_items": 75,
+          "holm_adjusted_cluster_signflip_p": 2.5855051398460116e-08
+        },
+        {
+          "contrast_id": "gemini-3.6-flash_minus_gemma-4-26b-a4b-it",
+          "first_model": "gemini-3.6-flash",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 283,
+          "second_correct": 189,
+          "risk_difference_first_minus_second": 0.29652996845425866,
+          "cluster_bootstrap_ci95": [
+            0.23376623376623376,
+            0.36046511627906974
+          ],
+          "exact_cluster_signflip_p": 1.1430306699785171e-14,
+          "discordant_items": 122,
+          "holm_adjusted_cluster_signflip_p": 6.858184019871103e-14
+        },
+        {
+          "contrast_id": "glm-5.2_minus_qwen3.6-35b-a3b",
+          "first_model": "glm-5.2",
+          "second_model": "qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "first_correct": 237,
+          "second_correct": 230,
+          "risk_difference_first_minus_second": 0.022082018927444796,
+          "cluster_bootstrap_ci95": [
+            -0.0313588850174216,
+            0.07278481012658228
+          ],
+          "exact_cluster_signflip_p": 0.4773790723587244,
+          "discordant_items": 79,
+          "holm_adjusted_cluster_signflip_p": 0.4773790723587244
+        },
+        {
+          "contrast_id": "glm-5.2_minus_gemma-4-26b-a4b-it",
+          "first_model": "glm-5.2",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 237,
+          "second_correct": 189,
+          "risk_difference_first_minus_second": 0.15141955835962145,
+          "cluster_bootstrap_ci95": [
+            0.09022556390977443,
+            0.21194029850746268
+          ],
+          "exact_cluster_signflip_p": 2.434335814310564e-05,
+          "discordant_items": 112,
+          "holm_adjusted_cluster_signflip_p": 7.303007442931693e-05
+        },
+        {
+          "contrast_id": "qwen3.6-35b-a3b_minus_gemma-4-26b-a4b-it",
+          "first_model": "qwen3.6-35b-a3b",
+          "second_model": "gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "first_correct": 230,
+          "second_correct": 189,
+          "risk_difference_first_minus_second": 0.12933753943217666,
+          "cluster_bootstrap_ci95": [
+            0.06930693069306931,
+            0.19063545150501673
+          ],
+          "exact_cluster_signflip_p": 0.00014490419879519806,
+          "discordant_items": 111,
+          "holm_adjusted_cluster_signflip_p": 0.0002898083975903961
+        }
+      ],
+      "pairwise_multiplicity": "Holm adjustment across six model contrasts within condition",
+      "normality": "Not applicable: correctness is binary; the tests do not assume normal 0/1 outcomes."
+    }
+  },
+  "grouped_model_comparisons": {
+    "population": {
+      "items": 317,
+      "cells": 1268,
+      "clinical_clusters": 200,
+      "excluded_for_complete_case": [
+        "b320"
+      ]
+    },
+    "estimand": "equal-weight mean keyed-answer accuracy across the named fixed models and common complete-case items",
+    "model_classification": [
+      {
+        "model": "gemini-3.6-flash",
+        "size_group": "large",
+        "access_group": "proprietary"
+      },
+      {
+        "model": "glm-5.2",
+        "size_group": "large",
+        "access_group": "open_model"
+      },
+      {
+        "model": "qwen3.6-35b-a3b",
+        "size_group": "small",
+        "access_group": "open_model"
+      },
+      {
+        "model": "gemma-4-26b-a4b-it",
+        "size_group": "small",
+        "access_group": "open_model"
+      }
+    ],
+    "definitions": {
+      "size": {
+        "label": "Requested size grouping",
+        "first_group": "large",
+        "second_group": "small",
+        "contrast_direction": "large minus small",
+        "groups": {
+          "large": [
+            "gemini-3.6-flash",
+            "glm-5.2"
+          ],
+          "small": [
+            "qwen3.6-35b-a3b",
+            "gemma-4-26b-a4b-it"
+          ]
+        }
+      },
+      "openness": {
+        "label": "Requested model-access grouping",
+        "first_group": "open_model",
+        "second_group": "proprietary",
+        "contrast_direction": "open-model minus proprietary",
+        "groups": {
+          "open_model": [
+            "glm-5.2",
+            "qwen3.6-35b-a3b",
+            "gemma-4-26b-a4b-it"
+          ],
+          "proprietary": [
+            "gemini-3.6-flash"
+          ]
+        }
+      }
+    },
+    "within_condition": {
+      "A": {
+        "group_accuracies": {
+          "large": {
+            "models": [
+              "gemini-3.6-flash",
+              "glm-5.2"
+            ],
+            "model_count": 2,
+            "items": 317,
+            "model_item_cells": 634,
+            "correct": 605,
+            "accuracy": 0.9542586750788643,
+            "cluster_bootstrap_ci95": [
+              0.9338461538461539,
+              0.9713375796178344
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.8986175115207373,
+              "q1": 0.947841726618705,
+              "median": 0.9544025157232704,
+              "q3": 0.9605633802816902,
+              "maximum": 0.987987987987988
+            },
+            "bootstrap_seed": 20264731,
+            "bootstrap_replicates": 100000
+          },
+          "small": {
+            "models": [
+              "qwen3.6-35b-a3b",
+              "gemma-4-26b-a4b-it"
+            ],
+            "model_count": 2,
+            "items": 317,
+            "model_item_cells": 634,
+            "correct": 531,
+            "accuracy": 0.8375394321766562,
+            "cluster_bootstrap_ci95": [
+              0.7973856209150327,
+              0.8706896551724138
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.7402597402597403,
+              "q1": 0.8245901639344262,
+              "median": 0.8375,
+              "q3": 0.8496835443037974,
+              "maximum": 0.9
+            },
+            "bootstrap_seed": 20264732,
+            "bootstrap_replicates": 100000
+          },
+          "open_model": {
+            "models": [
+              "glm-5.2",
+              "qwen3.6-35b-a3b",
+              "gemma-4-26b-a4b-it"
+            ],
+            "model_count": 3,
+            "items": 317,
+            "model_item_cells": 951,
+            "correct": 826,
+            "accuracy": 0.868559411146162,
+            "cluster_bootstrap_ci95": [
+              0.8352197724542435,
+              0.895935062523214
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.7916666666666666,
+              "q1": 0.8578732106339468,
+              "median": 0.8685714285714285,
+              "q3": 0.8785796105383734,
+              "maximum": 0.9207818930041153
+            },
+            "bootstrap_seed": 20264733,
+            "bootstrap_replicates": 100000
+          },
+          "proprietary": {
+            "models": [
+              "gemini-3.6-flash"
+            ],
+            "model_count": 1,
+            "items": 317,
+            "model_item_cells": 317,
+            "correct": 310,
+            "accuracy": 0.9779179810725552,
+            "cluster_bootstrap_ci95": [
+              0.9594594594594594,
+              0.9926470588235294
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.9291666666666667,
+              "q1": 0.9723926380368099,
+              "median": 0.978328173374613,
+              "q3": 0.9837133550488599,
+              "maximum": 1.0
+            },
+            "bootstrap_seed": 20264734,
+            "bootstrap_replicates": 100000
+          }
+        },
+        "contrasts": {
+          "size": {
+            "first_group": "large",
+            "second_group": "small",
+            "contrast_direction": "large minus small",
+            "risk_difference_first_minus_second": 0.1167192429022082,
+            "cluster_bootstrap_ci95": [
+              0.08789625360230548,
+              0.14948496420865148
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.055900621118012424,
+              "q1": 0.10649350649350649,
+              "median": 0.1168091168091168,
+              "q3": 0.12753623188405797,
+              "maximum": 0.20047169811320756
+            },
+            "exact_cluster_signflip_p": 1.663530424522719e-13,
+            "clinical_clusters": 200,
+            "nonzero_clinical_clusters": 57,
+            "integer_scale": 2,
+            "bootstrap_seed": 20264735,
+            "bootstrap_replicates": 100000,
+            "test_id": "a_size_contrast",
+            "holm_adjusted_p_across_six_primary_group_tests": 6.654121698090876e-13
+          },
+          "openness": {
+            "first_group": "open_model",
+            "second_group": "proprietary",
+            "contrast_direction": "open-model minus proprietary",
+            "risk_difference_first_minus_second": -0.10935856992639327,
+            "cluster_bootstrap_ci95": [
+              -0.13997636480272943,
+              -0.08357341861184321
+            ],
+            "bootstrap_boxplot": {
+              "minimum": -0.194125159642401,
+              "q1": -0.11912943871706758,
+              "median": -0.10922558645530506,
+              "q3": -0.1000971817298348,
+              "maximum": -0.054140127388535034
+            },
+            "exact_cluster_signflip_p": 1.365314111767546e-14,
+            "clinical_clusters": 200,
+            "nonzero_clinical_clusters": 63,
+            "integer_scale": 3,
+            "bootstrap_seed": 20264736,
+            "bootstrap_replicates": 100000,
+            "test_id": "a_openness_contrast",
+            "holm_adjusted_p_across_six_primary_group_tests": 6.82657055883773e-14
+          }
+        }
+      },
+      "B": {
+        "group_accuracies": {
+          "large": {
+            "models": [
+              "gemini-3.6-flash",
+              "glm-5.2"
+            ],
+            "model_count": 2,
+            "items": 317,
+            "model_item_cells": 634,
+            "correct": 520,
+            "accuracy": 0.8201892744479495,
+            "cluster_bootstrap_ci95": [
+              0.7810344827586206,
+              0.8527510572398594
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.722972972972973,
+              "q1": 0.8076923076923077,
+              "median": 0.8202898550724638,
+              "q3": 0.8321554770318021,
+              "maximum": 0.8874538745387454
+            },
+            "bootstrap_seed": 20264737,
+            "bootstrap_replicates": 100000
+          },
+          "small": {
+            "models": [
+              "qwen3.6-35b-a3b",
+              "gemma-4-26b-a4b-it"
+            ],
+            "model_count": 2,
+            "items": 317,
+            "model_item_cells": 634,
+            "correct": 419,
+            "accuracy": 0.6608832807570978,
+            "cluster_bootstrap_ci95": [
+              0.6111111111111112,
+              0.7062315429555465
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.5539906103286385,
+              "q1": 0.6437699680511182,
+              "median": 0.6604617845005665,
+              "q3": 0.6765799256505576,
+              "maximum": 0.7590673575129534
+            },
+            "bootstrap_seed": 20264738,
+            "bootstrap_replicates": 100000
+          },
+          "open_model": {
+            "models": [
+              "glm-5.2",
+              "qwen3.6-35b-a3b",
+              "gemma-4-26b-a4b-it"
+            ],
+            "model_count": 3,
+            "items": 317,
+            "model_item_cells": 951,
+            "correct": 656,
+            "accuracy": 0.6898002103049422,
+            "cluster_bootstrap_ci95": [
+              0.6450836901329139,
+              0.7292341805007897
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.5844444444444444,
+              "q1": 0.6747967479674797,
+              "median": 0.6894586894586895,
+              "q3": 0.7037037037037037,
+              "maximum": 0.7684563758389261
+            },
+            "bootstrap_seed": 20264739,
+            "bootstrap_replicates": 100000
+          },
+          "proprietary": {
+            "models": [
+              "gemini-3.6-flash"
+            ],
+            "model_count": 1,
+            "items": 317,
+            "model_item_cells": 317,
+            "correct": 283,
+            "accuracy": 0.8927444794952681,
+            "cluster_bootstrap_ci95": [
+              0.8546712802768166,
+              0.9256198347107438
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.7962264150943397,
+              "q1": 0.8803986710963455,
+              "median": 0.893048128342246,
+              "q3": 0.9047619047619048,
+              "maximum": 0.9580838323353293
+            },
+            "bootstrap_seed": 20264740,
+            "bootstrap_replicates": 100000
+          }
+        },
+        "contrasts": {
+          "size": {
+            "first_group": "large",
+            "second_group": "small",
+            "contrast_direction": "large minus small",
+            "risk_difference_first_minus_second": 0.15930599369085174,
+            "cluster_bootstrap_ci95": [
+              0.11807580174927114,
+              0.2013888888888889
+            ],
+            "bootstrap_boxplot": {
+              "minimum": 0.07364341085271318,
+              "q1": 0.14488636363636365,
+              "median": 0.15915915915915915,
+              "q3": 0.17366946778711484,
+              "maximum": 0.26327433628318586
+            },
+            "exact_cluster_signflip_p": 1.8840956800064606e-10,
+            "clinical_clusters": 200,
+            "nonzero_clinical_clusters": 104,
+            "integer_scale": 2,
+            "bootstrap_seed": 20264741,
+            "bootstrap_replicates": 100000,
+            "test_id": "b_size_contrast",
+            "holm_adjusted_p_across_six_primary_group_tests": 5.652287040019382e-10
+          },
+          "openness": {
+            "first_group": "open_model",
+            "second_group": "proprietary",
+            "contrast_direction": "open-model minus proprietary",
+            "risk_difference_first_minus_second": -0.20294426919032596,
+            "cluster_bootstrap_ci95": [
+              -0.24509872194002946,
+              -0.16161616161616163
+            ],
+            "bootstrap_boxplot": {
+              "minimum": -0.29596412556053814,
+              "q1": -0.2178649237472767,
+              "median": -0.20356998030355694,
+              "q3": -0.18911828980296783,
+              "maximum": -0.10590858416945373
+            },
+            "exact_cluster_signflip_p": 2.8528248315617606e-17,
+            "clinical_clusters": 200,
+            "nonzero_clinical_clusters": 121,
+            "integer_scale": 3,
+            "bootstrap_seed": 20264742,
+            "bootstrap_replicates": 100000,
+            "test_id": "b_openness_contrast",
+            "holm_adjusted_p_across_six_primary_group_tests": 1.7116948989370565e-16
+          }
+        }
+      }
+    },
+    "a_vs_b_within_group": {
+      "large": {
+        "models": [
+          "gemini-3.6-flash",
+          "glm-5.2"
+        ],
+        "model_count": 2,
+        "items": 317,
+        "model_item_cells": 634,
+        "risk_difference_b_minus_a": -0.13406940063091483,
+        "cluster_bootstrap_ci95": [
+          -0.17054263565891473,
+          -0.10176991150442478
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.2288135593220339,
+          "q1": -0.145748987854251,
+          "median": -0.13389830508474576,
+          "q3": -0.12254901960784313,
+          "maximum": -0.06563706563706563
+        },
+        "exact_cluster_signflip_p": 4.837504718633798e-12,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 67,
+        "bootstrap_seed": 20264743,
+        "bootstrap_replicates": 100000,
+        "test_id": "a_vs_b_large",
+        "holm_adjusted_p_across_four_group_declines": 1.4512514155901393e-11
+      },
+      "small": {
+        "models": [
+          "qwen3.6-35b-a3b",
+          "gemma-4-26b-a4b-it"
+        ],
+        "model_count": 2,
+        "items": 317,
+        "model_item_cells": 634,
+        "risk_difference_b_minus_a": -0.17665615141955837,
+        "cluster_bootstrap_ci95": [
+          -0.21954674220963172,
+          -0.13262599469496023
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.2698744769874477,
+          "q1": -0.19145569620253164,
+          "median": -0.17665615141955837,
+          "q3": -0.1617161716171617,
+          "maximum": -0.06724137931034482
+        },
+        "exact_cluster_signflip_p": 5.665381451737212e-11,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 101,
+        "bootstrap_seed": 20264744,
+        "bootstrap_replicates": 100000,
+        "test_id": "a_vs_b_small",
+        "holm_adjusted_p_across_four_group_declines": 1.1330762903474424e-10
+      },
+      "open_model": {
+        "models": [
+          "glm-5.2",
+          "qwen3.6-35b-a3b",
+          "gemma-4-26b-a4b-it"
+        ],
+        "model_count": 3,
+        "items": 317,
+        "model_item_cells": 951,
+        "risk_difference_b_minus_a": -0.17875920084121977,
+        "cluster_bootstrap_ci95": [
+          -0.21671525753158405,
+          -0.14163582531458185
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.27208480565371024,
+          "q1": -0.19172113289760348,
+          "median": -0.17876344086021506,
+          "q3": -0.16610549943883277,
+          "maximum": -0.07960199004975124
+        },
+        "exact_cluster_signflip_p": 1.1013198962422923e-14,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 110,
+        "bootstrap_seed": 20264745,
+        "bootstrap_replicates": 100000,
+        "test_id": "a_vs_b_open_model",
+        "holm_adjusted_p_across_four_group_declines": 4.4052795849691693e-14
+      },
+      "proprietary": {
+        "models": [
+          "gemini-3.6-flash"
+        ],
+        "model_count": 1,
+        "items": 317,
+        "model_item_cells": 317,
+        "risk_difference_b_minus_a": -0.08517350157728706,
+        "cluster_bootstrap_ci95": [
+          -0.12307692307692308,
+          -0.05067567567567568
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.18571428571428572,
+          "q1": -0.09779179810725552,
+          "median": -0.08503401360544217,
+          "q3": -0.07282913165266107,
+          "maximum": -0.0038022813688212928
+        },
+        "exact_cluster_signflip_p": 1.5100464224815369e-05,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 32,
+        "bootstrap_seed": 20264746,
+        "bootstrap_replicates": 100000,
+        "test_id": "a_vs_b_proprietary",
+        "holm_adjusted_p_across_four_group_declines": 1.5100464224815369e-05
+      }
+    },
+    "condition_by_group_interactions": {
+      "size": {
+        "first_group": "large",
+        "second_group": "small",
+        "contrast_direction": "large minus small",
+        "cluster_bootstrap_ci95": [
+          -0.003787878787878788,
+          0.08567424710480184
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.07114624505928854,
+          "q1": 0.026881720430107527,
+          "median": 0.0425531914893617,
+          "q3": 0.057755775577557754,
+          "maximum": 0.1563573883161512
+        },
+        "exact_cluster_signflip_p": 0.0924796432254102,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 98,
+        "integer_scale": 2,
+        "bootstrap_seed": 20264747,
+        "bootstrap_replicates": 100000,
+        "test_id": "condition_by_size_interaction",
+        "difference_in_b_minus_a_changes": 0.04258675078864353,
+        "holm_adjusted_p_across_six_primary_group_tests": 0.0924796432254102
+      },
+      "openness": {
+        "first_group": "open_model",
+        "second_group": "proprietary",
+        "contrast_direction": "open-model minus proprietary",
+        "cluster_bootstrap_ci95": [
+          -0.13636363636363635,
+          -0.049418539355189216
+        ],
+        "bootstrap_boxplot": {
+          "minimum": -0.20144927536231885,
+          "q1": -0.10837887067395265,
+          "median": -0.0935374149659864,
+          "q3": -0.07874865156418555,
+          "maximum": 0.010802469135802469
+        },
+        "exact_cluster_signflip_p": 0.00016069277671573726,
+        "clinical_clusters": 200,
+        "nonzero_clinical_clusters": 110,
+        "integer_scale": 3,
+        "bootstrap_seed": 20264748,
+        "bootstrap_replicates": 100000,
+        "test_id": "condition_by_openness_interaction",
+        "difference_in_b_minus_a_changes": -0.0935856992639327,
+        "holm_adjusted_p_across_six_primary_group_tests": 0.0003213855534314745
+      }
+    },
+    "secondary_triangulation": {
+      "openness_within_large": {
+        "label": "Within-large triangulation",
+        "first_group": "proprietary_large",
+        "second_group": "open_large",
+        "contrast_direction": "gemini minus glm",
+        "groups": {
+          "proprietary_large": [
+            "gemini-3.6-flash"
+          ],
+          "open_large": [
+            "glm-5.2"
+          ]
+        },
+        "within_condition": {
+          "A": {
+            "first_group_accuracy": {
+              "models": [
+                "gemini-3.6-flash"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 310,
+              "accuracy": 0.9779179810725552,
+              "cluster_bootstrap_ci95": [
+                0.959409594095941,
+                0.9924812030075187
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.9302325581395349,
+                "q1": 0.9723926380368099,
+                "median": 0.978328173374613,
+                "q3": 0.9836512261580381,
+                "maximum": 1.0
+              },
+              "bootstrap_seed": 20264750,
+              "bootstrap_replicates": 100000
+            },
+            "second_group_accuracy": {
+              "models": [
+                "glm-5.2"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 295,
+              "accuracy": 0.9305993690851735,
+              "cluster_bootstrap_ci95": [
+                0.8989547038327527,
+                0.9576271186440678
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.8508771929824561,
+                "q1": 0.9205298013245033,
+                "median": 0.930835734870317,
+                "q3": 0.9405684754521964,
+                "maximum": 0.983402489626556
+              },
+              "bootstrap_seed": 20264751,
+              "bootstrap_replicates": 100000
+            },
+            "contrast": {
+              "first_group": "proprietary_large",
+              "second_group": "open_large",
+              "contrast_direction": "gemini minus glm",
+              "risk_difference_first_minus_second": 0.0473186119873817,
+              "cluster_bootstrap_ci95": [
+                0.019169329073482427,
+                0.07818987516380427
+              ],
+              "bootstrap_boxplot": {
+                "minimum": -0.017006802721088437,
+                "q1": 0.037267080745341616,
+                "median": 0.0471976401179941,
+                "q3": 0.05747126436781609,
+                "maximum": 0.11926605504587157
+              },
+              "exact_cluster_signflip_p": 0.00331878662109375,
+              "clinical_clusters": 200,
+              "nonzero_clinical_clusters": 19,
+              "integer_scale": 1,
+              "bootstrap_seed": 20264749,
+              "bootstrap_replicates": 100000,
+              "test_id": "secondary_a_openness_within_large",
+              "holm_adjusted_p_across_six_secondary_tests": 0.0066375732421875
+            }
+          },
+          "B": {
+            "first_group_accuracy": {
+              "models": [
+                "gemini-3.6-flash"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 283,
+              "accuracy": 0.8927444794952681,
+              "cluster_bootstrap_ci95": [
+                0.8543689320388349,
+                0.9256505576208178
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.803088803088803,
+                "q1": 0.8803680981595092,
+                "median": 0.8928571428571429,
+                "q3": 0.9047619047619048,
+                "maximum": 0.9575757575757575
+              },
+              "bootstrap_seed": 20264753,
+              "bootstrap_replicates": 100000
+            },
+            "second_group_accuracy": {
+              "models": [
+                "glm-5.2"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 237,
+              "accuracy": 0.7476340694006309,
+              "cluster_bootstrap_ci95": [
+                0.6947791164658634,
+                0.7925696594427245
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.6025641025641025,
+                "q1": 0.73046875,
+                "median": 0.7475409836065574,
+                "q3": 0.7636363636363637,
+                "maximum": 0.8491803278688524
+              },
+              "bootstrap_seed": 20264754,
+              "bootstrap_replicates": 100000
+            },
+            "contrast": {
+              "first_group": "proprietary_large",
+              "second_group": "open_large",
+              "contrast_direction": "gemini minus glm",
+              "risk_difference_first_minus_second": 0.14511041009463724,
+              "cluster_bootstrap_ci95": [
+                0.1,
+                0.19318181818181818
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.03802281368821293,
+                "q1": 0.1298342541436464,
+                "median": 0.14560439560439561,
+                "q3": 0.16147308781869688,
+                "maximum": 0.2813852813852814
+              },
+              "exact_cluster_signflip_p": 2.44305446983617e-08,
+              "clinical_clusters": 200,
+              "nonzero_clinical_clusters": 49,
+              "integer_scale": 1,
+              "bootstrap_seed": 20264752,
+              "bootstrap_replicates": 100000,
+              "test_id": "secondary_b_openness_within_large",
+              "holm_adjusted_p_across_six_secondary_tests": 1.465832681901702e-07
+            }
+          }
+        },
+        "condition_interaction": {
+          "first_group": "proprietary_large",
+          "second_group": "open_large",
+          "contrast_direction": "gemini minus glm",
+          "cluster_bootstrap_ci95": [
+            0.048517268777406766,
+            0.14963503649635038
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.006349206349206349,
+            "q1": 0.08064516129032258,
+            "median": 0.09774436090225563,
+            "q3": 0.11518324607329843,
+            "maximum": 0.20833333333333334
+          },
+          "exact_cluster_signflip_p": 0.0003751345676477058,
+          "clinical_clusters": 200,
+          "nonzero_clinical_clusters": 49,
+          "integer_scale": 1,
+          "bootstrap_seed": 20264755,
+          "bootstrap_replicates": 100000,
+          "test_id": "secondary_condition_by_openness_within_large",
+          "difference_in_b_minus_a_changes": 0.09779179810725552,
+          "holm_adjusted_p_across_six_secondary_tests": 0.0015005382705908232
+        }
+      },
+      "size_within_open": {
+        "label": "Within-open triangulation",
+        "first_group": "large_open",
+        "second_group": "small_open",
+        "contrast_direction": "glm minus mean(qwen, gemma)",
+        "groups": {
+          "large_open": [
+            "glm-5.2"
+          ],
+          "small_open": [
+            "qwen3.6-35b-a3b",
+            "gemma-4-26b-a4b-it"
+          ]
+        },
+        "within_condition": {
+          "A": {
+            "first_group_accuracy": {
+              "models": [
+                "glm-5.2"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 295,
+              "accuracy": 0.9305993690851735,
+              "cluster_bootstrap_ci95": [
+                0.8989547038327527,
+                0.9578651685393258
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.8418604651162791,
+                "q1": 0.9203821656050956,
+                "median": 0.9307479224376731,
+                "q3": 0.9405999388537428,
+                "maximum": 0.9875
+              },
+              "bootstrap_seed": 20264757,
+              "bootstrap_replicates": 100000
+            },
+            "second_group_accuracy": {
+              "models": [
+                "qwen3.6-35b-a3b",
+                "gemma-4-26b-a4b-it"
+              ],
+              "model_count": 2,
+              "items": 317,
+              "model_item_cells": 634,
+              "correct": 531,
+              "accuracy": 0.8375394321766562,
+              "cluster_bootstrap_ci95": [
+                0.7970479704797048,
+                0.870786988160772
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.7392156862745098,
+                "q1": 0.8245967741935484,
+                "median": 0.837620578778135,
+                "q3": 0.8496503496503497,
+                "maximum": 0.9017412935323383
+              },
+              "bootstrap_seed": 20264758,
+              "bootstrap_replicates": 100000
+            },
+            "contrast": {
+              "first_group": "large_open",
+              "second_group": "small_open",
+              "contrast_direction": "glm minus mean(qwen, gemma)",
+              "risk_difference_first_minus_second": 0.09305993690851735,
+              "cluster_bootstrap_ci95": [
+                0.059870550161812294,
+                0.12896842924448929
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.02348993288590604,
+                "q1": 0.08166189111747851,
+                "median": 0.09327217125382263,
+                "q3": 0.10517799352750809,
+                "maximum": 0.1728395061728395
+              },
+              "exact_cluster_signflip_p": 2.110497600016359e-07,
+              "clinical_clusters": 200,
+              "nonzero_clinical_clusters": 55,
+              "integer_scale": 2,
+              "bootstrap_seed": 20264756,
+              "bootstrap_replicates": 100000,
+              "test_id": "secondary_a_size_within_open",
+              "holm_adjusted_p_across_six_secondary_tests": 1.0552488000081794e-06
+            }
+          },
+          "B": {
+            "first_group_accuracy": {
+              "models": [
+                "glm-5.2"
+              ],
+              "model_count": 1,
+              "items": 317,
+              "model_item_cells": 317,
+              "correct": 237,
+              "accuracy": 0.7476340694006309,
+              "cluster_bootstrap_ci95": [
+                0.6946564885496184,
+                0.7923875432525952
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.6305970149253731,
+                "q1": 0.7305389221556886,
+                "median": 0.7476635514018691,
+                "q3": 0.7638483965014577,
+                "maximum": 0.8472727272727273
+              },
+              "bootstrap_seed": 20264760,
+              "bootstrap_replicates": 100000
+            },
+            "second_group_accuracy": {
+              "models": [
+                "qwen3.6-35b-a3b",
+                "gemma-4-26b-a4b-it"
+              ],
+              "model_count": 2,
+              "items": 317,
+              "model_item_cells": 634,
+              "correct": 419,
+              "accuracy": 0.6608832807570978,
+              "cluster_bootstrap_ci95": [
+                0.6111111111111112,
+                0.7064058080116798
+              ],
+              "bootstrap_boxplot": {
+                "minimum": 0.5492957746478874,
+                "q1": 0.644,
+                "median": 0.6605633802816901,
+                "q3": 0.6766666666666666,
+                "maximum": 0.7536873156342183
+              },
+              "bootstrap_seed": 20264761,
+              "bootstrap_replicates": 100000
+            },
+            "contrast": {
+              "first_group": "large_open",
+              "second_group": "small_open",
+              "contrast_direction": "glm minus mean(qwen, gemma)",
+              "risk_difference_first_minus_second": 0.08675078864353312,
+              "cluster_bootstrap_ci95": [
+                0.03804347826086957,
+                0.13414634146341464
+              ],
+              "bootstrap_boxplot": {
+                "minimum": -0.043933054393305436,
+                "q1": 0.07037037037037037,
+                "median": 0.08679245283018867,
+                "q3": 0.1031331592689295,
+                "maximum": 0.2
+              },
+              "exact_cluster_signflip_p": 0.001398281778339018,
+              "clinical_clusters": 200,
+              "nonzero_clinical_clusters": 111,
+              "integer_scale": 2,
+              "bootstrap_seed": 20264759,
+              "bootstrap_replicates": 100000,
+              "test_id": "secondary_b_size_within_open",
+              "holm_adjusted_p_across_six_secondary_tests": 0.004194845335017054
+            }
+          }
+        },
+        "condition_interaction": {
+          "first_group": "large_open",
+          "second_group": "small_open",
+          "contrast_direction": "glm minus mean(qwen, gemma)",
+          "cluster_bootstrap_ci95": [
+            -0.061837455830388695,
+            0.043882978723404256
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.146484375,
+            "q1": -0.02464788732394366,
+            "median": -0.006430868167202572,
+            "q3": 0.011254019292604502,
+            "maximum": 0.10861423220973783
+          },
+          "exact_cluster_signflip_p": 0.8587508675144084,
+          "clinical_clusters": 200,
+          "nonzero_clinical_clusters": 103,
+          "integer_scale": 2,
+          "bootstrap_seed": 20264762,
+          "bootstrap_replicates": 100000,
+          "test_id": "secondary_condition_by_size_within_open",
+          "difference_in_b_minus_a_changes": -0.006309148264984227,
+          "holm_adjusted_p_across_six_secondary_tests": 0.8587508675144084
+        }
+      }
+    },
+    "primary_multiplicity": {
+      "method": "Holm family-wise adjustment",
+      "family_size": 6,
+      "family": [
+        "a_openness_contrast",
+        "a_size_contrast",
+        "b_openness_contrast",
+        "b_size_contrast",
+        "condition_by_openness_interaction",
+        "condition_by_size_interaction"
+      ],
+      "raw_p_values": {
+        "a_size_contrast": 1.663530424522719e-13,
+        "a_openness_contrast": 1.365314111767546e-14,
+        "b_size_contrast": 1.8840956800064606e-10,
+        "b_openness_contrast": 2.8528248315617606e-17,
+        "condition_by_size_interaction": 0.0924796432254102,
+        "condition_by_openness_interaction": 0.00016069277671573726
+      },
+      "adjusted_p_values": {
+        "b_openness_contrast": 1.7116948989370565e-16,
+        "a_openness_contrast": 6.82657055883773e-14,
+        "a_size_contrast": 6.654121698090876e-13,
+        "b_size_contrast": 5.652287040019382e-10,
+        "condition_by_openness_interaction": 0.0003213855534314745,
+        "condition_by_size_interaction": 0.0924796432254102
+      }
+    },
+    "decline_multiplicity": {
+      "method": "Holm family-wise adjustment",
+      "family_size": 4,
+      "family": [
+        "a_vs_b_large",
+        "a_vs_b_open_model",
+        "a_vs_b_proprietary",
+        "a_vs_b_small"
+      ],
+      "raw_p_values": {
+        "a_vs_b_large": 4.837504718633798e-12,
+        "a_vs_b_small": 5.665381451737212e-11,
+        "a_vs_b_open_model": 1.1013198962422923e-14,
+        "a_vs_b_proprietary": 1.5100464224815369e-05
+      },
+      "adjusted_p_values": {
+        "a_vs_b_open_model": 4.4052795849691693e-14,
+        "a_vs_b_large": 1.4512514155901393e-11,
+        "a_vs_b_small": 1.1330762903474424e-10,
+        "a_vs_b_proprietary": 1.5100464224815369e-05
+      }
+    },
+    "secondary_multiplicity": {
+      "method": "Holm family-wise adjustment",
+      "family_size": 6,
+      "family": [
+        "secondary_a_openness_within_large",
+        "secondary_a_size_within_open",
+        "secondary_b_openness_within_large",
+        "secondary_b_size_within_open",
+        "secondary_condition_by_openness_within_large",
+        "secondary_condition_by_size_within_open"
+      ],
+      "raw_p_values": {
+        "secondary_a_openness_within_large": 0.00331878662109375,
+        "secondary_b_openness_within_large": 2.44305446983617e-08,
+        "secondary_condition_by_openness_within_large": 0.0003751345676477058,
+        "secondary_a_size_within_open": 2.110497600016359e-07,
+        "secondary_b_size_within_open": 0.001398281778339018,
+        "secondary_condition_by_size_within_open": 0.8587508675144084
+      },
+      "adjusted_p_values": {
+        "secondary_b_openness_within_large": 1.465832681901702e-07,
+        "secondary_a_size_within_open": 1.0552488000081794e-06,
+        "secondary_condition_by_openness_within_large": 0.0015005382705908232,
+        "secondary_b_size_within_open": 0.004194845335017054,
+        "secondary_a_openness_within_large": 0.0066375732421875,
+        "secondary_condition_by_size_within_open": 0.8587508675144084
+      }
+    },
+    "normality": "Not applicable: the source outcomes are binary; whole-cluster bootstrap intervals and exact cluster sign-flip tests do not require normally distributed 0/1 observations.",
+    "interpretation_boundaries": [
+      "The labels were requester-specified for this post-hoc report update and describe these four fixed models; the model group itself was not randomly sampled.",
+      "The group p-values quantify benchmark-question evidence for these exact models, not a population-level large-versus-small or open-versus-proprietary model-class effect.",
+      "No small proprietary model was tested, so size and model access are not a complete factorial design and cannot be separated as general causal attributes.",
+      "Open-model is an analytical grouping label, not an adjudication of software-license terms."
+    ]
+  },
+  "primary_openrouter_a_vs_b": {
+    "population": {
+      "cells": 1271,
+      "items": 318,
+      "clusters": 201
+    },
+    "by_model_and_pooled": {
+      "gemini-3.6-flash": {
+        "n": 318,
+        "left_correct": 311,
+        "right_correct": 284,
+        "left_accuracy": 0.9779874213836478,
+        "right_accuracy": 0.8930817610062893,
+        "risk_difference_right_minus_left": -0.08490566037735849,
+        "left_only": 31,
+        "right_only": 4,
+        "exact_mcnemar_p_iid_pairs": 3.4654513001441956e-06
+      },
+      "glm-5.2": {
+        "n": 317,
+        "left_correct": 295,
+        "right_correct": 237,
+        "left_accuracy": 0.9305993690851735,
+        "right_accuracy": 0.7476340694006309,
+        "risk_difference_right_minus_left": -0.1829652996845426,
+        "left_only": 66,
+        "right_only": 8,
+        "exact_mcnemar_p_iid_pairs": 1.8077410513282367e-12
+      },
+      "qwen3.6-35b-a3b": {
+        "n": 318,
+        "left_correct": 281,
+        "right_correct": 231,
+        "left_accuracy": 0.8836477987421384,
+        "right_accuracy": 0.7264150943396226,
+        "risk_difference_right_minus_left": -0.15723270440251572,
+        "left_only": 65,
+        "right_only": 15,
+        "exact_mcnemar_p_iid_pairs": 1.4114668409813958e-08
+      },
+      "gemma-4-26b-a4b-it": {
+        "n": 318,
+        "left_correct": 251,
+        "right_correct": 189,
+        "left_accuracy": 0.789308176100629,
+        "right_accuracy": 0.5943396226415094,
+        "risk_difference_right_minus_left": -0.1949685534591195,
+        "left_only": 80,
+        "right_only": 18,
+        "exact_mcnemar_p_iid_pairs": 1.6606697571045604e-10
+      },
+      "pooled": {
+        "n": 1271,
+        "left_correct": 1138,
+        "right_correct": 941,
+        "left_accuracy": 0.8953579858379229,
+        "right_accuracy": 0.7403619197482297,
+        "risk_difference_right_minus_left": -0.15499606608969316,
+        "left_only": 242,
+        "right_only": 45,
+        "exact_mcnemar_p_iid_pairs": 8.679921143805341e-34
+      }
+    },
+    "holm_adjusted_exact_mcnemar_p": {
+      "glm-5.2": 7.230964205312947e-12,
+      "gemma-4-26b-a4b-it": 4.982009271313681e-10,
+      "qwen3.6-35b-a3b": 2.8229336819627916e-08,
+      "gemini-3.6-flash": 3.4654513001441956e-06
+    },
+    "exact_cluster_signflip": {
+      "gemini-3.6-flash": {
+        "observed_net_right_minus_left": -27,
+        "clusters_total": 201,
+        "clusters_nonzero": 32,
+        "p_two_sided": 1.5100464224815369e-05,
+        "null_variance": 43,
+        "independent_pair_variance": 35,
+        "design_effect_vs_iid_discordances": 1.2285714285714286
+      },
+      "glm-5.2": {
+        "observed_net_right_minus_left": -58,
+        "clusters_total": 200,
+        "clusters_nonzero": 60,
+        "p_two_sided": 5.276802952924875e-11,
+        "null_variance": 100,
+        "independent_pair_variance": 74,
+        "design_effect_vs_iid_discordances": 1.3513513513513513
+      },
+      "qwen3.6-35b-a3b": {
+        "observed_net_right_minus_left": -50,
+        "clusters_total": 201,
+        "clusters_nonzero": 61,
+        "p_two_sided": 1.7958071143325816e-07,
+        "null_variance": 110,
+        "independent_pair_variance": 80,
+        "design_effect_vs_iid_discordances": 1.375
+      },
+      "gemma-4-26b-a4b-it": {
+        "observed_net_right_minus_left": -62,
+        "clusters_total": 201,
+        "clusters_nonzero": 73,
+        "p_two_sided": 3.1371789800888684e-07,
+        "null_variance": 198,
+        "independent_pair_variance": 98,
+        "design_effect_vs_iid_discordances": 2.020408163265306
+      },
+      "pooled": {
+        "observed_net_right_minus_left": -197,
+        "clusters_total": 201,
+        "clusters_nonzero": 114,
+        "p_two_sided": 1.9471510524927755e-15,
+        "null_variance": 1083,
+        "independent_pair_variance": 287,
+        "design_effect_vs_iid_discordances": 3.773519163763066
+      }
+    },
+    "holm_adjusted_exact_cluster_signflip_p": {
+      "glm-5.2": 2.11072118116995e-10,
+      "qwen3.6-35b-a3b": 5.387421342997745e-07,
+      "gemma-4-26b-a4b-it": 6.274357960177737e-07,
+      "gemini-3.6-flash": 1.5100464224815369e-05
+    },
+    "cluster_bootstrap": {
+      "method": "whole-clinical-cluster percentile bootstrap of the ratio estimator",
+      "seed": 20260731,
+      "replicates": 100000,
+      "clusters": 201,
+      "estimates": {
+        "gemini-3.6-flash": {
+          "ci95": [
+            -0.12258064516129032,
+            -0.05013927576601671
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.16887417218543047,
+            "q1": -0.09732360097323602,
+            "median": -0.0847953216374269,
+            "q3": -0.07268170426065163,
+            "maximum": -0.016129032258064516
+          },
+          "bootstrap_se": 0.018412131134112858,
+          "nonnegative_replicates": 0
+        },
+        "glm-5.2": {
+          "ci95": [
+            -0.23333333333333334,
+            -0.13740458015267176
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.304029304029304,
+            "q1": -0.19943019943019943,
+            "median": -0.1829652996845426,
+            "q3": -0.16716417910447762,
+            "maximum": -0.08461538461538462
+          },
+          "bootstrap_se": 0.024417312864069517,
+          "nonnegative_replicates": 0
+        },
+        "qwen3.6-35b-a3b": {
+          "ci95": [
+            -0.20689655172413793,
+            -0.10749185667752444
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.2771929824561403,
+            "q1": -0.17417417417417416,
+            "median": -0.1574074074074074,
+            "q3": -0.1404109589041096,
+            "maximum": -0.0379746835443038
+          },
+          "bootstrap_se": 0.02525571338774912,
+          "nonnegative_replicates": 0
+        },
+        "gemma-4-26b-a4b-it": {
+          "ci95": [
+            -0.2606060606060606,
+            -0.128125
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.3310580204778157,
+            "q1": -0.21766561514195584,
+            "median": -0.1948529411764706,
+            "q3": -0.17210682492581603,
+            "maximum": -0.04905660377358491
+          },
+          "bootstrap_se": 0.03376008470656983,
+          "nonnegative_replicates": 0
+        },
+        "pooled": {
+          "ci95": [
+            -0.18777946715620703,
+            -0.12389380530973451
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.2310502283105023,
+            "q1": -0.16596013116515584,
+            "median": -0.15502183406113537,
+            "q3": -0.14425427872860636,
+            "maximum": -0.07781456953642384
+          },
+          "bootstrap_se": 0.01630872101873037,
+          "nonnegative_replicates": 0
+        }
+      }
+    },
+    "kish_cluster_count": {
+      "nominal_clusters": 201,
+      "effective_clusters": 50.90087279831112,
+      "largest_cluster_cells": 80
+    },
+    "audited_secondary_models": {
+      "model_adjusted_logistic_or": {
+        "estimate": 0.313693,
+        "ci95": [
+          0.246654,
+          0.398952
+        ],
+        "p_cluster_robust": 3.356e-21,
+        "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+      },
+      "within_item_conditional_logistic_or": {
+        "estimate": 0.20865,
+        "ci95": [
+          0.1502,
+          0.28983
+        ],
+        "p_cluster_robust": 9.135e-21,
+        "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+      }
+    },
+    "audited_heterogeneity": {
+      "risk_difference_cluster_wald_p": 0.000293,
+      "conditional_logit_interaction_lrt_p": 0.2009,
+      "conditional_logit_interaction_cluster_wald_p": 0.1227,
+      "marginal_logit_interaction_cluster_wald_p": 0.0438,
+      "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+    }
+  },
+  "sensitivity": {
+    "exclusion_grid": {
+      "none": {
+        "cells": 1691,
+        "items": 423,
+        "clusters": 281,
+        "risk_difference_B_minus_A": -0.1732702542874039,
+        "ci95": [
+          -0.20387100448232787,
+          -0.1443850267379679
+        ]
+      },
+      "item_defects_only": {
+        "cells": 1615,
+        "items": 404,
+        "clusters": 263,
+        "risk_difference_B_minus_A": -0.16904024767801856,
+        "ci95": [
+          -0.20021249843509456,
+          -0.13955071477195372
+        ]
+      },
+      "nota_position_a_only": {
+        "cells": 1327,
+        "items": 332,
+        "clusters": 214,
+        "risk_difference_B_minus_A": -0.15749811605124342,
+        "ci95": [
+          -0.18906810035842295,
+          -0.12684548473119092
+        ]
+      },
+      "both_reported": {
+        "cells": 1271,
+        "items": 318,
+        "clusters": 201,
+        "risk_difference_B_minus_A": -0.15499606608969316,
+        "ci95": [
+          -0.1875,
+          -0.12348484848484849
+        ]
+      }
+    },
+    "position_a_descriptive": {
+      "position_a": {
+        "n": 344,
+        "left_correct": 313,
+        "right_correct": 237,
+        "left_accuracy": 0.9098837209302325,
+        "right_accuracy": 0.688953488372093,
+        "risk_difference_right_minus_left": -0.22093023255813954,
+        "left_only": 85,
+        "right_only": 9,
+        "exact_mcnemar_p_iid_pairs": 1.1976554450525877e-16
+      },
+      "other_positions": {
+        "n": 1271,
+        "left_correct": 1138,
+        "right_correct": 941,
+        "left_accuracy": 0.8953579858379229,
+        "right_accuracy": 0.7403619197482297,
+        "risk_difference_right_minus_left": -0.15499606608969316,
+        "left_only": 242,
+        "right_only": 45,
+        "exact_mcnemar_p_iid_pairs": 8.679921143805341e-34
+      },
+      "difference_in_risk_differences": -0.06593416646844638,
+      "audited_cleaned_interaction": {
+        "ci95": [
+          -0.1338,
+          0.00263
+        ],
+        "exact_item_label_permutation_p": 0.0631,
+        "source": "qa_workflows/QA05_SENSITIVITY.md"
+      }
+    },
+    "leave_one_out_reported_set": {
+      "cluster": {
+        "refits": 201,
+        "minimum": -0.16055419722901385,
+        "maximum": -0.14995990376904572
+      },
+      "question_id": {
+        "refits": 318,
+        "minimum": -0.15864246250986583,
+        "maximum": -0.15232833464877663
+      },
+      "model": {
+        "refits": 4,
+        "minimum": -0.1783840503672613,
+        "maximum": -0.1416579223504722
+      }
+    }
+  },
+  "cross_arm_gift_vs_openrouter_a": {
+    "estimand": "GIFT minus OpenRouter accuracy on the all-four-model completed condition-A subset",
+    "population": {
+      "cells": 1224,
+      "items": 306,
+      "clusters": 178
+    },
+    "by_model_and_pooled": {
+      "gemini-3.6-flash": {
+        "n": 306,
+        "left_correct": 301,
+        "right_correct": 298,
+        "left_accuracy": 0.9836601307189542,
+        "right_accuracy": 0.9738562091503268,
+        "risk_difference_right_minus_left": -0.00980392156862745,
+        "left_only": 3,
+        "right_only": 0,
+        "exact_mcnemar_p_iid_pairs": 0.25
+      },
+      "glm-5.2": {
+        "n": 306,
+        "left_correct": 285,
+        "right_correct": 295,
+        "left_accuracy": 0.9313725490196079,
+        "right_accuracy": 0.9640522875816994,
+        "risk_difference_right_minus_left": 0.032679738562091505,
+        "left_only": 1,
+        "right_only": 11,
+        "exact_mcnemar_p_iid_pairs": 0.00634765625
+      },
+      "qwen3.6-35b-a3b": {
+        "n": 306,
+        "left_correct": 282,
+        "right_correct": 281,
+        "left_accuracy": 0.9215686274509803,
+        "right_accuracy": 0.9183006535947712,
+        "risk_difference_right_minus_left": -0.0032679738562091504,
+        "left_only": 12,
+        "right_only": 11,
+        "exact_mcnemar_p_iid_pairs": 1.0
+      },
+      "gemma-4-26b-a4b-it": {
+        "n": 306,
+        "left_correct": 253,
+        "right_correct": 270,
+        "left_accuracy": 0.826797385620915,
+        "right_accuracy": 0.8823529411764706,
+        "risk_difference_right_minus_left": 0.05555555555555555,
+        "left_only": 7,
+        "right_only": 24,
+        "exact_mcnemar_p_iid_pairs": 0.003326892852783203
+      },
+      "pooled": {
+        "n": 1224,
+        "left_correct": 1121,
+        "right_correct": 1144,
+        "left_accuracy": 0.9158496732026143,
+        "right_accuracy": 0.934640522875817,
+        "risk_difference_right_minus_left": 0.018790849673202614,
+        "left_only": 23,
+        "right_only": 46,
+        "exact_mcnemar_p_iid_pairs": 0.007620521855025697
+      }
+    },
+    "holm_adjusted_exact_mcnemar_p": {
+      "gemma-4-26b-a4b-it": 0.013307571411132812,
+      "glm-5.2": 0.01904296875,
+      "gemini-3.6-flash": 0.5,
+      "qwen3.6-35b-a3b": 1.0
+    },
+    "exact_cluster_signflip": {
+      "gemini-3.6-flash": {
+        "observed_net_right_minus_left": -3,
+        "clusters_total": 178,
+        "clusters_nonzero": 3,
+        "p_two_sided": 0.25,
+        "null_variance": 3,
+        "independent_pair_variance": 3,
+        "design_effect_vs_iid_discordances": 1.0
+      },
+      "glm-5.2": {
+        "observed_net_right_minus_left": 10,
+        "clusters_total": 178,
+        "clusters_nonzero": 11,
+        "p_two_sided": 0.0107421875,
+        "null_variance": 14,
+        "independent_pair_variance": 12,
+        "design_effect_vs_iid_discordances": 1.1666666666666667
+      },
+      "qwen3.6-35b-a3b": {
+        "observed_net_right_minus_left": -1,
+        "clusters_total": 178,
+        "clusters_nonzero": 18,
+        "p_two_sided": 1.0,
+        "null_variance": 21,
+        "independent_pair_variance": 23,
+        "design_effect_vs_iid_discordances": 0.9130434782608695
+      },
+      "gemma-4-26b-a4b-it": {
+        "observed_net_right_minus_left": 17,
+        "clusters_total": 178,
+        "clusters_nonzero": 28,
+        "p_two_sided": 0.006998538970947266,
+        "null_variance": 37,
+        "independent_pair_variance": 31,
+        "design_effect_vs_iid_discordances": 1.1935483870967742
+      },
+      "pooled": {
+        "observed_net_right_minus_left": 23,
+        "clusters_total": 178,
+        "clusters_nonzero": 40,
+        "p_two_sided": 0.020563861731716315,
+        "null_variance": 93,
+        "independent_pair_variance": 69,
+        "design_effect_vs_iid_discordances": 1.3478260869565217
+      }
+    },
+    "holm_adjusted_exact_cluster_signflip_p": {
+      "gemma-4-26b-a4b-it": 0.027994155883789062,
+      "glm-5.2": 0.0322265625,
+      "gemini-3.6-flash": 0.5,
+      "qwen3.6-35b-a3b": 1.0
+    },
+    "cluster_bootstrap": {
+      "method": "whole-clinical-cluster percentile bootstrap of the ratio estimator",
+      "seed": 20261731,
+      "replicates": 100000,
+      "clusters": 178,
+      "estimates": {
+        "gemini-3.6-flash": {
+          "ci95": [
+            -0.02422145328719723,
+            0.0
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.05319148936170213,
+            "q1": -0.013636363636363636,
+            "median": -0.009287925696594427,
+            "q3": -0.005865102639296188,
+            "maximum": 0.0
+          },
+          "bootstrap_se": 0.006112607955297195,
+          "nonnegative_replicates": 4733
+        },
+        "glm-5.2": {
+          "ci95": [
+            0.011235955056179775,
+            0.057971014492753624
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.010676156583629894,
+            "q1": 0.024691358024691357,
+            "median": 0.03225806451612903,
+            "q3": 0.04054054054054054,
+            "maximum": 0.10382513661202186
+          },
+          "bootstrap_se": 0.011905258486188857,
+          "nonnegative_replicates": 99948
+        },
+        "qwen3.6-35b-a3b": {
+          "ci95": [
+            -0.03426791277258567,
+            0.026755852842809364
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.08196721311475409,
+            "q1": -0.013623978201634877,
+            "median": -0.003389830508474576,
+            "q3": 0.006666666666666667,
+            "maximum": 0.0761904761904762
+          },
+          "bootstrap_se": 0.015454156381726787,
+          "nonnegative_replicates": 45213
+        },
+        "gemma-4-26b-a4b-it": {
+          "ci95": [
+            0.01968503937007874,
+            0.09274193548387097
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.032846715328467155,
+            "q1": 0.043596730245231606,
+            "median": 0.055710306406685235,
+            "q3": 0.06779661016949153,
+            "maximum": 0.1527777777777778
+          },
+          "bootstrap_se": 0.01850353928419643,
+          "nonnegative_replicates": 99868
+        },
+        "pooled": {
+          "ci95": [
+            0.0043859649122807015,
+            0.033536778326643986
+          ],
+          "bootstrap_boxplot": {
+            "minimum": -0.017287234042553192,
+            "q1": 0.013888888888888888,
+            "median": 0.018691588785046728,
+            "q3": 0.023615635179153095,
+            "maximum": 0.05930232558139535
+          },
+          "bootstrap_se": 0.007371915098640528,
+          "nonnegative_replicates": 99503
+        }
+      }
+    },
+    "audited_partial_coverage": {
+      "risk_difference_heterogeneity_f": 7.0757,
+      "risk_difference_heterogeneity_df": [
+        3,
+        177
+      ],
+      "risk_difference_heterogeneity_p": 0.0001616,
+      "full_clean_target_manski_bound": [
+        -0.214602,
+        0.054204
+      ],
+      "source": "qa_workflows/QA06_CROSS_ARM.md"
+    }
+  },
+  "run_status": {
+    "expA_or_310726": {
+      "planned_cells": 1896,
+      "logical_calls_created": 1896,
+      "distinct_calls_attempted": 1896,
+      "scored_cells": 1895,
+      "attempts": 1930,
+      "failed_attempts": 0,
+      "scored_fraction_of_planned": 0.9994725738396625
+    },
+    "expB_or_310726": {
+      "planned_cells": 1692,
+      "logical_calls_created": 1692,
+      "distinct_calls_attempted": 1692,
+      "scored_cells": 1692,
+      "attempts": 1745,
+      "failed_attempts": 0,
+      "scored_fraction_of_planned": 1.0
+    },
+    "expA_gift_310726": {
+      "planned_cells": 1896,
+      "logical_calls_created": 1566,
+      "distinct_calls_attempted": 1565,
+      "scored_cells": 1384,
+      "attempts": 1582,
+      "failed_attempts": 196,
+      "scored_fraction_of_planned": 0.729957805907173
+    },
+    "expB_gift_310726": {
+      "planned_cells": 1692,
+      "logical_calls_created": 0,
+      "distinct_calls_attempted": 0,
+      "scored_cells": 0,
+      "attempts": 0,
+      "failed_attempts": 0,
+      "scored_fraction_of_planned": 0.0
+    }
+  },
+  "interpretation_boundaries": [
+    "The observed A/B contrast bundles answer removal, semantics, genre, phrase repetition, position, run time, and unpinned routing; it does not isolate memorisation.",
+    "GIFT condition B was never run, so no GIFT-pipeline A/B substitution contrast exists.",
+    "GIFT condition A coverage is a sequential partial subset; the full-target pipeline difference is not identified without assumptions.",
+    "Binary correctness is Bernoulli; normality tests on the raw endpoint are inapplicable.",
+    "Requested size and model-access group contrasts describe four fixed deployments and do not identify population-level model-class effects."
+  ]
+}

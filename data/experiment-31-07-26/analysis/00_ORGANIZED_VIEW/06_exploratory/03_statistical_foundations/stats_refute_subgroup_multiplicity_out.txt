@@ -1,0 +1,180 @@
+==============================================================================
+RECOMPUTATION: per-model subgroup sweep
+==============================================================================
+records analysis_include=true : 1299
+models                        : 4
+items                         : 325
+clusters                      : 208
+levels per factor: correct_letter=3, negated_stem=2, has_context=2, region=11, year=7
+implied per-model subgroup tests = 25 x 4 = 100
+max |p_float - p_exactrational| over all subgroup tests = 2.331e-15  (agree)
+
+HEADLINE COUNTS (recomputed):
+  tests runnable ............................. 100   (claim: 100)
+  estimable (>=1 discordant pair) ............ 99   (claim: 99)
+  cells with n < 30 .......................... 56   (claim: 56)
+  nominally significant p<.05 ................ 49   (claim: 49)
+  survive Holm in subgroup family ............ 20   (claim: 20)
+  survive BH   in subgroup family ............ 39   (claim: 39)
+  Holm casualties = 49-20 = 29   (claim: 29)
+  BH   casualties = 49-39 = 10   (claim: 10)
+  all Holm survivors nominal? True
+  all BH survivors nominal?   True
+
+PER-FACTOR BREAKDOWN (recomputed):
+factor           tests   medn  minn  maxn med_disc min_disc  nomin  holm   bh BHkill  n<30
+correct_letter      12  113.0    87   124     26.5       10     11     4   10      1     0
+negated_stem         8  162.0    84   241     25.5       11      8     5    7      1     0
+has_context          8  162.0   138   187     35.5       11      8     7    8      0     0
+region              44   25.0    11   106      6.0        1     14     1    8      6    40
+year                28   28.0     6   186      6.0        0      8     3    6      2    16
+
+CROSS-TAB: cell size vs significance
+  n<30  : 56 cells, 13 nominal, 7 BH-survive   (claim: 13 nominal / 7 BH)
+  n>=30 : 44 cells, 36 nominal, 32 BH-survive
+
+STRUCTURAL POWER, done correctly (exact McNemar power depends on the number
+of DISCORDANT pairs b+c, not on n):
+  smallest b+c for which two-sided exact McNemar can EVER reach p<.05 = 6
+  cells with b+c < 6 (cannot reach p<.05 under ANY split) : 33 / 100
+  cells with n<30 that ARE nevertheless significant             : 13
+  cells with n>=30 that have b+c < 6                          : 1
+  cells with n<30  that have b+c >= 6                         : 24
+  discordant-pair distribution over the 100 cells:
+    b+c=0:1, b+c=1:3, b+c=2:15, b+c=3:7, b+c=4:3, b+c=5:4, b+c=6:6, b+c=7:8, b+c=8:7, b+c=9:2, b+c=10:5, b+c=11:4 ...
+    median b+c = 8.0, min = 0, max = 80
+
+IS 49/100 A MULTIPLICITY PROBLEM OR A LARGE TRUE EFFECT?
+  Under a global null (no A-vs-B difference anywhere) the expected number of
+  nominal hits in 100 tests is 5.0.  Observed = 49.
+  Storey pi0 estimate at lambda=0.5: 16 p-values > 0.5 -> pi0_hat = 0.320  (est. true nulls ~ 32)
+  Storey pi0 estimate at lambda=0.6: 16 p-values > 0.6 -> pi0_hat = 0.400  (est. true nulls ~ 40)
+  Storey pi0 estimate at lambda=0.7: 15 p-values > 0.7 -> pi0_hat = 0.500  (est. true nulls ~ 50)
+  => the subgroup family is dominated by TRUE alternatives, which is exactly
+     the regime where Holm/FWER is the wrong yardstick and BH is right.
+
+ARE THE 100 TESTS 100 INDEPENDENT PIECES OF EVIDENCE?  No -- each factor
+re-partitions the SAME cells:
+  correct_letter   model=gemini-3.6-flash   sum of level-cell n = 325 (= that model's full n)
+  negated_stem     model=gemini-3.6-flash   sum of level-cell n = 325 (= that model's full n)
+  has_context      model=gemini-3.6-flash   sum of level-cell n = 325 (= that model's full n)
+  region           model=gemini-3.6-flash   sum of level-cell n = 325 (= that model's full n)
+  year             model=gemini-3.6-flash   sum of level-cell n = 325 (= that model's full n)
+  So the 5 factors are 5 complete re-slicings of one dataset; the region and
+  year 'tests' re-test the same discordant pairs already counted under
+  correct_letter / negated_stem / has_context.
+
+WHERE DO THE BH CASUALTIES ACTUALLY LIVE?
+  correct_letter   nominal=11  BH-survive=10  killed= 1
+  negated_stem     nominal= 8  BH-survive= 7  killed= 1
+  has_context      nominal= 8  BH-survive= 8  killed= 0
+  region           nominal=14  BH-survive= 8  killed= 6
+  year             nominal= 8  BH-survive= 6  killed= 2
+  total killed = 10
+
+COUNTERFACTUAL: the recommendation says drop region+year and report BH.
+  retained family m = 28
+  nominal in retained family ............ 27
+  BH survivors when corrected in m=28 ... 27
+  BH survivors when corrected in m=100 .. 25
+  Holm survivors when corrected in m=28 . 21
+  -> dropping region+year does not 'fix' anything statistically; it SHRINKS
+     the family so the surviving tests get an easier threshold.  Selecting
+     which sub-families to report after seeing which ones lost survivors is
+     itself a forking path.
+
+STRONGEST SUBGROUP FINDINGS (recomputed, BH within m=100):
+  factor          level                  model                           n   b   c   delta      p_raw         BH       Holm
+  negated_stem    False                  z-ai/glm-5.2                  240  51   5  0.1917  1.170e-10  1.170e-08  1.170e-08
+  negated_stem    False                  google/gemma-4-26b-a4b-it     241  67  13  0.2241  6.415e-10  3.208e-08  6.351e-08
+  correct_letter  b                      google/gemma-4-26b-a4b-it     113  35   1  0.3009  1.077e-09  3.589e-08  1.055e-07
+  year            2022                   google/gemma-4-26b-a4b-it     186  51   7  0.2366  2.402e-09  6.005e-08  2.330e-07
+  year            2022                   z-ai/glm-5.2                  185  36   3  0.1784  3.609e-08  7.218e-07  3.465e-06
+  has_context     False                  z-ai/glm-5.2                  186  40   5  0.1882  7.878e-08  1.313e-06  7.484e-06
+  has_context     True                   google/gemma-4-26b-a4b-it     138  34   5  0.2101  2.430e-06  3.471e-05  2.284e-04
+  correct_letter  b                      z-ai/glm-5.2                  113  23   1  0.1947  2.980e-06  3.725e-05  2.772e-04
+  has_context     False                  qwen/qwen3.6-35b-a3b          187  41   9  0.1711  5.614e-06  6.238e-05  5.165e-04
+  has_context     False                  google/gemma-4-26b-a4b-it     187  48  13  0.1872  7.665e-06  7.249e-05  6.975e-04
+
+REGION CELL DETAIL (all 44):
+  level                  model                     n   b   c   delta          p         BH  sig
+  Andalucía              gemini-3.6-flash         26   2   0  0.0769  5.000e-01  5.952e-01    -
+  Andalucía              gemma-4-26b-a4b-it       26   4   5 -0.0385  1.000e+00  1.000e+00    -
+  Andalucía              qwen3.6-35b-a3b          26   4   1  0.1154  3.750e-01  5.357e-01    -
+  Andalucía              glm-5.2                  26   9   1  0.3077  2.148e-02  5.115e-02  nom
+  Aragón                 gemini-3.6-flash         26   7   0  0.2692  1.563e-02  4.112e-02   BH
+  Aragón                 gemma-4-26b-a4b-it       26   4   0  0.1538  1.250e-01  2.155e-01    -
+  Aragón                 qwen3.6-35b-a3b          26   5   0  0.1923  6.250e-02  1.179e-01    -
+  Aragón                 glm-5.2                  26   7   0  0.2692  1.563e-02  4.112e-02   BH
+  Castilla y León        gemini-3.6-flash         11   1   0  0.0909  1.000e+00  1.000e+00    -
+  Castilla y León        gemma-4-26b-a4b-it       11   5   0  0.4545  6.250e-02  1.179e-01    -
+  Castilla y León        qwen3.6-35b-a3b          11   3   0  0.2727  2.500e-01  3.846e-01    -
+  Castilla y León        glm-5.2                  11   2   0  0.1818  5.000e-01  5.952e-01    -
+  Castilla-La Mancha     gemini-3.6-flash         25   2   0  0.0800  5.000e-01  5.952e-01    -
+  Castilla-La Mancha     gemma-4-26b-a4b-it       25   6   2  0.1600  2.891e-01  4.251e-01    -
+  Castilla-La Mancha     qwen3.6-35b-a3b          25   6   0  0.2400  3.125e-02  6.649e-02  nom
+  Castilla-La Mancha     glm-5.2                  25   7   0  0.2800  1.563e-02  4.112e-02   BH
+  Comunidad de Madrid    gemini-3.6-flash         23   2   2  0.0000  1.000e+00  1.000e+00    -
+  Comunidad de Madrid    gemma-4-26b-a4b-it       23   6   1  0.2174  1.250e-01  2.155e-01    -
+  Comunidad de Madrid    qwen3.6-35b-a3b          23   4   3  0.0435  1.000e+00  1.000e+00    -
+  Comunidad de Madrid    glm-5.2                  23   4   2  0.0870  6.875e-01  8.088e-01    -
+  Comunitat Valenciana   gemini-3.6-flash         17   1   1  0.0000  1.000e+00  1.000e+00    -
+  Comunitat Valenciana   gemma-4-26b-a4b-it       17   8   0  0.4706  7.813e-03  2.367e-02   BH
+  Comunitat Valenciana   qwen3.6-35b-a3b          17   6   0  0.3529  3.125e-02  6.649e-02  nom
+  Comunitat Valenciana   glm-5.2                  16   4   0  0.2500  1.250e-01  2.155e-01    -
+  Galicia                gemini-3.6-flash         25   2   0  0.0800  5.000e-01  5.952e-01    -
+  Galicia                gemma-4-26b-a4b-it       25   6   2  0.1600  2.891e-01  4.251e-01    -
+  Galicia                qwen3.6-35b-a3b          25   5   3  0.0800  7.266e-01  8.351e-01    -
+  Galicia                glm-5.2                  25   6   0  0.2400  3.125e-02  6.649e-02  nom
+  Illes Balears          gemini-3.6-flash        106   8   1  0.0660  3.906e-02  8.138e-02  nom
+  Illes Balears          gemma-4-26b-a4b-it      106  23   3  0.1887  8.798e-05  5.865e-04   BH
+  Illes Balears          qwen3.6-35b-a3b         106  19   4  0.1415  2.599e-03  9.628e-03   BH
+  Illes Balears          glm-5.2                 106  16   2  0.1321  1.312e-03  5.965e-03   BH
+  La Rioja               gemini-3.6-flash         21   3   0  0.1429  2.500e-01  3.846e-01    -
+  La Rioja               gemma-4-26b-a4b-it       21   5   3  0.0952  7.266e-01  8.351e-01    -
+  La Rioja               qwen3.6-35b-a3b          21   5   2  0.1429  4.531e-01  5.952e-01    -
+  La Rioja               glm-5.2                  21   1   1  0.0000  1.000e+00  1.000e+00    -
+  Navarra                gemini-3.6-flash         29   2   0  0.0690  5.000e-01  5.952e-01    -
+  Navarra                gemma-4-26b-a4b-it       29  13   1  0.4138  1.831e-03  7.512e-03   BH
+  Navarra                qwen3.6-35b-a3b          29   5   2  0.1034  4.531e-01  5.952e-01    -
+  Navarra                glm-5.2                  29   9   1  0.2759  2.148e-02  5.115e-02  nom
+  Región de Murcia       gemini-3.6-flash         16   1   0  0.0625  1.000e+00  1.000e+00    -
+  Región de Murcia       gemma-4-26b-a4b-it       16   2   1  0.0625  1.000e+00  1.000e+00    -
+  Región de Murcia       qwen3.6-35b-a3b          16   5   0  0.3125  6.250e-02  1.179e-01    -
+  Región de Murcia       glm-5.2                  16   2   1  0.0625  1.000e+00  1.000e+00    -
+
+YEAR CELL DETAIL (all 28):
+  2016                   gemini-3.6-flash          8   2   0  0.2500  5.000e-01  5.952e-01    -
+  2016                   gemma-4-26b-a4b-it        8   2   0  0.2500  5.000e-01  5.952e-01    -
+  2016                   qwen3.6-35b-a3b           8   2   0  0.2500  5.000e-01  5.952e-01    -
+  2016                   glm-5.2                   8   3   0  0.3750  2.500e-01  3.846e-01    -
+  2017                   gemini-3.6-flash         28   6   0  0.2143  3.125e-02  6.649e-02  nom
+  2017                   gemma-4-26b-a4b-it       28   6   1  0.1786  1.250e-01  2.155e-01    -
+  2017                   qwen3.6-35b-a3b          28   8   0  0.2857  7.813e-03  2.367e-02   BH
+  2017                   glm-5.2                  28  10   0  0.3571  1.953e-03  7.512e-03   BH
+  2019                   gemini-3.6-flash         34   2   0  0.0588  5.000e-01  5.952e-01    -
+  2019                   gemma-4-26b-a4b-it       34   9   2  0.2059  6.543e-02  1.212e-01    -
+  2019                   qwen3.6-35b-a3b          34  10   0  0.2941  1.953e-03  7.512e-03   BH
+  2019                   glm-5.2                  34   5   1  0.1176  2.188e-01  3.646e-01    -
+  2020                   gemini-3.6-flash         11   3   0  0.2727  2.500e-01  3.846e-01    -
+  2020                   gemma-4-26b-a4b-it       11   2   0  0.1818  5.000e-01  5.952e-01    -
+  2020                   qwen3.6-35b-a3b          11   2   0  0.1818  5.000e-01  5.952e-01    -
+  2020                   glm-5.2                  11   3   0  0.2727  2.500e-01  3.846e-01    -
+  2021                   gemini-3.6-flash         52   6   2  0.0769  2.891e-01  4.251e-01    -
+  2021                   gemma-4-26b-a4b-it       52  11   7  0.0769  4.807e-01  5.952e-01    -
+  2021                   qwen3.6-35b-a3b          52  10   5  0.0962  3.018e-01  4.373e-01    -
+  2021                   glm-5.2                  52  10   4  0.1154  1.796e-01  3.043e-01    -
+  2022                   gemini-3.6-flash        186  11   2  0.0484  2.246e-02  5.223e-02  nom
+  2022                   gemma-4-26b-a4b-it      186  51   7  0.2366  2.402e-09  6.005e-08   BH
+  2022                   qwen3.6-35b-a3b         186  34   9  0.1344  1.702e-04  1.063e-03   BH
+  2022                   glm-5.2                 185  36   3  0.1784  3.609e-08  7.218e-07   BH
+  2024                   gemini-3.6-flash          6   1   0  0.1667  1.000e+00  1.000e+00    -
+  2024                   gemma-4-26b-a4b-it        6   1   1  0.0000  1.000e+00  1.000e+00    -
+  2024                   qwen3.6-35b-a3b           6   1   1  0.0000  1.000e+00  1.000e+00    -
+  2024                   glm-5.2                   6   0   0  0.0000  1.000e+00  1.000e+00    -
+
+DO REGION / YEAR CELLS ACTUALLY SHOW HETEROGENEITY, OR JUST THE SAME EFFECT?
+  region  : delta>0 in 40/44 cells, <0 in 1, =0 in 3
+           sign test on cell-level direction: k=40/41, exact p=3.820e-11
+  year    : delta>0 in 25/28 cells, <0 in 0, =0 in 3
+           sign test on cell-level direction: k=25/25, exact p=5.960e-08

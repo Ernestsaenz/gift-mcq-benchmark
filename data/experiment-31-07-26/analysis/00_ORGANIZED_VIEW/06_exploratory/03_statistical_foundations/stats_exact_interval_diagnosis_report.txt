@@ -1,0 +1,22 @@
+==================================================================================================
+ANALYTIC variance-ratio  Var(RD)_true / Var(RD)_conditional-exact   (iid pairs, no clustering)
+==================================================================================================
+stratum                       pi_d     2p-1  var ratio  SE ratio  -> exact CI too narrow by
+POOLED                      0.2248  -0.6918      1.711     1.308                      23.6%
+google/gemini-3.6-flash     0.1077  -0.7714      2.311     1.520                      34.2%
+google/gemma-4-26b-a4b-it   0.3077  -0.6400      1.480     1.217                      17.8%
+qwen/qwen3.6-35b-a3b        0.2523  -0.6341      1.503     1.226                      18.4%
+z-ai/glm-5.2                0.2315  -0.7867      2.248     1.499                      33.3%
+
+==================================================================================================
+SIMULATED coverage of the exact (Clopper-Pearson) interval for p10 -- the scale the OR and Cohen g live on
+(4000 sims per stratum, same calibrated cluster models)
+==================================================================================================
+stratum                     rho_dir  p10_true  cov_p10_exact  mean width
+POOLED                        0.253    0.1541          0.819      0.0855
+google/gemini-3.6-flash       0.282    0.1143          0.958      0.2297
+google/gemma-4-26b-a4b-it     0.383    0.1800          0.898      0.1573
+qwen/qwen3.6-35b-a3b          0.000    0.1829          0.959      0.1766
+z-ai/glm-5.2                  0.000    0.1067          0.970      0.1506
+
+nominal 0.950; MC SE at 0.95 with 4000 sims = 0.0034

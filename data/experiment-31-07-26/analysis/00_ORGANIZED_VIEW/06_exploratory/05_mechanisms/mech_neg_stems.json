@@ -1,0 +1,1910 @@
+[
+ {
+  "qid": "b2",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en relación con los factores de riesgo del cáncer colorrectal:"
+ },
+ {
+  "qid": "b4",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta en relación con el cáncer colorrectal (CCR):"
+ },
+ {
+  "qid": "b5",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El paciente descrito inicialmente no presenta ningún tipo de sintomatología. Señale la respuesta correcta en relación con el programa de cribado del cáncer de colon:"
+ },
+ {
+  "qid": "b6",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Una vez incluido en el programa de cribado se hace la determinación de sangre oculta en heces (SOH) inmunológica cuantitativa, que resulta positiva. Señale la respuesta correcta:"
+ },
+ {
+  "qid": "b7",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en relación con la calidad de las endoscopias del programa de cribado:"
+ },
+ {
+  "qid": "b9",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Se repite la colonoscopia y se objetiva la presencia de un pólipo único pediculado de 15 mm a 30 cm del margen anal. La colonoscopia es completa hasta el ciego, con 9 puntos en la escala de Boston. Se hace una polipectomía con una resección completa del pólipo con su pedículo. En el estudio histológico se describe un adenoma tubulovelloso con displasia de alto grado focal estrictamente superficial, con márgenes de resección libres de tejido adenomatoso con margen de resección amplio en el pedículo. Señale la respuesta correcta:"
+ },
+ {
+  "qid": "b11",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Este paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+ },
+ {
+  "qid": "b12",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El paciente deja de acudir a les consultas externas. Regresa al cabo de siete años con un cuadro de rectorragias asociadas a una pérdida de ocho quilos. Señale la respuesta correcta:"
+ },
+ {
+  "qid": "b13",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "El estudio de extensión muestra ausencia de lesiones a distancia en el pulmón o el hígado. También muestra ausencia de adenopatías evidentes. Se objetiva una lesión neoformativa con una imagen sugestiva de infiltración hasta la submucosa, pero sin contactar con la muscular propia. Señale la respuesta correcta respecto al estadiaje:"
+ },
+ {
+  "qid": "b21",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En el caso de este paciente, se hace un estudio inmunohistoquímico sobre el bloque parafinado del tumor. Se detecta un déficit de expresión de MSH6; una expresión correcta de MLH1, MSH2, PMS2. Asimismo, se objetiva la presencia de inestabilidad de microsatélites. Señale la respuesta correcta:"
+ },
+ {
+  "qid": "b22",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Se hace un estudio genético por medio de un panel de colon, para el estudio de mutaciones germinales. El estudio es negativo y muestra una ausencia de mutaciones en el conjunto de genes asociados al síndrome de Lynch y a la poliposis adenomatosa. El estudio de deleciones también ha sido negativo. Señale la entidad a la que corresponde la situación de este caso:"
+ },
+ {
+  "qid": "b24",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa en referencia al diagnóstico de la enfermedad por reflujo gastroesofágico (ERGE):"
+ },
+ {
+  "qid": "b25",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en relación con el manejo inicial de la enfermedad por reflujo gastroesofágico:"
+ },
+ {
+  "qid": "b26",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia a los mecanismos fisiopatológicos de la enfermedad por reflujo gastroesofágico:"
+ },
+ {
+  "qid": "b27",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta correcta en referencia a los diferentes fenotipos de presentación de la enfermedad por reflujo gastroesofágico:"
+ },
+ {
+  "qid": "b28",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa respecto a la utilidad de la endoscopia digestiva en el diagnóstico de la enfermedad por reflujo gastroesofágico:"
+ },
+ {
+  "qid": "b29",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta correcta en referencia a las siguientes afirmaciones sobre la esofagitis por reflujo de grado C de la clasificación de Los Ángeles"
+ },
+ {
+  "qid": "b30",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué técnica de estudio es de más utilidad para un diagnóstico correcto en un paciente con síntomas de reflujo gastroesofágico que no responde al tratamiento con inhibidores de la bomba de protones?"
+ },
+ {
+  "qid": "b31",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia a la técnica de impedancia intraluminal multicanal (IMM) para el estudio del reflujo gastroesofágico:"
+ },
+ {
+  "qid": "b32",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia a los factores de riesgo para valorar un screening de esófago de Barrett según la mayoría de las guías clínicas:"
+ },
+ {
+  "qid": "b33",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "El diagnóstico de esófago de Barrett se basa en los hallazgos endoscópicos y en la confirmación histológica. Señale la respuesta falsa."
+ },
+ {
+  "qid": "b35",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta falsa respecto a los puntos de referencia de la clasificación de Praga del esófago de Barrett:"
+ },
+ {
+  "qid": "b36",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación correcta en referencia a la toma de biopsias en el esófago de Barrett:"
+ },
+ {
+  "qid": "b37",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa en referencia al seguimiento del esófago de Barrett:"
+ },
+ {
+  "qid": "b38",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa respecto al tratamiento multidisciplinar del esófago de Barrett:"
+ },
+ {
+  "qid": "b39",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa en referencia al tratamiento endoscópico del esófago de Barrett:"
+ },
+ {
+  "qid": "b42",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Los resultados de la resección endoscópica de este caso clínico confirman un adenocarcinoma con invasión submucosa (T1b < 500 micras SM1) bien diferenciado con bordes laterales y en profundidad libres, sin invasión linfática ni vascular. Señale la opción correcta:"
+ },
+ {
+  "qid": "b43",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia a la ablación por radiofrecuencia (RFA) del esófago de Barrett:"
+ },
+ {
+  "qid": "b44",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "La recurrencia del esófago de Barrett tras el tratamiento endoscópico ablativo se relaciona con diferentes factores. Señale la respuesta falsa:"
+ },
+ {
+  "qid": "b45",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia al riesgo de desarrollar un adenocarcinoma de esófago sobre un esófago de Barrett:"
+ },
+ {
+  "qid": "b46",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál de las siguientes técnicas ablativas del EB después de la radiofrecuencia se considera de segunda línea en las últimas guías clínicas?"
+ },
+ {
+  "qid": "b47",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el diagnóstico más probable?"
+ },
+ {
+  "qid": "b48",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta respecto a la confirmación del diagnóstico:"
+ },
+ {
+  "qid": "b49",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es la mejor técnica no invasiva para el estudio de los signos ductales pancreáticos?"
+ },
+ {
+  "qid": "b50",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estas es una clasificación etiológica de la pancreatitis crónica?"
+ },
+ {
+  "qid": "b51",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué debe solicitarse en primer lugar para el diagnóstico de insuficiencia pancreática exocrina?"
+ },
+ {
+  "qid": "b52",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuáles son las determinaciones que evalúan mejor el estado nutricional de este paciente?"
+ },
+ {
+  "qid": "b54",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué actitud se debe seguir en relación con el tratamiento enzimático sustitutivo (TES)?"
+ },
+ {
+  "qid": "b55",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Si se decide iniciar el TES, ¿cuál debe ser la dosis recomendada?"
+ },
+ {
+  "qid": "b56",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "A pesar del tratamiento con enzimas pancreáticos la diarrea no cede completamente, ¿cuál debe ser la actitud?"
+ },
+ {
+  "qid": "b57",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Debido a la insuficiencia pancreática exocrina, este paciente..."
+ },
+ {
+  "qid": "b59",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cómo se recomienda el screening de cáncer de páncreas en este paciente?"
+ },
+ {
+  "qid": "b61",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "¿Qué debe solicitarse como primera estrategia para drenar inicialmente la vía biliar?"
+ },
+ {
+  "qid": "b64",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál debe ser el siguiente paso si se confirma la malignidad de la lesión (adenocarcinoma pancreático)?"
+ },
+ {
+  "qid": "b65",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Con los datos de la TC, ¿de qué tipo de tumor debe considerarse que se trata?"
+ },
+ {
+  "qid": "b66",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en relación con el marcador tumoral CA 19-9 en el adenocarcinoma de páncreas:"
+ },
+ {
+  "qid": "b68",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta verdadera respecto al tratamiento del dolor severo en este paciente:"
+ },
+ {
+  "qid": "b69",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en relación con la TC abdominal en la evaluación de un paciente con sospecha de adenocarcinoma de páncreas:"
+ },
+ {
+  "qid": "b71",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el diagnóstico más probable?"
+ },
+ {
+  "qid": "b73",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estas afirmaciones es falsa?"
+ },
+ {
+  "qid": "b76",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estas pruebas diagnósticas es la más útil para valorar la existencia de complicaciones abdominales como abscesos y fístulas?"
+ },
+ {
+  "qid": "b77",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale cuál de estos factores predictivos no se considera un factor predictivo de peor pronóstico en la enfermedad de Crohn:"
+ },
+ {
+  "qid": "b78",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Siendo A «edad al diagnóstico», L «localización de la enfermedad» y B «patrón de comportamiento», ¿cuál es la opción correcta para esta paciente según la clasificación de Montreal?"
+ },
+ {
+  "qid": "b79",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál debe ser el tratamiento inicial de esta paciente?"
+ },
+ {
+  "qid": "b81",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa respecto a los corticoides:"
+ },
+ {
+  "qid": "b82",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estas afirmaciones es verdadera respecto a la azatioprina?"
+ },
+ {
+  "qid": "b83",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estos estudios no es necesario antes de empezar un tratamiento biológico?"
+ },
+ {
+  "qid": "b85",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta incorrecta respecto al tratamiento anti-TNFα:"
+ },
+ {
+  "qid": "b86",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa respecto a la enfermedad de Crohn perianal:"
+ },
+ {
+  "qid": "b87",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué factor no se ha relacionado con la recurrencia posquirúrgica en la enfermedad de Crohn?"
+ },
+ {
+  "qid": "b88",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "En el seguimiento de la enfermedad de Crohn, tras una resección intestinal, ¿cuándo debe recomendarse una ileocolonoscopia?"
+ },
+ {
+  "qid": "b89",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿A qué hace referencia el índice endoscópico de Rutgeerst i2 de recurrencia postquirúrgica?"
+ },
+ {
+  "qid": "b90",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa con respecto a la enfermedad inflamatoria intestinal y la gestación:"
+ },
+ {
+  "qid": "b92",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa respecto al vedolizumab en el tratamiento de la enfermedad de Crohn:"
+ },
+ {
+  "qid": "b93",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el mecanismo de acción del ustekinumab?"
+ },
+ {
+  "qid": "b95",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa en referencia a la epidemiologia de la CU:"
+ },
+ {
+  "qid": "b98",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Asumiendo el diagnóstico de rectosigmoiditis ulcerosa en actividad leve-moderada en el momento del diagnóstico, ¿cuál de las propuestas siguientes se considera la más indicada como primera opción de tratamiento?"
+ },
+ {
+  "qid": "b99",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa:"
+ },
+ {
+  "qid": "b101",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale la afirmación verdadera en el caso que se comenta tras conocer los resultados expuestos:"
+ },
+ {
+  "qid": "b104",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En caso de necesitar cualquiera de los fármacos indicados para inducir la remisión tras el fracaso a los esteroides, ¿cuál de las siguientes afirmaciones es falsa respecto al tratamiento de continuación?"
+ },
+ {
+  "qid": "b106",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Ante un alto grado de sospecha de colangitis esclerosante primaria (CEP), ¿cuál debe ser la actitud?"
+ },
+ {
+  "qid": "b107",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Señale la afirmación falsa:"
+ },
+ {
+  "qid": "b110",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "En el caso clínico comentado, la biopsia mostró índice de Rutter 3. La inmunohistoquímica para CMV fue negativa y la PCR para CMV positiva. Señale la afirmación correcta:"
+ },
+ {
+  "qid": "b111",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación verdadera en referencia a la reactivación de la CU en este paciente:"
+ },
+ {
+  "qid": "b112",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Si se asume que ha habido una pérdida de eficacia del tratamiento de mantenimiento, ¿qué actitud es la adecuada?"
+ },
+ {
+  "qid": "b113",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta en caso de cambio de tratamiento:"
+ },
+ {
+  "qid": "b114",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta respecto al manejo hospitalario de la colitis ulcerosa grave:"
+ },
+ {
+  "qid": "b115",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Señale la afirmación verdadera respecto al tratamiento médico de la colitis ulcerosa grave:"
+ },
+ {
+  "qid": "b116",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Qué factor de riesgo de la colitis ulcerosa no se ha asociado a un aumento del riesgo?"
+ },
+ {
+  "qid": "b121",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Calcule el GASA en este paciente. ¿Qué significa en este paciente el resultado del cálculo del GASA?"
+ },
+ {
+  "qid": "b122",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué significa el recuento de leucocitos en la ascitis, en este paciente?"
+ },
+ {
+  "qid": "b123",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué tratamiento hay que administrar siempre tras una paracentesis evacuadora para prevenir la disfunción circulatoria y la insuficiencia renal posparacentesis?"
+ },
+ {
+  "qid": "b124",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué dosis de albúmina se recomienda actualmente para prevenir la disfunción circulatoria y la insuficiencia renal posparacentesis?"
+ },
+ {
+  "qid": "b125",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cómo hay que interpretar el consumo diario habitual de alcohol de este paciente?"
+ },
+ {
+  "qid": "b131",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué probabilidad hay de que este paciente tenga hepatitis alcohólica?"
+ },
+ {
+  "qid": "b132",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Si tuviese una hepatitis alcohólica, ¿qué afirmación sería falsa?"
+ },
+ {
+  "qid": "b133",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Se repite la analítica en este paciente para descartar una enfermedad hepática autoinmune o metabólica. Se detecta ferritina 350 ng/ml y un índice de saturación de transferrina del 33 %. El resto de las determinaciones metabólicas e inmunológicas son negativas. Señale la afirmación correcta:"
+ },
+ {
+  "qid": "b134",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta correcta en caso de que fuese necesario hacer una biopsia hepática en este paciente:"
+ },
+ {
+  "qid": "b136",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué medicamento no se utiliza para la profilaxis de la hemorragia por varices esofágicas en el paciente cirrótico?"
+ },
+ {
+  "qid": "b137",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cómo se interpreta este resultado?"
+ },
+ {
+  "qid": "b141",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta respecto a la posibilidad de indicar un trasplante hepático en este paciente:"
+ },
+ {
+  "qid": "b142",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál de las siguientes actuaciones está recomendada en este paciente tras la exploración y la analítica de urgencias?"
+ },
+ {
+  "qid": "b143",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta con respecto a una endoscopia oral en un paciente con sospecha de hemorragia por varices esofágicas:"
+ },
+ {
+  "qid": "b147",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Qué puntuación de Child-Pugh tiene este paciente?"
+ },
+ {
+  "qid": "b148",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Tras el tratamiento endoscópico del paciente, ¿cuál de las siguientes medidas no está recomendada?"
+ },
+ {
+  "qid": "b151",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa respecto a la historia natural de la infección de VHB:"
+ },
+ {
+  "qid": "b153",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes no es una indicación de tratamiento antiviral en pacientes con una infección por VHB?"
+ },
+ {
+  "qid": "b154",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el tratamiento de elección para la infección por el VHB en este paciente?"
+ },
+ {
+  "qid": "b155",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación falsa en relación con el tratamiento de la infección por VHB en este paciente:"
+ },
+ {
+  "qid": "b156",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta falsa con respecto al diagnóstico de hepatocarcinoma en pacientes con cirrosis hepática:"
+ },
+ {
+  "qid": "b157",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta correcta en el caso de detectar una lesión hepática inferior a 1 cm en un paciente con cirrosis hepática durante una ecografía de cribado:"
+ },
+ {
+  "qid": "b158",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es la actitud recomendada en el caso de que en la TC del abdomen con contraste multifase la lesión hepática no presente los hallazgos típicos del hepatocarcinoma?"
+ },
+ {
+  "qid": "b159",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "De los siguientes factores, ¿cuál no se considera un factor pronóstico en un paciente con cirrosis hepática al que se le ha diagnosticado un hepatocarcinoma?"
+ },
+ {
+  "qid": "b160",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿En qué estadio de la clasificación BCLC se clasifica este paciente?"
+ },
+ {
+  "qid": "b161",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "¿Cuál es el tratamiento recomendado para el hepatocarcinoma que presenta este paciente?"
+ },
+ {
+  "qid": "b163",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de los siguientes no es un factor de riesgo para el desarrollo de un hepatocarcinoma?"
+ },
+ {
+  "qid": "b166",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Si seguimos las recomendaciones de la ESGE (European Society of Gastrointestinal Endoscopy), cuándo le deberíamos realizar la gastroscopia. Señale la respuesta CORRECTA:"
+ },
+ {
+  "qid": "b167",
+  "flag": true,
+  "n_Awrong": 2,
+  "stem": "En la gastroscopia se objetiva una úlcera duodenal de 15mm con un fondo hemático oscuro y no hay restos hemáticos intraluminales. En relación a la forma de presentación de la úlcera péptica, señale la respuesta INCORRECTA:"
+ },
+ {
+  "qid": "b168",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En el transcurso de la gastroscopia a la paciente se le tomó una muestra para Test de ureasa con resultado negativo. A la vista de este hallazgo, señale la respuesta CORRECTA:"
+ },
+ {
+  "qid": "b170",
+  "flag": false,
+  "n_Awrong": 3,
+  "stem": "Si nuestra paciente hubiera sido Helicobacter pylori positivo, cuánto tiempo aconsejarías mantener el tratamiento con inhibidores de la bomba de protones:"
+ },
+ {
+  "qid": "b171",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Tres meses después del episodio de sangrado, la paciente es valorada en urgencias por un cuadro neurológico que finalmente se interpreta como AIT, aconsejándose en el informe de alta, iniciar tratamiento antiagregante con AAS 100mg y dejar de fumar. En relación al riesgo de presentar una úlcera secundaria a la ingesta de AINES; señala cuál es el factor de riesgo más importante:"
+ },
+ {
+  "qid": "b172",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Requisitos a cumplir en el programa de cribado de CCR. Señala la VERDADERA"
+ },
+ {
+  "qid": "b173",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Realizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm. Señala la respuesta FALSA:"
+ },
+ {
+  "qid": "b174",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "En otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior. Señala la respuesta VERDADERA"
+ },
+ {
+  "qid": "b175",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA"
+ },
+ {
+  "qid": "b176",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso. Describe la actitud CORRECTA"
+ },
+ {
+  "qid": "b177",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm, señale la respuesta CORRECTA:"
+ },
+ {
+  "qid": "b179",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "NO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+ },
+ {
+  "qid": "b180",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Teniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+ },
+ {
+  "qid": "b181",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "A los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?"
+ },
+ {
+  "qid": "b182",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En la ecografía de screening semestral se objetiva trombosis reciente que ocupa el 60% de la vena porta principal. Según las últimas recomendaciones de la AASLD (American Association Study Liver Diseases 2020), señale la FALSA:"
+ },
+ {
+  "qid": "b183",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "A los dos años de seguimiento se confirma en un TAC hepático dinámico 3 lesiones hepáticas de 2cm cada una, compatibles con hepatocarcinoma. No se visualiza trombosis portal ni afectación extrahepática. El paciente tiene buen estado clínico (Performance Status O) con función hepática conservada Child-Pugh A. ¿Qué tratamiento indicaría?"
+ },
+ {
+  "qid": "b184",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Pregunta de reserva Caso Clínico numero 1: Cuál de las siguientes afirmaciones es INCORRECTA en relación a la prevención de las úlceras por AINEs:"
+ },
+ {
+  "qid": "b185",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Pregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+ },
+ {
+  "qid": "b186",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Pregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+ },
+ {
+  "qid": "b190",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señala cual NO es un efecto secundario de tacrolimus"
+ },
+ {
+  "qid": "b192",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Varón de 58 años que acude a urgencias por dolor agudo y constante en hipocondrio derecho, con náuseas, vómitos y fiebre de 38º. A la exploración presente ictericia e hipersensibilidad a la palpación en hipocondrio derecho. Se solicita una ecografía abdominal observando colelitiasis múltiple y dilatación de vía intrahepática sin poder valorar colédoco ni región pancreática por interposición de gas. Se completa con un TC observando litiasis en conducto cístico de 15 mm, dilatación de conducto hepático común y vía biliar intrahepática, estando el colédoco distal normal. ¿Cuál de los siguientes es el diagnóstico MÁS probable?"
+ },
+ {
+  "qid": "b193",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Realizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2). ¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?"
+ },
+ {
+  "qid": "b194",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Paciente con hepatitis crónica B con ALT 35 UI, DNA-VHB 9800 UI y Fibroscan 9,5 Kpa debe tratarse con:"
+ },
+ {
+  "qid": "b196",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En el contexto de un paciente con colangitis biliar primaria ¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?"
+ },
+ {
+  "qid": "b198",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En los gráficos de cajas (box-plot, box and whisker plot), ¿Qué representa la línea horizontal que está dentro de la caja?"
+ },
+ {
+  "qid": "b199",
+  "flag": true,
+  "n_Awrong": 3,
+  "stem": "En relación a las pruebas complementarias necesarias en función del diagnóstico inicial, ¿Cuál de estas afirmaciones es falsa?:"
+ },
+ {
+  "qid": "b200",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El tratamiento indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:"
+ },
+ {
+  "qid": "b201",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En el tratamiento del cáncer de esófago, señale la opción FALSA:"
+ },
+ {
+  "qid": "b203",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Entre los datos siguientes uno NO es típico del síndrome hepatorenal tipo I?"
+ },
+ {
+  "qid": "b206",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+ },
+ {
+  "qid": "b207",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Con respecto al tratamiento farmacológico de la pancreatitis crónica, señale la opción cierta:"
+ },
+ {
+  "qid": "b208",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Cuál de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:"
+ },
+ {
+  "qid": "b209",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Paciente con cáncer gástrico precoz bien diferenciado sin signos endoscópicos sugestivos de invasión submucosa en el que se plantea realizar una resección endoscópica. Señale la respuesta falsa"
+ },
+ {
+  "qid": "b210",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+ },
+ {
+  "qid": "b211",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "En relación con la enfermedad celíaca en el adulto, señale la opción incorrecta:"
+ },
+ {
+  "qid": "b212",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Respecto a la patología benigna que afecta a la vesícula biliar y a los cálculos biliares (señale la respuesta incorrecta):"
+ },
+ {
+  "qid": "b215",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor cuál de las siguientes es INCORRECTA"
+ },
+ {
+  "qid": "b217",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Indique cuál es el tratamiento adecuado en este caso."
+ },
+ {
+  "qid": "b218",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según los criterios de Roma IV, se define el síndrome de intestino irritable como:"
+ },
+ {
+  "qid": "b221",
+  "flag": true,
+  "n_Awrong": 2,
+  "stem": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD), ¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+ },
+ {
+  "qid": "b222",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Una paciente de 86 años acude a urgencias por dolor en epigastrio y vómitos con restos alimentarios. La paciente presenta mal estado general y deshidratación. A la exploración presenta dolor leve en epigastrio con timpanismo. Analíticamente destaca hemoglobina 16.3 g/dl, urea 133 mg/dl, creatinina 3.20 mg/dl, y PCR 189.6 mg/l. En la radiografía simple de abdomen se observa una gran dilatación de la cámara gástrica y aerobilia. También dos niveles hidroaéreos en el hipocondrio derecho. Cuál es el diagnóstico más probable"
+ },
+ {
+  "qid": "b223",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con la biopsia hepática, ¿cuál de estas afirmaciones es INCORRECTA?:"
+ },
+ {
+  "qid": "b224",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Según las recomendaciones de la European Society of Gastrointestinal Endoscopy (ESGE) sobre la ecoendoscopia terapéutica ¿Cuál es el tiempo óptimo que debe transcurrir antes de realizar una CPRE transgástrica dirigida por ecoendoscopia después de la colocación de una prótesis de aposición luminal?"
+ },
+ {
+  "qid": "b226",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señale la complicación más frecuente de la úlcera péptica"
+ },
+ {
+  "qid": "b227",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En estreñimiento funcional se recomiendan las siguientes medidas dietéticas menos una:"
+ },
+ {
+  "qid": "b229",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El dato clínico para establecer el diagnóstico de insuficiencia hepática aguda en un adulto es:"
+ },
+ {
+  "qid": "b232",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Una de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier"
+ },
+ {
+  "qid": "b233",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cual de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?"
+ },
+ {
+  "qid": "b234",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "La bondad de la FIBRA en la dieta es consecuencia de los siguientes efectos beneficiosos (señale la opción FALSA):"
+ },
+ {
+  "qid": "b235",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El síndrome de Stauffer es un cuadro de colestasis intrahepática de origen paraneoplásico descrito inicialmente asociado a"
+ },
+ {
+  "qid": "b237",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "La paracentesis evacuadora en paciente con Cirrosis Hepática y descompensación hidrópica puede realizarse:"
+ },
+ {
+  "qid": "b240",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es la actitud más adecuada?"
+ },
+ {
+  "qid": "b243",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "La primera línea de tratamiento farmacológico para la colangitis biliar primaria es:"
+ },
+ {
+  "qid": "b244",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI: acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:"
+ },
+ {
+  "qid": "b246",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?"
+ },
+ {
+  "qid": "b247",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Farmacoterapia y sedación en endoscopia. ¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+ },
+ {
+  "qid": "b248",
+  "flag": true,
+  "n_Awrong": 4,
+  "stem": "¿Cuál de las afirmaciones siguientes es FALSA en relación con la infección por H pylori?"
+ },
+ {
+  "qid": "b250",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "La clasificación de Chicago se refiere a:"
+ },
+ {
+  "qid": "b252",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:"
+ },
+ {
+  "qid": "b254",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En cuanto a la diarrea secretora, es VERDADERO:"
+ },
+ {
+  "qid": "b256",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "De las siguientes acciones se recomienda en una primera visita de diarrea crónica acuosa sin sangre, de características funcionales. Señale cual es la apropiada:"
+ },
+ {
+  "qid": "b260",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta FALSA en relación con el trasplante hepático en pacientes con fallo hepático agudo:"
+ },
+ {
+  "qid": "b261",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "El virus de la hepatitis B tiene varias mutaciones, la más importante es la mutación pre-C o pre-core, que es la más frecuente en nuestro medio. Indique lo que considere falso:"
+ },
+ {
+  "qid": "b262",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En cuanto al cáncer colo-rectal, señale la respuesta INCORRECTA:"
+ },
+ {
+  "qid": "b264",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "En los cánceres ductales de cabeza de páncreas, ¿cuál de los siguientes criterios NO se corresponde con un tumor resecable \"borderline\"?"
+ },
+ {
+  "qid": "b265",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Varón, 63 años, sin antecedentes personales de interés. Es diagnosticado en 2018 de cirrosis hepática por alcohol tras una primera descompensación en forma de hemorragia digestiva por varices esofágicas. Abstinente desde entonces, con función hepática normal, A5 de Child–Pugh, PS 0. En TC abdominal se observa un nódulo de 31 mm con comportamiento dinámico diagnóstico de hepatocarcinoma. Según criterio BCLC la primera opción terapéutica a considerar sería:"
+ },
+ {
+  "qid": "b266",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Respecto al tratamiento del estreñimiento crónico idiopático, ¿Cuál de las siguientes afirmaciones NO es cierta?"
+ },
+ {
+  "qid": "b267",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Indique la respuesta falsa respecto a la litotricia mecánica biliar."
+ },
+ {
+  "qid": "b268",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Uno de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II"
+ },
+ {
+  "qid": "b270",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:"
+ },
+ {
+  "qid": "b271",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el paso más adecuado en el tratamiento subsiguiente de este paciente?"
+ },
+ {
+  "qid": "b272",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "NO se asocia a uso crónico de IBP (Inhibidores de la Bomba de protones):"
+ },
+ {
+  "qid": "b273",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Usted está leyendo un artículo que publica los resultados de un gran ensayo clínico aleatorizado y doble ciego, de gran interés en su ámbito profesional. En concreto le llama la atención el resultado que muestra este estudio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?"
+ },
+ {
+  "qid": "b274",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la afirmación INCORRECTA:"
+ },
+ {
+  "qid": "b276",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "En relación a la enfermedad hepática inducida por fármacos (DILI), señale la respuesta incorrecta:"
+ },
+ {
+  "qid": "b277",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En cuanto a los datos de alarma en un cuadro de diarrea, señale la respuesta incorrecta"
+ },
+ {
+  "qid": "b279",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Respecto a la posición del paciente para una CPRE, indique cuál respuesta es falsa:"
+ },
+ {
+  "qid": "b281",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En el diagnóstico de una isquemia mesentérica aguda (IMA) es falso que:"
+ },
+ {
+  "qid": "b282",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde según la clasificación de Saint James a un grado:"
+ },
+ {
+  "qid": "b283",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta INCORRECTA sobre la pancreatitis autoinmune:"
+ },
+ {
+  "qid": "b284",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+ },
+ {
+  "qid": "b285",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Señale en cuál de los siguientes pacientes indicaría un TIPS precoz:"
+ },
+ {
+  "qid": "b286",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "La dosis de entecavir y tenofovir en el tratamiento de la hepatitis crónica B debe ajustarse a la función renal. ¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?"
+ },
+ {
+  "qid": "b287",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Entre las enfermedades que cursan con estreñimiento no se encuentra"
+ },
+ {
+  "qid": "b294",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Considerando la afectación multiorgánica que se produce en el fracaso hepático fulminante, señale cuál de estas situaciones no es característica de la misma:"
+ },
+ {
+  "qid": "b295",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Usted conoce que los pacientes con cirrosis descompensada desarrollan con frecuencia sarcopenia, Señale por favor cuál de los siguientes mecanismos NO está implicado en el desarrollo de esta complicación"
+ },
+ {
+  "qid": "b296",
+  "flag": true,
+  "n_Awrong": 3,
+  "stem": "En referencia al esófago de Barrett, señale el enunciado falso:"
+ },
+ {
+  "qid": "b297",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "En un paciente diagnosticado de hemocromatosis, homocigoto C282Y, el objetivo del tratamiento con sangrías sería:"
+ },
+ {
+  "qid": "b299",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Paciente varón de 50 años. Se realiza gastroscopia por pirosis, sin respuesta a tratamiento con IBP. La endoscopia muestra la presencia de Esófago de Barrett C1M5 de la Clasificación de Praga. Los resultados histológicos confirman la existencia de metaplasia sin displasia. Siguiendo las últimas Guías ESGE de diagnóstico y manejo de Esófago de Barrett, ¿en cuánto tiempo le corresponde el siguiente control endoscópico?"
+ },
+ {
+  "qid": "b300",
+  "flag": true,
+  "n_Awrong": 3,
+  "stem": "Una de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):"
+ },
+ {
+  "qid": "b301",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:"
+ },
+ {
+  "qid": "b304",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+ },
+ {
+  "qid": "b306",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Dónde se proponen como principios éticos en investigación la beneficencia, el respeto a la dignidad humana y la justicia?"
+ },
+ {
+  "qid": "b307",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "La clasificación de la ERGE (enf. por reflujo) basada en criterios endoscópicos más aplicada en la actualidad es la de Los Ángeles. Señale la respuesta correcta"
+ },
+ {
+  "qid": "b309",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Ante un paciente con fallo hepático agudo señale la respuesta INCORRECTA:"
+ },
+ {
+  "qid": "b310",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Es falso respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas"
+ },
+ {
+  "qid": "b311",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Un cuadro de diarrea aguda con inicio de síntomas en menos de 6 horas tras la exposición al alimento causal, acompañado de náuseas y vómitos, es típico de:"
+ },
+ {
+  "qid": "b313",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Se consideran factores de elevado riesgo para desarrollar cáncer colorrectal asociado a enfermedad inflamatoria intestinal todos excepto:"
+ },
+ {
+  "qid": "b314",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?"
+ },
+ {
+  "qid": "b317",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale cuál de las siguientes afirmaciones es FALSA"
+ },
+ {
+  "qid": "b318",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según la guía clínica ACG 2020, entre las recomendaciones de tratamiento en un paciente con acalasia esofágica no se incluye"
+ },
+ {
+  "qid": "b319",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Seleccione la opción INCORRECTA en relación con la gastritis crónica tipo B"
+ },
+ {
+  "qid": "b320",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Según la clasificación modificada de Milwaukee para la Disfunción del Esfínter de ODDI (DEO), sólo una de las siguientes respuestas es cierta:"
+ },
+ {
+  "qid": "b321",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Paciente de 63 años con Esófago de Barrett C1M2 de la Clasificación de Praga. Asintomático con omeprazol 20 mg cada 24 horas. En la última revisión, las biopsias constatan la presencia de metaplasia sin displasia. Siguiendo las últimas Guías ESGE para el diagnóstico y manejo de Esófago de Barrett, ¿para cuándo programaría la siguiente revisión endoscópica?"
+ },
+ {
+  "qid": "b322",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Un paciente con Insuficiencia Hépatica Aguda Grave NO suele tener:"
+ },
+ {
+  "qid": "b323",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Sobre la colitis microscópica, señale la afirmación INCORRECTA:"
+ },
+ {
+  "qid": "b325",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "La lesión hepática más frecuentemente producida por azatioprina es:"
+ },
+ {
+  "qid": "b326",
+  "flag": false,
+  "n_Awrong": 3,
+  "stem": "¿Cuál de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?"
+ },
+ {
+  "qid": "b327",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "A las 72 horas del ingreso se realiza un TAC de abdomen. Se observa una gran colección necrótica que prácticamente sustituye cuerpo y cola de páncreas, sin gas en su interior. La situación del paciente es similar a días previos, con elevación de bilirrubina hasta 5 mg/dl, y patrón de colestasis similar. Tras hidratación la función renal ha mejorado, con urea de 40 mg/dl. ¿Qué debemos hacer en este momento?"
+ },
+ {
+  "qid": "b329",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué afirmación le parece correcta con respecto a este paciente?"
+ },
+ {
+  "qid": "b330",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Señale que elementos de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante"
+ },
+ {
+  "qid": "b332",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta FALSA con respecto al fallo hepático fulminante:"
+ },
+ {
+  "qid": "b333",
+  "flag": false,
+  "n_Awrong": 3,
+  "stem": "¿Cuál de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:"
+ },
+ {
+  "qid": "b334",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Indique cuál de las siguientes es la causa más frecuente de hematoquecia significativa:"
+ },
+ {
+  "qid": "b335",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál es la actitud más adecuada a seguir en este paciente?"
+ },
+ {
+  "qid": "b336",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Con respecto al Síndrome de Ogilvie, señale la respuesta falsa:"
+ },
+ {
+  "qid": "b338",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "La fase de infección crónica del virus hepatitis B con antígeno e positivo (HBeAg) (antes denominada fase de inmunotolerancia), presenta todas las siguientes características, EXCEPTO:"
+ },
+ {
+  "qid": "b339",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con el diagnóstico de la infección por Helicobacter Pylori (Hp), señale la opción FALSA:"
+ },
+ {
+  "qid": "b344",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "El diagrama de cajas (box-plot) es una forma de representación gráfica bastante usada, sobre todo cuando se quieren comparar dos o más mediciones de una misma variable, por ejemplo en varios grupos de sujetos o en los mismos sujetos en distintos momentos del tiempo. Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:"
+ },
+ {
+  "qid": "b345",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?"
+ },
+ {
+  "qid": "b346",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cual de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?"
+ },
+ {
+  "qid": "b348",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Señala la respuesta correcta con respecto a la hepatitis E en el embarazo"
+ },
+ {
+  "qid": "b349",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Uno de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:"
+ },
+ {
+  "qid": "b353",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Paciente al que se extirpa un pólipo pediculado. El patólogo informa de la existencia de un adenocarcinoma bien diferenciado sobre un adenoma tubulovelloso que invade la submucosa y afecta al cuello del pólipo, no afectando al margen de resección el cual se encuentra a más de 2 milímetros. Señale la opción correcta:"
+ },
+ {
+  "qid": "b354",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Una de los siguientes no es una indicación para trasplante hepático en carcinoma hepatocelular (CHC), según los criterios de Milán:"
+ },
+ {
+  "qid": "b355",
+  "flag": true,
+  "n_Awrong": 3,
+  "stem": "En relación al carcinoma hepatocelular, señale la respuesta falsa:"
+ },
+ {
+  "qid": "b357",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Un varón de 52 años de edad, con leucemia linfoblástica aguda, recibe un trasplante de médula ósea alogénico. El día 22º postrasplante desarrolla un rash cutáneo difuso, dolor abdominal y diarrea. Se le consulta la posibilidad de realizar endoscopia para el diagnóstico. ¿De dónde es más rentable tomar las biopsias para el diagnóstico de una enfermedad injerto contra huésped?"
+ },
+ {
+  "qid": "b358",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Ante un paciente con disfagia bucofaríngea, ¿qué estudio se aconseja realizar en primer lugar?:"
+ },
+ {
+  "qid": "b359",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "La ligadura endoscópica con bandas se considera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma. En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:"
+ },
+ {
+  "qid": "b360",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS). ¿Cuál de la siguientes afirmaciones es INCORRECTA? :"
+ },
+ {
+  "qid": "b362",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "¿Cuál de las afirmaciones siguientes es FALSA en relación con el tratamiento de la infección por H pylori?"
+ },
+ {
+  "qid": "b363",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes no es causa de íleo paralítico?:"
+ },
+ {
+  "qid": "b364",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En relación a la enfermedad de Whipple:"
+ },
+ {
+  "qid": "b366",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Paciente de 62 años con dolor abdominal crónico. Entero-RM: masa de 5 cm en yeyuno hipercaptante Biopsia: positivo para CD117 y DOG1. ¿Cuál es el diagnóstico?:"
+ },
+ {
+  "qid": "b367",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes opciones es la CORRECTA respecto al tratamiento farmacológico de la Dispepsia Funcional?"
+ },
+ {
+  "qid": "b368",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una de las siguientes aseveraciones es falsa"
+ },
+ {
+  "qid": "b370",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Una de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria"
+ },
+ {
+  "qid": "b371",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta incorrecta con respecto a la Linaclotida:"
+ },
+ {
+  "qid": "b372",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "De los siguientes gases intestinales, ¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?"
+ },
+ {
+  "qid": "b373",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "La toma de biopsias aleatorias en la colonoscopia de cribado de cáncer de colon en pacientes con colitis ulcerosa NO esta recomendada en caso de:"
+ },
+ {
+  "qid": "b374",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2, ¿Qué tratamiento antiviral no estaría indicado?"
+ },
+ {
+  "qid": "b375",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+ },
+ {
+  "qid": "b376",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es la frecuencia recomendada de seguimiento para pacientes con gastritis crónica atrófica en estadios OLGA/OLGIM III/IV asociada a metaplasia incompleta?"
+ },
+ {
+  "qid": "b379",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "En la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no homogéneo (LST-G), de 25mm en colon ascendente, realizándose resección mucosa completa y en bloque. El patólogo informa de la existencia de un adenocarcinoma bien diferenciado sobre adenoma velloso que invade la submucosa, con una profundidad máxima de 4mm, sin evidencia de invasión vascular ni linfática, sin budding, y con distancia al margen de resección de 0,5mm. Señale la interpretación CORRECTA de los hallazgos:"
+ },
+ {
+  "qid": "b381",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación a la historia natural del Virus de la Hepatitis B, en la fase infección crónica con Hbe Ag -(fase 3), es falso que:"
+ },
+ {
+  "qid": "b383",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Según la guía ECCO señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+ },
+ {
+  "qid": "b384",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En relación a la sensibilidad al gluten no celiaca es correcto:"
+ },
+ {
+  "qid": "b386",
+  "flag": true,
+  "n_Awrong": 2,
+  "stem": "Las relajaciones transitorias del esfínter esofágico inferior son un mecanismo importante en la patogenia de la enfermedad por reflujo gastroesofágico, pueden distinguirse de la relajación inducida por la deglución de varias formas. Indica la respuesta FALSA:"
+ },
+ {
+  "qid": "b387",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Un varón de 56 años de edad, sin historia familiar de cáncer de colon se realiza una colonoscopia de cribado. En la exploración se identifica un pólipo de unos 8 mm de diámetro, pediculado, en colon sigmoide, que se reseca por completo. La anatomía patológica muestra que es un adenoma serrado con displasia. ¿Cuándo debe repetirse la colonoscopia?"
+ },
+ {
+  "qid": "b388",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Acerca de la enfermedad de injerto contra huésped intestinal ¿Qué es falso?"
+ },
+ {
+  "qid": "b390",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:"
+ },
+ {
+  "qid": "b392",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Mujer de 32 años gestante de 27 semanas que presenta infección crónica por VHB con viremia de 250.000 UI/ml y transaminasas normales. ¿Cuál de las siguientes recomendaciones sería FALSA?:"
+ },
+ {
+  "qid": "b393",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿A partir de qué valor de MELD nos planteamos valorar a un paciente con cirrosis descompensada para transplante en ausencia de hepatocarcinoma?"
+ },
+ {
+  "qid": "b395",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Respecto a las manifestaciones clínicas fundamentales del síndrome de intestino irritable, señale la respuesta falsa:"
+ },
+ {
+  "qid": "b400",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Mujer de 34 años, con mutación STK11. ¿Cuál es el síndrome más probable?:"
+ },
+ {
+  "qid": "b403",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Cuál es la causa más frecuente de Síndrome de Budd-Chiari"
+ },
+ {
+  "qid": "b405",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Sobre el baremo MELD (Model for End Stage Liver Disease) y sus variantes en la gestión de la lista de espera de trasplante hepático, es cierto que:"
+ },
+ {
+  "qid": "b411",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn, según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:"
+ },
+ {
+  "qid": "b413",
+  "flag": false,
+  "n_Awrong": 4,
+  "stem": "En cuál de las siguientes circunstancias NO está indicado el tratamiento con rifaximina"
+ },
+ {
+  "qid": "b414",
+  "flag": true,
+  "n_Awrong": 2,
+  "stem": "Se estima que el 30% de los pacientes que se someten a una colonoscopia de cribado poblacional van a ser diagnosticados de diverticulosis colónica. Señale la afirmación FALSA en dicha patología:"
+ },
+ {
+  "qid": "b415",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según las guías ESGE/EASL .¿Cúal es la técnica de elección para diagnósticar una colangitis esclerosante primaria?."
+ },
+ {
+  "qid": "b416",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Ante un paciente que inicia tratamiento con Ritubsimab, deberíamos plantear tratamiento preventivo de reactivación del VBH:"
+ },
+ {
+  "qid": "b417",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "Si un paciente acude a urgencias por presentar un sangrado bajo autolimitado y sin características clínicas adversas, se recomienda que podría ser dado de alta con manejo ambulatorio posterior, cuando la puntuación Oakland sea:"
+ },
+ {
+  "qid": "b418",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Para el diagnóstico de una pancreatitis crónica disponemos de técnicas morfológicas y técnicas de función pancreática, señale la respuesta correcta:"
+ },
+ {
+  "qid": "b421",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "La descripción por visión ecoendoscópica de una lesión hiperecoica, homogénea con márgenes regulares que surge de la submucosa (tercera capa del tracto gastrointestinal) se corresponde con toda probabilidad a un"
+ },
+ {
+  "qid": "b422",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál no pertenece a la clasificación TIGAR-O de la etiología de la pancreatitis crónica?"
+ },
+ {
+  "qid": "b423",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de estos criterios NO se incluye entre los definidos por la OMS para el diagnóstico del síndrome de la poliposis serrada?"
+ },
+ {
+  "qid": "b425",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es el tratamiento de rescate recomendado en pacientes con hepatitis crónica B que han desarrollado resistencia a lamivudina?"
+ },
+ {
+  "qid": "b427",
+  "flag": false,
+  "n_Awrong": 3,
+  "stem": "Cuál de los siguientes fármacos ha demostrado recientemente superioridad frente a placebo en el tratamiento de la reservoritis:"
+ },
+ {
+  "qid": "b431",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "De las siguientes afirmaciones según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria, ¿qué factor se considera de mal pronóstico?:"
+ },
+ {
+  "qid": "b432",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+ },
+ {
+  "qid": "b434",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué tratamiento NO se recomienda para el mantenimiento de pacientes con colitis ulcerosa moderada a grave que no responden a tratamientos convencionales?"
+ },
+ {
+  "qid": "b435",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Con respecto al diagnóstico y manejo de la colestasis gravídica, señale la opción incorrecta"
+ },
+ {
+  "qid": "b440",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual"
+ },
+ {
+  "qid": "b441",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta INCORRECTA:"
+ },
+ {
+  "qid": "b442",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál de los siguientes fármacos tiene “recomendación en contra” de su uso como tratamiento de la esofagitis eosinofilica según la última guía de la Asociación Americana de Gastroenteterología 2025?:"
+ },
+ {
+  "qid": "b443",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Una paciente de 23 años, con antecedentes de síndrome depresivo, es conducida a Urgencias con clínica de malestar general, náuseas, y leve tinte ictérico de piel y mucosas. En la exploración física se objetiva una leve bradipsiquia. En análisis destacan valores de AST y ALT de 4.200 UI/L y 3.690 UI/L, respectivamente. La bilirrubina total es de 3 mg/dl, la creatinina de 2.5 mg/dl, y la actividad de protrombina de 20%. ¿Cuál de las siguientes actuaciones NO consideraría una prioridad en las primeras 12 horas tras su ingreso?"
+ },
+ {
+  "qid": "b444",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En el estudio de la función exocrina en el contexto de la pancreatitis crónica, señale la respuesta incorrecta"
+ },
+ {
+  "qid": "b446",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Qué parámetros incluye la escala de Rockall?"
+ },
+ {
+  "qid": "b447",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Ante un paciente que acude al Servicio de Urgencias con la sospecha de ingestión aguda accidental de un cáustico, la primera medida a realizar será:"
+ },
+ {
+  "qid": "b449",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+ },
+ {
+  "qid": "b450",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?"
+ },
+ {
+  "qid": "b455",
+  "flag": false,
+  "n_Awrong": 3,
+  "stem": "¿Con qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?"
+ },
+ {
+  "qid": "b456",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En la Escala de Alvarado, (sistema de puntuación clínica usado en el diagnóstico de apendicitis aguda), indica a cuál de los siguientes factores se le asignan dos puntos:"
+ },
+ {
+  "qid": "b457",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de los siguientes no es un factor de riesgo de malignidad de un pólipo vesicular?"
+ },
+ {
+  "qid": "b459",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Señale la respuesta FALSA en relación al seguimiento de colangitis esclerosante primaria:"
+ },
+ {
+  "qid": "b460",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Mujer de 37 años con colitis ulcerosa extensa corticodependiente, intolerante a azatioprina y con pérdida de respuesta a infliximab y vedolizumab. Actualmente en tratamiento con tofacitinib. Ha recibido tratamiento con los siguientes mecanismos de acción excepto uno:"
+ },
+ {
+  "qid": "b462",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Paciente de 52 años con ingesta de bolo de carne (sin hueso), que señala como impactado en esófago distal. Presenta intensa sialorrea. ¿Cuál es la actitud a seguir con este paciente?:"
+ },
+ {
+  "qid": "b464",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con las lesiones GI (gastrointestinales) en pacientes que toman AINE (antiinflamatorios no esteroideos), señale la opción FALSA:"
+ },
+ {
+  "qid": "b467",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál de estas variables se incluye en el Sistema de puntuación de Rockall para la hemorragia digestiva alta?"
+ },
+ {
+  "qid": "b469",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y respecto del seguimiento tras polipectomía, ¿cuál de estas afirmaciones NO es cierta?:"
+ },
+ {
+  "qid": "b470",
+  "flag": false,
+  "n_Awrong": 4,
+  "stem": "Paciente de 64 años, cirrosis alcohólica, creatinina de 3 mg/dl, ascitis, y no mejoría tras expansión plasmática; sin proteinuria ni hematuria, con ecografía renal normal, y baja eliminación de sodio. Describa como será su situación hemodinámica."
+ },
+ {
+  "qid": "b471",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "En una de las siguientes situaciones clínicas NO se recomienda iniciar tratamiento antiviral para la hepatitis B:"
+ },
+ {
+  "qid": "b472",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En el estudio ampliado de diarrea crónica para descartar causas neuroendocrinas, se deben solicitar todas las siguientes determinaciones, EXCEPTO:"
+ },
+ {
+  "qid": "b473",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Durante las primeras 24 horas de ingreso se comprueba una escasa diuresis (550 cc), la función renal se deteriora (creatinina 2.8 mg/dl) y se agrava la hiponatremia (122 mEq/L). Se recibe resultado del líquido ascítico y se constata un recuento de polimorfonucleares de 914/mm³. ¿Cuál de las siguientes afirmaciones es correcta?"
+ },
+ {
+  "qid": "b474",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "¿Cuál de los siguientes está descrito como factor de riesgo en enfermedad de Crohn y protector en colitis ulcerosa?"
+ },
+ {
+  "qid": "b475",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Señale la respuesta INCORRECTA con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+ },
+ {
+  "qid": "b478",
+  "flag": true,
+  "n_Awrong": 1,
+  "stem": "Dentro de las modificaciones en la actual Clasificación de Chicago versión 4.0 (CCv4.0) es falso:"
+ },
+ {
+  "qid": "b479",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "En relación con la hepatitis alcohólica aguda, señale la errónea"
+ },
+ {
+  "qid": "b480",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "¿Cuál es el tratamiento de elección en un paciente con carcinoma hepatocelular en estadio inicial(A) de la BCLC con función hepática conservada con tres nódulos menores de 3 cms y con enfermedades crónicas asociadas?"
+ },
+ {
+  "qid": "b481",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "La hemorragia por varices esofago-gástricas es una de las principales complicaciones de la cirrosis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?"
+ },
+ {
+  "qid": "b483",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "El cociente que resulta de dividir un número de acontecimientos sucedidos durante un periodo de tiempo por la población media existente durante ese periodo de tiempo es la definición de"
+ },
+ {
+  "qid": "b484",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "A los 10 años, el paciente acude a consulta refiriendo haber estado asintomático realizando dieta sin gluten estricta, y con estudios serológicos repetidos negativos, hasta que hace unos 6 meses reaparece la diarrea, ahora con episodios de dolor abdominal, habiendo perdido unos 7 kg de peso. Se repite la endoscopia que encontró atrofia vellositaria con úlceras fibrinadas en el duodeno con distorsión de los pliegues; se tomaron biopsias que son informadas como \"infiltración intraepitelial por linfocitos en más de 50 linfocitos por cada 100 enterocitos, con un fenotipo mostrando reordenamientos monoclonales del gen TCRγ. En la TC se apreció dilatación de asas intestinales con engrosamiento de la pared, con gran edema mucoso y submucoso. Su sospecha diagnóstica sería:"
+ },
+ {
+  "qid": "b485",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Según la Clasificación de Chicago, la acalasia esofágica se divide en tres subgrupos. Señale la respuesta correcta"
+ },
+ {
+  "qid": "b486",
+  "flag": false,
+  "n_Awrong": 2,
+  "stem": "Señala cuál de los factores descritos puede incrementar la posibilidad de progresión de la hepatopátia alcohólica y del desarrollo de hepatocarcinoma."
+ },
+ {
+  "qid": "b487",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En la Esclerosis Sistémica Progresiva, es cierto que:"
+ },
+ {
+  "qid": "b489",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En lo que respecta al espectro patogénico y las vías hasta ahora definidas en el desarrollo del cáncer de colon es cierto que:"
+ },
+ {
+  "qid": "b490",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "En un paciente no colecistectomizado con disfunción del esfínter de Oddi tipo III, ¿cómo están los enzimas hepáticos y el conducto biliar común?"
+ },
+ {
+  "qid": "b493",
+  "flag": false,
+  "n_Awrong": 0,
+  "stem": "Indique una dosis oral diaria de mesalazina para iniciar el tratamiento de un brote moderado de Colitis Ulcerosa:"
+ },
+ {
+  "qid": "b494",
+  "flag": false,
+  "n_Awrong": 1,
+  "stem": "En la ultrasonografía endoscópica realizada, se describe una lesión de 25 mm en la cara posterior del cuerpo gástrico alto que produce un engrosamiento de la 1a y 2a capa ecográficas con un área puntual milimétrica de posible invasión en la 3a capa. ¿Cuál sería el tratamiento mas adecuado para este paciente?:"
+ },
+ {
+  "qid": "b498",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021, ¿Cuál de los siguientes enunciados es falso?"
+ },
+ {
+  "qid": "b499",
+  "flag": true,
+  "n_Awrong": 0,
+  "stem": "Respecto a la profilaxis de la infección por citomegalovirus en el receptor de trasplante hepático, señale la respuesta INCORRECTA:"
+ }
+]

@@ -1,0 +1,47 @@
+========================================================================================================
+MDE SENSITIVITY  (alpha=.05 two-sided, 80% power, cluster-aware test)
+seed=11071977; sim reps: calibration 2000, MDE bisection 3000/step, verification 6000
+========================================================================================================
+
+stratum                        N   pi_d   RD_obs   SE_iid   SE_clu   DEFF   N_eff  m_eff
+POOLED                      1299  0.225  -0.1555  0.01243  0.01594  1.643     791   24.5
+google/gemini-3.6-flash      325  0.108  -0.0831  0.01764  0.01785  1.024     317    6.1
+google/gemma-4-26b-a4b-it    325  0.308  -0.1969  0.02881  0.03316  1.325     245    6.1
+qwen/qwen3.6-35b-a3b         325  0.252  -0.1600  0.02645  0.02457  0.863     377    6.1
+z-ai/glm-5.2                 324  0.231  -0.1821  0.02478  0.02374  0.918     353    6.1
+
+MDE (percentage points) by method
+stratum                     A: empSE  B: fixDEFF  C: dir-ICC  D: disc-ICC    calibrated ICCs (dir / disc)
+POOLED                          4.46        4.70        5.47         3.65         0.253 / 0.078
+google/gemini-3.6-flash         5.00        5.10        5.22         4.97         0.282 / 0.027
+google/gemma-4-26b-a4b-it       9.29        9.77       10.68         8.48         0.383 / 0.246
+qwen/qwen3.6-35b-a3b            6.88        7.18        7.62         7.65         0.000 / 0.000
+z-ai/glm-5.2                    6.65        7.10        7.33         7.33         0.000 / 0.000
+
+verification of the two simulation models at their own MDE (6000 reps):
+  POOLED                   model C: power=0.795 (naive 0.927)   model D: power=0.797 (naive 0.796)
+                           calibration check at RD_obs: SE_emp=0.01594  SE_sim(C)=0.01586  SE_sim(D)=0.01594
+  google/gemini-3.6-flash  model C: power=0.791 (naive 0.816)   model D: power=0.798 (naive 0.796)
+                           calibration check at RD_obs: SE_emp=0.01785  SE_sim(C)=0.01775  SE_sim(D)=0.01785
+  google/gemma-4-26b-a4b-it model C: power=0.810 (naive 0.901)   model D: power=0.783 (naive 0.787)
+                           calibration check at RD_obs: SE_emp=0.03316  SE_sim(C)=0.03319  SE_sim(D)=0.03337
+  qwen/qwen3.6-35b-a3b     model C: power=0.794 (naive 0.788)   model D: power=0.794 (naive 0.792)
+                           calibration check at RD_obs: SE_emp=0.02457  SE_sim(C)=0.02607  SE_sim(D)=0.02606
+  z-ai/glm-5.2             model C: power=0.805 (naive 0.800)   model D: power=0.803 (naive 0.800)
+                           calibration check at RD_obs: SE_emp=0.02374  SE_sim(C)=0.02429  SE_sim(D)=0.02444
+
+headline bracket (pp):
+  POOLED                   MDE in [3.65, 5.47] pp   (model-free anchor A=4.46, B=4.70)
+  google/gemini-3.6-flash  MDE in [4.97, 5.22] pp   (model-free anchor A=5.00, B=5.10)
+  google/gemma-4-26b-a4b-it MDE in [8.48, 10.68] pp   (model-free anchor A=9.29, B=9.77)
+  qwen/qwen3.6-35b-a3b     MDE in [6.88, 7.65] pp   (model-free anchor A=6.88, B=7.18)
+  z-ai/glm-5.2             MDE in [6.65, 7.33] pp   (model-free anchor A=6.65, B=7.10)
+
+observed |RD| vs MDE:
+  POOLED                   |RD_obs|=15.55 pp  = 2.8x the most conservative MDE (5.47 pp)
+  google/gemini-3.6-flash  |RD_obs|=8.31 pp  = 1.6x the most conservative MDE (5.22 pp)
+  google/gemma-4-26b-a4b-it |RD_obs|=19.69 pp  = 1.8x the most conservative MDE (10.68 pp)
+  qwen/qwen3.6-35b-a3b     |RD_obs|=16.00 pp  = 2.1x the most conservative MDE (7.65 pp)
+  z-ai/glm-5.2             |RD_obs|=18.21 pp  = 2.5x the most conservative MDE (7.33 pp)
+
+[wrote stats_mde_sensitivity_out.json]

@@ -1,0 +1,51 @@
+{
+  "source": "balanced-flat-A.xlsx",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical": "canonical.json",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "adjudication": "adjudication.json",
+  "adjudication_sha256": "9d8b2ee7911766519910df5c36398b691fd9e1f9ce1679a0173e496206cca599",
+  "builder": "build_final_excel.py",
+  "builder_sha256": "b4b7f15f3c887698f41970efef5c6defc003d3c419b40988d1f95c041686c04d",
+  "base_questions": [
+    "b2",
+    "b3",
+    "b4",
+    "b24",
+    "b26",
+    "b27",
+    "b28",
+    "b29",
+    "b31",
+    "b35",
+    "b36",
+    "b38",
+    "b43",
+    "b45",
+    "b46",
+    "b460"
+  ],
+  "counts": {
+    "base": 16,
+    "conditions": 3,
+    "master_rows": 48
+  },
+  "primary_sentences": {
+    "BM": {
+      "variant": "BM07",
+      "entity": "fibroquelina-X3",
+      "sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+    },
+    "AN": {
+      "variant": "AN04",
+      "entity": "saco orfalónico",
+      "sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+    }
+  },
+  "outputs": {
+    "expC-anatomy-final.xlsx": "64e83bf873cdb70f43720852e7ba01ac4c45623a2428c378930c085bbfa15ee9",
+    "expC-biomarker-final.xlsx": "3b1000e57182ffb8f44917d467ec7f31808d12b699759af5b36d03b82a2a5d2f",
+    "expC-control-final.xlsx": "b85cb87aac147eedb8c0098721a4f32f29d943706acc19730af8f3cc68b2b60f",
+    "expC-items-final.xlsx": "9b8a80438d5d55fbab722981e85a4c0d2a1ec13f05dc265b91f35bbaed5e9ee3"
+  }
+}

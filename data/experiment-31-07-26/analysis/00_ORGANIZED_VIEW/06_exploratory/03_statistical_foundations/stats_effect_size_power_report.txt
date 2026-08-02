@@ -1,0 +1,114 @@
+====================================================================================================
+EFFECT SIZE + PRECISION :: A (verbatim) vs B (NOTA text swap), paired, runs=1
+cells=1299  items=325  clusters=208  models=4
+bootstrap reps=10000 (clusters resampled with replacement); seed=20260731
+====================================================================================================
+
+--- POOLED ---
+  N cells=1299  clusters=208  table: n11=919 n10(A wrong->B right)=45 n01(A right->B wrong)=247 n00=88  discordant=292 (22.5%)
+  pA=0.8976  pB=0.7421
+  RD (B-A)          = -0.1555   cluster-boot 95% CI [-0.1883, -0.1238]  bootSE=0.0163
+                       exact-binomial (conditional on 292 discordant) 95% CI [-0.1732, -0.1345]
+  OR (n10/n01)      = 0.182  (Haldane 0.184)  cluster-boot 95% CI [0.119, 0.268]
+                       exact-binomial 95% CI [0.130, 0.251]
+  Cohen g (p10-.5)  = -0.3459   cluster-boot 95% CI [-0.3937, -0.2885]
+                       exact-binomial 95% CI [-0.3853, -0.2993]
+  Cohen h (arcsine, marginals) = -0.4139   cluster-boot 95% CI [-0.4941, -0.3315]
+  SE(RD): iid=0.01243  cluster-robust=0.01594  cluster-bootstrap=0.01633
+  ICC(d) within cluster=0.1385  mean cluster size m0=6.16  DEFF: 1+(m0-1)ICC=1.714  empirical(robust/iid)^2=1.643  bootstrap^2=1.726
+  p (exact McNemar/binomial on discordants) = 6.27e-35   p (cluster-bootstrap percentile) = 0   p (cluster-robust normal z=-9.76) = 1.71e-22
+
+--- google/gemini-3.6-flash ---
+  N cells=325  clusters=208  table: n11=287 n10(A wrong->B right)=4 n01(A right->B wrong)=31 n00=3  discordant=35 (10.8%)
+  pA=0.9785  pB=0.8954
+  RD (B-A)          = -0.0831   cluster-boot 95% CI [-0.1211, -0.0496]  bootSE=0.0182
+                       exact-binomial (conditional on 35 discordant) 95% CI [-0.1008, -0.0501]
+  OR (n10/n01)      = 0.129  (Haldane 0.143)  cluster-boot 95% CI [0.038, 0.322]
+                       exact-binomial 95% CI [0.033, 0.365]
+  Cohen g (p10-.5)  = -0.3857   cluster-boot 95% CI [-0.4634, -0.2564]
+                       exact-binomial 95% CI [-0.4680, -0.2326]
+  Cohen h (arcsine, marginals) = -0.3641   cluster-boot 95% CI [-0.5189, -0.2248]
+  SE(RD): iid=0.01764  cluster-robust=0.01785  cluster-bootstrap=0.01818
+  ICC(d) within cluster=0.2057  mean cluster size m0=1.54  DEFF: 1+(m0-1)ICC=1.111  empirical(robust/iid)^2=1.024  bootstrap^2=1.062
+  p (exact McNemar/binomial on discordants) = 3.47e-06   p (cluster-bootstrap percentile) = 0   p (cluster-robust normal z=-4.65) = 3.24e-06
+
+--- google/gemma-4-26b-a4b-it ---
+  N cells=325  clusters=208  table: n11=176 n10(A wrong->B right)=18 n01(A right->B wrong)=82 n00=49  discordant=100 (30.8%)
+  pA=0.7938  pB=0.5969
+  RD (B-A)          = -0.1969   cluster-boot 95% CI [-0.2610, -0.1300]  bootSE=0.0334
+                       exact-binomial (conditional on 100 discordant) 95% CI [-0.2398, -0.1419]
+  OR (n10/n01)      = 0.220  (Haldane 0.224)  cluster-boot 95% CI [0.122, 0.376]
+                       exact-binomial 95% CI [0.124, 0.369]
+  Cohen g (p10-.5)  = -0.3200   cluster-boot 95% CI [-0.3915, -0.2266]
+                       exact-binomial 95% CI [-0.3897, -0.2305]
+  Cohen h (arcsine, marginals) = -0.4331   cluster-boot 95% CI [-0.5733, -0.2871]
+  SE(RD): iid=0.02881  cluster-robust=0.03316  cluster-bootstrap=0.03340
+  ICC(d) within cluster=0.2675  mean cluster size m0=1.54  DEFF: 1+(m0-1)ICC=1.145  empirical(robust/iid)^2=1.325  bootstrap^2=1.344
+  p (exact McNemar/binomial on discordants) = 6.15e-11   p (cluster-bootstrap percentile) = 0   p (cluster-robust normal z=-5.94) = 2.87e-09
+
+--- qwen/qwen3.6-35b-a3b ---
+  N cells=325  clusters=208  table: n11=221 n10(A wrong->B right)=15 n01(A right->B wrong)=67 n00=22  discordant=82 (25.2%)
+  pA=0.8862  pB=0.7262
+  RD (B-A)          = -0.1600   cluster-boot 95% CI [-0.2088, -0.1111]  bootSE=0.0247
+                       exact-binomial (conditional on 82 discordant) 95% CI [-0.1987, -0.1091]
+  OR (n10/n01)      = 0.224  (Haldane 0.230)  cluster-boot 95% CI [0.123, 0.378]
+                       exact-binomial 95% CI [0.119, 0.396]
+  Cohen g (p10-.5)  = -0.3171   cluster-boot 95% CI [-0.3908, -0.2256]
+                       exact-binomial 95% CI [-0.3938, -0.2163]
+  Cohen h (arcsine, marginals) = -0.4131   cluster-boot 95% CI [-0.5376, -0.2861]
+  SE(RD): iid=0.02645  cluster-robust=0.02457  cluster-bootstrap=0.02466
+  ICC(d) within cluster=0.0692  mean cluster size m0=1.54  DEFF: 1+(m0-1)ICC=1.037  empirical(robust/iid)^2=0.863  bootstrap^2=0.869
+  p (exact McNemar/binomial on discordants) = 5.26e-09   p (cluster-bootstrap percentile) = 0   p (cluster-robust normal z=-6.51) = 7.43e-11
+
+--- z-ai/glm-5.2 ---
+  N cells=324  clusters=207  table: n11=235 n10(A wrong->B right)=8 n01(A right->B wrong)=67 n00=14  discordant=75 (23.1%)
+  pA=0.9321  pB=0.7500
+  RD (B-A)          = -0.1821   cluster-boot 95% CI [-0.2323, -0.1372]  bootSE=0.0243
+                       exact-binomial (conditional on 75 discordant) 95% CI [-0.2096, -0.1392]
+  OR (n10/n01)      = 0.119  (Haldane 0.126)  cluster-boot 95% CI [0.046, 0.235]
+                       exact-binomial 95% CI [0.050, 0.249]
+  Cohen g (p10-.5)  = -0.3933   cluster-boot 95% CI [-0.4557, -0.3099]
+                       exact-binomial 95% CI [-0.4528, -0.3006]
+  Cohen h (arcsine, marginals) = -0.5200   cluster-boot 95% CI [-0.6540, -0.3935]
+  SE(RD): iid=0.02478  cluster-robust=0.02374  cluster-bootstrap=0.02433
+  ICC(d) within cluster=0.1422  mean cluster size m0=1.54  DEFF: 1+(m0-1)ICC=1.077  empirical(robust/iid)^2=0.918  bootstrap^2=0.964
+  p (exact McNemar/binomial on discordants) = 1.01e-12   p (cluster-bootstrap percentile) = 0   p (cluster-robust normal z=-7.67) = 1.73e-14
+
+====================================================================================================
+RETROSPECTIVE PRECISION / MDE
+====================================================================================================
+
+calibration (pooled): pi_discordant=0.2248  ICC(discordance)=0.1327  ICC(direction|discordant)=0.3280  mean cluster size (cells)=6.16
+
+-- analytic MDE at 80% power, alpha=.05 two-sided, MDE = (1.96+0.842)*SE --
+stratum                         SE_iid  SE_cluster   MDE_iid  MDE_cluster   MDE_boot  power@obs
+POOLED                         0.01243     0.01594    0.0348       0.0446     0.0458      1.000
+google/gemini-3.6-flash        0.01764     0.01785    0.0494       0.0500     0.0509      0.995
+google/gemma-4-26b-a4b-it      0.02881     0.03316    0.0807       0.0929     0.0936      1.000
+qwen/qwen3.6-35b-a3b           0.02645     0.02457    0.0741       0.0688     0.0691      1.000
+z-ai/glm-5.2                   0.02478     0.02374    0.0694       0.0665     0.0682      1.000
+
+-- simulation MDE (beta-binomial cluster model, exact observed cluster sizes) --
+   the direction-ICC is calibrated so the simulated cluster-robust SE at the
+   OBSERVED effect reproduces the empirical cluster-robust SE (variance match)
+pooled cluster sizes: 208 clusters, sizes(count) [(3, 1), (4, 196), (12, 1), (24, 2), (28, 1), (44, 1), (48, 1), (56, 1), (60, 1), (68, 2), (80, 1)]
+POOLED                       pi_d=0.225 ICC_disc=0.133 rho_dir(calibrated)=0.000 SE_emp=0.01594 SE_sim=0.01799 -> MDE=0.0367 (3.67 pp)  power@MDE: cluster-robust 0.798 / naive 0.797
+google/gemini-3.6-flash      pi_d=0.108 ICC_disc=0.166 rho_dir(calibrated)=0.000 SE_emp=0.01785 SE_sim=0.02030 -> MDE=0.0507 (5.07 pp)  power@MDE: cluster-robust 0.799 / naive 0.817
+google/gemma-4-26b-a4b-it    pi_d=0.308 ICC_disc=0.165 rho_dir(calibrated)=0.094 SE_emp=0.03316 SE_sim=0.03330 -> MDE=0.0926 (9.26 pp)  power@MDE: cluster-robust 0.810 / naive 0.852
+qwen/qwen3.6-35b-a3b         pi_d=0.252 ICC_disc=0.034 rho_dir(calibrated)=0.000 SE_emp=0.02457 SE_sim=0.02672 -> MDE=0.0776 (7.76 pp)  power@MDE: cluster-robust 0.814 / naive 0.810
+z-ai/glm-5.2                 pi_d=0.231 ICC_disc=0.120 rho_dir(calibrated)=0.000 SE_emp=0.02374 SE_sim=0.02787 -> MDE=0.0744 (7.44 pp)  power@MDE: cluster-robust 0.788 / naive 0.789
+
+-- power at plausible smaller true effects (analytic, cluster-bootstrap SE) --
+stratum                          1.0pp     2.0pp     3.0pp     5.0pp     7.5pp    10.0pp    15.0pp    20.0pp
+POOLED                           0.094     0.232     0.451     0.865     0.996     1.000     1.000     1.000
+google/gemini-3.6-flash          0.085     0.196     0.379     0.785     0.985     1.000     1.000     1.000
+google/gemma-4-26b-a4b-it        0.060     0.092     0.146     0.322     0.612     0.849     0.994     1.000
+qwen/qwen3.6-35b-a3b             0.069     0.128     0.229     0.527     0.860     0.982     1.000     1.000
+z-ai/glm-5.2                     0.070     0.130     0.234     0.538     0.869     0.984     1.000     1.000
+
+-- items required for 80% power vs true RD (scaling the observed cluster-robust SE) --
+   (SE scales as sqrt(n0/n); n0 = observed cells; assumes same discordance + ICC)
+   POOLED                    2.0pp:6,801 cells   3.0pp:3,023 cells   5.0pp:1,088 cells   7.5pp:484 cells   10.0pp:272 cells
+   google/gemini-3.6-flash   2.0pp:2,107 cells   3.0pp:937 cells   5.0pp:337 cells   7.5pp:150 cells   10.0pp:84 cells
+
+[wrote stats_effect_size_power_out.json]

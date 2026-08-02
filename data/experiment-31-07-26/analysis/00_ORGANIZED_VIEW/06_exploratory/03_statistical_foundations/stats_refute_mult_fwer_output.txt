@@ -1,0 +1,17 @@
+OBSERVED DATA: 82 / 160 tests reject at nominal alpha=.05
+   primary                  4 / 4
+   subgroup_permodel       49 / 100
+   subgroup_pooled         22 / 25
+   moderator_permodel       1 / 20
+   moderator_pooled         3 / 5
+   between_model            3 / 6
+
+GLOBAL-NULL SIMULATION, 200000 draws per flip granularity
+flip unit   E[# reject]    P(>=1)    P(>=8)  mc se P(>=1)   per-layer E[#]
+cell              3.966    0.8808    0.1439        0.0007   prim=0.15 subg=1.61 subg=0.81 mode=0.87 mode=0.25 betw=0.29
+item              7.291    0.9656    0.4147        0.0004   prim=0.15 subg=1.61 subg=3.09 mode=0.86 mode=1.31 betw=0.27
+cluster          12.695    0.9889    0.6934        0.0002   prim=0.35 subg=3.67 subg=4.68 mode=1.72 mode=1.91 betw=0.37
+
+CLAIM asserts: E[# false positives] = 8.0 , P(>=1) = 0.9997
+That is 1 - 0.95^160 = 0.999727, i.e. it assumes all 160 tests are
+INDEPENDENT and each has size EXACTLY .05.  Both premises fail here.

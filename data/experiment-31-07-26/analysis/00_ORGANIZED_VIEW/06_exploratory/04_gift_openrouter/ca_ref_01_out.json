@@ -1,0 +1,45 @@
+{
+ "S": 22,
+ "n_disc": 70,
+ "n_items_with_disc": 57,
+ "n_clusters_with_disc": 46,
+ "perm_item": {
+  "n_groups_flippable": 53,
+  "n_groups_zero_sum": 4,
+  "p_two_sided": 0.019185834854781092,
+  "p_one_sided_ge": 0.009592917427390546,
+  "frac": "1350083104731/70368744177664"
+ },
+ "perm_cluster": {
+  "n_groups_flippable": 41,
+  "n_groups_zero_sum": 5,
+  "p_two_sided": 0.02839461086296069,
+  "p_one_sided_ge": 0.014197305431480345,
+  "frac": "15610102405/549755813888"
+ },
+ "perm_cell": {
+  "n_groups_flippable": 70,
+  "n_groups_zero_sum": 0,
+  "p_two_sided": 0.011526409654363481,
+  "p_one_sided_ge": 0.005763204827181741,
+  "frac": "850498915931112407/73786976294838206464"
+ },
+ "robust_cell": {
+  "S": 22,
+  "var": 70,
+  "z": 2.629502940535666,
+  "p_normal": 0.008550979237125339
+ },
+ "robust_item": {
+  "S": 22,
+  "var": 82,
+  "z": 2.429493573646624,
+  "p_normal": 0.015119932959784714
+ },
+ "robust_cluster": {
+  "S": 22,
+  "var": 94,
+  "z": 2.2691267417693455,
+  "p_normal": 0.023260619585451628
+ }
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "workflow": "QA01 · lineage",
+    "scope": "DB-to-export grain, scored parse, retries, hashes",
+    "verdict": "FAIL on v2",
+    "final_status": "PASS",
+    "resolution": "Resolved in v3: authoritative score-to-parse lineage, deterministic ordering, integrity assertions, and pinned hashes."
+  },
+  {
+    "workflow": "QA02 · data quality",
+    "scope": "Workbook construction, exclusions, clusters, duplicates",
+    "verdict": "FAIL on old report",
+    "final_status": "PASS",
+    "resolution": "Mechanical construction and counts now reconcile; the missing clinical citation ledger for three user-directed key exclusions remains explicit."
+  },
+  {
+    "workflow": "QA03 · primary statistics",
+    "scope": "Paired estimates, regression, multiplicity, heterogeneity",
+    "verdict": "Core PASS; old report FAIL",
+    "final_status": "PASS",
+    "resolution": "All v3 counts, intervals, p-values, odds ratios, and scale-dependent heterogeneity language were corrected and pinned."
+  },
+  {
+    "workflow": "QA04 · resampling",
+    "scope": "Cluster bootstrap, sign flips, McNemar, CI stability",
+    "verdict": "Methods PASS; old artifacts FAIL",
+    "final_status": "PASS",
+    "resolution": "Recomputed 100,000 whole-cluster resamples; exact cluster sign flips are primary and stacked McNemar is labelled diagnostic."
+  },
+  {
+    "workflow": "QA05 · sensitivity",
+    "scope": "Exclusion grid, influence, position interaction",
+    "verdict": "Robustness PASS; old bundle FAIL",
+    "final_status": "PASS",
+    "resolution": "v3 exclusion and leave-one-out results replace stale values; duplicated specification-curve p-value claims were omitted."
+  },
+  {
+    "workflow": "QA06 · cross-pipeline",
+    "scope": "Partial GIFT/OpenRouter pairing, clustering, missingness",
+    "verdict": "Observed subset PASS; old report FAIL",
+    "final_status": "PASS",
+    "resolution": "Model-specific v3 values, cluster inference, heterogeneity, completion denominators, and assumption-free missing-outcome bounds are reported."
+  },
+  {
+    "workflow": "QA07 · operations",
+    "scope": "Calls, attempts, scores, errors, latency and token claims",
+    "verdict": "Original claims FAIL; current restraint PASS",
+    "final_status": "PASS",
+    "resolution": "Run status now separates created, attempted, scored, and retried units; unsupported intrinsic latency/cost claims were removed."
+  },
+  {
+    "workflow": "QA08 · construct validity",
+    "scope": "Intervention semantics, causal wording, mechanism controls",
+    "verdict": "Descriptive PASS; causal wording FAIL",
+    "final_status": "PASS",
+    "resolution": "Report now uses deployed-system contrasts, names the position-dependent phrase, narrows GIFT to pipeline differences, and specifies identifying controls."
+  },
+  {
+    "workflow": "QA09 · code review",
+    "scope": "Reproducibility, failure modes, source provenance, release code",
+    "verdict": "Core PASS; packaging FAIL",
+    "final_status": "PASS",
+    "resolution": "Release blockers repaired: stable section anchors, replayable hashed SQLite sources, DB hash checks, pinned secondary results, and fail-closed QA completeness."
+  },
+  {
+    "workflow": "QA10 · release candidate",
+    "scope": "Claim-to-evidence audit and desktop/mobile rendered QA",
+    "verdict": "PASS",
+    "final_status": "PASS",
+    "resolution": "All claims, hashes, ten replayable query datasets, native tables, source drawer, desktop/mobile layout, console, and local-only network behavior passed after two render fixes."
+  },
+  {
+    "workflow": "QA11 · model comparisons",
+    "scope": "Experiment A, Experiment B, and paired A/B cluster-aware inference",
+    "verdict": "PASS",
+    "final_status": "PASS",
+    "resolution": "Independent recomputation matched all denominators, estimates, CR1 omnibus F tests, exact cluster sign flips, Holm adjustments, and 100,000-replicate bootstrap intervals."
+  },
+  {
+    "workflow": "QA12 · release and clinical",
+    "scope": "Physician explanations, portable HTML, source replay, responsive layout, and folder inventory",
+    "verdict": "PASS",
+    "final_status": "PASS",
+    "resolution": "Statistical ordering, clinical restraint, folder preservation, 25 replayed manifest hashes, sources, five charts, and responsive rendering passed after fixing p-value coercion and a leaked Markdown emphasis marker."
+  },
+  {
+    "workflow": "QA13 · requested model groups",
+    "scope": "Large/small, open-model/proprietary, A, B, A-to-B, and secondary fixed-model contrasts",
+    "verdict": "PASS",
+    "final_status": "PASS",
+    "resolution": "Independent reconstruction matched all group accuracies, 100,000-replicate cluster intervals, exact cluster sign flips, Holm families, common-population counts, and source-database fields with zero discrepancies."
+  },
+  {
+    "workflow": "QA14 · group render and clinical",
+    "scope": "Grouped tables, physician explanations, source drawer, and desktop/mobile portable HTML",
+    "verdict": "Interim HTML stale; final PASS",
+    "final_status": "PASS",
+    "resolution": "The stale interim HTML was rejected and rebuilt; the current grouped tables, source replay, clinical restraint, local-only loading, and responsive behavior passed at 1440 px and 390 px."
+  },
+  {
+    "workflow": "QA15 · group code and release",
+    "scope": "Grouped-analysis implementation, deterministic rebuild, fail-closed QA state, preservation, and release hashes",
+    "verdict": "PASS for release integration",
+    "final_status": "PASS",
+    "resolution": "Independent code review matched the statistical implementation, hardened machine-readable QA readiness, confirmed deterministic uv-environment rebuilds, and passed the final v3.2 manifest seal."
+  }
+]

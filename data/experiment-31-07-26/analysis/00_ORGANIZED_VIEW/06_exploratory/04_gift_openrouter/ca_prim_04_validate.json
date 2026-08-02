@@ -1,0 +1,113 @@
+{
+ "permutation_vs_exact": {
+  "google/gemini-3.6-flash": {
+   "p_exact": 0.25,
+   "p_permutation_cell": 0.24927875360623197,
+   "abs_diff": 0.0007212463937680269,
+   "mc_se": 0.0009682458365518542
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "p_exact": 0.003326892852783203,
+   "p_permutation_cell": 0.0033399833000834996,
+   "abs_diff": 1.3090447300296518e-05,
+   "mc_se": 0.00012875994401849713
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "p_exact": 0.8388197422027588,
+   "p_permutation_cell": 0.8378558107209464,
+   "abs_diff": 0.0009639314818123967,
+   "mc_se": 0.0008221957865790121
+  },
+  "z-ai/glm-5.2": {
+   "p_exact": 0.00634765625,
+   "p_permutation_cell": 0.006064969675151625,
+   "abs_diff": 0.0002826865748483754,
+   "mc_se": 0.00017758608490154622
+  },
+  "POOLED": {
+   "p_exact": 0.011526409654363481,
+   "p_permutation_cell": 0.011614941925290374,
+   "abs_diff": 8.853227092689257e-05,
+   "mc_se": 0.000238679194053894
+  }
+ },
+ "loo_difficulty_gradient": {
+  "0/3 others correct": {
+   "n_cells": 13,
+   "gift_pct": 38.46153846153847,
+   "or_pct": 38.46153846153847,
+   "rd_pp": 0.0,
+   "b": 0,
+   "c": 0,
+   "p_exact": 1.0
+  },
+  "1/3 others correct": {
+   "n_cells": 47,
+   "gift_pct": 76.59574468085107,
+   "or_pct": 68.08510638297872,
+   "rd_pp": 8.510638297872342,
+   "b": 7,
+   "c": 3,
+   "p_exact": 0.34375
+  },
+  "2/3 others correct": {
+   "n_cells": 176,
+   "gift_pct": 86.93181818181817,
+   "or_pct": 81.81818181818183,
+   "rd_pp": 5.1136363636363535,
+   "b": 14,
+   "c": 5,
+   "p_exact": 0.063568115234375
+  },
+  "3/3 others correct": {
+   "n_cells": 1008,
+   "gift_pct": 96.13095238095238,
+   "or_pct": 95.23809523809523,
+   "rd_pp": 0.8928571428571508,
+   "b": 25,
+   "c": 16,
+   "p_exact": 0.21102359760880063
+  }
+ },
+ "difficulty_trend_test": {
+  "statistic": -11.535369774919612,
+  "p_permutation_arm_swap": 0.07678923210767892,
+  "R": 100000,
+  "note": "arm label swapped within cell; tests whether the GIFT-minus-OR contrast covaries with leave-one-model-out item difficulty"
+ },
+ "bootstrap_stability_of_exact_verdict": {
+  "B": 5000,
+  "per_model": {
+   "google/gemini-3.6-flash": {
+    "pct_replicates_p<=0.05": 8.3,
+    "pct_replicates_gift_ahead": 0.0,
+    "median_p": 0.25,
+    "p_95th": 1.0
+   },
+   "google/gemma-4-26b-a4b-it": {
+    "pct_replicates_p<=0.05": 81.94,
+    "pct_replicates_gift_ahead": 99.74,
+    "median_p": 0.003326892852783203,
+    "p_95th": 0.2558750795433298
+   },
+   "qwen/qwen3.6-35b-a3b": {
+    "pct_replicates_p<=0.05": 3.88,
+    "pct_replicates_gift_ahead": 28.12,
+    "median_p": 0.584664711728692,
+    "p_95th": 1.0
+   },
+   "z-ai/glm-5.2": {
+    "pct_replicates_p<=0.05": 80.76,
+    "pct_replicates_gift_ahead": 99.86,
+    "median_p": 0.00634765625,
+    "p_95th": 0.2265625
+   },
+   "POOLED": {
+    "pct_replicates_p<=0.05": 68.7,
+    "pct_replicates_gift_ahead": 98.72,
+    "median_p": 0.012502546136489849,
+    "p_95th": 0.4966174353179338
+   }
+  }
+ }
+}

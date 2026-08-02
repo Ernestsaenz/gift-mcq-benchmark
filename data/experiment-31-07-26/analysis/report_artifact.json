@@ -1,0 +1,4017 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Correct-option substitution benchmark: verified final analysis",
+    "description": "v3.3.1 presentation repair on the approved v3.3 fixed-model analysis, with fully marked bootstrap boxplots, OpenRouter A/B analysis, partial GIFT condition-A evidence, and 15-workflow QA.",
+    "generatedAt": "2026-07-31T15:00:00+02:00",
+    "cards": [
+      {
+        "id": "primary_outcome",
+        "description": "Cell-weighted paired accuracy on 1,271 verified OpenRouter cells.",
+        "dataset": "summary",
+        "metrics": [
+          {
+            "label": "Condition A accuracy",
+            "field": "a_accuracy",
+            "format": "percent"
+          },
+          {
+            "label": "Condition B accuracy",
+            "field": "b_accuracy",
+            "format": "percent"
+          },
+          {
+            "label": "B − A change",
+            "field": "change",
+            "format": "percent",
+            "signed": true
+          }
+        ],
+        "source": {
+          "id": "summary",
+          "label": "Reviewed headline snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Materialized exactly from the hash-pinned final result bundle.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Materialized exactly from the hash-pinned final result bundle.",
+            "sql": "SELECT * FROM summary",
+            "tables_used": [
+              "summary"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "inference",
+        "description": "Pooled 95% cluster-bootstrap interval [-18.78, -12.39] pp.",
+        "dataset": "summary",
+        "metrics": [
+          {
+            "label": "Model-adjusted odds ratio",
+            "field": "model_adjusted_or",
+            "format": "number"
+          },
+          {
+            "label": "Kish effective clusters",
+            "field": "effective_clusters",
+            "format": "number"
+          }
+        ],
+        "source": {
+          "id": "summary",
+          "label": "Reviewed headline snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Materialized exactly from the hash-pinned final result bundle.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Materialized exactly from the hash-pinned final result bundle.",
+            "sql": "SELECT * FROM summary",
+            "tables_used": [
+              "summary"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "gift_coverage",
+        "description": "GIFT A scored coverage; logical-run progress was higher and must not be substituted.",
+        "dataset": "summary",
+        "metrics": [
+          {
+            "label": "GIFT A scored share",
+            "field": "gift_scored_fraction",
+            "format": "percent"
+          }
+        ],
+        "source": {
+          "id": "summary",
+          "label": "Reviewed headline snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Materialized exactly from the hash-pinned final result bundle.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Materialized exactly from the hash-pinned final result bundle.",
+            "sql": "SELECT * FROM summary",
+            "tables_used": [
+              "summary"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      }
+    ],
+    "charts": [
+      {
+        "id": "condition_a_accuracy",
+        "title": "Experiment A: original-answer accuracy by model",
+        "subtitle": "Same 317 items and 200 clinical clusters for every model.",
+        "headerMarkdown": "All six pairwise differences survive Holm correction.",
+        "type": "bar",
+        "dataset": "condition_a_models",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "accuracy",
+            "type": "quantitative",
+            "label": "Accuracy",
+            "format": "percent"
+          }
+        },
+        "yAxisTitle": "Accuracy",
+        "valueFormat": "percent",
+        "layout": "full",
+        "source": {
+          "id": "condition_a_models",
+          "label": "Reviewed Experiment-A model snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM condition_a_models",
+            "tables_used": [
+              "condition_a_models"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_accuracy",
+        "title": "Experiment B: engineered-meta-answer accuracy by model",
+        "subtitle": "Same 317 items and 200 clinical clusters for every model.",
+        "headerMarkdown": "GLM versus qwen is the only statistically unresolved pair.",
+        "type": "bar",
+        "dataset": "condition_b_models",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "accuracy",
+            "type": "quantitative",
+            "label": "Accuracy",
+            "format": "percent"
+          }
+        },
+        "yAxisTitle": "Accuracy",
+        "valueFormat": "percent",
+        "layout": "full",
+        "source": {
+          "id": "condition_b_models",
+          "label": "Reviewed Experiment-B model snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM condition_b_models",
+            "tables_used": [
+              "condition_b_models"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "primary_accuracy",
+        "title": "Observed accuracy is lower in condition B for every model",
+        "subtitle": "Verified v3 analysis set; exact values are in the adjacent table.",
+        "headerMarkdown": "The paired change ranges from **−8.49 to −19.50 percentage points**.",
+        "type": "bar",
+        "dataset": "primary_accuracy",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "accuracy",
+            "type": "quantitative",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          "color": {
+            "field": "condition",
+            "type": "nominal",
+            "label": "Condition"
+          }
+        },
+        "yAxisTitle": "Accuracy",
+        "valueFormat": "percent",
+        "layout": "full",
+        "source": {
+          "id": "primary_accuracy",
+          "label": "Reviewed model accuracy snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Model-condition accuracy rows materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Model-condition accuracy rows materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM primary_accuracy",
+            "tables_used": [
+              "primary_accuracy"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "sensitivity_change",
+        "title": "Every main cleaning specification remains negative",
+        "subtitle": "B minus A; requested exclusions make the observed contrast smaller.",
+        "type": "bar",
+        "dataset": "sensitivity",
+        "encodings": {
+          "x": {
+            "field": "exclusions",
+            "type": "nominal",
+            "label": "Exclusions"
+          },
+          "y": {
+            "field": "change",
+            "type": "quantitative",
+            "label": "B − A",
+            "format": "percent"
+          }
+        },
+        "yAxisTitle": "Accuracy change",
+        "valueFormat": "percent",
+        "layout": "full",
+        "source": {
+          "id": "sensitivity",
+          "label": "Reviewed sensitivity snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM sensitivity",
+            "tables_used": [
+              "sensitivity"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "cross_arm_change",
+        "title": "The partial cross-pipeline difference reverses sign by model",
+        "subtitle": "GIFT minus OpenRouter on 306 cleaned, all-model-completed condition-A items.",
+        "headerMarkdown": "Positive for **gemma and glm**; near zero or negative for **qwen and gemini**.",
+        "type": "bar",
+        "dataset": "cross_arm_chart",
+        "encodings": {
+          "x": {
+            "field": "model",
+            "type": "nominal",
+            "label": "Model"
+          },
+          "y": {
+            "field": "change",
+            "type": "quantitative",
+            "label": "GIFT − OpenRouter",
+            "format": "percent"
+          }
+        },
+        "yAxisTitle": "Accuracy change",
+        "valueFormat": "percent",
+        "layout": "full",
+        "source": {
+          "id": "cross_arm_chart",
+          "label": "Reviewed model-level cross-pipeline snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Four model-level partial condition-A pipeline comparisons materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Four model-level partial condition-A pipeline comparisons materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM cross_arm_chart",
+            "tables_used": [
+              "cross_arm_chart"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_a_model_boxplot",
+        "title": "Experiment A model accuracy: bootstrap distributions",
+        "subtitle": "100,000 whole-clinical-cluster resamples of the 317-item common set.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Four-model omnibus p = 1.05 × 10⁻¹².",
+        "intent": "distribution",
+        "question": "How much uncertainty surrounds each model's Experiment-A accuracy?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "condition_a_model_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap accuracy",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "condition_a_model_boxplot",
+          "label": "Experiment-A model bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment A.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment A.",
+            "sql": "SELECT * FROM condition_a_model_boxplot",
+            "tables_used": [
+              "condition_a_model_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_a_group_boxplot",
+        "title": "Experiment A requested groups: bootstrap distributions",
+        "subtitle": "Equal-model group means on 317 common items; groups overlap across definitions.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Large–small Holm p = 6.65 × 10⁻¹³; open-model–gemini Holm p = 6.83 × 10⁻¹⁴.",
+        "intent": "distribution",
+        "question": "How do the requested fixed-model groups compare in Experiment A?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "condition_a_group_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap accuracy",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "condition_a_group_boxplot",
+          "label": "Experiment-A group bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment A.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment A.",
+            "sql": "SELECT * FROM condition_a_group_boxplot",
+            "tables_used": [
+              "condition_a_group_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_model_boxplot",
+        "title": "Experiment B model accuracy: bootstrap distributions",
+        "subtitle": "100,000 whole-clinical-cluster resamples of the 317-item common set.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Four-model omnibus p = 7.42 × 10⁻¹⁷.",
+        "intent": "distribution",
+        "question": "How much uncertainty surrounds each model's Experiment-B accuracy?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "condition_b_model_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap accuracy",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "condition_b_model_boxplot",
+          "label": "Experiment-B model bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment B.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment B.",
+            "sql": "SELECT * FROM condition_b_model_boxplot",
+            "tables_used": [
+              "condition_b_model_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_group_boxplot",
+        "title": "Experiment B requested groups: bootstrap distributions",
+        "subtitle": "Equal-model group means on 317 common items; groups overlap across definitions.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Large–small Holm p = 5.65 × 10⁻¹⁰; open-model–gemini Holm p = 1.71 × 10⁻¹⁶.",
+        "intent": "distribution",
+        "question": "How do the requested fixed-model groups compare in Experiment B?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "condition_b_group_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap accuracy",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "condition_b_group_boxplot",
+          "label": "Experiment-B group bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment B.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment B.",
+            "sql": "SELECT * FROM condition_b_group_boxplot",
+            "tables_used": [
+              "condition_b_group_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "primary_model_change_boxplot",
+        "title": "A-to-B accuracy change by model: bootstrap distributions",
+        "subtitle": "B minus A on all available cleaned pairs for each model.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Every model-specific change remains negative after Holm correction.",
+        "intent": "distribution",
+        "question": "How much uncertainty surrounds each model's paired A-to-B change?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "primary_model_change_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap B − A change",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "primary_model_change_boxplot",
+          "label": "Model-specific A-to-B bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for each model.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for each model.",
+            "sql": "SELECT * FROM primary_model_change_boxplot",
+            "tables_used": [
+              "primary_model_change_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "group_change_boxplot",
+        "title": "A-to-B accuracy change by requested group",
+        "subtitle": "Equal-model group means on the 317-item common set.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. All four group-specific declines survive their four-test Holm family.",
+        "intent": "distribution",
+        "question": "How much uncertainty surrounds each requested group's A-to-B change?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "group_change_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap B − A change",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "group_change_boxplot",
+          "label": "Requested-group A-to-B bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for the four overlapping requested groups.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for the four overlapping requested groups.",
+            "sql": "SELECT * FROM group_change_boxplot",
+            "tables_used": [
+              "group_change_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "group_interaction_boxplot",
+        "title": "Differences in A-to-B changes: primary and secondary contrasts",
+        "subtitle": "Positive values mean the first named side lost less accuracy from A to B.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. The large–small interaction spans zero; the open–gemini contrast remains a fixed-panel, singleton-proprietary comparison.",
+        "intent": "distribution",
+        "question": "Which requested group-change contrasts are resolved on the risk-difference scale?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "group_interaction_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap difference in changes",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "group_interaction_boxplot",
+          "label": "Group-interaction bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of primary and secondary whole-clinical-cluster bootstrap difference-in-change estimates.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of primary and secondary whole-clinical-cluster bootstrap difference-in-change estimates.",
+            "sql": "SELECT * FROM group_interaction_boxplot",
+            "tables_used": [
+              "group_interaction_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "cross_arm_boxplot",
+        "title": "Partial GIFT versus OpenRouter change by model",
+        "subtitle": "GIFT minus OpenRouter on 306 cleaned condition-A items in 178 clinical clusters.",
+        "headerMarkdown": "Labels show observed estimates. Whisker caps mark the bootstrap minimum and maximum; the outlined box runs from Q1 to Q3, and its dark divider marks the median. Hover repeats all five values; 95% intervals and adjusted tests remain in the adjacent tables. Signs reverse by model, so the pooled pipeline estimate is not a sufficient product conclusion.",
+        "intent": "distribution",
+        "question": "How much uncertainty surrounds each observed-subset pipeline difference?",
+        "rationale": "A box plot compactly compares deterministic whole-clinical-cluster bootstrap sampling distributions while the adjacent table preserves exact confidence intervals and multiplicity-adjusted tests.",
+        "comparisonContext": {
+          "denominator": "Common cleaned item population stated in the section",
+          "grain": "100,000 whole-clinical-cluster bootstrap ratio estimates",
+          "normalization": "Cell-weighted ratio estimator with clusters resampled intact",
+          "unit": "Accuracy or accuracy difference"
+        },
+        "type": "boxPlot",
+        "dataset": "cross_arm_boxplot",
+        "encodings": {
+          "x": {
+            "field": "display_label",
+            "type": "nominal",
+            "label": "Comparison and observed estimate"
+          },
+          "y": {
+            "fields": [
+              "minimum",
+              "q1",
+              "median",
+              "q3",
+              "maximum"
+            ],
+            "type": "quantitative",
+            "label": "Bootstrap estimate",
+            "format": "percent"
+          }
+        },
+        "xAxisTitle": "Bootstrap GIFT − OpenRouter change",
+        "valueFormat": "percent",
+        "maxRows": 8,
+        "layout": "full",
+        "source": {
+          "id": "cross_arm_boxplot",
+          "label": "Partial GIFT/OpenRouter bootstrap distributions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap GIFT-minus-OpenRouter estimates for each model on the observed subset.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap GIFT-minus-OpenRouter estimates for each model on the observed subset.",
+            "sql": "SELECT * FROM cross_arm_boxplot",
+            "tables_used": [
+              "cross_arm_boxplot"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "dataset_construction",
+        "title": "Dataset construction",
+        "dataset": "dataset_construction",
+        "columns": [
+          {
+            "field": "dataset",
+            "label": "Dataset",
+            "type": "text"
+          },
+          {
+            "field": "items",
+            "label": "Items",
+            "format": "number"
+          },
+          {
+            "field": "construction",
+            "label": "Construction",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "dataset_construction",
+          "label": "Reviewed dataset-construction snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Dataset counts and construction rules reconciled to v3 metadata and the source workbooks.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Dataset counts and construction rules reconciled to v3 metadata and the source workbooks.",
+            "sql": "SELECT * FROM dataset_construction",
+            "tables_used": [
+              "dataset_construction"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "analysis_exclusions",
+        "title": "Analysis exclusions",
+        "dataset": "analysis_exclusions",
+        "columns": [
+          {
+            "field": "rule",
+            "label": "Rule",
+            "type": "text"
+          },
+          {
+            "field": "declared_globally",
+            "label": "Declared globally",
+            "type": "text"
+          },
+          {
+            "field": "present_in_ab",
+            "label": "Present in A/B",
+            "type": "text"
+          },
+          {
+            "field": "basis",
+            "label": "Basis",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "analysis_exclusions",
+          "label": "Reviewed exclusion snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Declared exclusions and their presence in the paired A/B universe.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Declared exclusions and their presence in the paired A/B universe.",
+            "sql": "SELECT * FROM analysis_exclusions",
+            "tables_used": [
+              "analysis_exclusions"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "model_group_classification",
+        "title": "Requester-defined model groups",
+        "subtitle": "Four fixed deployments; the design has no small proprietary endpoint.",
+        "dataset": "model_group_classification",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "type": "text"
+          },
+          {
+            "field": "size_group",
+            "label": "Requested size group",
+            "type": "text"
+          },
+          {
+            "field": "access_group",
+            "label": "Requested access group",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "model_group_classification",
+          "label": "Requested model-group classification",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Requester-defined size and model-access labels for the four fixed deployments.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Requester-defined size and model-access labels for the four fixed deployments.",
+            "sql": "SELECT * FROM model_group_classification",
+            "tables_used": [
+              "model_group_classification"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_a_models",
+        "title": "Experiment A model accuracy",
+        "subtitle": "Complete-case comparison; intervals resample whole clinical clusters.",
+        "dataset": "condition_a_models",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "type": "text"
+          },
+          {
+            "field": "correct",
+            "label": "Correct",
+            "format": "number"
+          },
+          {
+            "field": "n",
+            "label": "n",
+            "format": "number"
+          },
+          {
+            "field": "accuracy",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_a_models",
+          "label": "Reviewed Experiment-A model snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM condition_a_models",
+            "tables_used": [
+              "condition_a_models"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_a_pairwise",
+        "title": "Experiment A pairwise model tests",
+        "subtitle": "First model minus second; exact whole-cluster sign flips with Holm correction across six tests.",
+        "dataset": "condition_a_pairwise",
+        "columns": [
+          {
+            "field": "comparison",
+            "label": "Comparison",
+            "type": "text"
+          },
+          {
+            "field": "paired_n",
+            "label": "Paired n",
+            "format": "number"
+          },
+          {
+            "field": "difference",
+            "label": "Accuracy difference",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_a_pairwise",
+          "label": "Reviewed Experiment-A pairwise snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Six Experiment-A cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Six Experiment-A cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+            "sql": "SELECT * FROM condition_a_pairwise",
+            "tables_used": [
+              "condition_a_pairwise"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_a_group_contrasts",
+        "title": "Experiment A requested group contrasts",
+        "subtitle": "Equal model weighting on 317 common items; Holm correction spans six primary group tests.",
+        "dataset": "condition_a_group_contrasts",
+        "columns": [
+          {
+            "field": "grouping",
+            "label": "Grouping",
+            "type": "text"
+          },
+          {
+            "field": "comparison",
+            "label": "Direction",
+            "type": "text"
+          },
+          {
+            "field": "first_accuracy",
+            "label": "First group",
+            "format": "percent"
+          },
+          {
+            "field": "second_accuracy",
+            "label": "Second group",
+            "format": "percent"
+          },
+          {
+            "field": "difference",
+            "label": "Accuracy difference",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_a_group_contrasts",
+          "label": "Reviewed Experiment-A group contrasts",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Two requested fixed-model group contrasts on the common Experiment-A population.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Two requested fixed-model group contrasts on the common Experiment-A population.",
+            "sql": "SELECT * FROM condition_a_group_contrasts",
+            "tables_used": [
+              "condition_a_group_contrasts"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_models",
+        "title": "Experiment B model accuracy",
+        "subtitle": "Complete-case comparison; intervals resample whole clinical clusters.",
+        "dataset": "condition_b_models",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "type": "text"
+          },
+          {
+            "field": "correct",
+            "label": "Correct",
+            "format": "number"
+          },
+          {
+            "field": "n",
+            "label": "n",
+            "format": "number"
+          },
+          {
+            "field": "accuracy",
+            "label": "Accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_b_models",
+          "label": "Reviewed Experiment-B model snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM condition_b_models",
+            "tables_used": [
+              "condition_b_models"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_pairwise",
+        "title": "Experiment B pairwise model tests",
+        "subtitle": "First model minus second; exact whole-cluster sign flips with Holm correction across six tests.",
+        "dataset": "condition_b_pairwise",
+        "columns": [
+          {
+            "field": "comparison",
+            "label": "Comparison",
+            "type": "text"
+          },
+          {
+            "field": "paired_n",
+            "label": "Paired n",
+            "format": "number"
+          },
+          {
+            "field": "difference",
+            "label": "Accuracy difference",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_b_pairwise",
+          "label": "Reviewed Experiment-B pairwise snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Six Experiment-B cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Six Experiment-B cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+            "sql": "SELECT * FROM condition_b_pairwise",
+            "tables_used": [
+              "condition_b_pairwise"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "condition_b_group_contrasts",
+        "title": "Experiment B requested group contrasts",
+        "subtitle": "Equal model weighting on 317 common items; Holm correction spans six primary group tests.",
+        "dataset": "condition_b_group_contrasts",
+        "columns": [
+          {
+            "field": "grouping",
+            "label": "Grouping",
+            "type": "text"
+          },
+          {
+            "field": "comparison",
+            "label": "Direction",
+            "type": "text"
+          },
+          {
+            "field": "first_accuracy",
+            "label": "First group",
+            "format": "percent"
+          },
+          {
+            "field": "second_accuracy",
+            "label": "Second group",
+            "format": "percent"
+          },
+          {
+            "field": "difference",
+            "label": "Accuracy difference",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "condition_b_group_contrasts",
+          "label": "Reviewed Experiment-B group contrasts",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Two requested fixed-model group contrasts on the common Experiment-B population.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Two requested fixed-model group contrasts on the common Experiment-B population.",
+            "sql": "SELECT * FROM condition_b_group_contrasts",
+            "tables_used": [
+              "condition_b_group_contrasts"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "primary_results",
+        "title": "Paired Experiment-A versus Experiment-B results",
+        "subtitle": "Risk differences use B minus A; CIs resample whole clinical clusters.",
+        "dataset": "primary_results",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "type": "text"
+          },
+          {
+            "field": "n",
+            "label": "Paired n",
+            "format": "number"
+          },
+          {
+            "field": "a_accuracy",
+            "label": "A accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "b_accuracy",
+            "label": "B accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "change",
+            "label": "B − A",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_cluster_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "primary_results",
+          "label": "Reviewed primary results snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Primary paired results and cluster intervals materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Primary paired results and cluster intervals materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM primary_results",
+            "tables_used": [
+              "primary_results"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "group_a_vs_b_changes",
+        "title": "A-to-B change within requested model groups",
+        "subtitle": "Overlapping fixed-model summaries on 317 common items; Holm correction spans four group declines.",
+        "dataset": "group_a_vs_b_changes",
+        "columns": [
+          {
+            "field": "grouping",
+            "label": "Grouping",
+            "type": "text"
+          },
+          {
+            "field": "group",
+            "label": "Group",
+            "type": "text"
+          },
+          {
+            "field": "model_count",
+            "label": "Models",
+            "format": "number"
+          },
+          {
+            "field": "a_accuracy",
+            "label": "A accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "b_accuracy",
+            "label": "B accuracy",
+            "format": "percent"
+          },
+          {
+            "field": "change",
+            "label": "B − A",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "group_a_vs_b_changes",
+          "label": "Reviewed group-specific A/B changes",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Four overlapping requested group summaries with whole-cluster intervals and four-test Holm correction.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Four overlapping requested group summaries with whole-cluster intervals and four-test Holm correction.",
+            "sql": "SELECT * FROM group_a_vs_b_changes",
+            "tables_used": [
+              "group_a_vs_b_changes"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "group_interactions",
+        "title": "Do the requested groups change differently from A to B?",
+        "subtitle": "Difference-in-differences on the percentage-point scale; Holm correction spans six primary group tests.",
+        "dataset": "group_interactions",
+        "columns": [
+          {
+            "field": "grouping",
+            "label": "Grouping",
+            "type": "text"
+          },
+          {
+            "field": "comparison",
+            "label": "Interaction direction",
+            "type": "text"
+          },
+          {
+            "field": "difference_in_changes",
+            "label": "Difference in B − A changes",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "Cluster-bootstrap 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "exact_cluster_p",
+            "label": "Exact cluster p",
+            "type": "text"
+          },
+          {
+            "field": "holm_p",
+            "label": "Holm p",
+            "type": "text"
+          },
+          {
+            "field": "conclusion",
+            "label": "Conclusion",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "group_interactions",
+          "label": "Reviewed group-by-condition interactions",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Primary risk-difference interactions for requested size and model-access groupings.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Primary risk-difference interactions for requested size and model-access groupings.",
+            "sql": "SELECT * FROM group_interactions",
+            "tables_used": [
+              "group_interactions"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "secondary_group_triangulation",
+        "title": "Triangulation inside the incomplete size × access design",
+        "subtitle": "Within-large and within-open contrasts; Holm correction spans six secondary tests.",
+        "dataset": "secondary_group_triangulation",
+        "columns": [
+          {
+            "field": "perspective",
+            "label": "Perspective",
+            "type": "text"
+          },
+          {
+            "field": "a_difference",
+            "label": "Experiment-A gap",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "a_holm_p",
+            "label": "A Holm p",
+            "type": "text"
+          },
+          {
+            "field": "b_difference",
+            "label": "Experiment-B gap",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "b_holm_p",
+            "label": "B Holm p",
+            "type": "text"
+          },
+          {
+            "field": "difference_in_changes",
+            "label": "Difference in changes",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "interaction_ci95",
+            "label": "Interaction 95% CI",
+            "type": "text"
+          },
+          {
+            "field": "interaction_holm_p",
+            "label": "Interaction Holm p",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "secondary_group_triangulation",
+          "label": "Reviewed partial-matching triangulation",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Within-large and within-open fixed-model contrasts used to expose group-label confounding.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Within-large and within-open fixed-model contrasts used to expose group-label confounding.",
+            "sql": "SELECT * FROM secondary_group_triangulation",
+            "tables_used": [
+              "secondary_group_triangulation"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "sensitivity_results",
+        "title": "Cleaning sensitivity",
+        "dataset": "sensitivity",
+        "columns": [
+          {
+            "field": "exclusions",
+            "label": "Exclusions",
+            "type": "text"
+          },
+          {
+            "field": "items",
+            "label": "Items",
+            "format": "number"
+          },
+          {
+            "field": "cells",
+            "label": "Cells",
+            "format": "number"
+          },
+          {
+            "field": "change",
+            "label": "B − A",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "95% CI",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "sensitivity",
+          "label": "Reviewed sensitivity snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM sensitivity",
+            "tables_used": [
+              "sensitivity"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "cross_results",
+        "title": "Partial condition-A cross-pipeline detail",
+        "subtitle": "Not a full-target pipeline estimate; GIFT B was never run.",
+        "dataset": "cross_arm",
+        "columns": [
+          {
+            "field": "model",
+            "label": "Model",
+            "type": "text"
+          },
+          {
+            "field": "openrouter_accuracy",
+            "label": "OpenRouter",
+            "format": "percent"
+          },
+          {
+            "field": "gift_accuracy",
+            "label": "GIFT",
+            "format": "percent"
+          },
+          {
+            "field": "change",
+            "label": "GIFT − OR",
+            "format": "percent",
+            "movement": true
+          },
+          {
+            "field": "ci95",
+            "label": "95% CI",
+            "type": "text"
+          },
+          {
+            "field": "or_only",
+            "label": "OR only",
+            "format": "number"
+          },
+          {
+            "field": "gift_only",
+            "label": "GIFT only",
+            "format": "number"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "cross_arm",
+          "label": "Reviewed cross-pipeline snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Partial condition-A pipeline comparison materialized from final_analysis_results.json.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Partial condition-A pipeline comparison materialized from final_analysis_results.json.",
+            "sql": "SELECT * FROM cross_arm",
+            "tables_used": [
+              "cross_arm"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "run_status",
+        "title": "Execution status",
+        "dataset": "run_status",
+        "columns": [
+          {
+            "field": "experiment",
+            "label": "Experiment",
+            "type": "text"
+          },
+          {
+            "field": "planned",
+            "label": "Planned",
+            "format": "number"
+          },
+          {
+            "field": "logical_calls",
+            "label": "Logical calls",
+            "format": "number"
+          },
+          {
+            "field": "attempted_calls",
+            "label": "Attempted calls",
+            "format": "number"
+          },
+          {
+            "field": "scored",
+            "label": "Scored",
+            "format": "number"
+          },
+          {
+            "field": "scored_fraction",
+            "label": "Scored share",
+            "format": "percent"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "run_status",
+          "label": "Reviewed execution-status snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "Execution counts materialized from the DB-hash-verified final result bundle.",
+          "query": {
+            "engine": "sqlite",
+            "description": "Execution counts materialized from the DB-hash-verified final result bundle.",
+            "sql": "SELECT * FROM run_status",
+            "tables_used": [
+              "run_status"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      },
+      {
+        "id": "qa_results",
+        "title": "15 independent QA workflows",
+        "dataset": "qa_results",
+        "columns": [
+          {
+            "field": "workflow",
+            "label": "Workflow",
+            "type": "text"
+          },
+          {
+            "field": "scope",
+            "label": "Scope",
+            "type": "text"
+          },
+          {
+            "field": "verdict",
+            "label": "Initial verdict",
+            "type": "text"
+          },
+          {
+            "field": "final_status",
+            "label": "Final status",
+            "type": "text"
+          },
+          {
+            "field": "resolution",
+            "label": "Resolution",
+            "type": "text"
+          }
+        ],
+        "layout": "full",
+        "source": {
+          "id": "qa",
+          "label": "Independent-QA snapshot",
+          "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+          "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+          "description": "15 unique QA workflow verdicts and their final resolutions.",
+          "query": {
+            "engine": "sqlite",
+            "description": "15 unique QA workflow verdicts and their final resolutions.",
+            "sql": "SELECT * FROM qa_results",
+            "tables_used": [
+              "qa_results"
+            ],
+            "executed_at": "2026-07-31T15:00:00+02:00"
+          }
+        }
+      }
+    ],
+    "sources": [
+      {
+        "id": "dataset_construction",
+        "label": "Reviewed dataset-construction snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Dataset counts and construction rules reconciled to v3 metadata and the source workbooks."
+      },
+      {
+        "id": "analysis_exclusions",
+        "label": "Reviewed exclusion snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Declared exclusions and their presence in the paired A/B universe."
+      },
+      {
+        "id": "model_group_classification",
+        "label": "Requested model-group classification",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Requester-defined size and model-access labels for the four fixed deployments."
+      },
+      {
+        "id": "summary",
+        "label": "Reviewed headline snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Materialized exactly from the hash-pinned final result bundle."
+      },
+      {
+        "id": "condition_a_models",
+        "label": "Reviewed Experiment-A model snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json."
+      },
+      {
+        "id": "condition_a_model_boxplot",
+        "label": "Experiment-A model bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment A."
+      },
+      {
+        "id": "condition_a_pairwise",
+        "label": "Reviewed Experiment-A pairwise snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Six Experiment-A cluster-aware pairwise model contrasts and Holm-adjusted p-values."
+      },
+      {
+        "id": "condition_a_group_contrasts",
+        "label": "Reviewed Experiment-A group contrasts",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Two requested fixed-model group contrasts on the common Experiment-A population."
+      },
+      {
+        "id": "condition_a_group_boxplot",
+        "label": "Experiment-A group bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment A."
+      },
+      {
+        "id": "condition_b_models",
+        "label": "Reviewed Experiment-B model snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json."
+      },
+      {
+        "id": "condition_b_model_boxplot",
+        "label": "Experiment-B model bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment B."
+      },
+      {
+        "id": "condition_b_pairwise",
+        "label": "Reviewed Experiment-B pairwise snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Six Experiment-B cluster-aware pairwise model contrasts and Holm-adjusted p-values."
+      },
+      {
+        "id": "condition_b_group_contrasts",
+        "label": "Reviewed Experiment-B group contrasts",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Two requested fixed-model group contrasts on the common Experiment-B population."
+      },
+      {
+        "id": "condition_b_group_boxplot",
+        "label": "Experiment-B group bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment B."
+      },
+      {
+        "id": "primary_accuracy",
+        "label": "Reviewed model accuracy snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Model-condition accuracy rows materialized from final_analysis_results.json."
+      },
+      {
+        "id": "primary_results",
+        "label": "Reviewed primary results snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Primary paired results and cluster intervals materialized from final_analysis_results.json."
+      },
+      {
+        "id": "primary_model_change_boxplot",
+        "label": "Model-specific A-to-B bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for each model."
+      },
+      {
+        "id": "group_a_vs_b_changes",
+        "label": "Reviewed group-specific A/B changes",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Four overlapping requested group summaries with whole-cluster intervals and four-test Holm correction."
+      },
+      {
+        "id": "group_change_boxplot",
+        "label": "Requested-group A-to-B bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for the four overlapping requested groups."
+      },
+      {
+        "id": "group_interactions",
+        "label": "Reviewed group-by-condition interactions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Primary risk-difference interactions for requested size and model-access groupings."
+      },
+      {
+        "id": "group_interaction_boxplot",
+        "label": "Group-interaction bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of primary and secondary whole-clinical-cluster bootstrap difference-in-change estimates."
+      },
+      {
+        "id": "secondary_group_triangulation",
+        "label": "Reviewed partial-matching triangulation",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Within-large and within-open fixed-model contrasts used to expose group-label confounding."
+      },
+      {
+        "id": "sensitivity",
+        "label": "Reviewed sensitivity snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Cleaning sensitivity rows materialized from final_analysis_results.json."
+      },
+      {
+        "id": "cross_arm_chart",
+        "label": "Reviewed model-level cross-pipeline snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Four model-level partial condition-A pipeline comparisons materialized from final_analysis_results.json."
+      },
+      {
+        "id": "cross_arm_boxplot",
+        "label": "Partial GIFT/OpenRouter bootstrap distributions",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap GIFT-minus-OpenRouter estimates for each model on the observed subset."
+      },
+      {
+        "id": "cross_arm",
+        "label": "Reviewed cross-pipeline snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Partial condition-A pipeline comparison materialized from final_analysis_results.json."
+      },
+      {
+        "id": "run_status",
+        "label": "Reviewed execution-status snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "Execution counts materialized from the DB-hash-verified final result bundle."
+      },
+      {
+        "id": "qa",
+        "label": "Independent-QA snapshot",
+        "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+        "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+        "description": "15 unique QA workflow verdicts and their final resolutions."
+      },
+      {
+        "id": "final_results_file",
+        "label": "Verified v3.3 result bundle",
+        "path": "data/experiment-31-07-26/analysis/final_analysis_results.json",
+        "sha256": "c9ae29367353a729f3cebbd3d9d58c331c8be072603cf82ef7ae9d7bb5ed054f",
+        "description": "Deterministic model, requested-group, primary, sensitivity, cross-arm, and status results."
+      },
+      {
+        "id": "audited_secondary_file",
+        "label": "Pinned audited secondary results",
+        "path": "data/experiment-31-07-26/analysis/audited_secondary_results.json",
+        "sha256": "1554f1fa2edbbed41b5a28638c946851288b731a0cccc11e56bdf766a7ff4667",
+        "description": "Machine-readable QA03, QA05, and QA06 secondary estimates with source hashes."
+      },
+      {
+        "id": "paired_file",
+        "label": "Canonical OpenRouter A/B pairs",
+        "path": "data/experiment-31-07-26/analysis/paired_clean.json",
+        "sha256": "76b9059cd67a1024cde1655dd3f32083bbfbbb40609728dc65173b25b8835187",
+        "description": "Scored A/B intersection with model, cluster, and exclusion fields."
+      },
+      {
+        "id": "cross_file",
+        "label": "Canonical partial cross-arm pairs",
+        "path": "data/experiment-31-07-26/analysis/cross_arm_A.json",
+        "sha256": "987c632976260d4614056afcc9210fcd4902d322fcfe28b480ebc2e6216c8120",
+        "description": "Condition-A GIFT/OpenRouter pairs on all-model completed items."
+      },
+      {
+        "id": "metadata_file",
+        "label": "v3 provenance and exclusions",
+        "path": "data/experiment-31-07-26/analysis/dataset_meta.json",
+        "sha256": "98562f1c3c8d518e5d88839f5380844a82f31fbcb02e14dc6c95994ba81f0da2",
+        "description": "Counts, configuration checks, run status, caveats, and SHA-256 hashes."
+      },
+      {
+        "id": "database_file",
+        "label": "Frozen run database",
+        "path": "data/experiment-31-07-26/experiment.sqlite",
+        "sha256": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748",
+        "description": "Authoritative experiments, logical calls, attempts, parses, and scores; identity verified against v3 metadata."
+      },
+      {
+        "id": "qa_file",
+        "label": "Independent-QA record",
+        "path": "data/experiment-31-07-26/analysis/qa_workflows/qa_summary.json",
+        "sha256": "a8c24bc5b7de8c3152b3ab0d87c3fd7200b3e41abd99f4ca2d77f77321ad000d",
+        "description": "Machine-readable lineage, quality, statistics, code, claim, and render audit summary."
+      },
+      {
+        "id": "qa_summary_file",
+        "label": "QA resolution narrative",
+        "path": "data/experiment-31-07-26/analysis/qa_workflows/QA_SUMMARY.md",
+        "sha256": "f4885a2b5528d63e1e802853c05b54ec6d1f9bc291a3ab368f5ce65997914280",
+        "description": "Human-readable summary of all 15 independent QA workflows and their resolutions."
+      },
+      {
+        "id": "boxplot_qa_file",
+        "label": "Annotated-boxplot QA record",
+        "path": "data/experiment-31-07-26/analysis/BOXPLOT_QA.md",
+        "sha256": "db3e3cc5d0d1e78e589e84382e26d4f2d07ee06259e7c81dca653bd544fe2b31",
+        "description": "v3.3.1 five-number-mark visibility, estimand, data-contract, SQLite, responsive-render, and local verification checks."
+      },
+      {
+        "id": "report_markdown_file",
+        "label": "Canonical report narrative",
+        "path": "data/experiment-31-07-26/analysis/REPORT.md",
+        "sha256": "672bfd0dfa7002f831fa5b7f3cef63c70f2d41c271cd4c1eccd9f3363f74431b",
+        "description": "Reader-facing Markdown report from which narrative blocks are built."
+      },
+      {
+        "id": "security_scan_file",
+        "label": "Security-scan status",
+        "path": "data/experiment-31-07-26/analysis/SECURITY_SCAN.md",
+        "sha256": "a305b57fba74018b1919f91ffa85431dac8a1efdb72d35caf4ebfd83e5b45b58",
+        "description": "Snyk authentication failure and completed local security-adjacent checks."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "text_title",
+        "type": "markdown",
+        "body": "# Correct-option substitution benchmark: verified final analysis\n\n**Analysis date:** 2026-07-31  \n**Release:** v3.3.1 presentation repair on the approved v3.3 analysis; OpenRouter B complete; OpenRouter A missing one cell; GIFT A partial; GIFT B not run  \n**Primary endpoint:** paired binary correctness  \n**Direction:** all differences are condition B minus condition A unless stated otherwise"
+      },
+      {
+        "id": "text_executive_conclusion",
+        "type": "markdown",
+        "body": "## Executive conclusion\n\nThe model comparisons are presented in the requested order: Experiment A, Experiment B, and then\nthe paired A-versus-B contrast. For the fair within-experiment comparisons, all four models are\nevaluated on the same 317 items and 200 clinical clusters. In A, accuracy ranged from **97.79% for\ngemini to 79.18% for gemma**, and all six pairwise model differences survived Holm correction. In\nB, accuracy ranged from **89.27% for gemini to 59.62% for gemma**; glm and qwen were the only pair\nthe data did not separate after correction.\n\nUsing the requester-defined groups, the two large models averaged **95.43% versus 83.75%** for the\ntwo small models in A and **82.02% versus 66.09%** in B. Both level contrasts survived Holm\ncorrection. Their A-to-B losses differed by **4.26 points**, but that interaction was not resolved\n(95% CI **−0.38 to +8.57**, Holm p = **0.0925**). The three-model open group averaged **86.86% in\nA and 68.98% in B**, while the sole proprietary endpoint, gemini, scored **97.79% and 89.27%**.\nGemini's smaller decline produced a **9.36-point** difference in changes (Holm p = **0.000321**),\nbut one proprietary model cannot establish a proprietary-model class advantage.\n\nAcross all available paired OpenRouter cells, keyed-answer accuracy was **89.54% in A and 74.04%\nin B**, a paired difference of **−15.50 percentage points**. In B, the substantive keyed option is\nreplaced by the same position-dependent preceding-options meta-answer on every item. A\n100,000-replicate whole-clinical-cluster bootstrap gave a 95% interval of approximately **−18.8 to\n−12.4 points**; an exact clinical-cluster sign-flip test gave **p = 1.95 × 10⁻¹⁵**. Every model\nmoved in the same negative direction.\n\nThe negative observed contrast is stable across the reported cleaning choices,\nclinical-cluster analyses, four named model endpoints, and leave-one-unit checks. It does **not**\nisolate memorisation or recognition of a familiar answer string: condition B also removes the\nsubstantive key, changes answer semantics and genre, makes one recurring meta-answer correct on\nevery B item, and may change decision strategy. Because the arms were run at different times and\nphysical provider routing was not pinned, attributing the entire contrast to the text bundle also\nrequires a no-time/no-routing-confounding assumption.\n\nThe partial cross-pipeline result is model-specific. On 306 cleaned items completed by all four\nGIFT-served models, GIFT-served minus OpenRouter-served accuracy was **+5.56 points** for gemma,\n**+3.27** for glm, **−0.33** for qwen, and **−0.98** for gemini. GIFT A produced scores for only\n**1,384 of 1,896 planned cells\n(73.0%)**, its covered prefix was easier than the unobserved remainder, and GIFT B never ran.\nThese are observed differences between two deployed pipelines on the condition-A complete-case\nsubset, not isolated retrieval effects or a full-target estimate."
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "primary_outcome",
+          "inference",
+          "gift_coverage"
+        ]
+      },
+      {
+        "id": "text_1_study_and_analysis_population",
+        "type": "markdown",
+        "body": "## 1. Study and analysis population\n\nThe source contains 500 Spanish multiple-choice items assembled for a digestive-system benchmark\nfrom regional public-health exams; later QA identified a small law/administration subset. The\nflattening step produced:\n\n\nFour models were run once per cell at temperature 0 with prompt `mcq_es_v4`:\n\n- `google/gemini-3.6-flash`\n- `z-ai/glm-5.2`\n- `qwen/qwen3.6-35b-a3b`\n- `google/gemma-4-26b-a4b-it`\n\nThe requested model groups for this post-hoc report analysis are defined as follows:\n\n\n“Open-model” is used as neutral shorthand for the requested open-source grouping; this analysis\ndoes not adjudicate license terms. “Large” and “small” are also requested analytical labels, not a\nparameter-count-matched taxonomy. There is no small proprietary model, so the design is not a\ncomplete `size × access` factorial and cannot separate those attributes as general model-class\neffects.\n\nThe reported OpenRouter A/B population is **318 items, 1,271 paired model×item cells, and 201\nclinical clusters**. The expected 1,272 cells are reduced by the unrecovered\n`b320 × glm-5.2` condition-A cell.\n\nFor the model-versus-model comparisons in Experiments A and B, `b320` is removed for all four\nmodels. This creates one identical complete-case set of **317 items, 1,268 model×item cells, and\n200 clinical clusters**. No missing result is counted as wrong or imputed. The later paired A/B\nsection retains all available pairs—318 for gemini, qwen, and gemma and 317 for glm—because that\nsection compares each model with itself rather than comparing models with unequal denominators.\n\n### Analysis exclusions\n\nThe eligible A/B universe contains 423 items. The requested cleaning removes 19 declared item\ndefects present in that universe and 91 items whose keyed letter is `a`; five items satisfy both\nrules. Thus `423 − 19 − 91 + 5 = 318` items.\n\n\nThree globally declared out-of-domain items were already absent from B, so only 19 of the 22\ndeclared defects enter the paired-universe arithmetic. The 19 law/administration classifications\nare evident from their stems. The detailed medical adjudication and citations for the three key\ndefects were not preserved in the supplied artifacts; those three exclusions are therefore\ntreated as a user-directed rule and tested through the exclusion sensitivity grid, not as a newly\nverified medical judgment.\n\nThe remaining analysed phrase positions are `b=111`, `c=122`, and `d=85`. Excluding slot `a`\nremoves the no-antecedent case but does not make the phrase position-neutral: in `b` and `c` it\nliterally refers only to choices printed before it. The exact phrase is keyed in all 423 B-eligible\nitems and in none of their matched A versions; key-letter frequencies themselves do not change."
+      },
+      {
+        "id": "model_group_classification_block",
+        "type": "table",
+        "tableId": "model_group_classification",
+        "layout": "full"
+      },
+      {
+        "id": "dataset_table_block",
+        "type": "table",
+        "tableId": "dataset_construction",
+        "layout": "full"
+      },
+      {
+        "id": "exclusion_table_block",
+        "type": "table",
+        "tableId": "analysis_exclusions",
+        "layout": "full"
+      },
+      {
+        "id": "text_2_experiment_a_comparison_among_models",
+        "type": "markdown",
+        "body": "## 2. Experiment A: comparison among models\n\nExperiment A retains the original substantive keyed answer. To compare models fairly, this section\nuses only the **317 questions answered by all four models**: 1,268 binary outcomes in 200 clinical\nclusters. The one incomplete item, `b320`, is excluded for every model in this section only.\n\n\nThe corresponding omnibus test is a saturated linear probability model with CR1 sandwich\ncovariance over clinical clusters. It rejects equal marginal accuracy across the four models:\n**cluster-robust Wald F(3, 199) = 22.75, p = 1.05 × 10⁻¹²**. This test uses the risk scale, so its\ncoefficients are the observed accuracy differences in percentage points.\n\nPairwise magnitudes use 100,000 whole-cluster bootstrap replicates. P-values use exact\nclinical-cluster sign flips and are Holm-adjusted across the six comparisons within Experiment A.\n\n\nAll six pairwise differences remain statistically detectable after multiplicity correction. The\nordering in this benchmark is therefore gemini, glm, qwen, then gemma. It is a comparison of the\nfour deployed configurations on this item bank, not proof of a universal ranking.\n\n### Requested group contrasts in Experiment A\n\nGroup accuracy is the equal-weight mean over the named models and 317 common items. The group\ncontrast uses a whole-clinical-cluster bootstrap interval and an exact clinical-cluster sign-flip\ntest. These are exploratory fixed contrasts requested after the main model analysis. Holm p-values\ncover the six primary grouped hypotheses: large versus small and open-model\nversus proprietary within each condition, plus the two group-by-condition interactions.\n\n\nThese p-values use the 200 clinical-question clusters as the sampling units while keeping the four\ndeployments fixed. They do not turn 317 questions into 317 independent model replicates: the size\ncontrast still contains only two named models per group, and the access contrast compares three\nnamed open-model endpoints with gemini alone.\n\n### How to read the annotated boxplots\n\nThe model and requested-group boxplots below summarize the **sampling distributions** from the\nsame 100,000 whole-clinical-cluster bootstrap used for the intervals—not the distribution of raw\n0/1 answers. Each label gives the observed accuracy. The whisker caps mark the bootstrap minimum\nand maximum, the outlined box runs from Q1 to Q3, and the dark line inside the box marks the\nmedian. Hover repeats all five values. The adjacent tables remain the authoritative source for\n95% intervals and Holm-adjusted tests."
+      },
+      {
+        "id": "condition_a_chart",
+        "type": "chart",
+        "chartId": "condition_a_accuracy",
+        "layout": "full"
+      },
+      {
+        "id": "condition_a_model_boxplot_block",
+        "type": "chart",
+        "chartId": "condition_a_model_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "condition_a_model_table",
+        "type": "table",
+        "tableId": "condition_a_models",
+        "layout": "full"
+      },
+      {
+        "id": "condition_a_pairwise_table",
+        "type": "table",
+        "tableId": "condition_a_pairwise",
+        "layout": "full"
+      },
+      {
+        "id": "condition_a_group_boxplot_block",
+        "type": "chart",
+        "chartId": "condition_a_group_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "condition_a_group_table",
+        "type": "table",
+        "tableId": "condition_a_group_contrasts",
+        "layout": "full"
+      },
+      {
+        "id": "text_2_experiment_a_comparison_among_models_clinical",
+        "type": "markdown",
+        "body": "### Clinical interpretation for physicians\n\nOn the same original-format questions, gemini matched the exam key on about 98 of every 100 items,\nglm on 93, qwen on 88, and gemma on 79. Even the two smallest observed gaps—gemini versus glm and\nglm versus qwen—were about five additional key-matched answers per 100 questions and remained\ndetectable after accounting for all six pairwise comparisons. Averaged over the requested groups,\nthe large pair produced about 12 more key-matched answers per 100 questions than the small pair;\ngemini produced about 11 more than the mean of the three-model open group. Those group summaries\ndescribe these systems only and should not be read as evidence that size or proprietary access\ncaused the difference. These are examination-key results, not estimates of diagnostic sensitivity,\npatient benefit, or bedside safety. Each cell was run once, and any answer used clinically still\nrequires independent clinical verification."
+      },
+      {
+        "id": "text_3_experiment_b_comparison_among_models",
+        "type": "markdown",
+        "body": "## 3. Experiment B: comparison among models\n\nExperiment B replaces the substantive keyed option with\n`Ninguna de las respuestas anteriores es correcta.` while leaving the keyed letter unchanged. The\nsame complete-case population as Experiment A is used here: **317 questions, 1,268 outcomes, and\n200 clinical clusters**.\n\n\nThe same risk-scale omnibus method rejects equal marginal accuracy:\n**cluster-robust Wald F(3, 199) = 31.84, p = 7.42 × 10⁻¹⁷**.\n\nPairwise magnitudes again use 100,000 whole-cluster bootstrap replicates. P-values use exact\nclinical-cluster sign flips with Holm adjustment across the six Experiment-B comparisons.\n\n\nGemini is higher than each alternative, and both glm and qwen are higher than gemma after Holm\ncorrection. The study does **not** resolve glm versus qwen: the observed +2.21-point difference has\na confidence interval spanning zero and an adjusted p-value of 0.477.\n\n### Requested group contrasts in Experiment B\n\nThe same equal-model weighting, 317-item complete-case population, whole-cluster intervals, exact\ncluster sign flips, and six-test Holm family are used here.\n\n\nThe group gaps are larger in percentage points than in A, but that observation alone does not show\ngreater group “robustness”: the models start from different baselines, gemini is near the A ceiling,\nand risk-difference interactions can disagree with log-odds interactions.\n\n### How to read the annotated boxplots\n\nThe two boxplots below use 100,000 whole-clinical-cluster bootstrap estimates on the common\n317-item set. Labels report observed accuracy. Whisker caps mark the bootstrap minimum and\nmaximum, the outlined box shows the middle 50% from Q1 to Q3, and its dark internal line marks the\nmedian. Hover repeats all five values. These are uncertainty displays, not raw-score boxplots;\nexact 95% intervals and corrected p-values remain in the tables."
+      },
+      {
+        "id": "condition_b_chart",
+        "type": "chart",
+        "chartId": "condition_b_accuracy",
+        "layout": "full"
+      },
+      {
+        "id": "condition_b_model_boxplot_block",
+        "type": "chart",
+        "chartId": "condition_b_model_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "condition_b_model_table",
+        "type": "table",
+        "tableId": "condition_b_models",
+        "layout": "full"
+      },
+      {
+        "id": "condition_b_pairwise_table",
+        "type": "table",
+        "tableId": "condition_b_pairwise",
+        "layout": "full"
+      },
+      {
+        "id": "condition_b_group_boxplot_block",
+        "type": "chart",
+        "chartId": "condition_b_group_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "condition_b_group_table",
+        "type": "table",
+        "tableId": "condition_b_group_contrasts",
+        "layout": "full"
+      },
+      {
+        "id": "text_3_experiment_b_comparison_among_models_clinical",
+        "type": "markdown",
+        "body": "### Clinical interpretation for physicians\n\nUnder this engineered answer format, gemini matched the key on about 89 of every 100 questions,\nglm on 75, qwen on 73, and gemma on 60. The analysis supports a difference between gemini and each\nother model and between gemma and both middle models. It cannot reliably rank glm above qwen; the\nplausible range includes a modest advantage in either direction. For the requested groups, the\nlarge pair averaged about 16 more key matches per 100 than the small pair, while gemini averaged\nabout 20 more than the three open-model endpoints. The second comparison is gemini versus a group,\nnot a replicated proprietary-versus-open experiment. This is an artificial position-dependent\nmeta-answer task, so the values must not be interpreted as bedside diagnostic accuracy or evidence\nabout general handling of a standard none-of-the-above option."
+      },
+      {
+        "id": "text_4_paired_comparison_between_experiments_a_and_b",
+        "type": "markdown",
+        "body": "## 4. Paired comparison between Experiments A and B\n\nThis section compares each model with itself on every available A/B pair. It therefore restores\nthe three valid `b320` pairs and uses **318 pairs** for gemini, qwen, and gemma and **317 pairs** for\nglm. The pooled descriptive row contains 1,271 model×item pairs in 201 clinical clusters.\n\n\nThe primary corresponding test is an exact two-sided sign flip of each whole clinical cluster's\nnet A/B difference. Holm adjustment is applied across the four named model endpoints. All four\nmodels remain lower in B after correction. The pooled sign-flip test retains all four responses\nand related questions inside each clinical cluster; its null-variance design effect is **3.774**\nrelative to treating discordant cells as independent. Ordinary exact McNemar tests are retained in\nthe machine-readable result bundle as iid-pair sensitivity checks, but they are not the primary\ncluster-aware inference.\n\nA model-adjusted logistic regression with CR1 covariance over the 201 clinical clusters estimated\nan odds ratio of **0.314** (95% CI **0.247–0.399**, p = **3.36 × 10⁻²¹**). In words, condition B\nwas associated with about a **68.6% reduction in the odds** of a correct response after adjusting\nfor model. An item-stratified conditional logistic sensitivity model gave a within-item common odds\nratio of **0.209** (95% CI **0.150–0.290**).\n\n### Model heterogeneity is scale-dependent\n\nThe percentage-point changes differ (cluster-covariance Wald p = **0.000293**), largely because the\nmodels begin at different baselines and gemini is near the ceiling. Log-odds interaction tests are\nless conclusive: the conditional-logit interaction LRT gives p = **0.201**, its cluster-robust Wald\ntest p = **0.123**, while a marginal-logit robust Wald test gives p = **0.0438**. These do not\nestablish equal robustness. The accurate conclusion is that heterogeneity depends on the estimand\nand model; the direction is uniformly negative.\n\n### A-to-B change within each requested model group\n\nThese summaries return to the 317-item common set so that every group is evaluated on identical\nquestions. Each group-specific p-value tests its own A-to-B change; Holm adjustment is across the\nfour overlapping group summaries.\n\n\nThe inferential group question is whether those declines differ—not whether each decline alone is\nnonzero:\n\n\nThe size-group interaction is therefore inconclusive on the percentage-point scale. The access-group\ninteraction is statistically detectable for this panel, but it is inseparable from gemini's model\nidentity and its higher baseline: the “proprietary” group has one endpoint and there is no small\nproprietary comparator. It must not be presented as a general proprietary-model robustness effect.\n\n### Triangulation inside the incomplete size × access design\n\nTwo secondary contrasts partially hold one requested attribute fixed. They use the same cluster\nmethods and Holm adjustment across six secondary tests (A level, B level, and change interaction\nfor each perspective).\n\n\nThis triangulation shows why the aggregate labels are not interchangeable with mechanisms. Within\nthe open-model subset, glm had higher level accuracy than the two small open endpoints in both\nconditions, but its A-to-B loss was not detectably different. Within the large pair, gemini's loss\nwas smaller than glm's. That pattern points to endpoint-specific behavior and baseline scale—not a\ncleanly identified size effect.\n\n### How to read the annotated boxplots\n\nThe three annotated boxplots below show bootstrap distributions for each model's A-to-B change,\neach requested group's change, and the primary plus secondary differences in changes. Labels show\nthe observed percentage-point estimate. Whisker caps mark the bootstrap minimum and maximum, the\noutlined box spans Q1 to Q3, and the dark internal line marks the median. Hover repeats all five\nvalues. A box crossing zero is descriptive only—the exact cluster test, its Holm adjustment, and\nthe 95% interval in the adjacent tables determine the stated inference."
+      },
+      {
+        "id": "primary_chart",
+        "type": "chart",
+        "chartId": "primary_accuracy",
+        "layout": "full"
+      },
+      {
+        "id": "primary_model_change_boxplot_block",
+        "type": "chart",
+        "chartId": "primary_model_change_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "primary_table",
+        "type": "table",
+        "tableId": "primary_results",
+        "layout": "full"
+      },
+      {
+        "id": "group_change_boxplot_block",
+        "type": "chart",
+        "chartId": "group_change_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "group_change_table",
+        "type": "table",
+        "tableId": "group_a_vs_b_changes",
+        "layout": "full"
+      },
+      {
+        "id": "group_interaction_boxplot_block",
+        "type": "chart",
+        "chartId": "group_interaction_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "group_interaction_table",
+        "type": "table",
+        "tableId": "group_interactions",
+        "layout": "full"
+      },
+      {
+        "id": "secondary_group_table",
+        "type": "table",
+        "tableId": "secondary_group_triangulation",
+        "layout": "full"
+      },
+      {
+        "id": "text_4_paired_comparison_between_experiments_a_and_b_clinical",
+        "type": "markdown",
+        "body": "### Clinical interpretation for physicians\n\nFor every model, changing from the original keyed answer in A to the engineered meta-answer in B\nreduced agreement with the exam key. The observed loss ranged from roughly 8 fewer correct answers\nper 100 for gemini to about 20 fewer for gemma, and all four declines remained detectable after\naccounting for clinical-case clustering and four model-specific tests. This demonstrates\nsensitivity to the complete B configuration; it does not prove memorisation, because B changes the\nanswer's content, semantics, genre, repetition pattern, and decision structure at the same time.\nThe requested large and small groups both declined, and the data did not establish that their\ndeclines differ. The apparent proprietary/open-model difference is chiefly a comparison of gemini\nwith three other endpoints and should not guide a clinical procurement decision as a class effect.\nIt also does not estimate a change in patient outcomes."
+      },
+      {
+        "id": "text_5_statistical_method_and_normality",
+        "type": "markdown",
+        "body": "## 5. Statistical method and normality\n\nCorrectness is binary and the paired change takes only `−1`, `0`, or `+1`. A Shapiro–Wilk test or\nQ–Q plot on those values would test an impossible continuous-normal model and is not relevant.\nThe analyses used here do not assume normally distributed outcomes:\n\n1. Within A and within B, a saturated risk-scale model with CR1 covariance tests whether all four\n   marginal accuracies are equal; the finite-cluster reference is F(3, 199).\n2. Within-experiment pairwise differences use 100,000 whole-cluster bootstrap intervals and exact\n   clinical-cluster sign-flip p-values, with Holm adjustment across six comparisons per condition.\n3. The paired A/B section uses per-model risk differences, 100,000 whole-cluster bootstrap\n   intervals, and exact clinical-cluster sign flips with Holm adjustment across four models.\n4. Requested group accuracies give each named model equal weight on the 317 common items. Group\n   contrasts and group-by-condition interactions use whole-cluster bootstrap intervals and exact\n   sign flips of integer-scaled clinical-cluster contributions. Holm correction is applied to six\n   primary group contrasts, four group-specific declines, and—separately—six secondary\n   triangulation tests.\n5. Exact McNemar tests remain secondary iid-pair checks, and cluster-robust logistic regression is\n   a secondary A/B common-effect summary.\n\nThe top-level clusters are assumed independent and exchangeable enough for resampling. Cluster\nsizes are uneven: the Kish effective count is **50.9** rather than the nominal 201. This is why the\nreport emphasizes whole-cluster intervals and leave-one-unit checks. In the bootstrap, repeated\ncluster draws retain their multiplicity; they are never regrouped only by question ID.\n\nThe CR1 Wald F tests rely on having enough independent top-level clusters. Exact sign-flip tests\nadd the sharper null assumption that cluster-level paired differences are sign-exchangeable; the\nmodels were not randomized, so these are sampling-model tests over the analysed item clusters, not\nrandomized-treatment tests. The item bank is not a probability sample of clinical practice, and\nnone of these p-values establishes external clinical generalisability.\n\nNormality would matter for a proposed parametric comparison of a genuinely continuous secondary\noutcome. It does not rescue completion-token or latency comparisons here, because those measures\nhave additional construction and serving confounds described below."
+      },
+      {
+        "id": "text_6_sensitivity_to_cleaning_and_influential_units",
+        "type": "markdown",
+        "body": "## 6. Sensitivity to cleaning and influential units\n\nThe observed contrast remains negative under every main exclusion choice. These four rows are independently\nrecomputed on v3; intervals are whole-cluster percentile bootstraps.\n\n\nBoth requested exclusion classes make the measured contrast smaller. On the reported set, the pooled\nchange ranges only from **−16.06 to −15.00 points** across 201 leave-one-cluster-out refits and\nfrom **−15.86 to −15.23** across 318 leave-one-item-out refits. Dropping one model at a time gives\n**−17.84 to −14.17**.\n\nAfter removing declared item defects, key-`a` cells show a descriptive change of **−22.09 points**,\ncompared with **−15.50** for other positions, a **−6.59-point** gap. This supports excluding the\npositionally incoherent construction on logical-design grounds, but the cleaned interaction is not\nconclusive (cluster 95% CI **−13.38 to +0.26 points**; exact item-label p = **0.063**). The core\ncontrast is not dependent on those cells."
+      },
+      {
+        "id": "sensitivity_chart_block",
+        "type": "chart",
+        "chartId": "sensitivity_change",
+        "layout": "full"
+      },
+      {
+        "id": "sensitivity_table_block",
+        "type": "table",
+        "tableId": "sensitivity_results",
+        "layout": "full"
+      },
+      {
+        "id": "text_7_what_the_a_b_result_can_and_cannot_support",
+        "type": "markdown",
+        "body": "## 7. What the A/B result can and cannot support\n\n### Supported\n\n- Across the observed runs, condition-B keyed-answer accuracy is materially lower than condition A\n  for all four named model endpoints.\n- The negative contrast survives clinical clustering, the requested cleaning rules, and\n  leave-one-unit checks.\n- The contrast is not explained by the one unrecovered OpenRouter cell.\n\n### Not supported\n\n- **The pure causal effect of text replacement.** Run time and physical provider routing were not\n  pinned or randomized across arms.\n- **Memorisation, lexical familiarity, or reasoning burden as isolated mechanisms.** The\n  intervention removes the substantive key, changes semantics and genre, perfectly couples one\n  repeated phrase with keyed status, and may change decision strategy; burden was not measured.\n- **General none-of-the-above handling.** The phrase refers to preceding options and is always\n  keyed in B; it was not tested as a position-neutral or unkeyed meta-option.\n- **Equal robustness across models.** Interaction evidence varies by scale; no equivalence margin\n  was specified or tested.\n- **General large-versus-small or open-versus-proprietary effects.** The four deployments were\n  fixed, only one proprietary model was observed, and the size-by-access table lacks a small\n  proprietary cell. Question-level replication does not supply model-level replication.\n- **Item-level stability.** There was one run per item/model/condition.\n- **Unconfounded latency or token effort.** The serving and response formats differ in ways that\n  contaminate those measures.\n\nThe highest-value follow-up uses multiple clinician-validated, length/style-matched paraphrases,\nincluding keyed-only and all-options paraphrase controls. A position-neutral meta-option should be\ntested both keyed and unkeyed, with position balanced and the substantive answer held present or\nabsent by design. To isolate retrieval, randomize and interleave a\n`substitution (A/B) × retrieval (off/on)` design within the same provider stack while pinning the\nmodel snapshot, prompt, corpus/index, `top_k`, response schema, and backend."
+      },
+      {
+        "id": "text_8_partial_gift_served_versus_openrouter_served_result_condition_a_only",
+        "type": "markdown",
+        "body": "## 8. Partial GIFT-served versus OpenRouter-served result: condition A only\n\nThe paired cross-arm table uses only items for which all four GIFT models produced a score, then\napplies the declared item-defect exclusions: **306 items, 1,224 model×item pairs, 178 clinical\nclusters**.\n\nThis compares whole deployed pipelines, not retrieval alone. OpenRouter received the in-message\n`mcq_es_v4` template. GIFT calls carried server-side prompt ID 13 and used the server-default\nretrieval depth (`top_k` was not pinned); the deployed prompt text, retrieved passages, and\ncorpus/index version were not independently archived.\n\n\nThe exact cluster sign-flip p-values are 0.250 (gemini), 0.0107 (glm), 1.000 (qwen), 0.0070\n(gemma), and 0.0206 pooled. Risk-difference heterogeneity is strong\n(F(3,177) = **7.08**, p = **0.000162**). The model effects reverse sign, so the pooled\n+1.88-point estimate is\nnot an adequate product conclusion. The two positive model results survive Holm adjustment of the\nfour cluster sign-flip tests; gemini and qwen do not.\n\n### Coverage limitation\n\nGIFT A produced scores for **1,384/1,896 planned cells (73.0%)**. The runner created 1,566 logical\ncalls (82.6% of plan) and attempted 1,565 distinct calls; “83% complete” therefore describes where\nthe sequential runner reached, not scored completion. Only **319 items** had scores from all four\nGIFT models before analysis exclusions.\n\nCoverage was a sequential prefix with gaps, not a random sample. OpenRouter accuracy was **91.07%**\non the 319 all-model-covered items and **82.88%** on the 155 other A items, an **8.19-point**\ndifference. Pairing makes the observed-subset comparison internally coherent but does not identify\nthe GIFT-served minus OpenRouter-served pipeline difference on the missing items. On the cleaned\nfull condition-A target, a strict\nassumption-free missing-outcome bound for GIFT minus OpenRouter is **−21.46 to +5.42 points**;\npost-stratified estimates near +2 points require untestable extrapolation. No full-target pipeline\ndifference is reported.\n\n### How to read the annotated boxplot\n\nThe boxplot below summarizes 100,000 whole-clinical-cluster bootstrap estimates of GIFT minus\nOpenRouter for each model on the observed subset. Labels show the observed change. Whisker caps\nmark the bootstrap minimum and maximum, the outlined box spans Q1 to Q3, and the dark internal\nline marks the median. Hover repeats all five values. It visualizes uncertainty on the covered\nsubset only; it does not repair the sequential missing coverage or identify retrieval."
+      },
+      {
+        "id": "cross_chart_block",
+        "type": "chart",
+        "chartId": "cross_arm_change",
+        "layout": "full"
+      },
+      {
+        "id": "cross_boxplot_block",
+        "type": "chart",
+        "chartId": "cross_arm_boxplot",
+        "layout": "full"
+      },
+      {
+        "id": "cross_table_block",
+        "type": "table",
+        "tableId": "cross_results",
+        "layout": "full"
+      },
+      {
+        "id": "text_9_run_status_and_measurement_caveats",
+        "type": "markdown",
+        "body": "## 9. Run status and measurement caveats\n\n\nThe GIFT A run recorded **1,582 provider attempts**, of which **196 (12.39%)** returned non-200\nstatus codes. Seventeen HTTP 401 attempts were recovered on retry. At stop time, **179 of 1,565\nattempted logical cells (11.44%)** ended on a non-200 latest attempt (96 HTTP 429 and 83 HTTP 500),\ntwo more ended in an HTTP-200 parse failure, and one created logical call was never started. These\nare operational attempt/call rates, not permanent model error rates; retries and unattempted cells\nmust be shown separately.\n\nCross-arm latency and cost claims require restraint:\n\n- GIFT was deliberately serialised while OpenRouter used different serving infrastructure and\n  concurrency. Observed wall-clock throughput is a property of those run settings, not an intrinsic\n  model latency ratio.\n- `completion_tokens` include the emitted JSON and selected option text. Condition B replaces a\n  variable-length keyed answer with a fixed string, so raw completion-token differences partly\n  measure answer echo, not deliberation.\n- OpenRouter provider routing was not pinned. The A/B backend total-variation distance is 0 for\n  gemini, 0.815 for gemma, 0.236 for qwen, and 0.303 for glm. Same-backend subsets remain negative\n  for all models, but are selected and small for gemma and qwen; they reduce concern without fully\n  removing the confound.\n\nAccordingly, the final findings do not include “deliberated longer,” an intrinsic 15.6× latency\npenalty, or minutes/failures per additional correct answer unless a separately pinned operational\nbenchmark is run."
+      },
+      {
+        "id": "run_table_block",
+        "type": "table",
+        "tableId": "run_status",
+        "layout": "full"
+      },
+      {
+        "id": "text_10_missing_work_and_scope_boundaries",
+        "type": "markdown",
+        "body": "## 10. Missing work and scope boundaries\n\nThe following evidence does not exist and is absent from the conclusions:\n\n- GIFT condition B and therefore any retrieval-arm A/B contrast.\n- The remaining 512 planned GIFT A scores.\n- The paraphrase and format-control arms needed for a memorisation mechanism claim.\n- Replicate runs for within-item/model stability.\n- Provider-pinned A/B serving measurements.\n- Archived medical rationale and citations for the three user-adjudicated key exclusions.\n\nTwo earlier exploratory workflows—“Data structure, distributional assumptions, and principled\ntest selection” and “What drives the A-to-B behaviour”—were stopped before their verification\nphases completed. Their mechanism, error-destination, effort, and subgroup outputs are not treated\nas findings. The report retains only results rebuilt from v3 and accepted by the final QA process."
+      },
+      {
+        "id": "text_11_reproducibility_and_provenance",
+        "type": "markdown",
+        "body": "## 11. Reproducibility and provenance\n\nThe v3 builder fixes the earlier nondeterministic parse join by following the scored parse exactly:\n`scores.parsed_answer_id → parsed_answers.id → provider_attempts.id`. A reverse-order SQLite test\nreproduces the three canonical data exports and metadata byte-for-byte. v3 preserves the v2\nanalytical population; it changes lineage code and metadata, not the accuracy observations.\n\nRebuild from the repository root:\n\n- `uv run python data/experiment-31-07-26/analysis/build_analysis_data.py`\n- `uv run python data/experiment-31-07-26/analysis/final_analysis.py`\n- `uv run python data/experiment-31-07-26/analysis/build_report_artifact.py`\n\n`dataset_meta.json` records SHA-256 hashes for the source workbook, flattened workbooks, run\ndatabase, builder, and canonical data exports. `final_analysis_results.json` pins the inputs used by\nthe report. Analysis v3.3 retains the v3.2 fixed-model group contrasts and adds deterministic\nfive-number summaries of their 100,000 whole-cluster bootstrap distributions without changing the\nv3 population or canonical pairs. Superseded exploratory JSON files in the same directory may contain\nv1 counts; they are not report sources.\n\nPrimary source artifacts:\n\n- `experiment.sqlite` — run database and scored-attempt lineage\n- `paired_clean.json` — canonical OpenRouter A/B pairs and exclusion flags\n- `cross_arm_A.json` — canonical partial condition-A cross-arm pairs\n- `dataset_meta.json` — v3 counts, exclusions, run status, and hashes\n- `final_analysis_results.json` — compact recomputation used for this report\n- `qa_workflows/` — independent audit records\n- `../INVENTORY.md` — path-stable navigation across source data, execution records, release files,\n  QA, and preserved exploratory work\n\nFifteen independently scoped QA workflows were completed. Their initial verdicts, corrective\nactions, and final resolutions are summarized in `qa_workflows/QA_SUMMARY.md`. QA11 independently\nrecomputed the Experiment-A, Experiment-B, and paired A/B model comparisons. QA13 independently\nrecomputed every new requested-group estimate, interval, exact cluster test, and Holm family with\nzero discrepancies. QA14 passed the grouped clinical-language, source-replay, and desktop/mobile\nrender checks after rejecting a stale interim HTML. QA15 passed the implementation,\ndeterministic-rebuild, fail-closed QA-state, preservation, and release-seal checks.\nThe v3.3.1 boxplot presentation repair is separately documented in `BOXPLOT_QA.md`: all 32 plotted\nfive-number summaries, eight SQLite/artifact datasets, visible whiskers/quartile boundaries/median\nlines, native chart contracts, and desktop/mobile rendering passed. This implementation check is\nnot relabelled as a sixteenth independent workflow.\n\nThe required Snyk Code invocation could not authenticate (`SNYK-0005`, HTTP 401), so no Snyk pass\nis claimed. `SECURITY_SCAN.md` records that limitation; Ruff and all 60 local tests passed."
+      },
+      {
+        "id": "text_12_recommendations",
+        "type": "markdown",
+        "body": "## 12. Recommendations\n\n1. Use the narrow conclusion: the observed B configuration has lower keyed-answer accuracy than A\n   for these runs; pure text causation requires a no-time/no-routing-confounding assumption.\n2. Run multiple validated paraphrase and keyed/unkeyed neutral-format controls before making a\n   memorisation or general meta-option claim.\n3. Replace `anteriores` with position-neutral wording and balance position if the meta-answer arm\n   is repeated.\n4. Pin OpenRouter providers and serving settings across arms.\n5. For a retrieval claim, use a randomized same-stack retrieval-off/on factorial; merely completing\n   GIFT A and B would estimate another pipeline-specific substitution contrast.\n6. Use at least three independent runs per cell for stability claims.\n7. Preserve a cited adjudication ledger for every medical-key exclusion.\n8. For claims about size or model access, expand to a balanced `large/small × open/proprietary`\n   panel with multiple independently selected models in every cell, preregister the classification,\n   and treat model—not question—as the replication unit for model-class generalisation."
+      },
+      {
+        "id": "qa_table_block",
+        "type": "table",
+        "tableId": "qa_results",
+        "layout": "full"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-07-31T15:00:00+02:00",
+    "status": "ready",
+    "datasets": {
+      "dataset_construction": [
+        {
+          "dataset": "Condition A",
+          "items": 474,
+          "construction": "500 source items minus 17 three-option items and 9 source-level defects; keyed text retained"
+        },
+        {
+          "dataset": "Condition B",
+          "items": 423,
+          "construction": "A minus 51 manipulation-incompatible items; keyed text replaced by the position-dependent preceding-options phrase; key letter unchanged"
+        }
+      ],
+      "analysis_exclusions": [
+        {
+          "rule": "Out-of-domain law/administration",
+          "declared_globally": "19",
+          "present_in_ab": "16",
+          "basis": "Employment, privacy, health-administration, and service-catalogue content outside digestive medicine"
+        },
+        {
+          "rule": "User-adjudicated key defect",
+          "declared_globally": "3",
+          "present_in_ab": "3",
+          "basis": "b178, b197, b496; detailed clinical citation ledger was not preserved"
+        },
+        {
+          "rule": "Preceding-options phrase in option a",
+          "declared_globally": "—",
+          "present_in_ab": "91",
+          "basis": "The phrase has no antecedent when printed first"
+        }
+      ],
+      "model_group_classification": [
+        {
+          "model": "gemini-3.6-flash",
+          "size_group": "Large",
+          "access_group": "Proprietary (gemini)"
+        },
+        {
+          "model": "glm-5.2",
+          "size_group": "Large",
+          "access_group": "Open-model"
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "size_group": "Small",
+          "access_group": "Open-model"
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "size_group": "Small",
+          "access_group": "Open-model"
+        }
+      ],
+      "summary": [
+        {
+          "a_accuracy": 0.8953579858379229,
+          "b_accuracy": 0.7403619197482297,
+          "change": -0.15499606608969316,
+          "model_adjusted_or": 0.313693,
+          "effective_clusters": 50.90087279831112,
+          "gift_scored_fraction": 0.729957805907173
+        }
+      ],
+      "condition_a_models": [
+        {
+          "model": "gemini-3.6-flash",
+          "correct": 310,
+          "n": 317,
+          "accuracy": 0.9779179810725552,
+          "ci95": "[95.93%, 99.26%]"
+        },
+        {
+          "model": "glm-5.2",
+          "correct": 295,
+          "n": 317,
+          "accuracy": 0.9305993690851735,
+          "ci95": "[89.89%, 95.78%]"
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "correct": 280,
+          "n": 317,
+          "accuracy": 0.8832807570977917,
+          "ci95": "[84.36%, 91.72%]"
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "correct": 251,
+          "n": 317,
+          "accuracy": 0.7917981072555205,
+          "ci95": "[73.81%, 83.60%]"
+        }
+      ],
+      "condition_a_model_boxplot": [
+        {
+          "display_label": "Gemini 3.6 Flash · 97.79%",
+          "comparison": "Gemini 3.6 Flash",
+          "observed_estimate": 0.9779179810725552,
+          "ci95_low": 0.959349593495935,
+          "ci95_high": 0.9926108374384236,
+          "minimum": 0.92578125,
+          "q1": 0.9723926380368099,
+          "median": 0.9783393501805054,
+          "q3": 0.9837133550488599,
+          "maximum": 1.0,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 1.05 × 10⁻¹²; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "GLM 5.2 · 93.06%",
+          "comparison": "GLM 5.2",
+          "observed_estimate": 0.9305993690851735,
+          "ci95_low": 0.8989169675090253,
+          "ci95_high": 0.9578313253012049,
+          "minimum": 0.8478260869565217,
+          "q1": 0.9205776173285198,
+          "median": 0.930835734870317,
+          "q3": 0.940625,
+          "maximum": 0.9856115107913669,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 1.05 × 10⁻¹²; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "Qwen 3.6 35B · 88.33%",
+          "comparison": "Qwen 3.6 35B",
+          "observed_estimate": 0.8832807570977917,
+          "ci95_low": 0.8436482084690554,
+          "ci95_high": 0.9171597633136095,
+          "minimum": 0.7714285714285715,
+          "q1": 0.8703170028818443,
+          "median": 0.8832807570977917,
+          "q3": 0.8956228956228957,
+          "maximum": 0.9491525423728814,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 1.05 × 10⁻¹²; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "Gemma 4 26B · 79.18%",
+          "comparison": "Gemma 4 26B",
+          "observed_estimate": 0.7917981072555205,
+          "ci95_low": 0.7380952380952381,
+          "ci95_high": 0.8360128617363344,
+          "minimum": 0.6619718309859155,
+          "q1": 0.77431906614786,
+          "median": 0.7916666666666666,
+          "q3": 0.8078078078078078,
+          "maximum": 0.8808139534883721,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 1.05 × 10⁻¹²; pairwise Holm tests are in the adjacent table"
+        }
+      ],
+      "condition_a_pairwise": [
+        {
+          "comparison": "gemini-3.6-flash − glm-5.2",
+          "paired_n": 317,
+          "difference": 0.0473186119873817,
+          "ci95": "[+1.91, +7.82] pp",
+          "exact_cluster_p": "p = 0.003319",
+          "holm_p": "p = 0.006638"
+        },
+        {
+          "comparison": "gemini-3.6-flash − qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "difference": 0.0946372239747634,
+          "ci95": "[+6.39, +13.00] pp",
+          "exact_cluster_p": "p = 5.40 × 10⁻⁸",
+          "holm_p": "p = 2.16 × 10⁻⁷"
+        },
+        {
+          "comparison": "gemini-3.6-flash − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.1861198738170347,
+          "ci95": "[+14.25, +23.81] pp",
+          "exact_cluster_p": "p = 5.77 × 10⁻¹⁵",
+          "holm_p": "p = 3.46 × 10⁻¹⁴"
+        },
+        {
+          "comparison": "glm-5.2 − qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "difference": 0.0473186119873817,
+          "ci95": "[+1.15, +8.54] pp",
+          "exact_cluster_p": "p = 0.0193",
+          "holm_p": "p = 0.0193"
+        },
+        {
+          "comparison": "glm-5.2 − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.138801261829653,
+          "ci95": "[+9.61, +18.66] pp",
+          "exact_cluster_p": "p = 3.59 × 10⁻⁹",
+          "holm_p": "p = 1.79 × 10⁻⁸"
+        },
+        {
+          "comparison": "qwen3.6-35b-a3b − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.0914826498422713,
+          "ci95": "[+4.82, +13.93] pp",
+          "exact_cluster_p": "p = 7.87 × 10⁻⁵",
+          "holm_p": "p = 2.36 × 10⁻⁴"
+        }
+      ],
+      "condition_a_group_contrasts": [
+        {
+          "grouping": "Size",
+          "comparison": "Large − Small",
+          "first_accuracy": 0.9542586750788643,
+          "second_accuracy": 0.8375394321766562,
+          "difference": 0.1167192429022082,
+          "ci95": "[+8.79, +14.95] pp",
+          "exact_cluster_p": "p = 1.66 × 10⁻¹³",
+          "holm_p": "p = 6.65 × 10⁻¹³"
+        },
+        {
+          "grouping": "Model access",
+          "comparison": "Open-model − Proprietary (gemini)",
+          "first_accuracy": 0.868559411146162,
+          "second_accuracy": 0.9779179810725552,
+          "difference": -0.10935856992639327,
+          "ci95": "[-14.00, -8.36] pp",
+          "exact_cluster_p": "p = 1.37 × 10⁻¹⁴",
+          "holm_p": "p = 6.83 × 10⁻¹⁴"
+        }
+      ],
+      "condition_a_group_boxplot": [
+        {
+          "display_label": "Large · 95.43%",
+          "comparison": "Large",
+          "observed_estimate": 0.9542586750788643,
+          "ci95_low": 0.9338461538461539,
+          "ci95_high": 0.9713375796178344,
+          "minimum": 0.8986175115207373,
+          "q1": 0.947841726618705,
+          "median": 0.9544025157232704,
+          "q3": 0.9605633802816902,
+          "maximum": 0.987987987987988,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Large − Small: Holm p = 6.65 × 10⁻¹³"
+        },
+        {
+          "display_label": "Small · 83.75%",
+          "comparison": "Small",
+          "observed_estimate": 0.8375394321766562,
+          "ci95_low": 0.7973856209150327,
+          "ci95_high": 0.8706896551724138,
+          "minimum": 0.7402597402597403,
+          "q1": 0.8245901639344262,
+          "median": 0.8375,
+          "q3": 0.8496835443037974,
+          "maximum": 0.9,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Large − Small: Holm p = 6.65 × 10⁻¹³"
+        },
+        {
+          "display_label": "Open-model · 86.86%",
+          "comparison": "Open-model",
+          "observed_estimate": 0.868559411146162,
+          "ci95_low": 0.8352197724542435,
+          "ci95_high": 0.895935062523214,
+          "minimum": 0.7916666666666666,
+          "q1": 0.8578732106339468,
+          "median": 0.8685714285714285,
+          "q3": 0.8785796105383734,
+          "maximum": 0.9207818930041153,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Open-model − Proprietary (gemini): Holm p = 6.83 × 10⁻¹⁴"
+        },
+        {
+          "display_label": "Proprietary (gemini) · 97.79%",
+          "comparison": "Proprietary (gemini)",
+          "observed_estimate": 0.9779179810725552,
+          "ci95_low": 0.9594594594594594,
+          "ci95_high": 0.9926470588235294,
+          "minimum": 0.9291666666666667,
+          "q1": 0.9723926380368099,
+          "median": 0.978328173374613,
+          "q3": 0.9837133550488599,
+          "maximum": 1.0,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Open-model − Proprietary (gemini): Holm p = 6.83 × 10⁻¹⁴"
+        }
+      ],
+      "condition_b_models": [
+        {
+          "model": "gemini-3.6-flash",
+          "correct": 283,
+          "n": 317,
+          "accuracy": 0.8927444794952681,
+          "ci95": "[85.47%, 92.57%]"
+        },
+        {
+          "model": "glm-5.2",
+          "correct": 237,
+          "n": 317,
+          "accuracy": 0.7476340694006309,
+          "ci95": "[69.47%, 79.27%]"
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "correct": 230,
+          "n": 317,
+          "accuracy": 0.7255520504731862,
+          "ci95": "[67.49%, 77.17%]"
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "correct": 189,
+          "n": 317,
+          "accuracy": 0.5962145110410094,
+          "ci95": "[53.02%, 65.72%]"
+        }
+      ],
+      "condition_b_model_boxplot": [
+        {
+          "display_label": "Gemini 3.6 Flash · 89.27%",
+          "comparison": "Gemini 3.6 Flash",
+          "observed_estimate": 0.8927444794952681,
+          "ci95_low": 0.8547001153402537,
+          "ci95_high": 0.9257142857142857,
+          "minimum": 0.7942386831275721,
+          "q1": 0.8805460750853242,
+          "median": 0.8929663608562691,
+          "q3": 0.9048664466560099,
+          "maximum": 0.9558823529411765,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 7.42 × 10⁻¹⁷; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "GLM 5.2 · 74.76%",
+          "comparison": "GLM 5.2",
+          "observed_estimate": 0.7476340694006309,
+          "ci95_low": 0.6947368421052632,
+          "ci95_high": 0.7927170868347339,
+          "minimum": 0.6206896551724138,
+          "q1": 0.7304964539007093,
+          "median": 0.7475083056478405,
+          "q3": 0.7637795275590551,
+          "maximum": 0.8584070796460177,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 7.42 × 10⁻¹⁷; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "Qwen 3.6 35B · 72.56%",
+          "comparison": "Qwen 3.6 35B",
+          "observed_estimate": 0.7255520504731862,
+          "ci95_low": 0.6749107904402166,
+          "ci95_high": 0.7717041800643086,
+          "minimum": 0.5977443609022557,
+          "q1": 0.7086092715231788,
+          "median": 0.7254237288135593,
+          "q3": 0.7416107382550335,
+          "maximum": 0.8256227758007118,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 7.42 × 10⁻¹⁷; pairwise Holm tests are in the adjacent table"
+        },
+        {
+          "display_label": "Gemma 4 26B · 59.62%",
+          "comparison": "Gemma 4 26B",
+          "observed_estimate": 0.5962145110410094,
+          "ci95_low": 0.5302013422818792,
+          "ci95_high": 0.657243816254417,
+          "minimum": 0.4349442379182156,
+          "q1": 0.5739130434782609,
+          "median": 0.5959079283887468,
+          "q3": 0.6174496644295302,
+          "maximum": 0.7319277108433735,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Four-model omnibus p = 7.42 × 10⁻¹⁷; pairwise Holm tests are in the adjacent table"
+        }
+      ],
+      "condition_b_pairwise": [
+        {
+          "comparison": "gemini-3.6-flash − glm-5.2",
+          "paired_n": 317,
+          "difference": 0.14511041009463724,
+          "ci95": "[+10.00, +19.27] pp",
+          "exact_cluster_p": "p = 2.44 × 10⁻⁸",
+          "holm_p": "p = 9.77 × 10⁻⁸"
+        },
+        {
+          "comparison": "gemini-3.6-flash − qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "difference": 0.167192429022082,
+          "ci95": "[+11.88, +21.71] pp",
+          "exact_cluster_p": "p = 5.17 × 10⁻⁹",
+          "holm_p": "p = 2.59 × 10⁻⁸"
+        },
+        {
+          "comparison": "gemini-3.6-flash − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.29652996845425866,
+          "ci95": "[+23.38, +36.05] pp",
+          "exact_cluster_p": "p = 1.14 × 10⁻¹⁴",
+          "holm_p": "p = 6.86 × 10⁻¹⁴"
+        },
+        {
+          "comparison": "glm-5.2 − qwen3.6-35b-a3b",
+          "paired_n": 317,
+          "difference": 0.022082018927444796,
+          "ci95": "[-3.14, +7.28] pp",
+          "exact_cluster_p": "p = 0.4774",
+          "holm_p": "p = 0.4774"
+        },
+        {
+          "comparison": "glm-5.2 − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.15141955835962145,
+          "ci95": "[+9.02, +21.19] pp",
+          "exact_cluster_p": "p = 2.43 × 10⁻⁵",
+          "holm_p": "p = 7.30 × 10⁻⁵"
+        },
+        {
+          "comparison": "qwen3.6-35b-a3b − gemma-4-26b-a4b-it",
+          "paired_n": 317,
+          "difference": 0.12933753943217666,
+          "ci95": "[+6.93, +19.06] pp",
+          "exact_cluster_p": "p = 1.45 × 10⁻⁴",
+          "holm_p": "p = 2.90 × 10⁻⁴"
+        }
+      ],
+      "condition_b_group_contrasts": [
+        {
+          "grouping": "Size",
+          "comparison": "Large − Small",
+          "first_accuracy": 0.8201892744479495,
+          "second_accuracy": 0.6608832807570978,
+          "difference": 0.15930599369085174,
+          "ci95": "[+11.81, +20.14] pp",
+          "exact_cluster_p": "p = 1.88 × 10⁻¹⁰",
+          "holm_p": "p = 5.65 × 10⁻¹⁰"
+        },
+        {
+          "grouping": "Model access",
+          "comparison": "Open-model − Proprietary (gemini)",
+          "first_accuracy": 0.6898002103049422,
+          "second_accuracy": 0.8927444794952681,
+          "difference": -0.20294426919032596,
+          "ci95": "[-24.51, -16.16] pp",
+          "exact_cluster_p": "p = 2.85 × 10⁻¹⁷",
+          "holm_p": "p = 1.71 × 10⁻¹⁶"
+        }
+      ],
+      "condition_b_group_boxplot": [
+        {
+          "display_label": "Large · 82.02%",
+          "comparison": "Large",
+          "observed_estimate": 0.8201892744479495,
+          "ci95_low": 0.7810344827586206,
+          "ci95_high": 0.8527510572398594,
+          "minimum": 0.722972972972973,
+          "q1": 0.8076923076923077,
+          "median": 0.8202898550724638,
+          "q3": 0.8321554770318021,
+          "maximum": 0.8874538745387454,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Large − Small: Holm p = 5.65 × 10⁻¹⁰"
+        },
+        {
+          "display_label": "Small · 66.09%",
+          "comparison": "Small",
+          "observed_estimate": 0.6608832807570978,
+          "ci95_low": 0.6111111111111112,
+          "ci95_high": 0.7062315429555465,
+          "minimum": 0.5539906103286385,
+          "q1": 0.6437699680511182,
+          "median": 0.6604617845005665,
+          "q3": 0.6765799256505576,
+          "maximum": 0.7590673575129534,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Large − Small: Holm p = 5.65 × 10⁻¹⁰"
+        },
+        {
+          "display_label": "Open-model · 68.98%",
+          "comparison": "Open-model",
+          "observed_estimate": 0.6898002103049422,
+          "ci95_low": 0.6450836901329139,
+          "ci95_high": 0.7292341805007897,
+          "minimum": 0.5844444444444444,
+          "q1": 0.6747967479674797,
+          "median": 0.6894586894586895,
+          "q3": 0.7037037037037037,
+          "maximum": 0.7684563758389261,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Open-model − Proprietary (gemini): Holm p = 1.71 × 10⁻¹⁶"
+        },
+        {
+          "display_label": "Proprietary (gemini) · 89.27%",
+          "comparison": "Proprietary (gemini)",
+          "observed_estimate": 0.8927444794952681,
+          "ci95_low": 0.8546712802768166,
+          "ci95_high": 0.9256198347107438,
+          "minimum": 0.7962264150943397,
+          "q1": 0.8803986710963455,
+          "median": 0.893048128342246,
+          "q3": 0.9047619047619048,
+          "maximum": 0.9580838323353293,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Open-model − Proprietary (gemini): Holm p = 1.71 × 10⁻¹⁶"
+        }
+      ],
+      "primary_accuracy": [
+        {
+          "model": "gemini-3.6-flash",
+          "condition": "A · original key text",
+          "accuracy": 0.9779874213836478
+        },
+        {
+          "model": "gemini-3.6-flash",
+          "condition": "B · preceding-options meta-answer",
+          "accuracy": 0.8930817610062893
+        },
+        {
+          "model": "glm-5.2",
+          "condition": "A · original key text",
+          "accuracy": 0.9305993690851735
+        },
+        {
+          "model": "glm-5.2",
+          "condition": "B · preceding-options meta-answer",
+          "accuracy": 0.7476340694006309
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "condition": "A · original key text",
+          "accuracy": 0.8836477987421384
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "condition": "B · preceding-options meta-answer",
+          "accuracy": 0.7264150943396226
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "condition": "A · original key text",
+          "accuracy": 0.789308176100629
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "condition": "B · preceding-options meta-answer",
+          "accuracy": 0.5943396226415094
+        }
+      ],
+      "primary_results": [
+        {
+          "model": "gemini-3.6-flash",
+          "n": 318,
+          "a_accuracy": 0.9779874213836478,
+          "b_accuracy": 0.8930817610062893,
+          "change": -0.08490566037735849,
+          "ci95": "[-12.26, -5.01] pp",
+          "exact_cluster_p": "p = 1.51 × 10⁻⁵",
+          "holm_cluster_p": "p = 1.51 × 10⁻⁵"
+        },
+        {
+          "model": "glm-5.2",
+          "n": 317,
+          "a_accuracy": 0.9305993690851735,
+          "b_accuracy": 0.7476340694006309,
+          "change": -0.1829652996845426,
+          "ci95": "[-23.33, -13.74] pp",
+          "exact_cluster_p": "p = 5.28 × 10⁻¹¹",
+          "holm_cluster_p": "p = 2.11 × 10⁻¹⁰"
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "n": 318,
+          "a_accuracy": 0.8836477987421384,
+          "b_accuracy": 0.7264150943396226,
+          "change": -0.15723270440251572,
+          "ci95": "[-20.69, -10.75] pp",
+          "exact_cluster_p": "p = 1.80 × 10⁻⁷",
+          "holm_cluster_p": "p = 5.39 × 10⁻⁷"
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "n": 318,
+          "a_accuracy": 0.789308176100629,
+          "b_accuracy": 0.5943396226415094,
+          "change": -0.1949685534591195,
+          "ci95": "[-26.06, -12.81] pp",
+          "exact_cluster_p": "p = 3.14 × 10⁻⁷",
+          "holm_cluster_p": "p = 6.27 × 10⁻⁷"
+        },
+        {
+          "model": "Cell-weighted pooled",
+          "n": 1271,
+          "a_accuracy": 0.8953579858379229,
+          "b_accuracy": 0.7403619197482297,
+          "change": -0.15499606608969316,
+          "ci95": "[-18.78, -12.39] pp",
+          "exact_cluster_p": "p = 1.95 × 10⁻¹⁵",
+          "holm_cluster_p": "—"
+        }
+      ],
+      "primary_model_change_boxplot": [
+        {
+          "display_label": "Gemini 3.6 Flash · -8.49 pp",
+          "comparison": "Gemini 3.6 Flash",
+          "observed_estimate": -0.08490566037735849,
+          "ci95_low": -0.12258064516129032,
+          "ci95_high": -0.05013927576601671,
+          "minimum": -0.16887417218543047,
+          "q1": -0.09732360097323602,
+          "median": -0.0847953216374269,
+          "q3": -0.07268170426065163,
+          "maximum": -0.016129032258064516,
+          "clinical_clusters": 201,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 1.51 × 10⁻⁵"
+        },
+        {
+          "display_label": "GLM 5.2 · -18.30 pp",
+          "comparison": "GLM 5.2",
+          "observed_estimate": -0.1829652996845426,
+          "ci95_low": -0.23333333333333334,
+          "ci95_high": -0.13740458015267176,
+          "minimum": -0.304029304029304,
+          "q1": -0.19943019943019943,
+          "median": -0.1829652996845426,
+          "q3": -0.16716417910447762,
+          "maximum": -0.08461538461538462,
+          "clinical_clusters": 201,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 2.11 × 10⁻¹⁰"
+        },
+        {
+          "display_label": "Qwen 3.6 35B · -15.72 pp",
+          "comparison": "Qwen 3.6 35B",
+          "observed_estimate": -0.15723270440251572,
+          "ci95_low": -0.20689655172413793,
+          "ci95_high": -0.10749185667752444,
+          "minimum": -0.2771929824561403,
+          "q1": -0.17417417417417416,
+          "median": -0.1574074074074074,
+          "q3": -0.1404109589041096,
+          "maximum": -0.0379746835443038,
+          "clinical_clusters": 201,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 5.39 × 10⁻⁷"
+        },
+        {
+          "display_label": "Gemma 4 26B · -19.50 pp",
+          "comparison": "Gemma 4 26B",
+          "observed_estimate": -0.1949685534591195,
+          "ci95_low": -0.2606060606060606,
+          "ci95_high": -0.128125,
+          "minimum": -0.3310580204778157,
+          "q1": -0.21766561514195584,
+          "median": -0.1948529411764706,
+          "q3": -0.17210682492581603,
+          "maximum": -0.04905660377358491,
+          "clinical_clusters": 201,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 6.27 × 10⁻⁷"
+        }
+      ],
+      "group_a_vs_b_changes": [
+        {
+          "grouping": "Size",
+          "group": "Large",
+          "models": "gemini-3.6-flash, glm-5.2",
+          "model_count": 2,
+          "a_accuracy": 0.9542586750788643,
+          "b_accuracy": 0.8201892744479495,
+          "change": -0.13406940063091483,
+          "ci95": "[-17.05, -10.18] pp",
+          "exact_cluster_p": "p = 4.84 × 10⁻¹²",
+          "holm_p": "p = 1.45 × 10⁻¹¹"
+        },
+        {
+          "grouping": "Size",
+          "group": "Small",
+          "models": "qwen3.6-35b-a3b, gemma-4-26b-a4b-it",
+          "model_count": 2,
+          "a_accuracy": 0.8375394321766562,
+          "b_accuracy": 0.6608832807570978,
+          "change": -0.17665615141955837,
+          "ci95": "[-21.95, -13.26] pp",
+          "exact_cluster_p": "p = 5.67 × 10⁻¹¹",
+          "holm_p": "p = 1.13 × 10⁻¹⁰"
+        },
+        {
+          "grouping": "Model access",
+          "group": "Open-model",
+          "models": "glm-5.2, qwen3.6-35b-a3b, gemma-4-26b-a4b-it",
+          "model_count": 3,
+          "a_accuracy": 0.868559411146162,
+          "b_accuracy": 0.6898002103049422,
+          "change": -0.17875920084121977,
+          "ci95": "[-21.67, -14.16] pp",
+          "exact_cluster_p": "p = 1.10 × 10⁻¹⁴",
+          "holm_p": "p = 4.41 × 10⁻¹⁴"
+        },
+        {
+          "grouping": "Model access",
+          "group": "Proprietary (gemini)",
+          "models": "gemini-3.6-flash",
+          "model_count": 1,
+          "a_accuracy": 0.9779179810725552,
+          "b_accuracy": 0.8927444794952681,
+          "change": -0.08517350157728706,
+          "ci95": "[-12.31, -5.07] pp",
+          "exact_cluster_p": "p = 1.51 × 10⁻⁵",
+          "holm_p": "p = 1.51 × 10⁻⁵"
+        }
+      ],
+      "group_change_boxplot": [
+        {
+          "display_label": "Large · -13.41 pp",
+          "comparison": "Large",
+          "observed_estimate": -0.13406940063091483,
+          "ci95_low": -0.17054263565891473,
+          "ci95_high": -0.10176991150442478,
+          "minimum": -0.2288135593220339,
+          "q1": -0.145748987854251,
+          "median": -0.13389830508474576,
+          "q3": -0.12254901960784313,
+          "maximum": -0.06563706563706563,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 1.45 × 10⁻¹¹"
+        },
+        {
+          "display_label": "Small · -17.67 pp",
+          "comparison": "Small",
+          "observed_estimate": -0.17665615141955837,
+          "ci95_low": -0.21954674220963172,
+          "ci95_high": -0.13262599469496023,
+          "minimum": -0.2698744769874477,
+          "q1": -0.19145569620253164,
+          "median": -0.17665615141955837,
+          "q3": -0.1617161716171617,
+          "maximum": -0.06724137931034482,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 1.13 × 10⁻¹⁰"
+        },
+        {
+          "display_label": "Open-model · -17.88 pp",
+          "comparison": "Open-model",
+          "observed_estimate": -0.17875920084121977,
+          "ci95_low": -0.21671525753158405,
+          "ci95_high": -0.14163582531458185,
+          "minimum": -0.27208480565371024,
+          "q1": -0.19172113289760348,
+          "median": -0.17876344086021506,
+          "q3": -0.16610549943883277,
+          "maximum": -0.07960199004975124,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 4.41 × 10⁻¹⁴"
+        },
+        {
+          "display_label": "Proprietary (gemini) · -8.52 pp",
+          "comparison": "Proprietary (gemini)",
+          "observed_estimate": -0.08517350157728706,
+          "ci95_low": -0.12307692307692308,
+          "ci95_high": -0.05067567567567568,
+          "minimum": -0.18571428571428572,
+          "q1": -0.09779179810725552,
+          "median": -0.08503401360544217,
+          "q3": -0.07282913165266107,
+          "maximum": -0.0038022813688212928,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "A-to-B change: Holm p = 1.51 × 10⁻⁵"
+        }
+      ],
+      "group_interactions": [
+        {
+          "grouping": "Size",
+          "comparison": "Large change − Small change",
+          "difference_in_changes": 0.04258675078864353,
+          "ci95": "[-0.38, +8.57] pp",
+          "exact_cluster_p": "p = 0.09248",
+          "holm_p": "p = 0.09248",
+          "conclusion": "Difference not resolved"
+        },
+        {
+          "grouping": "Model access",
+          "comparison": "Open-model change − Proprietary (gemini) change",
+          "difference_in_changes": -0.0935856992639327,
+          "ci95": "[-13.64, -4.94] pp",
+          "exact_cluster_p": "p = 1.61 × 10⁻⁴",
+          "holm_p": "p = 3.21 × 10⁻⁴",
+          "conclusion": "Open-model mean lost more; singleton-proprietary caveat"
+        }
+      ],
+      "group_interaction_boxplot": [
+        {
+          "display_label": "Large−small change · +4.26 pp",
+          "comparison": "Large−small change",
+          "observed_estimate": 0.04258675078864353,
+          "ci95_low": -0.003787878787878788,
+          "ci95_high": 0.08567424710480184,
+          "minimum": -0.07114624505928854,
+          "q1": 0.026881720430107527,
+          "median": 0.0425531914893617,
+          "q3": 0.057755775577557754,
+          "maximum": 0.1563573883161512,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Primary interaction: Holm p = 0.09248"
+        },
+        {
+          "display_label": "Open−gemini change · -9.36 pp",
+          "comparison": "Open−gemini change",
+          "observed_estimate": -0.0935856992639327,
+          "ci95_low": -0.13636363636363635,
+          "ci95_high": -0.049418539355189216,
+          "minimum": -0.20144927536231885,
+          "q1": -0.10837887067395265,
+          "median": -0.0935374149659864,
+          "q3": -0.07874865156418555,
+          "maximum": 0.010802469135802469,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Primary interaction: Holm p = 3.21 × 10⁻⁴"
+        },
+        {
+          "display_label": "Gemini−GLM change · +9.78 pp",
+          "comparison": "Gemini−GLM change",
+          "observed_estimate": 0.09779179810725552,
+          "ci95_low": 0.048517268777406766,
+          "ci95_high": 0.14963503649635038,
+          "minimum": -0.006349206349206349,
+          "q1": 0.08064516129032258,
+          "median": 0.09774436090225563,
+          "q3": 0.11518324607329843,
+          "maximum": 0.20833333333333334,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Secondary interaction: Holm p = 0.001501"
+        },
+        {
+          "display_label": "GLM−small-open change · -0.63 pp",
+          "comparison": "GLM−small-open change",
+          "observed_estimate": -0.006309148264984227,
+          "ci95_low": -0.061837455830388695,
+          "ci95_high": 0.043882978723404256,
+          "minimum": -0.146484375,
+          "q1": -0.02464788732394366,
+          "median": -0.006430868167202572,
+          "q3": 0.011254019292604502,
+          "maximum": 0.10861423220973783,
+          "clinical_clusters": 200,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "Secondary interaction: Holm p = 0.8588"
+        }
+      ],
+      "secondary_group_triangulation": [
+        {
+          "perspective": "Within large: gemini − glm",
+          "a_difference": 0.0473186119873817,
+          "a_holm_p": "p = 0.006638",
+          "b_difference": 0.14511041009463724,
+          "b_holm_p": "p = 1.47 × 10⁻⁷",
+          "difference_in_changes": 0.09779179810725552,
+          "interaction_ci95": "[+4.85, +14.96] pp",
+          "interaction_holm_p": "p = 0.001501"
+        },
+        {
+          "perspective": "Within open-model: glm − mean(qwen, gemma)",
+          "a_difference": 0.09305993690851735,
+          "a_holm_p": "p = 1.06 × 10⁻⁶",
+          "b_difference": 0.08675078864353312,
+          "b_holm_p": "p = 0.004195",
+          "difference_in_changes": -0.006309148264984227,
+          "interaction_ci95": "[-6.18, +4.39] pp",
+          "interaction_holm_p": "p = 0.8588"
+        }
+      ],
+      "sensitivity": [
+        {
+          "exclusions": "None",
+          "items": 423,
+          "cells": 1691,
+          "change": -0.1732702542874039,
+          "ci95": "[-20.39, -14.44] pp"
+        },
+        {
+          "exclusions": "Item defects only",
+          "items": 404,
+          "cells": 1615,
+          "change": -0.16904024767801856,
+          "ci95": "[-20.02, -13.96] pp"
+        },
+        {
+          "exclusions": "Position-a only",
+          "items": 332,
+          "cells": 1327,
+          "change": -0.15749811605124342,
+          "ci95": "[-18.91, -12.68] pp"
+        },
+        {
+          "exclusions": "Both · reported set",
+          "items": 318,
+          "cells": 1271,
+          "change": -0.15499606608969316,
+          "ci95": "[-18.75, -12.35] pp"
+        }
+      ],
+      "cross_arm_chart": [
+        {
+          "model": "gemini-3.6-flash",
+          "openrouter_accuracy": 0.9836601307189542,
+          "gift_accuracy": 0.9738562091503268,
+          "change": -0.00980392156862745,
+          "ci95": "[-2.42, +0.00] pp",
+          "or_only": 3,
+          "gift_only": 0
+        },
+        {
+          "model": "glm-5.2",
+          "openrouter_accuracy": 0.9313725490196079,
+          "gift_accuracy": 0.9640522875816994,
+          "change": 0.032679738562091505,
+          "ci95": "[+1.12, +5.80] pp",
+          "or_only": 1,
+          "gift_only": 11
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "openrouter_accuracy": 0.9215686274509803,
+          "gift_accuracy": 0.9183006535947712,
+          "change": -0.0032679738562091504,
+          "ci95": "[-3.43, +2.68] pp",
+          "or_only": 12,
+          "gift_only": 11
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "openrouter_accuracy": 0.826797385620915,
+          "gift_accuracy": 0.8823529411764706,
+          "change": 0.05555555555555555,
+          "ci95": "[+1.97, +9.27] pp",
+          "or_only": 7,
+          "gift_only": 24
+        }
+      ],
+      "cross_arm_boxplot": [
+        {
+          "display_label": "Gemini 3.6 Flash · -0.98 pp",
+          "comparison": "Gemini 3.6 Flash",
+          "observed_estimate": -0.00980392156862745,
+          "ci95_low": -0.02422145328719723,
+          "ci95_high": 0.0,
+          "minimum": -0.05319148936170213,
+          "q1": -0.013636363636363636,
+          "median": -0.009287925696594427,
+          "q3": -0.005865102639296188,
+          "maximum": 0.0,
+          "clinical_clusters": 178,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "GIFT−OpenRouter change: Holm p = 0.5"
+        },
+        {
+          "display_label": "GLM 5.2 · +3.27 pp",
+          "comparison": "GLM 5.2",
+          "observed_estimate": 0.032679738562091505,
+          "ci95_low": 0.011235955056179775,
+          "ci95_high": 0.057971014492753624,
+          "minimum": -0.010676156583629894,
+          "q1": 0.024691358024691357,
+          "median": 0.03225806451612903,
+          "q3": 0.04054054054054054,
+          "maximum": 0.10382513661202186,
+          "clinical_clusters": 178,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "GIFT−OpenRouter change: Holm p = 0.03223"
+        },
+        {
+          "display_label": "Qwen 3.6 35B · -0.33 pp",
+          "comparison": "Qwen 3.6 35B",
+          "observed_estimate": -0.0032679738562091504,
+          "ci95_low": -0.03426791277258567,
+          "ci95_high": 0.026755852842809364,
+          "minimum": -0.08196721311475409,
+          "q1": -0.013623978201634877,
+          "median": -0.003389830508474576,
+          "q3": 0.006666666666666667,
+          "maximum": 0.0761904761904762,
+          "clinical_clusters": 178,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "GIFT−OpenRouter change: Holm p = 1"
+        },
+        {
+          "display_label": "Gemma 4 26B · +5.56 pp",
+          "comparison": "Gemma 4 26B",
+          "observed_estimate": 0.05555555555555555,
+          "ci95_low": 0.01968503937007874,
+          "ci95_high": 0.09274193548387097,
+          "minimum": -0.032846715328467155,
+          "q1": 0.043596730245231606,
+          "median": 0.055710306406685235,
+          "q3": 0.06779661016949153,
+          "maximum": 0.1527777777777778,
+          "clinical_clusters": 178,
+          "bootstrap_replicates": 100000,
+          "test_annotation": "GIFT−OpenRouter change: Holm p = 0.02799"
+        }
+      ],
+      "cross_arm": [
+        {
+          "model": "gemini-3.6-flash",
+          "openrouter_accuracy": 0.9836601307189542,
+          "gift_accuracy": 0.9738562091503268,
+          "change": -0.00980392156862745,
+          "ci95": "[-2.42, +0.00] pp",
+          "or_only": 3,
+          "gift_only": 0
+        },
+        {
+          "model": "glm-5.2",
+          "openrouter_accuracy": 0.9313725490196079,
+          "gift_accuracy": 0.9640522875816994,
+          "change": 0.032679738562091505,
+          "ci95": "[+1.12, +5.80] pp",
+          "or_only": 1,
+          "gift_only": 11
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "openrouter_accuracy": 0.9215686274509803,
+          "gift_accuracy": 0.9183006535947712,
+          "change": -0.0032679738562091504,
+          "ci95": "[-3.43, +2.68] pp",
+          "or_only": 12,
+          "gift_only": 11
+        },
+        {
+          "model": "gemma-4-26b-a4b-it",
+          "openrouter_accuracy": 0.826797385620915,
+          "gift_accuracy": 0.8823529411764706,
+          "change": 0.05555555555555555,
+          "ci95": "[+1.97, +9.27] pp",
+          "or_only": 7,
+          "gift_only": 24
+        },
+        {
+          "model": "Cell-weighted pooled",
+          "openrouter_accuracy": 0.9158496732026143,
+          "gift_accuracy": 0.934640522875817,
+          "change": 0.018790849673202614,
+          "ci95": "[+0.44, +3.35] pp",
+          "or_only": 23,
+          "gift_only": 46
+        }
+      ],
+      "run_status": [
+        {
+          "experiment": "OpenRouter A",
+          "planned": 1896,
+          "logical_calls": 1896,
+          "attempted_calls": 1896,
+          "scored": 1895,
+          "scored_fraction": 0.9994725738396625
+        },
+        {
+          "experiment": "OpenRouter B",
+          "planned": 1692,
+          "logical_calls": 1692,
+          "attempted_calls": 1692,
+          "scored": 1692,
+          "scored_fraction": 1.0
+        },
+        {
+          "experiment": "GIFT A",
+          "planned": 1896,
+          "logical_calls": 1566,
+          "attempted_calls": 1565,
+          "scored": 1384,
+          "scored_fraction": 0.729957805907173
+        },
+        {
+          "experiment": "GIFT B",
+          "planned": 1692,
+          "logical_calls": 0,
+          "attempted_calls": 0,
+          "scored": 0,
+          "scored_fraction": 0.0
+        }
+      ],
+      "qa_results": [
+        {
+          "workflow": "QA01 · lineage",
+          "scope": "DB-to-export grain, scored parse, retries, hashes",
+          "verdict": "FAIL on v2",
+          "final_status": "PASS",
+          "resolution": "Resolved in v3: authoritative score-to-parse lineage, deterministic ordering, integrity assertions, and pinned hashes."
+        },
+        {
+          "workflow": "QA02 · data quality",
+          "scope": "Workbook construction, exclusions, clusters, duplicates",
+          "verdict": "FAIL on old report",
+          "final_status": "PASS",
+          "resolution": "Mechanical construction and counts now reconcile; the missing clinical citation ledger for three user-directed key exclusions remains explicit."
+        },
+        {
+          "workflow": "QA03 · primary statistics",
+          "scope": "Paired estimates, regression, multiplicity, heterogeneity",
+          "verdict": "Core PASS; old report FAIL",
+          "final_status": "PASS",
+          "resolution": "All v3 counts, intervals, p-values, odds ratios, and scale-dependent heterogeneity language were corrected and pinned."
+        },
+        {
+          "workflow": "QA04 · resampling",
+          "scope": "Cluster bootstrap, sign flips, McNemar, CI stability",
+          "verdict": "Methods PASS; old artifacts FAIL",
+          "final_status": "PASS",
+          "resolution": "Recomputed 100,000 whole-cluster resamples; exact cluster sign flips are primary and stacked McNemar is labelled diagnostic."
+        },
+        {
+          "workflow": "QA05 · sensitivity",
+          "scope": "Exclusion grid, influence, position interaction",
+          "verdict": "Robustness PASS; old bundle FAIL",
+          "final_status": "PASS",
+          "resolution": "v3 exclusion and leave-one-out results replace stale values; duplicated specification-curve p-value claims were omitted."
+        },
+        {
+          "workflow": "QA06 · cross-pipeline",
+          "scope": "Partial GIFT/OpenRouter pairing, clustering, missingness",
+          "verdict": "Observed subset PASS; old report FAIL",
+          "final_status": "PASS",
+          "resolution": "Model-specific v3 values, cluster inference, heterogeneity, completion denominators, and assumption-free missing-outcome bounds are reported."
+        },
+        {
+          "workflow": "QA07 · operations",
+          "scope": "Calls, attempts, scores, errors, latency and token claims",
+          "verdict": "Original claims FAIL; current restraint PASS",
+          "final_status": "PASS",
+          "resolution": "Run status now separates created, attempted, scored, and retried units; unsupported intrinsic latency/cost claims were removed."
+        },
+        {
+          "workflow": "QA08 · construct validity",
+          "scope": "Intervention semantics, causal wording, mechanism controls",
+          "verdict": "Descriptive PASS; causal wording FAIL",
+          "final_status": "PASS",
+          "resolution": "Report now uses deployed-system contrasts, names the position-dependent phrase, narrows GIFT to pipeline differences, and specifies identifying controls."
+        },
+        {
+          "workflow": "QA09 · code review",
+          "scope": "Reproducibility, failure modes, source provenance, release code",
+          "verdict": "Core PASS; packaging FAIL",
+          "final_status": "PASS",
+          "resolution": "Release blockers repaired: stable section anchors, replayable hashed SQLite sources, DB hash checks, pinned secondary results, and fail-closed QA completeness."
+        },
+        {
+          "workflow": "QA10 · release candidate",
+          "scope": "Claim-to-evidence audit and desktop/mobile rendered QA",
+          "verdict": "PASS",
+          "final_status": "PASS",
+          "resolution": "All claims, hashes, ten replayable query datasets, native tables, source drawer, desktop/mobile layout, console, and local-only network behavior passed after two render fixes."
+        },
+        {
+          "workflow": "QA11 · model comparisons",
+          "scope": "Experiment A, Experiment B, and paired A/B cluster-aware inference",
+          "verdict": "PASS",
+          "final_status": "PASS",
+          "resolution": "Independent recomputation matched all denominators, estimates, CR1 omnibus F tests, exact cluster sign flips, Holm adjustments, and 100,000-replicate bootstrap intervals."
+        },
+        {
+          "workflow": "QA12 · release and clinical",
+          "scope": "Physician explanations, portable HTML, source replay, responsive layout, and folder inventory",
+          "verdict": "PASS",
+          "final_status": "PASS",
+          "resolution": "Statistical ordering, clinical restraint, folder preservation, 25 replayed manifest hashes, sources, five charts, and responsive rendering passed after fixing p-value coercion and a leaked Markdown emphasis marker."
+        },
+        {
+          "workflow": "QA13 · requested model groups",
+          "scope": "Large/small, open-model/proprietary, A, B, A-to-B, and secondary fixed-model contrasts",
+          "verdict": "PASS",
+          "final_status": "PASS",
+          "resolution": "Independent reconstruction matched all group accuracies, 100,000-replicate cluster intervals, exact cluster sign flips, Holm families, common-population counts, and source-database fields with zero discrepancies."
+        },
+        {
+          "workflow": "QA14 · group render and clinical",
+          "scope": "Grouped tables, physician explanations, source drawer, and desktop/mobile portable HTML",
+          "verdict": "Interim HTML stale; final PASS",
+          "final_status": "PASS",
+          "resolution": "The stale interim HTML was rejected and rebuilt; the current grouped tables, source replay, clinical restraint, local-only loading, and responsive behavior passed at 1440 px and 390 px."
+        },
+        {
+          "workflow": "QA15 · group code and release",
+          "scope": "Grouped-analysis implementation, deterministic rebuild, fail-closed QA state, preservation, and release hashes",
+          "verdict": "PASS for release integration",
+          "final_status": "PASS",
+          "resolution": "Independent code review matched the statistical implementation, hardened machine-readable QA readiness, confirmed deterministic uv-environment rebuilds, and passed the final v3.2 manifest seal."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "dataset_construction",
+      "label": "Reviewed dataset-construction snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Dataset counts and construction rules reconciled to v3 metadata and the source workbooks.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Dataset counts and construction rules reconciled to v3 metadata and the source workbooks.",
+        "sql": "SELECT * FROM dataset_construction",
+        "tables_used": [
+          "dataset_construction"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "analysis_exclusions",
+      "label": "Reviewed exclusion snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Declared exclusions and their presence in the paired A/B universe.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Declared exclusions and their presence in the paired A/B universe.",
+        "sql": "SELECT * FROM analysis_exclusions",
+        "tables_used": [
+          "analysis_exclusions"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "model_group_classification",
+      "label": "Requested model-group classification",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Requester-defined size and model-access labels for the four fixed deployments.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Requester-defined size and model-access labels for the four fixed deployments.",
+        "sql": "SELECT * FROM model_group_classification",
+        "tables_used": [
+          "model_group_classification"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "Reviewed headline snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Materialized exactly from the hash-pinned final result bundle.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Materialized exactly from the hash-pinned final result bundle.",
+        "sql": "SELECT * FROM summary",
+        "tables_used": [
+          "summary"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_a_models",
+      "label": "Reviewed Experiment-A model snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Complete-case Experiment-A accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM condition_a_models",
+        "tables_used": [
+          "condition_a_models"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_a_model_boxplot",
+      "label": "Experiment-A model bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment A.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment A.",
+        "sql": "SELECT * FROM condition_a_model_boxplot",
+        "tables_used": [
+          "condition_a_model_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_a_pairwise",
+      "label": "Reviewed Experiment-A pairwise snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Six Experiment-A cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Six Experiment-A cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+        "sql": "SELECT * FROM condition_a_pairwise",
+        "tables_used": [
+          "condition_a_pairwise"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_a_group_contrasts",
+      "label": "Reviewed Experiment-A group contrasts",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Two requested fixed-model group contrasts on the common Experiment-A population.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Two requested fixed-model group contrasts on the common Experiment-A population.",
+        "sql": "SELECT * FROM condition_a_group_contrasts",
+        "tables_used": [
+          "condition_a_group_contrasts"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_a_group_boxplot",
+      "label": "Experiment-A group bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment A.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment A.",
+        "sql": "SELECT * FROM condition_a_group_boxplot",
+        "tables_used": [
+          "condition_a_group_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_b_models",
+      "label": "Reviewed Experiment-B model snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Complete-case Experiment-B accuracies and whole-cluster intervals materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM condition_b_models",
+        "tables_used": [
+          "condition_b_models"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_b_model_boxplot",
+      "label": "Experiment-B model bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment B.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for each model in Experiment B.",
+        "sql": "SELECT * FROM condition_b_model_boxplot",
+        "tables_used": [
+          "condition_b_model_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_b_pairwise",
+      "label": "Reviewed Experiment-B pairwise snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Six Experiment-B cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Six Experiment-B cluster-aware pairwise model contrasts and Holm-adjusted p-values.",
+        "sql": "SELECT * FROM condition_b_pairwise",
+        "tables_used": [
+          "condition_b_pairwise"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_b_group_contrasts",
+      "label": "Reviewed Experiment-B group contrasts",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Two requested fixed-model group contrasts on the common Experiment-B population.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Two requested fixed-model group contrasts on the common Experiment-B population.",
+        "sql": "SELECT * FROM condition_b_group_contrasts",
+        "tables_used": [
+          "condition_b_group_contrasts"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "condition_b_group_boxplot",
+      "label": "Experiment-B group bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment B.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap accuracy estimates for the requested fixed-model groups in Experiment B.",
+        "sql": "SELECT * FROM condition_b_group_boxplot",
+        "tables_used": [
+          "condition_b_group_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "primary_accuracy",
+      "label": "Reviewed model accuracy snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Model-condition accuracy rows materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Model-condition accuracy rows materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM primary_accuracy",
+        "tables_used": [
+          "primary_accuracy"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "primary_results",
+      "label": "Reviewed primary results snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Primary paired results and cluster intervals materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Primary paired results and cluster intervals materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM primary_results",
+        "tables_used": [
+          "primary_results"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "primary_model_change_boxplot",
+      "label": "Model-specific A-to-B bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for each model.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for each model.",
+        "sql": "SELECT * FROM primary_model_change_boxplot",
+        "tables_used": [
+          "primary_model_change_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "group_a_vs_b_changes",
+      "label": "Reviewed group-specific A/B changes",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Four overlapping requested group summaries with whole-cluster intervals and four-test Holm correction.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Four overlapping requested group summaries with whole-cluster intervals and four-test Holm correction.",
+        "sql": "SELECT * FROM group_a_vs_b_changes",
+        "tables_used": [
+          "group_a_vs_b_changes"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "group_change_boxplot",
+      "label": "Requested-group A-to-B bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for the four overlapping requested groups.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap B-minus-A estimates for the four overlapping requested groups.",
+        "sql": "SELECT * FROM group_change_boxplot",
+        "tables_used": [
+          "group_change_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "group_interactions",
+      "label": "Reviewed group-by-condition interactions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Primary risk-difference interactions for requested size and model-access groupings.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Primary risk-difference interactions for requested size and model-access groupings.",
+        "sql": "SELECT * FROM group_interactions",
+        "tables_used": [
+          "group_interactions"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "group_interaction_boxplot",
+      "label": "Group-interaction bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of primary and secondary whole-clinical-cluster bootstrap difference-in-change estimates.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of primary and secondary whole-clinical-cluster bootstrap difference-in-change estimates.",
+        "sql": "SELECT * FROM group_interaction_boxplot",
+        "tables_used": [
+          "group_interaction_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "secondary_group_triangulation",
+      "label": "Reviewed partial-matching triangulation",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Within-large and within-open fixed-model contrasts used to expose group-label confounding.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Within-large and within-open fixed-model contrasts used to expose group-label confounding.",
+        "sql": "SELECT * FROM secondary_group_triangulation",
+        "tables_used": [
+          "secondary_group_triangulation"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "sensitivity",
+      "label": "Reviewed sensitivity snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Cleaning sensitivity rows materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM sensitivity",
+        "tables_used": [
+          "sensitivity"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "cross_arm_chart",
+      "label": "Reviewed model-level cross-pipeline snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Four model-level partial condition-A pipeline comparisons materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Four model-level partial condition-A pipeline comparisons materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM cross_arm_chart",
+        "tables_used": [
+          "cross_arm_chart"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "cross_arm_boxplot",
+      "label": "Partial GIFT/OpenRouter bootstrap distributions",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap GIFT-minus-OpenRouter estimates for each model on the observed subset.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Five-number summaries of 100,000 whole-clinical-cluster bootstrap GIFT-minus-OpenRouter estimates for each model on the observed subset.",
+        "sql": "SELECT * FROM cross_arm_boxplot",
+        "tables_used": [
+          "cross_arm_boxplot"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "cross_arm",
+      "label": "Reviewed cross-pipeline snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Partial condition-A pipeline comparison materialized from final_analysis_results.json.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Partial condition-A pipeline comparison materialized from final_analysis_results.json.",
+        "sql": "SELECT * FROM cross_arm",
+        "tables_used": [
+          "cross_arm"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "run_status",
+      "label": "Reviewed execution-status snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "Execution counts materialized from the DB-hash-verified final result bundle.",
+      "query": {
+        "engine": "sqlite",
+        "description": "Execution counts materialized from the DB-hash-verified final result bundle.",
+        "sql": "SELECT * FROM run_status",
+        "tables_used": [
+          "run_status"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "qa",
+      "label": "Independent-QA snapshot",
+      "path": "data/experiment-31-07-26/analysis/report_source.sqlite",
+      "sha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+      "description": "15 unique QA workflow verdicts and their final resolutions.",
+      "query": {
+        "engine": "sqlite",
+        "description": "15 unique QA workflow verdicts and their final resolutions.",
+        "sql": "SELECT * FROM qa_results",
+        "tables_used": [
+          "qa_results"
+        ],
+        "executed_at": "2026-07-31T15:00:00+02:00"
+      }
+    },
+    {
+      "id": "final_results_file",
+      "label": "Verified v3.3 result bundle",
+      "path": "data/experiment-31-07-26/analysis/final_analysis_results.json",
+      "sha256": "c9ae29367353a729f3cebbd3d9d58c331c8be072603cf82ef7ae9d7bb5ed054f",
+      "description": "Deterministic model, requested-group, primary, sensitivity, cross-arm, and status results."
+    },
+    {
+      "id": "audited_secondary_file",
+      "label": "Pinned audited secondary results",
+      "path": "data/experiment-31-07-26/analysis/audited_secondary_results.json",
+      "sha256": "1554f1fa2edbbed41b5a28638c946851288b731a0cccc11e56bdf766a7ff4667",
+      "description": "Machine-readable QA03, QA05, and QA06 secondary estimates with source hashes."
+    },
+    {
+      "id": "paired_file",
+      "label": "Canonical OpenRouter A/B pairs",
+      "path": "data/experiment-31-07-26/analysis/paired_clean.json",
+      "sha256": "76b9059cd67a1024cde1655dd3f32083bbfbbb40609728dc65173b25b8835187",
+      "description": "Scored A/B intersection with model, cluster, and exclusion fields."
+    },
+    {
+      "id": "cross_file",
+      "label": "Canonical partial cross-arm pairs",
+      "path": "data/experiment-31-07-26/analysis/cross_arm_A.json",
+      "sha256": "987c632976260d4614056afcc9210fcd4902d322fcfe28b480ebc2e6216c8120",
+      "description": "Condition-A GIFT/OpenRouter pairs on all-model completed items."
+    },
+    {
+      "id": "metadata_file",
+      "label": "v3 provenance and exclusions",
+      "path": "data/experiment-31-07-26/analysis/dataset_meta.json",
+      "sha256": "98562f1c3c8d518e5d88839f5380844a82f31fbcb02e14dc6c95994ba81f0da2",
+      "description": "Counts, configuration checks, run status, caveats, and SHA-256 hashes."
+    },
+    {
+      "id": "database_file",
+      "label": "Frozen run database",
+      "path": "data/experiment-31-07-26/experiment.sqlite",
+      "sha256": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748",
+      "description": "Authoritative experiments, logical calls, attempts, parses, and scores; identity verified against v3 metadata."
+    },
+    {
+      "id": "qa_file",
+      "label": "Independent-QA record",
+      "path": "data/experiment-31-07-26/analysis/qa_workflows/qa_summary.json",
+      "sha256": "a8c24bc5b7de8c3152b3ab0d87c3fd7200b3e41abd99f4ca2d77f77321ad000d",
+      "description": "Machine-readable lineage, quality, statistics, code, claim, and render audit summary."
+    },
+    {
+      "id": "qa_summary_file",
+      "label": "QA resolution narrative",
+      "path": "data/experiment-31-07-26/analysis/qa_workflows/QA_SUMMARY.md",
+      "sha256": "f4885a2b5528d63e1e802853c05b54ec6d1f9bc291a3ab368f5ce65997914280",
+      "description": "Human-readable summary of all 15 independent QA workflows and their resolutions."
+    },
+    {
+      "id": "boxplot_qa_file",
+      "label": "Annotated-boxplot QA record",
+      "path": "data/experiment-31-07-26/analysis/BOXPLOT_QA.md",
+      "sha256": "db3e3cc5d0d1e78e589e84382e26d4f2d07ee06259e7c81dca653bd544fe2b31",
+      "description": "v3.3.1 five-number-mark visibility, estimand, data-contract, SQLite, responsive-render, and local verification checks."
+    },
+    {
+      "id": "report_markdown_file",
+      "label": "Canonical report narrative",
+      "path": "data/experiment-31-07-26/analysis/REPORT.md",
+      "sha256": "672bfd0dfa7002f831fa5b7f3cef63c70f2d41c271cd4c1eccd9f3363f74431b",
+      "description": "Reader-facing Markdown report from which narrative blocks are built."
+    },
+    {
+      "id": "security_scan_file",
+      "label": "Security-scan status",
+      "path": "data/experiment-31-07-26/analysis/SECURITY_SCAN.md",
+      "sha256": "a305b57fba74018b1919f91ffa85431dac8a1efdb72d35caf4ebfd83e5b45b58",
+      "description": "Snyk authentication failure and completed local security-adjacent checks."
+    }
+  ],
+  "package_info": {
+    "originUrl": "artifact://gift-correct-option-substitution-v3-3",
+    "controls": {
+      "edit": false,
+      "refresh": false
+    },
+    "analysisVersion": "v3.3-final",
+    "metadataVersion": "v3",
+    "reportSourceSha256": "9f37d8cb8b25627cc3ad710d3ae1f263c6ab221184249c381dab22b97e250b81",
+    "builderSha256": "bb2fc2eadbd76ea6fc1619a3d5ad61fee4be9eeca72faac1aab3c6f757f656a2"
+  }
+}

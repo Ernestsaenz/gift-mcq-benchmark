@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "description": "Machine-readable secondary results independently audited in QA03, QA05, and QA06. final_analysis.py verifies every listed input and source hash before ingesting these values.",
+  "input_sha256": {
+    "paired_clean.json": "76b9059cd67a1024cde1655dd3f32083bbfbbb40609728dc65173b25b8835187",
+    "cross_arm_A.json": "987c632976260d4614056afcc9210fcd4902d322fcfe28b480ebc2e6216c8120"
+  },
+  "source_sha256": {
+    "qa_workflows/QA03_PRIMARY_STATS.md": "23c01182b7dd03c65026bc67bcdfac1d1b32b8cb179f30064fca177b0907d6b9",
+    "qa_workflows/QA05_SENSITIVITY.md": "7ef0d4d3ac133e39a1a58e7c16138acd30ec0daa7297d590280e3543db067e75",
+    "qa_workflows/QA06_CROSS_ARM.md": "2a507249d68b8e5a9642db8a98be7eba107c0b72d7756d4ae4fc72fcda319d22"
+  },
+  "primary_openrouter_a_vs_b": {
+    "model_adjusted_logistic_or": {
+      "estimate": 0.313693,
+      "ci95": [0.246654, 0.398952],
+      "p_cluster_robust": 3.356e-21,
+      "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+    },
+    "within_item_conditional_logistic_or": {
+      "estimate": 0.20865,
+      "ci95": [0.1502, 0.28983],
+      "p_cluster_robust": 9.135e-21,
+      "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+    },
+    "heterogeneity": {
+      "risk_difference_cluster_wald_p": 0.000293,
+      "conditional_logit_interaction_lrt_p": 0.2009,
+      "conditional_logit_interaction_cluster_wald_p": 0.1227,
+      "marginal_logit_interaction_cluster_wald_p": 0.0438,
+      "source": "qa_workflows/QA03_PRIMARY_STATS.md"
+    }
+  },
+  "sensitivity": {
+    "position_a_cleaned_interaction": {
+      "ci95": [-0.1338, 0.00263],
+      "exact_item_label_permutation_p": 0.0631,
+      "source": "qa_workflows/QA05_SENSITIVITY.md"
+    }
+  },
+  "cross_arm_gift_vs_openrouter_a": {
+    "risk_difference_heterogeneity_f": 7.0757,
+    "risk_difference_heterogeneity_df": [3, 177],
+    "risk_difference_heterogeneity_p": 0.0001616,
+    "full_clean_target_manski_bound": [-0.214602, 0.054204],
+    "source": "qa_workflows/QA06_CROSS_ARM.md"
+  }
+}

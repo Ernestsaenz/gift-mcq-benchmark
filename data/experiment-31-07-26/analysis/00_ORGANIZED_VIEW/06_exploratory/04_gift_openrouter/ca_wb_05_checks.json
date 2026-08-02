@@ -1,0 +1,59 @@
+{
+ "ceiling": {
+  "google/gemma-4-26b-a4b-it": {
+   "headroom": 0.17041800643086816,
+   "delta": 0.05466237942122187,
+   "share": 0.3207547169811321
+  },
+  "z-ai/glm-5.2": {
+   "headroom": 0.06752411575562701,
+   "delta": 0.03215434083601286,
+   "share": 0.4761904761904761
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "headroom": 0.07717041800643087,
+   "delta": -0.006430868167202572,
+   "share": -0.08333333333333333
+  },
+  "google/gemini-3.6-flash": {
+   "headroom": 0.01607717041800643,
+   "delta": -0.00964630225080386,
+   "share": -0.6000000000000001
+  }
+ },
+ "holm": {
+  "google/gemma-4-26b-a4b-it": 0.013307571411132812,
+  "z-ai/glm-5.2": 0.01904296875,
+  "google/gemini-3.6-flash": 0.5,
+  "qwen/qwen3.6-35b-a3b": 0.8388197422027588
+ },
+ "bothwrong": {
+  "google/gemma-4-26b-a4b-it": {
+   "n": 29,
+   "same": 22
+  },
+  "z-ai/glm-5.2": {
+   "n": 10,
+   "same": 9
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "n": 13,
+   "same": 8
+  },
+  "google/gemini-3.6-flash": {
+   "n": 5,
+   "same": 4
+  },
+  "POOLED": {
+   "n": 57,
+   "same": 43
+  }
+ },
+ "bothwrong_binom_p": 9.518829157395328e-11,
+ "k0_items": {
+  "n_items_all_fail": 2,
+  "rescued_cells": 0,
+  "n_cells": 8
+ },
+ "region_perm_p": 0.041647917604119795
+}

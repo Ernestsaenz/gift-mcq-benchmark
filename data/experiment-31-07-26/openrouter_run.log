@@ -1,0 +1,92 @@
+===== OPENROUTER ARM start Fri Jul 31 01:40:19 CEST 2026 =====
+########## expA_or_310726 — pass 1/12 — 01:40:19 ##########
+[00:08:31] [1873/1896 (99%)] openrouter/google/gemma-4-26b-a4b-it q=b497 r=1  parse=ok letter=d/d ✓  3.7s
+[00:08:32] [1874/1896 (99%)] openrouter/google/gemini-3.6-flash q=b498 r=1  parse=ok letter=b/b ✓  3.3s
+[00:08:34] [1875/1896 (99%)] openrouter/google/gemma-4-26b-a4b-it q=b498 r=1  parse=ok letter=b/b ✓  2.4s
+[00:08:37] [1876/1896 (99%)] openrouter/google/gemini-3.6-flash q=b499 r=1  parse=ok letter=b/b ✓  2.5s
+[00:08:39] [1877/1896 (99%)] openrouter/z-ai/glm-5.2 q=b497 r=1  parse=ok letter=a/d ✗  14.5s
+[00:08:40] [1878/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b497 r=1  parse=ok letter=a/d ✗  15.2s
+[00:08:40] [1879/1896 (99%)] openrouter/z-ai/glm-5.2 q=b498 r=1  parse=ok letter=b/b ✓  9.4s
+[00:08:41] [1880/1896 (99%)] openrouter/google/gemma-4-26b-a4b-it q=b499 r=1  parse=ok letter=b/b ✓  1.4s
+[00:08:44] [1881/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b494 r=1  parse=ok letter=c/c ✓  34.3s
+[00:08:47] [1882/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b496 r=1  parse=ok letter=c/b ✗  23.9s
+[00:08:50] [1883/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b498 r=1  parse=ok letter=b/b ✓  19.8s
+[00:08:56] [1884/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b499 r=1  parse=ok letter=b/b ✓  16.8s
+[00:09:00] [1885/1896 (99%)] openrouter/z-ai/glm-5.2 q=b499 r=1  parse=ok letter=b/b ✓  23.6s
+[00:09:24] [1886/1896 (99%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  733.2s
+[00:11:56] [1887/1896 (100%)] openrouter/qwen/qwen3.6-35b-a3b q=b386 r=1  parse=failed_no_answer_found letter=-/b ?  641.2s
+[00:12:07] [1888/1896 (100%)] openrouter/z-ai/glm-5.2 q=b355 r=1  parse=failed_no_answer_found letter=-/d ?  759.2s
+[00:14:25] [1889/1896 (100%)] openrouter/qwen/qwen3.6-35b-a3b q=b493 r=1  parse=failed_no_answer_found letter=-/c ?  380.0s
+[00:16:54] [1890/1896 (100%)] openrouter/z-ai/glm-5.2 q=b427 r=1  parse=failed_no_answer_found letter=-/d ?  830.5s
+[00:17:39] [1891/1896 (100%)] openrouter/z-ai/glm-5.2 q=b439 r=1  parse=failed_no_answer_found letter=-/a ?  833.0s
+[00:18:08] [1892/1896 (100%)] openrouter/z-ai/glm-5.2 q=b442 r=1  parse=failed_no_answer_found letter=-/c ?  852.6s
+[00:18:26] [1893/1896 (100%)] openrouter/z-ai/glm-5.2 q=b444 r=1  parse=failed_no_answer_found letter=-/d ?  863.0s
+[00:18:30] [1894/1896 (100%)] openrouter/z-ai/glm-5.2 q=b469 r=1  parse=failed_no_answer_found letter=-/d ?  769.9s
+[00:19:20] [1895/1896 (100%)] openrouter/z-ai/glm-5.2 q=b478 r=1  parse=failed_no_answer_found letter=-/c ?  762.1s
+[00:20:41] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b471 r=1  parse=failed_no_answer_found letter=-/b ?  892.8s
+planned=1896 executed=1896 skipped=0 dry_run=False
+   planned=1896 completed=1874 api_failed=0 parse_failed=22 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 2/12 — 02:20:41 ##########
+[note] Progress counter reflects completion order, not plan order.
+[00:20:58] [1875/1896 (99%)] openrouter/z-ai/glm-5.2 q=b444 r=1  parse=ok letter=d/d ✓  16.7s
+[00:20:58] [1876/1896 (99%)] openrouter/z-ai/glm-5.2 q=b442 r=1  parse=ok letter=c/c ✓  16.7s
+[00:20:59] [1877/1896 (99%)] openrouter/z-ai/glm-5.2 q=b153 r=1  parse=ok letter=d/d ✓  17.5s
+[00:20:59] [1878/1896 (99%)] openrouter/z-ai/glm-5.2 q=b139 r=1  parse=ok letter=d/d ✓  17.7s
+[00:21:00] [1879/1896 (99%)] openrouter/z-ai/glm-5.2 q=b182 r=1  parse=ok letter=c/c ✓  18.6s
+[00:21:03] [1880/1896 (99%)] openrouter/z-ai/glm-5.2 q=b427 r=1  parse=ok letter=c/d ✗  21.3s
+[00:21:03] [1881/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b323 r=1  parse=ok letter=d/d ✓  21.5s
+[00:21:12] [1882/1896 (99%)] openrouter/z-ai/glm-5.2 q=b142 r=1  parse=ok letter=a/c ✗  30.7s
+[00:21:14] [1883/1896 (99%)] openrouter/z-ai/glm-5.2 q=b471 r=1  parse=ok letter=b/b ✓  16.0s
+[00:21:15] [1884/1896 (99%)] openrouter/z-ai/glm-5.2 q=b109 r=1  parse=ok letter=a/a ✓  33.8s
+[00:21:15] [1885/1896 (99%)] openrouter/z-ai/glm-5.2 q=b263 r=1  parse=ok letter=a/d ✗  33.9s
+[00:21:17] [1886/1896 (99%)] openrouter/qwen/qwen3.6-35b-a3b q=b493 r=1  parse=ok letter=c/c ✓  18.1s
+[00:21:19] [1887/1896 (100%)] openrouter/z-ai/glm-5.2 q=b478 r=1  parse=ok letter=c/c ✓  20.4s
+[00:21:21] [1888/1896 (100%)] openrouter/z-ai/glm-5.2 q=b178 r=1  parse=ok letter=b/b ✓  39.8s
+[00:21:22] [1889/1896 (100%)] openrouter/z-ai/glm-5.2 q=b469 r=1  parse=ok letter=d/d ✓  24.0s
+[00:21:28] [1890/1896 (100%)] openrouter/qwen/qwen3.6-35b-a3b q=b386 r=1  parse=ok letter=d/b ✗  46.9s
+[00:21:41] [1891/1896 (100%)] openrouter/qwen/qwen3.6-35b-a3b q=b335 r=1  parse=ok letter=d/d ✓  59.3s
+[00:22:14] [1892/1896 (100%)] openrouter/z-ai/glm-5.2 q=b439 r=1  parse=ok letter=a/a ✓  93.0s
+[00:33:04] [1893/1896 (100%)] openrouter/z-ai/glm-5.2 q=b199 r=1  parse=failed_no_answer_found letter=-/d ?  742.4s
+[00:33:12] [1894/1896 (100%)] openrouter/z-ai/glm-5.2 q=b208 r=1  parse=failed_no_answer_found letter=-/c ?  751.0s
+[00:34:02] [1895/1896 (100%)] openrouter/z-ai/glm-5.2 q=b355 r=1  parse=failed_no_answer_found letter=-/d ?  800.4s
+[00:34:34] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  832.4s
+planned=1896 executed=22 skipped=1874 dry_run=False
+   planned=1896 completed=1892 api_failed=0 parse_failed=4 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 3/12 — 02:34:34 ##########
+[note] Progress counter reflects completion order, not plan order.
+[00:34:36] [1893/1896 (100%)] openrouter/z-ai/glm-5.2 q=b199 r=1  parse=ok letter=c/d ✗  1.3s
+[00:35:12] [1894/1896 (100%)] openrouter/z-ai/glm-5.2 q=b355 r=1  parse=ok letter=b/d ✗  37.9s
+[00:47:02] [1895/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  747.3s
+[00:48:25] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b208 r=1  parse=failed_no_answer_found letter=-/c ?  830.6s
+planned=1896 executed=4 skipped=1892 dry_run=False
+   planned=1896 completed=1894 api_failed=0 parse_failed=2 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 4/12 — 02:48:25 ##########
+[note] Progress counter reflects completion order, not plan order.
+[00:49:02] [1895/1896 (100%)] openrouter/z-ai/glm-5.2 q=b208 r=1  parse=ok letter=d/c ✗  36.3s
+[01:00:53] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  747.3s
+planned=1896 executed=2 skipped=1894 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 5/12 — 03:00:53 ##########
+[note] Progress counter reflects completion order, not plan order.
+[01:14:20] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  806.3s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 6/12 — 03:14:20 ##########
+[note] Progress counter reflects completion order, not plan order.
+[01:44:21] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  1800.6s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 7/12 — 03:44:21 ##########
+[note] Progress counter reflects completion order, not plan order.
+[01:56:00] [1896/1896 (100%)] openrouter/z-ai/glm-5.2 q=b320 r=1  parse=failed_no_answer_found letter=-/d ?  699.0s
+planned=1896 executed=1 skipped=1895 dry_run=False
+   planned=1896 completed=1895 api_failed=0 parse_failed=1 skipped_by_resume=0
+>>> expA_or_310726 not yet complete; retrying
+########## expA_or_310726 — pass 8/12 — 03:56:01 ##########
+[note] Progress counter reflects completion order, not plan order.

@@ -1,0 +1,474 @@
+[
+ {
+  "qid": "b61",
+  "stem": "Paciente varón de 62 años con antecedentes de enolismo superior a 60 g/día de veinte años de evolución y fumador de 25 paquetes/año desde los 17 años.\n\nAntecedente de dos ingresos por pancreatitis agudas leves en los últimos tres años. En los últimos tres meses presenta un cuadro de diarrea en forma de cuatro deposiciones al día, dolor abdominal continuo y diario, localizado en el epigastrio que no mejora con paracetamol. Además, refiere que ha perdido cuatro quilos. Se le hace una gastroscopia que es normal. Una TC abdominal revela la presencia de múltiples calcificaciones parenquimatosas en\nla cabeza del páncreas, dilatación del conducto pancreático principal, una lesión quística de 10 mm en el cuerpo pancreático y atrofia de la cola de páncreas. Los coprocultivos, los parásitos en heces y la toxina de Clostridium difficile en heces son negativos, la serología de celiaquía negativa y las hormonas tiroideas son normales.\n\nElementos relevantes de la analítica. Glucosa: 124 mg/dl, GGT: 101 U/L, AST: 55 U/L, ALT: 65 U/L, VCM: 102 fl, BI total: 1,4 mg/dl, triglicéridos: 180 mg/dl, amilasa: 125 U/L, lipasa: 25 U/L.\nEl resto del hemograma y de la bioquímica está dentro de valores normales.\n\nLas pruebas para determinar la insuficiencia pancreática exocrina demuestran una insuficiencia pancreática exocrina (IPE) grave.\n\n22 meses después del diagnóstico el paciente ingresa por ictericia conjuntival y cutánea con cifras de bilirrubina de 9 mg/dl (de predominio directo) y colestasis marcada en la analítica. Una ecografía abdominal en urgencias muestra una dilatación de la vía biliar extrahepática.\n\nUna TC abdominal con protocolo pancreático objetiva una lesión sólida en la cabeza del páncreas de 2,7 x 2,5 cm con dilatación de la vía biliar extrahepática de 13 mm. No se observan lesiones hepáticas ocupantes de espacio. La lesión está en contacto con la arteria mesentérica superior en más de 180° con presencia de una trombosis portal.\n\n¿Qué debe solicitarse como primera estrategia para drenar inicialmente la vía biliar?",
+  "opts": {
+   "a": "Drenaje por vía transparietohepática con colocación de un drenaje metálico no recubierto.",
+   "b": "CPRE con colocación de un drenaje metálico no recubierto.",
+   "c": "CPRE con citología de colédoco y colocación de un drenaje biliar de plástico.",
+   "d": "Drenaje interno-externo por vía transparietohepática y colocación posterior de un drenaje biliar de plástico por vía endoscópica."
+  },
+  "key": "c",
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "b",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b115",
+  "stem": "Varón de 32 años sin hábitos tóxicos ni alergias medicamentosas conocidas y sin antecedentes familiares de interés.\n\nComo único antecedente patológico destaca una rectosigmoiditis ulcerosa diagnosticada dos años antes tras una historia de diarrea sanguinolenta intermitente y un tenesmo discreto. En ese momento se hizo una colonoscopia completa con biopsia que mostró una afectación del recto sigma hasta unos 15 cm del margen anal en forma de mucosa eritematosa friable con sangrado con el roce mínimo de predominante en el recto distal. Se descartaron procesos infecciosos intestinales. Las únicas\nalteraciones analíticas reseñables en el momento del diagnóstico fueron que era positivo de P-ANCA y tenía una calprotectina fecal de 450 μg/g. Se pautó un tratamiento con enemas de mesalazina.\n\nEl paciente permaneció asintomático desde el diagnóstico siguiendo controles en consultas y con cumplimiento terapéutico. Contactó con su servicio de digestivo de referencia por presentar, en las dos semanas previas, un aumento del número de deposiciones con entre cuatro y seis deposiciones al día deshechas con resto hemático fresco en la mayoría de ellas, con imperiosidad, sin respetar descanso nocturno y con dolor abdominal previo a la deposición. No había afectación del estado general. El mes previo al inicio de la sintomatología digestiva inició una lumbalgia intermitente, en ocasiones\nintensa, y se automedicó con ibuprofeno en comprimidos de 600 mg de forma puntual.\n\nLa exploración física fue normal y se solicitó una analítica completa en la cual destacaba HB: 12,5 gr/dl, VSG y PCR normales, calprotectina: 675 μg/g, FA: 270 UI/L, GGT: 65 UI/L, Bil. total: GOT y GPT normales, ferropenia discreta, resto de parámetros nutricionales normales.\n\nEn el caso presentado se hizo una colonoscopia completa que mostró una progresión a pancolitis ulcerosa, se asumió el diagnóstico de brote moderado severo y se controló de manera ambulatoria.\n\nEl paciente recibió un tratamiento con adalimumab para conseguir la remisión y se pautó como tratamiento de mantenimiento. Se le asoció, inicialmente, azatioprina que fue retirada por un episodio de pancreatitis leve.\n\nSe descartó la CEP y se mantuvo en remisión clínica y biológica en los siguientes ocho meses en monoterapia con adalimumab a dosis habituales de 40 mg cada dos semanas. A partir de esa fecha, de forma progresiva, refiere un aumento del número de deposiciones pasando de una a cinco o seis, con sangrado con las heces en la mayoría de las deposiciones, cierto tenesmo y dolor cólico previo a la deposición. Refirió una afectación de su calidad de vida, pero no de su estado general. Se hizo un estudio de heces con coprocultivos negativos, Clostridium negativo y calprotectina de 540 μg/g. La\nanalítica de sangre, el hemograma, el VSG, la PCR y los parámetros nutricionales fueron normales. Se decidió hacer una rectosigmoidoscopia que evidenció mucosa con eritema intenso friable con alguna erosión aislada desde el recto que afectaba de forma difusa toda la mucosa valorada. Se tomaron muestras para biopsia para conocer el grado de actividad histológico y la presencia de citomegalovirus (CMV).\n\nSeñale la afirmación verdadera respecto al tratamiento médico de la colitis ulcerosa grave:",
+  "opts": {
+   "a": "Los esteroides sistémicos son el tratamiento inicial y se debe añadir una segunda línea de tratamiento si no hay respuesta siete días después de iniciar el tratamiento esteroideo.",
+   "b": "En caso de requerir una segunda línea debe indicarse infliximab porqué ha demostrado que es más eficaz y seguro que la ciclosporina en estos pacientes.",
+   "c": "Si a los cinco días de la primera dosis de infliximab no hay respuesta, se debe administrar una segunda dosis a 10 mg/kg.",
+   "d": "La ciclosporina siempre es la primera elección en caso de fracaso de los esteroides."
+  },
+  "key": "c",
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "a",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b131",
+  "stem": "Paciente de 62 años con los antecedentes siguientes:\n\nNo alergias.\n\nExfumador: tabaquismo activo desde la juventud hasta los 58 años.\n\nTosedor habitual.\n\nConsumo diario de alcohol desde hace más de diez años. Consume dos cañas de cerveza, cuatro vasos de vino y dos carajillos al día. El fin de semana toma alguna cerveza más en fiestas y celebraciones y uno o dos gin-tonics.\n\nDice que no toma drogas.\n\nDice que no tiene antecedentes patológicos relevantes. No hace controles con su médico de cabecera. Nunca va al médico.\nEnfermedad actual: consulta por distensión abdominal molesta, un aumento del perímetro abdominal progresivo de dos semanas de evolución y piernas hinchadas.\n\nExploración física: bien coloreado, subictericia conjuntival dudosa, arañas vasculares y telangiectasias en el tronco, eritema palmar e hipertrofia parotídea.\n\nCardiocirculatorio: pulsos rítmicos 90 lpm, soplo sistólico plurifocal, no ingurgitación yugular, edemas maleolares moderados.\n\nRespiración: espiración un poco alargada, algún roncus diseminado.\nAbdomen: muy distendido; indoloro a la presión o a la descompresión; sin defensa; matidez en flancos; la matidez cambia con los cambios posturales; signo de la ola; hepatomegalia de tres traveses, lisa e indolora; esplenomegalia dudosa, difícil de delimitar; pequeña protrusión umbilical; no reflujo hepatoyugular.\n\nRadiografía del tórax: elevación de ambos hemidiafragmas.\n\nRadiografía del abdomen: aumento difuso de la densidad, se aprecia perfil hepático y esplénico.\n\nElectrocardiograma normal.\n\nAnalítica:\nLeucocitos: 3.100/mm³ (3.000-10.000); Hto: 39 % (40-46); Hb: 12,1 g/dl (12-15); VCM: 105 fl (80-100); plaquetas: 105.000/mm³ (150.000-400.000); Quick: 59 % (> 70 %); INR: 1.4 (N 0.8-1.2); creatinina: 1.0 mg/dl; urea: 40 mg/dl; Na: 136 mEq/L; K: 4 mEq/L; urato: 7.9 (< 7); bilirrubina total: 1.9 mg/dl (< 1.3) GOT (ASAT): 105 UI/ml (< 40); GPT (ALAT): 50 UI/ml (< 40); GGT: 480 UI/ml (< 45); FA: 125 UI/ml (< 135); albúmina: 3,2 g/dl (> 3,5).\n\nEl resto de la analítica básica es normal.\nEcografía abdominal: líquido libre muy abundante, hígado de ecogenicidad aumentada difusamente, heterogéneo, difícil de ver por la ascitis. Forma hepática\n\nirregular un poco abollonada, macronodular. Vena porta permeable, dilatada. Venas suprahepáticas permeables, no dilatadas. Vía biliar intrahepática y extrahepática normal. Vesícula con litiasis múltiple, no distendida y no edematosa. Bazo ligeramente aumentado de tamaño (15 cm de longitud máxima). El resto no tiene alteraciones. Páncreas no visto por interposición de aire.\n\nSe hace una paracentesis (diagnóstica y evacuadora), y se obtienen 6.000 ml de ascitis.\n\nAnálisis del líquido ascítico:\n- Glucosa: 120 mg/dl.\n- Proteínas: 1,0 g/dl.\n- Albúmina: 0,8 g/dl.\n- LDH: 40 ui/ml.\n- Hematíes: 100 /mm³.\n- Leucocitos: 220 /mm³.\n\n¿Qué probabilidad hay de que este paciente tenga hepatitis alcohólica?",
+  "opts": {
+   "a": "Seguro que no la tiene porque no tiene ictericia.",
+   "b": "Es posible pero si la tiene es una hepatitis alcohólica sin criterios de gravedad, porque no tiene ictericia y la alteración de la coagulación es moderada.",
+   "c": "Es muy probable porque bebe mucho alcohol.",
+   "d": "Es seguro que tiene hepatitis alcohólica, porque todos los individuos que beben más de 60 g de alcohol al día tienen siempre cierto grado de hepatitis alcohólica."
+  },
+  "key": "b",
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b181",
+  "stem": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?",
+  "opts": {
+   "a": "Sofosbuvir+velpatasvir+ribavirina 24 semanas",
+   "b": "Sofosbuvir+velpatasvir 12 semanas",
+   "c": "Glecaprevir+pibrentasvir 16 semanas",
+   "d": "Grazoprevir+elbasvir 16 semanas"
+  },
+  "key": "b",
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "a",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b182",
+  "stem": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn la ecografía de screening semestral se objetiva trombosis reciente que ocupa el 60% de la vena porta principal. Según las últimas recomendaciones de la AASLD (American Association Study Liver Diseases 2020), señale la FALSA:",
+  "opts": {
+   "a": "Realizar prueba de imagen con contraste",
+   "b": "Iniciar anticoagulación",
+   "c": "Realizar estudio exhaustivo de trombofilia",
+   "d": "La aparición de isquemia intestinal es menos frecuente que en los pacientes que no presentan cirrosis"
+  },
+  "key": "c",
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "d",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b217",
+  "stem": "Un varón de 39 años de edad, con enfermedad de Crohn, acude a su consulta para una revisión periódica. El paciente, con enfermedad ileocólica, está bien controlado con Infliximab, actualmente sin dolor abdominal y con dos deposiciones pastosas al día. A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación. La exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique cuál es el tratamiento adecuado en este caso.",
+  "opts": {
+   "a": "Debemos iniciar tratamiento antibiótico con ciprofloxacino o metronidazol.",
+   "b": "Además del antibiótico se debe intensificar el infliximab, o pasar adalimumab para controlar la enfermedad rectal.",
+   "c": "Debemos solicitar una ecografía endoanal previa a cualquier opción terapéutica.",
+   "d": "Al ser asintomática, basta realizar un seguimiento del paciente, no siendo preciso un tratamiento específico de la fístula."
+  },
+  "key": "d",
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "a",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b219",
+  "stem": "Paciente intervenido de estenosis ileal por enfermedad de Crohn. Inicia tratamiento para la profilaxis de la recurrencia con azatioprina. En la colonoscopia de revisión a los 6 meses se aprecian < de 5 lesiones aftosas. Señale el estadio correspondiente y el tratamiento que se le aplicaría:",
+  "opts": {
+   "a": "Corresponde a un índice de Rutgeerts i1, continua con azatioprina.",
+   "b": "Corresponde a un índice de Rutgeerts i0, continua con azatioprina.",
+   "c": "Corresponde a un índice de Rutgeerts i2b, cambiamos el tratamiento a un anti TNF.",
+   "d": "Corresponde a un índice de Rutgeerts i2a, continua con azatioprina."
+  },
+  "key": "a",
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "d",
+    "or": "a"
+   }
+  ]
+ },
+ {
+  "qid": "b262",
+  "stem": "En cuanto al cáncer colo-rectal, señale la respuesta INCORRECTA:",
+  "opts": {
+   "a": "Es el más frecuente en España globalmente.",
+   "b": "La forma hereditaria más frecuente es el Síndrome de Lynch.",
+   "c": "La obesidad es un factor de riesgo.",
+   "d": "Se recomienda administrar suplementos de vitamina D en poblaciones de riesgo de cáncer de colon."
+  },
+  "key": "d",
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "a",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b278",
+  "stem": "La European Society of Gastrointestinal Endoscopy (ESGE) recomienda el tratamiento endoscópico de primera línea en el caso de perforación iatrogénica esofágica relacionada con la endoscopia, sugiriendo el uso de clips OTS (over-the-scope) en el caso de perforaciones:",
+  "opts": {
+   "a": "< 10 mm.",
+   "b": "> 10 mm.",
+   "c": "> 20 mm.",
+   "d": "Ninguna de las anteriores es correcta."
+  },
+  "key": "b",
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "google/gemini-3.6-flash",
+    "gift": "d",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b284",
+  "stem": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):",
+  "opts": {
+   "a": "Se recomienda endoscopia urgente, dentro de las primeras 24 horas, para cuerpos extraños esofágicos sin obstrucción completa.",
+   "b": "ESGE no recomienda el estudio con bario.",
+   "c": "Se recomienda la evaluación radiológica para pacientes con impactación de bolo alimenticio sin presencia de hueso y sin complicaciones.",
+   "d": "Se recomienda endoscopia no urgente (dentro de las 72 horas) para cuerpos extraños romos de tamaño mediano localizados en el estómago."
+  },
+  "key": "c",
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "a",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b299",
+  "stem": "Paciente varón de 50 años. Se realiza gastroscopia por pirosis, sin respuesta a tratamiento con IBP. La endoscopia muestra la presencia de Esófago de Barrett C1M5 de la Clasificación de Praga. Los resultados histológicos confirman la existencia de metaplasia sin displasia. Siguiendo las últimas Guías ESGE de diagnóstico y manejo de Esófago de Barrett, ¿en cuánto tiempo le corresponde el siguiente control endoscópico?",
+  "opts": {
+   "a": "1 año.",
+   "b": "3 años.",
+   "c": "5 años.",
+   "d": "No precisa más controles endoscópicos."
+  },
+  "key": "b",
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b301",
+  "stem": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:",
+  "opts": {
+   "a": "Convivientes con pacientes con Hepatitis aguda por virus A.",
+   "b": "Viaje a un país endémico, iniciando la pauta 1 semana antes del viaje.",
+   "c": "Trabajadores con primates.",
+   "d": "Antecedente de haber consumido drogas por vía parenteral, sin consumo actual."
+  },
+  "key": "c",
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "b",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b304",
+  "stem": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:",
+  "opts": {
+   "a": "4",
+   "b": "3",
+   "c": "2",
+   "d": "1"
+  },
+  "key": "b",
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b323",
+  "stem": "Sobre la colitis microscópica, señale la afirmación INCORRECTA:",
+  "opts": {
+   "a": "El uso concomitante de IBP y AINE aumenta el riesgo de presentar colitis microscópica.",
+   "b": "La colitis microscópica se ha asociado a enfermedades autoinmunes como la tiroiditis autoinmune, diabetes mellitus tipo 1 y artritis oligoarticular no erosiva.",
+   "c": "Se recomienda tomar al menos 3 biopsias de ascendente y 3 de descendente para el diagnóstico anatomopatológico de CM y la diferenciación entre colitis colágena y colitis linfocítica.",
+   "d": "Los cambios histológicos detectados en la colitis colágena son más marcados en colon izquierdo (descendente y rectosigma)."
+  },
+  "key": "d",
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b325",
+  "stem": "La lesión hepática más frecuentemente producida por azatioprina es:",
+  "opts": {
+   "a": "Ductopenia.",
+   "b": "Granulomas.",
+   "c": "Lesión vascular.",
+   "d": "Esteatohepatitis."
+  },
+  "key": "c",
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "b",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b357",
+  "stem": "Un varón de 52 años de edad, con leucemia linfoblástica aguda, recibe un trasplante de médula ósea alogénico. El día 22º postrasplante desarrolla un rash cutáneo difuso, dolor abdominal y diarrea. Se le consulta la posibilidad de realizar endoscopia para el diagnóstico. ¿De dónde es más rentable tomar las biopsias para el diagnóstico de una enfermedad injerto contra huésped?",
+  "opts": {
+   "a": "Esófago, siendo el punto de elección para la toma de biopsias por ser el procedimiento menos invasivo.",
+   "b": "Duodeno.",
+   "c": "En el colon se llega a un diagnostico histológico en un porcentaje ligeramente superior a otras localizaciones.",
+   "d": "Unión gastroesofágica, con una sensibilidad muy superior a las otras localizaciones."
+  },
+  "key": "c",
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "b",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b364",
+  "stem": "En relación a la enfermedad de Whipple:",
+  "opts": {
+   "a": "La respuesta inicial al tratamiento con antibióticos suele ser rápida, aunque la diarrea suele ser el síntoma que más tarda en resolverse.",
+   "b": "Sólo los humanos y los cerdos parecen verse afectados por esta enfermedad.",
+   "c": "Una característica común es la hiperpigmentación cutánea, que se ha encontrado entre el 17% y el 66% de los pacientes.",
+   "d": "Doxicilina 100 mg dos veces al día es una buena alternativa de tratamiento debido a su buena penetración a nivel del sistema nervioso central."
+  },
+  "key": "c",
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "a",
+    "or": "c"
+   }
+  ]
+ },
+ {
+  "qid": "b370",
+  "stem": "Una de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria",
+  "opts": {
+   "a": "El mejor predictor de fibrosis en la Hemocromatosis hereditaria es el nivel de ferritina en sangre.",
+   "b": "Los pacientes únicamente heterocigotos en la mutación C282Y tienen riesgo de sobrecarga férrica.",
+   "c": "La prueba de cribado de elección es la saturación de transferrina en sangre.",
+   "d": "El fibroscán ® no está validado en el diagnóstico de fibrosis hepática en esta enfermedad."
+  },
+  "key": "b",
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "google/gemini-3.6-flash",
+    "gift": "d",
+    "or": "b"
+   },
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "d",
+    "or": "b"
+   }
+  ]
+ },
+ {
+  "qid": "b373",
+  "stem": "La toma de biopsias aleatorias en la colonoscopia de cribado de cáncer de colon en pacientes con colitis ulcerosa NO esta recomendada en caso de:",
+  "opts": {
+   "a": "Mala preparación.",
+   "b": "Inflamación moderada o severa.",
+   "c": "Abundantes pólipos inflamatorios o pseudopólipos.",
+   "d": "En los casos de proctitis."
+  },
+  "key": "d",
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "cells": [
+   {
+    "model": "google/gemini-3.6-flash",
+    "gift": "b",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b390",
+  "stem": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:",
+  "opts": {
+   "a": "Ictericia.",
+   "b": "Dilatación progresiva de los conductos biliares intra o extrahepáticos.",
+   "c": "Empeoramiento del prurito.",
+   "d": "Elevación del marcador Ca 19.9."
+  },
+  "key": "d",
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "cells": [
+   {
+    "model": "google/gemma-4-26b-a4b-it",
+    "gift": "c",
+    "or": "d"
+   },
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b396",
+  "stem": "Según lo previsto en el artículo 17 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, la gestión de la historia clínica por los centros con pacientes hospitalizados, se realizará a través de:",
+  "opts": {
+   "a": "El servicio de Personal",
+   "b": "La Dirección de Gestión y Asuntos Generales",
+   "c": "La Dirección Médica",
+   "d": "La unidad de admisión y documentación clínica."
+  },
+  "key": "d",
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-general",
+  "cells": [
+   {
+    "model": "qwen/qwen3.6-35b-a3b",
+    "gift": "c",
+    "or": "d"
+   }
+  ]
+ },
+ {
+  "qid": "b398",
+  "stem": "Cuál es la recomendación de ECCO sobre el uso de tiopurinas (azatioprina, mercaptopurina) como monoterapia en la enfermedad de Crohn?",
+  "opts": {
+   "a": "Recomendado ante la corticodependencia",
+   "b": "Recomendado solo en combinación con biológicos",
+   "c": "No recomendado como monoterapia",
+   "d": "Recomendado solo en pacientes jovenes"
+  },
+  "key": "c",
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "cells": [
+   {
+    "model": "z-ai/glm-5.2",
+    "gift": "a",
+    "or": "c"
+   }
+  ]
+ }
+]

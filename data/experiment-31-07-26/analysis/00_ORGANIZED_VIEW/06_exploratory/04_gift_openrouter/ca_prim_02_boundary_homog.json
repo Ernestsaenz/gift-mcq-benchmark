@@ -1,0 +1,126 @@
+{
+ "bootstrap_boundary": {
+  "google/gemini-3.6-flash": {
+   "frac_below_0": 0.9494,
+   "atom_at_exactly_0": 0.0506,
+   "frac_above_0": 0.0,
+   "p_boot_inverted_correct": 0.1012,
+   "p_boot_inverted_naive_wrong": 0.0
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "frac_below_0": 0.00165,
+   "atom_at_exactly_0": 0.00125,
+   "frac_above_0": 0.9971,
+   "p_boot_inverted_correct": 0.0058,
+   "p_boot_inverted_naive_wrong": 0.0058
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "frac_below_0": 0.62715,
+   "atom_at_exactly_0": 0.0789,
+   "frac_above_0": 0.29395,
+   "p_boot_inverted_correct": 0.7457,
+   "p_boot_inverted_naive_wrong": 0.5879
+  },
+  "z-ai/glm-5.2": {
+   "frac_below_0": 0.00025,
+   "atom_at_exactly_0": 0.00085,
+   "frac_above_0": 0.9989,
+   "p_boot_inverted_correct": 0.0022,
+   "p_boot_inverted_naive_wrong": 0.0022
+  },
+  "POOLED": {
+   "frac_below_0": 0.00805,
+   "atom_at_exactly_0": 0.00235,
+   "frac_above_0": 0.9896,
+   "p_boot_inverted_correct": 0.0208,
+   "p_boot_inverted_naive_wrong": 0.0208
+  }
+ },
+ "exact_power_floor": {
+  "google/gemini-3.6-flash": {
+   "b": 0,
+   "c": 3,
+   "n_disc": 3,
+   "min_attainable_two_sided_p": 0.25,
+   "can_ever_reach_0.05": false,
+   "min_n_disc_for_p_le_0.05": 6,
+   "p_exact": 0.25
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "b": 24,
+   "c": 7,
+   "n_disc": 31,
+   "min_attainable_two_sided_p": 9.313225746154785e-10,
+   "can_ever_reach_0.05": true,
+   "min_n_disc_for_p_le_0.05": 6,
+   "p_exact": 0.003326892852783203
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "b": 11,
+   "c": 13,
+   "n_disc": 24,
+   "min_attainable_two_sided_p": 1.1920928955078125e-07,
+   "can_ever_reach_0.05": true,
+   "min_n_disc_for_p_le_0.05": 6,
+   "p_exact": 0.8388197422027588
+  },
+  "z-ai/glm-5.2": {
+   "b": 11,
+   "c": 1,
+   "n_disc": 12,
+   "min_attainable_two_sided_p": 0.00048828125,
+   "can_ever_reach_0.05": true,
+   "min_n_disc_for_p_le_0.05": 6,
+   "p_exact": 0.00634765625
+  },
+  "POOLED": {
+   "b": 46,
+   "c": 24,
+   "n_disc": 70,
+   "min_attainable_two_sided_p": 1.6940658945086007e-21,
+   "can_ever_reach_0.05": true,
+   "min_n_disc_for_p_le_0.05": 6,
+   "p_exact": 0.011526409654363481
+  }
+ },
+ "homogeneity_of_discordant_pi": {
+  "b_per_model": {
+   "google/gemini-3.6-flash": 0,
+   "google/gemma-4-26b-a4b-it": 24,
+   "qwen/qwen3.6-35b-a3b": 11,
+   "z-ai/glm-5.2": 11
+  },
+  "n_disc_per_model": {
+   "google/gemini-3.6-flash": 3,
+   "google/gemma-4-26b-a4b-it": 31,
+   "qwen/qwen3.6-35b-a3b": 24,
+   "z-ai/glm-5.2": 12
+  },
+  "pi_hat_common": 0.6571428571428571,
+  "statistic": 15.432664212248717,
+  "p_parametric_bootstrap": 0.0027149864250678745,
+  "R": 200000,
+  "p_asymptotic_chi2_3df": 0.0014818661740022675
+ },
+ "rd_spread_across_models": {
+  "rd_pp": {
+   "google/gemini-3.6-flash": -0.964630225080386,
+   "google/gemma-4-26b-a4b-it": 5.466237942122187,
+   "qwen/qwen3.6-35b-a3b": -0.6430868167202572,
+   "z-ai/glm-5.2": 3.215434083601286
+  },
+  "observed_spread_pp": 6.430868167202572,
+  "cluster_boot_ci_pp": [
+   4.067796610169491,
+   11.067193675889328
+  ]
+ },
+ "contrast_gemma_minus_qwen": {
+  "point_pp": 6.109324758842444,
+  "cluster_boot_ci_pp": [
+   1.8987341772151902,
+   10.548739745350588
+  ],
+  "p_boot": 0.0067
+ }
+}

@@ -1,0 +1,2826 @@
+{
+ "n_specs": 160,
+ "seed": 20260731,
+ "B_boot": 10000,
+ "B_perm": 10000,
+ "results": [
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -15.550423402617398,
+   "p": 6.274510033843665e-35,
+   "disc_b": 247,
+   "disc_c": 45
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.550423402617398,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.809318377911993,
+    -12.452625879805089
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.550423402617398,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.550423402617398,
+   "p": 6.710041762191906e-18,
+   "logOR": -1.114024475903198,
+   "se": 0.11766812250106554,
+   "OR": 0.32823532423645285
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.538461538461538,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.792517006802722,
+    -12.436224489795919
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.538461538461538,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.538461538461538,
+   "p": 1.1265935513652582e-18
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.825169009911658,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.660599816849814,
+    -11.981270873734106
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.825169009911658,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.825169009911658,
+   "p": 1.0776821633959136e-13
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.55246913580247,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.812492542656006,
+    -12.456501831501832
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.55246913580247,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.55246913580247,
+   "p": 0.008672460143568114
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -15.55246913580247,
+   "p": 1.1086799186850075e-31,
+   "per_model_p": [
+    3.4654513001441956e-06,
+    6.147806615047977e-11,
+    5.257316976900643e-09,
+    1.0098638262297781e-12
+   ],
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -18.209876543209877
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.55246913580247,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -18.209876543209877
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.55246913580247,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.55246913580247,
+   "p": 3.9859776392106394e-26,
+   "per_model_p": [
+    3.98603288546313e-05,
+    2.1067426645083073e-08,
+    7.254236255092265e-09,
+    1.1217081579868504e-10
+   ],
+   "per_model_logOR": [
+    -1.6691784911695324,
+    -0.9556061296684745,
+    -1.0768471321982522,
+    -1.5207722753484412
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.848543166717718,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -9.026133180544944,
+    -18.238795518207283,
+    -16.681945505474918,
+    -19.44729846264373
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.848543166717718,
+   "p": 1.7119571001766243e-12,
+   "per_model_p": [
+    0.00019998000199980003,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "lenient",
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.848543166717718,
+   "p": 2.8205986500715993e-20,
+   "per_model_p": [
+    0.00010597663511414567,
+    1.855373151736586e-06,
+    1.1303792859466802e-06,
+    4.2588706323374874e-09
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 2.008097124961957e-34,
+   "disc_b": 247,
+   "disc_c": 46
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.72937293729373,
+    -12.349397590361447
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 1.2012135246448337e-17,
+   "logOR": -1.1054969974456121,
+   "se": 0.11785475190205713,
+   "OR": 0.33104631217838587
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.72937293729373,
+    -12.349397590361447
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 1.77897543925534e-18
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.70497670221935,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.56730769230769,
+    -11.828640109890106
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.70497670221935,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.70497670221935,
+   "p": 1.9151414432014002e-13
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.72937293729373,
+    -12.349397590361447
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.461538461538462,
+   "p": 0.008521802190613771
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -15.461538461538462,
+   "p": 4.514584999139783e-31,
+   "per_model_p": [
+    3.4654513001441956e-06,
+    6.147806615047977e-11,
+    5.257316976900643e-09,
+    4.334352264140022e-12
+   ],
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -17.846153846153847
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.461538461538462,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -17.846153846153847
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.461538461538462,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.461538461538462,
+   "p": 8.625679904055568e-26,
+   "per_model_p": [
+    3.98603288546313e-05,
+    2.1067426645083073e-08,
+    7.254236255092265e-09,
+    2.5126459366053006e-10
+   ],
+   "per_model_logOR": [
+    -1.6691784911695324,
+    -0.9556061296684745,
+    -1.0768471321982522,
+    -1.472213730824954
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.70497670221935,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -9.026133180544944,
+    -18.238795518207283,
+    -16.681945505474918,
+    -18.873032604650252
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.70497670221935,
+   "p": 1.7119571001766243e-12,
+   "per_model_p": [
+    0.00019998000199980003,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "primary",
+   "outcome": "strict",
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.70497670221935,
+   "p": 9.663630653040199e-20,
+   "per_model_p": [
+    0.00010597663511414567,
+    1.855373151736586e-06,
+    1.1303792859466802e-06,
+    1.565082819392956e-08
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -17.06132361870067,
+   "p": 1.2408413585381937e-50,
+   "disc_b": 335,
+   "disc_c": 54
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.06132361870067,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.073891625615765,
+    -14.136904761904763
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.06132361870067,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.06132361870067,
+   "p": 2.4339396765304915e-23,
+   "logOR": -1.2082880813848218,
+   "se": 0.1103243028635424,
+   "OR": 0.2987082061112077
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.050970873786408,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.056818181818183,
+    -14.132882882882884
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.050970873786408,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.050970873786408,
+   "p": 6.66339755817648e-24
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.4649955146168,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.847760545274628,
+    -14.000106354447002
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.4649955146168,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.4649955146168,
+   "p": 1.020879460573586e-19
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.062043795620436,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.073891625615765,
+    -14.13810251558596
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.062043795620436,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.062043795620436,
+   "p": 0.008717230567128616
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -17.062043795620436,
+   "p": 7.558202333317784e-47,
+   "per_model_p": [
+    2.4579776436439715e-08,
+    1.7102147522338876e-15,
+    4.3777338031345975e-15,
+    1.4342435250828828e-15
+   ],
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -18.248175182481752
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.062043795620436,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -18.248175182481752
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.062043795620436,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.062043795620436,
+   "p": 6.472496064199492e-38,
+   "per_model_p": [
+    2.3201413097710463e-06,
+    8.530446389218719e-11,
+    2.126852866861694e-15,
+    9.617546934538286e-13
+   ],
+   "per_model_logOR": [
+    -1.7277200476981964,
+    -1.059945605825131,
+    -1.2290088824872607,
+    -1.5464372229699266
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.482557699428288,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -9.192954711502002,
+    -20.70721083150681,
+    -20.992656919050393,
+    -19.037408335653947
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.482557699428288,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "lenient",
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.482557699428288,
+   "p": 2.2296671333755556e-30,
+   "per_model_p": [
+    8.143025289869711e-06,
+    1.7926277916601965e-09,
+    1.8023517230620046e-11,
+    9.686813035942757e-11
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 4.414905644010449e-50,
+   "disc_b": 335,
+   "disc_c": 55
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.97422680412371,
+    -14.065817409766455
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 4.201626489114444e-23,
+   "logOR": -1.2013774344289119,
+   "se": 0.11041415158105397,
+   "OR": 0.30077962223552346
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.97422680412371,
+    -14.065817409766455
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 1.0032391837491721e-23
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.372744592107573,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.76473471501632,
+    -13.904988485975084
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.372744592107573,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.372744592107573,
+   "p": 1.878864116112295e-19
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.974226804123713,
+    -14.065817409766455
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -16.990291262135923,
+   "p": 0.008738663321340105
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -16.990291262135923,
+   "p": 3.0167098237747745e-46,
+   "per_model_p": [
+    2.4579776436439715e-08,
+    1.7102147522338876e-15,
+    4.3777338031345975e-15,
+    5.9330047473754754e-15
+   ],
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -17.961165048543688
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -16.990291262135923,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -17.961165048543688
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -16.990291262135923,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -16.990291262135923,
+   "p": 1.310253259480121e-37,
+   "per_model_p": [
+    2.3201413097710463e-06,
+    8.530446389218719e-11,
+    2.126852866861694e-15,
+    1.990639170174364e-12
+   ],
+   "per_model_logOR": [
+    -1.7277200476981964,
+    -1.059945605825131,
+    -1.2290088824872607,
+    -1.506838558217601
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.372744592107573,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -9.192954711502002,
+    -20.70721083150681,
+    -20.992656919050393,
+    -18.59815590637109
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.372744592107573,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "defect_only",
+   "outcome": "strict",
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.372744592107573,
+   "p": 7.202198581466308e-30,
+   "per_model_p": [
+    8.143025289869711e-06,
+    1.7926277916601965e-09,
+    1.8023517230620046e-11,
+    3.27512586686489e-10
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -15.749811605124341,
+   "p": 1.5457023358737725e-36,
+   "disc_b": 254,
+   "disc_c": 45
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.749811605124341,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.835370237239395,
+    -12.708018154311649
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.749811605124341,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.749811605124341,
+   "p": 1.604564148169774e-18,
+   "logOR": -1.0832721795040017,
+   "se": 0.11221521099763247,
+   "OR": 0.3384861241964917
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.737951807228916,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.823529411764707,
+    -12.692307692307692
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.737951807228916,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.737951807228916,
+   "p": 1.653880570711427e-19
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -16.085188748396554,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.848719861776488,
+    -12.25635815073693
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -16.085188748396554,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -16.085188748396554,
+   "p": 1.5510192623578934e-14
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.751601572452953,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.838608433535395,
+    -12.714285714285715
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.751601572452953,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.751601572452953,
+   "p": 0.009849352451754055
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -15.751601572452953,
+   "p": 3.457557163406359e-33,
+   "per_model_p": [
+    3.4654513001441956e-06,
+    8.219918048937058e-12,
+    1.938192405161976e-09,
+    5.632907524806409e-13
+   ],
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -18.12688821752266
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.751601572452953,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -18.12688821752266
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.751601572452953,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.751601572452953,
+   "p": 1.0264042847704884e-27,
+   "per_model_p": [
+    2.55296352821217e-05,
+    3.7515562317260494e-09,
+    2.3477724563561683e-09,
+    6.679991837213938e-11
+   ],
+   "per_model_logOR": [
+    -1.395909008854763,
+    -0.9792447878056149,
+    -1.0455679509325932,
+    -1.442028997642131
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -16.107319823115144,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.773064025950227,
+    -19.57433440665986,
+    -17.13768090073753,
+    -18.944199959112964
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -16.107319823115144,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "lenient",
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -16.107319823115144,
+   "p": 1.852320008627029e-21,
+   "per_model_p": [
+    0.00010668903105923213,
+    2.8591024903406094e-07,
+    4.217118766897901e-07,
+    4.16293156610499e-09
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 5.064240077299232e-36,
+   "disc_b": 254,
+   "disc_c": 46
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.769470404984425,
+    -12.611275964391691
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 2.850564775158214e-18,
+   "logOR": -1.0754179367080356,
+   "se": 0.11238922380507033,
+   "OR": 0.34115514424395693
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.769470404984425,
+    -12.611275964391691
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 2.6225652490056674e-19
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.968366318490013,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -19.7340898976413,
+    -12.129064242519439
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.968366318490013,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.968366318490013,
+   "p": 2.8037305068128687e-14
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -18.769470404984425,
+    -12.611275964391691
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -15.662650602409638,
+   "p": 0.009748581017343175
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -15.662650602409638,
+   "p": 1.4285560035610094e-32,
+   "per_model_p": [
+    3.4654513001441956e-06,
+    8.219918048937058e-12,
+    1.938192405161976e-09,
+    2.4488215083103315e-12
+   ],
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -17.771084337349397
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.662650602409638,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -17.771084337349397
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.662650602409638,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.662650602409638,
+   "p": 2.370528424138201e-27,
+   "per_model_p": [
+    2.55296352821217e-05,
+    3.7515562317260494e-09,
+    2.3477724563561683e-09,
+    1.598423738644805e-10
+   ],
+   "per_model_logOR": [
+    -1.395909008854763,
+    -0.9792447878056149,
+    -1.0455679509325932,
+    -1.3987514837932389
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -15.968366318490013,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.773064025950227,
+    -19.57433440665986,
+    -17.13768090073753,
+    -18.388385940612437
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -15.968366318490013,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "notaA_only",
+   "outcome": "strict",
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -15.968366318490013,
+   "p": 6.343140350356344e-21,
+   "per_model_p": [
+    0.00010668903105923213,
+    2.8591024903406094e-07,
+    4.217118766897901e-07,
+    1.5235137288193264e-08
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -17.32702542874039,
+   "p": 3.7190533965923855e-53,
+   "disc_b": 348,
+   "disc_c": 55
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.32702542874039,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.277078085642316,
+    -14.384858044164037
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.32702542874039,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.32702542874039,
+   "p": 1.6624574994704536e-24,
+   "logOR": -1.1817000516046268,
+   "se": 0.1049531040292272,
+   "OR": 0.3067567926817132
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.31678486997636,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.275590551181104,
+    -14.37793427230047
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.31678486997636,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.31678486997636,
+   "p": 3.884228135652407e-25
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.824231396997835,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -21.156003888725373,
+    -14.406032875783769
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.824231396997835,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.824231396997835,
+   "p": 4.1307468922686655e-21
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.327848923845696,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.277078085642316,
+    -14.38597220268767
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.327848923845696,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.327848923845696,
+   "p": 0.010068636616402775
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -17.327848923845696,
+   "p": 2.5894558149957048e-49,
+   "per_model_p": [
+    2.4579776436439715e-08,
+    7.580954667483134e-17,
+    2.9566626383126704e-15,
+    1.423591176518052e-16
+   ],
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.72037914691943
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.327848923845696,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.72037914691943
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.327848923845696,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.327848923845696,
+   "p": 3.723800347888188e-40,
+   "per_model_p": [
+    1.5074448195620773e-06,
+    7.946311193545606e-12,
+    9.857819524823162e-16,
+    1.6851057249522888e-13
+   ],
+   "per_model_logOR": [
+    -1.50125106540433,
+    -1.0854008890846893,
+    -1.1749852674526857,
+    -1.5152091498172986
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.841547182649048,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.865803298281289,
+    -22.088584450449968,
+    -20.948857909899303,
+    -19.46294307196563
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.841547182649048,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "lenient",
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.841547182649048,
+   "p": 1.8102511824006463e-32,
+   "per_model_p": [
+    8.240918684645024e-06,
+    9.536415903315486e-11,
+    1.2255967649148361e-11,
+    1.7940759779548984e-11
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 1.346067279600019e-52,
+   "disc_b": 348,
+   "disc_c": 56
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.20997375328084,
+    -14.3125
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 2.878400535427958e-24,
+   "logOR": -1.1753391900175736,
+   "se": 0.10504464342423372,
+   "OR": 0.3087142491356555
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.20997375328084,
+    -14.3125
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "item",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130022,
+   "p": 5.852333472395587e-25
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.735263425467583,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -21.071339380479674,
+    -14.30348558228311
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.735263425467583,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.735263425467583,
+   "p": 7.719970064215172e-21
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "cluster_bootstrap",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130026,
+   "p": 9.999000099990002e-05,
+   "ci": [
+    -20.209973753280842,
+    -14.3125
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "permutation",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130026,
+   "p": 9.999000099990002e-05
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "model",
+   "inference": "ols_robustSE",
+   "pooling": "pooled",
+   "delta_pp": -17.257683215130026,
+   "p": 0.010086766277548205
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "mcnemar_exact",
+   "pooling": "separate",
+   "delta_pp": -17.257683215130026,
+   "p": 1.0758005445329845e-48,
+   "per_model_p": [
+    2.4579776436439715e-08,
+    7.580954667483134e-17,
+    2.9566626383126704e-15,
+    6.125402762201369e-16
+   ],
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.43971631205674
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.257683215130026,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.43971631205674
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.257683215130026,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cell",
+   "inference": "logit_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.257683215130026,
+   "p": 7.940684307502249e-40,
+   "per_model_p": [
+    1.5074448195620773e-06,
+    7.946311193545606e-12,
+    9.857819524823162e-16,
+    3.675446929969975e-13
+   ],
+   "per_model_logOR": [
+    -1.50125106540433,
+    -1.0854008890846893,
+    -1.1749852674526857,
+    -1.4792295316262045
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "cluster_bootstrap",
+   "pooling": "separate",
+   "delta_pp": -17.735263425467583,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ],
+   "per_model_delta": [
+    -8.865803298281289,
+    -22.088584450449968,
+    -20.948857909899303,
+    -19.03780804323977
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "permutation",
+   "pooling": "separate",
+   "delta_pp": -17.735263425467583,
+   "p": 9.04719499522341e-13,
+   "per_model_p": [
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05,
+    9.999000099990002e-05
+   ]
+  },
+  {
+   "exclusion": "none",
+   "outcome": "strict",
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "unit": "cluster",
+   "inference": "ols_robustSE",
+   "pooling": "separate",
+   "delta_pp": -17.735263425467583,
+   "p": 6.034612333666101e-32,
+   "per_model_p": [
+    8.240918684645024e-06,
+    9.536415903315486e-11,
+    1.2255967649148361e-11,
+    6.249874599345284e-11
+   ]
+  }
+ ],
+ "detail": {
+  "primary|lenient": {
+   "accA": 89.76135488837568,
+   "accB": 74.21093148575828,
+   "n_cells": 1299,
+   "n_items": 325,
+   "n_clusters": 208,
+   "disc_b": 247,
+   "disc_c": 45,
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -18.209876543209877
+   ],
+   "per_model_mcnemar": [
+    3.4654513001441956e-06,
+    6.147806615047977e-11,
+    5.257316976900643e-09,
+    1.0098638262297781e-12
+   ],
+   "boot_ci_cell": [
+    -18.809318377911993,
+    -12.452625879805089
+   ]
+  },
+  "primary|strict": {
+   "accA": 89.6923076923077,
+   "accB": 74.23076923076923,
+   "n_cells": 1300,
+   "n_items": 325,
+   "n_clusters": 208,
+   "disc_b": 247,
+   "disc_c": 46,
+   "per_model_delta": [
+    -8.307692307692308,
+    -19.692307692307693,
+    -16.0,
+    -17.846153846153847
+   ],
+   "per_model_mcnemar": [
+    3.4654513001441956e-06,
+    6.147806615047977e-11,
+    5.257316976900643e-09,
+    4.334352264140022e-12
+   ],
+   "boot_ci_cell": [
+    -18.72937293729373,
+    -12.349397590361447
+   ]
+  },
+  "defect_only|lenient": {
+   "accA": 90.04250151791135,
+   "accB": 72.98117789921069,
+   "n_cells": 1647,
+   "n_items": 412,
+   "n_clusters": 271,
+   "disc_b": 335,
+   "disc_c": 54,
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -18.248175182481752
+   ],
+   "per_model_mcnemar": [
+    2.4579776436439715e-08,
+    1.7102147522338876e-15,
+    4.3777338031345975e-15,
+    1.4342435250828828e-15
+   ],
+   "boot_ci_cell": [
+    -20.073891625615765,
+    -14.136904761904763
+   ]
+  },
+  "defect_only|strict": {
+   "accA": 89.9878640776699,
+   "accB": 72.99757281553399,
+   "n_cells": 1648,
+   "n_items": 412,
+   "n_clusters": 271,
+   "disc_b": 335,
+   "disc_c": 55,
+   "per_model_delta": [
+    -8.980582524271844,
+    -21.601941747572816,
+    -19.41747572815534,
+    -17.961165048543688
+   ],
+   "per_model_mcnemar": [
+    2.4579776436439715e-08,
+    1.7102147522338876e-15,
+    4.3777338031345975e-15,
+    5.9330047473754754e-15
+   ],
+   "boot_ci_cell": [
+    -19.97422680412371,
+    -14.065817409766455
+   ]
+  },
+  "notaA_only|lenient": {
+   "accA": 88.99773926149209,
+   "accB": 73.24792765636775,
+   "n_cells": 1327,
+   "n_items": 332,
+   "n_clusters": 214,
+   "disc_b": 254,
+   "disc_c": 45,
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -18.12688821752266
+   ],
+   "per_model_mcnemar": [
+    3.4654513001441956e-06,
+    8.219918048937058e-12,
+    1.938192405161976e-09,
+    5.632907524806409e-13
+   ],
+   "boot_ci_cell": [
+    -18.835370237239395,
+    -12.708018154311649
+   ]
+  },
+  "notaA_only|strict": {
+   "accA": 88.93072289156626,
+   "accB": 73.26807228915662,
+   "n_cells": 1328,
+   "n_items": 332,
+   "n_clusters": 214,
+   "disc_b": 254,
+   "disc_c": 46,
+   "per_model_delta": [
+    -8.132530120481928,
+    -20.481927710843372,
+    -16.265060240963855,
+    -17.771084337349397
+   ],
+   "per_model_mcnemar": [
+    3.4654513001441956e-06,
+    8.219918048937058e-12,
+    1.938192405161976e-09,
+    2.4488215083103315e-12
+   ],
+   "boot_ci_cell": [
+    -18.769470404984425,
+    -12.611275964391691
+   ]
+  },
+  "none|lenient": {
+   "accA": 89.35541099940863,
+   "accB": 72.02838557066825,
+   "n_cells": 1691,
+   "n_items": 423,
+   "n_clusters": 281,
+   "disc_b": 348,
+   "disc_c": 55,
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.72037914691943
+   ],
+   "per_model_mcnemar": [
+    2.4579776436439715e-08,
+    7.580954667483134e-17,
+    2.9566626383126704e-15,
+    1.423591176518052e-16
+   ],
+   "boot_ci_cell": [
+    -20.277078085642316,
+    -14.384858044164037
+   ]
+  },
+  "none|strict": {
+   "accA": 89.30260047281324,
+   "accB": 72.04491725768321,
+   "n_cells": 1692,
+   "n_items": 423,
+   "n_clusters": 281,
+   "disc_b": 348,
+   "disc_c": 56,
+   "per_model_delta": [
+    -8.747044917257684,
+    -22.458628841607567,
+    -19.38534278959811,
+    -18.43971631205674
+   ],
+   "per_model_mcnemar": [
+    2.4579776436439715e-08,
+    7.580954667483134e-17,
+    2.9566626383126704e-15,
+    6.125402762201369e-16
+   ],
+   "boot_ci_cell": [
+    -20.20997375328084,
+    -14.3125
+   ]
+  }
+ }
+}

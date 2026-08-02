@@ -1,0 +1,66 @@
+{
+ "model_as_unit_sign_test": {
+  "rd_pp": {
+   "google/gemini-3.6-flash": -0.964630225080386,
+   "google/gemma-4-26b-a4b-it": 5.466237942122187,
+   "qwen/qwen3.6-35b-a3b": -0.6430868167202572,
+   "z-ai/glm-5.2": 3.215434083601286
+  },
+  "models_favouring_gift": 2,
+  "models_favouring_openrouter": 2,
+  "exact_sign_test_p": 1.0,
+  "note": "treats each model as one exchangeable unit; 4 units cannot reach p<=0.05 (floor = 2*(1/2)^4 = 0.125) even if all four agreed"
+ },
+ "leave_one_cluster_out": {
+  "POOLED": {
+   "p_full": 0.011526409654363481,
+   "worst_case_p_after_dropping_one_cluster": 0.03558272445223169,
+   "cluster_dropped": 3,
+   "rd_range_pp": [
+    1.530612244897959,
+    1.9672131147540985
+   ],
+   "still_p<=0.05_after_any_single_cluster_drop": true
+  },
+  "google/gemini-3.6-flash": {
+   "p_full": 0.25,
+   "worst_case_p_after_dropping_one_cluster": 0.5,
+   "cluster_dropped": 99,
+   "rd_range_pp": [
+    -1.0416666666666665,
+    -0.6451612903225806
+   ],
+   "still_p<=0.05_after_any_single_cluster_drop": false
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "p_full": 0.003326892852783203,
+   "worst_case_p_after_dropping_one_cluster": 0.008130058646202087,
+   "cluster_dropped": 3,
+   "rd_range_pp": [
+    5.1020408163265305,
+    6.229508196721312
+   ],
+   "still_p<=0.05_after_any_single_cluster_drop": true
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "p_full": 0.8388197422027588,
+   "worst_case_p_after_dropping_one_cluster": 1.0,
+   "cluster_dropped": 5,
+   "rd_range_pp": [
+    -1.3605442176870748,
+    -0.3225806451612903
+   ],
+   "still_p<=0.05_after_any_single_cluster_drop": false
+  },
+  "z-ai/glm-5.2": {
+   "p_full": 0.00634765625,
+   "worst_case_p_after_dropping_one_cluster": 0.021484375,
+   "cluster_dropped": 18,
+   "rd_range_pp": [
+    2.7586206896551726,
+    3.5483870967741935
+   ],
+   "still_p<=0.05_after_any_single_cluster_drop": true
+  }
+ }
+}

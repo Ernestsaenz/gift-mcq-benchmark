@@ -1,0 +1,90 @@
+{
+ "stratum_counts": {
+  "target_all_eligible": {
+   "1": 104,
+   "2": 280,
+   "3": 1417,
+   "0": 38
+  },
+  "analysed_covered": {
+   "1": 47,
+   "2": 176,
+   "3": 1008,
+   "0": 13
+  }
+ },
+ "reweighted_loo": {
+  "POOLED": {
+   "unweighted_rd_pp": 1.7684887459807075,
+   "unweighted_ci_pp": [
+    0.32325848164627363,
+    3.2407407407407405
+   ],
+   "reweighted_rd_pp": 1.9478537989263058,
+   "reweighted_ci_pp": [
+    0.4260865810050041,
+    3.3981009864210217
+   ],
+   "reweighted_p_boot": 0.014,
+   "shift_pp": 0.17936505294559835
+  },
+  "google/gemini-3.6-flash": {
+   "unweighted_rd_pp": -0.964630225080386,
+   "unweighted_ci_pp": [
+    -2.380952380952381,
+    0.0
+   ],
+   "reweighted_rd_pp": -1.1180952626405063,
+   "reweighted_ci_pp": [
+    -2.803138203523213,
+    0.0
+   ],
+   "reweighted_p_boot": 0.1012,
+   "shift_pp": -0.1534650375601203
+  },
+  "google/gemma-4-26b-a4b-it": {
+   "unweighted_rd_pp": 5.466237942122187,
+   "unweighted_ci_pp": [
+    1.875,
+    9.090909090909092
+   ],
+   "reweighted_rd_pp": 5.8201439239205035,
+   "reweighted_ci_pp": [
+    2.1355860973288046,
+    10.029470971938016
+   ],
+   "reweighted_p_boot": 0.0041,
+   "shift_pp": 0.35390598179831645
+  },
+  "qwen/qwen3.6-35b-a3b": {
+   "unweighted_rd_pp": -0.6430868167202572,
+   "unweighted_ci_pp": [
+    -3.7800687285223367,
+    2.3880851714125595
+   ],
+   "reweighted_rd_pp": -0.5664879249284699,
+   "reweighted_ci_pp": [
+    -4.028067154034811,
+    2.7603252030124814
+   ],
+   "reweighted_p_boot": 0.7137,
+   "shift_pp": 0.07659889179178732
+  },
+  "z-ai/glm-5.2": {
+   "unweighted_rd_pp": 3.215434083601286,
+   "unweighted_ci_pp": [
+    1.1396011396011396,
+    5.705920205920187
+   ],
+   "reweighted_rd_pp": 3.952755191145284,
+   "reweighted_ci_pp": [
+    1.6188269468115448,
+    6.748389341151236
+   ],
+   "reweighted_p_boot": 0.0003,
+   "shift_pp": 0.7373211075439978
+  }
+ },
+ "stratum_mix_total_variation_distance": 0.03976192849112391,
+ "note": "The same-arm stratifier used in ca_prim_03 gave +2.64pp; the leave-one-model-out stratifier here is the de-confounded version because a model's own OpenRouter outcome never enters its own stratum assignment."
+}

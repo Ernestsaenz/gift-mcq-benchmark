@@ -1,0 +1,43 @@
+====================================================================================================
+COMBINED RETENTION MODEL  (reasoning models only, A_correct == 1)
+n = 885 cells
+====================================================================================================
+
+  [peer_acc only]
+     peer_acc     b=+0.4473  OR=1.564  p_wald= 0.001277  cluster-boot 95% CI [+0.1461,+0.7227]  p_boot=0.007995
+
+  [peer_effort only]
+     peer_eff     b=-0.9226  OR=0.397  p_wald=4.215e-14  cluster-boot 95% CI [-1.1968,-0.6848]  p_boot=0.001332
+
+  [own_effort only]
+     own_eff      b=-0.8911  OR=0.410  p_wald=1.003e-15  cluster-boot 95% CI [-1.1175,-0.6886]  p_boot=0.001332
+
+  [peer_acc + peer_effort]
+     peer_acc     b=-0.0039  OR=0.996  p_wald=   0.9803  cluster-boot 95% CI [-0.3874,+0.3126]  p_boot=0.974
+     peer_eff     b=-0.9238  OR=0.397  p_wald=2.706e-12  cluster-boot 95% CI [-1.2397,-0.6601]  p_boot=0.001332
+
+  [own + peer effort]
+     own_eff      b=-0.6112  OR=0.543  p_wald=6.534e-06  cluster-boot 95% CI [-0.8741,-0.3645]  p_boot=0.001332
+     peer_eff     b=-0.5244  OR=0.592  p_wald=0.0004209  cluster-boot 95% CI [-0.8373,-0.2354]  p_boot=0.003997
+
+  [all three]
+     peer_acc     b=-0.0845  OR=0.919  p_wald=   0.5981  cluster-boot 95% CI [-0.4771,+0.2366]  p_boot=0.6409
+     peer_eff     b=-0.5446  OR=0.580  p_wald=0.0004127  cluster-boot 95% CI [-0.8680,-0.2387]  p_boot=0.003997
+     own_eff      b=-0.6215  OR=0.537  p_wald=6.224e-06  cluster-boot 95% CI [-0.8995,-0.3749]  p_boot=0.001332
+
+====================================================================================================
+2x2 cross-tab of retention: peer accuracy x peer effort (median splits)
+====================================================================================================
+peer_acc     peer effort          n  retention             95% CI
+<=2 (harder) low                 46      0.848 [0.711,0.937]
+<=2 (harder) high               137      0.723 [0.640,0.796]
+=3 (easier)  low                397      0.889 [0.854,0.918]
+=3 (easier)  high               305      0.761 [0.709,0.807]
+
+====================================================================================================
+Effort spent in A on the cells the model LOST vs KEPT (reasoning models)
+====================================================================================================
+model               kept: med A_reason  lost: med A_reason   ratio  kept: med B_reason  lost: med B_reason
+gemini-3.6-flash                   455                 661    1.45                 760                 957
+qwen3.6-35b                       1776                1973    1.11                2045                2518
+glm-5.2                            360                 621    1.73                 591                 960

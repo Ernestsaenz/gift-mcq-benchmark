@@ -1,0 +1,62 @@
+==============================================================================
+(a) FDR UNDER DEPENDENCE -- BH vs Benjamini-Yekutieli, m=100
+==============================================================================
+  BH  penalty factor = 1.000        survivors: 39
+  BY  penalty factor = c(m) = 5.187   survivors: 27
+  The section reports BH only.  BH's FDR guarantee needs positive regression
+  dependence; here the 5 factors are complete re-partitions of one dataset and
+  the 4 models answered the SAME 325 items, so dependence is not of a form
+  that has been checked.  BY is the assumption-free fallback.
+
+  per-factor survivors: correct_letter: BH=10/BY=6  negated_stem: BH=7/BY=5  has_context: BH=8/BY=7  region: BH=8/BY=4  year: BH=6/BY=5
+
+==============================================================================
+(b) HOW MANY NOMINAL HITS DOES MULTIPLICITY ALONE BUY, GIVEN THIS DEPENDENCE?
+==============================================================================
+  Null: A and B are exchangeable within a CLUSTER (flip the A/B labels of a
+  whole cluster at once, same flip for all 4 models -> preserves item nesting
+  AND the crossed item x model structure).  Recount nominal hits each draw.
+  observed nominal hits ................ 49
+  null mean nominal hits ............... 3.65
+  null 95th pct ........................ 11.0
+  null max over 5000 draws ............. 24
+  P(null >= 49) ......................... 0.00020
+  => even with the full dependence structure, chance multiplicity cannot
+     manufacture anything close to 49 hits.
+
+==============================================================================
+(c) COMPOSITION OF THE STRATA THE RECOMMENDATION WOULD DELETE
+==============================================================================
+  year: 7 levels over 325 items
+    2022                    186 items  ( 57.2%)
+    2021                     52 items  ( 16.0%)
+    2019                     34 items  ( 10.5%)
+    2017                     28 items  (  8.6%)
+    2020                     11 items  (  3.4%)
+    2016                      8 items  (  2.5%)
+    2024                      6 items  (  1.8%)
+    -> largest level '2022' holds 57.2% of the corpus
+  region: 11 levels over 325 items
+    Illes Balears           106 items  ( 32.6%)
+    Navarra                  29 items  (  8.9%)
+    Andalucía                26 items  (  8.0%)
+    Aragón                   26 items  (  8.0%)
+    Castilla-La Mancha       25 items  (  7.7%)
+    Galicia                  25 items  (  7.7%)
+    Comunidad de Madrid      23 items  (  7.1%)
+    La Rioja                 21 items  (  6.5%)
+    Comunitat Valenciana     17 items  (  5.2%)
+    Región de Murcia         16 items  (  4.9%)
+    Castilla y León          11 items  (  3.4%)
+    -> largest level 'Illes Balears' holds 32.6% of the corpus
+
+  Consistency of the A-vs-B sign across these strata (per model), which is
+  what a stratum layer is actually FOR:
+    region  gemini-3.6-flash     +  9 / - 0 / 0: 2   sign-test p=0.0039
+    region  gemma-4-26b-a4b-it   + 10 / - 1 / 0: 0   sign-test p=0.0117
+    region  qwen3.6-35b-a3b      + 11 / - 0 / 0: 0   sign-test p=0.0010
+    region  glm-5.2              + 10 / - 0 / 0: 1   sign-test p=0.0020
+    year    gemini-3.6-flash     +  7 / - 0 / 0: 0   sign-test p=0.0156
+    year    gemma-4-26b-a4b-it   +  6 / - 0 / 0: 1   sign-test p=0.0312
+    year    qwen3.6-35b-a3b      +  6 / - 0 / 0: 1   sign-test p=0.0312
+    year    glm-5.2              +  6 / - 0 / 0: 1   sign-test p=0.0312

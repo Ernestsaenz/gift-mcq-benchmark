@@ -1,0 +1,144 @@
+==============================================================================
+PRIMARY PER-MODEL A-vs-B (exact McNemar, two-sided, no approximation)
+==============================================================================
+model                           n      pA      pB   delta    b    c    p_exact
+google/gemini-3.6-flash       325  0.9785  0.8954  0.0831   31    4  3.465e-06
+google/gemma-4-26b-a4b-it     325  0.7938  0.5969  0.1969   82   18  6.148e-11
+qwen/qwen3.6-35b-a3b          325  0.8862  0.7262  0.1600   67   15  5.257e-09
+z-ai/glm-5.2                  324  0.9321  0.7500  0.1821   67    8  1.010e-12
+
+==============================================================================
+(1) MULTIPLICITY -- size of the hypothesis-test family
+==============================================================================
+factor levels present in the analysis set:
+  correct_letter    3 levels: b, c, d
+  negated_stem      2 levels: False, True
+  has_context       2 levels: False, True
+  region           11 levels: Andalucía, Aragón, Castilla y León, Castilla-La Mancha, Comunidad de Madrid, Comunitat Valenciana, Galicia, Illes Balears, La Rioja, Navarra, Región de Murcia
+  year              7 levels: 2016, 2017, 2019, 2020, 2021, 2022, 2024
+
+test inventory for the full analysis programme as described:
+  primary per-model A-vs-B ....................    4
+  subgroup A-vs-B, per model (25 levels x 4) ...  100
+  subgroup A-vs-B, pooled over models .........   25
+  moderator/interaction tests, per model ......   20
+  moderator/interaction tests, pooled .........    5
+  between-model contrasts on delta (4 choose 2)    6
+  TOTAL                                         160
+  expected false positives at alpha=.05 if all null: 8.0
+  P(>=1 false positive) if all null & independent : 0.9997
+
+Holm-Bonferroni and Benjamini-Hochberg on the m=4 PRIMARY per-model tests
+model                              p_raw rank  Holm thr    Holm adj   BH thr      BH adj  survives
+google/gemini-3.6-flash        3.465e-06    4   0.05000   3.465e-06  0.05000   3.465e-06       YES
+google/gemma-4-26b-a4b-it      6.148e-11    2   0.01667   1.844e-10  0.02500   1.230e-10       YES
+qwen/qwen3.6-35b-a3b           5.257e-09    3   0.02500   1.051e-08  0.03750   7.010e-09       YES
+z-ai/glm-5.2                   1.010e-12    1   0.01250   4.039e-12  0.01250   4.039e-12       YES
+
+If the SAME 4 primary tests are corrected inside the full family of 160 tests:
+  google/gemini-3.6-flash      p*160 = 5.545e-04   still significant
+  google/gemma-4-26b-a4b-it    p*160 = 9.836e-09   still significant
+  qwen/qwen3.6-35b-a3b         p*160 = 8.412e-07   still significant
+  z-ai/glm-5.2                 p*160 = 1.616e-10   still significant
+
+Empirical subgroup sweep (all per-model x level A-vs-B exact McNemar tests):
+  subgroup tests actually runnable ............ 100
+  ... with >=1 discordant pair (estimable) .... 99
+  ... with cell n < 30 (structurally underpowered) 56
+  ... nominally significant at p<.05 .......... 49
+  ... surviving Holm within the subgroup family 20
+  ... surviving BH   within the subgroup family 39
+
+  strongest subgroup findings (BH-adjusted within the subgroup family):
+  factor          level                  model                           n   delta      p_raw     BH adj
+  negated_stem    False                  z-ai/glm-5.2                  240  0.1917  1.170e-10  1.170e-08
+  negated_stem    False                  google/gemma-4-26b-a4b-it     241  0.2241  6.415e-10  3.208e-08
+  correct_letter  b                      google/gemma-4-26b-a4b-it     113  0.3009  1.077e-09  3.589e-08
+  year            2022                   google/gemma-4-26b-a4b-it     186  0.2366  2.402e-09  6.005e-08
+  year            2022                   z-ai/glm-5.2                  185  0.1784  3.609e-08  7.218e-07
+  has_context     False                  z-ai/glm-5.2                  186  0.1882  7.878e-08  1.313e-06
+  has_context     True                   google/gemma-4-26b-a4b-it     138  0.2101  2.430e-06  3.471e-05
+  correct_letter  b                      z-ai/glm-5.2                  113  0.1947  2.980e-06  3.725e-05
+
+==============================================================================
+(2) CEILING -- raw delta is not comparable across models with different pA
+==============================================================================
+model                             pA      pB   raw d   room  d/room d/(pA-.25)  dLogOdds   margOR  condOR
+google/gemini-3.6-flash       0.9785  0.8954  0.0831 0.9785  0.0849     0.1140    1.6146    5.026   7.000
+google/gemma-4-26b-a4b-it     0.7938  0.5969  0.1969 0.7938  0.2481     0.3621    0.9513    2.589   4.459
+qwen/qwen3.6-35b-a3b          0.8862  0.7262  0.1600 0.8862  0.1806     0.2515    1.0686    2.911   4.355
+z-ai/glm-5.2                  0.9321  0.7500  0.1821 0.9321  0.1954     0.2670    1.5041    4.500   7.941
+
+How much of gemini's raw-delta advantage is just having more room to fall?
+  gemini room to zero  = 0.9785
+  google/gemini-3.6-flash      room_to_zero=0.9785  room_to_chance=0.7285
+  google/gemma-4-26b-a4b-it    room_to_zero=0.7938  room_to_chance=0.5438
+  qwen/qwen3.6-35b-a3b         room_to_zero=0.8862  room_to_chance=0.6362
+  z-ai/glm-5.2                 room_to_zero=0.9321  room_to_chance=0.6821
+
+MODEL RANKING (1 = biggest degradation / least robust) under each metric:
+metric                              gemini-3.6-fla  gemma-4-26b-a4  qwen3.6-35b-a3         glm-5.2
+raw delta (pA-pB)                                4               1               3               2
+delta / max possible decline                     4               1               3               2
+delta / (pA - chance)                            4               1               3               2
+marginal log-odds change                         1               4               3               2
+conditional (McNemar) log-OR                     2               3               4               1
+
+  raw delta (pA-pB)                 : gemma-4-26b-a4b-it(0.197)  >  glm-5.2(0.182)  >  qwen3.6-35b-a3b(0.160)  >  gemini-3.6-flash(0.083)
+  delta / max possible decline      : gemma-4-26b-a4b-it(0.248)  >  glm-5.2(0.195)  >  qwen3.6-35b-a3b(0.181)  >  gemini-3.6-flash(0.085)
+  delta / (pA - chance)             : gemma-4-26b-a4b-it(0.362)  >  glm-5.2(0.267)  >  qwen3.6-35b-a3b(0.252)  >  gemini-3.6-flash(0.114)
+  marginal log-odds change          : gemini-3.6-flash(1.615)  >  glm-5.2(1.504)  >  qwen3.6-35b-a3b(1.069)  >  gemma-4-26b-a4b-it(0.951)
+  conditional (McNemar) log-OR      : glm-5.2(2.072)  >  gemini-3.6-flash(1.946)  >  gemma-4-26b-a4b-it(1.495)  >  qwen3.6-35b-a3b(1.471)
+
+Kendall tau of each ranking vs the raw-delta ranking:
+  delta / max possible decline       tau = +1.000
+  delta / (pA - chance)              tau = +1.000
+  marginal log-odds change           tau = -0.667
+  conditional (McNemar) log-OR       tau = +0.000
+
+==============================================================================
+CLUSTER BOOTSTRAP (resample the 208 clusters with replacement, B=20000, seed=20260731)
+==============================================================================
+percentile 95% CIs (cluster bootstrap):
+  raw delta (pA-pB)
+    google/gemini-3.6-flash        0.0831  95% CI [  0.0489,   0.1200]
+    google/gemma-4-26b-a4b-it      0.1969  95% CI [  0.1306,   0.2621]
+    qwen/qwen3.6-35b-a3b           0.1600  95% CI [  0.1108,   0.2086]
+    z-ai/glm-5.2                   0.1821  95% CI [  0.1373,   0.2320]
+  delta / max possible decline
+    google/gemini-3.6-flash        0.0849  95% CI [  0.0503,   0.1223]
+    google/gemma-4-26b-a4b-it      0.2481  95% CI [  0.1690,   0.3254]
+    qwen/qwen3.6-35b-a3b           0.1806  95% CI [  0.1275,   0.2332]
+    z-ai/glm-5.2                   0.1954  95% CI [  0.1487,   0.2479]
+  delta / (pA - chance)
+    google/gemini-3.6-flash        0.1140  95% CI [  0.0676,   0.1641]
+    google/gemma-4-26b-a4b-it      0.3621  95% CI [  0.2493,   0.4735]
+    qwen/qwen3.6-35b-a3b           0.2515  95% CI [  0.1785,   0.3243]
+    z-ai/glm-5.2                   0.2670  95% CI [  0.2038,   0.3388]
+  marginal log-odds change
+    google/gemini-3.6-flash        1.6146  95% CI [  0.9542,   2.5729]
+    google/gemma-4-26b-a4b-it      0.9513  95% CI [  0.6313,   1.2726]
+    qwen/qwen3.6-35b-a3b           1.0686  95% CI [  0.7281,   1.4359]
+    z-ai/glm-5.2                   1.5041  95% CI [  1.1097,   1.9880]
+  conditional (McNemar) log-OR
+    google/gemini-3.6-flash        1.9459  95% CI [  1.0986,   3.2708]
+    google/gemma-4-26b-a4b-it      1.4950  95% CI [  0.9834,   2.0971]
+    qwen/qwen3.6-35b-a3b           1.4713  95% CI [  0.9679,   2.1041]
+    z-ai/glm-5.2                   2.0721  95% CI [  1.4596,   3.0819]
+
+P(model has the LARGEST value of the metric) -- ranking stability:
+metric                              gemini-3.6-fla  gemma-4-26b-a4  qwen3.6-35b-a3         glm-5.2
+raw delta (pA-pB)                            0.000           0.631           0.090           0.279
+delta / max possible decline                 0.000           0.878           0.049           0.073
+delta / (pA - chance)                        0.000           0.933           0.032           0.035
+marginal log-odds change                     0.617           0.001           0.005           0.378
+conditional (McNemar) log-OR                 0.394           0.033           0.016           0.556
+
+==============================================================================
+SENSITIVITY: cluster-level randomisation test for each primary comparison
+(sign-flip A/B labels for whole clusters; accounts for item nesting)
+==============================================================================
+  google/gemini-3.6-flash      obs delta= 0.0831  perm p=0.00005  (exact McNemar p=3.465e-06)
+  google/gemma-4-26b-a4b-it    obs delta= 0.1969  perm p=0.00005  (exact McNemar p=6.148e-11)
+  qwen/qwen3.6-35b-a3b         obs delta= 0.1600  perm p=0.00005  (exact McNemar p=5.257e-09)
+  z-ai/glm-5.2                 obs delta= 0.1821  perm p=0.00005  (exact McNemar p=1.010e-12)

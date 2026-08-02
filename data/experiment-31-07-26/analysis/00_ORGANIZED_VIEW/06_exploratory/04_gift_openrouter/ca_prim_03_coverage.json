@@ -1,0 +1,205 @@
+{
+ "or_acc_all": {
+  "items_covered": 319,
+  "items_missing": 155,
+  "or_acc_covered_pct": 91.06583072100314,
+  "or_acc_missing_pct": 82.87560581583199,
+  "difficulty_gap_pp": 8.190224905171151
+ },
+ "or_acc_nondefective": {
+  "items_covered": 311,
+  "items_missing": 149,
+  "or_acc_covered_pct": 91.72025723472669,
+  "or_acc_missing_pct": 83.69747899159664,
+  "difficulty_gap_pp": 8.022778243130047
+ },
+ "region_coverage_all474": {
+  "Andaluc\u00eda": {
+   "covered": 18,
+   "missing": 15,
+   "pct_covered": 54.54545454545455
+  },
+  "Arag\u00f3n": {
+   "covered": 19,
+   "missing": 15,
+   "pct_covered": 55.88235294117647
+  },
+  "Castilla y Le\u00f3n": {
+   "covered": 10,
+   "missing": 7,
+   "pct_covered": 58.8235294117647
+  },
+  "Castilla-La Mancha": {
+   "covered": 24,
+   "missing": 10,
+   "pct_covered": 70.58823529411765
+  },
+  "Comunidad de Madrid": {
+   "covered": 22,
+   "missing": 11,
+   "pct_covered": 66.66666666666667
+  },
+  "Comunitat Valenciana": {
+   "covered": 19,
+   "missing": 13,
+   "pct_covered": 59.375
+  },
+  "Galicia": {
+   "covered": 20,
+   "missing": 13,
+   "pct_covered": 60.60606060606061
+  },
+  "Illes Balears": {
+   "covered": 129,
+   "missing": 30,
+   "pct_covered": 81.13207547169812
+  },
+  "La Rioja": {
+   "covered": 20,
+   "missing": 12,
+   "pct_covered": 62.5
+  },
+  "Navarra": {
+   "covered": 14,
+   "missing": 20,
+   "pct_covered": 41.1764705882353
+  },
+  "Regi\u00f3n de Murcia": {
+   "covered": 24,
+   "missing": 9,
+   "pct_covered": 72.72727272727273
+  }
+ },
+ "difficulty_strata_460": {
+  "0/4 all wrong": {
+   "covered": 2,
+   "missing": 4
+  },
+  "1/4": {
+   "covered": 5,
+   "missing": 9
+  },
+  "2/4": {
+   "covered": 16,
+   "missing": 14
+  },
+  "3/4": {
+   "covered": 48,
+   "missing": 26
+  },
+  "4/4 all right": {
+   "covered": 240,
+   "missing": 96
+  }
+ },
+ "rd_by_difficulty_stratum": {
+  "0/4 all wrong": {
+   "n_items": 2,
+   "n_cells": 8,
+   "gift_pct": 0.0,
+   "or_pct": 0.0,
+   "rd_pp": 0.0,
+   "b": 0,
+   "c": 0
+  },
+  "1/4": {
+   "n_items": 5,
+   "n_cells": 20,
+   "gift_pct": 60.0,
+   "or_pct": 25.0,
+   "rd_pp": 35.0,
+   "b": 7,
+   "c": 0
+  },
+  "2/4": {
+   "n_items": 16,
+   "n_cells": 64,
+   "gift_pct": 67.1875,
+   "or_pct": 50.0,
+   "rd_pp": 17.1875,
+   "b": 14,
+   "c": 3
+  },
+  "3/4": {
+   "n_items": 48,
+   "n_cells": 192,
+   "gift_pct": 85.41666666666666,
+   "or_pct": 75.0,
+   "rd_pp": 10.416666666666663,
+   "b": 25,
+   "c": 5
+  },
+  "4/4 all right": {
+   "n_items": 240,
+   "n_cells": 960,
+   "gift_pct": 98.33333333333333,
+   "or_pct": 100.0,
+   "rd_pp": -1.6666666666666718,
+   "b": 0,
+   "c": 16
+  }
+ },
+ "poststratified_rd": {
+  "unweighted_rd_pp": 1.7684887459807075,
+  "unweighted_ci_pp": [
+   0.32325848164627363,
+   3.2407407407407405
+  ],
+  "difficulty_poststratified_rd_pp": 2.6444746376811596,
+  "difficulty_ci_pp": [
+   1.1761643819951635,
+   4.064286973361531
+  ],
+  "region_poststratified_rd_pp": 1.488151182017117,
+  "region_ci_pp": [
+   0.115719025421896,
+   3.0016043138507973
+  ],
+  "assumption": "coverage ignorable given the stratum (MAR); not a fix for a sequential-prefix stop, only a bound on the measurable part"
+ },
+ "drop_large_case_clusters": {
+  "clusters_dropped": [
+   1,
+   3,
+   4,
+   5,
+   18,
+   19,
+   20
+  ],
+  "items_dropped": 135,
+  "n_cells_remaining": 704,
+  "rd_pp": 1.8465909090909092,
+  "ci_pp": [
+   -0.2840909090909091,
+   3.977272727272727
+  ],
+  "p_boot": 0.1048
+ },
+ "tipping_point": {
+  "n_items_covered": 311,
+  "n_items_missing": 149,
+  "per_model": {
+   "google/gemini-3.6-flash": {
+    "rd_covered_pp": -0.964630225080386,
+    "rd_on_missing_needed_to_null_full_set_pp": 2.0134228187919465
+   },
+   "google/gemma-4-26b-a4b-it": {
+    "rd_covered_pp": 5.466237942122187,
+    "rd_on_missing_needed_to_null_full_set_pp": -11.409395973154362
+   },
+   "qwen/qwen3.6-35b-a3b": {
+    "rd_covered_pp": -0.6430868167202572,
+    "rd_on_missing_needed_to_null_full_set_pp": 1.342281879194631
+   },
+   "z-ai/glm-5.2": {
+    "rd_covered_pp": 3.215434083601286,
+    "rd_on_missing_needed_to_null_full_set_pp": -6.7114093959731544
+   },
+   "POOLED": {
+    "rd_covered_pp": 1.7684887459807075,
+    "rd_on_missing_needed_to_null_full_set_pp": -3.691275167785235
+   }
+  }
+ }
+}

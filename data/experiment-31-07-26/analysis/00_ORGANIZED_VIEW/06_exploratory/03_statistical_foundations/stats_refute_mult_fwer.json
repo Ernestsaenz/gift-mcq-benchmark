@@ -1,0 +1,45 @@
+{
+ "nrep": 200000,
+ "observed_rejections": 82,
+ "sim": {
+  "cell": {
+   "E": 3.96579,
+   "p1": 0.880755,
+   "p8": 0.14387,
+   "layer": {
+    "moderator_pooled": 0.24513,
+    "moderator_permodel": 0.86542,
+    "between_model": 0.29337,
+    "subgroup_pooled": 0.80599,
+    "primary": 0.14756,
+    "subgroup_permodel": 1.60832
+   }
+  },
+  "item": {
+   "E": 7.29138,
+   "p1": 0.96563,
+   "p8": 0.41466,
+   "layer": {
+    "moderator_pooled": 1.30839,
+    "moderator_permodel": 0.86463,
+    "between_model": 0.270235,
+    "subgroup_pooled": 3.086465,
+    "primary": 0.14786,
+    "subgroup_permodel": 1.6138
+   }
+  },
+  "cluster": {
+   "E": 12.69544,
+   "p1": 0.988895,
+   "p8": 0.69344,
+   "layer": {
+    "moderator_pooled": 1.90943,
+    "moderator_permodel": 1.72279,
+    "between_model": 0.370155,
+    "subgroup_pooled": 4.675415,
+    "primary": 0.347575,
+    "subgroup_permodel": 3.670075
+   }
+  }
+ }
+}

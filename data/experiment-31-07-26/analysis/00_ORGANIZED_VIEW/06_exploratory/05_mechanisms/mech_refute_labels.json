@@ -1,0 +1,2479 @@
+{
+ "b101": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación verdadera en el caso que se comenta tras conocer los resultados expuestos:"
+ },
+ "b104": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿cuál de las siguientes afirmaciones es falsa respecto al tratamiento de continuación?"
+ },
+ "b106": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál debe ser la actitud?"
+ },
+ "b107": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa:"
+ },
+ "b11": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+ },
+ "b110": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación correcta:"
+ },
+ "b111": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación verdadera en referencia a la reactivación de la CU en este paciente:"
+ },
+ "b112": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿qué actitud es la adecuada?"
+ },
+ "b113": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en caso de cambio de tratamiento:"
+ },
+ "b114": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta respecto al manejo hospitalario de la colitis ulcerosa grave:"
+ },
+ "b115": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación verdadera respecto al tratamiento médico de la colitis ulcerosa grave:"
+ },
+ "b116": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué factor de riesgo de la colitis ulcerosa no se ha asociado a un aumento del riesgo?"
+ },
+ "b12": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta:"
+ },
+ "b121": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué significa en este paciente el resultado del cálculo del GASA?"
+ },
+ "b122": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué significa el recuento de leucocitos en la ascitis, en este paciente?"
+ },
+ "b123": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué tratamiento hay que administrar siempre tras una paracentesis evacuadora para prevenir la disfunción circulatoria y la insuficiencia renal posparacentesis?"
+ },
+ "b124": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué dosis de albúmina se recomienda actualmente para prevenir la disfunción circulatoria y la insuficiencia renal posparacentesis?"
+ },
+ "b125": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cómo hay que interpretar el consumo diario habitual de alcohol de este paciente?"
+ },
+ "b13": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta respecto al estadiaje:"
+ },
+ "b131": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué probabilidad hay de que este paciente tenga hepatitis alcohólica?"
+ },
+ "b132": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿qué afirmación sería falsa?"
+ },
+ "b133": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación correcta:"
+ },
+ "b134": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en caso de que fuese necesario hacer una biopsia hepática en este paciente:"
+ },
+ "b136": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué medicamento no se utiliza para la profilaxis de la hemorragia por varices esofágicas en el paciente cirrótico?"
+ },
+ "b137": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cómo se interpreta este resultado?"
+ },
+ "b141": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta respecto a la posibilidad de indicar un trasplante hepático en este paciente:"
+ },
+ "b142": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes actuaciones está recomendada en este paciente tras la exploración y la analítica de urgencias?"
+ },
+ "b143": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta con respecto a una endoscopia oral en un paciente con sospecha de hemorragia por varices esofágicas:"
+ },
+ "b147": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué puntuación de Child-Pugh tiene este paciente?"
+ },
+ "b148": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿cuál de las siguientes medidas no está recomendada?"
+ },
+ "b151": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa respecto a la historia natural de la infección de VHB:"
+ },
+ "b153": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de las siguientes no es una indicación de tratamiento antiviral en pacientes con una infección por VHB?"
+ },
+ "b154": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el tratamiento de elección para la infección por el VHB en este paciente?"
+ },
+ "b155": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa en relación con el tratamiento de la infección por VHB en este paciente:"
+ },
+ "b156": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa con respecto al diagnóstico de hepatocarcinoma en pacientes con cirrosis hepática:"
+ },
+ "b157": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en el caso de detectar una lesión hepática inferior a 1 cm en un paciente con cirrosis hepática durante una ecografía de cribado:"
+ },
+ "b158": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál es la actitud recomendada en el caso de que en la TC del abdomen con contraste multifase la lesión hepática no presente los hallazgos típicos del hepatocarcinoma?"
+ },
+ "b159": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿cuál no se considera un factor pronóstico en un paciente con cirrosis hepática al que se le ha diagnosticado un hepatocarcinoma?"
+ },
+ "b160": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿En qué estadio de la clasificación BCLC se clasifica este paciente?"
+ },
+ "b161": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el tratamiento recomendado para el hepatocarcinoma que presenta este paciente?"
+ },
+ "b163": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de los siguientes no es un factor de riesgo para el desarrollo de un hepatocarcinoma?"
+ },
+ "b166": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta CORRECTA:"
+ },
+ "b167": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta INCORRECTA:"
+ },
+ "b168": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale la respuesta CORRECTA:"
+ },
+ "b170": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Si nuestra paciente hubiera sido Helicobacter pylori positivo, cuánto tiempo aconsejarías mantener el tratamiento con inhibidores de la bomba de protones:"
+ },
+ "b171": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señala cuál es el factor de riesgo más importante:"
+ },
+ "b172": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señala la VERDADERA"
+ },
+ "b173": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señala la respuesta FALSA:"
+ },
+ "b174": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señala la respuesta VERDADERA"
+ },
+ "b175": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señala la VERDADERA"
+ },
+ "b176": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Describe la actitud CORRECTA"
+ },
+ "b177": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale la respuesta CORRECTA:"
+ },
+ "b179": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "NO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+ },
+ "b180": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+ },
+ "b181": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?"
+ },
+ "b182": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la FALSA:"
+ },
+ "b183": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué tratamiento indicaría?"
+ },
+ "b184": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Pregunta de reserva Caso Clínico numero 1: Cuál de las siguientes afirmaciones es INCORRECTA en relación a la prevención de las úlceras por AINEs:"
+ },
+ "b185": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+ },
+ "b186": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+ },
+ "b190": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Señala cual NO es un efecto secundario de tacrolimus"
+ },
+ "b192": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes es el diagnóstico MÁS probable?"
+ },
+ "b193": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?"
+ },
+ "b194": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Paciente con hepatitis crónica B con ALT 35 UI, DNA-VHB 9800 UI y Fibroscan 9,5 Kpa debe tratarse con:"
+ },
+ "b196": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?"
+ },
+ "b198": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué representa la línea horizontal que está dentro de la caja?"
+ },
+ "b199": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de estas afirmaciones es falsa?:"
+ },
+ "b2": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en relación con los factores de riesgo del cáncer colorrectal:"
+ },
+ "b200": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "El tratamiento indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:"
+ },
+ "b201": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción FALSA:"
+ },
+ "b203": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Entre los datos siguientes uno NO es típico del síndrome hepatorenal tipo I?"
+ },
+ "b206": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Señale cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+ },
+ "b207": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale la opción cierta:"
+ },
+ "b208": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Cuál de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:"
+ },
+ "b209": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa"
+ },
+ "b21": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta:"
+ },
+ "b210": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+ },
+ "b211": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción incorrecta:"
+ },
+ "b212": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta incorrecta):"
+ },
+ "b213": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale cuál de las siguientes es una prestación de los centros de salud y consultorios:"
+ },
+ "b215": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale por favor cuál de las siguientes es INCORRECTA"
+ },
+ "b217": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Indique cuál es el tratamiento adecuado en este caso."
+ },
+ "b218": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Según los criterios de Roma IV, se define el síndrome de intestino irritable como:"
+ },
+ "b22": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la entidad a la que corresponde la situación de este caso:"
+ },
+ "b221": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+ },
+ "b222": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Cuál es el diagnóstico más probable"
+ },
+ "b223": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "¿cuál de estas afirmaciones es INCORRECTA?:"
+ },
+ "b224": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el tiempo óptimo que debe transcurrir antes de realizar una CPRE transgástrica dirigida por ecoendoscopia después de la colocación de una prótesis de aposición luminal?"
+ },
+ "b226": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la complicación más frecuente de la úlcera péptica"
+ },
+ "b227": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "MENOS-UNA"
+  ],
+  "bare_no": false,
+  "clause": "En estreñimiento funcional se recomiendan las siguientes medidas dietéticas menos una:"
+ },
+ "b229": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "El dato clínico para establecer el diagnóstico de insuficiencia hepática aguda en un adulto es:"
+ },
+ "b232": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Una de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier"
+ },
+ "b233": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cual de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?"
+ },
+ "b234": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción FALSA):"
+ },
+ "b235": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "El síndrome de Stauffer es un cuadro de colestasis intrahepática de origen paraneoplásico descrito inicialmente asociado a"
+ },
+ "b237": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "La paracentesis evacuadora en paciente con Cirrosis Hepática y descompensación hidrópica puede realizarse:"
+ },
+ "b24": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa en referencia al diagnóstico de la enfermedad por reflujo gastroesofágico (ERGE):"
+ },
+ "b240": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es la actitud más adecuada?"
+ },
+ "b243": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "La primera línea de tratamiento farmacológico para la colangitis biliar primaria es:"
+ },
+ "b244": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI: acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:"
+ },
+ "b246": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?"
+ },
+ "b247": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+ },
+ "b248": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de las afirmaciones siguientes es FALSA en relación con la infección por H pylori?"
+ },
+ "b25": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en relación con el manejo inicial de la enfermedad por reflujo gastroesofágico:"
+ },
+ "b250": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "La clasificación de Chicago se refiere a:"
+ },
+ "b252": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Señale cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:"
+ },
+ "b254": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En cuanto a la diarrea secretora, es VERDADERO:"
+ },
+ "b256": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale cual es la apropiada:"
+ },
+ "b26": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia a los mecanismos fisiopatológicos de la enfermedad por reflujo gastroesofágico:"
+ },
+ "b260": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta FALSA en relación con el trasplante hepático en pacientes con fallo hepático agudo:"
+ },
+ "b261": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Indique lo que considere falso:"
+ },
+ "b262": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta INCORRECTA:"
+ },
+ "b264": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿cuál de los siguientes criterios NO se corresponde con un tumor resecable \"borderline\"?"
+ },
+ "b265": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Según criterio BCLC la primera opción terapéutica a considerar sería:"
+ },
+ "b266": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de las siguientes afirmaciones NO es cierta?"
+ },
+ "b267": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Indique la respuesta falsa respecto a la litotricia mecánica biliar."
+ },
+ "b268": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Uno de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II"
+ },
+ "b27": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en referencia a los diferentes fenotipos de presentación de la enfermedad por reflujo gastroesofágico:"
+ },
+ "b270": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:"
+ },
+ "b271": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el paso más adecuado en el tratamiento subsiguiente de este paciente?"
+ },
+ "b272": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "NO se asocia a uso crónico de IBP (Inhibidores de la Bomba de protones):"
+ },
+ "b273": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes afirmaciones es correcta?"
+ },
+ "b274": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación INCORRECTA:"
+ },
+ "b276": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta incorrecta:"
+ },
+ "b277": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta incorrecta"
+ },
+ "b279": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "indique cuál respuesta es falsa:"
+ },
+ "b28": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa respecto a la utilidad de la endoscopia digestiva en el diagnóstico de la enfermedad por reflujo gastroesofágico:"
+ },
+ "b281": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "En el diagnóstico de una isquemia mesentérica aguda (IMA) es falso que:"
+ },
+ "b282": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde según la clasificación de Saint James a un grado:"
+ },
+ "b283": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta INCORRECTA sobre la pancreatitis autoinmune:"
+ },
+ "b284": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+ },
+ "b285": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale en cuál de los siguientes pacientes indicaría un TIPS precoz:"
+ },
+ "b286": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?"
+ },
+ "b287": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Entre las enfermedades que cursan con estreñimiento no se encuentra"
+ },
+ "b29": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en referencia a las siguientes afirmaciones sobre la esofagitis por reflujo de grado C de la clasificación de Los Ángeles"
+ },
+ "b293": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "De acuerdo con el artículo 7 de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales:"
+ },
+ "b294": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "señale cuál de estas situaciones no es característica de la misma:"
+ },
+ "b295": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Señale por favor cuál de los siguientes mecanismos NO está implicado en el desarrollo de esta complicación"
+ },
+ "b296": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale el enunciado falso:"
+ },
+ "b297": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En un paciente diagnosticado de hemocromatosis, homocigoto C282Y, el objetivo del tratamiento con sangrías sería:"
+ },
+ "b299": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿en cuánto tiempo le corresponde el siguiente control endoscópico?"
+ },
+ "b30": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué técnica de estudio es de más utilidad para un diagnóstico correcto en un paciente con síntomas de reflujo gastroesofágico que no responde al tratamiento con inhibidores de la bomba de protones?"
+ },
+ "b300": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Una de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):"
+ },
+ "b301": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale lo correcto:"
+ },
+ "b304": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+ },
+ "b306": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Dónde se proponen como principios éticos en investigación la beneficencia, el respeto a la dignidad humana y la justicia?"
+ },
+ "b307": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta"
+ },
+ "b309": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta INCORRECTA:"
+ },
+ "b31": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia a la técnica de impedancia intraluminal multicanal (IMM) para el estudio del reflujo gastroesofágico:"
+ },
+ "b310": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Es falso respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas"
+ },
+ "b311": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Un cuadro de diarrea aguda con inicio de síntomas en menos de 6 horas tras la exposición al alimento causal, acompañado de náuseas y vómitos, es típico de:"
+ },
+ "b313": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "Se consideran factores de elevado riesgo para desarrollar cáncer colorrectal asociado a enfermedad inflamatoria intestinal todos excepto:"
+ },
+ "b314": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?"
+ },
+ "b317": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale cuál de las siguientes afirmaciones es FALSA"
+ },
+ "b318": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Según la guía clínica ACG 2020, entre las recomendaciones de tratamiento en un paciente con acalasia esofágica no se incluye"
+ },
+ "b319": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Seleccione la opción INCORRECTA en relación con la gastritis crónica tipo B"
+ },
+ "b32": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia a los factores de riesgo para valorar un screening de esófago de Barrett según la mayoría de las guías clínicas:"
+ },
+ "b320": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Según la clasificación modificada de Milwaukee para la Disfunción del Esfínter de ODDI (DEO), sólo una de las siguientes respuestas es cierta:"
+ },
+ "b321": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿para cuándo programaría la siguiente revisión endoscópica?"
+ },
+ "b322": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Un paciente con Insuficiencia Hépatica Aguda Grave NO suele tener:"
+ },
+ "b323": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la afirmación INCORRECTA:"
+ },
+ "b325": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "La lesión hepática más frecuentemente producida por azatioprina es:"
+ },
+ "b326": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?"
+ },
+ "b327": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué debemos hacer en este momento?"
+ },
+ "b329": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué afirmación le parece correcta con respecto a este paciente?"
+ },
+ "b33": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa."
+ },
+ "b330": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale que elementos de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante"
+ },
+ "b332": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta FALSA con respecto al fallo hepático fulminante:"
+ },
+ "b333": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:"
+ },
+ "b334": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Indique cuál de las siguientes es la causa más frecuente de hematoquecia significativa:"
+ },
+ "b335": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es la actitud más adecuada a seguir en este paciente?"
+ },
+ "b336": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta falsa:"
+ },
+ "b338": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "La fase de infección crónica del virus hepatitis B con antígeno e positivo (HBeAg) (antes denominada fase de inmunotolerancia), presenta todas las siguientes características, EXCEPTO:"
+ },
+ "b339": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción FALSA:"
+ },
+ "b344": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:"
+ },
+ "b345": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?"
+ },
+ "b346": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cual de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?"
+ },
+ "b348": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señala la respuesta correcta con respecto a la hepatitis E en el embarazo"
+ },
+ "b349": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Uno de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:"
+ },
+ "b35": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa respecto a los puntos de referencia de la clasificación de Praga del esófago de Barrett:"
+ },
+ "b353": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la opción correcta:"
+ },
+ "b354": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Una de los siguientes no es una indicación para trasplante hepático en carcinoma hepatocelular (CHC), según los criterios de Milán:"
+ },
+ "b355": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta falsa:"
+ },
+ "b357": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿De dónde es más rentable tomar las biopsias para el diagnóstico de una enfermedad injerto contra huésped?"
+ },
+ "b358": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿qué estudio se aconseja realizar en primer lugar?:"
+ },
+ "b359": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:"
+ },
+ "b36": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la afirmación correcta en referencia a la toma de biopsias en el esófago de Barrett:"
+ },
+ "b360": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de la siguientes afirmaciones es INCORRECTA? :"
+ },
+ "b361": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál de los siguientes apartados se corresponde con la identificación de los problemas?"
+ },
+ "b362": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de las afirmaciones siguientes es FALSA en relación con el tratamiento de la infección por H pylori?"
+ },
+ "b363": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de las siguientes no es causa de íleo paralítico?:"
+ },
+ "b364": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En relación a la enfermedad de Whipple:"
+ },
+ "b366": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el diagnóstico?:"
+ },
+ "b367": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes opciones es la CORRECTA respecto al tratamiento farmacológico de la Dispepsia Funcional?"
+ },
+ "b368": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una de las siguientes aseveraciones es falsa"
+ },
+ "b37": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa en referencia al seguimiento del esófago de Barrett:"
+ },
+ "b370": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Una de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria"
+ },
+ "b371": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta incorrecta con respecto a la Linaclotida:"
+ },
+ "b372": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?"
+ },
+ "b373": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "La toma de biopsias aleatorias en la colonoscopia de cribado de cáncer de colon en pacientes con colitis ulcerosa NO esta recomendada en caso de:"
+ },
+ "b374": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué tratamiento antiviral no estaría indicado?"
+ },
+ "b375": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+ },
+ "b376": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es la frecuencia recomendada de seguimiento para pacientes con gastritis crónica atrófica en estadios OLGA/OLGIM III/IV asociada a metaplasia incompleta?"
+ },
+ "b379": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la interpretación CORRECTA de los hallazgos:"
+ },
+ "b38": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa respecto al tratamiento multidisciplinar del esófago de Barrett:"
+ },
+ "b381": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "En relación a la historia natural del Virus de la Hepatitis B, en la fase infección crónica con Hbe Ag -(fase 3), es falso que:"
+ },
+ "b383": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Según la guía ECCO señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+ },
+ "b384": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "En relación a la sensibilidad al gluten no celiaca es correcto:"
+ },
+ "b386": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Indica la respuesta FALSA:"
+ },
+ "b387": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuándo debe repetirse la colonoscopia?"
+ },
+ "b388": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Qué es falso?"
+ },
+ "b39": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa en referencia al tratamiento endoscópico del esófago de Barrett:"
+ },
+ "b390": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:"
+ },
+ "b392": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes recomendaciones sería FALSA?:"
+ },
+ "b393": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿A partir de qué valor de MELD nos planteamos valorar a un paciente con cirrosis descompensada para transplante en ausencia de hepatocarcinoma?"
+ },
+ "b395": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta falsa:"
+ },
+ "b396": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Según lo previsto en el artículo 17 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, la gestión de la historia clínica por los centros con pacientes hospitalizados, se realizará a través de:"
+ },
+ "b4": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en relación con el cáncer colorrectal (CCR):"
+ },
+ "b400": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el síndrome más probable?:"
+ },
+ "b403": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Cuál es la causa más frecuente de Síndrome de Budd-Chiari"
+ },
+ "b405": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Sobre el baremo MELD (Model for End Stage Liver Disease) y sus variantes en la gestión de la lista de espera de trasplante hepático, es cierto que:"
+ },
+ "b407": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "A efectos del Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), se entenderá por “seudonimización”:"
+ },
+ "b411": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn, según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:"
+ },
+ "b413": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "En cuál de las siguientes circunstancias NO está indicado el tratamiento con rifaximina"
+ },
+ "b414": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación FALSA en dicha patología:"
+ },
+ "b415": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cúal es la técnica de elección para diagnósticar una colangitis esclerosante primaria?."
+ },
+ "b416": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Ante un paciente que inicia tratamiento con Ritubsimab, deberíamos plantear tratamiento preventivo de reactivación del VBH:"
+ },
+ "b417": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Si un paciente acude a urgencias por presentar un sangrado bajo autolimitado y sin características clínicas adversas, se recomienda que podría ser dado de alta con manejo ambulatorio posterior, cuando la puntuación Oakland sea:"
+ },
+ "b418": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "señale la respuesta correcta:"
+ },
+ "b42": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la opción correcta:"
+ },
+ "b421": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "La descripción por visión ecoendoscópica de una lesión hiperecoica, homogénea con márgenes regulares que surge de la submucosa (tercera capa del tracto gastrointestinal) se corresponde con toda probabilidad a un"
+ },
+ "b422": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál no pertenece a la clasificación TIGAR-O de la etiología de la pancreatitis crónica?"
+ },
+ "b423": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de estos criterios NO se incluye entre los definidos por la OMS para el diagnóstico del síndrome de la poliposis serrada?"
+ },
+ "b425": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el tratamiento de rescate recomendado en pacientes con hepatitis crónica B que han desarrollado resistencia a lamivudina?"
+ },
+ "b427": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Cuál de los siguientes fármacos ha demostrado recientemente superioridad frente a placebo en el tratamiento de la reservoritis:"
+ },
+ "b43": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia a la ablación por radiofrecuencia (RFA) del esófago de Barrett:"
+ },
+ "b431": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿qué factor se considera de mal pronóstico?:"
+ },
+ "b432": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+ },
+ "b433": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Según el artículo 10.1 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, dentro de la información que el facultativo debe proporcionar al paciente, antes de recabar el consentimiento escrito, no se encuentra:"
+ },
+ "b434": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué tratamiento NO se recomienda para el mantenimiento de pacientes con colitis ulcerosa moderada a grave que no responden a tratamientos convencionales?"
+ },
+ "b435": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción incorrecta"
+ },
+ "b44": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa:"
+ },
+ "b440": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale cual"
+ },
+ "b441": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta INCORRECTA:"
+ },
+ "b442": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes fármacos tiene “recomendación en contra” de su uso como tratamiento de la esofagitis eosinofilica según la última guía de la Asociación Americana de Gastroenteterología 2025?:"
+ },
+ "b443": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de las siguientes actuaciones NO consideraría una prioridad en las primeras 12 horas tras su ingreso?"
+ },
+ "b444": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta incorrecta"
+ },
+ "b446": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué parámetros incluye la escala de Rockall?"
+ },
+ "b447": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Ante un paciente que acude al Servicio de Urgencias con la sospecha de ingestión aguda accidental de un cáustico, la primera medida a realizar será:"
+ },
+ "b449": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+ },
+ "b45": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia al riesgo de desarrollar un adenocarcinoma de esófago sobre un esófago de Barrett:"
+ },
+ "b450": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál debe ser el primer diagnóstico de sospecha?"
+ },
+ "b451": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "El vigente RGPD (Reglamento General de Protección de Datos) aprobado por el Parlamento Europeo y el Consejo de la Unión Europea (Reglamento (UE) 2016/679, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos) establece unos principios generales relativos al tratamiento de los datos personales, entre los que se encuentran los siguientes, EXCEPTO:"
+ },
+ "b455": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Con qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?"
+ },
+ "b456": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En la Escala de Alvarado, (sistema de puntuación clínica usado en el diagnóstico de apendicitis aguda), indica a cuál de los siguientes factores se le asignan dos puntos:"
+ },
+ "b457": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de los siguientes no es un factor de riesgo de malignidad de un pólipo vesicular?"
+ },
+ "b459": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta FALSA en relación al seguimiento de colangitis esclerosante primaria:"
+ },
+ "b46": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes técnicas ablativas del EB después de la radiofrecuencia se considera de segunda línea en las últimas guías clínicas?"
+ },
+ "b460": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "Ha recibido tratamiento con los siguientes mecanismos de acción excepto uno:"
+ },
+ "b462": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es la actitud a seguir con este paciente?:"
+ },
+ "b464": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "señale la opción FALSA:"
+ },
+ "b467": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de estas variables se incluye en el Sistema de puntuación de Rockall para la hemorragia digestiva alta?"
+ },
+ "b469": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿cuál de estas afirmaciones NO es cierta?:"
+ },
+ "b47": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el diagnóstico más probable?"
+ },
+ "b470": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Describa como será su situación hemodinámica."
+ },
+ "b471": {
+  "flag": true,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "En una de las siguientes situaciones clínicas NO se recomienda iniciar tratamiento antiviral para la hepatitis B:"
+ },
+ "b472": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "EXCEPTO"
+  ],
+  "bare_no": false,
+  "clause": "En el estudio ampliado de diarrea crónica para descartar causas neuroendocrinas, se deben solicitar todas las siguientes determinaciones, EXCEPTO:"
+ },
+ "b473": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de las siguientes afirmaciones es correcta?"
+ },
+ "b474": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes está descrito como factor de riesgo en enfermedad de Crohn y protector en colitis ulcerosa?"
+ },
+ "b475": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta INCORRECTA con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+ },
+ "b478": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Dentro de las modificaciones en la actual Clasificación de Chicago versión 4.0 (CCv4.0) es falso:"
+ },
+ "b479": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "ERRONEO"
+  ],
+  "bare_no": false,
+  "clause": "señale la errónea"
+ },
+ "b48": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta respecto a la confirmación del diagnóstico:"
+ },
+ "b480": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el tratamiento de elección en un paciente con carcinoma hepatocelular en estadio inicial(A) de la BCLC con función hepática conservada con tres nódulos menores de 3 cms y con enfermedades crónicas asociadas?"
+ },
+ "b481": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿en qué situación no contemplarías la profilaxis primaria?"
+ },
+ "b483": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "El cociente que resulta de dividir un número de acontecimientos sucedidos durante un periodo de tiempo por la población media existente durante ese periodo de tiempo es la definición de"
+ },
+ "b484": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Su sospecha diagnóstica sería:"
+ },
+ "b485": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta"
+ },
+ "b486": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señala cuál de los factores descritos puede incrementar la posibilidad de progresión de la hepatopátia alcohólica y del desarrollo de hepatocarcinoma."
+ },
+ "b487": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En la Esclerosis Sistémica Progresiva, es cierto que:"
+ },
+ "b489": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "En lo que respecta al espectro patogénico y las vías hasta ahora definidas en el desarrollo del cáncer de colon es cierto que:"
+ },
+ "b49": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál es la mejor técnica no invasiva para el estudio de los signos ductales pancreáticos?"
+ },
+ "b490": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cómo están los enzimas hepáticos y el conducto biliar común?"
+ },
+ "b493": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Indique una dosis oral diaria de mesalazina para iniciar el tratamiento de un brote moderado de Colitis Ulcerosa:"
+ },
+ "b494": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál sería el tratamiento mas adecuado para este paciente?:"
+ },
+ "b498": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de los siguientes enunciados es falso?"
+ },
+ "b499": {
+  "flag": false,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "señale la respuesta INCORRECTA:"
+ },
+ "b5": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta en relación con el programa de cribado del cáncer de colon:"
+ },
+ "b50": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de estas es una clasificación etiológica de la pancreatitis crónica?"
+ },
+ "b51": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué debe solicitarse en primer lugar para el diagnóstico de insuficiencia pancreática exocrina?"
+ },
+ "b52": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuáles son las determinaciones que evalúan mejor el estado nutricional de este paciente?"
+ },
+ "b54": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué actitud se debe seguir en relación con el tratamiento enzimático sustitutivo (TES)?"
+ },
+ "b55": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál debe ser la dosis recomendada?"
+ },
+ "b56": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál debe ser la actitud?"
+ },
+ "b57": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Debido a la insuficiencia pancreática exocrina, este paciente..."
+ },
+ "b59": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cómo se recomienda el screening de cáncer de páncreas en este paciente?"
+ },
+ "b6": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta:"
+ },
+ "b61": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Qué debe solicitarse como primera estrategia para drenar inicialmente la vía biliar?"
+ },
+ "b64": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál debe ser el siguiente paso si se confirma la malignidad de la lesión (adenocarcinoma pancreático)?"
+ },
+ "b65": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿de qué tipo de tumor debe considerarse que se trata?"
+ },
+ "b66": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en relación con el marcador tumoral CA 19-9 en el adenocarcinoma de páncreas:"
+ },
+ "b68": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta verdadera respecto al tratamiento del dolor severo en este paciente:"
+ },
+ "b69": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en relación con la TC abdominal en la evaluación de un paciente con sospecha de adenocarcinoma de páncreas:"
+ },
+ "b7": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en relación con la calidad de las endoscopias del programa de cribado:"
+ },
+ "b71": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el diagnóstico más probable?"
+ },
+ "b73": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "¿Cuál de estas afirmaciones es falsa?"
+ },
+ "b76": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de estas pruebas diagnósticas es la más útil para valorar la existencia de complicaciones abdominales como abscesos y fístulas?"
+ },
+ "b77": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "Señale cuál de estos factores predictivos no se considera un factor predictivo de peor pronóstico en la enfermedad de Crohn:"
+ },
+ "b78": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál es la opción correcta para esta paciente según la clasificación de Montreal?"
+ },
+ "b79": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál debe ser el tratamiento inicial de esta paciente?"
+ },
+ "b81": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa respecto a los corticoides:"
+ },
+ "b82": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál de estas afirmaciones es verdadera respecto a la azatioprina?"
+ },
+ "b83": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Cuál de estos estudios no es necesario antes de empezar un tratamiento biológico?"
+ },
+ "b85": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "INCORRECTO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta incorrecta respecto al tratamiento anti-TNFα:"
+ },
+ "b86": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa respecto a la enfermedad de Crohn perianal:"
+ },
+ "b87": {
+  "flag": false,
+  "adj": true,
+  "explicit": [],
+  "bare_no": true,
+  "clause": "¿Qué factor no se ha relacionado con la recurrencia posquirúrgica en la enfermedad de Crohn?"
+ },
+ "b88": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuándo debe recomendarse una ileocolonoscopia?"
+ },
+ "b89": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿A qué hace referencia el índice endoscópico de Rutgeerst i2 de recurrencia postquirúrgica?"
+ },
+ "b9": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "Señale la respuesta correcta:"
+ },
+ "b90": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa con respecto a la enfermedad inflamatoria intestinal y la gestación:"
+ },
+ "b92": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa respecto al vedolizumab en el tratamiento de la enfermedad de Crohn:"
+ },
+ "b93": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿Cuál es el mecanismo de acción del ustekinumab?"
+ },
+ "b95": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la respuesta falsa en referencia a la epidemiologia de la CU:"
+ },
+ "b98": {
+  "flag": false,
+  "adj": false,
+  "explicit": [],
+  "bare_no": false,
+  "clause": "¿cuál de las propuestas siguientes se considera la más indicada como primera opción de tratamiento?"
+ },
+ "b99": {
+  "flag": true,
+  "adj": true,
+  "explicit": [
+   "FALSO"
+  ],
+  "bare_no": false,
+  "clause": "Señale la afirmación falsa:"
+ }
+}

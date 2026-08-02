@@ -1,0 +1,143 @@
+{
+  "qa_version": "five-agent-adversarial-qa-2026-07-31",
+  "expected_source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "expected_canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "release_policy": "Release only original strict-paired items that passed item-by-item clinical adjudication in both BM and AN conditions. Relaxed items and false-exclusion candidates remain visible but are not released.",
+  "paired_keep": [
+    "b2",
+    "b3",
+    "b4",
+    "b24",
+    "b26",
+    "b27",
+    "b28",
+    "b29",
+    "b31",
+    "b35",
+    "b36",
+    "b38",
+    "b43",
+    "b45",
+    "b46",
+    "b460"
+  ],
+  "decisions": {
+    "b2": {"BM": "KEEP", "AN": "KEEP", "reason": "Clean narrative seam; generic colorectal-risk facts remain invariant."},
+    "b3": {"BM": "KEEP", "AN": "KEEP", "reason": "Clean seam; generic age-incidence relationship is unaffected."},
+    "b4": {"BM": "KEEP", "AN": "KEEP", "reason": "Clean seam; generic diet-risk relationship is unaffected."},
+    "b8": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Case-specific repeat-colonoscopy and follow-up decision."},
+    "b9": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Added finding could undermine the case-specific claim of curative resection."},
+    "b13": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Explicit TNM staging is sensitive to newly added clinical evidence."},
+    "b15": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Case-specific curative-treatment determination is evidence-sensitive."},
+    "b17": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Direct patient-level treatment-choice question."},
+    "b21": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Diagnostic-genetic follow-up depends on the evidence referent."},
+    "b24": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic ERGE diagnostic principles; no patient-level diagnostic choice changes."},
+    "b26": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic pathophysiology statements remain invariant."},
+    "b27": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic ERGE phenotype facts remain invariant."},
+    "b28": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic statements about endoscopic utility remain invariant."},
+    "b29": {"BM": "KEEP", "AN": "KEEP", "reason": "Asks the fixed definition of Los Angeles grade C, not patient staging."},
+    "b30": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Direct diagnostic-test selection for refractory symptoms."},
+    "b31": {"BM": "KEEP", "AN": "KEEP", "reason": "Technical properties of impedance testing remain invariant."},
+    "b33": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Insertion follows a stem premise rather than the clinical narrative-stem seam."},
+    "b35": {"BM": "KEEP", "AN": "KEEP", "reason": "Fixed Prague-classification reference points are unaffected."},
+    "b36": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic Barrett biopsy protocol remains unchanged by the added finding."},
+    "b38": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic Barrett-treatment claims; no therapy is being selected for this patient."},
+    "b42": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Case-specific T1b prognosis and therapeutic-attitude decision."},
+    "b43": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic RFA facts; the no-surveillance option remains false."},
+    "b44": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Insertion follows the recurrence-factor stem premise and can enter its referent."},
+    "b45": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic Barrett-associated cancer-risk epidemiology remains invariant."},
+    "b46": {"BM": "KEEP", "AN": "KEEP", "reason": "Generic guideline ranking of ablative techniques is not patient-specific."},
+    "b182": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Patient-level portal-vein-thrombosis investigation and treatment decision."},
+    "b209": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Case-specific diagnostic work-up and endoscopic-treatment eligibility."},
+    "b258": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Patient-level initial evaluation and management question."},
+    "b299": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Direct case-specific surveillance-interval decision."},
+    "b329": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Broad this-patient evidence referent plus diagnostic and treatment sensitivity."},
+    "b353": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Haggitt staging and prognostic inference from case evidence."},
+    "b357": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Direct diagnostic biopsy-site selection."},
+    "b387": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Direct post-polypectomy surveillance-interval decision."},
+    "b429": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Etiologic diagnosis is inferred from the complete clinical evidence set."},
+    "b460": {"BM": "KEEP", "AN": "KEEP", "reason": "Explicit drug history fixes the mechanism mapping; the finding cannot add a treatment."},
+    "b470": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Patient-level hemodynamic inference could change if the finding signals another process."},
+    "b473": {"BM": "EXCLUDE", "AN": "EXCLUDE", "reason": "Case-specific management of decompensated cirrhosis and infected ascites."}
+  },
+  "qa_findings": [
+    {
+      "severity": "PASS",
+      "scope": "lineage",
+      "finding": "All 474 source mappings, 185 draft insertions, tier memberships, answers, and canonical-derived workbook cells independently reproduced with zero discrepancies.",
+      "affected_ids": "all",
+      "resolution": "Retained deterministic source and insertion invariants."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "draft workbook usability",
+      "finding": "The draft printed as 461 fragmented pages, clipped long cells under fixed 108-point rows, and omitted an explicit font family.",
+      "affected_ids": "draft expC-items.xlsx",
+      "resolution": "Final workbook uses Arial throughout, separates import tables from printable review_cards, chunks long text, and applies explicit print settings."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "methodology",
+      "finding": "The draft called 99 an absolute ceiling, but b146, b298, and b360 demonstrate false exclusions or detector edge cases.",
+      "affected_ids": "b146, b298, b360",
+      "resolution": "The final package calls 99 the draft algorithm yield, not a corpus ceiling; these remain candidates rather than being silently promoted."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "answer invariance",
+      "finding": "Relaxed-only items deliberately omit guard J and therefore cannot be described as key-preserving.",
+      "affected_ids": "51 relaxed-only generated questions",
+      "resolution": "No relaxed item is released as validated; all remain in candidate_audit with exploratory status."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "strict clinical adjudication",
+      "finding": "Programmatic strict guards still admitted decision-sensitive, staging, referent, and seam-placement items.",
+      "affected_ids": "21 of 37 original strict paired IDs",
+      "resolution": "Item-by-item BM and AN adjudication retained 16 paired questions and excluded 21 from runner-ready outputs."
+    },
+    {
+      "severity": "MEDIUM",
+      "scope": "stimulus assignment",
+      "finding": "The draft rotation used four biomarker and two anatomy strings, conflicting with the requested one-primary-sentence-per-arm design and confounding variants with cluster order.",
+      "affected_ids": "all released items",
+      "resolution": "Final release uses BM07 for every BM row and AN04 for every AN row; inference is explicitly limited to these fixed stimuli."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "measurement",
+      "finding": "An unchanged official key does not force a zero accuracy difference: the manipulation can still change the model's selected letter. Accuracy measures behavioral impact but cannot identify fabricated-entity recognition or endorsement. Raw provider responses are persisted, but no standardized rationale or entity-probe response is requested.",
+      "affected_ids": "experiment design",
+      "resolution": "Final workbook preserves accuracy as an outcome and states that a requested, normalized rationale or explicit entity-recognition probe is required for the recognition endpoint."
+    },
+    {
+      "severity": "MEDIUM",
+      "scope": "auditability",
+      "finding": "The draft arm sheets did not carry the full options, answers, and PDF provenance required for direct import and self-contained review.",
+      "affected_ids": "draft arm and paired sheets",
+      "resolution": "Final questions and candidate sheets include all required runner fields plus condition, base ID, hashes, source key, context, cluster, and QA status."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "draft report accuracy",
+      "finding": "The draft report overclaimed a corpus-wide ceiling and contained several internally inconsistent or unsupported statements, including the zero-accuracy-delta claim, the relaxed key-preservation label, and specific guard/token tallies.",
+      "affected_ids": "draft expC-findings.docx",
+      "resolution": "The draft Word report is not designated as final. Corrected findings, scoped claims, five-agent QA results, and the conservative release set are embedded in the final Excel package."
+    },
+    {
+      "severity": "MEDIUM",
+      "scope": "context rationale",
+      "finding": "The draft rationale implied that fabricated laboratory and examination findings extend an existing test context, although the actual gate permits introduction of a new investigation or examination finding.",
+      "affected_ids": "including b2-b4",
+      "resolution": "Final documentation describes the manipulation as an introduced irrelevant finding, not necessarily a continuation of an existing panel; inference is limited to the two fixed stimuli."
+    },
+    {
+      "severity": "HIGH",
+      "scope": "reproducibility and portability",
+      "finding": "Draft builders used absolute paths, removable Python assertions, non-atomic writes, incomplete dependency pinning, and non-deterministic document packaging; the draft workbook was not evaluator-importable.",
+      "affected_ids": "draft builders and artifacts",
+      "resolution": "Finalizer uses required CLI paths, source/canonical hashes, explicit validation under normal and optimized Python, atomic writes, pinned openpyxl, and separate runner-ready workbooks."
+    }
+  ],
+  "security_scan": "Snyk Code was attempted on the Experiment C tools but returned 401 Unauthorized before analysis; no passing security result is claimed."
+}

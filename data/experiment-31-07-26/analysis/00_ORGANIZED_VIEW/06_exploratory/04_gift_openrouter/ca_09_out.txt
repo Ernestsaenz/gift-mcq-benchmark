@@ -1,0 +1,49 @@
+=== Cohen kappa, CORRECTNESS (2 categories) ===
+model                       n   obs_agr    chance     kappa    95% cluster-boot CI
+POOLED                   1244    0.9437    0.8629    0.5897       0.467, 0.675
+gemini-3.6-flash          311    0.9904    0.9590    0.7646       0.392, 1.000
+gemma-4-26b-a4b-it        311    0.9003    0.7533    0.5960       0.432, 0.725
+qwen3.6-35b-a3b           311    0.9228    0.8521    0.4781       0.292, 0.636
+glm-5.2                   311    0.9614    0.9019    0.6067       0.360, 0.771
+
+=== Cohen kappa, SELECTED LETTER (4 categories) ===
+model                       n   obs_agr    chance     kappa    95% cluster-boot CI
+POOLED                   1244    0.9325    0.2547    0.9094       0.883, 0.930
+gemini-3.6-flash          311    0.9871    0.2570    0.9827       0.961, 0.996
+gemma-4-26b-a4b-it        311    0.8778    0.2526    0.8365       0.789, 0.874
+qwen3.6-35b-a3b           311    0.9068    0.2556    0.8747       0.826, 0.916
+glm-5.2                   311    0.9582    0.2551    0.9439       0.909, 0.973
+
+=== Error-sharing decomposition ===
+  cells where at least one arm erred: 127
+    both erred           57  (44.9%)
+    only OR erred        46  (36.2%)
+    only GIFT erred      24  (18.9%)
+  share of GIFT errors that OR also made: 57/81 = 70.4%
+  share of OR errors that GIFT also made: 57/103 = 55.3%
+  of the 57 both-wrong cells, 43 (75.4%) chose the IDENTICAL distractor
+  -> so of all 81 GIFT errors, 43 (53.1%) are letter-identical to an OR error
+
+  per model:
+model                   GIFTerr   shared sameletter    %sameletter
+gemini-3.6-flash              8        5          4          50.0%
+gemma-4-26b-a4b-it           36       29         22          61.1%
+qwen3.6-35b-a3b              26       13          8          30.8%
+glm-5.2                      11       10          9          81.8%
+
+=== Does GIFT prefer a systematically DIFFERENT letter than OR overall? ===
+  key letters :  {'a': 224, 'b': 316, 'c': 336, 'd': 368}
+  GIFT picks  :  {'a': 241, 'b': 315, 'c': 338, 'd': 350}
+  OR picks    :  {'a': 240, 'b': 318, 'c': 332, 'd': 354}
+  L1 distance between the two letter marginals = 14 ; arm-swap permutation p = 0.7966 (B=200000)
+  (null = the arm label is exchangeable within each cell; this is the exact
+   marginal-homogeneity test for the paired 4x4 letter table)
+
+  restricted to cells where the arm was WRONG (does GIFT err toward a different letter?):
+    GIFT wrong picks: {'a': 24, 'b': 19, 'c': 26, 'd': 12}  n=81
+    OR   wrong picks: {'a': 28, 'b': 22, 'c': 28, 'd': 25}  n=103
+    GIFT wrong OFFSET from key: {1: 28, 2: 26, 3: 27}
+    OR   wrong OFFSET from key: {1: 39, 2: 35, 3: 29}
+    chi2(2) on the 2x3 offset table = 0.583  p = 0.7471
+    (independence approximation; the two error sets overlap in 57 both-wrong cells,
+     so the true p is larger -- treat this only as "no visible difference")
