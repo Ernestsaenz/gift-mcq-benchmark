@@ -1,0 +1,1283 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_13",
+  "shard_id": "13",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b194",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b194",
+      "question_text": "Paciente con hepatitis crónica B con ALT 35 UI, DNA-VHB 9800 UI y Fibroscan 9,5 Kpa debe tratarse con:",
+      "option_a": "Interferon pegilado indefinido.",
+      "option_b": "Glecaprevir.",
+      "option_c": "Tenofovir indefinido.",
+      "option_d": "No tiene indicación de tratamiento.",
+      "correct_letter": "c",
+      "correct_option_text": "Tenofovir indefinido.",
+      "source_text_sha256": "53d9ca7748351643c40932717307e31b162666d9e442718eb8480b7e764b0d39",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b194",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b194",
+      "question_text": "Paciente con hepatitis crónica B con ALT 35 UI, DNA-VHB 9800 UI y Fibroscan 9,5 Kpa debe tratarse con:",
+      "option_a": "Interferon pegilado indefinido.",
+      "option_b": "Glecaprevir.",
+      "option_c": "Tenofovir indefinido.",
+      "option_d": "No tiene indicación de tratamiento.",
+      "correct_letter": "c",
+      "correct_option_text": "Tenofovir indefinido.",
+      "source_text_sha256": "53d9ca7748351643c40932717307e31b162666d9e442718eb8480b7e764b0d39",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b206",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b206",
+      "question_text": "Señale cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda",
+      "option_a": "Azatioprina",
+      "option_b": "Ácido valproico",
+      "option_c": "Tamsulosina",
+      "option_d": "IECA",
+      "correct_letter": "c",
+      "correct_option_text": "Tamsulosina",
+      "source_text_sha256": "c3fe6267a6b4c13a0e31cdc74e5d47317e30e0c7751535400758d915f6418057",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+        },
+        {
+          "boundary_start": 11,
+          "boundary_end": 12,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál",
+          "right_context": "de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+        }
+      ]
+    },
+    {
+      "question_id": "b206",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b206",
+      "question_text": "Señale cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda",
+      "option_a": "Azatioprina",
+      "option_b": "Ácido valproico",
+      "option_c": "Tamsulosina",
+      "option_d": "IECA",
+      "correct_letter": "c",
+      "correct_option_text": "Tamsulosina",
+      "source_text_sha256": "c3fe6267a6b4c13a0e31cdc74e5d47317e30e0c7751535400758d915f6418057",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+        },
+        {
+          "boundary_start": 11,
+          "boundary_end": 12,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál",
+          "right_context": "de los siguientes fármacos NO se ha relacionado con pancreatitis aguda"
+        }
+      ]
+    },
+    {
+      "question_id": "b218",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b218",
+      "question_text": "Según los criterios de Roma IV, se define el síndrome de intestino irritable como:",
+      "option_a": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos seis meses que se asocia a dos o más de los siguientes: se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_b": "Disconfort abdominal recurrente al menos 3 días al mes durante los tres últimos meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_c": "Disconfort abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_d": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "correct_letter": "d",
+      "correct_option_text": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "source_text_sha256": "de63f511e6c651982b555fa35b53dd2a551c58875b70dbaff698723a725db43c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b218",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b218",
+      "question_text": "Según los criterios de Roma IV, se define el síndrome de intestino irritable como:",
+      "option_a": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos seis meses que se asocia a dos o más de los siguientes: se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_b": "Disconfort abdominal recurrente al menos 3 días al mes durante los tres últimos meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_c": "Disconfort abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "option_d": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "correct_letter": "d",
+      "correct_option_text": "Dolor abdominal recurrente al menos 1 día a la semana durante los últimos tres meses que se asocia a dos o más de los siguientes: Se relaciona con la defecación, se asocia a un cambio en la frecuencia de las deposiciones, se asocia a un cambio en la forma (consistencia) de las deposiciones.",
+      "source_text_sha256": "de63f511e6c651982b555fa35b53dd2a551c58875b70dbaff698723a725db43c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b229",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b229",
+      "question_text": "El dato clínico para establecer el diagnóstico de insuficiencia hepática aguda en un adulto es:",
+      "option_a": "Subictericia.",
+      "option_b": "Ascitis.",
+      "option_c": "Encefalopatía.",
+      "option_d": "Cualquiera de ellas.",
+      "correct_letter": "c",
+      "correct_option_text": "Encefalopatía.",
+      "source_text_sha256": "5b7c862789a83542babc3a9121c6430b4afdcff94b0f16775be95f4c841bb5ca",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b229",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b229",
+      "question_text": "El dato clínico para establecer el diagnóstico de insuficiencia hepática aguda en un adulto es:",
+      "option_a": "Subictericia.",
+      "option_b": "Ascitis.",
+      "option_c": "Encefalopatía.",
+      "option_d": "Cualquiera de ellas.",
+      "correct_letter": "c",
+      "correct_option_text": "Encefalopatía.",
+      "source_text_sha256": "5b7c862789a83542babc3a9121c6430b4afdcff94b0f16775be95f4c841bb5ca",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b243",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b243",
+      "question_text": "La primera línea de tratamiento farmacológico para la colangitis biliar primaria es:",
+      "option_a": "Metotrexato",
+      "option_b": "Ácido ursodesoxicólico (UDCA)",
+      "option_c": "Azatioprina",
+      "option_d": "Ciclosporina",
+      "correct_letter": "b",
+      "correct_option_text": "Ácido ursodesoxicólico (UDCA)",
+      "source_text_sha256": "0f96978b681fae3e0129e71d92ee3c1f0461ed9a12ba402a19ccabe4e08e0c54",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b243",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b243",
+      "question_text": "La primera línea de tratamiento farmacológico para la colangitis biliar primaria es:",
+      "option_a": "Metotrexato",
+      "option_b": "Ácido ursodesoxicólico (UDCA)",
+      "option_c": "Azatioprina",
+      "option_d": "Ciclosporina",
+      "correct_letter": "b",
+      "correct_option_text": "Ácido ursodesoxicólico (UDCA)",
+      "source_text_sha256": "0f96978b681fae3e0129e71d92ee3c1f0461ed9a12ba402a19ccabe4e08e0c54",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b256",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b256",
+      "question_text": "De las siguientes acciones se recomienda en una primera visita de diarrea crónica acuosa sin sangre, de características funcionales. Señale cual es la apropiada:",
+      "option_a": "Solicitaría un Tc abdominal con contraste endovenoso.",
+      "option_b": "Solicitaría serologías de Yersinia enterocolítica.",
+      "option_c": "Revisaría si hay algún fármaco potencialmente asociado a la diarrea.",
+      "option_d": "Dado que se trata de una diarrea de características funcionales no precisa realizar exploración física.",
+      "correct_letter": "c",
+      "correct_option_text": "Revisaría si hay algún fármaco potencialmente asociado a la diarrea.",
+      "source_text_sha256": "fc933eceff2c4df4b75d07b844f94bb2fd677a1e5b9ad95ecbbb351476e22ddb",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 132,
+          "boundary_end": 133,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes acciones se recomienda en una primera visita de diarrea crónica acuosa sin sangre, de características funcionales.",
+          "right_context": "Señale cual es la apropiada:"
+        }
+      ]
+    },
+    {
+      "question_id": "b256",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b256",
+      "question_text": "De las siguientes acciones se recomienda en una primera visita de diarrea crónica acuosa sin sangre, de características funcionales. Señale cual es la apropiada:",
+      "option_a": "Solicitaría un Tc abdominal con contraste endovenoso.",
+      "option_b": "Solicitaría serologías de Yersinia enterocolítica.",
+      "option_c": "Revisaría si hay algún fármaco potencialmente asociado a la diarrea.",
+      "option_d": "Dado que se trata de una diarrea de características funcionales no precisa realizar exploración física.",
+      "correct_letter": "c",
+      "correct_option_text": "Revisaría si hay algún fármaco potencialmente asociado a la diarrea.",
+      "source_text_sha256": "fc933eceff2c4df4b75d07b844f94bb2fd677a1e5b9ad95ecbbb351476e22ddb",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 132,
+          "boundary_end": 133,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes acciones se recomienda en una primera visita de diarrea crónica acuosa sin sangre, de características funcionales.",
+          "right_context": "Señale cual es la apropiada:"
+        }
+      ]
+    },
+    {
+      "question_id": "b272",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b272",
+      "question_text": "NO se asocia a uso crónico de IBP (Inhibidores de la Bomba de protones):",
+      "option_a": "Aumento de riesgo de infección por Clostridium Difficile.",
+      "option_b": "Déficit de vitamina B12.",
+      "option_c": "Hipomagnesemia.",
+      "option_d": "Hipogastrinemia.",
+      "correct_letter": "d",
+      "correct_option_text": "Hipogastrinemia.",
+      "source_text_sha256": "aaafab429289e85905a56f812d0a21dfb4e429c566d7c48415999c960ed6aa70",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b272",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b272",
+      "question_text": "NO se asocia a uso crónico de IBP (Inhibidores de la Bomba de protones):",
+      "option_a": "Aumento de riesgo de infección por Clostridium Difficile.",
+      "option_b": "Déficit de vitamina B12.",
+      "option_c": "Hipomagnesemia.",
+      "option_d": "Hipogastrinemia.",
+      "correct_letter": "d",
+      "correct_option_text": "Hipogastrinemia.",
+      "source_text_sha256": "aaafab429289e85905a56f812d0a21dfb4e429c566d7c48415999c960ed6aa70",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b285",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b285",
+      "question_text": "Señale en cuál de los siguientes pacientes indicaría un TIPS precoz:",
+      "option_a": "Hepatopatía Crónica en estadío de Cirrosis por alcohol con consumo activo y antecedente hace 5 días de hemorragia por varices esofágicas. Presenta nuevo episodio de hematemesis y encefalopatía hepática grado II. Shock hipovolémico. Bil. 17; Crea. 2,2; Alb. 2,3; INR 1,39. Endoscopia: Sangrado agudo incontrolable que requiere la colocación de prótesis de Dannis.",
+      "option_b": "Primer episodio de hematemesis en paciente sin enfermedad hepática conocida hasta la fecha. Inestabilidad hemodinámica. Endoscopia: hemorragia incoercible, se coloca balón de Sengstaken. Bil. 1,1; Crea. 0,75; Alb. 4,3; INR 1,1.",
+      "option_c": "Cirrosis por alcohol previamente descompensado por ascitis respondedora a diuréticos. Varices grandes en endoscopia previa en profilaxis primaria con Propranolol. Había desarrollado encefalopatía cuando bebía alcohol. Ingresa por hematemesis sin inestabilidad hemodinámica. Endoscopia: Varices grandes con pezón con fibrina sobre una de ellas, se efectúa ligadura con 5 bandas. Análisis: Bil. 3,67; Crea. 1,2; Alb. 2,1; INR 1,77.",
+      "option_d": "Paciente trasladado de otro centro para valorar trasplante por fallo agudo sobre crónico. Bil. 35; Crea. 3,15; Alb 1,9; INR 2,87. Intubado en UCI por distrés respiratorio. Encefalopatía hepática III-IV. Ascitis moderada. Presenta hematemesis con inestabilidad hemodinámica. Endoscopia: Sangrado activo procedente de variz esofágica. Se coloca prótesis de Danis.",
+      "correct_letter": "c",
+      "correct_option_text": "Cirrosis por alcohol previamente descompensado por ascitis respondedora a diuréticos. Varices grandes en endoscopia previa en profilaxis primaria con Propranolol. Había desarrollado encefalopatía cuando bebía alcohol. Ingresa por hematemesis sin inestabilidad hemodinámica. Endoscopia: Varices grandes con pezón con fibrina sobre una de ellas, se efectúa ligadura con 5 bandas. Análisis: Bil. 3,67; Crea. 1,2; Alb. 2,1; INR 1,77.",
+      "source_text_sha256": "6ab36ee26899448ca9c6d0d2b9fbe5589827ca95aaff4dafbed6dc6f1d501b6a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 9,
+          "boundary_end": 10,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en",
+          "right_context": "cuál de los siguientes pacientes indicaría un TIPS precoz:"
+        },
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en cuál",
+          "right_context": "de los siguientes pacientes indicaría un TIPS precoz:"
+        },
+        {
+          "boundary_start": 42,
+          "boundary_end": 43,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en cuál de los siguientes pacientes",
+          "right_context": "indicaría un TIPS precoz:"
+        }
+      ]
+    },
+    {
+      "question_id": "b285",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b285",
+      "question_text": "Señale en cuál de los siguientes pacientes indicaría un TIPS precoz:",
+      "option_a": "Hepatopatía Crónica en estadío de Cirrosis por alcohol con consumo activo y antecedente hace 5 días de hemorragia por varices esofágicas. Presenta nuevo episodio de hematemesis y encefalopatía hepática grado II. Shock hipovolémico. Bil. 17; Crea. 2,2; Alb. 2,3; INR 1,39. Endoscopia: Sangrado agudo incontrolable que requiere la colocación de prótesis de Dannis.",
+      "option_b": "Primer episodio de hematemesis en paciente sin enfermedad hepática conocida hasta la fecha. Inestabilidad hemodinámica. Endoscopia: hemorragia incoercible, se coloca balón de Sengstaken. Bil. 1,1; Crea. 0,75; Alb. 4,3; INR 1,1.",
+      "option_c": "Cirrosis por alcohol previamente descompensado por ascitis respondedora a diuréticos. Varices grandes en endoscopia previa en profilaxis primaria con Propranolol. Había desarrollado encefalopatía cuando bebía alcohol. Ingresa por hematemesis sin inestabilidad hemodinámica. Endoscopia: Varices grandes con pezón con fibrina sobre una de ellas, se efectúa ligadura con 5 bandas. Análisis: Bil. 3,67; Crea. 1,2; Alb. 2,1; INR 1,77.",
+      "option_d": "Paciente trasladado de otro centro para valorar trasplante por fallo agudo sobre crónico. Bil. 35; Crea. 3,15; Alb 1,9; INR 2,87. Intubado en UCI por distrés respiratorio. Encefalopatía hepática III-IV. Ascitis moderada. Presenta hematemesis con inestabilidad hemodinámica. Endoscopia: Sangrado activo procedente de variz esofágica. Se coloca prótesis de Danis.",
+      "correct_letter": "c",
+      "correct_option_text": "Cirrosis por alcohol previamente descompensado por ascitis respondedora a diuréticos. Varices grandes en endoscopia previa en profilaxis primaria con Propranolol. Había desarrollado encefalopatía cuando bebía alcohol. Ingresa por hematemesis sin inestabilidad hemodinámica. Endoscopia: Varices grandes con pezón con fibrina sobre una de ellas, se efectúa ligadura con 5 bandas. Análisis: Bil. 3,67; Crea. 1,2; Alb. 2,1; INR 1,77.",
+      "source_text_sha256": "6ab36ee26899448ca9c6d0d2b9fbe5589827ca95aaff4dafbed6dc6f1d501b6a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 9,
+          "boundary_end": 10,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en",
+          "right_context": "cuál de los siguientes pacientes indicaría un TIPS precoz:"
+        },
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en cuál",
+          "right_context": "de los siguientes pacientes indicaría un TIPS precoz:"
+        },
+        {
+          "boundary_start": 42,
+          "boundary_end": 43,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale en cuál de los siguientes pacientes",
+          "right_context": "indicaría un TIPS precoz:"
+        }
+      ]
+    },
+    {
+      "question_id": "b301",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b301",
+      "question_text": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:",
+      "option_a": "Convivientes con pacientes con Hepatitis aguda por virus A.",
+      "option_b": "Viaje a un país endémico, iniciando la pauta 1 semana antes del viaje.",
+      "option_c": "Trabajadores con primates.",
+      "option_d": "Antecedente de haber consumido drogas por vía parenteral, sin consumo actual.",
+      "correct_letter": "c",
+      "correct_option_text": "Trabajadores con primates.",
+      "source_text_sha256": "6dfa5401f2fe404d7249d188b3db2ce7d8be6122a0b1d791a5fd99722ebb40be",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a las",
+          "right_context": "indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:"
+        },
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017)",
+          "right_context": "señale lo correcto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b301",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b301",
+      "question_text": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:",
+      "option_a": "Convivientes con pacientes con Hepatitis aguda por virus A.",
+      "option_b": "Viaje a un país endémico, iniciando la pauta 1 semana antes del viaje.",
+      "option_c": "Trabajadores con primates.",
+      "option_d": "Antecedente de haber consumido drogas por vía parenteral, sin consumo actual.",
+      "correct_letter": "c",
+      "correct_option_text": "Trabajadores con primates.",
+      "source_text_sha256": "6dfa5401f2fe404d7249d188b3db2ce7d8be6122a0b1d791a5fd99722ebb40be",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a las",
+          "right_context": "indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017) señale lo correcto:"
+        },
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a las indicaciones de vacunación preexposición de la hepatitis A vigentes en España (2017)",
+          "right_context": "señale lo correcto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b314",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b314",
+      "question_text": "¿Cuál de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?",
+      "option_a": "Ingreso hospitalario reciente",
+      "option_b": "Presencia en el exudado rectal de bacterias multirresistentes",
+      "option_c": "Uso de betalactámicos dentro de los tres meses previos",
+      "option_d": "Infección adquirida en la comunidad",
+      "correct_letter": "d",
+      "correct_option_text": "Infección adquirida en la comunidad",
+      "source_text_sha256": "f584575c715ca45c93cdb5cd632ff0cf650a47652c67f78faa227c6b500c44d0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?"
+        }
+      ]
+    },
+    {
+      "question_id": "b314",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b314",
+      "question_text": "¿Cuál de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?",
+      "option_a": "Ingreso hospitalario reciente",
+      "option_b": "Presencia en el exudado rectal de bacterias multirresistentes",
+      "option_c": "Uso de betalactámicos dentro de los tres meses previos",
+      "option_d": "Infección adquirida en la comunidad",
+      "correct_letter": "d",
+      "correct_option_text": "Infección adquirida en la comunidad",
+      "source_text_sha256": "f584575c715ca45c93cdb5cd632ff0cf650a47652c67f78faa227c6b500c44d0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un factor de riesgo para desarrollar infecciones por bacterias multirresistentes en pacientes con cirrosis descompensada?"
+        }
+      ]
+    },
+    {
+      "question_id": "b328",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b328",
+      "question_text": "En el tratamiento del brote grave de colitis ulcerosa se puede usar:(señale la falsa)",
+      "option_a": "Mesalazina a dosis de 8 mg/día",
+      "option_b": "Corticoides IV a dosis de 1 mg/kg/día",
+      "option_c": "Infliximab a dosis de 5 mg/kg",
+      "option_d": "Ciclosporina para conseguir niveles de entre 150 y 350 ng/Ml",
+      "correct_letter": "a",
+      "correct_option_text": "Mesalazina a dosis de 8 mg/día",
+      "source_text_sha256": "6575de1134302ae5b43444e4986bd19202f81ab02cd8c95b81005b23e5e36878",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b328",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b328",
+      "question_text": "En el tratamiento del brote grave de colitis ulcerosa se puede usar:(señale la falsa)",
+      "option_a": "Mesalazina a dosis de 8 mg/día",
+      "option_b": "Corticoides IV a dosis de 1 mg/kg/día",
+      "option_c": "Infliximab a dosis de 5 mg/kg",
+      "option_d": "Ciclosporina para conseguir niveles de entre 150 y 350 ng/Ml",
+      "correct_letter": "a",
+      "correct_option_text": "Mesalazina a dosis de 8 mg/día",
+      "source_text_sha256": "6575de1134302ae5b43444e4986bd19202f81ab02cd8c95b81005b23e5e36878",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b345",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b345",
+      "question_text": "¿Cuál de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?",
+      "option_a": "Trombopenia",
+      "option_b": "Disminución de la síntesis de Factor V",
+      "option_c": "Disminución de los niveles del Factor von Willebrand",
+      "option_d": "Disminución de los niveles de la proteína C y proteína S",
+      "correct_letter": "c",
+      "correct_option_text": "Disminución de los niveles del Factor von Willebrand",
+      "source_text_sha256": "0204bbd00b0c0bdfb4999d54bb5d71d98eac0126b1c39dc196f35cdbb6b79eb6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?"
+        }
+      ]
+    },
+    {
+      "question_id": "b345",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b345",
+      "question_text": "¿Cuál de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?",
+      "option_a": "Trombopenia",
+      "option_b": "Disminución de la síntesis de Factor V",
+      "option_c": "Disminución de los niveles del Factor von Willebrand",
+      "option_d": "Disminución de los niveles de la proteína C y proteína S",
+      "correct_letter": "c",
+      "correct_option_text": "Disminución de los niveles del Factor von Willebrand",
+      "source_text_sha256": "0204bbd00b0c0bdfb4999d54bb5d71d98eac0126b1c39dc196f35cdbb6b79eb6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes anomalías NO suele producirse en la hemostasia de los pacientes cirróticos?"
+        }
+      ]
+    },
+    {
+      "question_id": "b359",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b359",
+      "question_text": "La ligadura endoscópica con bandas se considera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma. En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:",
+      "option_a": "Tras la realización del procedimiento se observa aparición de úlceras esofágicas en la zona de colocación de bandas en un 5-15% de los pacientes y es una de sus principales complicaciones.",
+      "option_b": "La incidencia de aparición de úlceras esofágicas post-ligadura de varices esofágicas es más frecuente tras el tratamiento del episodio agudo de hemorragia por varices, que en las ligaduras programadas como profilaxis secundaria.",
+      "option_c": "Tras la obliteración de las varices esofágicas después de las sesiones de bandas necesarias, se recomienda vigilancia endoscópica cada 3-6 meses dada la posibilidad de recurrencia.",
+      "option_d": "La estenosis esofágica post-ligadura es una complicación muy frecuente tras el desarrollo de úlceras esofágicas post-ligadura relacionada con su cicatrización. El tratamiento profiláctico con omeprazol disminuye su frecuencia de aparición.",
+      "correct_letter": "d",
+      "correct_option_text": "La estenosis esofágica post-ligadura es una complicación muy frecuente tras el desarrollo de úlceras esofágicas post-ligadura relacionada con su cicatrización. El tratamiento profiláctico con omeprazol disminuye su frecuencia de aparición.",
+      "source_text_sha256": "f9d02d6e8da259f4a8cab6bf3c19bee9a6ee7415aa765cbf441605426779ebc0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La ligadura endoscópica con bandas se considera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma.",
+          "right_context": "En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:"
+        },
+        {
+          "boundary_start": 260,
+          "boundary_end": 261,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "nsidera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma. En relación con las complicaciones asociadas al procedimiento endoscópico",
+          "right_context": "señala la afirmación FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b359",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b359",
+      "question_text": "La ligadura endoscópica con bandas se considera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma. En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:",
+      "option_a": "Tras la realización del procedimiento se observa aparición de úlceras esofágicas en la zona de colocación de bandas en un 5-15% de los pacientes y es una de sus principales complicaciones.",
+      "option_b": "La incidencia de aparición de úlceras esofágicas post-ligadura de varices esofágicas es más frecuente tras el tratamiento del episodio agudo de hemorragia por varices, que en las ligaduras programadas como profilaxis secundaria.",
+      "option_c": "Tras la obliteración de las varices esofágicas después de las sesiones de bandas necesarias, se recomienda vigilancia endoscópica cada 3-6 meses dada la posibilidad de recurrencia.",
+      "option_d": "La estenosis esofágica post-ligadura es una complicación muy frecuente tras el desarrollo de úlceras esofágicas post-ligadura relacionada con su cicatrización. El tratamiento profiláctico con omeprazol disminuye su frecuencia de aparición.",
+      "correct_letter": "d",
+      "correct_option_text": "La estenosis esofágica post-ligadura es una complicación muy frecuente tras el desarrollo de úlceras esofágicas post-ligadura relacionada con su cicatrización. El tratamiento profiláctico con omeprazol disminuye su frecuencia de aparición.",
+      "source_text_sha256": "f9d02d6e8da259f4a8cab6bf3c19bee9a6ee7415aa765cbf441605426779ebc0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La ligadura endoscópica con bandas se considera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma.",
+          "right_context": "En relación con las complicaciones asociadas al procedimiento endoscópico señala la afirmación FALSA:"
+        },
+        {
+          "boundary_start": 260,
+          "boundary_end": 261,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "nsidera el tratamiento de elección tanto en los episodios de hemorragia aguda por varices esofágicas como en la profilaxis secundaria de la misma. En relación con las complicaciones asociadas al procedimiento endoscópico",
+          "right_context": "señala la afirmación FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b373",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b373",
+      "question_text": "La toma de biopsias aleatorias en la colonoscopia de cribado de cáncer de colon en pacientes con colitis ulcerosa NO esta recomendada en caso de:",
+      "option_a": "Mala preparación.",
+      "option_b": "Inflamación moderada o severa.",
+      "option_c": "Abundantes pólipos inflamatorios o pseudopólipos.",
+      "option_d": "En los casos de proctitis.",
+      "correct_letter": "d",
+      "correct_option_text": "En los casos de proctitis.",
+      "source_text_sha256": "e6327693b64e164e8f8ad35e4fb6eb51cef5d807a288f7f70589994c772f3d99",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b373",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b373",
+      "question_text": "La toma de biopsias aleatorias en la colonoscopia de cribado de cáncer de colon en pacientes con colitis ulcerosa NO esta recomendada en caso de:",
+      "option_a": "Mala preparación.",
+      "option_b": "Inflamación moderada o severa.",
+      "option_c": "Abundantes pólipos inflamatorios o pseudopólipos.",
+      "option_d": "En los casos de proctitis.",
+      "correct_letter": "d",
+      "correct_option_text": "En los casos de proctitis.",
+      "source_text_sha256": "e6327693b64e164e8f8ad35e4fb6eb51cef5d807a288f7f70589994c772f3d99",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b404",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b404",
+      "question_text": "En relación las manifestaciones extraintestinales (MEI) de la enfermedad inflamatoria intestinal (EII), señale la respuesta falsa:",
+      "option_a": "La uveítis posterior y la epiescleritis son las manifestaciones más frecuentes a nivel ocular.",
+      "option_b": "El eritema nodoso resistente puede precisar tratamiento con anti TNF.",
+      "option_c": "La patología broncopulmonar es una MEI rara en la EII, aunque se ha descrito neumonía intersticial asociada a la EII.",
+      "option_d": "El riesgo de tromboembolismo venoso se relaciona con la actividad de la EII.",
+      "correct_letter": "a",
+      "correct_option_text": "La uveítis posterior y la epiescleritis son las manifestaciones más frecuentes a nivel ocular.",
+      "source_text_sha256": "ca3c04171819b9b6fd73a94d7a35c632f46b1bca8837d6b9cb4c3590e77023e3",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 103,
+          "boundary_end": 104,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación las manifestaciones extraintestinales (MEI) de la enfermedad inflamatoria intestinal (EII),",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b404",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b404",
+      "question_text": "En relación las manifestaciones extraintestinales (MEI) de la enfermedad inflamatoria intestinal (EII), señale la respuesta falsa:",
+      "option_a": "La uveítis posterior y la epiescleritis son las manifestaciones más frecuentes a nivel ocular.",
+      "option_b": "El eritema nodoso resistente puede precisar tratamiento con anti TNF.",
+      "option_c": "La patología broncopulmonar es una MEI rara en la EII, aunque se ha descrito neumonía intersticial asociada a la EII.",
+      "option_d": "El riesgo de tromboembolismo venoso se relaciona con la actividad de la EII.",
+      "correct_letter": "a",
+      "correct_option_text": "La uveítis posterior y la epiescleritis son las manifestaciones más frecuentes a nivel ocular.",
+      "source_text_sha256": "ca3c04171819b9b6fd73a94d7a35c632f46b1bca8837d6b9cb4c3590e77023e3",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 103,
+          "boundary_end": 104,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación las manifestaciones extraintestinales (MEI) de la enfermedad inflamatoria intestinal (EII),",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b421",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b421",
+      "question_text": "La descripción por visión ecoendoscópica de una lesión hiperecoica, homogénea con márgenes regulares que surge de la submucosa (tercera capa del tracto gastrointestinal) se corresponde con toda probabilidad a un",
+      "option_a": "Quiste de duplicación",
+      "option_b": "Lipoma",
+      "option_c": "Tumor carcinoide",
+      "option_d": "Tumor del estroma gastrointestinal",
+      "correct_letter": "b",
+      "correct_option_text": "Lipoma",
+      "source_text_sha256": "8bc9a29a6d3601531f22a0ac3ea104ce86dab600d4f2a2bb02d5e7cb05d74d89",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b421",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b421",
+      "question_text": "La descripción por visión ecoendoscópica de una lesión hiperecoica, homogénea con márgenes regulares que surge de la submucosa (tercera capa del tracto gastrointestinal) se corresponde con toda probabilidad a un",
+      "option_a": "Quiste de duplicación",
+      "option_b": "Lipoma",
+      "option_c": "Tumor carcinoide",
+      "option_d": "Tumor del estroma gastrointestinal",
+      "correct_letter": "b",
+      "correct_option_text": "Lipoma",
+      "source_text_sha256": "8bc9a29a6d3601531f22a0ac3ea104ce86dab600d4f2a2bb02d5e7cb05d74d89",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b436",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b436",
+      "question_text": "El sistema de toma de muestras histológicas que integra la distribución topográfica y la intensidad de la metaplasia intestinal en una estadificación que permite definir el riesgo de padecer cáncer gástrico se llama",
+      "option_a": "OLGIM",
+      "option_b": "OLGA",
+      "option_c": "Sidney",
+      "option_d": "Kikuchi",
+      "correct_letter": "a",
+      "correct_option_text": "OLGIM",
+      "source_text_sha256": "54f336d696857ae2618e082aaa7d35740217aa6111bf0608de33922dda7c3670",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b436",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b436",
+      "question_text": "El sistema de toma de muestras histológicas que integra la distribución topográfica y la intensidad de la metaplasia intestinal en una estadificación que permite definir el riesgo de padecer cáncer gástrico se llama",
+      "option_a": "OLGIM",
+      "option_b": "OLGA",
+      "option_c": "Sidney",
+      "option_d": "Kikuchi",
+      "correct_letter": "a",
+      "correct_option_text": "OLGIM",
+      "source_text_sha256": "54f336d696857ae2618e082aaa7d35740217aa6111bf0608de33922dda7c3670",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b450",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b450",
+      "question_text": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?",
+      "option_a": "Cirrosis criptogenética",
+      "option_b": "Síndrome de Budd-Chiari",
+      "option_c": "Enfermedad vascular portosinusoidal",
+      "option_d": "Esquistosomiasis",
+      "correct_letter": "c",
+      "correct_option_text": "Enfermedad vascular portosinusoidal",
+      "source_text_sha256": "bd8b4c35dc43a625cec7e4f37cd87739c3a50dcb08efd7604bf9675bd7ac411b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 141,
+          "boundary_end": 142,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño;",
+          "right_context": "en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?"
+        },
+        {
+          "boundary_start": 214,
+          "boundary_end": 215,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal.",
+          "right_context": "El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?"
+        },
+        {
+          "boundary_start": 243,
+          "boundary_end": 244,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "nte de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal",
+          "right_context": "¿Cuál debe ser el primer diagnóstico de sospecha?"
+        }
+      ]
+    },
+    {
+      "question_id": "b450",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b450",
+      "question_text": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?",
+      "option_a": "Cirrosis criptogenética",
+      "option_b": "Síndrome de Budd-Chiari",
+      "option_c": "Enfermedad vascular portosinusoidal",
+      "option_d": "Esquistosomiasis",
+      "correct_letter": "c",
+      "correct_option_text": "Enfermedad vascular portosinusoidal",
+      "source_text_sha256": "bd8b4c35dc43a625cec7e4f37cd87739c3a50dcb08efd7604bf9675bd7ac411b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 141,
+          "boundary_end": 142,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño;",
+          "right_context": "en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?"
+        },
+        {
+          "boundary_start": 214,
+          "boundary_end": 215,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted asiste a un paciente de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal.",
+          "right_context": "El perfil hepático es normal ¿Cuál debe ser el primer diagnóstico de sospecha?"
+        },
+        {
+          "boundary_start": 243,
+          "boundary_end": 244,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "nte de 38 años con inmunodeficiencia común variable que consulta por un hallazgo de varices esofágicas de gran tamaño; en una ecografía doppler se aprecia permeabilidad del eje esplenoportal. El perfil hepático es normal",
+          "right_context": "¿Cuál debe ser el primer diagnóstico de sospecha?"
+        }
+      ]
+    },
+    {
+      "question_id": "b464",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b464",
+      "question_text": "En relación con las lesiones GI (gastrointestinales) en pacientes que toman AINE (antiinflamatorios no esteroideos), señale la opción FALSA:",
+      "option_a": "La presencia de antecedentes de úlcera péptica gastroduodenal, complicada o no complicada, es factor de riesgo para el desarrollo de complicaciones GI en pacientes que toman AINE.",
+      "option_b": "No se recomienda el uso de antagonistas H2 para la prevención de las complicaciones GI de los AINE.",
+      "option_c": "El uso de IBP asociado a un AINE no selectivo es una estrategia válida para la prevención de las complicaciones GI altas de los AINE, en pacientes de riesgo.",
+      "option_d": "El uso de un COXIB no reduce las complicaciones en el tracto GI alto.",
+      "correct_letter": "d",
+      "correct_option_text": "El uso de un COXIB no reduce las complicaciones en el tracto GI alto.",
+      "source_text_sha256": "9aeb3904bbb0cbd6ce46d944dec797a86aae52fbd8fbba6b37b56a89b5759f76",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 116,
+          "boundary_end": 117,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las lesiones GI (gastrointestinales) en pacientes que toman AINE (antiinflamatorios no esteroideos),",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b464",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b464",
+      "question_text": "En relación con las lesiones GI (gastrointestinales) en pacientes que toman AINE (antiinflamatorios no esteroideos), señale la opción FALSA:",
+      "option_a": "La presencia de antecedentes de úlcera péptica gastroduodenal, complicada o no complicada, es factor de riesgo para el desarrollo de complicaciones GI en pacientes que toman AINE.",
+      "option_b": "No se recomienda el uso de antagonistas H2 para la prevención de las complicaciones GI de los AINE.",
+      "option_c": "El uso de IBP asociado a un AINE no selectivo es una estrategia válida para la prevención de las complicaciones GI altas de los AINE, en pacientes de riesgo.",
+      "option_d": "El uso de un COXIB no reduce las complicaciones en el tracto GI alto.",
+      "correct_letter": "d",
+      "correct_option_text": "El uso de un COXIB no reduce las complicaciones en el tracto GI alto.",
+      "source_text_sha256": "9aeb3904bbb0cbd6ce46d944dec797a86aae52fbd8fbba6b37b56a89b5759f76",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 116,
+          "boundary_end": 117,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las lesiones GI (gastrointestinales) en pacientes que toman AINE (antiinflamatorios no esteroideos),",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b479",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b479",
+      "question_text": "En relación con la hepatitis alcohólica aguda, señale la errónea",
+      "option_a": "Los pacientes suelen haber presentado un consumo excesivo de alcohol un mínimo de 6 meses, con un período de abstinencia inferior a 2 meses antes del diagnóstico de hepatitis alcohólica aguda.",
+      "option_b": "Los hallazgos analíticos habituales ofrecen una Bilirrubina total > 3 mg/dl, AST/ALT > 1.5 y cifras de AST y ALT inferiores a 400 UI/ml.",
+      "option_c": "No es preciso descartar el cuadro de \"acute on chronic liver failure\" dada su escasa incidencia en este tipo de pacientes.",
+      "option_d": "Siempre en preciso descartar patología biliar, hepatitis virales, autoinmunes y E. Wilson mediante los test habituales diagnósticos.",
+      "correct_letter": "c",
+      "correct_option_text": "No es preciso descartar el cuadro de \"acute on chronic liver failure\" dada su escasa incidencia en este tipo de pacientes.",
+      "source_text_sha256": "a6a4c8046faa66784b0593e5faf4ada44c699ae5b1bbb4ede4f77ba7617cb261",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la hepatitis alcohólica aguda,",
+          "right_context": "señale la errónea"
+        }
+      ]
+    },
+    {
+      "question_id": "b479",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b479",
+      "question_text": "En relación con la hepatitis alcohólica aguda, señale la errónea",
+      "option_a": "Los pacientes suelen haber presentado un consumo excesivo de alcohol un mínimo de 6 meses, con un período de abstinencia inferior a 2 meses antes del diagnóstico de hepatitis alcohólica aguda.",
+      "option_b": "Los hallazgos analíticos habituales ofrecen una Bilirrubina total > 3 mg/dl, AST/ALT > 1.5 y cifras de AST y ALT inferiores a 400 UI/ml.",
+      "option_c": "No es preciso descartar el cuadro de \"acute on chronic liver failure\" dada su escasa incidencia en este tipo de pacientes.",
+      "option_d": "Siempre en preciso descartar patología biliar, hepatitis virales, autoinmunes y E. Wilson mediante los test habituales diagnósticos.",
+      "correct_letter": "c",
+      "correct_option_text": "No es preciso descartar el cuadro de \"acute on chronic liver failure\" dada su escasa incidencia en este tipo de pacientes.",
+      "source_text_sha256": "a6a4c8046faa66784b0593e5faf4ada44c699ae5b1bbb4ede4f77ba7617cb261",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la hepatitis alcohólica aguda,",
+          "right_context": "señale la errónea"
+        }
+      ]
+    },
+    {
+      "question_id": "b498",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b498",
+      "question_text": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021, ¿Cuál de los siguientes enunciados es falso?",
+      "option_a": "Ningún tratamiento adyuvante ha demostrado eficacia en la prevención de la recurrencia tras la cirugía del CHC.",
+      "option_b": "La resección quirúrgica está contraindicada en tumores mayores de 5 cm.",
+      "option_c": "La alfa fetoproteína elevada es un predictor de invasión microvascular y pobre diferenciación tumoral.",
+      "option_d": "Criterios como up to seven se consideran como referencia para expandir los criterios de trasplante hepático.",
+      "correct_letter": "b",
+      "correct_option_text": "La resección quirúrgica está contraindicada en tumores mayores de 5 cm.",
+      "source_text_sha256": "3e8107e55f52ffcb3a1c2af3352918fd9f9e3ae84623bba741da8299243d3b23",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 123,
+          "boundary_end": 124,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021,",
+          "right_context": "¿Cuál de los siguientes enunciados es falso?"
+        },
+        {
+          "boundary_start": 129,
+          "boundary_end": 130,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021, ¿Cuál",
+          "right_context": "de los siguientes enunciados es falso?"
+        }
+      ]
+    },
+    {
+      "question_id": "b498",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b498",
+      "question_text": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021, ¿Cuál de los siguientes enunciados es falso?",
+      "option_a": "Ningún tratamiento adyuvante ha demostrado eficacia en la prevención de la recurrencia tras la cirugía del CHC.",
+      "option_b": "La resección quirúrgica está contraindicada en tumores mayores de 5 cm.",
+      "option_c": "La alfa fetoproteína elevada es un predictor de invasión microvascular y pobre diferenciación tumoral.",
+      "option_d": "Criterios como up to seven se consideran como referencia para expandir los criterios de trasplante hepático.",
+      "correct_letter": "b",
+      "correct_option_text": "La resección quirúrgica está contraindicada en tumores mayores de 5 cm.",
+      "source_text_sha256": "3e8107e55f52ffcb3a1c2af3352918fd9f9e3ae84623bba741da8299243d3b23",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 123,
+          "boundary_end": 124,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021,",
+          "right_context": "¿Cuál de los siguientes enunciados es falso?"
+        },
+        {
+          "boundary_start": 129,
+          "boundary_end": 130,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las últimas guías españolas de diagnóstico y tratamiento del carcinoma hepatocelular (CHC) publicadas en 2021, ¿Cuál",
+          "right_context": "de los siguientes enunciados es falso?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+arm,model,required_cells,scored_cells,unresolved_cells,strict_correct,strict_accuracy_scored,coverage_fraction
+openrouter_A,google/gemini-3.6-flash,500,500,0,490,0.98000000,1.00000000
+openrouter_A,google/gemma-4-26b-a4b-it,500,500,0,393,0.78600000,1.00000000
+openrouter_A,qwen/qwen3.6-35b-a3b,500,500,0,438,0.87600000,1.00000000
+openrouter_A,z-ai/glm-5.2,500,498,2,463,0.92971888,0.99600000
+openrouter_B,google/gemini-3.6-flash,500,500,0,448,0.89600000,1.00000000
+openrouter_B,google/gemma-4-26b-a4b-it,500,500,0,275,0.55000000,1.00000000
+openrouter_B,qwen/qwen3.6-35b-a3b,500,500,0,359,0.71800000,1.00000000
+openrouter_B,z-ai/glm-5.2,500,500,0,386,0.77200000,1.00000000
+tailscale_A,google/gemini-3.6-flash,500,484,16,471,0.97314050,0.96800000
+tailscale_A,google/gemma-4-26b-a4b-it,500,484,16,403,0.83264463,0.96800000
+tailscale_A,qwen/qwen3.6-35b-a3b,500,484,16,433,0.89462810,0.96800000
+tailscale_A,z-ai/glm-5.2,500,480,20,458,0.95416667,0.96000000

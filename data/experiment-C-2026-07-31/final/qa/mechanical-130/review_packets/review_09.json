@@ -1,0 +1,1557 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_09",
+  "shard_id": "09",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b172",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRequisitos a cumplir en el programa de cribado de CCR. Señala la VERDADERA",
+      "option_a": "Una demora de 3 meses en la realización de las colonoscopias de cribado se considera adecuado",
+      "option_b": "Se recomienda que los endoscopistas que realizan las endoscopias de cribado cumplan unos criterios de calidad, como tener una adecuada tasa de detección de adenomas",
+      "option_c": "En Navarra los pacientes pueden elegir por test de sangre oculta en heces o por colonoscopia directa",
+      "option_d": "Los vídeo-colonoscopios que no tienen alta definición de imagen son aptos para este tipo de endoscopia.",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda que los endoscopistas que realizan las endoscopias de cribado cumplan unos criterios de calidad, como tener una adecuada tasa de detección de adenomas",
+      "source_text_sha256": "13a76c31d6702b7a0d864f718c2333cffdce943d014ef9741dd4c1a5209d9f84",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Requisitos a cumplir en el programa de cribado de CCR. Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 145,
+          "boundary_end": 146,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRequisitos a cumplir en el programa de cribado de CCR.",
+          "right_context": "Señala la VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b172",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRequisitos a cumplir en el programa de cribado de CCR. Señala la VERDADERA",
+      "option_a": "Una demora de 3 meses en la realización de las colonoscopias de cribado se considera adecuado",
+      "option_b": "Se recomienda que los endoscopistas que realizan las endoscopias de cribado cumplan unos criterios de calidad, como tener una adecuada tasa de detección de adenomas",
+      "option_c": "En Navarra los pacientes pueden elegir por test de sangre oculta en heces o por colonoscopia directa",
+      "option_d": "Los vídeo-colonoscopios que no tienen alta definición de imagen son aptos para este tipo de endoscopia.",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda que los endoscopistas que realizan las endoscopias de cribado cumplan unos criterios de calidad, como tener una adecuada tasa de detección de adenomas",
+      "source_text_sha256": "13a76c31d6702b7a0d864f718c2333cffdce943d014ef9741dd4c1a5209d9f84",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Requisitos a cumplir en el programa de cribado de CCR. Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 145,
+          "boundary_end": 146,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRequisitos a cumplir en el programa de cribado de CCR.",
+          "right_context": "Señala la VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b173",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRealizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm. Señala la respuesta FALSA:",
+      "option_a": "Nuestro informe debería describir la morfología básica del pólipo, utilizando la Clasificación de París o al menos nombrando si es plano, sésil o polipoide.",
+      "option_b": "Se debería realizar una correcta inspección del pólipo, incluyendo aspectos básicos del patrón de superficie que nos permitan conocer si el pólipo tiene un carácter o no invasivo",
+      "option_c": "Los pólipos de colon derecho, de este tamaño, aunque tengan aspecto benigno, deben ser enviados para resección por los endoscopistas más expertos de la unidad.",
+      "option_d": "Los endoscopistas del programa de cribado deben de estar capacitados para extirpar este tipo de pólipos, si no están localizados en zonas de excesiva complejidad",
+      "correct_letter": "c",
+      "correct_option_text": "Los pólipos de colon derecho, de este tamaño, aunque tengan aspecto benigno, deben ser enviados para resección por los endoscopistas más expertos de la unidad.",
+      "source_text_sha256": "6e00ec725ef28ddf79e3c4d73540e04f45b53be3138c05c73dfd93bd7f49cf91",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Realizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm. Señala la respuesta FALSA:"
+        },
+        {
+          "boundary_start": 208,
+          "boundary_end": 209,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRealizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm.",
+          "right_context": "Señala la respuesta FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b173",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRealizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm. Señala la respuesta FALSA:",
+      "option_a": "Nuestro informe debería describir la morfología básica del pólipo, utilizando la Clasificación de París o al menos nombrando si es plano, sésil o polipoide.",
+      "option_b": "Se debería realizar una correcta inspección del pólipo, incluyendo aspectos básicos del patrón de superficie que nos permitan conocer si el pólipo tiene un carácter o no invasivo",
+      "option_c": "Los pólipos de colon derecho, de este tamaño, aunque tengan aspecto benigno, deben ser enviados para resección por los endoscopistas más expertos de la unidad.",
+      "option_d": "Los endoscopistas del programa de cribado deben de estar capacitados para extirpar este tipo de pólipos, si no están localizados en zonas de excesiva complejidad",
+      "correct_letter": "c",
+      "correct_option_text": "Los pólipos de colon derecho, de este tamaño, aunque tengan aspecto benigno, deben ser enviados para resección por los endoscopistas más expertos de la unidad.",
+      "source_text_sha256": "6e00ec725ef28ddf79e3c4d73540e04f45b53be3138c05c73dfd93bd7f49cf91",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Realizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm. Señala la respuesta FALSA:"
+        },
+        {
+          "boundary_start": 208,
+          "boundary_end": 209,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nRealizando una de las colonoscopias encontramos un pólipo en el pliegue distal a la válvula íleocecal, de unos 15 mm.",
+          "right_context": "Señala la respuesta FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b174",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior. Señala la respuesta VERDADERA",
+      "option_a": "El informe describe que el pólipo se encontraba a 90cm del ano. Incluir en este informe la distancia en cm a la cual hemos encontrado el pólipo es muy útil, ya que será de gran ayuda para el endoscopista que realice la resección",
+      "option_b": "La morfología del pólipo indica alto poder de invasión submucosa e implica técnicas de resección en bloque como la disección endoscópica submucosa",
+      "option_c": "Como el endoscopista que realiza la exploración se considera competente en realizar la resección, decide realizar una resección bajo el agua, ya que la probabilidad de resecar esta lesión en bloque con esta técnica se acerca al 95%.",
+      "option_d": "El endoscopista considera adecuado indicar una resección fragmentada que se podría haber realizado en la primera colonoscopia o de forma diferida según la experiencia del mismo.",
+      "correct_letter": "d",
+      "correct_option_text": "El endoscopista considera adecuado indicar una resección fragmentada que se podría haber realizado en la primera colonoscopia o de forma diferida según la experiencia del mismo.",
+      "source_text_sha256": "7b81b931e78ad1be28e9b4cf71eb6ea395e00e26a34608b0730d0e197017230f",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior. Señala la respuesta VERDADERA"
+        },
+        {
+          "boundary_start": 249,
+          "boundary_end": 250,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "scopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior.",
+          "right_context": "Señala la respuesta VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b174",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior. Señala la respuesta VERDADERA",
+      "option_a": "El informe describe que el pólipo se encontraba a 90cm del ano. Incluir en este informe la distancia en cm a la cual hemos encontrado el pólipo es muy útil, ya que será de gran ayuda para el endoscopista que realice la resección",
+      "option_b": "La morfología del pólipo indica alto poder de invasión submucosa e implica técnicas de resección en bloque como la disección endoscópica submucosa",
+      "option_c": "Como el endoscopista que realiza la exploración se considera competente en realizar la resección, decide realizar una resección bajo el agua, ya que la probabilidad de resecar esta lesión en bloque con esta técnica se acerca al 95%.",
+      "option_d": "El endoscopista considera adecuado indicar una resección fragmentada que se podría haber realizado en la primera colonoscopia o de forma diferida según la experiencia del mismo.",
+      "correct_letter": "d",
+      "correct_option_text": "El endoscopista considera adecuado indicar una resección fragmentada que se podría haber realizado en la primera colonoscopia o de forma diferida según la experiencia del mismo.",
+      "source_text_sha256": "7b81b931e78ad1be28e9b4cf71eb6ea395e00e26a34608b0730d0e197017230f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior. Señala la respuesta VERDADERA"
+        },
+        {
+          "boundary_start": 249,
+          "boundary_end": 250,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "scopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn otra colonoscopia de cribado nos encontramos un pólipo plano granular homogéneo de 4 cm en el colon derecho que se decide derivar para resección posterior.",
+          "right_context": "Señala la respuesta VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b175",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA",
+      "option_a": "Se sabe que los pólipos con nódulos menores de 1cm y de tamaño similar, se llaman granulares mixtos",
+      "option_b": "Los pólipos planos elevados tienen un porcentaje estimado de invasividad menor del 5%",
+      "option_c": "Los pólipos no granulares se dividen en planos elevados y en pseudodeprimidos",
+      "option_d": "Los pólipos pseudodeprimidos tienen un porcentaje de invasividad del 10%",
+      "correct_letter": "c",
+      "correct_option_text": "Los pólipos no granulares se dividen en planos elevados y en pseudodeprimidos",
+      "source_text_sha256": "4d2b15d27a3b1947e4dbbb9bf4b65c7e659251992c3e7323dc60900ff8a4bac9",
+      "assignment": {
+        "variant_id": "BM08",
+        "fabricated_entity": "portalectina-Q5",
+        "inserted_sentence": "La portalectina-Q5 plasmática supera el límite superior de normalidad."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Según las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 145,
+          "boundary_end": 146,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos:",
+          "right_context": "la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 235,
+          "boundary_end": 236,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "a sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors).",
+          "right_context": "Señala la VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b175",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA",
+      "option_a": "Se sabe que los pólipos con nódulos menores de 1cm y de tamaño similar, se llaman granulares mixtos",
+      "option_b": "Los pólipos planos elevados tienen un porcentaje estimado de invasividad menor del 5%",
+      "option_c": "Los pólipos no granulares se dividen en planos elevados y en pseudodeprimidos",
+      "option_d": "Los pólipos pseudodeprimidos tienen un porcentaje de invasividad del 10%",
+      "correct_letter": "c",
+      "correct_option_text": "Los pólipos no granulares se dividen en planos elevados y en pseudodeprimidos",
+      "source_text_sha256": "4d2b15d27a3b1947e4dbbb9bf4b65c7e659251992c3e7323dc60900ff8a4bac9",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Según las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 145,
+          "boundary_end": 146,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos:",
+          "right_context": "la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors). Señala la VERDADERA"
+        },
+        {
+          "boundary_start": 235,
+          "boundary_end": 236,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "a sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nSegún las clasificaciones morfológicas de los pólipos: la clasificación de París y sobre todo la clasificación LST (laterally spreading tumors).",
+          "right_context": "Señala la VERDADERA"
+        }
+      ]
+    },
+    {
+      "question_id": "b176",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso. Describe la actitud CORRECTA",
+      "option_a": "Cogemos múltiples biopsias del pólipo, ya que tiene un patrón NICE II que nos indica invasividad",
+      "option_b": "Realizamos un tatuaje proximal y distal ya que tiene un patrón JNET IIa y probablemente necesite cirugía",
+      "option_c": "Presenta una zona central con patrón JNET IIb e indicamos una resección diferida en bloque",
+      "option_d": "Tiene un claro patrón JNET III, lo que es clara indicación de disección endoscópica submucosa",
+      "correct_letter": "c",
+      "correct_option_text": "Presenta una zona central con patrón JNET IIb e indicamos una resección diferida en bloque",
+      "source_text_sha256": "f8ac94c0f79d429d2d5759e6eee83981cab0956a2067b04f4ce76c53c328d000",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso. Describe la actitud CORRECTA"
+        },
+        {
+          "boundary_start": 191,
+          "boundary_end": 192,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso.",
+          "right_context": "Describe la actitud CORRECTA"
+        }
+      ]
+    },
+    {
+      "question_id": "b176",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso. Describe la actitud CORRECTA",
+      "option_a": "Cogemos múltiples biopsias del pólipo, ya que tiene un patrón NICE II que nos indica invasividad",
+      "option_b": "Realizamos un tatuaje proximal y distal ya que tiene un patrón JNET IIa y probablemente necesite cirugía",
+      "option_c": "Presenta una zona central con patrón JNET IIb e indicamos una resección diferida en bloque",
+      "option_d": "Tiene un claro patrón JNET III, lo que es clara indicación de disección endoscópica submucosa",
+      "correct_letter": "c",
+      "correct_option_text": "Presenta una zona central con patrón JNET IIb e indicamos una resección diferida en bloque",
+      "source_text_sha256": "f8ac94c0f79d429d2d5759e6eee83981cab0956a2067b04f4ce76c53c328d000",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso. Describe la actitud CORRECTA"
+        },
+        {
+          "boundary_start": 191,
+          "boundary_end": 192,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la siguiente colonoscopia nos encontramos un pólipo plano de 5 cm situado en el colon transverso.",
+          "right_context": "Describe la actitud CORRECTA"
+        }
+      ]
+    },
+    {
+      "question_id": "b177",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm, señale la respuesta CORRECTA:",
+      "option_a": "Siempre hay que hacer RMN y TC en este tipo de pólipos independientemente de su patrón óptico mucoso y de su morfología",
+      "option_b": "En el nódulo central podría existir un “covert cancer” o cáncer oculto, en un porcentaje significativo",
+      "option_c": "El patrón mucoso es de benignidad, lo que indica que puede realizar resección fragmentada e inclusión de todos los fragmentos en un solo bote de anatomía patológica.",
+      "option_d": "El patrón mucoso es un NICE I, lo que indica que con alta probabilidad se trate de un adenoma",
+      "correct_letter": "b",
+      "correct_option_text": "En el nódulo central podría existir un “covert cancer” o cáncer oculto, en un porcentaje significativo",
+      "source_text_sha256": "9860aeef63bda6e9d9cbeac53cc84706e13c8eac3766326d3f3402bc7292bd09",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm, señale la respuesta CORRECTA:"
+        },
+        {
+          "boundary_start": 229,
+          "boundary_end": 230,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "a en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm,",
+          "right_context": "señale la respuesta CORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b177",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-2",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm, señale la respuesta CORRECTA:",
+      "option_a": "Siempre hay que hacer RMN y TC en este tipo de pólipos independientemente de su patrón óptico mucoso y de su morfología",
+      "option_b": "En el nódulo central podría existir un “covert cancer” o cáncer oculto, en un porcentaje significativo",
+      "option_c": "El patrón mucoso es de benignidad, lo que indica que puede realizar resección fragmentada e inclusión de todos los fragmentos en un solo bote de anatomía patológica.",
+      "option_d": "El patrón mucoso es un NICE I, lo que indica que con alta probabilidad se trate de un adenoma",
+      "correct_letter": "b",
+      "correct_option_text": "En el nódulo central podría existir un “covert cancer” o cáncer oculto, en un porcentaje significativo",
+      "source_text_sha256": "9860aeef63bda6e9d9cbeac53cc84706e13c8eac3766326d3f3402bc7292bd09",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "En la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm, señale la respuesta CORRECTA:"
+        },
+        {
+          "boundary_start": 229,
+          "boundary_end": 230,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "a en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nEn la última colonoscopia de la mañana, vemos un pólipo de recto medio de unos 6 cm con un gran nódulo central de aproximadamente de 3 cm,",
+          "right_context": "señale la respuesta CORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b185",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "reserva-casos-clinicos",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?",
+      "option_a": "Ausencia de budding (nidos tumorales)",
+      "option_b": "Infiltración submucosa mayor de 2000 µ (2 mm)",
+      "option_c": "Ausencia de invasión linfática o vascular",
+      "option_d": "Pólipo pediculado con invasión Haggitt 2",
+      "correct_letter": "b",
+      "correct_option_text": "Infiltración submucosa mayor de 2000 µ (2 mm)",
+      "source_text_sha256": "5dbd97e186dc365410480dab92e3a3fa715fdbb836241fbc4cb0cb11cf73bab1",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Pregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 133,
+          "boundary_end": 134,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2:",
+          "right_context": "Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 254,
+          "boundary_end": 255,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "as en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma.",
+          "right_context": "¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 260,
+          "boundary_end": 261,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál",
+          "right_context": "de los siguientes es un criterio de mal pronóstico histológico?"
+        }
+      ]
+    },
+    {
+      "question_id": "b185",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "reserva-casos-clinicos",
+      "cluster": "navarra-2022-case-02",
+      "question_text": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?",
+      "option_a": "Ausencia de budding (nidos tumorales)",
+      "option_b": "Infiltración submucosa mayor de 2000 µ (2 mm)",
+      "option_c": "Ausencia de invasión linfática o vascular",
+      "option_d": "Pólipo pediculado con invasión Haggitt 2",
+      "correct_letter": "b",
+      "correct_option_text": "Infiltración submucosa mayor de 2000 µ (2 mm)",
+      "source_text_sha256": "5dbd97e186dc365410480dab92e3a3fa715fdbb836241fbc4cb0cb11cf73bab1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 89,
+          "boundary_end": 91,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):",
+          "right_context": "Pregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 133,
+          "boundary_end": 134,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mañana en la sala de endoscopias en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2:",
+          "right_context": "Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 254,
+          "boundary_end": 255,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "as en la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma.",
+          "right_context": "¿Cuál de los siguientes es un criterio de mal pronóstico histológico?"
+        },
+        {
+          "boundary_start": 260,
+          "boundary_end": 261,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "la agenda de cribado de cáncer colorrectal (CCR):\n\nPregunta de reserva Caso Clínico número 2: Transcurridos 15 días recibimos el informe histológico de uno de los pólipos resecados, con resultado de adenocarcinoma. ¿Cuál",
+          "right_context": "de los siguientes es un criterio de mal pronóstico histológico?"
+        }
+      ]
+    },
+    {
+      "question_id": "b252",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b252",
+      "question_text": "Señale cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:",
+      "option_a": "El uso de propofol por personal de enfermería entrenado es equiparable en seguridad a los sedantes tradicionales si se hace en las condiciones de monitorización y vigilancia adecuadas",
+      "option_b": "La utilización de propofol por personal de endoscopias en pacientes ASA III es posible y segura cuando se realiza en unidades de endoscopia con experiencia en el uso del mismo",
+      "option_c": "La dosificación del propofol debe individualizarse de acuerdo a la respuesta y condiciones basales del paciente",
+      "option_d": "La administración de midazolam previa al propofol permite reducir sus dosis y disminuir los efectos adversos, especialmente la hipotensión en cardiópatas o en situaciones de hipovolemia, porque disminuye el tiempo de recuperación",
+      "correct_letter": "d",
+      "correct_option_text": "La administración de midazolam previa al propofol permite reducir sus dosis y disminuir los efectos adversos, especialmente la hipotensión en cardiópatas o en situaciones de hipovolemia, porque disminuye el tiempo de recuperación",
+      "source_text_sha256": "190eb13eb8cdc419bcc4e7c52151a2690addc2a582b1b34d1e7cf843000863c5",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:"
+        },
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál de estas afirmaciones NO es cierta",
+          "right_context": "respecto al uso de propofol en exploraciones endoscópicas:"
+        }
+      ]
+    },
+    {
+      "question_id": "b252",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b252",
+      "question_text": "Señale cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:",
+      "option_a": "El uso de propofol por personal de enfermería entrenado es equiparable en seguridad a los sedantes tradicionales si se hace en las condiciones de monitorización y vigilancia adecuadas",
+      "option_b": "La utilización de propofol por personal de endoscopias en pacientes ASA III es posible y segura cuando se realiza en unidades de endoscopia con experiencia en el uso del mismo",
+      "option_c": "La dosificación del propofol debe individualizarse de acuerdo a la respuesta y condiciones basales del paciente",
+      "option_d": "La administración de midazolam previa al propofol permite reducir sus dosis y disminuir los efectos adversos, especialmente la hipotensión en cardiópatas o en situaciones de hipovolemia, porque disminuye el tiempo de recuperación",
+      "correct_letter": "d",
+      "correct_option_text": "La administración de midazolam previa al propofol permite reducir sus dosis y disminuir los efectos adversos, especialmente la hipotensión en cardiópatas o en situaciones de hipovolemia, porque disminuye el tiempo de recuperación",
+      "source_text_sha256": "190eb13eb8cdc419bcc4e7c52151a2690addc2a582b1b34d1e7cf843000863c5",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de estas afirmaciones NO es cierta respecto al uso de propofol en exploraciones endoscópicas:"
+        },
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál de estas afirmaciones NO es cierta",
+          "right_context": "respecto al uso de propofol en exploraciones endoscópicas:"
+        }
+      ]
+    },
+    {
+      "question_id": "b267",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b267",
+      "question_text": "Indique la respuesta falsa respecto a la litotricia mecánica biliar.",
+      "option_a": "Fue descrita por primera vez en la década de 1980.",
+      "option_b": "Es imprescindible la visión directa de la litiasis mediante colangioscopia para poder practicarla.",
+      "option_c": "La mayoría de los dispositivos son rígidos y de cierta dificultad de manejo.",
+      "option_d": "Es la modalidad de litotricia más económica.",
+      "correct_letter": "b",
+      "correct_option_text": "Es imprescindible la visión directa de la litiasis mediante colangioscopia para poder practicarla.",
+      "source_text_sha256": "fd57cf795ba7cc90f7ac424ca46f0331a5b30eb1114d013ee46622ef1204e709",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 26,
+          "boundary_end": 27,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique la respuesta falsa",
+          "right_context": "respecto a la litotricia mecánica biliar."
+        }
+      ]
+    },
+    {
+      "question_id": "b267",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b267",
+      "question_text": "Indique la respuesta falsa respecto a la litotricia mecánica biliar.",
+      "option_a": "Fue descrita por primera vez en la década de 1980.",
+      "option_b": "Es imprescindible la visión directa de la litiasis mediante colangioscopia para poder practicarla.",
+      "option_c": "La mayoría de los dispositivos son rígidos y de cierta dificultad de manejo.",
+      "option_d": "Es la modalidad de litotricia más económica.",
+      "correct_letter": "b",
+      "correct_option_text": "Es imprescindible la visión directa de la litiasis mediante colangioscopia para poder practicarla.",
+      "source_text_sha256": "fd57cf795ba7cc90f7ac424ca46f0331a5b30eb1114d013ee46622ef1204e709",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 26,
+          "boundary_end": 27,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique la respuesta falsa",
+          "right_context": "respecto a la litotricia mecánica biliar."
+        }
+      ]
+    },
+    {
+      "question_id": "b281",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b281",
+      "question_text": "En el diagnóstico de una isquemia mesentérica aguda (IMA) es falso que:",
+      "option_a": "El dímero D >0,9 mg/L puede guiar el diagnóstico, aunque no es específico.",
+      "option_b": "Ante un dolor abdominal grave sin una exploración reveladora, es obligado descartar una IMA en primera instancia.",
+      "option_c": "La historia clínica ayuda a diferenciar entre los diferentes tipos de IMA (trombosis o embolia arterial, trombosis venosa o isquemia no oclusiva).",
+      "option_d": "La angiografía percutánea es la técnica inicial indicada para realizar el diagnóstico precoz de IMA.",
+      "correct_letter": "d",
+      "correct_option_text": "La angiografía percutánea es la técnica inicial indicada para realizar el diagnóstico precoz de IMA.",
+      "source_text_sha256": "626acc9c639e2beff66f51030a0d3f35290c27fdd17c5b97574f70af8cd5c144",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b281",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b281",
+      "question_text": "En el diagnóstico de una isquemia mesentérica aguda (IMA) es falso que:",
+      "option_a": "El dímero D >0,9 mg/L puede guiar el diagnóstico, aunque no es específico.",
+      "option_b": "Ante un dolor abdominal grave sin una exploración reveladora, es obligado descartar una IMA en primera instancia.",
+      "option_c": "La historia clínica ayuda a diferenciar entre los diferentes tipos de IMA (trombosis o embolia arterial, trombosis venosa o isquemia no oclusiva).",
+      "option_d": "La angiografía percutánea es la técnica inicial indicada para realizar el diagnóstico precoz de IMA.",
+      "correct_letter": "d",
+      "correct_option_text": "La angiografía percutánea es la técnica inicial indicada para realizar el diagnóstico precoz de IMA.",
+      "source_text_sha256": "626acc9c639e2beff66f51030a0d3f35290c27fdd17c5b97574f70af8cd5c144",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b297",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b297",
+      "question_text": "En un paciente diagnosticado de hemocromatosis, homocigoto C282Y, el objetivo del tratamiento con sangrías sería:",
+      "option_a": "Disminuir la saturación de transferrina por debajo del 45%.",
+      "option_b": "Mantener la hemoglobina entre 12 y 13 g/dL.",
+      "option_c": "Conseguir unas cifras de ferritina sérica por debajo de 50 ng/mL.",
+      "option_d": "Conseguir cifras de hierro sérico por debajo de 100 microgramos por decilitro.",
+      "correct_letter": "c",
+      "correct_option_text": "Conseguir unas cifras de ferritina sérica por debajo de 50 ng/mL.",
+      "source_text_sha256": "005f90b4e5c9c2644c3fbab49a38dddef6d47d4bb398ab22a523754bea5b94a4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b297",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b297",
+      "question_text": "En un paciente diagnosticado de hemocromatosis, homocigoto C282Y, el objetivo del tratamiento con sangrías sería:",
+      "option_a": "Disminuir la saturación de transferrina por debajo del 45%.",
+      "option_b": "Mantener la hemoglobina entre 12 y 13 g/dL.",
+      "option_c": "Conseguir unas cifras de ferritina sérica por debajo de 50 ng/mL.",
+      "option_d": "Conseguir cifras de hierro sérico por debajo de 100 microgramos por decilitro.",
+      "correct_letter": "c",
+      "correct_option_text": "Conseguir unas cifras de ferritina sérica por debajo de 50 ng/mL.",
+      "source_text_sha256": "005f90b4e5c9c2644c3fbab49a38dddef6d47d4bb398ab22a523754bea5b94a4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b310",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b310",
+      "question_text": "Es falso respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas",
+      "option_a": "No se requiere confirmación diagnóstica en tumoración pancreática sospechosa resecable",
+      "option_b": "Se debe realizar en paciente con masa pancreática resecable con sospecha de otra enfermedad, tumor borderline previo a neoadyuvancia y en tumor irresecable en el que se plante tratamiento activo",
+      "option_c": "La ultrasonografía endoscópica con punción de la lesión es la técnica de elección para obtención de tejido pancreático siendo la biopsia percutánea de preferencia en paciente con metástasis hepáticas",
+      "option_d": "La sensibilidad de la punción por ecoendoscopia es muy alta por lo que una citología negativa descarta malignidad",
+      "correct_letter": "d",
+      "correct_option_text": "La sensibilidad de la punción por ecoendoscopia es muy alta por lo que una citología negativa descarta malignidad",
+      "source_text_sha256": "4d6319dd2cc3e6f61335d84caba4027d1f64a7461476206cdf05bc259d6d67cd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 8,
+          "boundary_end": 9,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Es falso",
+          "right_context": "respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas"
+        }
+      ]
+    },
+    {
+      "question_id": "b310",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b310",
+      "question_text": "Es falso respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas",
+      "option_a": "No se requiere confirmación diagnóstica en tumoración pancreática sospechosa resecable",
+      "option_b": "Se debe realizar en paciente con masa pancreática resecable con sospecha de otra enfermedad, tumor borderline previo a neoadyuvancia y en tumor irresecable en el que se plante tratamiento activo",
+      "option_c": "La ultrasonografía endoscópica con punción de la lesión es la técnica de elección para obtención de tejido pancreático siendo la biopsia percutánea de preferencia en paciente con metástasis hepáticas",
+      "option_d": "La sensibilidad de la punción por ecoendoscopia es muy alta por lo que una citología negativa descarta malignidad",
+      "correct_letter": "d",
+      "correct_option_text": "La sensibilidad de la punción por ecoendoscopia es muy alta por lo que una citología negativa descarta malignidad",
+      "source_text_sha256": "4d6319dd2cc3e6f61335d84caba4027d1f64a7461476206cdf05bc259d6d67cd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 8,
+          "boundary_end": 9,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Es falso",
+          "right_context": "respecto al diagnóstico citohistológico de confirmación en cáncer de páncreas"
+        }
+      ]
+    },
+    {
+      "question_id": "b323",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b323",
+      "question_text": "Sobre la colitis microscópica, señale la afirmación INCORRECTA:",
+      "option_a": "El uso concomitante de IBP y AINE aumenta el riesgo de presentar colitis microscópica.",
+      "option_b": "La colitis microscópica se ha asociado a enfermedades autoinmunes como la tiroiditis autoinmune, diabetes mellitus tipo 1 y artritis oligoarticular no erosiva.",
+      "option_c": "Se recomienda tomar al menos 3 biopsias de ascendente y 3 de descendente para el diagnóstico anatomopatológico de CM y la diferenciación entre colitis colágena y colitis linfocítica.",
+      "option_d": "Los cambios histológicos detectados en la colitis colágena son más marcados en colon izquierdo (descendente y rectosigma).",
+      "correct_letter": "d",
+      "correct_option_text": "Los cambios histológicos detectados en la colitis colágena son más marcados en colon izquierdo (descendente y rectosigma).",
+      "source_text_sha256": "835be7bc29a5de89752249b8f9cb3c03bd000c04406131a1fdc18a5f2b7f38c0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Sobre la colitis microscópica,",
+          "right_context": "señale la afirmación INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b323",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b323",
+      "question_text": "Sobre la colitis microscópica, señale la afirmación INCORRECTA:",
+      "option_a": "El uso concomitante de IBP y AINE aumenta el riesgo de presentar colitis microscópica.",
+      "option_b": "La colitis microscópica se ha asociado a enfermedades autoinmunes como la tiroiditis autoinmune, diabetes mellitus tipo 1 y artritis oligoarticular no erosiva.",
+      "option_c": "Se recomienda tomar al menos 3 biopsias de ascendente y 3 de descendente para el diagnóstico anatomopatológico de CM y la diferenciación entre colitis colágena y colitis linfocítica.",
+      "option_d": "Los cambios histológicos detectados en la colitis colágena son más marcados en colon izquierdo (descendente y rectosigma).",
+      "correct_letter": "d",
+      "correct_option_text": "Los cambios histológicos detectados en la colitis colágena son más marcados en colon izquierdo (descendente y rectosigma).",
+      "source_text_sha256": "835be7bc29a5de89752249b8f9cb3c03bd000c04406131a1fdc18a5f2b7f38c0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Sobre la colitis microscópica,",
+          "right_context": "señale la afirmación INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b339",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b339",
+      "question_text": "En relación con el diagnóstico de la infección por Helicobacter Pylori (Hp), señale la opción FALSA:",
+      "option_a": "El test de aliento es el método no invasivo más investigado y recomendado en el contexto de una estrategia de test-and-treat.",
+      "option_b": "El test de antígeno fecal para Hp no está recomendado para el contexto de una estrategia de test-and-treat.",
+      "option_c": "Los IBP deben suspenderse al menos dos semanas antes de las pruebas para la infección por Hp.",
+      "option_d": "El test de ureasa rápido no se recomienda como prueba para la evaluación de la erradicación de Hp después del tratamiento. El test de aliento es la mejor opción para confirmar la erradicación de Hp y el test de antígeno fecal es una alternativa.",
+      "correct_letter": "b",
+      "correct_option_text": "El test de antígeno fecal para Hp no está recomendado para el contexto de una estrategia de test-and-treat.",
+      "source_text_sha256": "b6029726fd71b3d424e1d173f9f1ab4db7bb68eee2a1e4918a635db6ff16a5b0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 76,
+          "boundary_end": 77,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con el diagnóstico de la infección por Helicobacter Pylori (Hp),",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b339",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b339",
+      "question_text": "En relación con el diagnóstico de la infección por Helicobacter Pylori (Hp), señale la opción FALSA:",
+      "option_a": "El test de aliento es el método no invasivo más investigado y recomendado en el contexto de una estrategia de test-and-treat.",
+      "option_b": "El test de antígeno fecal para Hp no está recomendado para el contexto de una estrategia de test-and-treat.",
+      "option_c": "Los IBP deben suspenderse al menos dos semanas antes de las pruebas para la infección por Hp.",
+      "option_d": "El test de ureasa rápido no se recomienda como prueba para la evaluación de la erradicación de Hp después del tratamiento. El test de aliento es la mejor opción para confirmar la erradicación de Hp y el test de antígeno fecal es una alternativa.",
+      "correct_letter": "b",
+      "correct_option_text": "El test de antígeno fecal para Hp no está recomendado para el contexto de una estrategia de test-and-treat.",
+      "source_text_sha256": "b6029726fd71b3d424e1d173f9f1ab4db7bb68eee2a1e4918a635db6ff16a5b0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 76,
+          "boundary_end": 77,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con el diagnóstico de la infección por Helicobacter Pylori (Hp),",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b355",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b355",
+      "question_text": "En relación al carcinoma hepatocelular, señale la respuesta falsa:",
+      "option_a": "La determinación de AFP no es útil para el diagnóstico del carcinoma hepatocelular.",
+      "option_b": "Respecto a la radioembolización transarterial (TARE) no existe evidencia científica para recomendar esta opción terapéutica en pacientes con carcinoma hepatocelular avanzado.",
+      "option_c": "En los estudios publicados se ha mostrado que la RM con contraste órgano-específica no ofreció mayor sensibilidad ni precisión diagnóstica respecto a la RM con contraste extracelular.",
+      "option_d": "En el tratamiento de segunda línea del carcinoma hepatocelular, ramucirumab mejora la supervivencia en pacientes que presentan un valor de AFP mayor o igual 200ng/mL.",
+      "correct_letter": "d",
+      "correct_option_text": "En el tratamiento de segunda línea del carcinoma hepatocelular, ramucirumab mejora la supervivencia en pacientes que presentan un valor de AFP mayor o igual 200ng/mL.",
+      "source_text_sha256": "298dc88a82203906dbc4509db5ce47d312a5616abede0689ea13c0d7a4420474",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 39,
+          "boundary_end": 40,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al carcinoma hepatocelular,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b355",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b355",
+      "question_text": "En relación al carcinoma hepatocelular, señale la respuesta falsa:",
+      "option_a": "La determinación de AFP no es útil para el diagnóstico del carcinoma hepatocelular.",
+      "option_b": "Respecto a la radioembolización transarterial (TARE) no existe evidencia científica para recomendar esta opción terapéutica en pacientes con carcinoma hepatocelular avanzado.",
+      "option_c": "En los estudios publicados se ha mostrado que la RM con contraste órgano-específica no ofreció mayor sensibilidad ni precisión diagnóstica respecto a la RM con contraste extracelular.",
+      "option_d": "En el tratamiento de segunda línea del carcinoma hepatocelular, ramucirumab mejora la supervivencia en pacientes que presentan un valor de AFP mayor o igual 200ng/mL.",
+      "correct_letter": "d",
+      "correct_option_text": "En el tratamiento de segunda línea del carcinoma hepatocelular, ramucirumab mejora la supervivencia en pacientes que presentan un valor de AFP mayor o igual 200ng/mL.",
+      "source_text_sha256": "298dc88a82203906dbc4509db5ce47d312a5616abede0689ea13c0d7a4420474",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 39,
+          "boundary_end": 40,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al carcinoma hepatocelular,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b368",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b368",
+      "question_text": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una de las siguientes aseveraciones es falsa",
+      "option_a": "Presentan estroma de tipo ovárico en su interior.",
+      "option_b": "Presentan niveles elevados de amilasa en su interior.",
+      "option_c": "Se localizan en cuerpo y cola del páncreas en el 95% de los casos.",
+      "option_d": "Son más frecuentes en mujeres.",
+      "correct_letter": "b",
+      "correct_option_text": "Presentan niveles elevados de amilasa en su interior.",
+      "source_text_sha256": "0526f58d2567e9caf237710f30cd90f0aeb678dbc6fe3594055dca0564102add",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 84,
+          "boundary_end": 85,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una",
+          "right_context": "de las siguientes aseveraciones es falsa"
+        }
+      ]
+    },
+    {
+      "question_id": "b368",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b368",
+      "question_text": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una de las siguientes aseveraciones es falsa",
+      "option_a": "Presentan estroma de tipo ovárico en su interior.",
+      "option_b": "Presentan niveles elevados de amilasa en su interior.",
+      "option_c": "Se localizan en cuerpo y cola del páncreas en el 95% de los casos.",
+      "option_d": "Son más frecuentes en mujeres.",
+      "correct_letter": "b",
+      "correct_option_text": "Presentan niveles elevados de amilasa en su interior.",
+      "source_text_sha256": "0526f58d2567e9caf237710f30cd90f0aeb678dbc6fe3594055dca0564102add",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 84,
+          "boundary_end": 85,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con el diagnóstico de las neoplasias quísticas mucinosas de páncreas una",
+          "right_context": "de las siguientes aseveraciones es falsa"
+        }
+      ]
+    },
+    {
+      "question_id": "b383",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b383",
+      "question_text": "Según la guía ECCO señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:",
+      "option_a": "La BUDESONIDA oral produce inmunosupresión sistémica en las dosis de 6 y 9 mg, pero no en la de 3 mg.",
+      "option_b": "VEDOLIZUMAB produce inmunosupresión sistémica.",
+      "option_c": "Las dosis bajas de AZATIOPRINA (por ejemplo 1 mg/kg/día) pueden considerarse baja inmunosupresión.",
+      "option_d": "Los AMINOSALICILATOS no producen inmunosupresión sistémica.",
+      "correct_letter": "b",
+      "correct_option_text": "VEDOLIZUMAB produce inmunosupresión sistémica.",
+      "source_text_sha256": "a16cfe49f750314f90e6bb8617048a78cbf6d7108645be4de3f38e866404263b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 18,
+          "boundary_end": 19,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía ECCO",
+          "right_context": "señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+        },
+        {
+          "boundary_start": 44,
+          "boundary_end": 45,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía ECCO señala la respuesta falsa",
+          "right_context": "respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+        }
+      ]
+    },
+    {
+      "question_id": "b383",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b383",
+      "question_text": "Según la guía ECCO señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:",
+      "option_a": "La BUDESONIDA oral produce inmunosupresión sistémica en las dosis de 6 y 9 mg, pero no en la de 3 mg.",
+      "option_b": "VEDOLIZUMAB produce inmunosupresión sistémica.",
+      "option_c": "Las dosis bajas de AZATIOPRINA (por ejemplo 1 mg/kg/día) pueden considerarse baja inmunosupresión.",
+      "option_d": "Los AMINOSALICILATOS no producen inmunosupresión sistémica.",
+      "correct_letter": "b",
+      "correct_option_text": "VEDOLIZUMAB produce inmunosupresión sistémica.",
+      "source_text_sha256": "a16cfe49f750314f90e6bb8617048a78cbf6d7108645be4de3f38e866404263b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 18,
+          "boundary_end": 19,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía ECCO",
+          "right_context": "señala la respuesta falsa respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+        },
+        {
+          "boundary_start": 44,
+          "boundary_end": 45,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía ECCO señala la respuesta falsa",
+          "right_context": "respecto al grado de inmunosupresión de los diferentes agentes terapéuticos:"
+        }
+      ]
+    },
+    {
+      "question_id": "b398",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b398",
+      "question_text": "Cuál es la recomendación de ECCO sobre el uso de tiopurinas (azatioprina, mercaptopurina) como monoterapia en la enfermedad de Crohn?",
+      "option_a": "Recomendado ante la corticodependencia",
+      "option_b": "Recomendado solo en combinación con biológicos",
+      "option_c": "No recomendado como monoterapia",
+      "option_d": "Recomendado solo en pacientes jovenes",
+      "correct_letter": "c",
+      "correct_option_text": "No recomendado como monoterapia",
+      "source_text_sha256": "f26b13cbcf785506e78bccede67f1eb690257af120aec064592bd5bb3c83905a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b398",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b398",
+      "question_text": "Cuál es la recomendación de ECCO sobre el uso de tiopurinas (azatioprina, mercaptopurina) como monoterapia en la enfermedad de Crohn?",
+      "option_a": "Recomendado ante la corticodependencia",
+      "option_b": "Recomendado solo en combinación con biológicos",
+      "option_c": "No recomendado como monoterapia",
+      "option_d": "Recomendado solo en pacientes jovenes",
+      "correct_letter": "c",
+      "correct_option_text": "No recomendado como monoterapia",
+      "source_text_sha256": "f26b13cbcf785506e78bccede67f1eb690257af120aec064592bd5bb3c83905a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b417",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b417",
+      "question_text": "Si un paciente acude a urgencias por presentar un sangrado bajo autolimitado y sin características clínicas adversas, se recomienda que podría ser dado de alta con manejo ambulatorio posterior, cuando la puntuación Oakland sea:",
+      "option_a": "≥ 10 puntos.",
+      "option_b": "≤ 8 puntos.",
+      "option_c": "≤ 9 puntos.",
+      "option_d": "≤ 10 puntos.",
+      "correct_letter": "b",
+      "correct_option_text": "≤ 8 puntos.",
+      "source_text_sha256": "b58d04c5ec3115465f57cf188c2eefa603c17fe9ea8f71e73a41f41979e730ff",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b417",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b417",
+      "question_text": "Si un paciente acude a urgencias por presentar un sangrado bajo autolimitado y sin características clínicas adversas, se recomienda que podría ser dado de alta con manejo ambulatorio posterior, cuando la puntuación Oakland sea:",
+      "option_a": "≥ 10 puntos.",
+      "option_b": "≤ 8 puntos.",
+      "option_c": "≤ 9 puntos.",
+      "option_d": "≤ 10 puntos.",
+      "correct_letter": "b",
+      "correct_option_text": "≤ 8 puntos.",
+      "source_text_sha256": "b58d04c5ec3115465f57cf188c2eefa603c17fe9ea8f71e73a41f41979e730ff",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b431",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b431",
+      "question_text": "De las siguientes afirmaciones según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria, ¿qué factor se considera de mal pronóstico?:",
+      "option_a": "Sexo femenino",
+      "option_b": "Enfermedad de ducto pequeño",
+      "option_c": "Ictericia",
+      "option_d": "Edad más joven al diagnóstico",
+      "correct_letter": "c",
+      "correct_option_text": "Ictericia",
+      "source_text_sha256": "01db26c191099732962077eaaa32ebec30988e5dd63d8738430b00e99cc6ff4f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes afirmaciones",
+          "right_context": "según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria, ¿qué factor se considera de mal pronóstico?:"
+        },
+        {
+          "boundary_start": 160,
+          "boundary_end": 161,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes afirmaciones según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria,",
+          "right_context": "¿qué factor se considera de mal pronóstico?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b431",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b431",
+      "question_text": "De las siguientes afirmaciones según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria, ¿qué factor se considera de mal pronóstico?:",
+      "option_a": "Sexo femenino",
+      "option_b": "Enfermedad de ducto pequeño",
+      "option_c": "Ictericia",
+      "option_d": "Edad más joven al diagnóstico",
+      "correct_letter": "c",
+      "correct_option_text": "Ictericia",
+      "source_text_sha256": "01db26c191099732962077eaaa32ebec30988e5dd63d8738430b00e99cc6ff4f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes afirmaciones",
+          "right_context": "según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria, ¿qué factor se considera de mal pronóstico?:"
+        },
+        {
+          "boundary_start": 160,
+          "boundary_end": 161,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes afirmaciones según la guía EASL 2022 (European Association for the Study of the Liver) sobre el manejo de la colangitis esclerosante primaria,",
+          "right_context": "¿qué factor se considera de mal pronóstico?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b446",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b446",
+      "question_text": "¿Qué parámetros incluye la escala de Rockall?",
+      "option_a": "Edad, frecuencia cardiaca, hemoglobina, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_b": "Edad, frecuencia cardiaca, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_c": "Edad, hemoglobina, urea, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_d": "Edad, presión arterial media, comorbilidad, forma de presentación, estigmas endoscópicos de hemorragia reciente",
+      "correct_letter": "b",
+      "correct_option_text": "Edad, frecuencia cardiaca, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "source_text_sha256": "b51932680c9a2e590c1e72e83c86369bc7d6a74251b72cd69df79afb06f52793",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b446",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b446",
+      "question_text": "¿Qué parámetros incluye la escala de Rockall?",
+      "option_a": "Edad, frecuencia cardiaca, hemoglobina, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_b": "Edad, frecuencia cardiaca, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_c": "Edad, hemoglobina, urea, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "option_d": "Edad, presión arterial media, comorbilidad, forma de presentación, estigmas endoscópicos de hemorragia reciente",
+      "correct_letter": "b",
+      "correct_option_text": "Edad, frecuencia cardiaca, presión arterial sistólica, comorbilidad, diagnóstico, estigmas endoscópicos de hemorragia reciente",
+      "source_text_sha256": "b51932680c9a2e590c1e72e83c86369bc7d6a74251b72cd69df79afb06f52793",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b475",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b475",
+      "question_text": "Señale la respuesta INCORRECTA con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:",
+      "option_a": "Se ha relacionado con tumores de piel no melanocíticos, de tracto urinario y linfomas.",
+      "option_b": "La determinación previa de la actividad de la tiopurina metiltransferasa (TPMT) no es imprescindible, pero permite mayor seguridad inicial.",
+      "option_c": "En caso de pacientes HBsAg positivos con carga viral VHB indetectable se recomienda seguimiento estrecho sin necesidad de tratamiento antiviral.",
+      "option_d": "Se recomienda evitar su uso en pacientes con serología negativa para virus Epstein Barr (VEB",
+      "correct_letter": "c",
+      "correct_option_text": "En caso de pacientes HBsAg positivos con carga viral VHB indetectable se recomienda seguimiento estrecho sin necesidad de tratamiento antiviral.",
+      "source_text_sha256": "ac786b12a0ea363dc3dd6cf6d1e37bf8a9ea197a6f6e35c2477a78e551bb1e1a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta INCORRECTA",
+          "right_context": "con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+        },
+        {
+          "boundary_start": 34,
+          "boundary_end": 35,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta INCORRECTA con",
+          "right_context": "respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+        }
+      ]
+    },
+    {
+      "question_id": "b475",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b475",
+      "question_text": "Señale la respuesta INCORRECTA con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:",
+      "option_a": "Se ha relacionado con tumores de piel no melanocíticos, de tracto urinario y linfomas.",
+      "option_b": "La determinación previa de la actividad de la tiopurina metiltransferasa (TPMT) no es imprescindible, pero permite mayor seguridad inicial.",
+      "option_c": "En caso de pacientes HBsAg positivos con carga viral VHB indetectable se recomienda seguimiento estrecho sin necesidad de tratamiento antiviral.",
+      "option_d": "Se recomienda evitar su uso en pacientes con serología negativa para virus Epstein Barr (VEB",
+      "correct_letter": "c",
+      "correct_option_text": "En caso de pacientes HBsAg positivos con carga viral VHB indetectable se recomienda seguimiento estrecho sin necesidad de tratamiento antiviral.",
+      "source_text_sha256": "ac786b12a0ea363dc3dd6cf6d1e37bf8a9ea197a6f6e35c2477a78e551bb1e1a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta INCORRECTA",
+          "right_context": "con respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+        },
+        {
+          "boundary_start": 34,
+          "boundary_end": 35,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta INCORRECTA con",
+          "right_context": "respecto al uso de azatioprina en la enfermedad inflamatoria intestinal:"
+        }
+      ]
+    },
+    {
+      "question_id": "b492",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b492",
+      "question_text": "La determinación de la Gamma Glutamil Transpeptidasa:",
+      "option_a": "Tiene alta sensibilidad y baja especificidad para indicar alteración hepática.",
+      "option_b": "Aumenta en el embarazo.",
+      "option_c": "Tiene alta especificidad y baja sensibilidad para enfermedad hepática.",
+      "option_d": "Disminuye si se toma fenitoína.",
+      "correct_letter": "a",
+      "correct_option_text": "Tiene alta sensibilidad y baja especificidad para indicar alteración hepática.",
+      "source_text_sha256": "9de71942af37ae0a04fdd4903ab22e322329dac74a88de90b895d854107e3d23",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b492",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b492",
+      "question_text": "La determinación de la Gamma Glutamil Transpeptidasa:",
+      "option_a": "Tiene alta sensibilidad y baja especificidad para indicar alteración hepática.",
+      "option_b": "Aumenta en el embarazo.",
+      "option_c": "Tiene alta especificidad y baja sensibilidad para enfermedad hepática.",
+      "option_d": "Disminuye si se toma fenitoína.",
+      "correct_letter": "a",
+      "correct_option_text": "Tiene alta sensibilidad y baja especificidad para indicar alteración hepática.",
+      "source_text_sha256": "9de71942af37ae0a04fdd4903ab22e322329dac74a88de90b895d854107e3d23",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    }
+  ]
+}

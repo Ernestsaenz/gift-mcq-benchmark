@@ -1,0 +1,154 @@
+{
+  "protocol_version": "ab520-gapfill-v1",
+  "created_at_utc": "2026-08-03T23:34:10+00:00",
+  "scope": {
+    "arms": [
+      "openrouter_A",
+      "openrouter_B",
+      "tailscale_A"
+    ],
+    "excluded": [
+      "tailscale_B"
+    ],
+    "required_cells": 6000,
+    "july_reused": 3487,
+    "august_gapfill_required": 2513
+  },
+  "models": [
+    "google/gemini-3.6-flash",
+    "google/gemma-4-26b-a4b-it",
+    "qwen/qwen3.6-35b-a3b",
+    "z-ai/glm-5.2"
+  ],
+  "counts": {
+    "existing_by_arm": {
+      "openrouter_A": 1271,
+      "openrouter_B": 1272,
+      "tailscale_A": 944
+    },
+    "missing_by_arm": {
+      "openrouter_A": 729,
+      "openrouter_B": 728,
+      "tailscale_A": 1056
+    },
+    "total_by_arm": {
+      "openrouter_A": 2000,
+      "openrouter_B": 2000,
+      "tailscale_A": 2000
+    }
+  },
+  "source_inputs": {
+    "data/experiment-4-aug-26/flat-A.xlsx": {
+      "sha256": "9376f7e6a55c0584501766e5d5ac16cbf720cefcf5733e9e52903c73eede936a"
+    },
+    "data/experiment-4-aug-26/flat-B.xlsx": {
+      "sha256": "c6b3f88442df6020b5d2c9d551d7f168f0dc0deea2427febcf30191a446e301a"
+    },
+    "data/experiment-4-aug-26/new-182-flat-A.xlsx": {
+      "sha256": "15ec1375c161bd7570ab0d287ea63e4d5109180b34f97644e5dd0a9dc4643657"
+    },
+    "data/experiment-4-aug-26/new-182-flat-B.xlsx": {
+      "sha256": "310dd91ca4d19df36184899be1e8e0b3af475b3a412b702eb5f4940d9b1c7e36"
+    },
+    "data/experiment-4-aug-26/inputs/retained_318_ids.json": {
+      "sha256": "7df7afea8fb38cbc930a4d899d5d6626232b1fcd79e9be6addaed332ec2b48f6"
+    },
+    "data/experiment-31-07-26/experiment.sqlite": {
+      "sha256": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748"
+    }
+  },
+  "sparse_inputs": {
+    "openrouter_A_retained_gap": {
+      "model": "z-ai/glm-5.2",
+      "rows": 1,
+      "workbook": "ab520-output/inputs/openrouter-A-retained-gap-b320-glm.xlsx",
+      "sha256": "9a15f4b2393ea38029c8008aa1001845da827eb66cefc75f4fc557ab1c3295c4"
+    },
+    "tailscale_A_retained_gaps": {
+      "google/gemini-3.6-flash": {
+        "rows": 76,
+        "workbook": "ab520-output/inputs/tailscale-A-retained-gaps-google-gemini-3.6-flash.xlsx",
+        "sha256": "e1b7788235e0b56f12f10bad178c98aaa5f5ade41e43303b5cb5789e41ba0c4a"
+      },
+      "google/gemma-4-26b-a4b-it": {
+        "rows": 76,
+        "workbook": "ab520-output/inputs/tailscale-A-retained-gaps-google-gemma-4-26b-a4b-it.xlsx",
+        "sha256": "5cab17caa83ac2162ab1734ba1893f7db4f3463fbe79b0fb943ce5157618cbb3"
+      },
+      "qwen/qwen3.6-35b-a3b": {
+        "rows": 79,
+        "workbook": "ab520-output/inputs/tailscale-A-retained-gaps-qwen-qwen3.6-35b-a3b.xlsx",
+        "sha256": "7967f0730dbc35de33434a33447a9a27b2fe82b5883ece3d1a7d3fb11d8fef6a"
+      },
+      "z-ai/glm-5.2": {
+        "rows": 97,
+        "workbook": "ab520-output/inputs/tailscale-A-retained-gaps-z-ai-glm-5.2.xlsx",
+        "sha256": "99280e2eaf40fa223000f2274172521505fdafcc36b7bff7592708fd758fb9cd"
+      }
+    },
+    "tailscale_A_new182_split": {
+      "pilot": {
+        "workbook": "ab520-output/inputs/tailscale-A-new182-pilot-n001.xlsx",
+        "rows": 1
+      },
+      "remaining": {
+        "workbook": "ab520-output/inputs/tailscale-A-new182-remaining181.xlsx",
+        "rows": 181
+      }
+    },
+    "tailscale_A_new182_execution_split": {
+      "pilot_n001": {
+        "rows": 1,
+        "cells": 4,
+        "concurrency": 1,
+        "workbook": "ab520-output/inputs/tailscale-A-new182-pilot-n001.xlsx"
+      },
+      "ramp_n002_n006": {
+        "rows": 5,
+        "cells": 20,
+        "concurrency": 5,
+        "workbook": "ab520-output/inputs/tailscale-A-new182-ramp5-n002-n006.xlsx"
+      },
+      "rest_n007_n182": {
+        "rows": 176,
+        "cells": 704,
+        "concurrency": 10,
+        "workbook": "ab520-output/inputs/tailscale-A-new182-rest176-n007-n182.xlsx"
+      }
+    }
+  },
+  "execution_contract": {
+    "runs": 1,
+    "temperature": 0,
+    "top_p": 1.0,
+    "stream": false,
+    "prompt_version": "mcq_es_v4",
+    "tailscale_prompt_id": 13,
+    "tailscale_top_k": null,
+    "max_tokens": null,
+    "seed": null,
+    "conversation_id": null,
+    "openrouter_concurrency": 18,
+    "tailscale_initial_concurrency": 10,
+    "resume_key": [
+      "experiment",
+      "question_id",
+      "provider",
+      "model",
+      "run_index",
+      "prompt_version"
+    ]
+  },
+  "tailscale_deployment_evidence": {
+    "repository": "carneiran/handmade-gift",
+    "merge_commit": "29af9a4f1581f6ffc1921a44d96a2a2cbe36a84e",
+    "pull_request": 94,
+    "github_actions_run_id": 30629235833,
+    "deployment_conclusion": "success",
+    "backend_container_recreated": true,
+    "live_health_status": "healthy"
+  },
+  "security": {
+    "secrets_written_to_outputs": false
+  }
+}

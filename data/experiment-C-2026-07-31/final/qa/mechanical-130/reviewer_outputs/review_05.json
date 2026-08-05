@@ -1,0 +1,183 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_05",
+  "shard_id": "05",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b34",
+      "arm": "BM",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The biomarker sentence attaches to the described patient and fits at the paragraph break immediately before the final directive without contradicting any stated finding."
+    },
+    {
+      "question_id": "b34",
+      "arm": "AN",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The examination finding has an unambiguous patient anchor and reads naturally at the narrative-to-directive boundary; the source gives no conflicting examination finding."
+    },
+    {
+      "question_id": "b40",
+      "arm": "BM",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The sentence can be inserted mechanically at the final paragraph break and clearly refers to the case patient; it is not explicitly contradicted, though a new biomarker carries high semantic risk in a treatment question."
+    },
+    {
+      "question_id": "b40",
+      "arm": "AN",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The examination finding attaches to the case patient and fits directly before the treatment directive without source edits or an explicit contradiction; treatment relevance makes the semantic risk high."
+    },
+    {
+      "question_id": "b41",
+      "arm": "BM",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The fabricated biomarker is grammatically and referentially anchored to the patient at the final narrative seam, with no explicit conflict in the source; possible relevance to a case-linked resection question creates moderate risk."
+    },
+    {
+      "question_id": "b41",
+      "arm": "AN",
+      "reviewer_id": "review_05",
+      "verdict": "PASS",
+      "offered_boundary": {
+        "boundary_start": 1303,
+        "boundary_end": 1305,
+        "separator_repr": "'\\n\\n'"
+      },
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The finding has a clear case-patient referent and fits at the final narrative-to-question seam without contradicting the source; its possible relevance to resection strategy gives moderate semantic risk."
+    },
+    {
+      "question_id": "b488",
+      "arm": "BM",
+      "reviewer_id": "review_05",
+      "verdict": "FAIL",
+      "offered_boundary": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_CLINICAL_NARRATIVE"
+      ],
+      "rationale": "The source is a standalone topic prompt with no patient or clinical narrative, so the serum result has no referent and no acceptable patient-to-question seam."
+    },
+    {
+      "question_id": "b488",
+      "arm": "AN",
+      "reviewer_id": "review_05",
+      "verdict": "FAIL",
+      "offered_boundary": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL"
+      },
+      "explicit_contradiction": "NONE",
+      "risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_CLINICAL_NARRATIVE"
+      ],
+      "rationale": "The source contains only a general topic statement and question; without a patient or clinical narrative, the examination finding is unanchored and no valid seam can be offered."
+    }
+  ]
+}

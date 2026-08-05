@@ -1,0 +1,551 @@
+{
+  "protocol": {
+    "analysis_date": "2026-08-04",
+    "input_csv": "ab520-gapfill-2026-08-04/exports/benchmark-6000-cell-results.csv",
+    "input_sha256": "c5c27c6f58ccff23365044fe1e11d4a29cfce34d2a3818681f4b12e48163685b",
+    "bootstrap_repetitions": 100000,
+    "bootstrap_base_seed": 20260804,
+    "bootstrap_seed_derivation": "base seed + integer from first 8 hex digits of SHA-256(contrast label)",
+    "alpha": 0.05,
+    "outcome": "strict_correct",
+    "pairing_key": [
+      "source_key",
+      "model"
+    ],
+    "cluster_key": "source_key",
+    "multiplicity": "Holm correction across six user-requested exploratory taxonomy contrasts"
+  },
+  "dataset": {
+    "required_cells": 6000,
+    "scored_cells": 5930,
+    "unresolved_cells": 70,
+    "questions": 500,
+    "models": 4,
+    "failure_classes": {
+      "tailscale_http500_correlated_overlength_exact_input": 64,
+      "tailscale_glm_server_error_150s_after_retries": 4,
+      "openrouter_glm_length_no_parse_after_retries": 2
+    }
+  },
+  "arm_summaries": [
+    {
+      "arm": "OpenRouter A",
+      "provider": "openrouter",
+      "condition": "A",
+      "required": 2000,
+      "scored": 1998,
+      "correct": 1784,
+      "missing": 2,
+      "accuracy": 0.8928928928928929,
+      "wilson_ci": [
+        0.8785710149820798,
+        0.9057068772966141
+      ],
+      "coverage": 0.999
+    },
+    {
+      "arm": "OpenRouter B",
+      "provider": "openrouter",
+      "condition": "B",
+      "required": 2000,
+      "scored": 2000,
+      "correct": 1468,
+      "missing": 0,
+      "accuracy": 0.734,
+      "wilson_ci": [
+        0.7141995838511511,
+        0.7529032380212225
+      ],
+      "coverage": 1.0
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "provider": "tailscale_medical_rag",
+      "condition": "A",
+      "required": 2000,
+      "scored": 1932,
+      "correct": 1765,
+      "missing": 68,
+      "accuracy": 0.9135610766045549,
+      "wilson_ci": [
+        0.9001954898225306,
+        0.9252853328547015
+      ],
+      "coverage": 0.966
+    }
+  ],
+  "model_summaries": [
+    {
+      "arm": "OpenRouter A",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 490,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.98,
+      "wilson_ci": [
+        0.9635798167531208,
+        0.9891008164037892
+      ],
+      "complete_question_n_for_omnibus": 498,
+      "cochran_q": 135.05466970387243,
+      "cochran_q_df": 3,
+      "cochran_q_p": 4.401763228052879e-29
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 393,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.786,
+      "wilson_ci": [
+        0.7479418772435874,
+        0.8196970000124048
+      ],
+      "complete_question_n_for_omnibus": 498,
+      "cochran_q": 135.05466970387243,
+      "cochran_q_df": 3,
+      "cochran_q_p": 4.401763228052879e-29
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 438,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.876,
+      "wilson_ci": [
+        0.8442125871122163,
+        0.9020539088606966
+      ],
+      "complete_question_n_for_omnibus": 498,
+      "cochran_q": 135.05466970387243,
+      "cochran_q_df": 3,
+      "cochran_q_p": 4.401763228052879e-29
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 463,
+      "scored": 498,
+      "missing": 2,
+      "accuracy": 0.929718875502008,
+      "wilson_ci": [
+        0.9038243468705954,
+        0.9490346437073883
+      ],
+      "complete_question_n_for_omnibus": 498,
+      "cochran_q": 135.05466970387243,
+      "cochran_q_df": 3,
+      "cochran_q_p": 4.401763228052879e-29
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 448,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.896,
+      "wilson_ci": [
+        0.8661557291243417,
+        0.919805793230109
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 204.1850220264317,
+      "cochran_q_df": 3,
+      "cochran_q_p": 5.258348694202052e-44
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 275,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.55,
+      "wilson_ci": [
+        0.5061772177351765,
+        0.5930603482186684
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 204.1850220264317,
+      "cochran_q_df": 3,
+      "cochran_q_p": 5.258348694202052e-44
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 359,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.718,
+      "wilson_ci": [
+        0.6770122207860065,
+        0.7556635667727567
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 204.1850220264317,
+      "cochran_q_df": 3,
+      "cochran_q_p": 5.258348694202052e-44
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 386,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.772,
+      "wilson_ci": [
+        0.7332341279039163,
+        0.8066182308849994
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 204.1850220264317,
+      "cochran_q_df": 3,
+      "cochran_q_p": 5.258348694202052e-44
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 471,
+      "scored": 484,
+      "missing": 16,
+      "accuracy": 0.9731404958677686,
+      "wilson_ci": [
+        0.9545924350746038,
+        0.9842371615471497
+      ],
+      "complete_question_n_for_omnibus": 480,
+      "cochran_q": 92.2695652173913,
+      "cochran_q_df": 3,
+      "cochran_q_p": 7.128864444606862e-20
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 403,
+      "scored": 484,
+      "missing": 16,
+      "accuracy": 0.8326446280991735,
+      "wilson_ci": [
+        0.79679665653048,
+        0.8632538458979142
+      ],
+      "complete_question_n_for_omnibus": 480,
+      "cochran_q": 92.2695652173913,
+      "cochran_q_df": 3,
+      "cochran_q_p": 7.128864444606862e-20
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 433,
+      "scored": 484,
+      "missing": 16,
+      "accuracy": 0.8946280991735537,
+      "wilson_ci": [
+        0.8640986507506894,
+        0.9189426285277162
+      ],
+      "complete_question_n_for_omnibus": 480,
+      "cochran_q": 92.2695652173913,
+      "cochran_q_df": 3,
+      "cochran_q_p": 7.128864444606862e-20
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 458,
+      "scored": 480,
+      "missing": 20,
+      "accuracy": 0.9541666666666667,
+      "wilson_ci": [
+        0.9315814156129903,
+        0.9695402060493991
+      ],
+      "complete_question_n_for_omnibus": 480,
+      "cochran_q": 92.2695652173913,
+      "cochran_q_df": 3,
+      "cochran_q_p": 7.128864444606862e-20
+    }
+  ],
+  "per_model_ab": [
+    {
+      "model": "Gemini",
+      "n_pairs": 500,
+      "a_accuracy": 0.98,
+      "b_accuracy": 0.896,
+      "difference": -0.084,
+      "difference_ci": [
+        -0.112,
+        -0.058
+      ],
+      "a_only": 46,
+      "b_only": 4,
+      "mcnemar_exact_p": 4.461782054931973e-10
+    },
+    {
+      "model": "Gemma",
+      "n_pairs": 500,
+      "a_accuracy": 0.786,
+      "b_accuracy": 0.55,
+      "difference": -0.236,
+      "difference_ci": [
+        -0.282,
+        -0.188
+      ],
+      "a_only": 145,
+      "b_only": 27,
+      "mcnemar_exact_p": 9.962498248584976e-21
+    },
+    {
+      "model": "Qwen",
+      "n_pairs": 500,
+      "a_accuracy": 0.876,
+      "b_accuracy": 0.718,
+      "difference": -0.158,
+      "difference_ci": [
+        -0.2,
+        -0.118
+      ],
+      "a_only": 101,
+      "b_only": 22,
+      "mcnemar_exact_p": 2.7383052309526836e-13
+    },
+    {
+      "model": "GLM",
+      "n_pairs": 498,
+      "a_accuracy": 0.929718875502008,
+      "b_accuracy": 0.7730923694779116,
+      "difference": -0.1566265060240964,
+      "difference_ci": [
+        -0.19477911646586346,
+        -0.12048192771084337
+      ],
+      "a_only": 90,
+      "b_only": 12,
+      "mcnemar_exact_p": 6.125402762201369e-16
+    }
+  ],
+  "openrouter_a_vs_b": {
+    "label": "OpenRouter B minus A",
+    "baseline_name": "OpenRouter A",
+    "comparator_name": "OpenRouter B",
+    "n_pairs": 1998,
+    "n_questions": 500,
+    "baseline_correct": 1784,
+    "comparator_correct": 1467,
+    "baseline_accuracy": 0.8928928928928929,
+    "comparator_accuracy": 0.7342342342342343,
+    "risk_difference": -0.15865865865865866,
+    "risk_difference_ci": [
+      -0.1827741612418628,
+      -0.13470205307961944
+    ],
+    "both_wrong": 149,
+    "baseline_only": 382,
+    "comparator_only": 65,
+    "both_correct": 1402,
+    "mcnemar_exact_p": 1.1193505694000283e-55,
+    "matched_odds_ratio": 0.17015706806282724,
+    "matched_odds_ratio_ci": [
+      0.130809582351946,
+      0.2213402664480481
+    ],
+    "shapiro_w": 0.8492663521730064,
+    "shapiro_p": 1.9075776113237038e-21,
+    "wilcoxon_w": 10093.5,
+    "wilcoxon_p": 1.9200454024849072e-34
+  },
+  "openrouter_a_vs_gift_a": {
+    "label": "GIFT / RAG A minus OpenRouter A",
+    "baseline_name": "OpenRouter A",
+    "comparator_name": "GIFT / RAG A",
+    "n_pairs": 1930,
+    "n_questions": 484,
+    "baseline_correct": 1722,
+    "comparator_correct": 1765,
+    "baseline_accuracy": 0.8922279792746114,
+    "comparator_accuracy": 0.9145077720207254,
+    "risk_difference": 0.02227979274611399,
+    "risk_difference_ci": [
+      0.008808290155440414,
+      0.03582554517133956
+    ],
+    "both_wrong": 113,
+    "baseline_only": 52,
+    "comparator_only": 95,
+    "both_correct": 1670,
+    "mcnemar_exact_p": 0.0004896357481684591,
+    "matched_odds_ratio": 1.8269230769230769,
+    "matched_odds_ratio_ci": [
+      1.3028164606554191,
+      2.561871168955743
+    ],
+    "shapiro_w": 0.6340500694789932,
+    "shapiro_p": 8.079372900143299e-31,
+    "wilcoxon_w": 15439.0,
+    "wilcoxon_p": 0.001406279441427556
+  },
+  "closed_open": [
+    {
+      "arm": "OpenRouter A",
+      "n_questions": 498,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.9799196787148594,
+      "right_accuracy": 0.8654618473895582,
+      "difference": 0.11445783132530121,
+      "difference_ci": [
+        0.0923694779116466,
+        0.13721552878179386
+      ],
+      "shapiro_w": 0.6358029719537094,
+      "shapiro_p": 3.8029416901593167e-31,
+      "wilcoxon_w": 2901.0,
+      "p_raw": 2.973965640712669e-25,
+      "p_holm": 1.1895862562850677e-24
+    },
+    {
+      "arm": "OpenRouter B",
+      "n_questions": 500,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.896,
+      "right_accuracy": 0.68,
+      "difference": 0.21600000000000003,
+      "difference_ci": [
+        0.18400000000000002,
+        0.24800000000000003
+      ],
+      "shapiro_w": 0.8832474964151077,
+      "shapiro_p": 5.547250138452993e-19,
+      "wilcoxon_w": 10539.0,
+      "p_raw": 1.7670097504834439e-37,
+      "p_holm": 1.0602058502900664e-36
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "n_questions": 480,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.9729166666666667,
+      "right_accuracy": 0.8958333333333334,
+      "difference": 0.07708333333333334,
+      "difference_ci": [
+        0.058333333333333334,
+        0.0965277777777778
+      ],
+      "shapiro_w": 0.5891215508712877,
+      "shapiro_p": 4.064711421385786e-32,
+      "wilcoxon_w": 3519.0,
+      "p_raw": 1.4969826537165457e-18,
+      "p_holm": 2.9939653074330914e-18
+    }
+  ],
+  "capacity": [
+    {
+      "arm": "OpenRouter A",
+      "n_questions": 498,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.9548192771084337,
+      "right_accuracy": 0.8333333333333334,
+      "difference": 0.1214859437751004,
+      "difference_ci": [
+        0.0963855421686747,
+        0.1465863453815261
+      ],
+      "shapiro_w": 0.6218966197967964,
+      "shapiro_p": 1.3285339004476865e-31,
+      "wilcoxon_w": 5112.0,
+      "p_raw": 7.683323618457577e-19,
+      "p_holm": 2.304997085537273e-18
+    },
+    {
+      "arm": "OpenRouter B",
+      "n_questions": 500,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.834,
+      "right_accuracy": 0.634,
+      "difference": 0.2,
+      "difference_ci": [
+        0.166,
+        0.234
+      ],
+      "shapiro_w": 0.8369641803537357,
+      "shapiro_p": 3.0999464772339576e-22,
+      "wilcoxon_w": 13529.5,
+      "p_raw": 1.9168699250427377e-26,
+      "p_holm": 9.584349625213689e-26
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "n_questions": 480,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.9635416666666666,
+      "right_accuracy": 0.8666666666666667,
+      "difference": 0.096875,
+      "difference_ci": [
+        0.075,
+        0.11979166666666667
+      ],
+      "shapiro_w": 0.5828943631261645,
+      "shapiro_p": 2.651193424729993e-32,
+      "wilcoxon_w": 3908.0,
+      "p_raw": 1.803929079454896e-16,
+      "p_holm": 1.803929079454896e-16
+    }
+  ],
+  "missing_data_sensitivity": {
+    "gift_a_accuracy_if_all_missing_wrong": 0.8825,
+    "gift_a_accuracy_if_all_missing_correct": 0.9165,
+    "openrouter_a_accuracy_if_all_missing_wrong": 0.892,
+    "openrouter_a_accuracy_if_all_missing_correct": 0.893,
+    "gift_minus_openrouter_extreme_bounds": [
+      -0.010500000000000065,
+      0.024499999999999966
+    ]
+  },
+  "coverage_context": {
+    "gift_a_unresolved": 68,
+    "openrouter_a_unresolved": 2,
+    "overlength_failures": 64,
+    "overlength_questions": 16
+  },
+  "taxonomy": {
+    "access": {
+      "proprietary_api": [
+        "Gemini"
+      ],
+      "open_weight": [
+        "Gemma",
+        "Qwen",
+        "GLM"
+      ]
+    },
+    "capacity_user_defined_exploratory": {
+      "high_capacity": [
+        "Gemini",
+        "GLM"
+      ],
+      "low_active_parameter": [
+        "Gemma",
+        "Qwen"
+      ]
+    }
+  }
+}

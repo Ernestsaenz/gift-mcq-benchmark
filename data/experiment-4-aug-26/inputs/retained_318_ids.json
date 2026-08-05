@@ -1,0 +1,2864 @@
+[
+ {
+  "question_id": "b2",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b4",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b5",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b6",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b7",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b9",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b11",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b12",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b13",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b21",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b22",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-1",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b24",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b25",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b26",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b27",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b28",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b29",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b30",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b31",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b32",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b33",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b35",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b36",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b37",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b38",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b39",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b42",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b43",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b44",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b45",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b46",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b47",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b48",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b49",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b50",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b51",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b52",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b54",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b55",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b56",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b57",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b59",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b61",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b64",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b65",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b66",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b68",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b69",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-3",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b71",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b73",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b76",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b77",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b78",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b79",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b81",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b82",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b83",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b85",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b86",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b87",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b88",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b89",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b90",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b92",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b93",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-4",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b95",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b98",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b99",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b101",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b104",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b106",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b107",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b110",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b111",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b112",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b113",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b114",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b115",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b116",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-5",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b121",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b122",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b123",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b124",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b125",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b131",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b132",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b133",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b134",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b136",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b137",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b141",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-6",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b142",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b143",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b147",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b148",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b151",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b153",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b154",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b155",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b156",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b157",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b158",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b159",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b160",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b161",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b163",
+  "source_key": null,
+  "region": "Illes Balears",
+  "year": 2022,
+  "exam_part": "caso-7",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b166",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-1",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b167",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-1",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b168",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-1",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b170",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-1",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b171",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-1",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b172",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b173",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b174",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b175",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b176",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b177",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-2",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b179",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b180",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b181",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b182",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b183",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "caso-clinico-3",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b184",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "reserva-casos-clinicos",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b185",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "reserva-casos-clinicos",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b186",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "reserva-casos-clinicos",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b190",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b192",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b193",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b194",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b196",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b198",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b199",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b200",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b201",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b203",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b206",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b207",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b208",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b209",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b210",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b211",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b212",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b215",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b217",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b218",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b221",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b222",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b223",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b224",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b226",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b227",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b229",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b232",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b233",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b234",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b235",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b237",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b240",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b243",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b244",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b246",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b247",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b248",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b250",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b252",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b254",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b256",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b260",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b261",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b262",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b264",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b265",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b266",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b267",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b268",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b270",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b271",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b272",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b273",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b274",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b276",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b277",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b279",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b281",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b282",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b283",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b284",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b285",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b286",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b287",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b294",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b295",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b296",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b297",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b299",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b300",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b301",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b304",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b306",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b307",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b309",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b310",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b311",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b313",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b314",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b317",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b318",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b319",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b320",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b321",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b322",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b323",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b325",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b326",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b327",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b329",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b330",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b332",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b333",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b334",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b335",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b336",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b338",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b339",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b344",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b345",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b346",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b348",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b349",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b353",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b354",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b355",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b357",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b358",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b359",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b360",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b362",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b363",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b364",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b366",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b367",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b368",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b370",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b371",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b372",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b373",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b374",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b375",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b376",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b379",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b381",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b383",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b384",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b386",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b387",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b388",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b390",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b392",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b393",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main-47-80",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b395",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b400",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b403",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b405",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b411",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b413",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b414",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b415",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b416",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b417",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b418",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b421",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b422",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b423",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b425",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b427",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "reserva-teorico-practica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b431",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b432",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b434",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b435",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b440",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b441",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b442",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b443",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-teorico",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b444",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b446",
+  "source_key": null,
+  "region": "Navarra",
+  "year": 2022,
+  "exam_part": "teorico-practica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b447",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b449",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2024,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b450",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b455",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b456",
+  "source_key": null,
+  "region": "Comunitat Valenciana",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b457",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b459",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b460",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b462",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2022,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b464",
+  "source_key": null,
+  "region": "Región de Murcia",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b467",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b469",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b470",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b471",
+  "source_key": null,
+  "region": "Comunidad de Madrid",
+  "year": 2021,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b472",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b473",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b474",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b475",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b478",
+  "source_key": null,
+  "region": "La Rioja",
+  "year": 2021,
+  "exam_part": "reserva",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b479",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b480",
+  "source_key": null,
+  "region": "Castilla y León",
+  "year": 2019,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b481",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "d",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b483",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b484",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2022,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b485",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2017,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b486",
+  "source_key": null,
+  "region": "Galicia",
+  "year": 2016,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b487",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b489",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2017,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b490",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "main",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b493",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b494",
+  "source_key": null,
+  "region": "Andalucía",
+  "year": 2021,
+  "exam_part": "cuestionario-practico",
+  "correct_letter": "c",
+  "negated_stem": false
+ },
+ {
+  "question_id": "b498",
+  "source_key": null,
+  "region": "Castilla-La Mancha",
+  "year": 2022,
+  "exam_part": "main",
+  "correct_letter": "b",
+  "negated_stem": true
+ },
+ {
+  "question_id": "b499",
+  "source_key": null,
+  "region": "Aragón",
+  "year": 2020,
+  "exam_part": "reserva-especifica",
+  "correct_letter": "b",
+  "negated_stem": true
+ }
+]

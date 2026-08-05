@@ -1,0 +1,1385 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_17",
+  "shard_id": "17",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b188",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b188",
+      "question_text": "En una hepatitis aguda, de los síntomas abajo indicados ¿Cuál de ellos aconsejaría el ingreso del/la paciente?",
+      "option_a": "Ascitis",
+      "option_b": "Datos de encefalopatía",
+      "option_c": "Síntomas de hipoglucemia",
+      "option_d": "Todos los anteriores",
+      "correct_letter": "d",
+      "correct_option_text": "Todos los anteriores",
+      "source_text_sha256": "b9f445ec65d20e58c7a2fab036a3730142d2b91a1407bbd633ac9d4a268e70b8",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una hepatitis aguda, de los síntomas abajo",
+          "right_context": "indicados ¿Cuál de ellos aconsejaría el ingreso del/la paciente?"
+        },
+        {
+          "boundary_start": 55,
+          "boundary_end": 56,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una hepatitis aguda, de los síntomas abajo indicados",
+          "right_context": "¿Cuál de ellos aconsejaría el ingreso del/la paciente?"
+        }
+      ]
+    },
+    {
+      "question_id": "b188",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b188",
+      "question_text": "En una hepatitis aguda, de los síntomas abajo indicados ¿Cuál de ellos aconsejaría el ingreso del/la paciente?",
+      "option_a": "Ascitis",
+      "option_b": "Datos de encefalopatía",
+      "option_c": "Síntomas de hipoglucemia",
+      "option_d": "Todos los anteriores",
+      "correct_letter": "d",
+      "correct_option_text": "Todos los anteriores",
+      "source_text_sha256": "b9f445ec65d20e58c7a2fab036a3730142d2b91a1407bbd633ac9d4a268e70b8",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una hepatitis aguda, de los síntomas abajo",
+          "right_context": "indicados ¿Cuál de ellos aconsejaría el ingreso del/la paciente?"
+        },
+        {
+          "boundary_start": 55,
+          "boundary_end": 56,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una hepatitis aguda, de los síntomas abajo indicados",
+          "right_context": "¿Cuál de ellos aconsejaría el ingreso del/la paciente?"
+        }
+      ]
+    },
+    {
+      "question_id": "b198",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b198",
+      "question_text": "En los gráficos de cajas (box-plot, box and whisker plot), ¿Qué representa la línea horizontal que está dentro de la caja?",
+      "option_a": "La moda",
+      "option_b": "Cuartil 2",
+      "option_c": "El rango",
+      "option_d": "Desviación estándar",
+      "correct_letter": "b",
+      "correct_option_text": "Cuartil 2",
+      "source_text_sha256": "598f6b2b26fe16358286a2ff05c7375fba67e8c7d85c18e1edbdbf769fbb0a9c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 58,
+          "boundary_end": 59,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En los gráficos de cajas (box-plot, box and whisker plot),",
+          "right_context": "¿Qué representa la línea horizontal que está dentro de la caja?"
+        }
+      ]
+    },
+    {
+      "question_id": "b198",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b198",
+      "question_text": "En los gráficos de cajas (box-plot, box and whisker plot), ¿Qué representa la línea horizontal que está dentro de la caja?",
+      "option_a": "La moda",
+      "option_b": "Cuartil 2",
+      "option_c": "El rango",
+      "option_d": "Desviación estándar",
+      "correct_letter": "b",
+      "correct_option_text": "Cuartil 2",
+      "source_text_sha256": "598f6b2b26fe16358286a2ff05c7375fba67e8c7d85c18e1edbdbf769fbb0a9c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 58,
+          "boundary_end": 59,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En los gráficos de cajas (box-plot, box and whisker plot),",
+          "right_context": "¿Qué representa la línea horizontal que está dentro de la caja?"
+        }
+      ]
+    },
+    {
+      "question_id": "b210",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b210",
+      "question_text": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:",
+      "option_a": "La elevación asintomática de la fosfatasa alcalina tres veces los limites altos de la normalidad con elevación de la bilirrubina durante 1 mes se acepta como indicación para el drenaje de la vía biliar",
+      "option_b": "Se debe considerar la cirugía cuando hay fracaso del tratamiento endoscópico después de 1 año.",
+      "option_c": "Se recomienda la utilización de prótesis metálicas autoexpandibles no cubiertas.",
+      "option_d": "La ictericia se puede resolver espontáneamente en el plazo de 1 mes en el 20-50% de los casos.",
+      "correct_letter": "c",
+      "correct_option_text": "Se recomienda la utilización de prótesis metálicas autoexpandibles no cubiertas.",
+      "source_text_sha256": "7ae85d6079d99ee62c789107c910b719fbd27a4836340cac6fa38e8ba54a22e8",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 62,
+          "boundary_end": 63,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE)",
+          "right_context": "señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        },
+        {
+          "boundary_start": 69,
+          "boundary_end": 70,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale",
+          "right_context": "cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        },
+        {
+          "boundary_start": 74,
+          "boundary_end": 75,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale cuál",
+          "right_context": "de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b210",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b210",
+      "question_text": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:",
+      "option_a": "La elevación asintomática de la fosfatasa alcalina tres veces los limites altos de la normalidad con elevación de la bilirrubina durante 1 mes se acepta como indicación para el drenaje de la vía biliar",
+      "option_b": "Se debe considerar la cirugía cuando hay fracaso del tratamiento endoscópico después de 1 año.",
+      "option_c": "Se recomienda la utilización de prótesis metálicas autoexpandibles no cubiertas.",
+      "option_d": "La ictericia se puede resolver espontáneamente en el plazo de 1 mes en el 20-50% de los casos.",
+      "correct_letter": "c",
+      "correct_option_text": "Se recomienda la utilización de prótesis metálicas autoexpandibles no cubiertas.",
+      "source_text_sha256": "7ae85d6079d99ee62c789107c910b719fbd27a4836340cac6fa38e8ba54a22e8",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 62,
+          "boundary_end": 63,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE)",
+          "right_context": "señale cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        },
+        {
+          "boundary_start": 69,
+          "boundary_end": 70,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale",
+          "right_context": "cuál de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        },
+        {
+          "boundary_start": 74,
+          "boundary_end": 75,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la European Society of Gastrointestinal Endoscopy (ESGE) señale cuál",
+          "right_context": "de las siguientes afirmaciones en el tratamiento de la estenosis biliar secundaria a pancreatitis crónica no es cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b233",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b233",
+      "question_text": "¿Cual de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?",
+      "option_a": "La dosis recomendada es de 5 mg/kg/día",
+      "option_b": "La respuesta se valora por la normalización de la GGT",
+      "option_c": "La respuesta al tratamiento tiene valor pronóstico",
+      "option_d": "No debe iniciarse hasta que la bilirrubina supere los 2 mg/dl",
+      "correct_letter": "c",
+      "correct_option_text": "La respuesta al tratamiento tiene valor pronóstico",
+      "source_text_sha256": "45518b301591884795f9542918cebcdddc5737f1d4023af5997a3eaa321b8de0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cual",
+          "right_context": "de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b233",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b233",
+      "question_text": "¿Cual de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?",
+      "option_a": "La dosis recomendada es de 5 mg/kg/día",
+      "option_b": "La respuesta se valora por la normalización de la GGT",
+      "option_c": "La respuesta al tratamiento tiene valor pronóstico",
+      "option_d": "No debe iniciarse hasta que la bilirrubina supere los 2 mg/dl",
+      "correct_letter": "c",
+      "correct_option_text": "La respuesta al tratamiento tiene valor pronóstico",
+      "source_text_sha256": "45518b301591884795f9542918cebcdddc5737f1d4023af5997a3eaa321b8de0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cual",
+          "right_context": "de las siguientes es correcta en relacion con el tratamiento con ácido ursodesoxicolico en la colangitis biliar primaria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b247",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b247",
+      "question_text": "Farmacoterapia y sedación en endoscopia. ¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?",
+      "option_a": "Propofol- Sedación profunda.",
+      "option_b": "Fentanilo- Analgesia.",
+      "option_c": "Naloxona- Antagonista benzodiacepinico.",
+      "option_d": "Midazolam- Sedación superficial.",
+      "correct_letter": "c",
+      "correct_option_text": "Naloxona- Antagonista benzodiacepinico.",
+      "source_text_sha256": "1a9e02a9794a8c3f3ac28299be3de4205e6f3d6f18de051a09f92bb64020af71",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 40,
+          "boundary_end": 41,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Farmacoterapia y sedación en endoscopia.",
+          "right_context": "¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+        },
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Farmacoterapia y sedación en endoscopia. ¿Cuál",
+          "right_context": "de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b247",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b247",
+      "question_text": "Farmacoterapia y sedación en endoscopia. ¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?",
+      "option_a": "Propofol- Sedación profunda.",
+      "option_b": "Fentanilo- Analgesia.",
+      "option_c": "Naloxona- Antagonista benzodiacepinico.",
+      "option_d": "Midazolam- Sedación superficial.",
+      "correct_letter": "c",
+      "correct_option_text": "Naloxona- Antagonista benzodiacepinico.",
+      "source_text_sha256": "1a9e02a9794a8c3f3ac28299be3de4205e6f3d6f18de051a09f92bb64020af71",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 40,
+          "boundary_end": 41,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Farmacoterapia y sedación en endoscopia.",
+          "right_context": "¿Cuál de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+        },
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Farmacoterapia y sedación en endoscopia. ¿Cuál",
+          "right_context": "de las siguientes asociaciones entre fármaco y objetivo terapéutico es FALSA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b262",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b262",
+      "question_text": "En cuanto al cáncer colo-rectal, señale la respuesta INCORRECTA:",
+      "option_a": "Es el más frecuente en España globalmente.",
+      "option_b": "La forma hereditaria más frecuente es el Síndrome de Lynch.",
+      "option_c": "La obesidad es un factor de riesgo.",
+      "option_d": "Se recomienda administrar suplementos de vitamina D en poblaciones de riesgo de cáncer de colon.",
+      "correct_letter": "d",
+      "correct_option_text": "Se recomienda administrar suplementos de vitamina D en poblaciones de riesgo de cáncer de colon.",
+      "source_text_sha256": "d849a5bc5841547b70e82325bd0e336c8cc9dceedf6f1c734b68591f278345fc",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 32,
+          "boundary_end": 33,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En cuanto al cáncer colo-rectal,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b262",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b262",
+      "question_text": "En cuanto al cáncer colo-rectal, señale la respuesta INCORRECTA:",
+      "option_a": "Es el más frecuente en España globalmente.",
+      "option_b": "La forma hereditaria más frecuente es el Síndrome de Lynch.",
+      "option_c": "La obesidad es un factor de riesgo.",
+      "option_d": "Se recomienda administrar suplementos de vitamina D en poblaciones de riesgo de cáncer de colon.",
+      "correct_letter": "d",
+      "correct_option_text": "Se recomienda administrar suplementos de vitamina D en poblaciones de riesgo de cáncer de colon.",
+      "source_text_sha256": "d849a5bc5841547b70e82325bd0e336c8cc9dceedf6f1c734b68591f278345fc",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 32,
+          "boundary_end": 33,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En cuanto al cáncer colo-rectal,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b276",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b276",
+      "question_text": "En relación a la enfermedad hepática inducida por fármacos (DILI), señale la respuesta incorrecta:",
+      "option_a": "La edad avanzada es un factor de riesgo de hepatotoxicidad por isoniazida y predominantemente el tipo de lesión es hepatocelular.",
+      "option_b": "La ingesta regular de alcohol es un factor que contribuye a DILI asociado con fármacos específicos como la isoniazida, el metotrexato y el halotano.",
+      "option_c": "La edad avanzada parece ser un factor de riesgo para DILI inducido por ácido valproico.",
+      "option_d": "Se ha observado una mayor susceptibilidad del sexo femenino a agentes causales específicos, como la minociclina y la nitrofurantoína.",
+      "correct_letter": "c",
+      "correct_option_text": "La edad avanzada parece ser un factor de riesgo para DILI inducido por ácido valproico.",
+      "source_text_sha256": "7c5f4868bbacafcdb83b1c266ed10b044498fe08ff2263400fcf156a80b5adab",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación a la enfermedad hepática inducida por fármacos (DILI),",
+          "right_context": "señale la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b276",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b276",
+      "question_text": "En relación a la enfermedad hepática inducida por fármacos (DILI), señale la respuesta incorrecta:",
+      "option_a": "La edad avanzada es un factor de riesgo de hepatotoxicidad por isoniazida y predominantemente el tipo de lesión es hepatocelular.",
+      "option_b": "La ingesta regular de alcohol es un factor que contribuye a DILI asociado con fármacos específicos como la isoniazida, el metotrexato y el halotano.",
+      "option_c": "La edad avanzada parece ser un factor de riesgo para DILI inducido por ácido valproico.",
+      "option_d": "Se ha observado una mayor susceptibilidad del sexo femenino a agentes causales específicos, como la minociclina y la nitrofurantoína.",
+      "correct_letter": "c",
+      "correct_option_text": "La edad avanzada parece ser un factor de riesgo para DILI inducido por ácido valproico.",
+      "source_text_sha256": "7c5f4868bbacafcdb83b1c266ed10b044498fe08ff2263400fcf156a80b5adab",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación a la enfermedad hepática inducida por fármacos (DILI),",
+          "right_context": "señale la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b292",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b292",
+      "question_text": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica, ¿a qué grado de la clasificación de Zargar correspondería?",
+      "option_a": "IIa",
+      "option_b": "IIb",
+      "option_c": "III",
+      "option_d": "Ninguna es correcta.",
+      "correct_letter": "b",
+      "correct_option_text": "IIb",
+      "source_text_sha256": "a6a46937942042fd15fcfc7cda98a921b450f27c70e6528cb6e42830c5a4bf2a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica,",
+          "right_context": "¿a qué grado de la clasificación de Zargar correspondería?"
+        },
+        {
+          "boundary_start": 147,
+          "boundary_end": 148,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica, ¿a",
+          "right_context": "qué grado de la clasificación de Zargar correspondería?"
+        }
+      ]
+    },
+    {
+      "question_id": "b292",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b292",
+      "question_text": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica, ¿a qué grado de la clasificación de Zargar correspondería?",
+      "option_a": "IIa",
+      "option_b": "IIb",
+      "option_c": "III",
+      "option_d": "Ninguna es correcta.",
+      "correct_letter": "b",
+      "correct_option_text": "IIb",
+      "source_text_sha256": "a6a46937942042fd15fcfc7cda98a921b450f27c70e6528cb6e42830c5a4bf2a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica,",
+          "right_context": "¿a qué grado de la clasificación de Zargar correspondería?"
+        },
+        {
+          "boundary_start": 147,
+          "boundary_end": 148,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Si en una endoscopia realizada a un paciente por la ingesta accidental de cáusticos observamos úlceras circunferenciales en la mucosa esofágica, ¿a",
+          "right_context": "qué grado de la clasificación de Zargar correspondería?"
+        }
+      ]
+    },
+    {
+      "question_id": "b305",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b305",
+      "question_text": "Un paciente que refiere plenitud postprandial molesta y/o saciedad precoz molesta, al menos 3 días por semana, durante los últimos 3 meses y los síntomas han comenzado al menos 6 meses antes del diagnóstico, según los CRITERIOS DE ROMA IV (trastornos funcionales digestivos), presenta:",
+      "option_a": "Síndrome de distrés postprandial (SPD).",
+      "option_b": "Síndrome de dolor epigástrico (SDE).",
+      "option_c": "Síndrome de rumiación.",
+      "option_d": "Trastorno de eructación.",
+      "correct_letter": "a",
+      "correct_option_text": "Síndrome de distrés postprandial (SPD).",
+      "source_text_sha256": "be8d9fb6afa2ca7df09081270880aa6c5e642b0dd0017832154e395f9f0c4ae8",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 207,
+          "boundary_end": 208,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Un paciente que refiere plenitud postprandial molesta y/o saciedad precoz molesta, al menos 3 días por semana, durante los últimos 3 meses y los síntomas han comenzado al menos 6 meses antes del diagnóstico,",
+          "right_context": "según los CRITERIOS DE ROMA IV (trastornos funcionales digestivos), presenta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b305",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b305",
+      "question_text": "Un paciente que refiere plenitud postprandial molesta y/o saciedad precoz molesta, al menos 3 días por semana, durante los últimos 3 meses y los síntomas han comenzado al menos 6 meses antes del diagnóstico, según los CRITERIOS DE ROMA IV (trastornos funcionales digestivos), presenta:",
+      "option_a": "Síndrome de distrés postprandial (SPD).",
+      "option_b": "Síndrome de dolor epigástrico (SDE).",
+      "option_c": "Síndrome de rumiación.",
+      "option_d": "Trastorno de eructación.",
+      "correct_letter": "a",
+      "correct_option_text": "Síndrome de distrés postprandial (SPD).",
+      "source_text_sha256": "be8d9fb6afa2ca7df09081270880aa6c5e642b0dd0017832154e395f9f0c4ae8",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 207,
+          "boundary_end": 208,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Un paciente que refiere plenitud postprandial molesta y/o saciedad precoz molesta, al menos 3 días por semana, durante los últimos 3 meses y los síntomas han comenzado al menos 6 meses antes del diagnóstico,",
+          "right_context": "según los CRITERIOS DE ROMA IV (trastornos funcionales digestivos), presenta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b318",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b318",
+      "question_text": "Según la guía clínica ACG 2020, entre las recomendaciones de tratamiento en un paciente con acalasia esofágica no se incluye",
+      "option_a": "Miotomía endoscópica (POEM) o miotomía de Heller laparoscópica en la acalasia tipo III.",
+      "option_b": "POEM, miotomía de Heller laparoscópica o dilatación neumática en la acalasia tipo I y II.",
+      "option_c": "Asociar una funduplicatura completa (Nissen) durante la miotomía de Heller laparoscópica.",
+      "option_d": "Toxina botulínica en pacientes añosos con riesgo quirúrgico.",
+      "correct_letter": "c",
+      "correct_option_text": "Asociar una funduplicatura completa (Nissen) durante la miotomía de Heller laparoscópica.",
+      "source_text_sha256": "3a877403a870152a52bf146f13362e4cfe11ddedbd538d742597414dd83dfa67",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b318",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b318",
+      "question_text": "Según la guía clínica ACG 2020, entre las recomendaciones de tratamiento en un paciente con acalasia esofágica no se incluye",
+      "option_a": "Miotomía endoscópica (POEM) o miotomía de Heller laparoscópica en la acalasia tipo III.",
+      "option_b": "POEM, miotomía de Heller laparoscópica o dilatación neumática en la acalasia tipo I y II.",
+      "option_c": "Asociar una funduplicatura completa (Nissen) durante la miotomía de Heller laparoscópica.",
+      "option_d": "Toxina botulínica en pacientes añosos con riesgo quirúrgico.",
+      "correct_letter": "c",
+      "correct_option_text": "Asociar una funduplicatura completa (Nissen) durante la miotomía de Heller laparoscópica.",
+      "source_text_sha256": "3a877403a870152a52bf146f13362e4cfe11ddedbd538d742597414dd83dfa67",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b333",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b333",
+      "question_text": "¿Cuál de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:",
+      "option_a": "Granulomas en la pieza de resección.",
+      "option_b": "Gravedad de la plexitis mientérica en la pieza de resección.",
+      "option_c": "La técnica quirúrgica empleada.",
+      "option_d": "Enfermedad perianal.",
+      "correct_letter": "c",
+      "correct_option_text": "La técnica quirúrgica empleada.",
+      "source_text_sha256": "7f2298262dba3abe44daf3abc23e2ee59b8cf3c1a80bed1bf59225f25c2f5f2f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b333",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b333",
+      "question_text": "¿Cuál de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:",
+      "option_a": "Granulomas en la pieza de resección.",
+      "option_b": "Gravedad de la plexitis mientérica en la pieza de resección.",
+      "option_c": "La técnica quirúrgica empleada.",
+      "option_d": "Enfermedad perianal.",
+      "correct_letter": "c",
+      "correct_option_text": "La técnica quirúrgica empleada.",
+      "source_text_sha256": "7f2298262dba3abe44daf3abc23e2ee59b8cf3c1a80bed1bf59225f25c2f5f2f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un factor de riesgo potencialmente relacionado con la recurrencia postquirúrgica?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b349",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b349",
+      "question_text": "Uno de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:",
+      "option_a": "INR > 6,5.",
+      "option_b": "pH arterial >7,25 pasadas 24 tras la ingesta del fármaco.",
+      "option_c": "Creatinina > 3,4 mg.",
+      "option_d": "Encefalopatia grado 3-4",
+      "correct_letter": "b",
+      "correct_option_text": "pH arterial >7,25 pasadas 24 tras la ingesta del fármaco.",
+      "source_text_sha256": "cdf5d2d0eb3175e70452fa5ace1e67f6d6addda1b5d1301830f1048470b8618c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:"
+        },
+        {
+          "boundary_start": 65,
+          "boundary_end": 66,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno de los siguientes ítems no es criterio de trasplante hepático",
+          "right_context": "según King´s College en el fallo hepático agudo por paracetamol:"
+        }
+      ]
+    },
+    {
+      "question_id": "b349",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b349",
+      "question_text": "Uno de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:",
+      "option_a": "INR > 6,5.",
+      "option_b": "pH arterial >7,25 pasadas 24 tras la ingesta del fármaco.",
+      "option_c": "Creatinina > 3,4 mg.",
+      "option_d": "Encefalopatia grado 3-4",
+      "correct_letter": "b",
+      "correct_option_text": "pH arterial >7,25 pasadas 24 tras la ingesta del fármaco.",
+      "source_text_sha256": "cdf5d2d0eb3175e70452fa5ace1e67f6d6addda1b5d1301830f1048470b8618c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes ítems no es criterio de trasplante hepático según King´s College en el fallo hepático agudo por paracetamol:"
+        },
+        {
+          "boundary_start": 65,
+          "boundary_end": 66,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno de los siguientes ítems no es criterio de trasplante hepático",
+          "right_context": "según King´s College en el fallo hepático agudo por paracetamol:"
+        }
+      ]
+    },
+    {
+      "question_id": "b363",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b363",
+      "question_text": "¿Cuál de las siguientes no es causa de íleo paralítico?:",
+      "option_a": "Hipopotasemia.",
+      "option_b": "Hiponatremia.",
+      "option_c": "Hemorragia retroperitoneal.",
+      "option_d": "Pancreatitis crónica.",
+      "correct_letter": "d",
+      "correct_option_text": "Pancreatitis crónica.",
+      "source_text_sha256": "3f26b2eb2cdf98d2d29a05b794781dabdda8594973fa8834e82ceb1a80601823",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes no es causa de íleo paralítico?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b363",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b363",
+      "question_text": "¿Cuál de las siguientes no es causa de íleo paralítico?:",
+      "option_a": "Hipopotasemia.",
+      "option_b": "Hiponatremia.",
+      "option_c": "Hemorragia retroperitoneal.",
+      "option_d": "Pancreatitis crónica.",
+      "correct_letter": "d",
+      "correct_option_text": "Pancreatitis crónica.",
+      "source_text_sha256": "3f26b2eb2cdf98d2d29a05b794781dabdda8594973fa8834e82ceb1a80601823",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes no es causa de íleo paralítico?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b377",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b377",
+      "question_text": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale cuál de las siguientes asociaciones es CORRECTA:",
+      "option_a": "El déficit de vitamina B1 (tiamina) se asocia clásicamente con el desarrollo del síndrome de Beri-Beri, que puede presentarse en forma seca (neurológica) o húmeda (cardiovascular).",
+      "option_b": "El déficit de vitamina B2 (riboflavina) es la principal causa de pelagra, caracterizada por dermatitis, diarrea y demencia.",
+      "option_c": "La deficiencia grave de vitamina D durante el embarazo puede ocasionar cretinismo y enanismo en el recién nacido.",
+      "option_d": "La deficiencia de vitamina K se asocia a fragilidad eritrocitaria, pudiendo ser causa de anemia hemolítica.",
+      "correct_letter": "a",
+      "correct_option_text": "El déficit de vitamina B1 (tiamina) se asocia clásicamente con el desarrollo del síndrome de Beri-Beri, que puede presentarse en forma seca (neurológica) o húmeda (cardiovascular).",
+      "source_text_sha256": "1379bd2a9072684b93e59909431c292ed4452d51744e3b52d6544bb51d3417bf",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 80,
+          "boundary_end": 81,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos,",
+          "right_context": "señale cuál de las siguientes asociaciones es CORRECTA:"
+        },
+        {
+          "boundary_start": 87,
+          "boundary_end": 88,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale",
+          "right_context": "cuál de las siguientes asociaciones es CORRECTA:"
+        },
+        {
+          "boundary_start": 92,
+          "boundary_end": 93,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale cuál",
+          "right_context": "de las siguientes asociaciones es CORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b377",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b377",
+      "question_text": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale cuál de las siguientes asociaciones es CORRECTA:",
+      "option_a": "El déficit de vitamina B1 (tiamina) se asocia clásicamente con el desarrollo del síndrome de Beri-Beri, que puede presentarse en forma seca (neurológica) o húmeda (cardiovascular).",
+      "option_b": "El déficit de vitamina B2 (riboflavina) es la principal causa de pelagra, caracterizada por dermatitis, diarrea y demencia.",
+      "option_c": "La deficiencia grave de vitamina D durante el embarazo puede ocasionar cretinismo y enanismo en el recién nacido.",
+      "option_d": "La deficiencia de vitamina K se asocia a fragilidad eritrocitaria, pudiendo ser causa de anemia hemolítica.",
+      "correct_letter": "a",
+      "correct_option_text": "El déficit de vitamina B1 (tiamina) se asocia clásicamente con el desarrollo del síndrome de Beri-Beri, que puede presentarse en forma seca (neurológica) o húmeda (cardiovascular).",
+      "source_text_sha256": "1379bd2a9072684b93e59909431c292ed4452d51744e3b52d6544bb51d3417bf",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 80,
+          "boundary_end": 81,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos,",
+          "right_context": "señale cuál de las siguientes asociaciones es CORRECTA:"
+        },
+        {
+          "boundary_start": 87,
+          "boundary_end": 88,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale",
+          "right_context": "cuál de las siguientes asociaciones es CORRECTA:"
+        },
+        {
+          "boundary_start": 92,
+          "boundary_end": 93,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con las manifestaciones clínicas secundarias a déficits vitamínicos, señale cuál",
+          "right_context": "de las siguientes asociaciones es CORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b391",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b391",
+      "question_text": "Las actividades por las que se desarrollan las 5 líneas estratégicas del Plan Dignifica del Servicio de Salud de Castilla-La Mancha incluyen las siguientes, excepto una:",
+      "option_a": "Llamada de confirmación a pacientes en lista de espera para pruebas especiales",
+      "option_b": "Acompañamiento de payasos, payasas y risoterapia",
+      "option_c": "\"Sueño en mi hospital\", actividad destinada a fomentar el sueño y descanso nocturno de pacientes ingresados.",
+      "option_d": "Acompañamiento a pacientes de oncología en primeras consultas, realizado por personal de Información y Atención a Pacientes.",
+      "correct_letter": "a",
+      "correct_option_text": "Llamada de confirmación a pacientes en lista de espera para pruebas especiales",
+      "source_text_sha256": "b7ca609bd90e724b2b412fc77623499ab842302f170df9445d3ee394ac1c29cc",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b391",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b391",
+      "question_text": "Las actividades por las que se desarrollan las 5 líneas estratégicas del Plan Dignifica del Servicio de Salud de Castilla-La Mancha incluyen las siguientes, excepto una:",
+      "option_a": "Llamada de confirmación a pacientes en lista de espera para pruebas especiales",
+      "option_b": "Acompañamiento de payasos, payasas y risoterapia",
+      "option_c": "\"Sueño en mi hospital\", actividad destinada a fomentar el sueño y descanso nocturno de pacientes ingresados.",
+      "option_d": "Acompañamiento a pacientes de oncología en primeras consultas, realizado por personal de Información y Atención a Pacientes.",
+      "correct_letter": "a",
+      "correct_option_text": "Llamada de confirmación a pacientes en lista de espera para pruebas especiales",
+      "source_text_sha256": "b7ca609bd90e724b2b412fc77623499ab842302f170df9445d3ee394ac1c29cc",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b411",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b411",
+      "question_text": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn, según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:",
+      "option_a": "Ciprofloxacino.",
+      "option_b": "Azatioprina.",
+      "option_c": "Metotrexate.",
+      "option_d": "Adalimumab.",
+      "correct_letter": "c",
+      "correct_option_text": "Metotrexate.",
+      "source_text_sha256": "d9d488807d0f8b431be24fc1ce356713aaaa4f4d8d3b403fbf013211e719400b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 67,
+          "boundary_end": 68,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn,",
+          "right_context": "según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:"
+        }
+      ]
+    },
+    {
+      "question_id": "b411",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b411",
+      "question_text": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn, según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:",
+      "option_a": "Ciprofloxacino.",
+      "option_b": "Azatioprina.",
+      "option_c": "Metotrexate.",
+      "option_d": "Adalimumab.",
+      "correct_letter": "c",
+      "correct_option_text": "Metotrexate.",
+      "source_text_sha256": "d9d488807d0f8b431be24fc1ce356713aaaa4f4d8d3b403fbf013211e719400b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 67,
+          "boundary_end": 68,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el tratamiento de la enfermedad perianal en enfermedad de Crohn,",
+          "right_context": "según las guías de la ECCO (European Crohn's and Colitis Organisation) no hay suficiente evidencia para recomendar en práctica clínica:"
+        }
+      ]
+    },
+    {
+      "question_id": "b425",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b425",
+      "question_text": "¿Cuál es el tratamiento de rescate recomendado en pacientes con hepatitis crónica B que han desarrollado resistencia a lamivudina?",
+      "option_a": "Combinación de lamivudina y tenofovir.",
+      "option_b": "Combinación de lamivudina y entecavir.",
+      "option_c": "Monoterapia con tenofovir.",
+      "option_d": "Monoterapia con entecavir.",
+      "correct_letter": "c",
+      "correct_option_text": "Monoterapia con tenofovir.",
+      "source_text_sha256": "6a0765503d28cc785521cb4d455b415eb0c5a2084297770938fe6d227b4b2263",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b425",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b425",
+      "question_text": "¿Cuál es el tratamiento de rescate recomendado en pacientes con hepatitis crónica B que han desarrollado resistencia a lamivudina?",
+      "option_a": "Combinación de lamivudina y tenofovir.",
+      "option_b": "Combinación de lamivudina y entecavir.",
+      "option_c": "Monoterapia con tenofovir.",
+      "option_d": "Monoterapia con entecavir.",
+      "correct_letter": "c",
+      "correct_option_text": "Monoterapia con tenofovir.",
+      "source_text_sha256": "6a0765503d28cc785521cb4d455b415eb0c5a2084297770938fe6d227b4b2263",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b440",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b440",
+      "question_text": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual",
+      "option_a": "Síntomas y/o signos de malabsorción persistentes o recurrentes",
+      "option_b": "Persistencia de anticuerpos de enfermedad celíaca (antitransglutaminasa y/o antiendomisio)",
+      "option_c": "Atrofia de vellosidades del intestino delgado",
+      "option_d": "Evidencia de un cumplimiento estricto de una dieta sin gluten durante al menos 12 meses",
+      "correct_letter": "b",
+      "correct_option_text": "Persistencia de anticuerpos de enfermedad celíaca (antitransglutaminasa y/o antiendomisio)",
+      "source_text_sha256": "50921d6c5d031e2461c16818a57964787c366efe7f6453d16c877fbc8141cf46",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 76,
+          "boundary_end": 77,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria,",
+          "right_context": "con respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 80,
+          "boundary_end": 81,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con",
+          "right_context": "respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 110,
+          "boundary_end": 111,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno",
+          "right_context": "de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 155,
+          "boundary_end": 156,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno de los siguientes criterios no es necesario.",
+          "right_context": "Señale cual"
+        }
+      ]
+    },
+    {
+      "question_id": "b440",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b440",
+      "question_text": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual",
+      "option_a": "Síntomas y/o signos de malabsorción persistentes o recurrentes",
+      "option_b": "Persistencia de anticuerpos de enfermedad celíaca (antitransglutaminasa y/o antiendomisio)",
+      "option_c": "Atrofia de vellosidades del intestino delgado",
+      "option_d": "Evidencia de un cumplimiento estricto de una dieta sin gluten durante al menos 12 meses",
+      "correct_letter": "b",
+      "correct_option_text": "Persistencia de anticuerpos de enfermedad celíaca (antitransglutaminasa y/o antiendomisio)",
+      "source_text_sha256": "50921d6c5d031e2461c16818a57964787c366efe7f6453d16c877fbc8141cf46",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 76,
+          "boundary_end": 77,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria,",
+          "right_context": "con respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 80,
+          "boundary_end": 81,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con",
+          "right_context": "respecto a su definición, uno de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 110,
+          "boundary_end": 111,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno",
+          "right_context": "de los siguientes criterios no es necesario. Señale cual"
+        },
+        {
+          "boundary_start": 155,
+          "boundary_end": 156,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía clínica AGA 2022 para el manejo de la enf celiaca refractaria, con respecto a su definición, uno de los siguientes criterios no es necesario.",
+          "right_context": "Señale cual"
+        }
+      ]
+    },
+    {
+      "question_id": "b454",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b454",
+      "question_text": "La mayor incidencia de tumores carcinoides con repercusión clínica se da en:",
+      "option_a": "Intestino delgado",
+      "option_b": "Recto",
+      "option_c": "Apéndice",
+      "option_d": "Estómago",
+      "correct_letter": "a",
+      "correct_option_text": "Intestino delgado",
+      "source_text_sha256": "9434995969d92db474ee21e4ad73a535d0e4e422d262db094fe89b67ec9543f3",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b454",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b454",
+      "question_text": "La mayor incidencia de tumores carcinoides con repercusión clínica se da en:",
+      "option_a": "Intestino delgado",
+      "option_b": "Recto",
+      "option_c": "Apéndice",
+      "option_d": "Estómago",
+      "correct_letter": "a",
+      "correct_option_text": "Intestino delgado",
+      "source_text_sha256": "9434995969d92db474ee21e4ad73a535d0e4e422d262db094fe89b67ec9543f3",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b468",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b468",
+      "question_text": "En la malabsorción tras resección gástrica:",
+      "option_a": "Algunos de los mecanismos propuestos son la falta de secreción ácida gástrica o de lipasa gástrica, el sobrecrecimiento bacteriano y la insuficiencia pancreática.",
+      "option_b": "Los estudios han demostrado que los suplementos con enzimas pancreáticas mejoran la absorción de la grasa.",
+      "option_c": "El tratamiento antibiótico mejora los síntomas tras la resección gástrica.",
+      "option_d": "Los valores de grasa fecal suelen ser superiores a 60 gramos al día.",
+      "correct_letter": "a",
+      "correct_option_text": "Algunos de los mecanismos propuestos son la falta de secreción ácida gástrica o de lipasa gástrica, el sobrecrecimiento bacteriano y la insuficiencia pancreática.",
+      "source_text_sha256": "4f3354f6c1bd9fe80bd8749b189bb6686ceb30de5b535da48fae93ef23d02bc7",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b468",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b468",
+      "question_text": "En la malabsorción tras resección gástrica:",
+      "option_a": "Algunos de los mecanismos propuestos son la falta de secreción ácida gástrica o de lipasa gástrica, el sobrecrecimiento bacteriano y la insuficiencia pancreática.",
+      "option_b": "Los estudios han demostrado que los suplementos con enzimas pancreáticas mejoran la absorción de la grasa.",
+      "option_c": "El tratamiento antibiótico mejora los síntomas tras la resección gástrica.",
+      "option_d": "Los valores de grasa fecal suelen ser superiores a 60 gramos al día.",
+      "correct_letter": "a",
+      "correct_option_text": "Algunos de los mecanismos propuestos son la falta de secreción ácida gástrica o de lipasa gástrica, el sobrecrecimiento bacteriano y la insuficiencia pancreática.",
+      "source_text_sha256": "4f3354f6c1bd9fe80bd8749b189bb6686ceb30de5b535da48fae93ef23d02bc7",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b483",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b483",
+      "question_text": "El cociente que resulta de dividir un número de acontecimientos sucedidos durante un periodo de tiempo por la población media existente durante ese periodo de tiempo es la definición de",
+      "option_a": "Proporción",
+      "option_b": "Razón",
+      "option_c": "Tasa",
+      "option_d": "Hazard ratio",
+      "correct_letter": "c",
+      "correct_option_text": "Tasa",
+      "source_text_sha256": "71eed02bdf5785f4fe275e4a193e19dcc4e8264bc1ac5f4773c04c0b0e84a426",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b483",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b483",
+      "question_text": "El cociente que resulta de dividir un número de acontecimientos sucedidos durante un periodo de tiempo por la población media existente durante ese periodo de tiempo es la definición de",
+      "option_a": "Proporción",
+      "option_b": "Razón",
+      "option_c": "Tasa",
+      "option_d": "Hazard ratio",
+      "correct_letter": "c",
+      "correct_option_text": "Tasa",
+      "source_text_sha256": "71eed02bdf5785f4fe275e4a193e19dcc4e8264bc1ac5f4773c04c0b0e84a426",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    }
+  ]
+}

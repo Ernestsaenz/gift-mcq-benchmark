@@ -1,0 +1,13 @@
+{
+  "copy_verification_date": "2026-08-04",
+  "source": "ab520-output/",
+  "destination": "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/",
+  "source_file_count": 44,
+  "destination_file_count_after_copy": 44,
+  "source_directory_count": 11,
+  "destination_directory_count_after_copy": 11,
+  "relative_path_and_sha256_comparison": "PASS",
+  "former_location_state": "Pointer README only",
+  "old_tree_disposition": "Moved after checksum verification to /Users/ernestsaenz/.Trash/tier1_mcq-ab520-output-preconsolidation-20260804T1438Z; recoverable until Trash is emptied.",
+  "note": "Allocated disk blocks differed because the copied SQLite file was sparse; byte content and every file SHA-256 matched."
+}

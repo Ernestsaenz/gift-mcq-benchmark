@@ -1,0 +1,814 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_20",
+  "shard_id": "20",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b191",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b191",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b203",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b203",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b213",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "CONTEXT_MISMATCH",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "Es una pregunta normativa sin paciente clínico; la frase médica no se puede adjuntar al preámbulo legal y los límites ofrecidos dejan una discontinuidad gramatical."
+    },
+    {
+      "question_id": "b213",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "CONTEXT_MISMATCH",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "Es una pregunta normativa sin paciente clínico; la frase médica no se puede adjuntar al preámbulo legal y los límites ofrecidos dejan una discontinuidad gramatical."
+    },
+    {
+      "question_id": "b225",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "COMMA_BOUNDARY",
+        "GRAMMATICAL_DISCONTINUITY"
+      ],
+      "rationale": "Hay una población clínica y la posición precede a la pregunta, pero el límite sigue una frase preposicional y una coma; la oración literal con mayúscula no encaja sin corregir puntuación."
+    },
+    {
+      "question_id": "b225",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "COMMA_BOUNDARY",
+        "GRAMMATICAL_DISCONTINUITY"
+      ],
+      "rationale": "Hay una población clínica y la posición precede a la pregunta, pero el límite sigue una frase preposicional y una coma; la oración literal con mayúscula no encaja sin corregir puntuación."
+    },
+    {
+      "question_id": "b236",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b236",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b250",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b250",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b265",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "PASS",
+      "boundary_start": 389,
+      "boundary_end": 390,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "Caso clínico con referente individual y límite completo inmediatamente antes de la directiva; la inserción literal es gramatical y no contradice ningún dato explícito."
+    },
+    {
+      "question_id": "b279",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "CONTEXT_MISMATCH",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "El texto trata una posición procedimental genérica, no un paciente con hallazgos; insertar tras el tópico y la coma no produce una oración clínica bien adjuntada."
+    },
+    {
+      "question_id": "b279",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "CONTEXT_MISMATCH",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "El texto trata una posición procedimental genérica, no un paciente con hallazgos; insertar tras el tópico y la coma no produce una oración clínica bien adjuntada."
+    },
+    {
+      "question_id": "b295",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "COMMA_BOUNDARY",
+        "GRAMMATICAL_DISCONTINUITY"
+      ],
+      "rationale": "La población clínica es identificable y el límite precede a la directiva, pero la premisa termina en coma; la frase literal genera una unión agramatical que exigiría cambiar puntuación."
+    },
+    {
+      "question_id": "b295",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "COMMA_BOUNDARY",
+        "GRAMMATICAL_DISCONTINUITY"
+      ],
+      "rationale": "La población clínica es identificable y el límite precede a la directiva, pero la premisa termina en coma; la frase literal genera una unión agramatical que exigiría cambiar puntuación."
+    },
+    {
+      "question_id": "b308",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b308",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b321",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "PASS",
+      "boundary_start": 213,
+      "boundary_end": 214,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "Caso clínico con referente individual; el límite tras la última frase clínica permite insertar literalmente antes del marco de la pregunta sin contradicción explícita."
+    },
+    {
+      "question_id": "b337",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b337",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b381",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b381",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b395",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "TOPIC_FRAGMENT",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "El segmento izquierdo es un tópico sobre manifestaciones, no una narración de paciente; la inserción tras la coma queda gramaticalmente desligada."
+    },
+    {
+      "question_id": "b395",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "TOPIC_FRAGMENT",
+        "COMMA_BOUNDARY"
+      ],
+      "rationale": "El segmento izquierdo es un tópico sobre manifestaciones, no una narración de paciente; la inserción tras la coma queda gramaticalmente desligada."
+    },
+    {
+      "question_id": "b414",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "PASS",
+      "boundary_start": 147,
+      "boundary_end": 148,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "La frase completa previa identifica de forma inequívoca la población con diverticulosis; la inserción literal queda antes de la directiva y conserva la gramática."
+    },
+    {
+      "question_id": "b414",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "PASS",
+      "boundary_start": 147,
+      "boundary_end": 148,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "La frase completa previa identifica de forma inequívoca la población con diverticulosis; la inserción literal queda antes de la directiva y conserva la gramática."
+    },
+    {
+      "question_id": "b428",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b428",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b443",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "PASS",
+      "boundary_start": 421,
+      "boundary_end": 422,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "Caso clínico con paciente individual y límite de oración inmediatamente antes de la pregunta; el biomarcador añadido no contradice los hallazgos explícitos."
+    },
+    {
+      "question_id": "b457",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b457",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b471",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b471",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "SEAM_SPLITS_PROMPT"
+      ],
+      "rationale": "El único límite ofrecido divide la formulación de la pregunta y no sigue una narración clínica; la inserción produciría un enunciado mal formado."
+    },
+    {
+      "question_id": "b487",
+      "arm": "BM",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    },
+    {
+      "question_id": "b487",
+      "arm": "AN",
+      "reviewer_id": "review_20",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [
+        "NO_OFFERED_SEAM",
+        "NO_VALID_PATIENT_STEM_BOUNDARY"
+      ],
+      "rationale": "No se ofrece ningún límite de espacio; no es posible realizar una inserción literal válida antes de la pregunta sin editar el texto fuente."
+    }
+  ]
+}

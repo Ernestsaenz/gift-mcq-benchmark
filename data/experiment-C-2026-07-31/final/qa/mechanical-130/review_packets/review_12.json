@@ -1,0 +1,1716 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_12",
+  "shard_id": "12",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b199",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-010",
+      "question_text": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica. En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nEn relación a las pruebas complementarias necesarias en función del diagnóstico inicial, ¿Cuál de estas afirmaciones es falsa?:",
+      "option_a": "Se deben obtener muestras de heces para cultivo, parásitos y toxina de Clostridium difficile.",
+      "option_b": "La tomografía computarizada (TC) es el examen de imagen más útil.",
+      "option_c": "La colonoscopia es la técnica principal para el diagnóstico, siempre que no haya datos de peritonitis.",
+      "option_d": "La leucocitosis en un hallazgo frecuente desde las fases iniciales de la enfermedad.",
+      "correct_letter": "d",
+      "correct_option_text": "La leucocitosis en un hallazgo frecuente desde las fases iniciales de la enfermedad.",
+      "source_text_sha256": "f9bbe551d0d18f6948de5a4ab7df43cac7e44e47d4ff524b97be3bb48c01b306",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 189,
+          "boundary_end": 190,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica.",
+          "right_context": "En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y dob"
+        },
+        {
+          "boundary_start": 480,
+          "boundary_end": 481,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass.",
+          "right_context": "Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorrag"
+        },
+        {
+          "boundary_start": 588,
+          "boundary_end": 589,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "cia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,",
+          "right_context": "nitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoc"
+        },
+        {
+          "boundary_start": 687,
+          "boundary_end": 688,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona.",
+          "right_context": "Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hip"
+        },
+        {
+          "boundary_start": 789,
+          "boundary_end": 790,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "mida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución.",
+          "right_context": "No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipop"
+        },
+        {
+          "boundary_start": 862,
+          "boundary_end": 863,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "omuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos.",
+          "right_context": "Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la pal"
+        },
+        {
+          "boundary_start": 915,
+          "boundary_end": 916,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos.",
+          "right_context": "A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irri"
+        },
+        {
+          "boundary_start": 1036,
+          "boundary_end": 1037,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia.",
+          "right_context": "No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína"
+        },
+        {
+          "boundary_start": 1090,
+          "boundary_end": 1091,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica.",
+          "right_context": "La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creat"
+        },
+        {
+          "boundary_start": 1188,
+          "boundary_end": 1189,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "otensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos",
+          "right_context": "de irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nEn relación a las pruebas complementarias necesarias e"
+        },
+        {
+          "boundary_start": 1214,
+          "boundary_end": 1215,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal.",
+          "right_context": "Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nEn relación a las pruebas complementarias necesarias en función del diagnóstico "
+        },
+        {
+          "boundary_start": 1413,
+          "boundary_end": 1415,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "rritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.",
+          "right_context": "En relación a las pruebas complementarias necesarias en función del diagnóstico inicial, ¿Cuál de estas afirmaciones es falsa?:"
+        },
+        {
+          "boundary_start": 1503,
+          "boundary_end": 1504,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nEn relación a las pruebas complementarias necesarias en función del diagnóstico inicial,",
+          "right_context": "¿Cuál de estas afirmaciones es falsa?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b342",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-010",
+      "question_text": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica. En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visualiza líquido libre y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:",
+      "option_a": "Se establece el diagnóstico de certeza si el paciente presenta histología compatible documentada en muestras obtenidas por colonoscopia, laparotomía o necropsia.",
+      "option_b": "Las características histológicas patognomónicas incluyen infarto y células fantasma.",
+      "option_c": "Se define un caso probable cuando los hallazgos endoscópicos son sugestivos, pero sin confirmación patológica.",
+      "option_d": "Todas las afirmaciones anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las afirmaciones anteriores son correctas.",
+      "source_text_sha256": "dcb5a26a0a71e80a6ea351c9d28c606e6ddfb3fc9ec8084cc2d3246fb53da1ea",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 189,
+          "boundary_end": 190,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica.",
+          "right_context": "En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y dob"
+        },
+        {
+          "boundary_start": 480,
+          "boundary_end": 481,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass.",
+          "right_context": "Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorrag"
+        },
+        {
+          "boundary_start": 588,
+          "boundary_end": 589,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "cia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,",
+          "right_context": "nitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoc"
+        },
+        {
+          "boundary_start": 687,
+          "boundary_end": 688,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona.",
+          "right_context": "Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hip"
+        },
+        {
+          "boundary_start": 789,
+          "boundary_end": 790,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "mida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución.",
+          "right_context": "No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipop"
+        },
+        {
+          "boundary_start": 862,
+          "boundary_end": 863,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "omuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos.",
+          "right_context": "Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la pal"
+        },
+        {
+          "boundary_start": 915,
+          "boundary_end": 916,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos.",
+          "right_context": "A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irri"
+        },
+        {
+          "boundary_start": 1036,
+          "boundary_end": 1037,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia.",
+          "right_context": "No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína"
+        },
+        {
+          "boundary_start": 1090,
+          "boundary_end": 1091,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica.",
+          "right_context": "La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creat"
+        },
+        {
+          "boundary_start": 1188,
+          "boundary_end": 1189,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "otensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos",
+          "right_context": "de irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visu"
+        },
+        {
+          "boundary_start": 1214,
+          "boundary_end": 1215,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal.",
+          "right_context": "Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visualiza líquido libre y cole"
+        },
+        {
+          "boundary_start": 1413,
+          "boundary_end": 1415,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "rritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.",
+          "right_context": "A nuestro paciente se le realiza TC, en la que se visualiza líquido libre y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras d"
+        },
+        {
+          "boundary_start": 1706,
+          "boundary_end": 1707,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "re y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias.",
+          "right_context": "En relación a cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:"
+        },
+        {
+          "boundary_start": 1720,
+          "boundary_end": 1721,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a",
+          "right_context": "cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:"
+        },
+        {
+          "boundary_start": 1785,
+          "boundary_end": 1786,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "opia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a cómo estableceríamos el diagnóstico de certeza en este paciente,",
+          "right_context": "¿Qué afirmación de las siguiente es correcta?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b342",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-010",
+      "question_text": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica. En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visualiza líquido libre y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:",
+      "option_a": "Se establece el diagnóstico de certeza si el paciente presenta histología compatible documentada en muestras obtenidas por colonoscopia, laparotomía o necropsia.",
+      "option_b": "Las características histológicas patognomónicas incluyen infarto y células fantasma.",
+      "option_c": "Se define un caso probable cuando los hallazgos endoscópicos son sugestivos, pero sin confirmación patológica.",
+      "option_d": "Todas las afirmaciones anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las afirmaciones anteriores son correctas.",
+      "source_text_sha256": "dcb5a26a0a71e80a6ea351c9d28c606e6ddfb3fc9ec8084cc2d3246fb53da1ea",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 189,
+          "boundary_end": 190,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Paciente varón de 72 años, exfumador, con antecedentes de diabetes mellitus tipo 2, hipertensión arterial, hiperuricemia, enfermedad renal crónica y enfermedad pulmonar obstructiva crónica.",
+          "right_context": "En los últimos años presenta, además, arteriopatía obliterante crónica grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y dob"
+        },
+        {
+          "boundary_start": 480,
+          "boundary_end": 481,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " grado IV con amputación de falanges distales, enfermedad coronaria con afectación de tres vasos, insuficiencia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass.",
+          "right_context": "Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorrag"
+        },
+        {
+          "boundary_start": 588,
+          "boundary_end": 589,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "cia mitral severa y disfunción del ventrículo izquierdo que precisó de plastia mitral con anillo y doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,",
+          "right_context": "nitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoc"
+        },
+        {
+          "boundary_start": 687,
+          "boundary_end": 688,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "doble bypass. Se encontraba en tratamiento con ácido acetilsalicílico, clopidogrel, bisoprolol, furosemida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona.",
+          "right_context": "Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hip"
+        },
+        {
+          "boundary_start": 789,
+          "boundary_end": 790,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "mida, simvastatina,\nnitroglicerina, alopurinol, furosemida, omeprazol, bromuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución.",
+          "right_context": "No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipop"
+        },
+        {
+          "boundary_start": 862,
+          "boundary_end": 863,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "omuro de tiotropio, salmeterol y fluticasona. Acude a urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos.",
+          "right_context": "Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la pal"
+        },
+        {
+          "boundary_start": 915,
+          "boundary_end": 916,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " urgencias por dolor intestinal de intensidad moderada y rectorragia de 24 horas de evolución. No presentaba urgencia defecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos.",
+          "right_context": "A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irri"
+        },
+        {
+          "boundary_start": 1036,
+          "boundary_end": 1037,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ecatoria ni refería fiebre, náuseas o vómitos. Tampoco recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia.",
+          "right_context": "No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína"
+        },
+        {
+          "boundary_start": 1090,
+          "boundary_end": 1091,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " recibió nuevos fármacos en los días previos. A su llegada a urgencias presentó tendencia a la hipotensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica.",
+          "right_context": "La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creat"
+        },
+        {
+          "boundary_start": 1188,
+          "boundary_end": 1189,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "otensión (tensión arterial 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos",
+          "right_context": "de irritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visu"
+        },
+        {
+          "boundary_start": 1214,
+          "boundary_end": 1215,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " 80/50 mmHg) que remontó con sueroterapia. No se constataron signos de hipoperfusión periférica. La exploración abdominal era dolorosa durante la palpación de la fosa ilíaca izquierda, sin datos\nde irritación peritoneal.",
+          "right_context": "Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.\n\nA nuestro paciente se le realiza TC, en la que se visualiza líquido libre y cole"
+        },
+        {
+          "boundary_start": 1413,
+          "boundary_end": 1415,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "rritación peritoneal. Analíticamente destacaba hemoglobina de 9.2 gr/dL, con elevación de reactantes de fase aguda (proteína C reactiva 84 mg/L, leucocitos 16.500/mcL) y de creatinquinasa 994 U/l, siendo el resto normal.",
+          "right_context": "A nuestro paciente se le realiza TC, en la que se visualiza líquido libre y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras d"
+        },
+        {
+          "boundary_start": 1706,
+          "boundary_end": 1707,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "re y colección de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias.",
+          "right_context": "En relación a cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:"
+        },
+        {
+          "boundary_start": 1720,
+          "boundary_end": 1721,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " de predominio aéreo en mesosigma de 83 mm de diámetro y colonoscopia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a",
+          "right_context": "cómo estableceríamos el diagnóstico de certeza en este paciente, ¿Qué afirmación de las siguiente es correcta?:"
+        },
+        {
+          "boundary_start": 1785,
+          "boundary_end": 1786,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "opia sin preparación y con baja insuflación, apreciando mucosa erosionada y con zonas negruzcas, por lo que no se toman muestras de biopsias. En relación a cómo estableceríamos el diagnóstico de certeza en este paciente,",
+          "right_context": "¿Qué afirmación de las siguiente es correcta?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b205",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b205",
+      "question_text": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público- ¿cuál de las siguientes plazas quedan excluidas de su regulación?",
+      "option_a": "Las de libre designación.",
+      "option_b": "Las plazas asistenciales vinculadas a otras de carácter docente.",
+      "option_c": "Las plazas de jefatura.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "b",
+      "correct_option_text": "Las plazas asistenciales vinculadas a otras de carácter docente.",
+      "source_text_sha256": "1cf70db56a79b0b1f90c018844d9d04a566485480f13fba31ac8e09628737d2b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 134,
+          "boundary_end": 135,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público-",
+          "right_context": "¿cuál de las siguientes plazas quedan excluidas de su regulación?"
+        },
+        {
+          "boundary_start": 140,
+          "boundary_end": 141,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público- ¿cuál",
+          "right_context": "de las siguientes plazas quedan excluidas de su regulación?"
+        }
+      ]
+    },
+    {
+      "question_id": "b205",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b205",
+      "question_text": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público- ¿cuál de las siguientes plazas quedan excluidas de su regulación?",
+      "option_a": "Las de libre designación.",
+      "option_b": "Las plazas asistenciales vinculadas a otras de carácter docente.",
+      "option_c": "Las plazas de jefatura.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "b",
+      "correct_option_text": "Las plazas asistenciales vinculadas a otras de carácter docente.",
+      "source_text_sha256": "1cf70db56a79b0b1f90c018844d9d04a566485480f13fba31ac8e09628737d2b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 134,
+          "boundary_end": 135,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público-",
+          "right_context": "¿cuál de las siguientes plazas quedan excluidas de su regulación?"
+        },
+        {
+          "boundary_start": 140,
+          "boundary_end": 141,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De conformidad con el Capítulo IV del V Convenio Colectivo del Consorcio HGUV –Planificación, Ordenación y Gestión del empleo público- ¿cuál",
+          "right_context": "de las siguientes plazas quedan excluidas de su regulación?"
+        }
+      ]
+    },
+    {
+      "question_id": "b215",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b215",
+      "question_text": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor cuál de las siguientes es INCORRECTA",
+      "option_a": "Se debe evaluar la presencia de sarcopenia y el estatus nutricional de todos los pacientes con encefalopatía hepática",
+      "option_b": "La ingesta calórica y proteica no debe ser diferente de la recomendada para cualquier paciente con cirrosis",
+      "option_c": "La nutrición enteral es recomendable en los pacientes con encefalopatía grado II",
+      "option_d": "Las proteinas vegetales y las procedentes de la leche son preferibles a las proteinas animales en pacientes con encefalopatía hepática",
+      "correct_letter": "c",
+      "correct_option_text": "La nutrición enteral es recomendable en los pacientes con encefalopatía grado II",
+      "source_text_sha256": "e712944d6dcbf35baf696d74918cbdf4ab81eaa05127961f33ccb5e931d00007",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 103,
+          "boundary_end": 104,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales.",
+          "right_context": "Señale por favor cuál de las siguientes es INCORRECTA"
+        },
+        {
+          "boundary_start": 120,
+          "boundary_end": 121,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor",
+          "right_context": "cuál de las siguientes es INCORRECTA"
+        },
+        {
+          "boundary_start": 125,
+          "boundary_end": 126,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor cuál",
+          "right_context": "de las siguientes es INCORRECTA"
+        }
+      ]
+    },
+    {
+      "question_id": "b215",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b215",
+      "question_text": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor cuál de las siguientes es INCORRECTA",
+      "option_a": "Se debe evaluar la presencia de sarcopenia y el estatus nutricional de todos los pacientes con encefalopatía hepática",
+      "option_b": "La ingesta calórica y proteica no debe ser diferente de la recomendada para cualquier paciente con cirrosis",
+      "option_c": "La nutrición enteral es recomendable en los pacientes con encefalopatía grado II",
+      "option_d": "Las proteinas vegetales y las procedentes de la leche son preferibles a las proteinas animales en pacientes con encefalopatía hepática",
+      "correct_letter": "c",
+      "correct_option_text": "La nutrición enteral es recomendable en los pacientes con encefalopatía grado II",
+      "source_text_sha256": "e712944d6dcbf35baf696d74918cbdf4ab81eaa05127961f33ccb5e931d00007",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 103,
+          "boundary_end": 104,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales.",
+          "right_context": "Señale por favor cuál de las siguientes es INCORRECTA"
+        },
+        {
+          "boundary_start": 120,
+          "boundary_end": 121,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor",
+          "right_context": "cuál de las siguientes es INCORRECTA"
+        },
+        {
+          "boundary_start": 125,
+          "boundary_end": 126,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el tratamiento de la encefalopatía hepática ha de incluir recomendaciones nutricionales. Señale por favor cuál",
+          "right_context": "de las siguientes es INCORRECTA"
+        }
+      ]
+    },
+    {
+      "question_id": "b227",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b227",
+      "question_text": "En estreñimiento funcional se recomiendan las siguientes medidas dietéticas menos una:",
+      "option_a": "Ingesta de 25-30 g de fibra soluble con la dieta al día.",
+      "option_b": "Ingesta adecuada de líquido (1,5-2 l al día).",
+      "option_c": "Patrón regular de comidas.",
+      "option_d": "Dieta sin gluten.",
+      "correct_letter": "d",
+      "correct_option_text": "Dieta sin gluten.",
+      "source_text_sha256": "979fc62a939910cdaf11ed7da1da9002e26fa4d98503d85d409457448405a5fd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b227",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b227",
+      "question_text": "En estreñimiento funcional se recomiendan las siguientes medidas dietéticas menos una:",
+      "option_a": "Ingesta de 25-30 g de fibra soluble con la dieta al día.",
+      "option_b": "Ingesta adecuada de líquido (1,5-2 l al día).",
+      "option_c": "Patrón regular de comidas.",
+      "option_d": "Dieta sin gluten.",
+      "correct_letter": "d",
+      "correct_option_text": "Dieta sin gluten.",
+      "source_text_sha256": "979fc62a939910cdaf11ed7da1da9002e26fa4d98503d85d409457448405a5fd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b238",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b238",
+      "question_text": "Conforme al artículo 17.1 del Estatuto Marco son derechos individuales del personal estatutario de los servicios de salud",
+      "option_a": "El descanso necesario, mediante la limitación de la jornada, las vacaciones periódicas retribuidas y permisos en los términos que se establezcan.",
+      "option_b": "El derecho de reunión.",
+      "option_c": "La negociación colectiva.",
+      "option_d": "La libre sindicación",
+      "correct_letter": "a",
+      "correct_option_text": "El descanso necesario, mediante la limitación de la jornada, las vacaciones periódicas retribuidas y permisos en los términos que se establezcan.",
+      "source_text_sha256": "2dabe67c5a1d5f79572fdbb705ae00997f1410d49e1fda47ac599d64f92ce359",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b238",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b238",
+      "question_text": "Conforme al artículo 17.1 del Estatuto Marco son derechos individuales del personal estatutario de los servicios de salud",
+      "option_a": "El descanso necesario, mediante la limitación de la jornada, las vacaciones periódicas retribuidas y permisos en los términos que se establezcan.",
+      "option_b": "El derecho de reunión.",
+      "option_c": "La negociación colectiva.",
+      "option_d": "La libre sindicación",
+      "correct_letter": "a",
+      "correct_option_text": "El descanso necesario, mediante la limitación de la jornada, las vacaciones periódicas retribuidas y permisos en los términos que se establezcan.",
+      "source_text_sha256": "2dabe67c5a1d5f79572fdbb705ae00997f1410d49e1fda47ac599d64f92ce359",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b255",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b255",
+      "question_text": "Respecto a la Esofagitis por Candida, señale la opción FALSA:",
+      "option_a": "La ausencia de afectación orofaríngea, excluye el diagnóstico de esofagitis candidiásica.",
+      "option_b": "Las infecciones esofágicas por Candida albicans son las más frecuentes tanto en los pacientes inmunodeprimidos como en los inmunocompetentes.",
+      "option_c": "Candida albicans puede encontrarse en el esófago como comensal.",
+      "option_d": "En cuanto al tratamiento, es de elección el fluconazol en dosis de 200-400 mg/día durante 14-21 días.",
+      "correct_letter": "a",
+      "correct_option_text": "La ausencia de afectación orofaríngea, excluye el diagnóstico de esofagitis candidiásica.",
+      "source_text_sha256": "290460d133af40eb3f5f9ef887308508a37f78f7c7d5a4a1d4faacd2faa36e41",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 37,
+          "boundary_end": 38,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la Esofagitis por Candida,",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b255",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b255",
+      "question_text": "Respecto a la Esofagitis por Candida, señale la opción FALSA:",
+      "option_a": "La ausencia de afectación orofaríngea, excluye el diagnóstico de esofagitis candidiásica.",
+      "option_b": "Las infecciones esofágicas por Candida albicans son las más frecuentes tanto en los pacientes inmunodeprimidos como en los inmunocompetentes.",
+      "option_c": "Candida albicans puede encontrarse en el esófago como comensal.",
+      "option_d": "En cuanto al tratamiento, es de elección el fluconazol en dosis de 200-400 mg/día durante 14-21 días.",
+      "correct_letter": "a",
+      "correct_option_text": "La ausencia de afectación orofaríngea, excluye el diagnóstico de esofagitis candidiásica.",
+      "source_text_sha256": "290460d133af40eb3f5f9ef887308508a37f78f7c7d5a4a1d4faacd2faa36e41",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 37,
+          "boundary_end": 38,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la Esofagitis por Candida,",
+          "right_context": "señale la opción FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b270",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b270",
+      "question_text": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:",
+      "option_a": "No se precisan de forma sistemática pruebas de función pancreática exocrina para controlar eficacia del tratamiento enzimático.",
+      "option_b": "La presencia de insuficiencia pancreática exocrina debe evaluarse anualmente en pacientes con pancreatitis crónica.",
+      "option_c": "Todo paciente con nuevo diagnóstico de pancreatitis crónica debe realizarse pruebas de detección de insuficiencia exocrina pancreática.",
+      "option_d": "Mayores niveles de elastasa fecal reflejan mayor grado de insuficiencia pancreática.",
+      "correct_letter": "d",
+      "correct_option_text": "Mayores niveles de elastasa fecal reflejan mayor grado de insuficiencia pancreática.",
+      "source_text_sha256": "a66cd9a493a70433483a2ede95a689fdf7d42bda0b1cd1b3ad9b28e36f92c172",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU),",
+          "right_context": "ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:"
+        },
+        {
+          "boundary_start": 236,
+          "boundary_end": 237,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ropea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una",
+          "right_context": "de las siguientes aseveraciones no es cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b270",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b270",
+      "question_text": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:",
+      "option_a": "No se precisan de forma sistemática pruebas de función pancreática exocrina para controlar eficacia del tratamiento enzimático.",
+      "option_b": "La presencia de insuficiencia pancreática exocrina debe evaluarse anualmente en pacientes con pancreatitis crónica.",
+      "option_c": "Todo paciente con nuevo diagnóstico de pancreatitis crónica debe realizarse pruebas de detección de insuficiencia exocrina pancreática.",
+      "option_d": "Mayores niveles de elastasa fecal reflejan mayor grado de insuficiencia pancreática.",
+      "correct_letter": "d",
+      "correct_option_text": "Mayores niveles de elastasa fecal reflejan mayor grado de insuficiencia pancreática.",
+      "source_text_sha256": "a66cd9a493a70433483a2ede95a689fdf7d42bda0b1cd1b3ad9b28e36f92c172",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la Guía Europea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU),",
+          "right_context": "ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una de las siguientes aseveraciones no es cierta:"
+        },
+        {
+          "boundary_start": 236,
+          "boundary_end": 237,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ropea de Gastroenterología basada en la evidencia para el diagnóstico y tratamiento de la pancreatitis crónica (HaPanEU), ante un paciente diagnosticado de pancreatitis crónica con insuficiencia pancreática exocrina, una",
+          "right_context": "de las siguientes aseveraciones no es cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b284",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b284",
+      "question_text": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):",
+      "option_a": "Se recomienda endoscopia urgente, dentro de las primeras 24 horas, para cuerpos extraños esofágicos sin obstrucción completa.",
+      "option_b": "ESGE no recomienda el estudio con bario.",
+      "option_c": "Se recomienda la evaluación radiológica para pacientes con impactación de bolo alimenticio sin presencia de hueso y sin complicaciones.",
+      "option_d": "Se recomienda endoscopia no urgente (dentro de las 72 horas) para cuerpos extraños romos de tamaño mediano localizados en el estómago.",
+      "correct_letter": "c",
+      "correct_option_text": "Se recomienda la evaluación radiológica para pacientes con impactación de bolo alimenticio sin presencia de hueso y sin complicaciones.",
+      "source_text_sha256": "ce73a449d5c9e620cfa0c747ff075ac9c7aea25df836dc062cea3fc3cae7a42e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la extracción endoscópica de cuerpos extraños, una",
+          "right_context": "de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+        },
+        {
+          "boundary_start": 109,
+          "boundary_end": 110,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa",
+          "right_context": "según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+        }
+      ]
+    },
+    {
+      "question_id": "b284",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b284",
+      "question_text": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):",
+      "option_a": "Se recomienda endoscopia urgente, dentro de las primeras 24 horas, para cuerpos extraños esofágicos sin obstrucción completa.",
+      "option_b": "ESGE no recomienda el estudio con bario.",
+      "option_c": "Se recomienda la evaluación radiológica para pacientes con impactación de bolo alimenticio sin presencia de hueso y sin complicaciones.",
+      "option_d": "Se recomienda endoscopia no urgente (dentro de las 72 horas) para cuerpos extraños romos de tamaño mediano localizados en el estómago.",
+      "correct_letter": "c",
+      "correct_option_text": "Se recomienda la evaluación radiológica para pacientes con impactación de bolo alimenticio sin presencia de hueso y sin complicaciones.",
+      "source_text_sha256": "ce73a449d5c9e620cfa0c747ff075ac9c7aea25df836dc062cea3fc3cae7a42e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la extracción endoscópica de cuerpos extraños, una",
+          "right_context": "de las siguientes recomendaciones es falsa según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+        },
+        {
+          "boundary_start": 109,
+          "boundary_end": 110,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la extracción endoscópica de cuerpos extraños, una de las siguientes recomendaciones es falsa",
+          "right_context": "según la Guía Clínica de la European Society of Gastrointestinal Endoscopy (ESGE):"
+        }
+      ]
+    },
+    {
+      "question_id": "b300",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b300",
+      "question_text": "Una de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):",
+      "option_a": "Si hay insuficiencia renal se deben evitar los inhibidores de la calcineurina.",
+      "option_b": "Los corticoides son la base de la IS en el TH.",
+      "option_c": "En pacientes de riesgo inmunológico (hepatitis autoinmune, cirrosis biliar primaria y colangitis esclerosante primaria) es recomendable hacer una inducción más potente.",
+      "option_d": "El everólimus es un fármaco útil en los pacientes trasplantados por carcinoma hepatocelular por su función antitumoral.",
+      "correct_letter": "b",
+      "correct_option_text": "Los corticoides son la base de la IS en el TH.",
+      "source_text_sha256": "dafd49a99998ea230d9281037dae7f936fb6c847a848dba2ff07d20c8c80a823",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):"
+        }
+      ]
+    },
+    {
+      "question_id": "b300",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b300",
+      "question_text": "Una de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):",
+      "option_a": "Si hay insuficiencia renal se deben evitar los inhibidores de la calcineurina.",
+      "option_b": "Los corticoides son la base de la IS en el TH.",
+      "option_c": "En pacientes de riesgo inmunológico (hepatitis autoinmune, cirrosis biliar primaria y colangitis esclerosante primaria) es recomendable hacer una inducción más potente.",
+      "option_d": "El everólimus es un fármaco útil en los pacientes trasplantados por carcinoma hepatocelular por su función antitumoral.",
+      "correct_letter": "b",
+      "correct_option_text": "Los corticoides son la base de la IS en el TH.",
+      "source_text_sha256": "dafd49a99998ea230d9281037dae7f936fb6c847a848dba2ff07d20c8c80a823",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes opciones es falsa con relación a la inducción de la inmunosupresión (IS) en el trasplante hepático (TH):"
+        }
+      ]
+    },
+    {
+      "question_id": "b313",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b313",
+      "question_text": "Se consideran factores de elevado riesgo para desarrollar cáncer colorrectal asociado a enfermedad inflamatoria intestinal todos excepto:",
+      "option_a": "Colitis extensa con actividad grave.",
+      "option_b": "Presencia de estenosis o displasia en los últimos 5 años.",
+      "option_c": "Colangitis esclerosante primaria concomitante.",
+      "option_d": "Historia familiar de CCR > 50 años.",
+      "correct_letter": "d",
+      "correct_option_text": "Historia familiar de CCR > 50 años.",
+      "source_text_sha256": "ffc6068ac830629a14ed65f3d99c2fd5050adb8e41524c6f57104b98cc8fecbf",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b313",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b313",
+      "question_text": "Se consideran factores de elevado riesgo para desarrollar cáncer colorrectal asociado a enfermedad inflamatoria intestinal todos excepto:",
+      "option_a": "Colitis extensa con actividad grave.",
+      "option_b": "Presencia de estenosis o displasia en los últimos 5 años.",
+      "option_c": "Colangitis esclerosante primaria concomitante.",
+      "option_d": "Historia familiar de CCR > 50 años.",
+      "correct_letter": "d",
+      "correct_option_text": "Historia familiar de CCR > 50 años.",
+      "source_text_sha256": "ffc6068ac830629a14ed65f3d99c2fd5050adb8e41524c6f57104b98cc8fecbf",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b326",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b326",
+      "question_text": "¿Cuál de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?",
+      "option_a": "Ascitis en ecografía.",
+      "option_b": "Varices esofágicas en endoscopia alta.",
+      "option_c": "Una medición de 45 kPa en elastometría transitoria.",
+      "option_d": "Un flujo portal hepatópeto inferior a 20 cm/seg en ecografía doppler.",
+      "correct_letter": "c",
+      "correct_option_text": "Una medición de 45 kPa en elastometría transitoria.",
+      "source_text_sha256": "fda4c7a70a306bd61bcc09922771562bcf393ef71e53ff962e889eab5a1b51d1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?"
+        }
+      ]
+    },
+    {
+      "question_id": "b326",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b326",
+      "question_text": "¿Cuál de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?",
+      "option_a": "Ascitis en ecografía.",
+      "option_b": "Varices esofágicas en endoscopia alta.",
+      "option_c": "Una medición de 45 kPa en elastometría transitoria.",
+      "option_d": "Un flujo portal hepatópeto inferior a 20 cm/seg en ecografía doppler.",
+      "correct_letter": "c",
+      "correct_option_text": "Una medición de 45 kPa en elastometría transitoria.",
+      "source_text_sha256": "fda4c7a70a306bd61bcc09922771562bcf393ef71e53ff962e889eab5a1b51d1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes hallazgos (aisladamente) permitiría establecer con mas seguridad el diagnóstico de síndrome de hipertensión portal secundario a hepatopatía crónica?"
+        }
+      ]
+    },
+    {
+      "question_id": "b344",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b344",
+      "question_text": "El diagrama de cajas (box-plot) es una forma de representación gráfica bastante usada, sobre todo cuando se quieren comparar dos o más mediciones de una misma variable, por ejemplo en varios grupos de sujetos o en los mismos sujetos en distintos momentos del tiempo. Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:",
+      "option_a": "La caja está determinada por los percentiles 25 y 75, por lo que su amplitud es el rango intercuartílico",
+      "option_b": "La mediana es un valor que caerá siempre dentro de la caja",
+      "option_c": "Los \"bigotes\" o líneas que salen desde la caja en direcciones opuestas, se extienden hasta los valores máximo y mínimo de la serie (valores ordenados de la variable)",
+      "option_d": "En la caja se encuentran la mitad de las observaciones o valores",
+      "correct_letter": "c",
+      "correct_option_text": "Los \"bigotes\" o líneas que salen desde la caja en direcciones opuestas, se extienden hasta los valores máximo y mínimo de la serie (valores ordenados de la variable)",
+      "source_text_sha256": "35f82bd2f4da3e51b4bd05ebd290dede3273b5f1d04e9ddb753d295d0147a36a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 266,
+          "boundary_end": 267,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e representación gráfica bastante usada, sobre todo cuando se quieren comparar dos o más mediciones de una misma variable, por ejemplo en varios grupos de sujetos o en los mismos sujetos en distintos momentos del tiempo.",
+          "right_context": "Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b344",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b344",
+      "question_text": "El diagrama de cajas (box-plot) es una forma de representación gráfica bastante usada, sobre todo cuando se quieren comparar dos o más mediciones de una misma variable, por ejemplo en varios grupos de sujetos o en los mismos sujetos en distintos momentos del tiempo. Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:",
+      "option_a": "La caja está determinada por los percentiles 25 y 75, por lo que su amplitud es el rango intercuartílico",
+      "option_b": "La mediana es un valor que caerá siempre dentro de la caja",
+      "option_c": "Los \"bigotes\" o líneas que salen desde la caja en direcciones opuestas, se extienden hasta los valores máximo y mínimo de la serie (valores ordenados de la variable)",
+      "option_d": "En la caja se encuentran la mitad de las observaciones o valores",
+      "correct_letter": "c",
+      "correct_option_text": "Los \"bigotes\" o líneas que salen desde la caja en direcciones opuestas, se extienden hasta los valores máximo y mínimo de la serie (valores ordenados de la variable)",
+      "source_text_sha256": "35f82bd2f4da3e51b4bd05ebd290dede3273b5f1d04e9ddb753d295d0147a36a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 266,
+          "boundary_end": 267,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e representación gráfica bastante usada, sobre todo cuando se quieren comparar dos o más mediciones de una misma variable, por ejemplo en varios grupos de sujetos o en los mismos sujetos en distintos momentos del tiempo.",
+          "right_context": "Todas las afirmaciones siguientes sobre este modelo son ciertas, excepto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b358",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b358",
+      "question_text": "Ante un paciente con disfagia bucofaríngea, ¿qué estudio se aconseja realizar en primer lugar?:",
+      "option_a": "Pruebas de motilidad esofágica.",
+      "option_b": "Estudio de deglución con video.",
+      "option_c": "Endoscopia Digestiva Alta.",
+      "option_d": "Radiografía de cuello y tórax.",
+      "correct_letter": "b",
+      "correct_option_text": "Estudio de deglución con video.",
+      "source_text_sha256": "cb376846342f228464b8e20039cbf6c7752c99af1baf5f33ca2637aa97bfab48",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 43,
+          "boundary_end": 44,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Ante un paciente con disfagia bucofaríngea,",
+          "right_context": "¿qué estudio se aconseja realizar en primer lugar?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b358",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b358",
+      "question_text": "Ante un paciente con disfagia bucofaríngea, ¿qué estudio se aconseja realizar en primer lugar?:",
+      "option_a": "Pruebas de motilidad esofágica.",
+      "option_b": "Estudio de deglución con video.",
+      "option_c": "Endoscopia Digestiva Alta.",
+      "option_d": "Radiografía de cuello y tórax.",
+      "correct_letter": "b",
+      "correct_option_text": "Estudio de deglución con video.",
+      "source_text_sha256": "cb376846342f228464b8e20039cbf6c7752c99af1baf5f33ca2637aa97bfab48",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 43,
+          "boundary_end": 44,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Ante un paciente con disfagia bucofaríngea,",
+          "right_context": "¿qué estudio se aconseja realizar en primer lugar?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b372",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b372",
+      "question_text": "De los siguientes gases intestinales, ¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?",
+      "option_a": "Amonio.",
+      "option_b": "Metano.",
+      "option_c": "Sulfuro de hidrógeno.",
+      "option_d": "Dimetilsulfuro.",
+      "correct_letter": "c",
+      "correct_option_text": "Sulfuro de hidrógeno.",
+      "source_text_sha256": "80a335c64c40b048ce97ad36a1a49f7208d18729054681a2729c7422e818f4c4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 37,
+          "boundary_end": 38,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De los siguientes gases intestinales,",
+          "right_context": "¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?"
+        }
+      ]
+    },
+    {
+      "question_id": "b372",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b372",
+      "question_text": "De los siguientes gases intestinales, ¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?",
+      "option_a": "Amonio.",
+      "option_b": "Metano.",
+      "option_c": "Sulfuro de hidrógeno.",
+      "option_d": "Dimetilsulfuro.",
+      "correct_letter": "c",
+      "correct_option_text": "Sulfuro de hidrógeno.",
+      "source_text_sha256": "80a335c64c40b048ce97ad36a1a49f7208d18729054681a2729c7422e818f4c4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 37,
+          "boundary_end": 38,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De los siguientes gases intestinales,",
+          "right_context": "¿Cuál es el principal responsable del olor pútrido de la expulsión de gases intestinales?"
+        }
+      ]
+    },
+    {
+      "question_id": "b386",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b386",
+      "question_text": "Las relajaciones transitorias del esfínter esofágico inferior son un mecanismo importante en la patogenia de la enfermedad por reflujo gastroesofágico, pueden distinguirse de la relajación inducida por la deglución de varias formas. Indica la respuesta FALSA:",
+      "option_a": "Las relajaciones transitorias del esfínter esofágico inferior son prolongadas (más de 10 segundos).",
+      "option_b": "Las relajaciones transitorias del esfínter esofágico e asocian con la relajación del músculo longitudinal esofágico distal, que causa acortamiento esofágico.",
+      "option_c": "Las relajaciones transitorias del esfínter esofágico no tienen un peristaltismo esofágico sincronizado.",
+      "option_d": "Las relajaciones transitorias del esfínter esofágico se asocian con la inhibición del diafragma crural.",
+      "correct_letter": "b",
+      "correct_option_text": "Las relajaciones transitorias del esfínter esofágico e asocian con la relajación del músculo longitudinal esofágico distal, que causa acortamiento esofágico.",
+      "source_text_sha256": "cf610215e4b12aac69c1eaba053030b5316a9839a4a8c5ccdb8e37e3c7d418ac",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 232,
+          "boundary_end": 233,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ones transitorias del esfínter esofágico inferior son un mecanismo importante en la patogenia de la enfermedad por reflujo gastroesofágico, pueden distinguirse de la relajación inducida por la deglución de varias formas.",
+          "right_context": "Indica la respuesta FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b386",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b386",
+      "question_text": "Las relajaciones transitorias del esfínter esofágico inferior son un mecanismo importante en la patogenia de la enfermedad por reflujo gastroesofágico, pueden distinguirse de la relajación inducida por la deglución de varias formas. Indica la respuesta FALSA:",
+      "option_a": "Las relajaciones transitorias del esfínter esofágico inferior son prolongadas (más de 10 segundos).",
+      "option_b": "Las relajaciones transitorias del esfínter esofágico e asocian con la relajación del músculo longitudinal esofágico distal, que causa acortamiento esofágico.",
+      "option_c": "Las relajaciones transitorias del esfínter esofágico no tienen un peristaltismo esofágico sincronizado.",
+      "option_d": "Las relajaciones transitorias del esfínter esofágico se asocian con la inhibición del diafragma crural.",
+      "correct_letter": "b",
+      "correct_option_text": "Las relajaciones transitorias del esfínter esofágico e asocian con la relajación del músculo longitudinal esofágico distal, que causa acortamiento esofágico.",
+      "source_text_sha256": "cf610215e4b12aac69c1eaba053030b5316a9839a4a8c5ccdb8e37e3c7d418ac",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 232,
+          "boundary_end": 233,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ones transitorias del esfínter esofágico inferior son un mecanismo importante en la patogenia de la enfermedad por reflujo gastroesofágico, pueden distinguirse de la relajación inducida por la deglución de varias formas.",
+          "right_context": "Indica la respuesta FALSA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b403",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b403",
+      "question_text": "Cuál es la causa más frecuente de Síndrome de Budd-Chiari",
+      "option_a": "Deficit de antitrombina",
+      "option_b": "Neoplasias mieloproliferativas",
+      "option_c": "Déficit de proteina C",
+      "option_d": "Carcinoma renal",
+      "correct_letter": "b",
+      "correct_option_text": "Neoplasias mieloproliferativas",
+      "source_text_sha256": "49d9fb91690d8b0b98fce848b0e1f7bc9e50cd99492d0413e495b28c8422dff1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b403",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b403",
+      "question_text": "Cuál es la causa más frecuente de Síndrome de Budd-Chiari",
+      "option_a": "Deficit de antitrombina",
+      "option_b": "Neoplasias mieloproliferativas",
+      "option_c": "Déficit de proteina C",
+      "option_d": "Carcinoma renal",
+      "correct_letter": "b",
+      "correct_option_text": "Neoplasias mieloproliferativas",
+      "source_text_sha256": "49d9fb91690d8b0b98fce848b0e1f7bc9e50cd99492d0413e495b28c8422dff1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b420",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b420",
+      "question_text": "De conformidad con lo que establece la Ley 1/2022, de 13 de abril, de la Generalitat, de Transparencia y Buen Gobierno de la Comunitat Valenciana, la solicitud de acceso a la información pública debe incluir, entre otros, el siguiente contenido:",
+      "option_a": "La identidad de la persona solicitante.",
+      "option_b": "La modalidad o vía elegida por la persona solicitante para la puesta a disposición de la información y también su formato.",
+      "option_c": "El órgano administrativo o entidad al que se dirige.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "c408da46239cec46805adb08885b7df0343e28a4bc1a1e2a231d56ea95b0de4b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b420",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b420",
+      "question_text": "De conformidad con lo que establece la Ley 1/2022, de 13 de abril, de la Generalitat, de Transparencia y Buen Gobierno de la Comunitat Valenciana, la solicitud de acceso a la información pública debe incluir, entre otros, el siguiente contenido:",
+      "option_a": "La identidad de la persona solicitante.",
+      "option_b": "La modalidad o vía elegida por la persona solicitante para la puesta a disposición de la información y también su formato.",
+      "option_c": "El órgano administrativo o entidad al que se dirige.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "c408da46239cec46805adb08885b7df0343e28a4bc1a1e2a231d56ea95b0de4b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b435",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b435",
+      "question_text": "Con respecto al diagnóstico y manejo de la colestasis gravídica, señale la opción incorrecta",
+      "option_a": "La principal manifestación clínica es el prurito palmo – plantar, de predominio nocturno",
+      "option_b": "En el 90% de los casos las pacientes terminan presentando ictericia",
+      "option_c": "El objetivo del tratamiento es disminuir los ácidos biliares en sangre hasta conseguir la madurez pulmonar fetal",
+      "option_d": "El tratamiento con acido ursodeoxicolico (10-16 mg/kg/día) es seguro en mujeres con colestasis intrahepatica del embarazo",
+      "correct_letter": "b",
+      "correct_option_text": "En el 90% de los casos las pacientes terminan presentando ictericia",
+      "source_text_sha256": "30461315012b7351afcaa3047fb1bd5dbe14b91fc98427c947ab29e79767d0f4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto al diagnóstico y manejo de la colestasis gravídica, señale la opción incorrecta"
+        },
+        {
+          "boundary_start": 64,
+          "boundary_end": 65,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto al diagnóstico y manejo de la colestasis gravídica,",
+          "right_context": "señale la opción incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b435",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b435",
+      "question_text": "Con respecto al diagnóstico y manejo de la colestasis gravídica, señale la opción incorrecta",
+      "option_a": "La principal manifestación clínica es el prurito palmo – plantar, de predominio nocturno",
+      "option_b": "En el 90% de los casos las pacientes terminan presentando ictericia",
+      "option_c": "El objetivo del tratamiento es disminuir los ácidos biliares en sangre hasta conseguir la madurez pulmonar fetal",
+      "option_d": "El tratamiento con acido ursodeoxicolico (10-16 mg/kg/día) es seguro en mujeres con colestasis intrahepatica del embarazo",
+      "correct_letter": "b",
+      "correct_option_text": "En el 90% de los casos las pacientes terminan presentando ictericia",
+      "source_text_sha256": "30461315012b7351afcaa3047fb1bd5dbe14b91fc98427c947ab29e79767d0f4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto al diagnóstico y manejo de la colestasis gravídica, señale la opción incorrecta"
+        },
+        {
+          "boundary_start": 64,
+          "boundary_end": 65,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto al diagnóstico y manejo de la colestasis gravídica,",
+          "right_context": "señale la opción incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b449",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b449",
+      "question_text": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:",
+      "option_a": "La radioterapia adyuvante tras cirugía R0 es standard y mejora la supervivencia.",
+      "option_b": "En el cáncer de páncreas localmente avanzado, la quimiorradioterapia después de la quimioterapia no mejora la supervivencia global, pero retrasa la progresión local.",
+      "option_c": "La radioterapia estereotáctica tiene un papel establecido como tratamiento inicial en el cáncer de páncreas bordeline resecable.",
+      "option_d": "La radioterapia debe aplicarse de forma rutinaria en pacientes con tumores resecables.",
+      "correct_letter": "b",
+      "correct_option_text": "En el cáncer de páncreas localmente avanzado, la quimiorradioterapia después de la quimioterapia no mejora la supervivencia global, pero retrasa la progresión local.",
+      "source_text_sha256": "a3f50541124309e94cf14c444de846f2f8cc34f15d81724e6d0d702b2fd65f3b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+        },
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA",
+          "right_context": "según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b449",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b449",
+      "question_text": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:",
+      "option_a": "La radioterapia adyuvante tras cirugía R0 es standard y mejora la supervivencia.",
+      "option_b": "En el cáncer de páncreas localmente avanzado, la quimiorradioterapia después de la quimioterapia no mejora la supervivencia global, pero retrasa la progresión local.",
+      "option_c": "La radioterapia estereotáctica tiene un papel establecido como tratamiento inicial en el cáncer de páncreas bordeline resecable.",
+      "option_d": "La radioterapia debe aplicarse de forma rutinaria en pacientes con tumores resecables.",
+      "correct_letter": "b",
+      "correct_option_text": "En el cáncer de páncreas localmente avanzado, la quimiorradioterapia después de la quimioterapia no mejora la supervivencia global, pero retrasa la progresión local.",
+      "source_text_sha256": "a3f50541124309e94cf14c444de846f2f8cc34f15d81724e6d0d702b2fd65f3b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+        },
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las siguientes afirmaciones sobre el uso de radioterapia en cáncer de páncreas es CORRECTA",
+          "right_context": "según la guía ESMO (Sociedad Europea de Oncología Médica)?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b463",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b463",
+      "question_text": "¿En qué situación no está recomendada la realización de un test genético para descartar la presencia de hemocromatosis hereditaria?:",
+      "option_a": "En población general sin ningún dato ni antecedentes de hepatopatía.",
+      "option_b": "Pacientes con hepatopatía crónica sin diagnóstico.",
+      "option_c": "Pacientes con porfiria cutánea tarda.",
+      "option_d": "Pacientes con hepatocarcinoma recién diagnosticado.",
+      "correct_letter": "a",
+      "correct_option_text": "En población general sin ningún dato ni antecedentes de hepatopatía.",
+      "source_text_sha256": "18fe23530d80b257020b6df910f1e9dc197cf1619054afe3d8154c11d28c4e4c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En",
+          "right_context": "qué situación no está recomendada la realización de un test genético para descartar la presencia de hemocromatosis hereditaria?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b463",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b463",
+      "question_text": "¿En qué situación no está recomendada la realización de un test genético para descartar la presencia de hemocromatosis hereditaria?:",
+      "option_a": "En población general sin ningún dato ni antecedentes de hepatopatía.",
+      "option_b": "Pacientes con hepatopatía crónica sin diagnóstico.",
+      "option_c": "Pacientes con porfiria cutánea tarda.",
+      "option_d": "Pacientes con hepatocarcinoma recién diagnosticado.",
+      "correct_letter": "a",
+      "correct_option_text": "En población general sin ningún dato ni antecedentes de hepatopatía.",
+      "source_text_sha256": "18fe23530d80b257020b6df910f1e9dc197cf1619054afe3d8154c11d28c4e4c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En",
+          "right_context": "qué situación no está recomendada la realización de un test genético para descartar la presencia de hemocromatosis hereditaria?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b478",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b478",
+      "question_text": "Dentro de las modificaciones en la actual Clasificación de Chicago versión 4.0 (CCv4.0) es falso:",
+      "option_a": "Se requiere una evaluación manométrica y no manométrica adicional para llegar a un diagnóstico concluyente y procesable de obstrucción al flujo de salida de la unión esófago-gástrica (EGJOO).",
+      "option_b": "El espasmo esofágico distal y esófago hipercontráctil son tres patrones manométricos que deben ir acompañados de síntomas esofágicos obstructivos de disfagia y / o dolor torácico no cardíaco para que se consideren clínicamente relevantes.",
+      "option_c": "El protocolo manométrico estandarizado idealmente incluye posición supina no considerando necesarios estudios en posición erguida, y sí se considera necesario realizar maniobras manométricas adicionales como las degluciones múltiples rápidas habitual y de sobrecarga.",
+      "option_d": "La definición de motilidad esofágica ineficaz es más estricta y ahora abarca la perístasis fragmentada.",
+      "correct_letter": "c",
+      "correct_option_text": "El protocolo manométrico estandarizado idealmente incluye posición supina no considerando necesarios estudios en posición erguida, y sí se considera necesario realizar maniobras manométricas adicionales como las degluciones múltiples rápidas habitual y de sobrecarga.",
+      "source_text_sha256": "3f6da1f0548026b5f0201de5b2a33f38642b256a175d6753d95c4e2bd90efe89",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b478",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b478",
+      "question_text": "Dentro de las modificaciones en la actual Clasificación de Chicago versión 4.0 (CCv4.0) es falso:",
+      "option_a": "Se requiere una evaluación manométrica y no manométrica adicional para llegar a un diagnóstico concluyente y procesable de obstrucción al flujo de salida de la unión esófago-gástrica (EGJOO).",
+      "option_b": "El espasmo esofágico distal y esófago hipercontráctil son tres patrones manométricos que deben ir acompañados de síntomas esofágicos obstructivos de disfagia y / o dolor torácico no cardíaco para que se consideren clínicamente relevantes.",
+      "option_c": "El protocolo manométrico estandarizado idealmente incluye posición supina no considerando necesarios estudios en posición erguida, y sí se considera necesario realizar maniobras manométricas adicionales como las degluciones múltiples rápidas habitual y de sobrecarga.",
+      "option_d": "La definición de motilidad esofágica ineficaz es más estricta y ahora abarca la perístasis fragmentada.",
+      "correct_letter": "c",
+      "correct_option_text": "El protocolo manométrico estandarizado idealmente incluye posición supina no considerando necesarios estudios en posición erguida, y sí se considera necesario realizar maniobras manométricas adicionales como las degluciones múltiples rápidas habitual y de sobrecarga.",
+      "source_text_sha256": "3f6da1f0548026b5f0201de5b2a33f38642b256a175d6753d95c4e2bd90efe89",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b496",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b496",
+      "question_text": "Indique la necesidad de proteínas (g/kg peso corporal ideal al día) para un paciente en estado de estrés metabólico:",
+      "option_a": "0,80 g/kg peso corporal ideal al día",
+      "option_b": "1-1,6 g/kg peso corporal ideal al día",
+      "option_c": "1,2-1,4 g/kg peso corporal ideal al día",
+      "option_d": "1,3-1,5 g/kg peso corporal ideal al día",
+      "correct_letter": "b",
+      "correct_option_text": "1-1,6 g/kg peso corporal ideal al día",
+      "source_text_sha256": "370fbd82deb49bee9c96be072b190c40e3afbab7cfe8db47509314510f86434a",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b496",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b496",
+      "question_text": "Indique la necesidad de proteínas (g/kg peso corporal ideal al día) para un paciente en estado de estrés metabólico:",
+      "option_a": "0,80 g/kg peso corporal ideal al día",
+      "option_b": "1-1,6 g/kg peso corporal ideal al día",
+      "option_c": "1,2-1,4 g/kg peso corporal ideal al día",
+      "option_d": "1,3-1,5 g/kg peso corporal ideal al día",
+      "correct_letter": "b",
+      "correct_option_text": "1-1,6 g/kg peso corporal ideal al día",
+      "source_text_sha256": "370fbd82deb49bee9c96be072b190c40e3afbab7cfe8db47509314510f86434a",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    }
+  ]
+}

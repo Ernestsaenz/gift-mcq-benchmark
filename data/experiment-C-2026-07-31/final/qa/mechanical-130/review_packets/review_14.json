@@ -1,0 +1,1259 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_14",
+  "shard_id": "14",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b195",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b195",
+      "question_text": "En la enfermedad perianal (enfermedad de Crohn) si hay dolor intenso, usted sospechará:",
+      "option_a": "Absceso.",
+      "option_b": "Fístula compleja.",
+      "option_c": "Fístula transesfinteriana.",
+      "option_d": "Actividad rectal.",
+      "correct_letter": "a",
+      "correct_option_text": "Absceso.",
+      "source_text_sha256": "619c60ba7afeaec954f5d3f3c958c5e3e65f9b548c0d68ad620a25d632cdf37e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 47,
+          "boundary_end": 48,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En la enfermedad perianal (enfermedad de Crohn)",
+          "right_context": "si hay dolor intenso, usted sospechará:"
+        }
+      ]
+    },
+    {
+      "question_id": "b195",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b195",
+      "question_text": "En la enfermedad perianal (enfermedad de Crohn) si hay dolor intenso, usted sospechará:",
+      "option_a": "Absceso.",
+      "option_b": "Fístula compleja.",
+      "option_c": "Fístula transesfinteriana.",
+      "option_d": "Actividad rectal.",
+      "correct_letter": "a",
+      "correct_option_text": "Absceso.",
+      "source_text_sha256": "619c60ba7afeaec954f5d3f3c958c5e3e65f9b548c0d68ad620a25d632cdf37e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 47,
+          "boundary_end": 48,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En la enfermedad perianal (enfermedad de Crohn)",
+          "right_context": "si hay dolor intenso, usted sospechará:"
+        }
+      ]
+    },
+    {
+      "question_id": "b207",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b207",
+      "question_text": "Con respecto al tratamiento farmacológico de la pancreatitis crónica, señale la opción cierta:",
+      "option_a": "No existen datos que apoyen el uso de omeprazol asociado al tratamiento sustitutivo enzimático.",
+      "option_b": "En la diabetes mellitus secundaria a pancreatitis crónica está indicado el tratamiento inicial con antidiabéticos orales.",
+      "option_c": "El tratamiento sustitutivo enzimático se debe controlar siempre mediante test de funcionalismo pancreático.",
+      "option_d": "La dosis de tratamiento sustitutivo enzimático correcta es de 40000-50000 unidades con las comidas principales y 20000-25000 con los snacks.",
+      "correct_letter": "d",
+      "correct_option_text": "La dosis de tratamiento sustitutivo enzimático correcta es de 40000-50000 unidades con las comidas principales y 20000-25000 con los snacks.",
+      "source_text_sha256": "fec4754d5b306d416edb1b9715e41273f595dd207b3110876697ceb57b4c8359",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto al tratamiento farmacológico de la pancreatitis crónica, señale la opción cierta:"
+        },
+        {
+          "boundary_start": 69,
+          "boundary_end": 70,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto al tratamiento farmacológico de la pancreatitis crónica,",
+          "right_context": "señale la opción cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b207",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b207",
+      "question_text": "Con respecto al tratamiento farmacológico de la pancreatitis crónica, señale la opción cierta:",
+      "option_a": "No existen datos que apoyen el uso de omeprazol asociado al tratamiento sustitutivo enzimático.",
+      "option_b": "En la diabetes mellitus secundaria a pancreatitis crónica está indicado el tratamiento inicial con antidiabéticos orales.",
+      "option_c": "El tratamiento sustitutivo enzimático se debe controlar siempre mediante test de funcionalismo pancreático.",
+      "option_d": "La dosis de tratamiento sustitutivo enzimático correcta es de 40000-50000 unidades con las comidas principales y 20000-25000 con los snacks.",
+      "correct_letter": "d",
+      "correct_option_text": "La dosis de tratamiento sustitutivo enzimático correcta es de 40000-50000 unidades con las comidas principales y 20000-25000 con los snacks.",
+      "source_text_sha256": "fec4754d5b306d416edb1b9715e41273f595dd207b3110876697ceb57b4c8359",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto al tratamiento farmacológico de la pancreatitis crónica, señale la opción cierta:"
+        },
+        {
+          "boundary_start": 69,
+          "boundary_end": 70,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto al tratamiento farmacológico de la pancreatitis crónica,",
+          "right_context": "señale la opción cierta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b244",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b244",
+      "question_text": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI: acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:",
+      "option_a": "Se deben retirar los diuréticos.",
+      "option_b": "En la reanimación hemodinámica están contraindicados los preparados a base de coloides de almidón.",
+      "option_c": "En caso de shock persistente el vasopresor indicado es norepinefrina.",
+      "option_d": "La diálisis de albúmina mediante el Sistema Recirculante de Absorción Molecular (MARS) mejora la supervivencia a corto plazo (28 días).",
+      "correct_letter": "d",
+      "correct_option_text": "La diálisis de albúmina mediante el Sistema Recirculante de Absorción Molecular (MARS) mejora la supervivencia a corto plazo (28 días).",
+      "source_text_sha256": "ae2cd811c06635c762131f6177e52f4229f320f0bbca19ce307bfabcf53fb23f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 84,
+          "boundary_end": 85,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI:",
+          "right_context": "acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:"
+        }
+      ]
+    },
+    {
+      "question_id": "b244",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b244",
+      "question_text": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI: acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:",
+      "option_a": "Se deben retirar los diuréticos.",
+      "option_b": "En la reanimación hemodinámica están contraindicados los preparados a base de coloides de almidón.",
+      "option_c": "En caso de shock persistente el vasopresor indicado es norepinefrina.",
+      "option_d": "La diálisis de albúmina mediante el Sistema Recirculante de Absorción Molecular (MARS) mejora la supervivencia a corto plazo (28 días).",
+      "correct_letter": "d",
+      "correct_option_text": "La diálisis de albúmina mediante el Sistema Recirculante de Absorción Molecular (MARS) mejora la supervivencia a corto plazo (28 días).",
+      "source_text_sha256": "ae2cd811c06635c762131f6177e52f4229f320f0bbca19ce307bfabcf53fb23f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 84,
+          "boundary_end": 85,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En el tratamiento del fallo hepático agudo sobre crónico con fallo renal agudo (AKI:",
+          "right_context": "acute kidney injury) son ciertas las siguientes afirmaciones EXCEPTO:"
+        }
+      ]
+    },
+    {
+      "question_id": "b257",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b257",
+      "question_text": "¿Cuál de los siguientes criterios es imprescindible para realizar el diagnóstico de pancreatitis aguda?",
+      "option_a": "Elevación de amilasa y lipasa sérica más de tres veces el límite superior de la normalidad",
+      "option_b": "Dolor abdominal en piso abdominal superior",
+      "option_c": "Datos compatibles en prueba de imagen (ecografía, TC o resonancia magnética) compatibles",
+      "option_d": "Ninguno de las anteriores",
+      "correct_letter": "d",
+      "correct_option_text": "Ninguno de las anteriores",
+      "source_text_sha256": "0028b0233e1af09e005869a4cbd0b5fe9010ed81325e673c1e9646ead2144ff2",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes criterios es imprescindible para realizar el diagnóstico de pancreatitis aguda?"
+        }
+      ]
+    },
+    {
+      "question_id": "b257",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b257",
+      "question_text": "¿Cuál de los siguientes criterios es imprescindible para realizar el diagnóstico de pancreatitis aguda?",
+      "option_a": "Elevación de amilasa y lipasa sérica más de tres veces el límite superior de la normalidad",
+      "option_b": "Dolor abdominal en piso abdominal superior",
+      "option_c": "Datos compatibles en prueba de imagen (ecografía, TC o resonancia magnética) compatibles",
+      "option_d": "Ninguno de las anteriores",
+      "correct_letter": "d",
+      "correct_option_text": "Ninguno de las anteriores",
+      "source_text_sha256": "0028b0233e1af09e005869a4cbd0b5fe9010ed81325e673c1e9646ead2144ff2",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes criterios es imprescindible para realizar el diagnóstico de pancreatitis aguda?"
+        }
+      ]
+    },
+    {
+      "question_id": "b273",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b273",
+      "question_text": "Usted está leyendo un artículo que publica los resultados de un gran ensayo clínico aleatorizado y doble ciego, de gran interés en su ámbito profesional. En concreto le llama la atención el resultado que muestra este estudio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?",
+      "option_a": "El valor p asociado al contraste no es significativo estadísticamente.",
+      "option_b": "La reducción relativa del riesgo (RRR) para la variable \"mortalidad global\" es aproximadamente del 29%.",
+      "option_c": "El NNT (número de pacientes que necesitaría tratarse con el nuevo tratamiento en vez del estándar para reducir un resultado de muerte por cualquier causa) sería 71.",
+      "option_d": "La probabilidad de que estos resultados se deban al error del muestreo es del 95%.",
+      "correct_letter": "b",
+      "correct_option_text": "La reducción relativa del riesgo (RRR) para la variable \"mortalidad global\" es aproximadamente del 29%.",
+      "source_text_sha256": "9f49bab564a9b0cd14d1ca92d4f11bb03e293bebca47863c248a96ca6c7123ee",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 153,
+          "boundary_end": 154,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted está leyendo un artículo que publica los resultados de un gran ensayo clínico aleatorizado y doble ciego, de gran interés en su ámbito profesional.",
+          "right_context": "En concreto le llama la atención el resultado que muestra este estudio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Uni"
+        },
+        {
+          "boundary_start": 438,
+          "boundary_end": 439,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "studio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad.",
+          "right_context": "Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 467,
+          "boundary_end": 468,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "obal al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es:",
+          "right_context": "RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 505,
+          "boundary_end": 506,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046).",
+          "right_context": "¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 511,
+          "boundary_end": 512,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "mental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál",
+          "right_context": "de las siguientes afirmaciones es correcta?"
+        }
+      ]
+    },
+    {
+      "question_id": "b273",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b273",
+      "question_text": "Usted está leyendo un artículo que publica los resultados de un gran ensayo clínico aleatorizado y doble ciego, de gran interés en su ámbito profesional. En concreto le llama la atención el resultado que muestra este estudio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?",
+      "option_a": "El valor p asociado al contraste no es significativo estadísticamente.",
+      "option_b": "La reducción relativa del riesgo (RRR) para la variable \"mortalidad global\" es aproximadamente del 29%.",
+      "option_c": "El NNT (número de pacientes que necesitaría tratarse con el nuevo tratamiento en vez del estándar para reducir un resultado de muerte por cualquier causa) sería 71.",
+      "option_d": "La probabilidad de que estos resultados se deban al error del muestreo es del 95%.",
+      "correct_letter": "b",
+      "correct_option_text": "La reducción relativa del riesgo (RRR) para la variable \"mortalidad global\" es aproximadamente del 29%.",
+      "source_text_sha256": "9f49bab564a9b0cd14d1ca92d4f11bb03e293bebca47863c248a96ca6c7123ee",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 153,
+          "boundary_end": 154,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Usted está leyendo un artículo que publica los resultados de un gran ensayo clínico aleatorizado y doble ciego, de gran interés en su ámbito profesional.",
+          "right_context": "En concreto le llama la atención el resultado que muestra este estudio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Uni"
+        },
+        {
+          "boundary_start": 438,
+          "boundary_end": 439,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "studio sobre la mortalidad global al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad.",
+          "right_context": "Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 467,
+          "boundary_end": 468,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "obal al comparar un nuevo tratamiento experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es:",
+          "right_context": "RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 505,
+          "boundary_end": 506,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "experimental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046).",
+          "right_context": "¿Cuál de las siguientes afirmaciones es correcta?"
+        },
+        {
+          "boundary_start": 511,
+          "boundary_end": 512,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "mental con la terapia estándar hasta este momento, en una población de pacientes que tienen un perfil muy similar a los que se tratan en su Unidad. Este resultado publicado es: RR = 0.71 (IC95% 0.98-0.59, p=0.046). ¿Cuál",
+          "right_context": "de las siguientes afirmaciones es correcta?"
+        }
+      ]
+    },
+    {
+      "question_id": "b286",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b286",
+      "question_text": "La dosis de entecavir y tenofovir en el tratamiento de la hepatitis crónica B debe ajustarse a la función renal. ¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?",
+      "option_a": "60 ml/min",
+      "option_b": "50 ml/min",
+      "option_c": "40 ml/min",
+      "option_d": "30 ml/min",
+      "correct_letter": "b",
+      "correct_option_text": "50 ml/min",
+      "source_text_sha256": "b63cde4f3ea493b70eeadf219b1092d309e9cb75f416da1ec5ec593610d353c2",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 112,
+          "boundary_end": 113,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La dosis de entecavir y tenofovir en el tratamiento de la hepatitis crónica B debe ajustarse a la función renal.",
+          "right_context": "¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?"
+        }
+      ]
+    },
+    {
+      "question_id": "b286",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b286",
+      "question_text": "La dosis de entecavir y tenofovir en el tratamiento de la hepatitis crónica B debe ajustarse a la función renal. ¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?",
+      "option_a": "60 ml/min",
+      "option_b": "50 ml/min",
+      "option_c": "40 ml/min",
+      "option_d": "30 ml/min",
+      "correct_letter": "b",
+      "correct_option_text": "50 ml/min",
+      "source_text_sha256": "b63cde4f3ea493b70eeadf219b1092d309e9cb75f416da1ec5ec593610d353c2",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 112,
+          "boundary_end": 113,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La dosis de entecavir y tenofovir en el tratamiento de la hepatitis crónica B debe ajustarse a la función renal.",
+          "right_context": "¿Cuál es el dintel de filtrado glomerular estimado por debajo del cual debe reducirse la dosis de los mismos?"
+        }
+      ]
+    },
+    {
+      "question_id": "b302",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b302",
+      "question_text": "De acuerdo con la Clasificación de la Esofagitis de Los Ángeles, el Grado C se corresponde con:",
+      "option_a": "Una o más lesiones de la mucosa, con confluencia y afectación menor del 75% de la circunferencia del esófago.",
+      "option_b": "Una o más lesiones de la mucosa, igual o menor de 5 mm de longitud, sin confluencia.",
+      "option_c": "Una o más lesiones de la mucosa, con confluencia y afectación de más del 75% de la circunferencia esofágica.",
+      "option_d": "Una o más lesiones de la mucosa, mayor de 5 mm de longitud, sin confluencia.",
+      "correct_letter": "a",
+      "correct_option_text": "Una o más lesiones de la mucosa, con confluencia y afectación menor del 75% de la circunferencia del esófago.",
+      "source_text_sha256": "c475e683ae42c9b28ac4f08b6a9ad76393e777fc4c53255482ec500610c168ea",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b302",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b302",
+      "question_text": "De acuerdo con la Clasificación de la Esofagitis de Los Ángeles, el Grado C se corresponde con:",
+      "option_a": "Una o más lesiones de la mucosa, con confluencia y afectación menor del 75% de la circunferencia del esófago.",
+      "option_b": "Una o más lesiones de la mucosa, igual o menor de 5 mm de longitud, sin confluencia.",
+      "option_c": "Una o más lesiones de la mucosa, con confluencia y afectación de más del 75% de la circunferencia esofágica.",
+      "option_d": "Una o más lesiones de la mucosa, mayor de 5 mm de longitud, sin confluencia.",
+      "correct_letter": "a",
+      "correct_option_text": "Una o más lesiones de la mucosa, con confluencia y afectación menor del 75% de la circunferencia del esófago.",
+      "source_text_sha256": "c475e683ae42c9b28ac4f08b6a9ad76393e777fc4c53255482ec500610c168ea",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b315",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b315",
+      "question_text": "Con respecto a la colitis isquémica, es falso que:",
+      "option_a": "En conjunto tiene una alta mortalidad, superior al 50%.",
+      "option_b": "Solo está indicada la angiografía si existen dudas diagnósticas de estar ante una isquemia mesentérica aguda.",
+      "option_c": "El uso de cocaína se ha asociado a colitis isquémica secundaria en pacientes jóvenes.",
+      "option_d": "Está indicado el uso de antibioterapia empírica en colitis isquémica moderada o severa para disminuir la translocación bacteriana.",
+      "correct_letter": "a",
+      "correct_option_text": "En conjunto tiene una alta mortalidad, superior al 50%.",
+      "source_text_sha256": "2a769b43311dc082798ce187abce252658c57e55a68e6b54420f5e45fa4ff536",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto a la colitis isquémica, es falso que:"
+        }
+      ]
+    },
+    {
+      "question_id": "b315",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b315",
+      "question_text": "Con respecto a la colitis isquémica, es falso que:",
+      "option_a": "En conjunto tiene una alta mortalidad, superior al 50%.",
+      "option_b": "Solo está indicada la angiografía si existen dudas diagnósticas de estar ante una isquemia mesentérica aguda.",
+      "option_c": "El uso de cocaína se ha asociado a colitis isquémica secundaria en pacientes jóvenes.",
+      "option_d": "Está indicado el uso de antibioterapia empírica en colitis isquémica moderada o severa para disminuir la translocación bacteriana.",
+      "correct_letter": "a",
+      "correct_option_text": "En conjunto tiene una alta mortalidad, superior al 50%.",
+      "source_text_sha256": "2a769b43311dc082798ce187abce252658c57e55a68e6b54420f5e45fa4ff536",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto a la colitis isquémica, es falso que:"
+        }
+      ]
+    },
+    {
+      "question_id": "b330",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b330",
+      "question_text": "Señale que elementos de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante",
+      "option_a": "Un INR > 3,5",
+      "option_b": "pH arterial < 7,3.",
+      "option_c": "Bilirrubina elevada en casos de fallo no causado por paracetamol",
+      "option_d": "Hipofosfatemia",
+      "correct_letter": "d",
+      "correct_option_text": "Hipofosfatemia",
+      "source_text_sha256": "5db0286255720fecc8f981425e94d76980ca7b48a3328537e7ab00e2abd5f5a6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 20,
+          "boundary_end": 21,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale que elementos",
+          "right_context": "de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante"
+        }
+      ]
+    },
+    {
+      "question_id": "b330",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b330",
+      "question_text": "Señale que elementos de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante",
+      "option_a": "Un INR > 3,5",
+      "option_b": "pH arterial < 7,3.",
+      "option_c": "Bilirrubina elevada en casos de fallo no causado por paracetamol",
+      "option_d": "Hipofosfatemia",
+      "correct_letter": "d",
+      "correct_option_text": "Hipofosfatemia",
+      "source_text_sha256": "5db0286255720fecc8f981425e94d76980ca7b48a3328537e7ab00e2abd5f5a6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 20,
+          "boundary_end": 21,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale que elementos",
+          "right_context": "de los siguientes se asocian con Mejor Pronóstico en un paciente con Fallo Hepático Fulminante"
+        }
+      ]
+    },
+    {
+      "question_id": "b346",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b346",
+      "question_text": "¿Cual de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?",
+      "option_a": "La obesidad.",
+      "option_b": "El sexo masculino.",
+      "option_c": "La ingesta de alcohol.",
+      "option_d": "La ingesta de café.",
+      "correct_letter": "d",
+      "correct_option_text": "La ingesta de café.",
+      "source_text_sha256": "e953fcd54d3eab794bef73f9d17446bf1eea3ae050ff2762ddfdd837e64c6736",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cual",
+          "right_context": "de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?"
+        }
+      ]
+    },
+    {
+      "question_id": "b346",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b346",
+      "question_text": "¿Cual de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?",
+      "option_a": "La obesidad.",
+      "option_b": "El sexo masculino.",
+      "option_c": "La ingesta de alcohol.",
+      "option_d": "La ingesta de café.",
+      "correct_letter": "d",
+      "correct_option_text": "La ingesta de café.",
+      "source_text_sha256": "e953fcd54d3eab794bef73f9d17446bf1eea3ae050ff2762ddfdd837e64c6736",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cual",
+          "right_context": "de los siguientes factores, NO es un factor de riesgo para el desarrollo de hepatocarcinoma?"
+        }
+      ]
+    },
+    {
+      "question_id": "b360",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b360",
+      "question_text": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS). ¿Cuál de la siguientes afirmaciones es INCORRECTA? :",
+      "option_a": "El grado de fibrosis hepática regresa con el tiempo en pacientes con F0-F1-F2.",
+      "option_b": "El riesgo de desarrollar carcinoma hepatocelular en pacientes con F3 y F4 disminuye, pero no se elimina totalmente por lo que se aconseja realizar ecografía abdominal cada 6 meses.",
+      "option_c": "El riesgo de desarrollar varices de novo en pacientes con cirrosis hepática es similar al de los pacientes que no han alcanzado RVS.",
+      "option_d": "La reinfección puede ocurrir en determinados grupos de pacientes, por ejemplo hombres que tienen sexo con hombres.",
+      "correct_letter": "c",
+      "correct_option_text": "El riesgo de desarrollar varices de novo en pacientes con cirrosis hepática es similar al de los pacientes que no han alcanzado RVS.",
+      "source_text_sha256": "cfb778fc51b2ec76f999807a9268d9c52ff8d5c9911818ba24e0abd9eb925cc0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 98,
+          "boundary_end": 99,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS).",
+          "right_context": "¿Cuál de la siguientes afirmaciones es INCORRECTA? :"
+        },
+        {
+          "boundary_start": 149,
+          "boundary_end": 150,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS). ¿Cuál de la siguientes afirmaciones es INCORRECTA?",
+          "right_context": ":"
+        }
+      ]
+    },
+    {
+      "question_id": "b360",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b360",
+      "question_text": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS). ¿Cuál de la siguientes afirmaciones es INCORRECTA? :",
+      "option_a": "El grado de fibrosis hepática regresa con el tiempo en pacientes con F0-F1-F2.",
+      "option_b": "El riesgo de desarrollar carcinoma hepatocelular en pacientes con F3 y F4 disminuye, pero no se elimina totalmente por lo que se aconseja realizar ecografía abdominal cada 6 meses.",
+      "option_c": "El riesgo de desarrollar varices de novo en pacientes con cirrosis hepática es similar al de los pacientes que no han alcanzado RVS.",
+      "option_d": "La reinfección puede ocurrir en determinados grupos de pacientes, por ejemplo hombres que tienen sexo con hombres.",
+      "correct_letter": "c",
+      "correct_option_text": "El riesgo de desarrollar varices de novo en pacientes con cirrosis hepática es similar al de los pacientes que no han alcanzado RVS.",
+      "source_text_sha256": "cfb778fc51b2ec76f999807a9268d9c52ff8d5c9911818ba24e0abd9eb925cc0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 98,
+          "boundary_end": 99,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS).",
+          "right_context": "¿Cuál de la siguientes afirmaciones es INCORRECTA? :"
+        },
+        {
+          "boundary_start": 149,
+          "boundary_end": 150,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En un paciente con infección crónica por virus C que ha alcanzado respuesta viral sostenida (RVS). ¿Cuál de la siguientes afirmaciones es INCORRECTA?",
+          "right_context": ":"
+        }
+      ]
+    },
+    {
+      "question_id": "b374",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b374",
+      "question_text": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2, ¿Qué tratamiento antiviral no estaría indicado?",
+      "option_a": "Sofosvubir / velpatasvir / voxilaprevir.",
+      "option_b": "Glecaprevir / pibrentasvir.",
+      "option_c": "Sofosvubir / velpatasvir.",
+      "option_d": "Grazoprevir/elbasvir.",
+      "correct_letter": "d",
+      "correct_option_text": "Grazoprevir/elbasvir.",
+      "source_text_sha256": "3b3f152b24e3afc354ae7a8d2e476faab768ed4338ea00db78c229e50758ed75",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 83,
+          "boundary_end": 84,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2,",
+          "right_context": "¿Qué tratamiento antiviral no estaría indicado?"
+        },
+        {
+          "boundary_start": 121,
+          "boundary_end": 122,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2, ¿Qué tratamiento antiviral no estaría",
+          "right_context": "indicado?"
+        }
+      ]
+    },
+    {
+      "question_id": "b374",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b374",
+      "question_text": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2, ¿Qué tratamiento antiviral no estaría indicado?",
+      "option_a": "Sofosvubir / velpatasvir / voxilaprevir.",
+      "option_b": "Glecaprevir / pibrentasvir.",
+      "option_c": "Sofosvubir / velpatasvir.",
+      "option_d": "Grazoprevir/elbasvir.",
+      "correct_letter": "d",
+      "correct_option_text": "Grazoprevir/elbasvir.",
+      "source_text_sha256": "3b3f152b24e3afc354ae7a8d2e476faab768ed4338ea00db78c229e50758ed75",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 83,
+          "boundary_end": 84,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2,",
+          "right_context": "¿Qué tratamiento antiviral no estaría indicado?"
+        },
+        {
+          "boundary_start": 121,
+          "boundary_end": 122,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente infectado por el genotipo 3 del VHC y con un índice de fibrosis ≤ 2, ¿Qué tratamiento antiviral no estaría",
+          "right_context": "indicado?"
+        }
+      ]
+    },
+    {
+      "question_id": "b388",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b388",
+      "question_text": "Acerca de la enfermedad de injerto contra huésped intestinal ¿Qué es falso?",
+      "option_a": "Puede cursar con ictericia",
+      "option_b": "Puede cursar con diarrea",
+      "option_c": "Las biopsias intestinales pueden confirmar el diagnóstico",
+      "option_d": "La clínica digestiva de este proceso es muy específica",
+      "correct_letter": "d",
+      "correct_option_text": "La clínica digestiva de este proceso es muy específica",
+      "source_text_sha256": "53408393e51e2ce6b3041083c5bd4fb489b3436e2d002596249c9e1e4539731d",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Acerca de la enfermedad de injerto contra huésped intestinal",
+          "right_context": "¿Qué es falso?"
+        }
+      ]
+    },
+    {
+      "question_id": "b388",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b388",
+      "question_text": "Acerca de la enfermedad de injerto contra huésped intestinal ¿Qué es falso?",
+      "option_a": "Puede cursar con ictericia",
+      "option_b": "Puede cursar con diarrea",
+      "option_c": "Las biopsias intestinales pueden confirmar el diagnóstico",
+      "option_d": "La clínica digestiva de este proceso es muy específica",
+      "correct_letter": "d",
+      "correct_option_text": "La clínica digestiva de este proceso es muy específica",
+      "source_text_sha256": "53408393e51e2ce6b3041083c5bd4fb489b3436e2d002596249c9e1e4539731d",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Acerca de la enfermedad de injerto contra huésped intestinal",
+          "right_context": "¿Qué es falso?"
+        }
+      ]
+    },
+    {
+      "question_id": "b405",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b405",
+      "question_text": "Sobre el baremo MELD (Model for End Stage Liver Disease) y sus variantes en la gestión de la lista de espera de trasplante hepático, es cierto que:",
+      "option_a": "Establece el riesgo de mortalidad a los 6 meses de su inclusión en lista activa.",
+      "option_b": "El punto de corte para acceder a la lista de espera activa es de 18.",
+      "option_c": "La puntuación MELD-Na mejora la precisión en la elección del momento de inclusión en lista de espera en pacientes con encefalopatía hepática.",
+      "option_d": "La cifra de creatinina sérica puede infraestimar la puntuación MELD en pacientes cirróticos con sarcopenia.",
+      "correct_letter": "d",
+      "correct_option_text": "La cifra de creatinina sérica puede infraestimar la puntuación MELD en pacientes cirróticos con sarcopenia.",
+      "source_text_sha256": "300f9b1f1fb14a136ee06f5471fb0d5b29cf5c37db7d82f1b898e74b0a92bc3b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b405",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b405",
+      "question_text": "Sobre el baremo MELD (Model for End Stage Liver Disease) y sus variantes en la gestión de la lista de espera de trasplante hepático, es cierto que:",
+      "option_a": "Establece el riesgo de mortalidad a los 6 meses de su inclusión en lista activa.",
+      "option_b": "El punto de corte para acceder a la lista de espera activa es de 18.",
+      "option_c": "La puntuación MELD-Na mejora la precisión en la elección del momento de inclusión en lista de espera en pacientes con encefalopatía hepática.",
+      "option_d": "La cifra de creatinina sérica puede infraestimar la puntuación MELD en pacientes cirróticos con sarcopenia.",
+      "correct_letter": "d",
+      "correct_option_text": "La cifra de creatinina sérica puede infraestimar la puntuación MELD en pacientes cirróticos con sarcopenia.",
+      "source_text_sha256": "300f9b1f1fb14a136ee06f5471fb0d5b29cf5c37db7d82f1b898e74b0a92bc3b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b422",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b422",
+      "question_text": "¿Cuál no pertenece a la clasificación TIGAR-O de la etiología de la pancreatitis crónica?",
+      "option_a": "Idiopática.",
+      "option_b": "Autoinmune.",
+      "option_c": "Hipocalcemia.",
+      "option_d": "Insuficiencia renal crónica.",
+      "correct_letter": "c",
+      "correct_option_text": "Hipocalcemia.",
+      "source_text_sha256": "0d74c20c58b1579948bef1403ad6a0d92de3c643c7818bcc33bf53a45ea7562c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b422",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b422",
+      "question_text": "¿Cuál no pertenece a la clasificación TIGAR-O de la etiología de la pancreatitis crónica?",
+      "option_a": "Idiopática.",
+      "option_b": "Autoinmune.",
+      "option_c": "Hipocalcemia.",
+      "option_d": "Insuficiencia renal crónica.",
+      "correct_letter": "c",
+      "correct_option_text": "Hipocalcemia.",
+      "source_text_sha256": "0d74c20c58b1579948bef1403ad6a0d92de3c643c7818bcc33bf53a45ea7562c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b437",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b437",
+      "question_text": "Según la guía ECCO de 2022 de enfermedad inflamatoria intestinal y malignidad, los pacientes con enfermedad inflamatoria intestinal de colon deben ser informados de que presentan un aumento de riesgo de desarrollar cáncer colorrectal. Los factores de riesgo incluyen:",
+      "option_a": "Sexo masculino.",
+      "option_b": "Menor edad al diagnóstico de colitis ulcerosa.",
+      "option_c": "La presencia de estenosis colónicas.",
+      "option_d": "Todas son ciertas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas son ciertas.",
+      "source_text_sha256": "93b75b67fea612f3481aa63e4c37c7bf2bd05a1dc38a4852b8a19d42a11d1708",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 234,
+          "boundary_end": 235,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ECCO de 2022 de enfermedad inflamatoria intestinal y malignidad, los pacientes con enfermedad inflamatoria intestinal de colon deben ser informados de que presentan un aumento de riesgo de desarrollar cáncer colorrectal.",
+          "right_context": "Los factores de riesgo incluyen:"
+        }
+      ]
+    },
+    {
+      "question_id": "b437",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b437",
+      "question_text": "Según la guía ECCO de 2022 de enfermedad inflamatoria intestinal y malignidad, los pacientes con enfermedad inflamatoria intestinal de colon deben ser informados de que presentan un aumento de riesgo de desarrollar cáncer colorrectal. Los factores de riesgo incluyen:",
+      "option_a": "Sexo masculino.",
+      "option_b": "Menor edad al diagnóstico de colitis ulcerosa.",
+      "option_c": "La presencia de estenosis colónicas.",
+      "option_d": "Todas son ciertas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas son ciertas.",
+      "source_text_sha256": "93b75b67fea612f3481aa63e4c37c7bf2bd05a1dc38a4852b8a19d42a11d1708",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 234,
+          "boundary_end": 235,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ECCO de 2022 de enfermedad inflamatoria intestinal y malignidad, los pacientes con enfermedad inflamatoria intestinal de colon deben ser informados de que presentan un aumento de riesgo de desarrollar cáncer colorrectal.",
+          "right_context": "Los factores de riesgo incluyen:"
+        }
+      ]
+    },
+    {
+      "question_id": "b451",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b451",
+      "question_text": "El vigente RGPD (Reglamento General de Protección de Datos) aprobado por el Parlamento Europeo y el Consejo de la Unión Europea (Reglamento (UE) 2016/679, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos) establece unos principios generales relativos al tratamiento de los datos personales, entre los que se encuentran los siguientes, EXCEPTO:",
+      "option_a": "Principios de licitud, lealtad y transparencia.",
+      "option_b": "Principio de limitación del plazo de conservación.",
+      "option_c": "Principio de seguridad digital.",
+      "option_d": "Principio de minimización de datos.",
+      "correct_letter": "c",
+      "correct_option_text": "Principio de seguridad digital.",
+      "source_text_sha256": "14c43a31452e8a8580028cf0faa3630a738f7f7884d8a6ce3cd726e23de9f8c2",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b451",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b451",
+      "question_text": "El vigente RGPD (Reglamento General de Protección de Datos) aprobado por el Parlamento Europeo y el Consejo de la Unión Europea (Reglamento (UE) 2016/679, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos) establece unos principios generales relativos al tratamiento de los datos personales, entre los que se encuentran los siguientes, EXCEPTO:",
+      "option_a": "Principios de licitud, lealtad y transparencia.",
+      "option_b": "Principio de limitación del plazo de conservación.",
+      "option_c": "Principio de seguridad digital.",
+      "option_d": "Principio de minimización de datos.",
+      "correct_letter": "c",
+      "correct_option_text": "Principio de seguridad digital.",
+      "source_text_sha256": "14c43a31452e8a8580028cf0faa3630a738f7f7884d8a6ce3cd726e23de9f8c2",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b465",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b465",
+      "question_text": "Entre las causas de hiperbilirrubinemia indirecta no está:",
+      "option_a": "Sindrome de Dubin Johnson.",
+      "option_b": "Sindrome de Crigler-Najjar I y II.",
+      "option_c": "Trasfusión masiva de sangre.",
+      "option_d": "Déficit de glucosa 6 fosfato deshidrogenasa.",
+      "correct_letter": "a",
+      "correct_option_text": "Sindrome de Dubin Johnson.",
+      "source_text_sha256": "781ff882e0d54d20c140c61612478c9597930ca8331c6b7f283d220543389ab1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b465",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b465",
+      "question_text": "Entre las causas de hiperbilirrubinemia indirecta no está:",
+      "option_a": "Sindrome de Dubin Johnson.",
+      "option_b": "Sindrome de Crigler-Najjar I y II.",
+      "option_c": "Trasfusión masiva de sangre.",
+      "option_d": "Déficit de glucosa 6 fosfato deshidrogenasa.",
+      "correct_letter": "a",
+      "correct_option_text": "Sindrome de Dubin Johnson.",
+      "source_text_sha256": "781ff882e0d54d20c140c61612478c9597930ca8331c6b7f283d220543389ab1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b480",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b480",
+      "question_text": "¿Cuál es el tratamiento de elección en un paciente con carcinoma hepatocelular en estadio inicial(A) de la BCLC con función hepática conservada con tres nódulos menores de 3 cms y con enfermedades crónicas asociadas?",
+      "option_a": "Resección quirúrgica",
+      "option_b": "Ablación",
+      "option_c": "Quimioembolización transarterial",
+      "option_d": "Tratamiento sistémico",
+      "correct_letter": "b",
+      "correct_option_text": "Ablación",
+      "source_text_sha256": "a3d63ce22dc48e30492feadba685d99eff9f162683352ef11a3b90780a97e10e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b480",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b480",
+      "question_text": "¿Cuál es el tratamiento de elección en un paciente con carcinoma hepatocelular en estadio inicial(A) de la BCLC con función hepática conservada con tres nódulos menores de 3 cms y con enfermedades crónicas asociadas?",
+      "option_a": "Resección quirúrgica",
+      "option_b": "Ablación",
+      "option_c": "Quimioembolización transarterial",
+      "option_d": "Tratamiento sistémico",
+      "correct_letter": "b",
+      "correct_option_text": "Ablación",
+      "source_text_sha256": "a3d63ce22dc48e30492feadba685d99eff9f162683352ef11a3b90780a97e10e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b499",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b499",
+      "question_text": "Respecto a la profilaxis de la infección por citomegalovirus en el receptor de trasplante hepático, señale la respuesta INCORRECTA:",
+      "option_a": "Se suele realizar con valganciclovir oral.",
+      "option_b": "La duración de la misma es de un año tras el trasplante hepático.",
+      "option_c": "Es una estrategia recomendable en los pacientes de alto riesgo (receptores no inmunizados que reciben el injerto de un donante seropositivo).",
+      "option_d": "La profilaxis es eficaz en prevenir tanto los efectos directos como los efectos indirectos del citomegalovirus.",
+      "correct_letter": "b",
+      "correct_option_text": "La duración de la misma es de un año tras el trasplante hepático.",
+      "source_text_sha256": "8894fe39a3993d1f8836288e787bde3e3196e6f055a7970773da9a2debb75e29",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la profilaxis de la infección por citomegalovirus en el receptor de trasplante hepático,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b499",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b499",
+      "question_text": "Respecto a la profilaxis de la infección por citomegalovirus en el receptor de trasplante hepático, señale la respuesta INCORRECTA:",
+      "option_a": "Se suele realizar con valganciclovir oral.",
+      "option_b": "La duración de la misma es de un año tras el trasplante hepático.",
+      "option_c": "Es una estrategia recomendable en los pacientes de alto riesgo (receptores no inmunizados que reciben el injerto de un donante seropositivo).",
+      "option_d": "La profilaxis es eficaz en prevenir tanto los efectos directos como los efectos indirectos del citomegalovirus.",
+      "correct_letter": "b",
+      "correct_option_text": "La duración de la misma es de un año tras el trasplante hepático.",
+      "source_text_sha256": "8894fe39a3993d1f8836288e787bde3e3196e6f055a7970773da9a2debb75e29",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 99,
+          "boundary_end": 100,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la profilaxis de la infección por citomegalovirus en el receptor de trasplante hepático,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    }
+  ]
+}

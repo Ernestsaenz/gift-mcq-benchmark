@@ -1,0 +1,34 @@
+{
+  "verified_at_utc": "2026-08-04T14:14:20Z",
+  "required_commit": "29af9a4f1581f6ffc1921a44d96a2a2cbe36a84e",
+  "deployment": {
+    "repository": "carneiran/handmade-gift",
+    "workflow_id": 229572888,
+    "run_id": 30629235833,
+    "run_url": "https://github.com/carneiran/handmade-gift/actions/runs/30629235833",
+    "head_branch": "main",
+    "head_sha": "29af9a4f1581f6ffc1921a44d96a2a2cbe36a84e",
+    "status": "completed",
+    "conclusion": "success",
+    "latest_main_run_for_workflow_at_verification": true,
+    "deploy_job_conclusion": "success",
+    "deploy_steps": [
+      "Set up job",
+      "Tailscale",
+      "Deploy",
+      "Post Tailscale",
+      "Complete job"
+    ]
+  },
+  "live_health": {
+    "checked_at_utc": "2026-08-04T14:14:12Z",
+    "http_status": 200,
+    "status": "healthy",
+    "rag": "healthy",
+    "retrieval": "healthy",
+    "streaming": "healthy",
+    "authenticated_provider_check": "passed"
+  },
+  "verification_basis": "The health endpoint does not expose a build SHA. The operator gate is satisfied by the latest successful main deployment at the exact required SHA plus a fresh live healthy and authenticated backend check."
+}
+

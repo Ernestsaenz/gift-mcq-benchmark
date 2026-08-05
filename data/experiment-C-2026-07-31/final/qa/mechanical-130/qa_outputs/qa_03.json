@@ -1,0 +1,3616 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "qa_id": "qa_03",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "qa_packet_sha256": "8c2a98d26f02357de7e9f1392a181f75af8bf936cf2a5826f72e8e94dc5dddef",
+  "decisions": [
+    {
+      "question_id": "b2",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b3",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b4",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b5",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b7",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b8",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b9",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b13",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b15",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b17",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b21",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b22",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b24",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b25",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b26",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b27",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b28",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b29",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b30",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b31",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b32",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b33",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b35",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b36",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b37",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b38",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b39",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b42",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b43",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b44",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b45",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b46",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b71",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b73",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b74",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b76",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b77",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b79",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b81",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b82",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b84",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b86",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b87",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b88",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b89",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b90",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b91",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b92",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b93",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b142",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b143",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b145",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b148",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b150",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b151",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b153",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b154",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b155",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b156",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b157",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b158",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b159",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b161",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b163",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b165",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b181",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b182",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b183",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b192",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b209",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b217",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b219",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b220",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b222",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b230",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b240",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b258",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b271",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b299",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b321",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b327",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b329",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b351",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b353",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b357",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b366",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b379",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b387",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b400",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b424",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b429",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b432",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b460",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b462",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b470",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b473",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b484",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b494",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b497",
+      "arm": "BM",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b2",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b3",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b4",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b5",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "The immediately preceding premise says the patient has no symptoms; elicited pain creates a hard-doubt clinical contradiction."
+    },
+    {
+      "question_id": "b6",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b7",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b8",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b9",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b12",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b13",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b15",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b17",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b21",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b22",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b24",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b25",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b26",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b27",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b28",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b29",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b30",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b31",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b32",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b33",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b35",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b36",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b37",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b38",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b39",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b42",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b43",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b44",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b45",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b46",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b47",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b49",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b50",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b51",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b52",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b55",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b56",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b58",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b59",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b61",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b62",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b63",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b66",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b68",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b69",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b94",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b95",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b96",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b97",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b98",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b167",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b182",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b183",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b192",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b199",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b209",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b219",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b220",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b222",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b230",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b240",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b258",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b265",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b299",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b327",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b329",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b335",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b351",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b353",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b357",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b366",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b387",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b392",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b400",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b429",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b443",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b460",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b462",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b470",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b473",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b494",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b497",
+      "arm": "AN",
+      "candidate_type": "EXISTING_LOCKED",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b48",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b53",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b54",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b57",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b60",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b60",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b61",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b62",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b63",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b64",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b64",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b65",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b65",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b66",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b67",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b67",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b68",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b69",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b70",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b70",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b94",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b95",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b96",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b97",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b98",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion splits the dependent lead-in “Asumiendo …,” from its governing question."
+    },
+    {
+      "question_id": "b99",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b100",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b101",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b102",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion splits the dependent lead-in “En esta situación,” from the directive it modifies."
+    },
+    {
+      "question_id": "b103",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion splits the conditional lead-in “En caso de …,” from its governing question."
+    },
+    {
+      "question_id": "b104",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion splits the conditional lead-in “En caso de …,” from its governing question."
+    },
+    {
+      "question_id": "b105",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b106",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b107",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b108",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b109",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b110",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b111",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b112",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b113",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b114",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b115",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b116",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b117",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b118",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b119",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b120",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b121",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion bisects the two-part directive, falling between “Calcule el GASA” and the linked interpretation question."
+    },
+    {
+      "question_id": "b122",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b123",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b124",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b125",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b126",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b127",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b128",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b129",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b130",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b131",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b132",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b133",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b134",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b135",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b136",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b137",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b137",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b138",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b138",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b139",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b139",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b140",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b140",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b141",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b141",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b142",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b143",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b144",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b144",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b145",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b146",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b146",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b147",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b147",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b148",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b149",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b149",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b150",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b151",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b152",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b152",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b153",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b154",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b155",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b156",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b157",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b158",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b159",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b160",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b160",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b161",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b162",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b162",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b163",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b164",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b164",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b165",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b34",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b34",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b40",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b40",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b41",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b41",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b72",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b75",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b78",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b80",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b83",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b85",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b1",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b1",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b6",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b12",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b20",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b20",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b166",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b168",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b169",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b170",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b171",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b184",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b173",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b173",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b174",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b174",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b176",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b176",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b185",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b185",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b178",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b178",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b179",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b179",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b180",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b180",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b181",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "At the current two-month visit the patient is explicitly asymptomatic; a new focal tenderness finding creates a hard-doubt contradiction."
+    },
+    {
+      "question_id": "b298",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b298",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b193",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b193",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "The stem explicitly characterizes the patient as asymptomatic and supplies no later symptom/examination transition before adding elicited pain."
+    },
+    {
+      "question_id": "b379",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "The stem explicitly characterizes the patient as asymptomatic and supplies no later symptom/examination transition before adding focal tenderness."
+    },
+    {
+      "question_id": "b432",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "The stem explicitly characterizes the patient as asymptomatic and supplies no later symptom/examination transition before adding elicited pain."
+    },
+    {
+      "question_id": "b448",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b448",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b342",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b358",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion falls after a comma inside the prepositional lead-in “Ante un paciente …,” rather than after a declarative premise."
+    },
+    {
+      "question_id": "b358",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion falls after a comma inside the prepositional lead-in “Ante un paciente …,” rather than after a declarative premise."
+    },
+    {
+      "question_id": "b450",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b450",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b360",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b360",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b374",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion falls after a comma inside the prepositional lead-in “En un paciente …,” rather than after a declarative premise."
+    },
+    {
+      "question_id": "b374",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Insertion falls after a comma inside the prepositional lead-in “En un paciente …,” rather than after a declarative premise."
+    },
+    {
+      "question_id": "b484",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b335",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b304",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b304",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b392",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b265",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    },
+    {
+      "question_id": "b321",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "PRESENT",
+      "notes": "The current patient is explicitly asymptomatic on therapy; adding elicited pain creates a hard-doubt clinical contradiction."
+    },
+    {
+      "question_id": "b414",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Population-level epidemiologic stem has no individual patient or episode to which the inserted laboratory result can attach."
+    },
+    {
+      "question_id": "b414",
+      "arm": "AN",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "FAIL",
+      "exact_delta": "PASS",
+      "placement": "FAIL",
+      "contradiction": "NONE",
+      "notes": "Population-level epidemiologic stem has no individual patient or episode to which the inserted examination finding can attach."
+    },
+    {
+      "question_id": "b443",
+      "arm": "BM",
+      "candidate_type": "NEW_REVIEW_PASS",
+      "verdict": "PASS",
+      "exact_delta": "PASS",
+      "placement": "PASS",
+      "contradiction": "NONE",
+      "notes": "Exact single insertion; workbook/source fields unchanged; attached seam; no explicit contradiction."
+    }
+  ],
+  "summary": {
+    "total": 356,
+    "pass": 339,
+    "fail": 17,
+    "exact_delta": {
+      "PASS": 356,
+      "FAIL": 0
+    },
+    "placement": {
+      "PASS": 345,
+      "FAIL": 11
+    },
+    "contradiction": {
+      "NONE": 350,
+      "PRESENT": 6
+    },
+    "by_arm": {
+      "BM": {
+        "total": 189,
+        "pass": 181,
+        "fail": 8
+      },
+      "AN": {
+        "total": 167,
+        "pass": 158,
+        "fail": 9
+      }
+    },
+    "by_candidate_type": {
+      "EXISTING_LOCKED": {
+        "total": 185,
+        "pass": 184,
+        "fail": 1
+      },
+      "NEW_REVIEW_PASS": {
+        "total": 171,
+        "pass": 155,
+        "fail": 16
+      }
+    },
+    "source_integrity": {
+      "workbook_rows_matched": 356,
+      "control_hashes_matched": 356,
+      "altered_hashes_matched": 356,
+      "source_options_key_provenance_unchanged": 356,
+      "issues": 0
+    }
+  }
+}

@@ -1,0 +1,921 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_03",
+  "shard_id": "03",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b118",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2565,
+      "boundary_end": 2567,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The paragraph break immediately before the final diagnostic-test question is an offered seam; the serum finding attaches to the described patient and does not literally conflict with the enumerated laboratory results."
+    },
+    {
+      "question_id": "b118",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Although the final paragraph seam is mechanically usable, a new finding of pain on palpation conflicts with the source examination stating that the abdomen is painless to pressure or decompression."
+    },
+    {
+      "question_id": "b119",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2565,
+      "boundary_end": 2567,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The offered paragraph break is immediately before the final question, and the plasma finding reads as an additional patient-specific result without contradicting a named source measurement."
+    },
+    {
+      "question_id": "b119",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Localized sensitivity on palpation conflicts with the documented abdomen being painless to pressure or decompression during this same initial presentation."
+    },
+    {
+      "question_id": "b120",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The sentence can be inserted at the offered paragraph break after the ascitic-fluid results and before the calculation question; it remains patient-specific and introduces no literal conflict."
+    },
+    {
+      "question_id": "b120",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The proposed palpation pain conflicts with the source's explicit painless abdominal pressure/decompression finding in the still-current initial encounter."
+    },
+    {
+      "question_id": "b121",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2851,
+      "boundary_end": 2852,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The offered space after the declarative instruction to calculate GASA and before the final interrogative is a valid final seam; the plasma result is grammatical and noncontradictory."
+    },
+    {
+      "question_id": "b121",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Despite a valid seam after the declarative premise, localized tenderness contradicts the explicit painless abdominal palpation finding from the same encounter."
+    },
+    {
+      "question_id": "b122",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The offered break before the final interpretation question supports a grammatical patient-level serum finding, with no source statement assigning this fabricated measurement a normal value."
+    },
+    {
+      "question_id": "b122",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Pain on palpation is incompatible with the source's explicit finding that abdominal pressure and decompression were painless during this encounter."
+    },
+    {
+      "question_id": "b123",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The final paragraph seam is offered and clean; the added plasma result attaches to the patient without an explicit conflict, though a new biomarker could affect a treatment question."
+    },
+    {
+      "question_id": "b123",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The source expressly records painless abdominal pressure/decompression, so the proposed localized sensitivity on palpation is contradictory."
+    },
+    {
+      "question_id": "b124",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered paragraph break lies directly before the dosing question, and the added plasma finding is grammatically independent and not explicitly contradicted by the supplied measurements."
+    },
+    {
+      "question_id": "b124",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Localized palpation pain cannot be added consistently to a presentation whose abdominal examination explicitly says pressure and decompression are painless."
+    },
+    {
+      "question_id": "b125",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The biomarker sentence fits the offered final seam and remains attached to the patient; it does not conflict with the stated alcohol history or named measurements."
+    },
+    {
+      "question_id": "b125",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The proposed tenderness conflicts with the source's explicit painless abdominal pressure/decompression finding in the same clinical state."
+    },
+    {
+      "question_id": "b126",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered break immediately precedes the diagnostic question, and the serum result is a grammatical additional patient fact with no explicit source contradiction."
+    },
+    {
+      "question_id": "b126",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "A localized painful palpation finding directly conflicts with the explicitly painless abdominal pressure/decompression examination."
+    },
+    {
+      "question_id": "b127",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The biomarker statement can be inserted unchanged at the offered final paragraph seam and does not contradict any named laboratory value, although it may be semantically influential for treatment."
+    },
+    {
+      "question_id": "b127",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The source explicitly describes the abdomen as painless with pressure or decompression, contradicting a new localized sensitivity on palpation."
+    },
+    {
+      "question_id": "b128",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered final break permits a literal insertion before the testing question; the plasma finding is patient-anchored and is not explicitly negated by the source."
+    },
+    {
+      "question_id": "b128",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The added palpation pain conflicts with the explicit painless abdominal pressure/decompression finding from this same presentation."
+    },
+    {
+      "question_id": "b129",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The added plasma result fits grammatically at the offered break before the scoring question and is not explicitly contradicted by any listed measurement."
+    },
+    {
+      "question_id": "b129",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "A new painful palpation finding contradicts the explicitly painless abdominal examination in the current source state."
+    },
+    {
+      "question_id": "b130",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The paragraph break before the complete final question is preferable to the offered within-question space; the serum result remains grammatical and noncontradictory."
+    },
+    {
+      "question_id": "b130",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "Even though a clean paragraph seam exists before the whole question, the proposed tenderness conflicts with the source's painless pressure/decompression finding."
+    },
+    {
+      "question_id": "b131",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered final paragraph seam is valid, and the plasma result is a patient-attached addition with no explicit conflict, though it could influence a diagnostic probability judgment."
+    },
+    {
+      "question_id": "b131",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The source expressly calls abdominal pressure and decompression painless, so a new localized palpation sensitivity is contradictory."
+    },
+    {
+      "question_id": "b132",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The paragraph break before the full conditional question is a clean offered seam; using the later space would split the question. The plasma statement itself has no explicit conflict."
+    },
+    {
+      "question_id": "b132",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "A valid seam exists before the full conditional question, but localized pain on palpation conflicts with the explicitly painless abdominal examination."
+    },
+    {
+      "question_id": "b133",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3079,
+      "boundary_end": 3080,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered space after the declarative analytic premise and before the directive is a valid final seam. The fabricated plasma marker is not explicitly identified as one of the negative metabolic or immune determinations."
+    },
+    {
+      "question_id": "b133",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The seam after the declarative premise is valid, but localized sensitivity on palpation contradicts the source's explicit painless abdominal pressure/decompression finding."
+    },
+    {
+      "question_id": "b134",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2816,
+      "boundary_end": 2818,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered final paragraph break is correctly placed before the biopsy directive, and the serum finding is grammatical and not literally contradicted by the source."
+    },
+    {
+      "question_id": "b134",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The new palpation pain is inconsistent with the source's explicit painless abdominal pressure/decompression examination."
+    },
+    {
+      "question_id": "b135",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2948,
+      "boundary_end": 2950,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The paragraph break after the gastroscopy findings and before the treatment question is a clean offered seam; the plasma result is an additional patient fact without literal conflict."
+    },
+    {
+      "question_id": "b135",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The proposed localized sensitivity conflicts with the explicit finding that abdominal pressure and decompression were painless during the current presentation."
+    },
+    {
+      "question_id": "b136",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 2948,
+      "boundary_end": 2950,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered break directly after the gastroscopy narrative and before the medication question permits exact insertion; no source result explicitly contradicts the serum finding."
+    },
+    {
+      "question_id": "b136",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_CONTRADICTION_PAINLESS_ABDOMINAL_EXAM"],
+      "rationale": "The added pain on palpation contradicts the source examination that explicitly records painless abdominal pressure and decompression."
+    },
+    {
+      "question_id": "b137",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered paragraph break after the repeat ascitic-fluid results and before their interpretation is valid; the serum finding is patient-specific and not explicitly contradicted."
+    },
+    {
+      "question_id": "b137",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "At the later emergency presentation the source newly reports diffuse abdominal discomfort, so localized sensitivity is compatible with the current state despite the earlier painless examination; the final paragraph seam is valid."
+    },
+    {
+      "question_id": "b138",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The final paragraph seam is offered and follows the new ascitic-fluid results; the serum statement is grammatical, patient-attached, and not literally contradicted."
+    },
+    {
+      "question_id": "b138",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The later emergency encounter explicitly includes diffuse abdominal discomfort, making localized palpation pain compatible at the offered seam immediately before the next-step question."
+    },
+    {
+      "question_id": "b139",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered break after the repeat fluid analysis and before the treatment question is mechanically correct, and the plasma finding has no explicit source conflict."
+    },
+    {
+      "question_id": "b139",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 3628,
+      "boundary_end": 3630,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The current emergency presentation reports diffuse abdominal discomfort, so the localized sensitivity is not contradicted; it fits the offered final paragraph seam before treatment is asked."
+    },
+    {
+      "question_id": "b140",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 4609,
+      "boundary_end": 4611,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The offered paragraph break after the latest fluid analysis and before the final treatment question is valid; the serum finding is not among the results explicitly stated to be negative."
+    },
+    {
+      "question_id": "b140",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 4609,
+      "boundary_end": 4611,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The insertion is a new examination finding at the later seven-day stage, after enough elapsed time that the earlier symptom resolution does not explicitly preclude a current localized palpation finding; the offered final seam is clean."
+    },
+    {
+      "question_id": "b141",
+      "arm": "BM",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 4609,
+      "boundary_end": 4611,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The first offered prompt-like seam is the correct paragraph break before the entire directive; later offered spaces would split it. The serum result is not explicitly contradicted by the source."
+    },
+    {
+      "question_id": "b141",
+      "arm": "AN",
+      "reviewer_id": "review_03",
+      "verdict": "PASS",
+      "boundary_start": 4609,
+      "boundary_end": 4611,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "At the later seven-day stage, the earlier resolution of discomfort does not explicitly prohibit a new current localized finding. The first offered paragraph seam is immediately before the complete transplant directive."
+    }
+  ]
+}

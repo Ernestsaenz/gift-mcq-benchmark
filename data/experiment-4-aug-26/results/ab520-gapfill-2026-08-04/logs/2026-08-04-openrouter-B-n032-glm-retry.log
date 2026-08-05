@@ -1,0 +1,3 @@
+[note] Progress counter reflects completion order, not plan order.
+[14:19:04] [182/182 (100%)] openrouter/z-ai/glm-5.2 q=n032 r=1  parse=ok letter=d/c ✗  19.1s
+planned=182 executed=1 skipped=181 dry_run=False

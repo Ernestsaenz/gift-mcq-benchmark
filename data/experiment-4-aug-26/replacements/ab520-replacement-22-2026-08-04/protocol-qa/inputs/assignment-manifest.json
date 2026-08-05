@@ -1,0 +1,139 @@
+{
+  "protocol_version": "ab182-readonly-v1",
+  "qa_date": "2026-08-05",
+  "selection_status_at_assignment": "PROVISIONAL_PENDING_PROTOCOL_QA",
+  "reviewers": {
+    "sourcing": "RSRC22",
+    "qa1": "RQA22A",
+    "qa2": "RQA22B"
+  },
+  "reviewer_independence": {
+    "qa1_ne_qa2": true,
+    "prior_reviews_excluded_from_inputs": true,
+    "manual_adjudications_excluded_from_inputs": true,
+    "ranks_excluded_from_inputs": true
+  },
+  "calibration": {
+    "path": "protocol-qa/inputs/calibration.jsonl",
+    "count": 8,
+    "sha256": "19fa292acc8d1077587b88e63caec210cc788215b164be27563d9c2eba62bf42"
+  },
+  "assignments": {
+    "sourcing": [
+      {
+        "batch": 1,
+        "path": "protocol-qa/inputs/sourcing-batch-01.jsonl",
+        "count": 10,
+        "candidate_ids": [
+          "c0369",
+          "c0922",
+          "c0973",
+          "c2093",
+          "c2116",
+          "c2600",
+          "c2644",
+          "c2647",
+          "c2714",
+          "c2718"
+        ],
+        "sha256": "de4e3eae67d45d7dff84a6ea49bc8381c369ed6e243e8414d5344efa3d328215"
+      }
+    ],
+    "qa1": [
+      {
+        "batch": 1,
+        "path": "protocol-qa/inputs/qa1-batch-01.jsonl",
+        "count": 10,
+        "candidate_ids": [
+          "c0177",
+          "c0205",
+          "c0211",
+          "c0248",
+          "c0369",
+          "c0381",
+          "c0922",
+          "c0931",
+          "c0955",
+          "c0973"
+        ],
+        "sha256": "af5c380d67baf061847391001e79b90f58a05439ccf5f9be574946cbfb62f9c4"
+      },
+      {
+        "batch": 2,
+        "path": "protocol-qa/inputs/qa1-batch-02.jsonl",
+        "count": 10,
+        "candidate_ids": [
+          "c2027",
+          "c2033",
+          "c2093",
+          "c2116",
+          "c2132",
+          "c2443",
+          "c2485",
+          "c2600",
+          "c2644",
+          "c2647"
+        ],
+        "sha256": "25bd6edaa6eb7222818c47546799ef805d5d43f660e8e70f42f6442d8c29857a"
+      },
+      {
+        "batch": 3,
+        "path": "protocol-qa/inputs/qa1-batch-03.jsonl",
+        "count": 2,
+        "candidate_ids": [
+          "c2714",
+          "c2718"
+        ],
+        "sha256": "1cb8863762b2ad53d23d9d28d4dc2497ba41787361e16b65f36ba3f955d39ef9"
+      }
+    ],
+    "qa2": [
+      {
+        "batch": 1,
+        "path": "protocol-qa/inputs/qa2-batch-01.jsonl",
+        "count": 10,
+        "candidate_ids": [
+          "c0177",
+          "c0205",
+          "c0211",
+          "c0248",
+          "c0369",
+          "c0381",
+          "c0922",
+          "c0931",
+          "c0955",
+          "c0973"
+        ],
+        "sha256": "af5c380d67baf061847391001e79b90f58a05439ccf5f9be574946cbfb62f9c4"
+      },
+      {
+        "batch": 2,
+        "path": "protocol-qa/inputs/qa2-batch-02.jsonl",
+        "count": 10,
+        "candidate_ids": [
+          "c2027",
+          "c2033",
+          "c2093",
+          "c2116",
+          "c2132",
+          "c2443",
+          "c2485",
+          "c2600",
+          "c2644",
+          "c2647"
+        ],
+        "sha256": "25bd6edaa6eb7222818c47546799ef805d5d43f660e8e70f42f6442d8c29857a"
+      },
+      {
+        "batch": 3,
+        "path": "protocol-qa/inputs/qa2-batch-03.jsonl",
+        "count": 2,
+        "candidate_ids": [
+          "c2714",
+          "c2718"
+        ],
+        "sha256": "1cb8863762b2ad53d23d9d28d4dc2497ba41787361e16b65f36ba3f955d39ef9"
+      }
+    ]
+  }
+}

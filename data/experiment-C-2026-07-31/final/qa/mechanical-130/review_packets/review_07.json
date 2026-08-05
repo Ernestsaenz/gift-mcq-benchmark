@@ -1,0 +1,669 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_07",
+  "shard_id": "07",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b1",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta en relación con el cáncer de colon:",
+      "option_a": "Es el tipo de cáncer con más incidencia en España.",
+      "option_b": "Su incidencia está aumentando en los últimos años.",
+      "option_c": "En la población de menos de 50 años su incidencia está bajando claramente.",
+      "option_d": "Las respuestas a) y b) son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Las respuestas a) y b) son correctas.",
+      "source_text_sha256": "1fa9c80cad10617fe288828870fd928c11f6ba0d693f9f0acb17f2015ac717cf",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Señale la respuesta correcta en relación con el cáncer de colon:"
+        },
+        {
+          "boundary_start": 332,
+          "boundary_end": 333,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta",
+          "right_context": "en relación con el cáncer de colon:"
+        }
+      ]
+    },
+    {
+      "question_id": "b1",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta en relación con el cáncer de colon:",
+      "option_a": "Es el tipo de cáncer con más incidencia en España.",
+      "option_b": "Su incidencia está aumentando en los últimos años.",
+      "option_c": "En la población de menos de 50 años su incidencia está bajando claramente.",
+      "option_d": "Las respuestas a) y b) son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Las respuestas a) y b) son correctas.",
+      "source_text_sha256": "1fa9c80cad10617fe288828870fd928c11f6ba0d693f9f0acb17f2015ac717cf",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Señale la respuesta correcta en relación con el cáncer de colon:"
+        },
+        {
+          "boundary_start": 332,
+          "boundary_end": 333,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta",
+          "right_context": "en relación con el cáncer de colon:"
+        }
+      ]
+    },
+    {
+      "question_id": "b6",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nUna vez incluido en el programa de cribado se hace la determinación de sangre oculta en heces (SOH) inmunológica cuantitativa, que resulta positiva. Señale la respuesta correcta:",
+      "option_a": "No se debe ofrecer ningún tipo de prueba complementaria.",
+      "option_b": "Se debe ofrecer al paciente hacer una segunda determinación de SOH.",
+      "option_c": "Se debe ofrecer al paciente hacer una colonoscopia.",
+      "option_d": "Si no hay síntomas no es necesario hacer una colonoscopia.",
+      "correct_letter": "c",
+      "correct_option_text": "Se debe ofrecer al paciente hacer una colonoscopia.",
+      "source_text_sha256": "bcaca2d7ab1a4bda63a30024350ae8475665e899bb49a6fea1dec9cac0d89384",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Una vez incluido en el programa de cribado se hace la determinación de sangre oculta en heces (SOH) inmunológica cuantitativa, que resulta positiva. Señale la respuesta correcta:"
+        },
+        {
+          "boundary_start": 452,
+          "boundary_end": 453,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nUna vez incluido en el programa de cribado se hace la determinación de sangre oculta en heces (SOH) inmunológica cuantitativa, que resulta positiva.",
+          "right_context": "Señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b11",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?",
+      "option_a": "Es susceptible de endoscopia de forma inmediata.",
+      "option_b": "No requiere ningún tipo de procedimiento dada la edad y la ausencia de clínica asociada.",
+      "option_c": "En este caso se recomienda el control por medio de una SOH bianual.",
+      "option_d": "Se le debe ofrecer una colonoscopia anual como herramienta de prevención más eficaz a nivel de coste.",
+      "correct_letter": "c",
+      "correct_option_text": "En este caso se recomienda el control por medio de una SOH bianual.",
+      "source_text_sha256": "89d595ede6a5d947ecbb0a65d02744420ff66db5ddd66358b742f43d45378e1b",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Este paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        },
+        {
+          "boundary_start": 360,
+          "boundary_end": 361,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "illos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático.",
+          "right_context": "En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        },
+        {
+          "boundary_start": 412,
+          "boundary_end": 413,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "smo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR.",
+          "right_context": "¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        }
+      ]
+    },
+    {
+      "question_id": "b11",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?",
+      "option_a": "Es susceptible de endoscopia de forma inmediata.",
+      "option_b": "No requiere ningún tipo de procedimiento dada la edad y la ausencia de clínica asociada.",
+      "option_c": "En este caso se recomienda el control por medio de una SOH bianual.",
+      "option_d": "Se le debe ofrecer una colonoscopia anual como herramienta de prevención más eficaz a nivel de coste.",
+      "correct_letter": "c",
+      "correct_option_text": "En este caso se recomienda el control por medio de una SOH bianual.",
+      "source_text_sha256": "89d595ede6a5d947ecbb0a65d02744420ff66db5ddd66358b742f43d45378e1b",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Este paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        },
+        {
+          "boundary_start": 360,
+          "boundary_end": 361,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "illos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático.",
+          "right_context": "En la familia no existen otros antecedentes de CCR. ¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        },
+        {
+          "boundary_start": 412,
+          "boundary_end": 413,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "smo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEste paciente tiene un hermano de 52 años, asintomático. En la familia no existen otros antecedentes de CCR.",
+          "right_context": "¿Qué recomendación debemos dar al hermano en cuanto a prevención del CCR?"
+        }
+      ]
+    },
+    {
+      "question_id": "b12",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEl paciente deja de acudir a les consultas externas. Regresa al cabo de siete años con un cuadro de rectorragias asociadas a una pérdida de ocho quilos. Señale la respuesta correcta:",
+      "option_a": "No requiere una colonoscopia porque tiene una de hace siete años.",
+      "option_b": "Requiere colonoscopia por la clínica que presenta para descartar un CCR.",
+      "option_c": "En este caso basta con un análisis de SOH.",
+      "option_d": "La exploración inicial debe ser una ecografía abdominal.",
+      "correct_letter": "b",
+      "correct_option_text": "Requiere colonoscopia por la clínica que presenta para descartar un CCR.",
+      "source_text_sha256": "5566436eb2d10fb452f14f3e979f43dd47ee3bd519fbaa44f913c78fbd0f151a",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "El paciente deja de acudir a les consultas externas. Regresa al cabo de siete años con un cuadro de rectorragias asociadas a una pérdida de ocho quilos. Señale la respuesta correcta:"
+        },
+        {
+          "boundary_start": 356,
+          "boundary_end": 357,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "garrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEl paciente deja de acudir a les consultas externas.",
+          "right_context": "Regresa al cabo de siete años con un cuadro de rectorragias asociadas a una pérdida de ocho quilos. Señale la respuesta correcta:"
+        },
+        {
+          "boundary_start": 456,
+          "boundary_end": 457,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nEl paciente deja de acudir a les consultas externas. Regresa al cabo de siete años con un cuadro de rectorragias asociadas a una pérdida de ocho quilos.",
+          "right_context": "Señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b20",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta en relación con la clasificación de Kudo:",
+      "option_a": "No tiene relevancia a la hora de tomar decisiones durante la endoscopia.",
+      "option_b": "Es aconsejable utilizarla cuando se caracterizan lesiones endoscópicas antes de la resección.",
+      "option_c": "Su uso tiene relevancia para tomar decisiones durante la endoscopia.",
+      "option_d": "La respuestas b) y c) son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "La respuestas b) y c) son correctas.",
+      "source_text_sha256": "8a9ee4bc3e212070bced09878cc9f75e4d5dac5431cd60fc71ec12009535b9a5",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Señale la respuesta correcta en relación con la clasificación de Kudo:"
+        },
+        {
+          "boundary_start": 332,
+          "boundary_end": 333,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta",
+          "right_context": "en relación con la clasificación de Kudo:"
+        }
+      ]
+    },
+    {
+      "question_id": "b20",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-1",
+      "cluster": "illes-balears-2022-base-caso-1",
+      "question_text": "Paciente de 57 años, sin antecedentes personales ni familiares de cáncer de colon ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta en relación con la clasificación de Kudo:",
+      "option_a": "No tiene relevancia a la hora de tomar decisiones durante la endoscopia.",
+      "option_b": "Es aconsejable utilizarla cuando se caracterizan lesiones endoscópicas antes de la resección.",
+      "option_c": "Su uso tiene relevancia para tomar decisiones durante la endoscopia.",
+      "option_d": "La respuestas b) y c) son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "La respuestas b) y c) son correctas.",
+      "source_text_sha256": "8a9ee4bc3e212070bced09878cc9f75e4d5dac5431cd60fc71ec12009535b9a5",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 302,
+          "boundary_end": 304,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "ni de cáncer en otras localizaciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.",
+          "right_context": "Señale la respuesta correcta en relación con la clasificación de Kudo:"
+        },
+        {
+          "boundary_start": 332,
+          "boundary_end": 333,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ciones, fumador de 22 cigarrillos al día, con hábitos de vida sedentarios, enolismo de 60 gr/día, obesidad con un índice de masa corporal de 37 y una dieta rica en carnes rojas y procesadas.\n\nSeñale la respuesta correcta",
+          "right_context": "en relación con la clasificación de Kudo:"
+        }
+      ]
+    },
+    {
+      "question_id": "b396",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b396",
+      "question_text": "Según lo previsto en el artículo 17 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, la gestión de la historia clínica por los centros con pacientes hospitalizados, se realizará a través de:",
+      "option_a": "El servicio de Personal",
+      "option_b": "La Dirección de Gestión y Asuntos Generales",
+      "option_c": "La Dirección Médica",
+      "option_d": "La unidad de admisión y documentación clínica.",
+      "correct_letter": "d",
+      "correct_option_text": "La unidad de admisión y documentación clínica.",
+      "source_text_sha256": "ad10e37a6f4d6e4456ab47bb68e9ebfc3f9df4648c7120d562742d4f590ebd84",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b396",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b396",
+      "question_text": "Según lo previsto en el artículo 17 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, la gestión de la historia clínica por los centros con pacientes hospitalizados, se realizará a través de:",
+      "option_a": "El servicio de Personal",
+      "option_b": "La Dirección de Gestión y Asuntos Generales",
+      "option_c": "La Dirección Médica",
+      "option_d": "La unidad de admisión y documentación clínica.",
+      "correct_letter": "d",
+      "correct_option_text": "La unidad de admisión y documentación clínica.",
+      "source_text_sha256": "ad10e37a6f4d6e4456ab47bb68e9ebfc3f9df4648c7120d562742d4f590ebd84",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b415",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "main",
+      "cluster": "solo:b415",
+      "question_text": "Según las guías ESGE/EASL .¿Cúal es la técnica de elección para diagnósticar una colangitis esclerosante primaria?.",
+      "option_a": "Ecoendoscopia.",
+      "option_b": "Colangioresonancia.",
+      "option_c": "CPRE.",
+      "option_d": "Eco-Doppler.",
+      "correct_letter": "b",
+      "correct_option_text": "Colangioresonancia.",
+      "source_text_sha256": "567b10b608ce568fa42a60c9798ff4b9c1efd074190ebfea8b93432962d80c40",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b415",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "main",
+      "cluster": "solo:b415",
+      "question_text": "Según las guías ESGE/EASL .¿Cúal es la técnica de elección para diagnósticar una colangitis esclerosante primaria?.",
+      "option_a": "Ecoendoscopia.",
+      "option_b": "Colangioresonancia.",
+      "option_c": "CPRE.",
+      "option_d": "Eco-Doppler.",
+      "correct_letter": "b",
+      "correct_option_text": "Colangioresonancia.",
+      "source_text_sha256": "567b10b608ce568fa42a60c9798ff4b9c1efd074190ebfea8b93432962d80c40",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b444",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b444",
+      "question_text": "En el estudio de la función exocrina en el contexto de la pancreatitis crónica, señale la respuesta incorrecta",
+      "option_a": "El coeficiente de absorción grasa (CFA) está aceptado como el gold standard para la evaluación de la función exocrina pero no se aplica en la práctica clínica diaria.",
+      "option_b": "La determinación de C13-triglicéridos en aire espirado es una alternativa al CFA pero su uso en la práctica clínica diaria está limitado.",
+      "option_c": "Cualquier paciente con diagnóstico reciente de pancreatitis crónica debería ser evaluado con test de función pancreática aunque los hallazgos morfológicos no sean relevantes.",
+      "option_d": "La determinación de Elastasa fecal-1 es ampliamente utilizada. Valores muy bajos descartan una insuficiencia exocrina.",
+      "correct_letter": "d",
+      "correct_option_text": "La determinación de Elastasa fecal-1 es ampliamente utilizada. Valores muy bajos descartan una insuficiencia exocrina.",
+      "source_text_sha256": "42f6ce04e5e4e7e628e78272a12055e27d30b20f6264ac17adfea6863900124b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 79,
+          "boundary_end": 80,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el estudio de la función exocrina en el contexto de la pancreatitis crónica,",
+          "right_context": "señale la respuesta incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b444",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b444",
+      "question_text": "En el estudio de la función exocrina en el contexto de la pancreatitis crónica, señale la respuesta incorrecta",
+      "option_a": "El coeficiente de absorción grasa (CFA) está aceptado como el gold standard para la evaluación de la función exocrina pero no se aplica en la práctica clínica diaria.",
+      "option_b": "La determinación de C13-triglicéridos en aire espirado es una alternativa al CFA pero su uso en la práctica clínica diaria está limitado.",
+      "option_c": "Cualquier paciente con diagnóstico reciente de pancreatitis crónica debería ser evaluado con test de función pancreática aunque los hallazgos morfológicos no sean relevantes.",
+      "option_d": "La determinación de Elastasa fecal-1 es ampliamente utilizada. Valores muy bajos descartan una insuficiencia exocrina.",
+      "correct_letter": "d",
+      "correct_option_text": "La determinación de Elastasa fecal-1 es ampliamente utilizada. Valores muy bajos descartan una insuficiencia exocrina.",
+      "source_text_sha256": "42f6ce04e5e4e7e628e78272a12055e27d30b20f6264ac17adfea6863900124b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 79,
+          "boundary_end": 80,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el estudio de la función exocrina en el contexto de la pancreatitis crónica,",
+          "right_context": "señale la respuesta incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b458",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b458",
+      "question_text": "Respecto a las recomendaciones de tratamiento en un varón de 45 años con enfermedad de Crohn y afectación de íleon terminal en tratamiento con Infliximab 120 mg sc cada 14 días, ingresado por cuadro oclusivo con estenosis fibrótica de 9 cm, sin evidencia de actividad en enteroRM y la parte accesible por endoscopia previo al ingreso, sin displasia en las biopsias, señale lo CORRECTO:",
+      "option_a": "Dado que es una estenosis corta sin actividad, se recomienda dilatación endoscópica con balón.",
+      "option_b": "Se recomienda solicitar niveles de Infliximab para optimizar dosis, dado el comportamiento estenosante y agresivo de su enfermedad.",
+      "option_c": "Se recomienda suspender el tratamiento biológico al menos 6 semanas antes de realizar una cirugía programada, para evitar mayor riesgo de complicaciones postoperatorias.",
+      "option_d": "Todas las anteriores son falsas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las anteriores son falsas.",
+      "source_text_sha256": "99a87255cd2c0b32582761b815f9d097cf235d4b213f1508247a1ddd931d7666",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 365,
+          "boundary_end": 366,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "fliximab 120 mg sc cada 14 días, ingresado por cuadro oclusivo con estenosis fibrótica de 9 cm, sin evidencia de actividad en enteroRM y la parte accesible por endoscopia previo al ingreso, sin displasia en las biopsias,",
+          "right_context": "señale lo CORRECTO:"
+        }
+      ]
+    },
+    {
+      "question_id": "b458",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b458",
+      "question_text": "Respecto a las recomendaciones de tratamiento en un varón de 45 años con enfermedad de Crohn y afectación de íleon terminal en tratamiento con Infliximab 120 mg sc cada 14 días, ingresado por cuadro oclusivo con estenosis fibrótica de 9 cm, sin evidencia de actividad en enteroRM y la parte accesible por endoscopia previo al ingreso, sin displasia en las biopsias, señale lo CORRECTO:",
+      "option_a": "Dado que es una estenosis corta sin actividad, se recomienda dilatación endoscópica con balón.",
+      "option_b": "Se recomienda solicitar niveles de Infliximab para optimizar dosis, dado el comportamiento estenosante y agresivo de su enfermedad.",
+      "option_c": "Se recomienda suspender el tratamiento biológico al menos 6 semanas antes de realizar una cirugía programada, para evitar mayor riesgo de complicaciones postoperatorias.",
+      "option_d": "Todas las anteriores son falsas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las anteriores son falsas.",
+      "source_text_sha256": "99a87255cd2c0b32582761b815f9d097cf235d4b213f1508247a1ddd931d7666",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 365,
+          "boundary_end": 366,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "fliximab 120 mg sc cada 14 días, ingresado por cuadro oclusivo con estenosis fibrótica de 9 cm, sin evidencia de actividad en enteroRM y la parte accesible por endoscopia previo al ingreso, sin displasia en las biopsias,",
+          "right_context": "señale lo CORRECTO:"
+        }
+      ]
+    },
+    {
+      "question_id": "b472",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b472",
+      "question_text": "En el estudio ampliado de diarrea crónica para descartar causas neuroendocrinas, se deben solicitar todas las siguientes determinaciones, EXCEPTO:",
+      "option_a": "Cromogranina A.",
+      "option_b": "Calcitonina.",
+      "option_c": "Gastrina.",
+      "option_d": "Insulina.",
+      "correct_letter": "d",
+      "correct_option_text": "Insulina.",
+      "source_text_sha256": "9279cc6a7507becfe76da2b78094979dd3cf744922dfa18efaa78200f305ad3b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b472",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b472",
+      "question_text": "En el estudio ampliado de diarrea crónica para descartar causas neuroendocrinas, se deben solicitar todas las siguientes determinaciones, EXCEPTO:",
+      "option_a": "Cromogranina A.",
+      "option_b": "Calcitonina.",
+      "option_c": "Gastrina.",
+      "option_d": "Insulina.",
+      "correct_letter": "d",
+      "correct_option_text": "Insulina.",
+      "source_text_sha256": "9279cc6a7507becfe76da2b78094979dd3cf744922dfa18efaa78200f305ad3b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b490",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b490",
+      "question_text": "En un paciente no colecistectomizado con disfunción del esfínter de Oddi tipo III, ¿cómo están los enzimas hepáticos y el conducto biliar común?",
+      "option_a": "Enzimas hepáticos alterados y conducto biliar normal.",
+      "option_b": "Enzimas hepáticos normales y conducto biliar dilatado.",
+      "option_c": "Enzimas hepáticos normales y conducto biliar normal.",
+      "option_d": "Enzimas hepáticos alterados y conducto biliar dilatado.",
+      "correct_letter": "c",
+      "correct_option_text": "Enzimas hepáticos normales y conducto biliar normal.",
+      "source_text_sha256": "bec84fd6037ba655d431b2d9c06e3af11830d9b572f78c4c72a07677afd211bd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 82,
+          "boundary_end": 83,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente no colecistectomizado con disfunción del esfínter de Oddi tipo III,",
+          "right_context": "¿cómo están los enzimas hepáticos y el conducto biliar común?"
+        }
+      ]
+    },
+    {
+      "question_id": "b490",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b490",
+      "question_text": "En un paciente no colecistectomizado con disfunción del esfínter de Oddi tipo III, ¿cómo están los enzimas hepáticos y el conducto biliar común?",
+      "option_a": "Enzimas hepáticos alterados y conducto biliar normal.",
+      "option_b": "Enzimas hepáticos normales y conducto biliar dilatado.",
+      "option_c": "Enzimas hepáticos normales y conducto biliar normal.",
+      "option_d": "Enzimas hepáticos alterados y conducto biliar dilatado.",
+      "correct_letter": "c",
+      "correct_option_text": "Enzimas hepáticos normales y conducto biliar normal.",
+      "source_text_sha256": "bec84fd6037ba655d431b2d9c06e3af11830d9b572f78c4c72a07677afd211bd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 82,
+          "boundary_end": 83,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente no colecistectomizado con disfunción del esfínter de Oddi tipo III,",
+          "right_context": "¿cómo están los enzimas hepáticos y el conducto biliar común?"
+        }
+      ]
+    }
+  ]
+}

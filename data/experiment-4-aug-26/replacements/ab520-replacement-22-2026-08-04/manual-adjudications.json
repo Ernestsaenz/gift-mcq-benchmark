@@ -1,0 +1,77 @@
+{
+  "artifact_version": "ab520-replacement-manual-adjudication-v1",
+  "selection_date": "2026-08-04",
+  "review_role": "research_synthesis_not_blinded_qa",
+  "candidates": {
+    "c0369": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "ESGE states that perforation is the only absolute contraindication to colonic stenting. The other three choices are not absolute contraindications; after the keyed B option is replaced, none is correct.",
+      "evidence": [{"title": "ESGE Guideline: Self-expandable metal stents for obstructing colonic and extracolonic cancer, Update 2020", "url": "https://www.esge.com/assets/downloads/pdfs/guidelines/2020_a_1140_3017.pdf"}]
+    },
+    "c0973": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "FIB-4 uses age, AST, ALT, and platelet count. The remaining options either reject non-invasive tests or substitute sex/GGT, so the exact C swap leaves no correct retained option.",
+      "evidence": [{"title": "AASLD: Why are non-invasive risk scores such as FIB-4 used in clinical practice?", "url": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-are-non-invasive-risk-scores-such-fib-4-used"}]
+    },
+    "c2093": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "Daughter vesicles within a hepatic cyst are a pathognomonic ultrasound pattern of cystic echinococcosis. Polycystic disease, pyogenic abscess, and hepatic candidiasis do not fit that finding.",
+      "evidence": [{"title": "WHO guideline table: staging of cystic echinococcosis cysts", "url": "https://www.ncbi.nlm.nih.gov/books/NBK616291/table/ch1.tab1/"}]
+    },
+    "c2644": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "Progressive dysphagia, weight loss, and an ulcerated stenosing mid-esophageal lesion most strongly indicate squamous carcinoma; atypical squamous cells with loss of polarity are characteristic. The other histologies describe adenocarcinoma, ectopic/metaplastic glands, or lymphoma.",
+      "evidence": [{"title": "The pathologic and molecular landscape of esophageal squamous cell carcinogenesis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7465394/"}]
+    },
+    "c2600": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "SERPINA1-related alpha-1 antitrypsin deficiency is inherited in an autosomal codominant manner. The other named inheritance patterns are not correct.",
+      "evidence": [{"title": "GeneReviews: Alpha-1 Antitrypsin Deficiency", "url": "https://www.ncbi.nlm.nih.gov/books/NBK1519/"}]
+    },
+    "c2718": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "In the Todani classification, a choledochocele involving the intraduodenal common bile duct is type III. Types I and II describe different extrahepatic patterns.",
+      "evidence": [{"title": "Diagnosis and management of choledochal cysts", "url": "https://www.sciencedirect.com/science/article/abs/pii/S1365182X22016008"}]
+    },
+    "c0922": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "Gastric schwannomas characteristically stain S-100 positive and c-KIT/CD117 negative, unlike GIST. The other three marker combinations are false, so replacing keyed option B leaves no correct retained option.",
+      "evidence": [{"title": "Gastric schwannoma: a diagnosis that should be known", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6963168/"}]
+    },
+    "c2647": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "The Glasgow-Blatchford score includes blood urea. It does not use age, an endoscopic visible vessel, or mean arterial pressure, so replacing keyed option C leaves no correct retained option.",
+      "evidence": [{"title": "GGC Medicines: Glasgow Blatchford score", "url": "https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/"}]
+    },
+    "c2714": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "Zinc salts interfere with gastrointestinal copper absorption in Wilson disease. The remaining claims about inheritance, ATP7 location, and tolerability are false, so the exact D swap is valid.",
+      "evidence": [{"title": "GeneReviews: Wilson Disease", "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK1512/?report=reader"}]
+    },
+    "c2116": {
+      "non_negated": true,
+      "a_validity": "PASS",
+      "b_validity": "PASS",
+      "rationale": "In Couinaud anatomy, segment VIII is the right anterosuperior segment above the portal plane and between the right and middle hepatic veins. Segments IV, VI, and VII do not match all stated landmarks, so the exact D swap is valid.",
+      "evidence": [{"title": "Segmentation of liver, its vessels and lesions from CT images for surgical planning", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3094217/"}]
+    }
+  }
+}

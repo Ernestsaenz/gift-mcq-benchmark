@@ -1,0 +1,1719 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_16",
+  "shard_id": "16",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b335",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-006",
+      "question_text": "Varón de 25 años que acude al área de urgencias del hospital por cuadro de dolor abdominal intenso y progresivo que se inició a las 2 horas postingesta acompañado de distensión abdominal que no cede con la analgesia habitual y vómitos. No refiere tener enfermedades previas. Fumador habitual. No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y\nPCR de 100 mg/l. Se realizó TAC observando un engrosamiento parietal y concéntrico del íleon terminal con estenosis de 15 cm de longitud, signos inflamatorios, pequeñas burbujas de gas extraluminales adyacentes e infiltración de la grasa pericecal. Ante la sospecha de perforación se realiza cirugía urgente practicándose resección ileocecal y anastomosis ileocólica. El estudio anatomopatológico de la pieza quirúrgica confirma la existencia de una enfermedad de Crohn. Tras la intervención quirúrgica el paciente evoluciona de forma favorable y previamente al alta se consulta con digestivo.\n\n¿Cuál es la actitud más adecuada a seguir en este paciente?",
+      "option_a": "Abandono del tabaquismo y revisión en la consulta de digestivo con control analítico 6 meses después de la cirugía.",
+      "option_b": "Abandono del tabaquismo, iniciar tratamiento con mesalazina oral y revisión en la consulta de digestivo con control analítico 6 meses después de la cirugía.",
+      "option_c": "Abandono del tabaquismo, iniciar tratamiento con metronidazol oral a dosis de 15-20 mg/Kg/día durante 3 meses y revisión en la consulta de digestivo con control analítico 6 meses después de la cirugía.",
+      "option_d": "Abandono del tabaquismo, iniciar tratamiento con metronidazol oral a dosis de 15-20 mg/Kg/día durante 3 meses + azatioprina a dosis de 2-2.5 mg/Kg/día y revisión en la consulta de digestivo con control analítico 6 meses después de la cirugía.",
+      "correct_letter": "d",
+      "correct_option_text": "Abandono del tabaquismo, iniciar tratamiento con metronidazol oral a dosis de 15-20 mg/Kg/día durante 3 meses + azatioprina a dosis de 2-2.5 mg/Kg/día y revisión en la consulta de digestivo con control analítico 6 meses después de la cirugía.",
+      "source_text_sha256": "b799fdc35f6e14ce3c8f95e08acf1abeed10f36b34de702b801b90a3a28bf866",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 235,
+          "boundary_end": 236,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "s que acude al área de urgencias del hospital por cuadro de dolor abdominal intenso y progresivo que se inició a las 2 horas postingesta acompañado de distensión abdominal que no cede con la analgesia habitual y vómitos.",
+          "right_context": "No refiere tener enfermedades previas. Fumador habitual. No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la"
+        },
+        {
+          "boundary_start": 274,
+          "boundary_end": 275,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "spital por cuadro de dolor abdominal intenso y progresivo que se inició a las 2 horas postingesta acompañado de distensión abdominal que no cede con la analgesia habitual y vómitos. No refiere tener enfermedades previas.",
+          "right_context": "Fumador habitual. No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocito"
+        },
+        {
+          "boundary_start": 292,
+          "boundary_end": 293,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "de dolor abdominal intenso y progresivo que se inició a las 2 horas postingesta acompañado de distensión abdominal que no cede con la analgesia habitual y vómitos. No refiere tener enfermedades previas. Fumador habitual.",
+          "right_context": "No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con d"
+        },
+        {
+          "boundary_start": 320,
+          "boundary_end": 321,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " progresivo que se inició a las 2 horas postingesta acompañado de distensión abdominal que no cede con la analgesia habitual y vómitos. No refiere tener enfermedades previas. Fumador habitual. No toma ninguna medicación.",
+          "right_context": "Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y\nP"
+        },
+        {
+          "boundary_start": 388,
+          "boundary_end": 389,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "stensión abdominal que no cede con la analgesia habitual y vómitos. No refiere tener enfermedades previas. Fumador habitual. No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada.",
+          "right_context": "En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y\nPCR de 100 mg/l. Se realizó TAC observando un engrosamiento parietal "
+        },
+        {
+          "boundary_start": 510,
+          "boundary_end": 511,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "l. No toma ninguna medicación. Desde hace años tiene episodios frecuentes de diarrea no estudiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo.",
+          "right_context": "En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y\nPCR de 100 mg/l. Se realizó TAC observando un engrosamiento parietal y concéntrico del íleon terminal con estenosis de 15 cm de longitud, signos inflamatorios, pequeñas burbujas de gas extral"
+        },
+        {
+          "boundary_start": 599,
+          "boundary_end": 600,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "studiada. En la exploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y",
+          "right_context": "PCR de 100 mg/l. Se realizó TAC observando un engrosamiento parietal y concéntrico del íleon terminal con estenosis de 15 cm de longitud, signos inflamatorios, pequeñas burbujas de gas extraluminales adyacentes e infiltración de la grasa pericecal. Ante la sospecha de perforación"
+        },
+        {
+          "boundary_start": 616,
+          "boundary_end": 617,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "xploración se aprecia dolor a la palpación en la fosa ilíaca derecha e hipogastrio con signo de Blumberg positivo. En la analítica urgente existe una leucocitosis moderada con desviación a la izquierda y\nPCR de 100 mg/l.",
+          "right_context": "Se realizó TAC observando un engrosamiento parietal y concéntrico del íleon terminal con estenosis de 15 cm de longitud, signos inflamatorios, pequeñas burbujas de gas extraluminales adyacentes e infiltración de la grasa pericecal. Ante la sospecha de perforación se realiza cirug"
+        },
+        {
+          "boundary_start": 848,
+          "boundary_end": 849,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "TAC observando un engrosamiento parietal y concéntrico del íleon terminal con estenosis de 15 cm de longitud, signos inflamatorios, pequeñas burbujas de gas extraluminales adyacentes e infiltración de la grasa pericecal.",
+          "right_context": "Ante la sospecha de perforación se realiza cirugía urgente practicándose resección ileocecal y anastomosis ileocólica. El estudio anatomopatológico de la pieza quirúrgica confirma la existencia de una enfermedad de Crohn. Tras la intervención quirúrgica el paciente evoluciona de "
+        },
+        {
+          "boundary_start": 967,
+          "boundary_end": 968,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "flamatorios, pequeñas burbujas de gas extraluminales adyacentes e infiltración de la grasa pericecal. Ante la sospecha de perforación se realiza cirugía urgente practicándose resección ileocecal y anastomosis ileocólica.",
+          "right_context": "El estudio anatomopatológico de la pieza quirúrgica confirma la existencia de una enfermedad de Crohn. Tras la intervención quirúrgica el paciente evoluciona de forma favorable y previamente al alta se consulta con digestivo.\n\n¿Cuál es la actitud más adecuada a seguir en este pac"
+        },
+        {
+          "boundary_start": 1070,
+          "boundary_end": 1071,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "nte la sospecha de perforación se realiza cirugía urgente practicándose resección ileocecal y anastomosis ileocólica. El estudio anatomopatológico de la pieza quirúrgica confirma la existencia de una enfermedad de Crohn.",
+          "right_context": "Tras la intervención quirúrgica el paciente evoluciona de forma favorable y previamente al alta se consulta con digestivo.\n\n¿Cuál es la actitud más adecuada a seguir en este paciente?"
+        },
+        {
+          "boundary_start": 1193,
+          "boundary_end": 1195,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "tudio anatomopatológico de la pieza quirúrgica confirma la existencia de una enfermedad de Crohn. Tras la intervención quirúrgica el paciente evoluciona de forma favorable y previamente al alta se consulta con digestivo.",
+          "right_context": "¿Cuál es la actitud más adecuada a seguir en este paciente?"
+        }
+      ]
+    },
+    {
+      "question_id": "b187",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b187",
+      "question_text": "¿A cuál de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?",
+      "option_a": "Varón, 73 años, sin episodios previos de HDB, tacto rectal con dedil limpio, Fc 63 lpm, TAS 133mm Hg, Hb 16 g/dl.",
+      "option_b": "Mujer, 52 años, HDB hace 8 meses atendida en otro centro, tacto rectal con dedil limpio, Fc 93 lpm, TAS 112mm Hg, Hb 10,3 g/dl.",
+      "option_c": "Varón, 57 años, sin episodios previos de HDB, tacto rectal con restos hemáticos, Fc 85 lpm, TAS 120mm Hg, Hb 11,2 g/dl.",
+      "option_d": "Mujer, 72 años, sin episodios previos, tacto rectal con dedil limpio, 92 lpm, TAS 109 mm Hg, Hb 12,5 g/dl.",
+      "correct_letter": "a",
+      "correct_option_text": "Varón, 73 años, sin episodios previos de HDB, tacto rectal con dedil limpio, Fc 63 lpm, TAS 133mm Hg, Hb 16 g/dl.",
+      "source_text_sha256": "a90b28a1ad719809b234bf320042d76ac9b28abca45521e720cdac59ca5ba811",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 2,
+          "boundary_end": 3,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿A",
+          "right_context": "cuál de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?"
+        },
+        {
+          "boundary_start": 7,
+          "boundary_end": 8,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿A cuál",
+          "right_context": "de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b187",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b187",
+      "question_text": "¿A cuál de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?",
+      "option_a": "Varón, 73 años, sin episodios previos de HDB, tacto rectal con dedil limpio, Fc 63 lpm, TAS 133mm Hg, Hb 16 g/dl.",
+      "option_b": "Mujer, 52 años, HDB hace 8 meses atendida en otro centro, tacto rectal con dedil limpio, Fc 93 lpm, TAS 112mm Hg, Hb 10,3 g/dl.",
+      "option_c": "Varón, 57 años, sin episodios previos de HDB, tacto rectal con restos hemáticos, Fc 85 lpm, TAS 120mm Hg, Hb 11,2 g/dl.",
+      "option_d": "Mujer, 72 años, sin episodios previos, tacto rectal con dedil limpio, 92 lpm, TAS 109 mm Hg, Hb 12,5 g/dl.",
+      "correct_letter": "a",
+      "correct_option_text": "Varón, 73 años, sin episodios previos de HDB, tacto rectal con dedil limpio, Fc 63 lpm, TAS 133mm Hg, Hb 16 g/dl.",
+      "source_text_sha256": "a90b28a1ad719809b234bf320042d76ac9b28abca45521e720cdac59ca5ba811",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 2,
+          "boundary_end": 3,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿A",
+          "right_context": "cuál de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?"
+        },
+        {
+          "boundary_start": 7,
+          "boundary_end": 8,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿A cuál",
+          "right_context": "de los siguientes pacientes, con un episodio de hemorragia digestiva baja (HDB), autolimitada, atendido en Urgencias, daría usted el alta y procedería a realizar su estudio y manejo de forma mbulatoria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b197",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b197",
+      "question_text": "¿En cuál de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?",
+      "option_a": "Diabetes tipo I.",
+      "option_b": "Diabetes tipo II.",
+      "option_c": "Porfiria cutánea tardía.",
+      "option_d": "Condrocalcinosis.",
+      "correct_letter": "b",
+      "correct_option_text": "Diabetes tipo II.",
+      "source_text_sha256": "abd50ecc68260f90d4b9e4a089010c489d35413eda7ee4c08c0e80f81a5596dc",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En",
+          "right_context": "cuál de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        },
+        {
+          "boundary_start": 8,
+          "boundary_end": 9,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En cuál",
+          "right_context": "de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        },
+        {
+          "boundary_start": 57,
+          "boundary_end": 58,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En cuál de las siguientes entidades no está recomendado,",
+          "right_context": "según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        }
+      ]
+    },
+    {
+      "question_id": "b197",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b197",
+      "question_text": "¿En cuál de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?",
+      "option_a": "Diabetes tipo I.",
+      "option_b": "Diabetes tipo II.",
+      "option_c": "Porfiria cutánea tardía.",
+      "option_d": "Condrocalcinosis.",
+      "correct_letter": "b",
+      "correct_option_text": "Diabetes tipo II.",
+      "source_text_sha256": "abd50ecc68260f90d4b9e4a089010c489d35413eda7ee4c08c0e80f81a5596dc",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En",
+          "right_context": "cuál de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        },
+        {
+          "boundary_start": 8,
+          "boundary_end": 9,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En cuál",
+          "right_context": "de las siguientes entidades no está recomendado, según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        },
+        {
+          "boundary_start": 57,
+          "boundary_end": 58,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿En cuál de las siguientes entidades no está recomendado,",
+          "right_context": "según las guías EASL, realizar estudios para detectar hemocromatosis?"
+        }
+      ]
+    },
+    {
+      "question_id": "b221",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b221",
+      "question_text": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD), ¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?",
+      "option_a": "El cribado de varices esofágicas en el paciente con SBC crónico es igual que el del paciente cirrótico.",
+      "option_b": "Todos los pacientes con SBC deben recibir tratamiento anticoagulante.",
+      "option_c": "Si no hay respuesta al tratamiento médico debe de realizarse un tratamiento quirúrgico para la hipertensión portal.",
+      "option_d": "El trasplante hepático es útil en pacientes con fallo hepático agudo secundario a SBC y en pacientes con fracaso de otras terapias.",
+      "correct_letter": "c",
+      "correct_option_text": "Si no hay respuesta al tratamiento médico debe de realizarse un tratamiento quirúrgico para la hipertensión portal.",
+      "source_text_sha256": "d45dea803c692c5ea78f09f2ae2d12bc5bf3953c4bb6ff661f6c21f2f25b53cf",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 180,
+          "boundary_end": 181,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD),",
+          "right_context": "¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+        },
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD), ¿Cuál",
+          "right_context": "de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+        }
+      ]
+    },
+    {
+      "question_id": "b221",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b221",
+      "question_text": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD), ¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?",
+      "option_a": "El cribado de varices esofágicas en el paciente con SBC crónico es igual que el del paciente cirrótico.",
+      "option_b": "Todos los pacientes con SBC deben recibir tratamiento anticoagulante.",
+      "option_c": "Si no hay respuesta al tratamiento médico debe de realizarse un tratamiento quirúrgico para la hipertensión portal.",
+      "option_d": "El trasplante hepático es útil en pacientes con fallo hepático agudo secundario a SBC y en pacientes con fracaso de otras terapias.",
+      "correct_letter": "c",
+      "correct_option_text": "Si no hay respuesta al tratamiento médico debe de realizarse un tratamiento quirúrgico para la hipertensión portal.",
+      "source_text_sha256": "d45dea803c692c5ea78f09f2ae2d12bc5bf3953c4bb6ff661f6c21f2f25b53cf",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 180,
+          "boundary_end": 181,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD),",
+          "right_context": "¿Cuál de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+        },
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Atendiendo a las guías de Práctica Clínica Americanas de enfermedades vasculares hepáticas de 2020 de la Asociación Americana para el Estudio de las Enfermedades Hepáticas (AASLD), ¿Cuál",
+          "right_context": "de los siguientes enunciados es FALSO acerca del Síndrome de Budd-Chiari (SBC)?"
+        }
+      ]
+    },
+    {
+      "question_id": "b232",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b232",
+      "question_text": "Una de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier",
+      "option_a": "Anticuerpos monoclonales frente al factor de crecimiento transformante alfa (TGF-alfa).",
+      "option_b": "Erradicar la infección por H. pylori",
+      "option_c": "Anticolinérgicos.",
+      "option_d": "Infliximab",
+      "correct_letter": "d",
+      "correct_option_text": "Infliximab",
+      "source_text_sha256": "796e40ef401646f669a6230646f6a976bccd030702b1e1f0634a9f257f99b8ca",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier"
+        }
+      ]
+    },
+    {
+      "question_id": "b232",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b232",
+      "question_text": "Una de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier",
+      "option_a": "Anticuerpos monoclonales frente al factor de crecimiento transformante alfa (TGF-alfa).",
+      "option_b": "Erradicar la infección por H. pylori",
+      "option_c": "Anticolinérgicos.",
+      "option_d": "Infliximab",
+      "correct_letter": "d",
+      "correct_option_text": "Infliximab",
+      "source_text_sha256": "796e40ef401646f669a6230646f6a976bccd030702b1e1f0634a9f257f99b8ca",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes medidas terapéuticas NO ha demostrado ser de utilidad alguna en el tratamiento de la enfermedad de Ménétrier"
+        }
+      ]
+    },
+    {
+      "question_id": "b246",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b246",
+      "question_text": "¿Cuál de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?",
+      "option_a": "Lupus eritematoso sistémico.",
+      "option_b": "Esclerodermia.",
+      "option_c": "Enfermedad celíaca.",
+      "option_d": "Colitis ulcerosa.",
+      "correct_letter": "d",
+      "correct_option_text": "Colitis ulcerosa.",
+      "source_text_sha256": "c4c943b472236372a15459498a4bb0106395c8d4b692d9dec55879224d272cd9",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b246",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b246",
+      "question_text": "¿Cuál de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?",
+      "option_a": "Lupus eritematoso sistémico.",
+      "option_b": "Esclerodermia.",
+      "option_c": "Enfermedad celíaca.",
+      "option_d": "Colitis ulcerosa.",
+      "correct_letter": "d",
+      "correct_option_text": "Colitis ulcerosa.",
+      "source_text_sha256": "c4c943b472236372a15459498a4bb0106395c8d4b692d9dec55879224d272cd9",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes entidades se asocia con más frecuencia a la colangitis esclerosante primaria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b261",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b261",
+      "question_text": "El virus de la hepatitis B tiene varias mutaciones, la más importante es la mutación pre-C o pre-core, que es la más frecuente en nuestro medio. Indique lo que considere falso:",
+      "option_a": "Es una variante mas agresiva, con peor pronóstico",
+      "option_b": "Se caracteriza por no detectarse el Ag HBe",
+      "option_c": "Nunca coexiste con la variante no mutada",
+      "option_d": "La mutación mas frecuente es la sustitución de una única base",
+      "correct_letter": "c",
+      "correct_option_text": "Nunca coexiste con la variante no mutada",
+      "source_text_sha256": "79d95fa506b21fcc1b916683f0c1d7d0c072d3b25ce846684c7e78f11726d993",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El virus de la hepatitis B tiene varias mutaciones, la más importante es la mutación pre-C o pre-core, que es la más frecuente en nuestro medio.",
+          "right_context": "Indique lo que considere falso:"
+        }
+      ]
+    },
+    {
+      "question_id": "b261",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b261",
+      "question_text": "El virus de la hepatitis B tiene varias mutaciones, la más importante es la mutación pre-C o pre-core, que es la más frecuente en nuestro medio. Indique lo que considere falso:",
+      "option_a": "Es una variante mas agresiva, con peor pronóstico",
+      "option_b": "Se caracteriza por no detectarse el Ag HBe",
+      "option_c": "Nunca coexiste con la variante no mutada",
+      "option_d": "La mutación mas frecuente es la sustitución de una única base",
+      "correct_letter": "c",
+      "correct_option_text": "Nunca coexiste con la variante no mutada",
+      "source_text_sha256": "79d95fa506b21fcc1b916683f0c1d7d0c072d3b25ce846684c7e78f11726d993",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El virus de la hepatitis B tiene varias mutaciones, la más importante es la mutación pre-C o pre-core, que es la más frecuente en nuestro medio.",
+          "right_context": "Indique lo que considere falso:"
+        }
+      ]
+    },
+    {
+      "question_id": "b275",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b275",
+      "question_text": "¿Cuál de los siguientes pólipos se considera lesión colorrectal avanzada?",
+      "option_a": "Pólipo serrado con displasia",
+      "option_b": "Adenoma tubular de 8 mm",
+      "option_c": "Adenoma con displasia de bajo grado",
+      "option_d": "Pólipo hiperplásico",
+      "correct_letter": "a",
+      "correct_option_text": "Pólipo serrado con displasia",
+      "source_text_sha256": "36f303300d2f645f2e1a704243f992bb6dafdacac39aec568d4935141af67163",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes pólipos se considera lesión colorrectal avanzada?"
+        }
+      ]
+    },
+    {
+      "question_id": "b275",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b275",
+      "question_text": "¿Cuál de los siguientes pólipos se considera lesión colorrectal avanzada?",
+      "option_a": "Pólipo serrado con displasia",
+      "option_b": "Adenoma tubular de 8 mm",
+      "option_c": "Adenoma con displasia de bajo grado",
+      "option_d": "Pólipo hiperplásico",
+      "correct_letter": "a",
+      "correct_option_text": "Pólipo serrado con displasia",
+      "source_text_sha256": "36f303300d2f645f2e1a704243f992bb6dafdacac39aec568d4935141af67163",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes pólipos se considera lesión colorrectal avanzada?"
+        }
+      ]
+    },
+    {
+      "question_id": "b290",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b290",
+      "question_text": "¿Cuál de estas entidades NO suele cursar con esteatorrea?:",
+      "option_a": "Clorhidrorrea congénita",
+      "option_b": "Giardiasis",
+      "option_c": "Amiloidosis",
+      "option_d": "Enteritis rádica",
+      "correct_letter": "a",
+      "correct_option_text": "Clorhidrorrea congénita",
+      "source_text_sha256": "28dff3c08881dad70fb937886d3d10186f7f69b79b9ed25a6e768652eaa84670",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b290",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b290",
+      "question_text": "¿Cuál de estas entidades NO suele cursar con esteatorrea?:",
+      "option_a": "Clorhidrorrea congénita",
+      "option_b": "Giardiasis",
+      "option_c": "Amiloidosis",
+      "option_d": "Enteritis rádica",
+      "correct_letter": "a",
+      "correct_option_text": "Clorhidrorrea congénita",
+      "source_text_sha256": "28dff3c08881dad70fb937886d3d10186f7f69b79b9ed25a6e768652eaa84670",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b304",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b304",
+      "question_text": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:",
+      "option_a": "4",
+      "option_b": "3",
+      "option_c": "2",
+      "option_d": "1",
+      "correct_letter": "b",
+      "correct_option_text": "3",
+      "source_text_sha256": "2437bba256bb5c9546975c30a9b865095d190b08d71d994a3fc1addc8af6c064",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 71,
+          "boundary_end": 72,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar.",
+          "right_context": "El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína "
+        },
+        {
+          "boundary_start": 112,
+          "boundary_end": 113,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado.",
+          "right_context": "Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y "
+        },
+        {
+          "boundary_start": 130,
+          "boundary_end": 131,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial:",
+          "right_context": "120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En"
+        },
+        {
+          "boundary_start": 142,
+          "boundary_end": 143,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg;",
+          "right_context": "Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiogra"
+        },
+        {
+          "boundary_start": 171,
+          "boundary_end": 172,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm.",
+          "right_context": "Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso pres"
+        },
+        {
+          "boundary_start": 191,
+          "boundary_end": 192,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril.",
+          "right_context": "En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural"
+        },
+        {
+          "boundary_start": 268,
+          "boundary_end": 269,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "creatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo.",
+          "right_context": "En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP"
+        },
+        {
+          "boundary_start": 324,
+          "boundary_end": 325,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal:",
+          "right_context": "4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 384,
+          "boundary_end": 385,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "00 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal:",
+          "right_context": "0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 408,
+          "boundary_end": 409,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "il. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl.",
+          "right_context": "En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 483,
+          "boundary_end": 484,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo.",
+          "right_context": "¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 520,
+          "boundary_end": 521,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente",
+          "right_context": "según la clasificación BISAP?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b304",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b304",
+      "question_text": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:",
+      "option_a": "4",
+      "option_b": "3",
+      "option_c": "2",
+      "option_d": "1",
+      "correct_letter": "b",
+      "correct_option_text": "3",
+      "source_text_sha256": "2437bba256bb5c9546975c30a9b865095d190b08d71d994a3fc1addc8af6c064",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 71,
+          "boundary_end": 72,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar.",
+          "right_context": "El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína "
+        },
+        {
+          "boundary_start": 112,
+          "boundary_end": 113,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado.",
+          "right_context": "Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y "
+        },
+        {
+          "boundary_start": 130,
+          "boundary_end": 131,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial:",
+          "right_context": "120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En"
+        },
+        {
+          "boundary_start": 142,
+          "boundary_end": 143,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg;",
+          "right_context": "Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiogra"
+        },
+        {
+          "boundary_start": 171,
+          "boundary_end": 172,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm.",
+          "right_context": "Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso pres"
+        },
+        {
+          "boundary_start": 191,
+          "boundary_end": 192,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 85 años ingresado hace 12 horas por pancreatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril.",
+          "right_context": "En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural"
+        },
+        {
+          "boundary_start": 268,
+          "boundary_end": 269,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "creatitis aguda biliar. El paciente está consciente y orientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo.",
+          "right_context": "En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP"
+        },
+        {
+          "boundary_start": 324,
+          "boundary_end": 325,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ientado. Tensión arterial: 120/70mmHg; Frecuencia cardiaca 100 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal:",
+          "right_context": "4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 384,
+          "boundary_end": 385,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "00 lpm. Eupneico y afebril. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal:",
+          "right_context": "0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 408,
+          "boundary_end": 409,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "il. En la exploración presenta dolor epigástrico a la palpación sin peritonismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl.",
+          "right_context": "En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 483,
+          "boundary_end": 484,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ismo. En los análisis presenta 18.000 leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo.",
+          "right_context": "¿Cuántos puntos presenta el paciente según la clasificación BISAP?:"
+        },
+        {
+          "boundary_start": 520,
+          "boundary_end": 521,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " leucocitos/mm3 (normal: 4000-11000/mm3) y Proteína C Reactiva de 100 mg/dL (normal: 0-10) y BUN de 20mg/dl. En la radiografía de tórax del ingreso presenta derrame pleural izquierdo. ¿Cuántos puntos presenta el paciente",
+          "right_context": "según la clasificación BISAP?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b317",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b317",
+      "question_text": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale cuál de las siguientes afirmaciones es FALSA",
+      "option_a": "Es importante mantener una adecuada hidratación de la piel",
+      "option_b": "La colestiramina y el colestipol actúan aumentando la excreción fecal de sustancias pruritógenas",
+      "option_c": "El uso de sertralina puede resultar beneficioso en pacientes con prurito refractario",
+      "option_d": "Los antihistamínicos tienen un claro mecanismo de acción en el prurito de la colestasis y son el tratamiento de primera línea",
+      "correct_letter": "d",
+      "correct_option_text": "Los antihistamínicos tienen un claro mecanismo de acción en el prurito de la colestasis y son el tratamiento de primera línea",
+      "source_text_sha256": "6a21af360b7cb167553864f698b3a7af38049928d0203696614439ec50ab56d7",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 138,
+          "boundary_end": 139,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes.",
+          "right_context": "En relación con su tratamiento, señale cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 170,
+          "boundary_end": 171,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento,",
+          "right_context": "señale cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 177,
+          "boundary_end": 178,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale",
+          "right_context": "cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 182,
+          "boundary_end": 183,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale cuál",
+          "right_context": "de las siguientes afirmaciones es FALSA"
+        }
+      ]
+    },
+    {
+      "question_id": "b317",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b317",
+      "question_text": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale cuál de las siguientes afirmaciones es FALSA",
+      "option_a": "Es importante mantener una adecuada hidratación de la piel",
+      "option_b": "La colestiramina y el colestipol actúan aumentando la excreción fecal de sustancias pruritógenas",
+      "option_c": "El uso de sertralina puede resultar beneficioso en pacientes con prurito refractario",
+      "option_d": "Los antihistamínicos tienen un claro mecanismo de acción en el prurito de la colestasis y son el tratamiento de primera línea",
+      "correct_letter": "d",
+      "correct_option_text": "Los antihistamínicos tienen un claro mecanismo de acción en el prurito de la colestasis y son el tratamiento de primera línea",
+      "source_text_sha256": "6a21af360b7cb167553864f698b3a7af38049928d0203696614439ec50ab56d7",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 138,
+          "boundary_end": 139,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes.",
+          "right_context": "En relación con su tratamiento, señale cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 170,
+          "boundary_end": 171,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento,",
+          "right_context": "señale cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 177,
+          "boundary_end": 178,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale",
+          "right_context": "cuál de las siguientes afirmaciones es FALSA"
+        },
+        {
+          "boundary_start": 182,
+          "boundary_end": 183,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Usted sabe que el prurito es un síntoma frecuente en las enfermedades colestásicas crónicas y que genera gran disconfort en los pacientes. En relación con su tratamiento, señale cuál",
+          "right_context": "de las siguientes afirmaciones es FALSA"
+        }
+      ]
+    },
+    {
+      "question_id": "b332",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b332",
+      "question_text": "Señale la respuesta FALSA con respecto al fallo hepático fulminante:",
+      "option_a": "Se recomienda hacer profilaxis de la úlcera de estrés.",
+      "option_b": "Existe riesgo de sepsis severa.",
+      "option_c": "Es frecuente la aparición de hipoglucemia e hiponatremia.",
+      "option_d": "La aparición de daño renal agudo (AKI) es excepcional.",
+      "correct_letter": "d",
+      "correct_option_text": "La aparición de daño renal agudo (AKI) es excepcional.",
+      "source_text_sha256": "6d430fbd1ac42187c55d36baae57b27594246655fca9f09bda6ecf3490871000",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 25,
+          "boundary_end": 26,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA",
+          "right_context": "con respecto al fallo hepático fulminante:"
+        },
+        {
+          "boundary_start": 29,
+          "boundary_end": 30,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA con",
+          "right_context": "respecto al fallo hepático fulminante:"
+        }
+      ]
+    },
+    {
+      "question_id": "b332",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b332",
+      "question_text": "Señale la respuesta FALSA con respecto al fallo hepático fulminante:",
+      "option_a": "Se recomienda hacer profilaxis de la úlcera de estrés.",
+      "option_b": "Existe riesgo de sepsis severa.",
+      "option_c": "Es frecuente la aparición de hipoglucemia e hiponatremia.",
+      "option_d": "La aparición de daño renal agudo (AKI) es excepcional.",
+      "correct_letter": "d",
+      "correct_option_text": "La aparición de daño renal agudo (AKI) es excepcional.",
+      "source_text_sha256": "6d430fbd1ac42187c55d36baae57b27594246655fca9f09bda6ecf3490871000",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 25,
+          "boundary_end": 26,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA",
+          "right_context": "con respecto al fallo hepático fulminante:"
+        },
+        {
+          "boundary_start": 29,
+          "boundary_end": 30,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA con",
+          "right_context": "respecto al fallo hepático fulminante:"
+        }
+      ]
+    },
+    {
+      "question_id": "b348",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b348",
+      "question_text": "Señala la respuesta correcta con respecto a la hepatitis E en el embarazo",
+      "option_a": "Su incidencia ha disminuido en los ultimos años",
+      "option_b": "Su curso es potencialmente mas grave",
+      "option_c": "No se transmite de madre a feto",
+      "option_d": "Se debe tratar con interferon",
+      "correct_letter": "b",
+      "correct_option_text": "Su curso es potencialmente mas grave",
+      "source_text_sha256": "4324baae905ae8828098944bdf310773d8e77c9b3d1e46a656c09a3cd4a58cae",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 28,
+          "boundary_end": 29,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señala la respuesta correcta",
+          "right_context": "con respecto a la hepatitis E en el embarazo"
+        },
+        {
+          "boundary_start": 32,
+          "boundary_end": 33,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señala la respuesta correcta con",
+          "right_context": "respecto a la hepatitis E en el embarazo"
+        }
+      ]
+    },
+    {
+      "question_id": "b348",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b348",
+      "question_text": "Señala la respuesta correcta con respecto a la hepatitis E en el embarazo",
+      "option_a": "Su incidencia ha disminuido en los ultimos años",
+      "option_b": "Su curso es potencialmente mas grave",
+      "option_c": "No se transmite de madre a feto",
+      "option_d": "Se debe tratar con interferon",
+      "correct_letter": "b",
+      "correct_option_text": "Su curso es potencialmente mas grave",
+      "source_text_sha256": "4324baae905ae8828098944bdf310773d8e77c9b3d1e46a656c09a3cd4a58cae",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 28,
+          "boundary_end": 29,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señala la respuesta correcta",
+          "right_context": "con respecto a la hepatitis E en el embarazo"
+        },
+        {
+          "boundary_start": 32,
+          "boundary_end": 33,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señala la respuesta correcta con",
+          "right_context": "respecto a la hepatitis E en el embarazo"
+        }
+      ]
+    },
+    {
+      "question_id": "b362",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b362",
+      "question_text": "¿Cuál de las afirmaciones siguientes es FALSA en relación con el tratamiento de la infección por H pylori?",
+      "option_a": "Se recomienda que la duración del tratamiento cuádruple concomitante sin bismuto (IBP, claritromicina, amoxicilina y metronidazol) sea de 14 días.",
+      "option_b": "Se recomienda que un tratamiento erradicador sea considerado efectivo cuando sea capaz de curar la infección por H. pylori en un porcentaje próximo o preferiblemente superior al 70% de los pacientes",
+      "option_c": "Se recomienda que la duración de la terapia cuádruple con bismuto (IBP, bismuto, tetraciclina y metronidazol) sea de 10 días como mínimo",
+      "option_d": "Tras el fracaso de un primer tratamiento con una terapia cuádruple con bismuto (IBP, bismuto, tetraciclinay metronidazol), se recomienda una pauta cuádruple con levofloxacino (IBP, amoxicilina, levofloxacino y bismuto).",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda que un tratamiento erradicador sea considerado efectivo cuando sea capaz de curar la infección por H. pylori en un porcentaje próximo o preferiblemente superior al 70% de los pacientes",
+      "source_text_sha256": "edff0c48d5f1abea458ec8e22e0a995a02b1efaf1410c3ac52fc9865ee0c52c6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las afirmaciones siguientes es FALSA",
+          "right_context": "en relación con el tratamiento de la infección por H pylori?"
+        }
+      ]
+    },
+    {
+      "question_id": "b362",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b362",
+      "question_text": "¿Cuál de las afirmaciones siguientes es FALSA en relación con el tratamiento de la infección por H pylori?",
+      "option_a": "Se recomienda que la duración del tratamiento cuádruple concomitante sin bismuto (IBP, claritromicina, amoxicilina y metronidazol) sea de 14 días.",
+      "option_b": "Se recomienda que un tratamiento erradicador sea considerado efectivo cuando sea capaz de curar la infección por H. pylori en un porcentaje próximo o preferiblemente superior al 70% de los pacientes",
+      "option_c": "Se recomienda que la duración de la terapia cuádruple con bismuto (IBP, bismuto, tetraciclina y metronidazol) sea de 10 días como mínimo",
+      "option_d": "Tras el fracaso de un primer tratamiento con una terapia cuádruple con bismuto (IBP, bismuto, tetraciclinay metronidazol), se recomienda una pauta cuádruple con levofloxacino (IBP, amoxicilina, levofloxacino y bismuto).",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda que un tratamiento erradicador sea considerado efectivo cuando sea capaz de curar la infección por H. pylori en un porcentaje próximo o preferiblemente superior al 70% de los pacientes",
+      "source_text_sha256": "edff0c48d5f1abea458ec8e22e0a995a02b1efaf1410c3ac52fc9865ee0c52c6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las afirmaciones siguientes es FALSA",
+          "right_context": "en relación con el tratamiento de la infección por H pylori?"
+        }
+      ]
+    },
+    {
+      "question_id": "b376",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b376",
+      "question_text": "¿Cuál es la frecuencia recomendada de seguimiento para pacientes con gastritis crónica atrófica en estadios OLGA/OLGIM III/IV asociada a metaplasia incompleta?",
+      "option_a": "Cada año",
+      "option_b": "Cada 3 años",
+      "option_c": "Cada 5 años",
+      "option_d": "Solo si hay síntomas",
+      "correct_letter": "b",
+      "correct_option_text": "Cada 3 años",
+      "source_text_sha256": "4dd2a3da57bce10f6f636add2198f44f68decee83abf085aa8a49f221920f3fc",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b376",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b376",
+      "question_text": "¿Cuál es la frecuencia recomendada de seguimiento para pacientes con gastritis crónica atrófica en estadios OLGA/OLGIM III/IV asociada a metaplasia incompleta?",
+      "option_a": "Cada año",
+      "option_b": "Cada 3 años",
+      "option_c": "Cada 5 años",
+      "option_d": "Solo si hay síntomas",
+      "correct_letter": "b",
+      "correct_option_text": "Cada 3 años",
+      "source_text_sha256": "4dd2a3da57bce10f6f636add2198f44f68decee83abf085aa8a49f221920f3fc",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b390",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b390",
+      "question_text": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:",
+      "option_a": "Ictericia.",
+      "option_b": "Dilatación progresiva de los conductos biliares intra o extrahepáticos.",
+      "option_c": "Empeoramiento del prurito.",
+      "option_d": "Elevación del marcador Ca 19.9.",
+      "correct_letter": "d",
+      "correct_option_text": "Elevación del marcador Ca 19.9.",
+      "source_text_sha256": "46899958a7251becdd7a22d2e8228cf61bf55d3804c1e3cd86a396e766e6b23d",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 88,
+          "boundary_end": 89,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar",
+          "right_context": "indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:"
+        }
+      ]
+    },
+    {
+      "question_id": "b390",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b390",
+      "question_text": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:",
+      "option_a": "Ictericia.",
+      "option_b": "Dilatación progresiva de los conductos biliares intra o extrahepáticos.",
+      "option_c": "Empeoramiento del prurito.",
+      "option_d": "Elevación del marcador Ca 19.9.",
+      "correct_letter": "d",
+      "correct_option_text": "Elevación del marcador Ca 19.9.",
+      "source_text_sha256": "46899958a7251becdd7a22d2e8228cf61bf55d3804c1e3cd86a396e766e6b23d",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 88,
+          "boundary_end": 89,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La realización de una CPRE (colangiopancreatografia retrograda endosocópica) puede estar",
+          "right_context": "indicada en el curso de una colangitis esclerosante primaria en los siguientes casos excepto uno:"
+        }
+      ]
+    },
+    {
+      "question_id": "b410",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b410",
+      "question_text": "El ácido acetil salicílico (AAS) se ha asociado con el cáncer de colon. Señale la respuesta correcta de esta asociación:",
+      "option_a": "El tratamiento prolongado del AAS se ha asociado con una reducción tanto de la incidencia como de la mortalidad por cáncer de colon",
+      "option_b": "El tratamiento prolongado del AAS se ha asociado con una reducción de la incidencia pero no de la mortalidad por cáncer de colon",
+      "option_c": "El tratamiento prolongado del AAS se ha asociado con una reducción de la mortalidad pero no de la incidencia por cáncer de colon",
+      "option_d": "El mecanismo implicado en esta asociación no es bien conocido pero se ha descartado que esté relacionado con su acción anti-plaquetaria.",
+      "correct_letter": "a",
+      "correct_option_text": "El tratamiento prolongado del AAS se ha asociado con una reducción tanto de la incidencia como de la mortalidad por cáncer de colon",
+      "source_text_sha256": "2118c16ce8a7624d5013acc10d0ff7e5adf6cc010571ececd8d2c0bfe549c55b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 71,
+          "boundary_end": 72,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El ácido acetil salicílico (AAS) se ha asociado con el cáncer de colon.",
+          "right_context": "Señale la respuesta correcta de esta asociación:"
+        }
+      ]
+    },
+    {
+      "question_id": "b410",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b410",
+      "question_text": "El ácido acetil salicílico (AAS) se ha asociado con el cáncer de colon. Señale la respuesta correcta de esta asociación:",
+      "option_a": "El tratamiento prolongado del AAS se ha asociado con una reducción tanto de la incidencia como de la mortalidad por cáncer de colon",
+      "option_b": "El tratamiento prolongado del AAS se ha asociado con una reducción de la incidencia pero no de la mortalidad por cáncer de colon",
+      "option_c": "El tratamiento prolongado del AAS se ha asociado con una reducción de la mortalidad pero no de la incidencia por cáncer de colon",
+      "option_d": "El mecanismo implicado en esta asociación no es bien conocido pero se ha descartado que esté relacionado con su acción anti-plaquetaria.",
+      "correct_letter": "a",
+      "correct_option_text": "El tratamiento prolongado del AAS se ha asociado con una reducción tanto de la incidencia como de la mortalidad por cáncer de colon",
+      "source_text_sha256": "2118c16ce8a7624d5013acc10d0ff7e5adf6cc010571ececd8d2c0bfe549c55b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 71,
+          "boundary_end": 72,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El ácido acetil salicílico (AAS) se ha asociado con el cáncer de colon.",
+          "right_context": "Señale la respuesta correcta de esta asociación:"
+        }
+      ]
+    },
+    {
+      "question_id": "b424",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b424",
+      "question_text": "Paciente diagnosticado de enfermedad de Crohn, no fumador, sin cirugías previas, intervenido por estenosis fibrótica corta de íleon. Se le realiza resección ileal y anastomosis ileocólica laterolateral, y se inicia tratamiento con metronidazol durante 3 meses tras la cirugía. Actualmente asintomático y sin tratamiento. Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a nivel de íleon con mucosa interlesional de aspecto inflamatorio. ¿Cuál sería la actitud más indicada?:",
+      "option_a": "Iniciar azatioprina.",
+      "option_b": "Iniciar antiTNF.",
+      "option_c": "Iniciar ustekinumab.",
+      "option_d": "Como está asintomático, se cita en 3 meses con calprotectina.",
+      "correct_letter": "a",
+      "correct_option_text": "Iniciar azatioprina.",
+      "source_text_sha256": "d99d9752b8bd23e58bc4c280bac01a0c2dbb044f3bbfd00090620e4ed7eb79c7",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 132,
+          "boundary_end": 133,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Paciente diagnosticado de enfermedad de Crohn, no fumador, sin cirugías previas, intervenido por estenosis fibrótica corta de íleon.",
+          "right_context": "Se le realiza resección ileal y anastomosis ileocólica laterolateral, y se inicia tratamiento con metronidazol durante 3 meses tras la cirugía. Actualmente asintomático y sin tratamiento. Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a ni"
+        },
+        {
+          "boundary_start": 276,
+          "boundary_end": 277,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "r, sin cirugías previas, intervenido por estenosis fibrótica corta de íleon. Se le realiza resección ileal y anastomosis ileocólica laterolateral, y se inicia tratamiento con metronidazol durante 3 meses tras la cirugía.",
+          "right_context": "Actualmente asintomático y sin tratamiento. Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a nivel de íleon con mucosa interlesional de aspecto inflamatorio. ¿Cuál sería la actitud más indicada?:"
+        },
+        {
+          "boundary_start": 320,
+          "boundary_end": 321,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "enosis fibrótica corta de íleon. Se le realiza resección ileal y anastomosis ileocólica laterolateral, y se inicia tratamiento con metronidazol durante 3 meses tras la cirugía. Actualmente asintomático y sin tratamiento.",
+          "right_context": "Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a nivel de íleon con mucosa interlesional de aspecto inflamatorio. ¿Cuál sería la actitud más indicada?:"
+        },
+        {
+          "boundary_start": 475,
+          "boundary_end": 476,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "eses tras la cirugía. Actualmente asintomático y sin tratamiento. Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a nivel de íleon con mucosa interlesional de aspecto inflamatorio.",
+          "right_context": "¿Cuál sería la actitud más indicada?:"
+        },
+        {
+          "boundary_start": 502,
+          "boundary_end": 503,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "lmente asintomático y sin tratamiento. Se realiza ileocolonoscopia de control a los 6 meses con el hallazgo de múltiples aftas a nivel de íleon con mucosa interlesional de aspecto inflamatorio. ¿Cuál sería la actitud más",
+          "right_context": "indicada?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b439",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b439",
+      "question_text": "Señale la opción INCORRECTA respecto a la colangitis biliar primaria en cuanto a la evaluación de respuesta en primera línea al ácido ursodesoxicólico (AUDC):",
+      "option_a": "El criterio de Rottherdam evalúa la bilirrubina y la FA al sexto mes de tratamiento.",
+      "option_b": "El criterio de Paris-II evalúa a los doce meses de tratamiento la FA, la AST y la bilirrubina.",
+      "option_c": "El criterio de Ehime evalúa el valor y el descenso de la GGT a los seis meses de tratamiento.",
+      "option_d": "El criterio de Barcelona evalúa a los doce meses el valor y el descenso de FA.",
+      "correct_letter": "a",
+      "correct_option_text": "El criterio de Rottherdam evalúa la bilirrubina y la FA al sexto mes de tratamiento.",
+      "source_text_sha256": "4ebe77e14768d5bee172182943c2f5e833e516dcca5121089d97fc6e3e9ebf6d",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 27,
+          "boundary_end": 28,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la opción INCORRECTA",
+          "right_context": "respecto a la colangitis biliar primaria en cuanto a la evaluación de respuesta en primera línea al ácido ursodesoxicólico (AUDC):"
+        }
+      ]
+    },
+    {
+      "question_id": "b439",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b439",
+      "question_text": "Señale la opción INCORRECTA respecto a la colangitis biliar primaria en cuanto a la evaluación de respuesta en primera línea al ácido ursodesoxicólico (AUDC):",
+      "option_a": "El criterio de Rottherdam evalúa la bilirrubina y la FA al sexto mes de tratamiento.",
+      "option_b": "El criterio de Paris-II evalúa a los doce meses de tratamiento la FA, la AST y la bilirrubina.",
+      "option_c": "El criterio de Ehime evalúa el valor y el descenso de la GGT a los seis meses de tratamiento.",
+      "option_d": "El criterio de Barcelona evalúa a los doce meses el valor y el descenso de FA.",
+      "correct_letter": "a",
+      "correct_option_text": "El criterio de Rottherdam evalúa la bilirrubina y la FA al sexto mes de tratamiento.",
+      "source_text_sha256": "4ebe77e14768d5bee172182943c2f5e833e516dcca5121089d97fc6e3e9ebf6d",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 27,
+          "boundary_end": 28,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la opción INCORRECTA",
+          "right_context": "respecto a la colangitis biliar primaria en cuanto a la evaluación de respuesta en primera línea al ácido ursodesoxicólico (AUDC):"
+        }
+      ]
+    },
+    {
+      "question_id": "b453",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b453",
+      "question_text": "¿Cuál de las siguientes afirmaciones le parece incorrecta para el diagnóstico de un paciente que ingresa por un cuadro de hematoquecia?",
+      "option_a": "Paciente hemodinámicamente estable-colonoscopia en las primeras 24 horas.",
+      "option_b": "Paciente hemodinámicamente inestable-angioTC.",
+      "option_c": "Sospecha de divertículo de Meckel-gammagrafía con Tecnecio-99m.",
+      "option_d": "Paciente hemodinámicamente inestable-gastroscopia.",
+      "correct_letter": "a",
+      "correct_option_text": "Paciente hemodinámicamente estable-colonoscopia en las primeras 24 horas.",
+      "source_text_sha256": "e6671fc5a051bd5c9e2e48dd42f2dabb232bf094e6085b663c26bbba608fa1d8",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes afirmaciones le parece incorrecta para el diagnóstico de un paciente que ingresa por un cuadro de hematoquecia?"
+        }
+      ]
+    },
+    {
+      "question_id": "b453",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b453",
+      "question_text": "¿Cuál de las siguientes afirmaciones le parece incorrecta para el diagnóstico de un paciente que ingresa por un cuadro de hematoquecia?",
+      "option_a": "Paciente hemodinámicamente estable-colonoscopia en las primeras 24 horas.",
+      "option_b": "Paciente hemodinámicamente inestable-angioTC.",
+      "option_c": "Sospecha de divertículo de Meckel-gammagrafía con Tecnecio-99m.",
+      "option_d": "Paciente hemodinámicamente inestable-gastroscopia.",
+      "correct_letter": "a",
+      "correct_option_text": "Paciente hemodinámicamente estable-colonoscopia en las primeras 24 horas.",
+      "source_text_sha256": "e6671fc5a051bd5c9e2e48dd42f2dabb232bf094e6085b663c26bbba608fa1d8",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes afirmaciones le parece incorrecta para el diagnóstico de un paciente que ingresa por un cuadro de hematoquecia?"
+        }
+      ]
+    },
+    {
+      "question_id": "b467",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b467",
+      "question_text": "¿Cuál de estas variables se incluye en el Sistema de puntuación de Rockall para la hemorragia digestiva alta?",
+      "option_a": "Presión arterial diastólica.",
+      "option_b": "Sexo.",
+      "option_c": "Frecuencia cardíaca.",
+      "option_d": "Hematocrito.",
+      "correct_letter": "c",
+      "correct_option_text": "Frecuencia cardíaca.",
+      "source_text_sha256": "266d10dc3ce4719ccd31c8e8b139b431961ff714fd95939aa10aeea6d8d4fa74",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b467",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b467",
+      "question_text": "¿Cuál de estas variables se incluye en el Sistema de puntuación de Rockall para la hemorragia digestiva alta?",
+      "option_a": "Presión arterial diastólica.",
+      "option_b": "Sexo.",
+      "option_c": "Frecuencia cardíaca.",
+      "option_d": "Hematocrito.",
+      "correct_letter": "c",
+      "correct_option_text": "Frecuencia cardíaca.",
+      "source_text_sha256": "266d10dc3ce4719ccd31c8e8b139b431961ff714fd95939aa10aeea6d8d4fa74",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b482",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b482",
+      "question_text": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está indicada la vigilancia postpolipectomía ante la presencia de:",
+      "option_a": "Pólipo serrado con displasia.",
+      "option_b": "Adenoma tubulovelloso de 8mm.",
+      "option_c": "Adenoma de 7mm con displasia de bajo grado.",
+      "option_d": "Cuatro adenomas tubulares <10mm.",
+      "correct_letter": "a",
+      "correct_option_text": "Pólipo serrado con displasia.",
+      "source_text_sha256": "c0bf2ae578d36db352a9f6809d2d957f6f5603a56da4302b89e43bb57d3ddb07",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 104,
+          "boundary_end": 105,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está",
+          "right_context": "indicada la vigilancia postpolipectomía ante la presencia de:"
+        },
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está indicada la vigilancia postpolipectomía",
+          "right_context": "ante la presencia de:"
+        }
+      ]
+    },
+    {
+      "question_id": "b482",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b482",
+      "question_text": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está indicada la vigilancia postpolipectomía ante la presencia de:",
+      "option_a": "Pólipo serrado con displasia.",
+      "option_b": "Adenoma tubulovelloso de 8mm.",
+      "option_c": "Adenoma de 7mm con displasia de bajo grado.",
+      "option_d": "Cuatro adenomas tubulares <10mm.",
+      "correct_letter": "a",
+      "correct_option_text": "Pólipo serrado con displasia.",
+      "source_text_sha256": "c0bf2ae578d36db352a9f6809d2d957f6f5603a56da4302b89e43bb57d3ddb07",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 104,
+          "boundary_end": 105,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está",
+          "right_context": "indicada la vigilancia postpolipectomía ante la presencia de:"
+        },
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según las recomendaciones de la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2020, está indicada la vigilancia postpolipectomía",
+          "right_context": "ante la presencia de:"
+        }
+      ]
+    }
+  ]
+}

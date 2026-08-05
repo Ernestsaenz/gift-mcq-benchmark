@@ -1,0 +1,1399 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_18",
+  "shard_id": "18",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b217",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2022-extraordinaria-libre-caso-07",
+      "question_text": "Un varón de 39 años de edad, con enfermedad de Crohn, acude a su consulta para una revisión periódica. El paciente, con enfermedad ileocólica, está bien controlado con Infliximab, actualmente sin dolor abdominal y con dos deposiciones pastosas al día. A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación. La exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique cuál es el tratamiento adecuado en este caso.",
+      "option_a": "Debemos iniciar tratamiento antibiótico con ciprofloxacino o metronidazol.",
+      "option_b": "Además del antibiótico se debe intensificar el infliximab, o pasar adalimumab para controlar la enfermedad rectal.",
+      "option_c": "Debemos solicitar una ecografía endoanal previa a cualquier opción terapéutica.",
+      "option_d": "Al ser asintomática, basta realizar un seguimiento del paciente, no siendo preciso un tratamiento específico de la fístula.",
+      "correct_letter": "d",
+      "correct_option_text": "Al ser asintomática, basta realizar un seguimiento del paciente, no siendo preciso un tratamiento específico de la fístula.",
+      "source_text_sha256": "a2a70ce2b664efbc310b4de74fcba0e6c9aaee4cac60c591241897b341023b57",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 102,
+          "boundary_end": 103,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Un varón de 39 años de edad, con enfermedad de Crohn, acude a su consulta para una revisión periódica.",
+          "right_context": "El paciente, con enfermedad ileocólica, está bien controlado con Infliximab, actualmente sin dolor abdominal y con dos deposiciones pastosas al día. A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación. La exp"
+        },
+        {
+          "boundary_start": 251,
+          "boundary_end": 252,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "n enfermedad de Crohn, acude a su consulta para una revisión periódica. El paciente, con enfermedad ileocólica, está bien controlado con Infliximab, actualmente sin dolor abdominal y con dos deposiciones pastosas al día.",
+          "right_context": "A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación. La exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno."
+        },
+        {
+          "boundary_start": 376,
+          "boundary_end": 377,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "trolado con Infliximab, actualmente sin dolor abdominal y con dos deposiciones pastosas al día. A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación.",
+          "right_context": "La exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique cuál es el tratamiento adecuado en este"
+        },
+        {
+          "boundary_start": 454,
+          "boundary_end": 455,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " pastosas al día. A la exploración física el paciente está consciente, orientado, con abdomen blando y depresible, no doloroso a la palpación. La exploración anal demuestra la presencia de un orificio fístuloso perianal.",
+          "right_context": "Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique cuál es el tratamiento adecuado en este caso."
+        },
+        {
+          "boundary_start": 532,
+          "boundary_end": 533,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "do, con abdomen blando y depresible, no doloroso a la palpación. La exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno.",
+          "right_context": "Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique cuál es el tratamiento adecuado en este caso."
+        },
+        {
+          "boundary_start": 598,
+          "boundary_end": 599,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a exploración anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin",
+          "right_context": "abscesos.\n\nIndique cuál es el tratamiento adecuado en este caso."
+        },
+        {
+          "boundary_start": 608,
+          "boundary_end": 610,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "ión anal demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.",
+          "right_context": "Indique cuál es el tratamiento adecuado en este caso."
+        },
+        {
+          "boundary_start": 617,
+          "boundary_end": 618,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "demuestra la presencia de un orificio fístuloso perianal. Una rectoscopia observó mucosa rectal normal y un orificio fistuloso interno. Una resonancia magnética observa una fístula perianal simple, sin\nabscesos.\n\nIndique",
+          "right_context": "cuál es el tratamiento adecuado en este caso."
+        }
+      ]
+    },
+    {
+      "question_id": "b189",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b189",
+      "question_text": "En relación al tratamiento de la ascitis en el paciente cirrótico, señale la respuesta falsa:",
+      "option_a": "La paracentesis de gran volumen (PGV) se debe realizar conjuntamente con la administración de albumina iv a razón de 80 g por litro extraído.",
+      "option_b": "En PGV de más de 5 litros el uso de expansores plasmáticos distintos a la albúmina no está recomendado.",
+      "option_c": "Los pacientes con un primer episodio de ascitis grado 2 (moderada) deben recibir solo antagonistas de la aldosterona, empezando a dosis de 100 mg/día.",
+      "option_d": "La restricción moderada de la ingesta de sal es un componente importante en el manejo de la ascitis.",
+      "correct_letter": "a",
+      "correct_option_text": "La paracentesis de gran volumen (PGV) se debe realizar conjuntamente con la administración de albumina iv a razón de 80 g por litro extraído.",
+      "source_text_sha256": "bfb80324222008c479cbea66dd86ee6308ad11e1540ad07e2eb3c98dd762f2ee",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al tratamiento de la ascitis en el paciente cirrótico,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b189",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b189",
+      "question_text": "En relación al tratamiento de la ascitis en el paciente cirrótico, señale la respuesta falsa:",
+      "option_a": "La paracentesis de gran volumen (PGV) se debe realizar conjuntamente con la administración de albumina iv a razón de 80 g por litro extraído.",
+      "option_b": "En PGV de más de 5 litros el uso de expansores plasmáticos distintos a la albúmina no está recomendado.",
+      "option_c": "Los pacientes con un primer episodio de ascitis grado 2 (moderada) deben recibir solo antagonistas de la aldosterona, empezando a dosis de 100 mg/día.",
+      "option_d": "La restricción moderada de la ingesta de sal es un componente importante en el manejo de la ascitis.",
+      "correct_letter": "a",
+      "correct_option_text": "La paracentesis de gran volumen (PGV) se debe realizar conjuntamente con la administración de albumina iv a razón de 80 g por litro extraído.",
+      "source_text_sha256": "bfb80324222008c479cbea66dd86ee6308ad11e1540ad07e2eb3c98dd762f2ee",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 66,
+          "boundary_end": 67,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al tratamiento de la ascitis en el paciente cirrótico,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b200",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b200",
+      "question_text": "El tratamiento indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:",
+      "option_a": "Ácido Ursodesoxicólico.",
+      "option_b": "Trasplante Hepático.",
+      "option_c": "Resección quirúrgica del lóbulo afectado.",
+      "option_d": "Litotricia extracorpórea.",
+      "correct_letter": "c",
+      "correct_option_text": "Resección quirúrgica del lóbulo afectado.",
+      "source_text_sha256": "306dd0355cc81d748b2a76f8be5816644af9459d9400e8c3c7454ed077617a35",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El tratamiento",
+          "right_context": "indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:"
+        }
+      ]
+    },
+    {
+      "question_id": "b200",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b200",
+      "question_text": "El tratamiento indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:",
+      "option_a": "Ácido Ursodesoxicólico.",
+      "option_b": "Trasplante Hepático.",
+      "option_c": "Resección quirúrgica del lóbulo afectado.",
+      "option_d": "Litotricia extracorpórea.",
+      "correct_letter": "c",
+      "correct_option_text": "Resección quirúrgica del lóbulo afectado.",
+      "source_text_sha256": "306dd0355cc81d748b2a76f8be5816644af9459d9400e8c3c7454ed077617a35",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 14,
+          "boundary_end": 15,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "El tratamiento",
+          "right_context": "indicado en la Enfermedad de Caroli limitada a un solo lóbulo es:"
+        }
+      ]
+    },
+    {
+      "question_id": "b211",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b211",
+      "question_text": "En relación con la enfermedad celíaca en el adulto, señale la opción incorrecta:",
+      "option_a": "En un porcentaje significativo de los adultos que siguen la dieta sin gluten, las biopsias solo muestran una mejoría parcial, recuperándose más rápidamente el íleon que el duodeno",
+      "option_b": "Se recomienda repetir la biopsia duodenal al año de iniciar la dieta sin gluten a todos los pacientes adultos celíacos.",
+      "option_c": "Se recomienda realizar una densitometría ósea al año del diagnóstico a todos los pacientes adultos celíacos.",
+      "option_d": "Además de la dieta sin gluten, algunos pacientes celíacos precisan suplementos de hierro, vitamina D, vitamina B12, ácido fólico o vitamina K.",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda repetir la biopsia duodenal al año de iniciar la dieta sin gluten a todos los pacientes adultos celíacos.",
+      "source_text_sha256": "f8238b2ca28c5441e1d72631ef0f760ce73dcbca72f546afbc5d842224aa0e3e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 51,
+          "boundary_end": 52,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la enfermedad celíaca en el adulto,",
+          "right_context": "señale la opción incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b211",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b211",
+      "question_text": "En relación con la enfermedad celíaca en el adulto, señale la opción incorrecta:",
+      "option_a": "En un porcentaje significativo de los adultos que siguen la dieta sin gluten, las biopsias solo muestran una mejoría parcial, recuperándose más rápidamente el íleon que el duodeno",
+      "option_b": "Se recomienda repetir la biopsia duodenal al año de iniciar la dieta sin gluten a todos los pacientes adultos celíacos.",
+      "option_c": "Se recomienda realizar una densitometría ósea al año del diagnóstico a todos los pacientes adultos celíacos.",
+      "option_d": "Además de la dieta sin gluten, algunos pacientes celíacos precisan suplementos de hierro, vitamina D, vitamina B12, ácido fólico o vitamina K.",
+      "correct_letter": "b",
+      "correct_option_text": "Se recomienda repetir la biopsia duodenal al año de iniciar la dieta sin gluten a todos los pacientes adultos celíacos.",
+      "source_text_sha256": "f8238b2ca28c5441e1d72631ef0f760ce73dcbca72f546afbc5d842224aa0e3e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 51,
+          "boundary_end": 52,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la enfermedad celíaca en el adulto,",
+          "right_context": "señale la opción incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b223",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b223",
+      "question_text": "En relación con la biopsia hepática, ¿cuál de estas afirmaciones es INCORRECTA?:",
+      "option_a": "Los estudios controlados no demuestran que la biopsia con control ecográfico ~~reduzca~~ la mortalidad, pero sí la incidencia de complicaciones graves.",
+      "option_b": "La indicación fundamental de la biopsia transyugular (BTY) es la presencia de una alteración grave de la coagulación.",
+      "option_c": "La eficacia diagnóstica de la BTY es muy elevada, lo que permite obtener un diagnóstico histológico correcto en cerca del 80% de los pacientes.",
+      "option_d": "La hemorragia peritoneal significativa es una complicación frecuente en la BTY.",
+      "correct_letter": "d",
+      "correct_option_text": "La hemorragia peritoneal significativa es una complicación frecuente en la BTY.",
+      "source_text_sha256": "ac2bf9c3c348a96a68523cb3df9ea7524287dee15b60a2b11eb2426382620c43",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 36,
+          "boundary_end": 37,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la biopsia hepática,",
+          "right_context": "¿cuál de estas afirmaciones es INCORRECTA?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b223",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b223",
+      "question_text": "En relación con la biopsia hepática, ¿cuál de estas afirmaciones es INCORRECTA?:",
+      "option_a": "Los estudios controlados no demuestran que la biopsia con control ecográfico ~~reduzca~~ la mortalidad, pero sí la incidencia de complicaciones graves.",
+      "option_b": "La indicación fundamental de la biopsia transyugular (BTY) es la presencia de una alteración grave de la coagulación.",
+      "option_c": "La eficacia diagnóstica de la BTY es muy elevada, lo que permite obtener un diagnóstico histológico correcto en cerca del 80% de los pacientes.",
+      "option_d": "La hemorragia peritoneal significativa es una complicación frecuente en la BTY.",
+      "correct_letter": "d",
+      "correct_option_text": "La hemorragia peritoneal significativa es una complicación frecuente en la BTY.",
+      "source_text_sha256": "ac2bf9c3c348a96a68523cb3df9ea7524287dee15b60a2b11eb2426382620c43",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 36,
+          "boundary_end": 37,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación con la biopsia hepática,",
+          "right_context": "¿cuál de estas afirmaciones es INCORRECTA?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b234",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b234",
+      "question_text": "La bondad de la FIBRA en la dieta es consecuencia de los siguientes efectos beneficiosos (señale la opción FALSA):",
+      "option_a": "Disminución del pH fecal mediante transformación a ácidos grasos de cadena corta.",
+      "option_b": "Disminución fecal de los ácidos biliares secundarios y mutágenos.",
+      "option_c": "Disminución del volumen fecal.",
+      "option_d": "Aumento del volumen fecal.",
+      "correct_letter": "c",
+      "correct_option_text": "Disminución del volumen fecal.",
+      "source_text_sha256": "472c6f00beb86ec72f79a440aefc58e5f8e6ae533875ac886a617a3de7db3907",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La bondad de la FIBRA en la dieta es consecuencia",
+          "right_context": "de los siguientes efectos beneficiosos (señale la opción FALSA):"
+        }
+      ]
+    },
+    {
+      "question_id": "b234",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b234",
+      "question_text": "La bondad de la FIBRA en la dieta es consecuencia de los siguientes efectos beneficiosos (señale la opción FALSA):",
+      "option_a": "Disminución del pH fecal mediante transformación a ácidos grasos de cadena corta.",
+      "option_b": "Disminución fecal de los ácidos biliares secundarios y mutágenos.",
+      "option_c": "Disminución del volumen fecal.",
+      "option_d": "Aumento del volumen fecal.",
+      "correct_letter": "c",
+      "correct_option_text": "Disminución del volumen fecal.",
+      "source_text_sha256": "472c6f00beb86ec72f79a440aefc58e5f8e6ae533875ac886a617a3de7db3907",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "La bondad de la FIBRA en la dieta es consecuencia",
+          "right_context": "de los siguientes efectos beneficiosos (señale la opción FALSA):"
+        }
+      ]
+    },
+    {
+      "question_id": "b248",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b248",
+      "question_text": "¿Cuál de las afirmaciones siguientes es FALSA en relación con la infección por H pylori?",
+      "option_a": "Se debe excluir gastritis por H. pylori antes de hacer un diagnóstico de dispepsia funcional",
+      "option_b": "Antes de testar por la presencia de infección por H. pylori, los IBP deben suspenderse 2 semanas antes y los compuestos con bismuto y los antibióticos 4 semanas antes",
+      "option_c": "Como tratamiento de primera línea de la infección por H. pylori se recomienda una pauta cuádruple concomitante sin bismuto (IBP, claritromicina, amoxicilina y metronidazol) o una combinación cuádruple con bismuto (IBP, bismuto, tetraciclina y metronidazol)",
+      "option_d": "Se recomienda que la duración del tratamiento con terapia cuádruple sin bismuto o cuádruple con bismuto sea de 14 días",
+      "correct_letter": "d",
+      "correct_option_text": "Se recomienda que la duración del tratamiento con terapia cuádruple sin bismuto o cuádruple con bismuto sea de 14 días",
+      "source_text_sha256": "e0f2d960447c39a149549c8822259c4258bbb9a6e01bdc197446badfd9c14866",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las afirmaciones siguientes es FALSA",
+          "right_context": "en relación con la infección por H pylori?"
+        }
+      ]
+    },
+    {
+      "question_id": "b248",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b248",
+      "question_text": "¿Cuál de las afirmaciones siguientes es FALSA en relación con la infección por H pylori?",
+      "option_a": "Se debe excluir gastritis por H. pylori antes de hacer un diagnóstico de dispepsia funcional",
+      "option_b": "Antes de testar por la presencia de infección por H. pylori, los IBP deben suspenderse 2 semanas antes y los compuestos con bismuto y los antibióticos 4 semanas antes",
+      "option_c": "Como tratamiento de primera línea de la infección por H. pylori se recomienda una pauta cuádruple concomitante sin bismuto (IBP, claritromicina, amoxicilina y metronidazol) o una combinación cuádruple con bismuto (IBP, bismuto, tetraciclina y metronidazol)",
+      "option_d": "Se recomienda que la duración del tratamiento con terapia cuádruple sin bismuto o cuádruple con bismuto sea de 14 días",
+      "correct_letter": "d",
+      "correct_option_text": "Se recomienda que la duración del tratamiento con terapia cuádruple sin bismuto o cuádruple con bismuto sea de 14 días",
+      "source_text_sha256": "e0f2d960447c39a149549c8822259c4258bbb9a6e01bdc197446badfd9c14866",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál de las afirmaciones siguientes es FALSA",
+          "right_context": "en relación con la infección por H pylori?"
+        }
+      ]
+    },
+    {
+      "question_id": "b263",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b263",
+      "question_text": "Respecto al tratamiento con Mirikizumab en colitis ulcerosa, señale la respuesta VERDADERA:",
+      "option_a": "Es un anticuerpo monoclonal IgG4 humanizado que se une a la subunidad p19 de la IL-23.",
+      "option_b": "La inducción extendida (3 dosis más de 300 mg iv cada 4 semanas), consigue que más del 80% de pacientes alcancen respuesta clínica en semana 24 en los estudios de registro.",
+      "option_c": "Está indicado en pacientes que han perdido respuesta al tratamiento con Ustekinumab (anti IL-12/23).",
+      "option_d": "Todas las anteriores son ciertas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las anteriores son ciertas.",
+      "source_text_sha256": "301a9517d11b4f2b6d0a64e9c0279ee0c30d591b8ccedead19bc6744305e5823",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto al tratamiento con Mirikizumab en colitis ulcerosa,",
+          "right_context": "señale la respuesta VERDADERA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b263",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b263",
+      "question_text": "Respecto al tratamiento con Mirikizumab en colitis ulcerosa, señale la respuesta VERDADERA:",
+      "option_a": "Es un anticuerpo monoclonal IgG4 humanizado que se une a la subunidad p19 de la IL-23.",
+      "option_b": "La inducción extendida (3 dosis más de 300 mg iv cada 4 semanas), consigue que más del 80% de pacientes alcancen respuesta clínica en semana 24 en los estudios de registro.",
+      "option_c": "Está indicado en pacientes que han perdido respuesta al tratamiento con Ustekinumab (anti IL-12/23).",
+      "option_d": "Todas las anteriores son ciertas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las anteriores son ciertas.",
+      "source_text_sha256": "301a9517d11b4f2b6d0a64e9c0279ee0c30d591b8ccedead19bc6744305e5823",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto al tratamiento con Mirikizumab en colitis ulcerosa,",
+          "right_context": "señale la respuesta VERDADERA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b277",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b277",
+      "question_text": "En cuanto a los datos de alarma en un cuadro de diarrea, señale la respuesta incorrecta",
+      "option_a": "Sangrado rectal",
+      "option_b": "Edad menor de 50 años.",
+      "option_c": "Pérdida de peso no explicada",
+      "option_d": "Anemia",
+      "correct_letter": "b",
+      "correct_option_text": "Edad menor de 50 años.",
+      "source_text_sha256": "0100d3959e68c3a31ac2b6b0dba1064881b8ac169d6d4ba5bd54f307df948030",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 56,
+          "boundary_end": 57,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En cuanto a los datos de alarma en un cuadro de diarrea,",
+          "right_context": "señale la respuesta incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b277",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b277",
+      "question_text": "En cuanto a los datos de alarma en un cuadro de diarrea, señale la respuesta incorrecta",
+      "option_a": "Sangrado rectal",
+      "option_b": "Edad menor de 50 años.",
+      "option_c": "Pérdida de peso no explicada",
+      "option_d": "Anemia",
+      "correct_letter": "b",
+      "correct_option_text": "Edad menor de 50 años.",
+      "source_text_sha256": "0100d3959e68c3a31ac2b6b0dba1064881b8ac169d6d4ba5bd54f307df948030",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 56,
+          "boundary_end": 57,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En cuanto a los datos de alarma en un cuadro de diarrea,",
+          "right_context": "señale la respuesta incorrecta"
+        }
+      ]
+    },
+    {
+      "question_id": "b293",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b293",
+      "question_text": "De acuerdo con el artículo 7 de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales:",
+      "option_a": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de trece años.",
+      "option_b": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de quince años y lo autorice el titular de la patria potestad.",
+      "option_c": "El tratamiento de los datos personales de un menor de edad exclusivamente podrá fundarse en su consentimiento cuando sea mayor de dieciséis años.",
+      "option_d": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela, con el alcance que determinen los titulares de la patria potestad o tutela.",
+      "correct_letter": "d",
+      "correct_option_text": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela, con el alcance que determinen los titulares de la patria potestad o tutela.",
+      "source_text_sha256": "bb494a1229f0a6c89edc62f3905746cfb5a475d0296622e86637458a3bc4f02b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b293",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b293",
+      "question_text": "De acuerdo con el artículo 7 de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales:",
+      "option_a": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de trece años.",
+      "option_b": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de quince años y lo autorice el titular de la patria potestad.",
+      "option_c": "El tratamiento de los datos personales de un menor de edad exclusivamente podrá fundarse en su consentimiento cuando sea mayor de dieciséis años.",
+      "option_d": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela, con el alcance que determinen los titulares de la patria potestad o tutela.",
+      "correct_letter": "d",
+      "correct_option_text": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela, con el alcance que determinen los titulares de la patria potestad o tutela.",
+      "source_text_sha256": "bb494a1229f0a6c89edc62f3905746cfb5a475d0296622e86637458a3bc4f02b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b306",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b306",
+      "question_text": "¿Dónde se proponen como principios éticos en investigación la beneficencia, el respeto a la dignidad humana y la justicia?",
+      "option_a": "Declaración de Helsinki",
+      "option_b": "Código de Nuremberg",
+      "option_c": "Informe Belmont",
+      "option_d": "Estudio Tuskegee",
+      "correct_letter": "c",
+      "correct_option_text": "Informe Belmont",
+      "source_text_sha256": "528f3864736274cb4792b7da7a2105de84f79846c7a31b7fe62449b69c13d62e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b306",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b306",
+      "question_text": "¿Dónde se proponen como principios éticos en investigación la beneficencia, el respeto a la dignidad humana y la justicia?",
+      "option_a": "Declaración de Helsinki",
+      "option_b": "Código de Nuremberg",
+      "option_c": "Informe Belmont",
+      "option_d": "Estudio Tuskegee",
+      "correct_letter": "c",
+      "correct_option_text": "Informe Belmont",
+      "source_text_sha256": "528f3864736274cb4792b7da7a2105de84f79846c7a31b7fe62449b69c13d62e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b319",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b319",
+      "question_text": "Seleccione la opción INCORRECTA en relación con la gastritis crónica tipo B",
+      "option_a": "La densidad de la infección por H Pylori disminuye al avanzar hacia la gastritis atrófica multifocal y atrofia gástrica.",
+      "option_b": "Los hallazgos histológicos nunca mejoran después de erradicar H. pylori.",
+      "option_c": "Es de predominio antral.",
+      "option_d": "El desarrollo de Metaplasia intestinal aumenta el riesgo de adenocarcinoma gástrico.",
+      "correct_letter": "b",
+      "correct_option_text": "Los hallazgos histológicos nunca mejoran después de erradicar H. pylori.",
+      "source_text_sha256": "7249e33da75e88a1e89af87e2c77c69ca82212115b13724fd4976fb72204e36c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 31,
+          "boundary_end": 32,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Seleccione la opción INCORRECTA",
+          "right_context": "en relación con la gastritis crónica tipo B"
+        }
+      ]
+    },
+    {
+      "question_id": "b319",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b319",
+      "question_text": "Seleccione la opción INCORRECTA en relación con la gastritis crónica tipo B",
+      "option_a": "La densidad de la infección por H Pylori disminuye al avanzar hacia la gastritis atrófica multifocal y atrofia gástrica.",
+      "option_b": "Los hallazgos histológicos nunca mejoran después de erradicar H. pylori.",
+      "option_c": "Es de predominio antral.",
+      "option_d": "El desarrollo de Metaplasia intestinal aumenta el riesgo de adenocarcinoma gástrico.",
+      "correct_letter": "b",
+      "correct_option_text": "Los hallazgos histológicos nunca mejoran después de erradicar H. pylori.",
+      "source_text_sha256": "7249e33da75e88a1e89af87e2c77c69ca82212115b13724fd4976fb72204e36c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 31,
+          "boundary_end": 32,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Seleccione la opción INCORRECTA",
+          "right_context": "en relación con la gastritis crónica tipo B"
+        }
+      ]
+    },
+    {
+      "question_id": "b334",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b334",
+      "question_text": "Indique cuál de las siguientes es la causa más frecuente de hematoquecia significativa:",
+      "option_a": "Colitis.",
+      "option_b": "Hemorroides.",
+      "option_c": "Cáncer y pólipos de colon.",
+      "option_d": "Diverticulosis de colon.",
+      "correct_letter": "d",
+      "correct_option_text": "Diverticulosis de colon.",
+      "source_text_sha256": "caa86e4d6ba5e8fe47b9a1a0a80ab3dea599f93904cea281107a46e258c7a0f6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 7,
+          "boundary_end": 8,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique",
+          "right_context": "cuál de las siguientes es la causa más frecuente de hematoquecia significativa:"
+        },
+        {
+          "boundary_start": 12,
+          "boundary_end": 13,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique cuál",
+          "right_context": "de las siguientes es la causa más frecuente de hematoquecia significativa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b334",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b334",
+      "question_text": "Indique cuál de las siguientes es la causa más frecuente de hematoquecia significativa:",
+      "option_a": "Colitis.",
+      "option_b": "Hemorroides.",
+      "option_c": "Cáncer y pólipos de colon.",
+      "option_d": "Diverticulosis de colon.",
+      "correct_letter": "d",
+      "correct_option_text": "Diverticulosis de colon.",
+      "source_text_sha256": "caa86e4d6ba5e8fe47b9a1a0a80ab3dea599f93904cea281107a46e258c7a0f6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 7,
+          "boundary_end": 8,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique",
+          "right_context": "cuál de las siguientes es la causa más frecuente de hematoquecia significativa:"
+        },
+        {
+          "boundary_start": 12,
+          "boundary_end": 13,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique cuál",
+          "right_context": "de las siguientes es la causa más frecuente de hematoquecia significativa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b350",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b350",
+      "question_text": "¿Cuál de los descritos NO es un fármaco habitualmente considerado de primera línea para el tratamiento del Síndrome de Intestino Irritable?",
+      "option_a": "Cleboprida/simeticona",
+      "option_b": "Aceite de menta.",
+      "option_c": "Espasmolíticos.",
+      "option_d": "Loperamida.",
+      "correct_letter": "a",
+      "correct_option_text": "Cleboprida/simeticona",
+      "source_text_sha256": "a94f44070886c240b94d449867d028969e881f540f5cdf909e438183c76bb85e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b350",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b350",
+      "question_text": "¿Cuál de los descritos NO es un fármaco habitualmente considerado de primera línea para el tratamiento del Síndrome de Intestino Irritable?",
+      "option_a": "Cleboprida/simeticona",
+      "option_b": "Aceite de menta.",
+      "option_c": "Espasmolíticos.",
+      "option_d": "Loperamida.",
+      "correct_letter": "a",
+      "correct_option_text": "Cleboprida/simeticona",
+      "source_text_sha256": "a94f44070886c240b94d449867d028969e881f540f5cdf909e438183c76bb85e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b364",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b364",
+      "question_text": "En relación a la enfermedad de Whipple:",
+      "option_a": "La respuesta inicial al tratamiento con antibióticos suele ser rápida, aunque la diarrea suele ser el síntoma que más tarda en resolverse.",
+      "option_b": "Sólo los humanos y los cerdos parecen verse afectados por esta enfermedad.",
+      "option_c": "Una característica común es la hiperpigmentación cutánea, que se ha encontrado entre el 17% y el 66% de los pacientes.",
+      "option_d": "Doxicilina 100 mg dos veces al día es una buena alternativa de tratamiento debido a su buena penetración a nivel del sistema nervioso central.",
+      "correct_letter": "c",
+      "correct_option_text": "Una característica común es la hiperpigmentación cutánea, que se ha encontrado entre el 17% y el 66% de los pacientes.",
+      "source_text_sha256": "96a21c30372742f94b86cf010000dc222adad672f2b2965e8a16a8df646438b1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b364",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b364",
+      "question_text": "En relación a la enfermedad de Whipple:",
+      "option_a": "La respuesta inicial al tratamiento con antibióticos suele ser rápida, aunque la diarrea suele ser el síntoma que más tarda en resolverse.",
+      "option_b": "Sólo los humanos y los cerdos parecen verse afectados por esta enfermedad.",
+      "option_c": "Una característica común es la hiperpigmentación cutánea, que se ha encontrado entre el 17% y el 66% de los pacientes.",
+      "option_d": "Doxicilina 100 mg dos veces al día es una buena alternativa de tratamiento debido a su buena penetración a nivel del sistema nervioso central.",
+      "correct_letter": "c",
+      "correct_option_text": "Una característica común es la hiperpigmentación cutánea, que se ha encontrado entre el 17% y el 66% de los pacientes.",
+      "source_text_sha256": "96a21c30372742f94b86cf010000dc222adad672f2b2965e8a16a8df646438b1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b378",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b378",
+      "question_text": "La Ley 8/2000, de Ordenación Sanitaria de Castilla la Mancha, determina que podrán formar parte del Sistema Sanitario de Castilla la Mancha:",
+      "option_a": "En general, todos aquellos centros, servicios o establecimientos sanitarios que se adscriban al mismo en virtud de un concierto o convenio singular de vinculación.",
+      "option_b": "Los centros, servicios y establecimientos sanitarios de otras administraciones públicas en los términos que prevean los respectivos Estatutos de Autonomía.",
+      "option_c": "Todos los centros públicos y privados radicados en la Comunidad Autónoma aunque no hayan firmado un convenio singular.",
+      "option_d": "Todos los centros y establecimientos públicos y privados situados en su territorio, siempre que suscriban un concierto específico.",
+      "correct_letter": "a",
+      "correct_option_text": "En general, todos aquellos centros, servicios o establecimientos sanitarios que se adscriban al mismo en virtud de un concierto o convenio singular de vinculación.",
+      "source_text_sha256": "cfeb4bf76631e2de7a9622df9162ec7ca7c95af2c5e91b77b0f8266d3c32253d",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b378",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b378",
+      "question_text": "La Ley 8/2000, de Ordenación Sanitaria de Castilla la Mancha, determina que podrán formar parte del Sistema Sanitario de Castilla la Mancha:",
+      "option_a": "En general, todos aquellos centros, servicios o establecimientos sanitarios que se adscriban al mismo en virtud de un concierto o convenio singular de vinculación.",
+      "option_b": "Los centros, servicios y establecimientos sanitarios de otras administraciones públicas en los términos que prevean los respectivos Estatutos de Autonomía.",
+      "option_c": "Todos los centros públicos y privados radicados en la Comunidad Autónoma aunque no hayan firmado un convenio singular.",
+      "option_d": "Todos los centros y establecimientos públicos y privados situados en su territorio, siempre que suscriban un concierto específico.",
+      "correct_letter": "a",
+      "correct_option_text": "En general, todos aquellos centros, servicios o establecimientos sanitarios que se adscriban al mismo en virtud de un concierto o convenio singular de vinculación.",
+      "source_text_sha256": "cfeb4bf76631e2de7a9622df9162ec7ca7c95af2c5e91b77b0f8266d3c32253d",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b392",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b392",
+      "question_text": "Mujer de 32 años gestante de 27 semanas que presenta infección crónica por VHB con viremia de 250.000 UI/ml y transaminasas normales. ¿Cuál de las siguientes recomendaciones sería FALSA?:",
+      "option_a": "Iniciar tratamiento antiviral con tenofovir",
+      "option_b": "La lactancia materna estaría contraindicada",
+      "option_c": "Inmunoprofilaxis combinada con vacuna y gammaglobulina específica en el recién nacido",
+      "option_d": "El interferón pegilado estaría contraindicado",
+      "correct_letter": "b",
+      "correct_option_text": "La lactancia materna estaría contraindicada",
+      "source_text_sha256": "225770433573e16dd497365f861b3adb4ccb545fc54087b14bd14b4c1c35f578",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 133,
+          "boundary_end": 134,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Mujer de 32 años gestante de 27 semanas que presenta infección crónica por VHB con viremia de 250.000 UI/ml y transaminasas normales.",
+          "right_context": "¿Cuál de las siguientes recomendaciones sería FALSA?:"
+        },
+        {
+          "boundary_start": 139,
+          "boundary_end": 140,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Mujer de 32 años gestante de 27 semanas que presenta infección crónica por VHB con viremia de 250.000 UI/ml y transaminasas normales. ¿Cuál",
+          "right_context": "de las siguientes recomendaciones sería FALSA?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b412",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b412",
+      "question_text": "Respecto a la hemorragia de origen diverticular, señale la respuesta falsa:",
+      "option_a": "Se origina con mayor frecuencia en divertículos de colon izquierdo.",
+      "option_b": "Ocurre como consecuencia de la rotura de la vasa recta en la cúpula o cuello del divertículo.",
+      "option_c": "El sangrado cede espontáneamente en la mayoría de los casos.",
+      "option_d": "Es la causa de hasta el 40% de los episodios de hemorragia digestiva baja.",
+      "correct_letter": "a",
+      "correct_option_text": "Se origina con mayor frecuencia en divertículos de colon izquierdo.",
+      "source_text_sha256": "f33e3d4a2bfe5a9a2ea29767c3c86a358091928100448b5b001926feede36d31",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 48,
+          "boundary_end": 49,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la hemorragia de origen diverticular,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b412",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b412",
+      "question_text": "Respecto a la hemorragia de origen diverticular, señale la respuesta falsa:",
+      "option_a": "Se origina con mayor frecuencia en divertículos de colon izquierdo.",
+      "option_b": "Ocurre como consecuencia de la rotura de la vasa recta en la cúpula o cuello del divertículo.",
+      "option_c": "El sangrado cede espontáneamente en la mayoría de los casos.",
+      "option_d": "Es la causa de hasta el 40% de los episodios de hemorragia digestiva baja.",
+      "correct_letter": "a",
+      "correct_option_text": "Se origina con mayor frecuencia en divertículos de colon izquierdo.",
+      "source_text_sha256": "f33e3d4a2bfe5a9a2ea29767c3c86a358091928100448b5b001926feede36d31",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 48,
+          "boundary_end": 49,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a la hemorragia de origen diverticular,",
+          "right_context": "señale la respuesta falsa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b426",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b426",
+      "question_text": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS, ¿cuál de las siguientes afirmaciones es FALSA?",
+      "option_a": "El estudio histológico o los niveles séricos de pepsinógeno ayudan a descartar la ingesta de AINE como factor etiológico de la UP",
+      "option_b": "Estas úlceras son muy raras en nuestro medio (menos del 5%)",
+      "option_c": "Debe excluirse cuidadosamente el diagnóstico erróneamente negativo para H.pylori",
+      "option_d": "Se debe valorar etiologías poco frecuentes como el consumo de bifosfonatos, cocaína o la presencia de gastrinoma",
+      "correct_letter": "a",
+      "correct_option_text": "El estudio histológico o los niveles séricos de pepsinógeno ayudan a descartar la ingesta de AINE como factor etiológico de la UP",
+      "source_text_sha256": "1261ea41e5cb7452f073f258708110b1e3455174268015fe9af6ce111e6610b2",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 47,
+          "boundary_end": 48,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H.",
+          "right_context": "pylori negativo y sin toma de AINE/AAS, ¿cuál de las siguientes afirmaciones es FALSA?"
+        },
+        {
+          "boundary_start": 87,
+          "boundary_end": 88,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS,",
+          "right_context": "¿cuál de las siguientes afirmaciones es FALSA?"
+        },
+        {
+          "boundary_start": 93,
+          "boundary_end": 94,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS, ¿cuál",
+          "right_context": "de las siguientes afirmaciones es FALSA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b426",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b426",
+      "question_text": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS, ¿cuál de las siguientes afirmaciones es FALSA?",
+      "option_a": "El estudio histológico o los niveles séricos de pepsinógeno ayudan a descartar la ingesta de AINE como factor etiológico de la UP",
+      "option_b": "Estas úlceras son muy raras en nuestro medio (menos del 5%)",
+      "option_c": "Debe excluirse cuidadosamente el diagnóstico erróneamente negativo para H.pylori",
+      "option_d": "Se debe valorar etiologías poco frecuentes como el consumo de bifosfonatos, cocaína o la presencia de gastrinoma",
+      "correct_letter": "a",
+      "correct_option_text": "El estudio histológico o los niveles séricos de pepsinógeno ayudan a descartar la ingesta de AINE como factor etiológico de la UP",
+      "source_text_sha256": "1261ea41e5cb7452f073f258708110b1e3455174268015fe9af6ce111e6610b2",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 47,
+          "boundary_end": 48,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H.",
+          "right_context": "pylori negativo y sin toma de AINE/AAS, ¿cuál de las siguientes afirmaciones es FALSA?"
+        },
+        {
+          "boundary_start": 87,
+          "boundary_end": 88,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS,",
+          "right_context": "¿cuál de las siguientes afirmaciones es FALSA?"
+        },
+        {
+          "boundary_start": 93,
+          "boundary_end": 94,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de la úlcera péptica (UP) con H. pylori negativo y sin toma de AINE/AAS, ¿cuál",
+          "right_context": "de las siguientes afirmaciones es FALSA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b441",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b441",
+      "question_text": "Señale la respuesta INCORRECTA:",
+      "option_a": "Se recomienda la colocación temporal de un stent de metal autoexpandible biliar completamente cubierto para hemorragias post-esfinterotomía refractaria a las modalidades hemostáticas estándar.",
+      "option_b": "En pacientes con pancreatitis biliar leve se recomienda realizar en el mismo ingreso colecistectomía.",
+      "option_c": "Para pacientes con síndrome de Mirizzi, el tratamiento con colangioscopia puede ser una alternativa al tratamiento quirúrgico, y evitar la colecistectomía en más de la mitad de los casos.",
+      "option_d": "Para hepatolitiasis se aconseja un enfoque multidisciplinario que incluye endoscopia, radiología intervencionista y cirugía.",
+      "correct_letter": "c",
+      "correct_option_text": "Para pacientes con síndrome de Mirizzi, el tratamiento con colangioscopia puede ser una alternativa al tratamiento quirúrgico, y evitar la colecistectomía en más de la mitad de los casos.",
+      "source_text_sha256": "9c24b406d650cdea93ab6ab728d176dd81f916d483be27d72353633f2ad1079f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b441",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b441",
+      "question_text": "Señale la respuesta INCORRECTA:",
+      "option_a": "Se recomienda la colocación temporal de un stent de metal autoexpandible biliar completamente cubierto para hemorragias post-esfinterotomía refractaria a las modalidades hemostáticas estándar.",
+      "option_b": "En pacientes con pancreatitis biliar leve se recomienda realizar en el mismo ingreso colecistectomía.",
+      "option_c": "Para pacientes con síndrome de Mirizzi, el tratamiento con colangioscopia puede ser una alternativa al tratamiento quirúrgico, y evitar la colecistectomía en más de la mitad de los casos.",
+      "option_d": "Para hepatolitiasis se aconseja un enfoque multidisciplinario que incluye endoscopia, radiología intervencionista y cirugía.",
+      "correct_letter": "c",
+      "correct_option_text": "Para pacientes con síndrome de Mirizzi, el tratamiento con colangioscopia puede ser una alternativa al tratamiento quirúrgico, y evitar la colecistectomía en más de la mitad de los casos.",
+      "source_text_sha256": "9c24b406d650cdea93ab6ab728d176dd81f916d483be27d72353633f2ad1079f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b455",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b455",
+      "question_text": "¿Con qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?",
+      "option_a": "Virus A",
+      "option_b": "Virus B",
+      "option_c": "Virus C",
+      "option_d": "Virus D",
+      "correct_letter": "d",
+      "correct_option_text": "Virus D",
+      "source_text_sha256": "65dbac0a0ae07259487456fc2e5226524b02f28af224b2a105b5725d9ff132b7",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 4,
+          "boundary_end": 5,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Con",
+          "right_context": "qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?"
+        }
+      ]
+    },
+    {
+      "question_id": "b455",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b455",
+      "question_text": "¿Con qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?",
+      "option_a": "Virus A",
+      "option_b": "Virus B",
+      "option_c": "Virus C",
+      "option_d": "Virus D",
+      "correct_letter": "d",
+      "correct_option_text": "Virus D",
+      "source_text_sha256": "65dbac0a0ae07259487456fc2e5226524b02f28af224b2a105b5725d9ff132b7",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 4,
+          "boundary_end": 5,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Con",
+          "right_context": "qué infección vírica es mayor el riesgo de insuficiencia hepática aguda grave?"
+        }
+      ]
+    },
+    {
+      "question_id": "b469",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b469",
+      "question_text": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y respecto del seguimiento tras polipectomía, ¿cuál de estas afirmaciones NO es cierta?:",
+      "option_a": "En caso de resección en fragmentos (piecemeal) de una adenoma mayor de 10 mm, el seguimiento endoscópico debe hacerse a los 6 meses antes de hacer ninguna otra recomendación",
+      "option_b": "La ESGE no recomienda el uso de test de sangre oculta en heces tras polipectomía como método de seguimiento, pero en caso de realizarse de manera no planificada y si es positivo, la decisión debe basarse en el buen juicio clínico",
+      "option_c": "Los pacientes con extirpación de pólipos serrados de menos de 10 mm sin displasia deben clasificarse como de bajo riesgo, mientras que aquellos que tengan pólipos serrados de más de 10 mm con displasia serán clasificados como de alto riesgo",
+      "option_d": "Los criterios para considerar a un paciente como de alto riesgo tras polipectomía exigen la presencia de displasia de alto grado en algunos de los pólipos extirpados o bien la presencia de 3 o más adenomas siempre que tengan componente velloso",
+      "correct_letter": "d",
+      "correct_option_text": "Los criterios para considerar a un paciente como de alto riesgo tras polipectomía exigen la presencia de displasia de alto grado en algunos de los pólipos extirpados o bien la presencia de 3 o más adenomas siempre que tengan componente velloso",
+      "source_text_sha256": "40346aed48e9c1f814d2f84c19a23a5e4d2e5e832cbefe1e9a1d46c22d743a75",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 82,
+          "boundary_end": 83,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y",
+          "right_context": "respecto del seguimiento tras polipectomía, ¿cuál de estas afirmaciones NO es cierta?:"
+        },
+        {
+          "boundary_start": 126,
+          "boundary_end": 127,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y respecto del seguimiento tras polipectomía,",
+          "right_context": "¿cuál de estas afirmaciones NO es cierta?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b469",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b469",
+      "question_text": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y respecto del seguimiento tras polipectomía, ¿cuál de estas afirmaciones NO es cierta?:",
+      "option_a": "En caso de resección en fragmentos (piecemeal) de una adenoma mayor de 10 mm, el seguimiento endoscópico debe hacerse a los 6 meses antes de hacer ninguna otra recomendación",
+      "option_b": "La ESGE no recomienda el uso de test de sangre oculta en heces tras polipectomía como método de seguimiento, pero en caso de realizarse de manera no planificada y si es positivo, la decisión debe basarse en el buen juicio clínico",
+      "option_c": "Los pacientes con extirpación de pólipos serrados de menos de 10 mm sin displasia deben clasificarse como de bajo riesgo, mientras que aquellos que tengan pólipos serrados de más de 10 mm con displasia serán clasificados como de alto riesgo",
+      "option_d": "Los criterios para considerar a un paciente como de alto riesgo tras polipectomía exigen la presencia de displasia de alto grado en algunos de los pólipos extirpados o bien la presencia de 3 o más adenomas siempre que tengan componente velloso",
+      "correct_letter": "d",
+      "correct_option_text": "Los criterios para considerar a un paciente como de alto riesgo tras polipectomía exigen la presencia de displasia de alto grado en algunos de los pólipos extirpados o bien la presencia de 3 o más adenomas siempre que tengan componente velloso",
+      "source_text_sha256": "40346aed48e9c1f814d2f84c19a23a5e4d2e5e832cbefe1e9a1d46c22d743a75",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 82,
+          "boundary_end": 83,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y",
+          "right_context": "respecto del seguimiento tras polipectomía, ¿cuál de estas afirmaciones NO es cierta?:"
+        },
+        {
+          "boundary_start": 126,
+          "boundary_end": 127,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De acuerdo a la guía de la European Society of Gastrointestinal Endoscopy (ESGE) y respecto del seguimiento tras polipectomía,",
+          "right_context": "¿cuál de estas afirmaciones NO es cierta?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b485",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b485",
+      "question_text": "Según la Clasificación de Chicago, la acalasia esofágica se divide en tres subgrupos. Señale la respuesta correcta",
+      "option_a": "En la acalasia tipo III o espástica, a la falta de relajación adecuada de la UGE (mediana de IRP >15 mmHg) se asocia peristalsis anormal con contracciones prematuras (espásticas) con DCI > 400 mmHg/s/cm en ≥ 30% de las degluciones.",
+      "option_b": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg), 100% peristalsis fallida y presurización panesofágica ≥ 20% de las degluciones.",
+      "option_c": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg) y un 100% de contracciones con una integral contráctil distal (DCI) < 100 mmHg/s/cm.",
+      "option_d": "La acalasia tipo II es aquella que asocia una IRP>15 mm de Hg con peristalsis anormal y contracciones prematuras (espásticas) con DCI > 450 mmHg/s/cm en ≥ 30% de las degluciones.",
+      "correct_letter": "c",
+      "correct_option_text": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg) y un 100% de contracciones con una integral contráctil distal (DCI) < 100 mmHg/s/cm.",
+      "source_text_sha256": "660dfde19f49a922816b584dd6edd2c4d3d7003e52d722f6de6ce6dfe96275ed",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 85,
+          "boundary_end": 86,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la Clasificación de Chicago, la acalasia esofágica se divide en tres subgrupos.",
+          "right_context": "Señale la respuesta correcta"
+        }
+      ]
+    },
+    {
+      "question_id": "b485",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b485",
+      "question_text": "Según la Clasificación de Chicago, la acalasia esofágica se divide en tres subgrupos. Señale la respuesta correcta",
+      "option_a": "En la acalasia tipo III o espástica, a la falta de relajación adecuada de la UGE (mediana de IRP >15 mmHg) se asocia peristalsis anormal con contracciones prematuras (espásticas) con DCI > 400 mmHg/s/cm en ≥ 30% de las degluciones.",
+      "option_b": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg), 100% peristalsis fallida y presurización panesofágica ≥ 20% de las degluciones.",
+      "option_c": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg) y un 100% de contracciones con una integral contráctil distal (DCI) < 100 mmHg/s/cm.",
+      "option_d": "La acalasia tipo II es aquella que asocia una IRP>15 mm de Hg con peristalsis anormal y contracciones prematuras (espásticas) con DCI > 450 mmHg/s/cm en ≥ 30% de las degluciones.",
+      "correct_letter": "c",
+      "correct_option_text": "La acalasia tipo I se caracteriza por una mediana de IRP elevada (> 15 mmHg) y un 100% de contracciones con una integral contráctil distal (DCI) < 100 mmHg/s/cm.",
+      "source_text_sha256": "660dfde19f49a922816b584dd6edd2c4d3d7003e52d722f6de6ce6dfe96275ed",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 85,
+          "boundary_end": 86,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la Clasificación de Chicago, la acalasia esofágica se divide en tres subgrupos.",
+          "right_context": "Señale la respuesta correcta"
+        }
+      ]
+    }
+  ]
+}

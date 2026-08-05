@@ -1,0 +1,617 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_04",
+  "shard_id": "04",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b142",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The examination finding attaches to the described patient and the offered paragraph seam follows the complete case narrative and precedes the final question. The source calls the abdomen painless but never identifies or locates the fictional sac, so there is no explicit contradiction; the patient-specific urgent-management prompt makes semantic sensitivity high."
+    },
+    {
+      "question_id": "b143",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The localized finding can refer to the case patient, reads as a complete sentence at the offered paragraph seam, and is not explicitly negated because the fictional organ has no stated location. It precedes the complete directive without interrupting it."
+    },
+    {
+      "question_id": "b144",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The serum result attaches to this patient's extensive laboratory workup, no pancreocerina-K4 value appears in the source, and the offered paragraph seam is immediately before the final question. The prompt concerns endoscopic attribution rather than this unlisted marker."
+    },
+    {
+      "question_id": "b144",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The palpation finding attaches to the case patient, is grammatical at the offered paragraph boundary, and does not explicitly contradict a finding about the unnamed fictional sac. It is placed before the intact final question."
+    },
+    {
+      "question_id": "b145",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The localized examination finding has a clear patient referent and no source statement about the fictional organ. The paragraph seam follows the completed narrative and precedes the endoscopic-treatment question without disrupting its grammar."
+    },
+    {
+      "question_id": "b146",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The elevated serum marker fits the patient's investigation context and is absent from, hence not contradicted by, the source. The case-ending paragraph seam is preferable to splitting the introductory phrase 'De los siguientes factores' from its interrogative."
+    },
+    {
+      "question_id": "b146",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The new palpation finding has a patient attachment and no explicit source finding about the fictional sac. Using the paragraph seam preserves the full grammar of the 'De los siguientes factores' interrogative while placing the sentence after the case."
+    },
+    {
+      "question_id": "b147",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The plasma result attaches naturally to the documented analyses and no colangiomirina-8 result exists to contradict it. The offered paragraph seam precedes the complete question; semantic risk is high because the prompt asks for a patient-specific score."
+    },
+    {
+      "question_id": "b147",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The localized finding refers to the patient and is not explicitly negated because the fictional organ is neither named nor located in the source. The sentence is grammatical at the case/question boundary; the patient-specific Child-Pugh calculation makes semantic risk high."
+    },
+    {
+      "question_id": "b148",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The added examination sentence attaches to the patient and has no explicit contradiction about the fictional sac. The paragraph seam is used before the entire 'Tras el tratamiento...' question so its introductory clause remains intact; management sensitivity is high."
+    },
+    {
+      "question_id": "b149",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The new plasma value has a clear patient/laboratory attachment and the source supplies no portalectina-Q5 result. It fits at the offered paragraph seam immediately before the intact prophylaxis directive."
+    },
+    {
+      "question_id": "b149",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The localized finding can attach to the examined patient and is not explicitly contradicted by any statement about the fictional organ. The sentence is grammatical at the paragraph boundary before the complete prophylaxis directive."
+    },
+    {
+      "question_id": "b150",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The palpation sentence has a patient referent and no explicit source statement about the fictional sac. The offered case-ending seam places it before the full directive about uncontrolled bleeding and leaves that directive grammatical."
+    },
+    {
+      "question_id": "b151",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The examination finding attaches to the case patient, no explicit finding addresses the fictional organ, and the offered paragraph seam precedes the intact general VHB-history directive. The new finding is remote from the knowledge being asked."
+    },
+    {
+      "question_id": "b152",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The serum result is compatible with the patient's laboratory context and no source value for this fictional marker exists. The offered paragraph seam is before the complete general question about VHB treatment objectives."
+    },
+    {
+      "question_id": "b152",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The added palpation finding has a patient attachment and no source statement explicitly denies a finding in the fictional sac. It reads cleanly at the paragraph boundary before the general VHB-objectives question."
+    },
+    {
+      "question_id": "b153",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The localized examination finding refers naturally to the case patient, while the source neither names nor locates the fictional organ. It can be inserted at the offered case/question boundary before the full antiviral-indication question."
+    },
+    {
+      "question_id": "b154",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The palpation finding attaches to this patient and no finding explicitly concerns the fictional sac. The sentence is grammatical at the offered paragraph seam before the treatment question; because treatment is patient-specific, semantic sensitivity is high."
+    },
+    {
+      "question_id": "b155",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The localized finding has a clear case-patient referent and no explicit source contradiction about the fictional organ. The offered paragraph boundary preserves the entire treatment directive; the directive is patient-specific, so semantic risk is high."
+    },
+    {
+      "question_id": "b156",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The examination sentence attaches to the patient and is not explicitly contradicted because the source has no finding about the fictional sac. It fits at the offered paragraph seam before the intact hepatocarcinoma-diagnosis directive."
+    },
+    {
+      "question_id": "b157",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The added localized finding can refer to the described patient and no statement addresses the fictional organ. The case-ending paragraph seam is offered and precedes the complete general directive about subcentimetric lesions."
+    },
+    {
+      "question_id": "b158",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The palpation finding attaches to this patient's examination and is not explicitly negated for the fictional sac. It is grammatical at the offered paragraph boundary before the patient-specific diagnostic-management question, which creates high semantic sensitivity."
+    },
+    {
+      "question_id": "b159",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The localized finding has a case-patient attachment and no explicit contradictory finding about the fictional organ. The paragraph seam precedes the whole 'De los siguientes factores' construction, avoiding an ungrammatical split before its interrogative."
+    },
+    {
+      "question_id": "b160",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The fictional serum marker attaches to the patient's analyses and is not present elsewhere in the source. The offered case-ending seam is immediately before the full question; the BCLC staging request makes semantic risk high."
+    },
+    {
+      "question_id": "b160",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The new examination finding has a patient referent and no explicit source statement about the fictional sac. It fits at the offered paragraph seam before the staging question; patient-specific classification makes semantic sensitivity high."
+    },
+    {
+      "question_id": "b161",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The localized examination finding attaches to this patient and the source has no explicit finding about the fictional organ. The offered paragraph seam places it before the complete patient-specific treatment question, which is semantically sensitive."
+    },
+    {
+      "question_id": "b162",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The serum result attaches to the patient's laboratory evidence and no fibroquelina-X3 value exists in the source. It fits at the offered boundary before the intact directive; the prompt assesses this patient's resangrado risk, making semantic risk high."
+    },
+    {
+      "question_id": "b162",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The palpation finding has a patient attachment and no explicit contradiction concerning the fictional sac. The offered case/question boundary preserves the full risk directive; because that directive evaluates this patient, semantic sensitivity is high."
+    },
+    {
+      "question_id": "b163",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The localized finding can refer to the examined patient, with no explicit source finding about the fictional organ. It reads grammatically at the offered paragraph seam before a general hepatocarcinoma-risk question."
+    },
+    {
+      "question_id": "b164",
+      "arm": "BM",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The fictional serum result belongs naturally to the case laboratory context and is not contradicted by any source value. The offered paragraph seam keeps the entire long neoadjuvant-treatment directive intact; its patient-specific premise creates high semantic risk."
+    },
+    {
+      "question_id": "b164",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The examination sentence attaches to the patient and there is no explicit source finding about the fictional sac. The offered case-ending seam precedes the full long directive without splitting it; the patient-specific treatment premise makes semantic risk high."
+    },
+    {
+      "question_id": "b165",
+      "arm": "AN",
+      "reviewer_id": "review_04",
+      "verdict": "PASS",
+      "boundary_start": 5527,
+      "boundary_end": 5529,
+      "required_checks": {
+        "patient_context_attachment": true,
+        "placement_after_patient_description": true,
+        "before_final_interrogative_or_directive": true,
+        "offered_whitespace_seam": true,
+        "grammatical_fit": true,
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The localized finding attaches to the case patient and is not explicitly negated because the fictional organ is not located or discussed in the source. The paragraph seam precedes the entire transplant premise and interrogative, preserving grammar; management sensitivity is high."
+    }
+  ]
+}

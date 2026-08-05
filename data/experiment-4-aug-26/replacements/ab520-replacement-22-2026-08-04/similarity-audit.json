@@ -1,0 +1,156 @@
+[
+  {
+    "replacement_id": "r001",
+    "candidate_id": "c2485",
+    "max_token_jaccard": 0.073529,
+    "nearest_retained_question_id": "n027",
+    "nearest_retained_source_key": "region-de-murcia|2019|main|137"
+  },
+  {
+    "replacement_id": "r002",
+    "candidate_id": "c2718",
+    "max_token_jaccard": 0.130435,
+    "nearest_retained_question_id": "b282",
+    "nearest_retained_source_key": "la-rioja|2021|reserva|107"
+  },
+  {
+    "replacement_id": "r003",
+    "candidate_id": "c0205",
+    "max_token_jaccard": 0.075472,
+    "nearest_retained_question_id": "b336",
+    "nearest_retained_source_key": "region-de-murcia|2019|main|62"
+  },
+  {
+    "replacement_id": "r004",
+    "candidate_id": "c0211",
+    "max_token_jaccard": 0.06383,
+    "nearest_retained_question_id": "b421",
+    "nearest_retained_source_key": "castilla-la-mancha|2022|main|21"
+  },
+  {
+    "replacement_id": "r005",
+    "candidate_id": "c2116",
+    "max_token_jaccard": 0.083333,
+    "nearest_retained_question_id": "n170",
+    "nearest_retained_source_key": "castilla-la-mancha|2017|main|67"
+  },
+  {
+    "replacement_id": "r006",
+    "candidate_id": "c2027",
+    "max_token_jaccard": 0.102041,
+    "nearest_retained_question_id": "n080",
+    "nearest_retained_source_key": "la-rioja|2024|main|63"
+  },
+  {
+    "replacement_id": "r007",
+    "candidate_id": "c2132",
+    "max_token_jaccard": 0.131579,
+    "nearest_retained_question_id": "b277",
+    "nearest_retained_source_key": "castilla-la-mancha|2022|main|24"
+  },
+  {
+    "replacement_id": "r008",
+    "candidate_id": "c2644",
+    "max_token_jaccard": 0.078431,
+    "nearest_retained_question_id": "n025",
+    "nearest_retained_source_key": "andalucia|2021|cuestionario-practico|133"
+  },
+  {
+    "replacement_id": "r009",
+    "candidate_id": "c0922",
+    "max_token_jaccard": 0.058824,
+    "nearest_retained_question_id": "b366",
+    "nearest_retained_source_key": "la-rioja|2024|main|9"
+  },
+  {
+    "replacement_id": "r010",
+    "candidate_id": "c0381",
+    "max_token_jaccard": 0.175,
+    "nearest_retained_question_id": "n092",
+    "nearest_retained_source_key": "castilla-y-leon|2019|main|102"
+  },
+  {
+    "replacement_id": "r011",
+    "candidate_id": "c0177",
+    "max_token_jaccard": 0.103448,
+    "nearest_retained_question_id": "b366",
+    "nearest_retained_source_key": "la-rioja|2024|main|9"
+  },
+  {
+    "replacement_id": "r012",
+    "candidate_id": "c0248",
+    "max_token_jaccard": 0.096774,
+    "nearest_retained_question_id": "b370",
+    "nearest_retained_source_key": "castilla-la-mancha|2017|main|84"
+  },
+  {
+    "replacement_id": "r013",
+    "candidate_id": "c2600",
+    "max_token_jaccard": 0.052632,
+    "nearest_retained_question_id": "n108",
+    "nearest_retained_source_key": "region-de-murcia|2019|main|59"
+  },
+  {
+    "replacement_id": "r014",
+    "candidate_id": "c0955",
+    "max_token_jaccard": 0.212121,
+    "nearest_retained_question_id": "n012",
+    "nearest_retained_source_key": "andalucia|2021|cuestionario-practico|117"
+  },
+  {
+    "replacement_id": "r015",
+    "candidate_id": "c2647",
+    "max_token_jaccard": 0.242424,
+    "nearest_retained_question_id": "b446",
+    "nearest_retained_source_key": "navarra|2022|teorico-practica|1"
+  },
+  {
+    "replacement_id": "r016",
+    "candidate_id": "c2033",
+    "max_token_jaccard": 0.147059,
+    "nearest_retained_question_id": "n139",
+    "nearest_retained_source_key": "castilla-y-leon|2019|main|40"
+  },
+  {
+    "replacement_id": "r017",
+    "candidate_id": "c0931",
+    "max_token_jaccard": 0.111111,
+    "nearest_retained_question_id": "n125",
+    "nearest_retained_source_key": "galicia|2022|main|97"
+  },
+  {
+    "replacement_id": "r018",
+    "candidate_id": "c2443",
+    "max_token_jaccard": 0.214286,
+    "nearest_retained_question_id": "b218",
+    "nearest_retained_source_key": "la-rioja|2021|main|62"
+  },
+  {
+    "replacement_id": "r019",
+    "candidate_id": "c0973",
+    "max_token_jaccard": 0.088235,
+    "nearest_retained_question_id": "n049",
+    "nearest_retained_source_key": "castilla-la-mancha|2022|main|90"
+  },
+  {
+    "replacement_id": "r020",
+    "candidate_id": "c2714",
+    "max_token_jaccard": 0.083333,
+    "nearest_retained_question_id": "b370",
+    "nearest_retained_source_key": "castilla-la-mancha|2017|main|84"
+  },
+  {
+    "replacement_id": "r021",
+    "candidate_id": "c0369",
+    "max_token_jaccard": 0.09375,
+    "nearest_retained_question_id": "b334",
+    "nearest_retained_source_key": "galicia|2016|reserva-especifica|105"
+  },
+  {
+    "replacement_id": "r022",
+    "candidate_id": "c2093",
+    "max_token_jaccard": 0.096774,
+    "nearest_retained_question_id": "n158",
+    "nearest_retained_source_key": "castilla-y-leon|2019|main|65"
+  }
+]

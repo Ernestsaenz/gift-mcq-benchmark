@@ -1,0 +1,1320 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_15",
+  "shard_id": "15",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b484",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2022-extraordinaria-libre-caso-18",
+      "question_text": "Varón de 26 años con cuadro diarreico de tres meses de evolución y cansancio fácil. Aporta una analítica realizada por su médico de atención primaria con una hemoglobina de 9,5 g/dl, con una ferritina de 10 mcg/dl y un índice de saturación de la transferrina del 5%. El test de sangre oculta en heces resultó negativo.\n\nA los 10 años, el paciente acude a consulta refiriendo haber estado asintomático realizando dieta sin gluten estricta, y con estudios serológicos repetidos negativos, hasta que hace unos 6 meses reaparece la diarrea, ahora con episodios de dolor abdominal, habiendo perdido unos 7 kg de peso. Se repite la endoscopia que encontró atrofia vellositaria con úlceras fibrinadas en el duodeno con distorsión de los pliegues; se tomaron biopsias que son informadas como \"infiltración intraepitelial por linfocitos en más de 50 linfocitos por cada 100 enterocitos, con un fenotipo mostrando reordenamientos monoclonales del gen TCRγ. En la TC se apreció dilatación de asas intestinales con engrosamiento de la pared, con gran edema mucoso y submucoso. Su sospecha diagnóstica sería:",
+      "option_a": "Se trata de forma inequívoca de un Linfoma de Células T asociado a enteropatía.",
+      "option_b": "Podría tratarse de un Linfoma B difuso de intestino.",
+      "option_c": "No se puede descartar una enteropatía tipo Yeyunoileítis Ulcerativa.",
+      "option_d": "Podría tratarse de una Celiaquía Refractaria tipo I.",
+      "correct_letter": "c",
+      "correct_option_text": "No se puede descartar una enteropatía tipo Yeyunoileítis Ulcerativa.",
+      "source_text_sha256": "fe97b993d65f68dba0b185b2f4e6d98460557846f33c1e8291f2611dd564be86",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 83,
+          "boundary_end": 84,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 26 años con cuadro diarreico de tres meses de evolución y cansancio fácil.",
+          "right_context": "Aporta una analítica realizada por su médico de atención primaria con una hemoglobina de 9,5 g/dl, con una ferritina de 10 mcg/dl y un índice de saturación de la transferrina del 5%. El test de sangre oculta en heces resultó negativo.\n\nA los 10 años, el paciente acude a consulta "
+        },
+        {
+          "boundary_start": 266,
+          "boundary_end": 267,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "meses de evolución y cansancio fácil. Aporta una analítica realizada por su médico de atención primaria con una hemoglobina de 9,5 g/dl, con una ferritina de 10 mcg/dl y un índice de saturación de la transferrina del 5%.",
+          "right_context": "El test de sangre oculta en heces resultó negativo.\n\nA los 10 años, el paciente acude a consulta refiriendo haber estado asintomático realizando dieta sin gluten estricta, y con estudios serológicos repetidos negativos, hasta que hace unos 6 meses reaparece la diarrea, ahora con "
+        },
+        {
+          "boundary_start": 318,
+          "boundary_end": 320,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "lítica realizada por su médico de atención primaria con una hemoglobina de 9,5 g/dl, con una ferritina de 10 mcg/dl y un índice de saturación de la transferrina del 5%. El test de sangre oculta en heces resultó negativo.",
+          "right_context": "A los 10 años, el paciente acude a consulta refiriendo haber estado asintomático realizando dieta sin gluten estricta, y con estudios serológicos repetidos negativos, hasta que hace unos 6 meses reaparece la diarrea, ahora con episodios de dolor abdominal, habiendo perdido unos 7"
+        },
+        {
+          "boundary_start": 612,
+          "boundary_end": 613,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "tomático realizando dieta sin gluten estricta, y con estudios serológicos repetidos negativos, hasta que hace unos 6 meses reaparece la diarrea, ahora con episodios de dolor abdominal, habiendo perdido unos 7 kg de peso.",
+          "right_context": "Se repite la endoscopia que encontró atrofia vellositaria con úlceras fibrinadas en el duodeno con distorsión de los pliegues; se tomaron biopsias que son informadas como \"infiltración intraepitelial por linfocitos en más de 50 linfocitos por cada 100 enterocitos, con un fenotipo"
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "arece la diarrea, ahora con episodios de dolor abdominal, habiendo perdido unos 7 kg de peso. Se repite la endoscopia que encontró atrofia vellositaria con úlceras fibrinadas en el duodeno con distorsión de los pliegues;",
+          "right_context": "se tomaron biopsias que son informadas como \"infiltración intraepitelial por linfocitos en más de 50 linfocitos por cada 100 enterocitos, con un fenotipo mostrando reordenamientos monoclonales del gen TCRγ. En la TC se apreció dilatación de asas intestinales con engrosamiento de "
+        },
+        {
+          "boundary_start": 946,
+          "boundary_end": 947,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "los pliegues; se tomaron biopsias que son informadas como \"infiltración intraepitelial por linfocitos en más de 50 linfocitos por cada 100 enterocitos, con un fenotipo mostrando reordenamientos monoclonales del gen TCRγ.",
+          "right_context": "En la TC se apreció dilatación de asas intestinales con engrosamiento de la pared, con gran edema mucoso y submucoso. Su sospecha diagnóstica sería:"
+        },
+        {
+          "boundary_start": 1064,
+          "boundary_end": 1065,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "focitos por cada 100 enterocitos, con un fenotipo mostrando reordenamientos monoclonales del gen TCRγ. En la TC se apreció dilatación de asas intestinales con engrosamiento de la pared, con gran edema mucoso y submucoso.",
+          "right_context": "Su sospecha diagnóstica sería:"
+        }
+      ]
+    },
+    {
+      "question_id": "b196",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b196",
+      "question_text": "En el contexto de un paciente con colangitis biliar primaria ¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?",
+      "option_a": "Cuerpos de Councilman",
+      "option_b": "Infiltrado linfocítico periportal con destrucción de los ductos biliares",
+      "option_c": "Fibrosis en puentes",
+      "option_d": "Granulomas no caseificantes",
+      "correct_letter": "b",
+      "correct_option_text": "Infiltrado linfocítico periportal con destrucción de los ductos biliares",
+      "source_text_sha256": "ea39383b3e091635e7b23539b7ea83c2a09fdf31b5e1083e044e2bdc797a971b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de un paciente con colangitis biliar primaria",
+          "right_context": "¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?"
+        }
+      ]
+    },
+    {
+      "question_id": "b196",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b196",
+      "question_text": "En el contexto de un paciente con colangitis biliar primaria ¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?",
+      "option_a": "Cuerpos de Councilman",
+      "option_b": "Infiltrado linfocítico periportal con destrucción de los ductos biliares",
+      "option_c": "Fibrosis en puentes",
+      "option_d": "Granulomas no caseificantes",
+      "correct_letter": "b",
+      "correct_option_text": "Infiltrado linfocítico periportal con destrucción de los ductos biliares",
+      "source_text_sha256": "ea39383b3e091635e7b23539b7ea83c2a09fdf31b5e1083e044e2bdc797a971b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 60,
+          "boundary_end": 61,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el contexto de un paciente con colangitis biliar primaria",
+          "right_context": "¿qué hallazgo histológico es característico y se considera diagnóstico cuando se observa en la biopsia hepática?"
+        }
+      ]
+    },
+    {
+      "question_id": "b208",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b208",
+      "question_text": "Cuál de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:",
+      "option_a": "Edad del donante mayor de 65 años.",
+      "option_b": "Un IMC mayor de 30.",
+      "option_c": "Esteatosis hepática mayor del 60%.",
+      "option_d": "Bilirrubina en suero mayor de 3 mg/dL.",
+      "correct_letter": "c",
+      "correct_option_text": "Esteatosis hepática mayor del 60%.",
+      "source_text_sha256": "4bf79134c1b2db5bff05c6bccc3d147d376b84c3f710a95114b9c22ffeb7f8f4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 4,
+          "boundary_end": 5,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Cuál",
+          "right_context": "de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:"
+        }
+      ]
+    },
+    {
+      "question_id": "b208",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b208",
+      "question_text": "Cuál de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:",
+      "option_a": "Edad del donante mayor de 65 años.",
+      "option_b": "Un IMC mayor de 30.",
+      "option_c": "Esteatosis hepática mayor del 60%.",
+      "option_d": "Bilirrubina en suero mayor de 3 mg/dL.",
+      "correct_letter": "c",
+      "correct_option_text": "Esteatosis hepática mayor del 60%.",
+      "source_text_sha256": "4bf79134c1b2db5bff05c6bccc3d147d376b84c3f710a95114b9c22ffeb7f8f4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 4,
+          "boundary_end": 5,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Cuál",
+          "right_context": "de los siguientes no es un criterio de definición de donante marginal para trasplante hepático:"
+        }
+      ]
+    },
+    {
+      "question_id": "b231",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b231",
+      "question_text": "En relación al manejo de la ascitis en la cirrosis descompensada, indique la respuesta incorrecta:",
+      "option_a": "Es recomendable una dieta con un contenido muy bajo de sodio (<40 mmol / día) en pacientes con ascitis moderada.",
+      "option_b": "La administración de baclofeno es beneficiosa en pacientes con calambres musculares secundarios al tratamiento diurético.",
+      "option_c": "En la actualidad, no se recomienda la adición de clonidina o midodrina al tratamiento diurético en la ascitis refractaria.",
+      "option_d": "Después de la paracentesis evacuadora, los pacientes deben recibir la dosis mínima de diuréticos necesaria para prevenir la reaparición de la ascitis.",
+      "correct_letter": "a",
+      "correct_option_text": "Es recomendable una dieta con un contenido muy bajo de sodio (<40 mmol / día) en pacientes con ascitis moderada.",
+      "source_text_sha256": "3d7dec72eb44416d0fb9b9101be15871e96a3a837d601564753c579b2239d841",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 65,
+          "boundary_end": 66,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al manejo de la ascitis en la cirrosis descompensada,",
+          "right_context": "indique la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b231",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b231",
+      "question_text": "En relación al manejo de la ascitis en la cirrosis descompensada, indique la respuesta incorrecta:",
+      "option_a": "Es recomendable una dieta con un contenido muy bajo de sodio (<40 mmol / día) en pacientes con ascitis moderada.",
+      "option_b": "La administración de baclofeno es beneficiosa en pacientes con calambres musculares secundarios al tratamiento diurético.",
+      "option_c": "En la actualidad, no se recomienda la adición de clonidina o midodrina al tratamiento diurético en la ascitis refractaria.",
+      "option_d": "Después de la paracentesis evacuadora, los pacientes deben recibir la dosis mínima de diuréticos necesaria para prevenir la reaparición de la ascitis.",
+      "correct_letter": "a",
+      "correct_option_text": "Es recomendable una dieta con un contenido muy bajo de sodio (<40 mmol / día) en pacientes con ascitis moderada.",
+      "source_text_sha256": "3d7dec72eb44416d0fb9b9101be15871e96a3a837d601564753c579b2239d841",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 65,
+          "boundary_end": 66,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En relación al manejo de la ascitis en la cirrosis descompensada,",
+          "right_context": "indique la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b245",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b245",
+      "question_text": "¿Cuál de los siguientes es el tumor metastásico más frecuente en el estómago?",
+      "option_a": "Mama.",
+      "option_b": "Melanoma.",
+      "option_c": "Pulmón.",
+      "option_d": "Ovario.",
+      "correct_letter": "a",
+      "correct_option_text": "Mama.",
+      "source_text_sha256": "e6f60f84d41e525c6d143bc8b40d0acbb8d8d71e4da88d6b5467f1789adc02b0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes es el tumor metastásico más frecuente en el estómago?"
+        }
+      ]
+    },
+    {
+      "question_id": "b245",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b245",
+      "question_text": "¿Cuál de los siguientes es el tumor metastásico más frecuente en el estómago?",
+      "option_a": "Mama.",
+      "option_b": "Melanoma.",
+      "option_c": "Pulmón.",
+      "option_d": "Ovario.",
+      "correct_letter": "a",
+      "correct_option_text": "Mama.",
+      "source_text_sha256": "e6f60f84d41e525c6d143bc8b40d0acbb8d8d71e4da88d6b5467f1789adc02b0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes es el tumor metastásico más frecuente en el estómago?"
+        }
+      ]
+    },
+    {
+      "question_id": "b260",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b260",
+      "question_text": "Señale la respuesta FALSA en relación con el trasplante hepático en pacientes con fallo hepático agudo:",
+      "option_a": "El contacto con el centro de trasplante y la planificación apropiada del traslado debe hacerse de forma temprana en la evaluación del paciente.",
+      "option_b": "Están indicados los sistemas de soporte hepático como puente al trasplante.",
+      "option_c": "En pacientes con hepatomegalia gigante debe descartarse infiltración maligna mediante pruebas de imagen o biopsia.",
+      "option_d": "Debe indicarse el trasplante en aquellos pacientes que cumplen criterios del Kings College o de Clichy.",
+      "correct_letter": "b",
+      "correct_option_text": "Están indicados los sistemas de soporte hepático como puente al trasplante.",
+      "source_text_sha256": "b20576eb1754dad0f4d13bcddb09c0777fc04b3dee5e3817b272e9cc4804243d",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 25,
+          "boundary_end": 26,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA",
+          "right_context": "en relación con el trasplante hepático en pacientes con fallo hepático agudo:"
+        }
+      ]
+    },
+    {
+      "question_id": "b260",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b260",
+      "question_text": "Señale la respuesta FALSA en relación con el trasplante hepático en pacientes con fallo hepático agudo:",
+      "option_a": "El contacto con el centro de trasplante y la planificación apropiada del traslado debe hacerse de forma temprana en la evaluación del paciente.",
+      "option_b": "Están indicados los sistemas de soporte hepático como puente al trasplante.",
+      "option_c": "En pacientes con hepatomegalia gigante debe descartarse infiltración maligna mediante pruebas de imagen o biopsia.",
+      "option_d": "Debe indicarse el trasplante en aquellos pacientes que cumplen criterios del Kings College o de Clichy.",
+      "correct_letter": "b",
+      "correct_option_text": "Están indicados los sistemas de soporte hepático como puente al trasplante.",
+      "source_text_sha256": "b20576eb1754dad0f4d13bcddb09c0777fc04b3dee5e3817b272e9cc4804243d",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 25,
+          "boundary_end": 26,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta FALSA",
+          "right_context": "en relación con el trasplante hepático en pacientes con fallo hepático agudo:"
+        }
+      ]
+    },
+    {
+      "question_id": "b274",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b274",
+      "question_text": "Señale la afirmación INCORRECTA:",
+      "option_a": "Los AINEs se asocian a un aumento del riesgo de complicaciones en todo el tracto digestivo.",
+      "option_b": "El daño gastrointestinal mediado por AINEs se debe en su mayoría, a la inhibición sistémica de la COX-1.",
+      "option_c": "Los IBP reducen la incidencia de úlcera péptica en pacientes con factores de riesgo para el desarrollo de complicaciones gastrointestinales asociadas al uso de AINEs.",
+      "option_d": "El uso de COXIB, frente a AINEs clásicos, se asocia a una mayor tasa de úlcera péptica, complicaciones y síntomas gastrointestinales.",
+      "correct_letter": "d",
+      "correct_option_text": "El uso de COXIB, frente a AINEs clásicos, se asocia a una mayor tasa de úlcera péptica, complicaciones y síntomas gastrointestinales.",
+      "source_text_sha256": "13a767660310423062cc954f15d2f3bdf77400ee9303dee66ed8d2aa3a825ed6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b274",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2022,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b274",
+      "question_text": "Señale la afirmación INCORRECTA:",
+      "option_a": "Los AINEs se asocian a un aumento del riesgo de complicaciones en todo el tracto digestivo.",
+      "option_b": "El daño gastrointestinal mediado por AINEs se debe en su mayoría, a la inhibición sistémica de la COX-1.",
+      "option_c": "Los IBP reducen la incidencia de úlcera péptica en pacientes con factores de riesgo para el desarrollo de complicaciones gastrointestinales asociadas al uso de AINEs.",
+      "option_d": "El uso de COXIB, frente a AINEs clásicos, se asocia a una mayor tasa de úlcera péptica, complicaciones y síntomas gastrointestinales.",
+      "correct_letter": "d",
+      "correct_option_text": "El uso de COXIB, frente a AINEs clásicos, se asocia a una mayor tasa de úlcera péptica, complicaciones y síntomas gastrointestinales.",
+      "source_text_sha256": "13a767660310423062cc954f15d2f3bdf77400ee9303dee66ed8d2aa3a825ed6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b287",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b287",
+      "question_text": "Entre las enfermedades que cursan con estreñimiento no se encuentra",
+      "option_a": "Diabetes Mellitus",
+      "option_b": "Hipertiroidismo",
+      "option_c": "Enfermedad de Parkinson",
+      "option_d": "Enfermedad de Hirschsprung",
+      "correct_letter": "b",
+      "correct_option_text": "Hipertiroidismo",
+      "source_text_sha256": "bd156a7e3e2c9554d7e63ea638019e9de41c9ea87538f59e767d89731c441613",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b287",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b287",
+      "question_text": "Entre las enfermedades que cursan con estreñimiento no se encuentra",
+      "option_a": "Diabetes Mellitus",
+      "option_b": "Hipertiroidismo",
+      "option_c": "Enfermedad de Parkinson",
+      "option_d": "Enfermedad de Hirschsprung",
+      "correct_letter": "b",
+      "correct_option_text": "Hipertiroidismo",
+      "source_text_sha256": "bd156a7e3e2c9554d7e63ea638019e9de41c9ea87538f59e767d89731c441613",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b303",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b303",
+      "question_text": "¿Cuál de las siguientes es principal factor de riesgo de colangiocarcinoma intrahepático en Occidente?",
+      "option_a": "Colangitis esclerosante primaria",
+      "option_b": "Asbestos",
+      "option_c": "Cirrosis de cualquier etiología",
+      "option_d": "Infección hepática por parásitos",
+      "correct_letter": "a",
+      "correct_option_text": "Colangitis esclerosante primaria",
+      "source_text_sha256": "9d7ec32d66250d1d5744650d9d1753f1cc5eb57dc89d3bfbf98a987cc5dfa453",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes es principal factor de riesgo de colangiocarcinoma intrahepático en Occidente?"
+        }
+      ]
+    },
+    {
+      "question_id": "b303",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b303",
+      "question_text": "¿Cuál de las siguientes es principal factor de riesgo de colangiocarcinoma intrahepático en Occidente?",
+      "option_a": "Colangitis esclerosante primaria",
+      "option_b": "Asbestos",
+      "option_c": "Cirrosis de cualquier etiología",
+      "option_d": "Infección hepática por parásitos",
+      "correct_letter": "a",
+      "correct_option_text": "Colangitis esclerosante primaria",
+      "source_text_sha256": "9d7ec32d66250d1d5744650d9d1753f1cc5eb57dc89d3bfbf98a987cc5dfa453",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes es principal factor de riesgo de colangiocarcinoma intrahepático en Occidente?"
+        }
+      ]
+    },
+    {
+      "question_id": "b316",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b316",
+      "question_text": "Desde el punto de vista patogénico en el cáncer de colon la vía más común es:",
+      "option_a": "Inestabilidad cromosómica asociada a mutación del gen APC.",
+      "option_b": "Fenotipo mutador.",
+      "option_c": "Inestabilidad de microsatélites asociada a cambios epigenéticos.",
+      "option_d": "Inestabilidad genética asociada al K-RAS.",
+      "correct_letter": "a",
+      "correct_option_text": "Inestabilidad cromosómica asociada a mutación del gen APC.",
+      "source_text_sha256": "1f826f009fedd4e05d43488e05e99dc3dc04cd1d79590f232681921e07bf51e7",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b316",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b316",
+      "question_text": "Desde el punto de vista patogénico en el cáncer de colon la vía más común es:",
+      "option_a": "Inestabilidad cromosómica asociada a mutación del gen APC.",
+      "option_b": "Fenotipo mutador.",
+      "option_c": "Inestabilidad de microsatélites asociada a cambios epigenéticos.",
+      "option_d": "Inestabilidad genética asociada al K-RAS.",
+      "correct_letter": "a",
+      "correct_option_text": "Inestabilidad cromosómica asociada a mutación del gen APC.",
+      "source_text_sha256": "1f826f009fedd4e05d43488e05e99dc3dc04cd1d79590f232681921e07bf51e7",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b331",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b331",
+      "question_text": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana, en relación con los derechos de los pacientes y personas usuarias, señale la respuesta correcta:",
+      "option_a": "Los pacientes y personas usuarias tienen derecho a conocer su situación en lista de espera y el funcionamiento de la misma.",
+      "option_b": "En la declaración de voluntades anticipadas, la persona interesada deberá hacer constar la decisión respecto a la donación de sus órganos con finalidad terapéutica, docente o de investigación.",
+      "option_c": "Las personas menores de edad emancipadas y los mayores de 14 años son titulares del derecho a la información.",
+      "option_d": "Los pacientes y personas usuarias del Sistema Valenciano de Salud, tanto en la atención primaria como en la especializada, tienen derecho a elegir médico, pero no centro.",
+      "correct_letter": "a",
+      "correct_option_text": "Los pacientes y personas usuarias tienen derecho a conocer su situación en lista de espera y el funcionamiento de la misma.",
+      "source_text_sha256": "561ecc5a7c41b88ce047347c7080c148a447f19756b2bb27ae39edf9011036da",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 94,
+          "boundary_end": 95,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana,",
+          "right_context": "en relación con los derechos de los pacientes y personas usuarias, señale la respuesta correcta:"
+        },
+        {
+          "boundary_start": 161,
+          "boundary_end": 162,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana, en relación con los derechos de los pacientes y personas usuarias,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b331",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b331",
+      "question_text": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana, en relación con los derechos de los pacientes y personas usuarias, señale la respuesta correcta:",
+      "option_a": "Los pacientes y personas usuarias tienen derecho a conocer su situación en lista de espera y el funcionamiento de la misma.",
+      "option_b": "En la declaración de voluntades anticipadas, la persona interesada deberá hacer constar la decisión respecto a la donación de sus órganos con finalidad terapéutica, docente o de investigación.",
+      "option_c": "Las personas menores de edad emancipadas y los mayores de 14 años son titulares del derecho a la información.",
+      "option_d": "Los pacientes y personas usuarias del Sistema Valenciano de Salud, tanto en la atención primaria como en la especializada, tienen derecho a elegir médico, pero no centro.",
+      "correct_letter": "a",
+      "correct_option_text": "Los pacientes y personas usuarias tienen derecho a conocer su situación en lista de espera y el funcionamiento de la misma.",
+      "source_text_sha256": "561ecc5a7c41b88ce047347c7080c148a447f19756b2bb27ae39edf9011036da",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 94,
+          "boundary_end": 95,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana,",
+          "right_context": "en relación con los derechos de los pacientes y personas usuarias, señale la respuesta correcta:"
+        },
+        {
+          "boundary_start": 161,
+          "boundary_end": 162,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según lo dispuesto en la Ley 10/2014, de 29 de diciembre, de Salud de la Comunitat Valenciana, en relación con los derechos de los pacientes y personas usuarias,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b347",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b347",
+      "question_text": "La motilidad esofágica ineficaz:",
+      "option_a": "Es un trastorno manométrico que puede aparecer en pacientes con enfermedad por reflujo gastroesofágico.",
+      "option_b": "Se diagnostica con el registro manométrico de una presión de reposo del esfínter esofágico inferior inferior a 10 mmHg.",
+      "option_c": "Se caracteriza por una relajación incompleta del esfínter esofágico inferior durante las degluciones líquidas (IRP4 >15 mmHg)",
+      "option_d": "Se asocia a latencia distal de la onda peristáltica mayor de 4,5 sg.",
+      "correct_letter": "a",
+      "correct_option_text": "Es un trastorno manométrico que puede aparecer en pacientes con enfermedad por reflujo gastroesofágico.",
+      "source_text_sha256": "fd86c6e87a459b24129aae15173cef7bacbfd08a547f0e689c38c7a271062386",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b347",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b347",
+      "question_text": "La motilidad esofágica ineficaz:",
+      "option_a": "Es un trastorno manométrico que puede aparecer en pacientes con enfermedad por reflujo gastroesofágico.",
+      "option_b": "Se diagnostica con el registro manométrico de una presión de reposo del esfínter esofágico inferior inferior a 10 mmHg.",
+      "option_c": "Se caracteriza por una relajación incompleta del esfínter esofágico inferior durante las degluciones líquidas (IRP4 >15 mmHg)",
+      "option_d": "Se asocia a latencia distal de la onda peristáltica mayor de 4,5 sg.",
+      "correct_letter": "a",
+      "correct_option_text": "Es un trastorno manométrico que puede aparecer en pacientes con enfermedad por reflujo gastroesofágico.",
+      "source_text_sha256": "fd86c6e87a459b24129aae15173cef7bacbfd08a547f0e689c38c7a271062386",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b361",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b361",
+      "question_text": "En el desarrollo de un programa de calidad, ¿cuál de los siguientes apartados se corresponde con la identificación de los problemas?",
+      "option_a": "La definición de la cartera de servicios.",
+      "option_b": "El análisis del campo de fuerzas o gráfico DAFO.",
+      "option_c": "La selección de indicadores.",
+      "option_d": "La descripción de las líneas de actuación.",
+      "correct_letter": "b",
+      "correct_option_text": "El análisis del campo de fuerzas o gráfico DAFO.",
+      "source_text_sha256": "4a26ae21691eda3d7591ef0e462f8e4cf2c32efa9503e7c2eb34d8a33f843ab1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 43,
+          "boundary_end": 44,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el desarrollo de un programa de calidad,",
+          "right_context": "¿cuál de los siguientes apartados se corresponde con la identificación de los problemas?"
+        },
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el desarrollo de un programa de calidad, ¿cuál",
+          "right_context": "de los siguientes apartados se corresponde con la identificación de los problemas?"
+        }
+      ]
+    },
+    {
+      "question_id": "b361",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b361",
+      "question_text": "En el desarrollo de un programa de calidad, ¿cuál de los siguientes apartados se corresponde con la identificación de los problemas?",
+      "option_a": "La definición de la cartera de servicios.",
+      "option_b": "El análisis del campo de fuerzas o gráfico DAFO.",
+      "option_c": "La selección de indicadores.",
+      "option_d": "La descripción de las líneas de actuación.",
+      "correct_letter": "b",
+      "correct_option_text": "El análisis del campo de fuerzas o gráfico DAFO.",
+      "source_text_sha256": "4a26ae21691eda3d7591ef0e462f8e4cf2c32efa9503e7c2eb34d8a33f843ab1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 43,
+          "boundary_end": 44,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el desarrollo de un programa de calidad,",
+          "right_context": "¿cuál de los siguientes apartados se corresponde con la identificación de los problemas?"
+        },
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En el desarrollo de un programa de calidad, ¿cuál",
+          "right_context": "de los siguientes apartados se corresponde con la identificación de los problemas?"
+        }
+      ]
+    },
+    {
+      "question_id": "b375",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b375",
+      "question_text": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:",
+      "option_a": "Realizar una CPRF.",
+      "option_b": "Derivar para colecistectomía.",
+      "option_c": "Realizar ecoendoscopia o colangioRMN.",
+      "option_d": "Colecistostomia percutánea.",
+      "correct_letter": "c",
+      "correct_option_text": "Realizar ecoendoscopia o colangioRMN.",
+      "source_text_sha256": "6135ef0de1753f19771b2e221b421389bb2c230bdd275558853ce63494933e2e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 207,
+          "boundary_end": 208,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis,",
+          "right_context": "¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        },
+        {
+          "boundary_start": 212,
+          "boundary_end": 213,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por",
+          "right_context": "cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        },
+        {
+          "boundary_start": 217,
+          "boundary_end": 218,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por cuál",
+          "right_context": "de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b375",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b375",
+      "question_text": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:",
+      "option_a": "Realizar una CPRF.",
+      "option_b": "Derivar para colecistectomía.",
+      "option_c": "Realizar ecoendoscopia o colangioRMN.",
+      "option_d": "Colecistostomia percutánea.",
+      "correct_letter": "c",
+      "correct_option_text": "Realizar ecoendoscopia o colangioRMN.",
+      "source_text_sha256": "6135ef0de1753f19771b2e221b421389bb2c230bdd275558853ce63494933e2e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 207,
+          "boundary_end": 208,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis,",
+          "right_context": "¿por cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        },
+        {
+          "boundary_start": 212,
+          "boundary_end": 213,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por",
+          "right_context": "cuál de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        },
+        {
+          "boundary_start": 217,
+          "boundary_end": 218,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente con colelitiasis y clínica de dolor abdominal en hipocondrio derecho, con fosfatasa alcalina de 350 mg/dl, GGT de 153 mg/dl, colédoco de 8 mm en ecografía abdominal, y sin datos de colangitis, ¿por cuál",
+          "right_context": "de las siguientes estrategias optaría de acuerdo con la guía de la Sociedad Europea de Endoscopia Digestiva (ESGE) de 2019?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b389",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b389",
+      "question_text": "De las siguientes enfermedades hematológicas, ¿Cuál NO se considera un factor de riesgo para la trombosis venosa mesentérica?:",
+      "option_a": "Déficit de factor IX.",
+      "option_b": "Déficit de antitrombina III.",
+      "option_c": "Anemia de células falciformes.",
+      "option_d": "Déficit de proteína C.",
+      "correct_letter": "a",
+      "correct_option_text": "Déficit de factor IX.",
+      "source_text_sha256": "08cfcadd31d51c208c79059e9f9b096a810107e1d7be2a88568564d5fa2a082f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes enfermedades hematológicas,",
+          "right_context": "¿Cuál NO se considera un factor de riesgo para la trombosis venosa mesentérica?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b389",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b389",
+      "question_text": "De las siguientes enfermedades hematológicas, ¿Cuál NO se considera un factor de riesgo para la trombosis venosa mesentérica?:",
+      "option_a": "Déficit de factor IX.",
+      "option_b": "Déficit de antitrombina III.",
+      "option_c": "Anemia de células falciformes.",
+      "option_d": "Déficit de proteína C.",
+      "correct_letter": "a",
+      "correct_option_text": "Déficit de factor IX.",
+      "source_text_sha256": "08cfcadd31d51c208c79059e9f9b096a810107e1d7be2a88568564d5fa2a082f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 45,
+          "boundary_end": 46,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "De las siguientes enfermedades hematológicas,",
+          "right_context": "¿Cuál NO se considera un factor de riesgo para la trombosis venosa mesentérica?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b407",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b407",
+      "question_text": "A efectos del Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), se entenderá por “seudonimización”:",
+      "option_a": "Toda forma de tratamiento automatizado de datos personales consistente en utilizar datos personales para evaluar determinados aspectos personales de una persona física, en particular para analizar o predecir aspectos relativos al rendimiento profesional, situación económica, salud, preferencias personales, intereses, fiabilidad comportamiento, ubicación o movimientos de dicha persona física.",
+      "option_b": "El derecho del interesado a obtener sin dilación indebida del responsable del tratamiento la supresión de los datos personales que le conciernan que hayan sido tratados ilícitamente.",
+      "option_c": "El derecho del interesado a obtener del responsable del tratamiento la supresión de los datos personales que no sean ya necesarios en relación con los fines para los que fueron recogidos.",
+      "option_d": "El tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona física identificada o identificable.",
+      "correct_letter": "d",
+      "correct_option_text": "El tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona física identificada o identificable.",
+      "source_text_sha256": "858f24416f7229173b100c64fff5483976140ee1e8d4750f2118cfd60d11a74e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b407",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b407",
+      "question_text": "A efectos del Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), se entenderá por “seudonimización”:",
+      "option_a": "Toda forma de tratamiento automatizado de datos personales consistente en utilizar datos personales para evaluar determinados aspectos personales de una persona física, en particular para analizar o predecir aspectos relativos al rendimiento profesional, situación económica, salud, preferencias personales, intereses, fiabilidad comportamiento, ubicación o movimientos de dicha persona física.",
+      "option_b": "El derecho del interesado a obtener sin dilación indebida del responsable del tratamiento la supresión de los datos personales que le conciernan que hayan sido tratados ilícitamente.",
+      "option_c": "El derecho del interesado a obtener del responsable del tratamiento la supresión de los datos personales que no sean ya necesarios en relación con los fines para los que fueron recogidos.",
+      "option_d": "El tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona física identificada o identificable.",
+      "correct_letter": "d",
+      "correct_option_text": "El tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado y esté sujeta a medidas técnicas y organizativas destinadas a garantizar que los datos personales no se atribuyan a una persona física identificada o identificable.",
+      "source_text_sha256": "858f24416f7229173b100c64fff5483976140ee1e8d4750f2118cfd60d11a74e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b423",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b423",
+      "question_text": "¿Cuál de estos criterios NO se incluye entre los definidos por la OMS para el diagnóstico del síndrome de la poliposis serrada?",
+      "option_a": "5 o más pólipos serrados proximales al colon sigmoide y dos de ellos mayores de 10 mm. de diámetro.",
+      "option_b": "Cualquier número de pólipos serrados proximales al sigma en individuo con antecedentes familiares de primer grado de poliposis serrada.",
+      "option_c": "Más de 20 pólipos serrados de cualquier tamaño, distribuidos a lo largo del colon.",
+      "option_d": "Cualquier número de pólipos serrados siempre que se den en colon ascendente y ciego, uno de ellos mayor o igual a 10 mm.",
+      "correct_letter": "d",
+      "correct_option_text": "Cualquier número de pólipos serrados siempre que se den en colon ascendente y ciego, uno de ellos mayor o igual a 10 mm.",
+      "source_text_sha256": "017efebdec5b196e93e4597e7c8aed08d36bff463b04080f10c53bc4dc631df4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b423",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b423",
+      "question_text": "¿Cuál de estos criterios NO se incluye entre los definidos por la OMS para el diagnóstico del síndrome de la poliposis serrada?",
+      "option_a": "5 o más pólipos serrados proximales al colon sigmoide y dos de ellos mayores de 10 mm. de diámetro.",
+      "option_b": "Cualquier número de pólipos serrados proximales al sigma en individuo con antecedentes familiares de primer grado de poliposis serrada.",
+      "option_c": "Más de 20 pólipos serrados de cualquier tamaño, distribuidos a lo largo del colon.",
+      "option_d": "Cualquier número de pólipos serrados siempre que se den en colon ascendente y ciego, uno de ellos mayor o igual a 10 mm.",
+      "correct_letter": "d",
+      "correct_option_text": "Cualquier número de pólipos serrados siempre que se den en colon ascendente y ciego, uno de ellos mayor o igual a 10 mm.",
+      "source_text_sha256": "017efebdec5b196e93e4597e7c8aed08d36bff463b04080f10c53bc4dc631df4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b438",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b438",
+      "question_text": "Respecto a los marcadores serológicos del cáncer gástrico, antígeno carcinoembrionario (CEA) y antígeno carbohidrato 19.9 (Ca 19.9), señale la respuesta incorrecta:",
+      "option_a": "Presentan una alta sensibilidad en el diagnóstico del cáncer gástrico precoz.",
+      "option_b": "Están habitualmente elevados en la recurrencia del cáncer gástrico.",
+      "option_c": "Valores elevados de ambos marcadores previo a la cirugía predice riesgo de recurrencia.",
+      "option_d": "Actualmente la alternativa a estos marcadores se sitúa el foco en la medida de células tumorales y DNA circulantes mediante “biopsias líquidas”.",
+      "correct_letter": "a",
+      "correct_option_text": "Presentan una alta sensibilidad en el diagnóstico del cáncer gástrico precoz.",
+      "source_text_sha256": "f7ff9d0b60e6170242d97bf888181f1e9f6d840afe8ad651879495921a00e36b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 132,
+          "boundary_end": 133,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a los marcadores serológicos del cáncer gástrico, antígeno carcinoembrionario (CEA) y antígeno carbohidrato 19.9 (Ca 19.9),",
+          "right_context": "señale la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b438",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b438",
+      "question_text": "Respecto a los marcadores serológicos del cáncer gástrico, antígeno carcinoembrionario (CEA) y antígeno carbohidrato 19.9 (Ca 19.9), señale la respuesta incorrecta:",
+      "option_a": "Presentan una alta sensibilidad en el diagnóstico del cáncer gástrico precoz.",
+      "option_b": "Están habitualmente elevados en la recurrencia del cáncer gástrico.",
+      "option_c": "Valores elevados de ambos marcadores previo a la cirugía predice riesgo de recurrencia.",
+      "option_d": "Actualmente la alternativa a estos marcadores se sitúa el foco en la medida de células tumorales y DNA circulantes mediante “biopsias líquidas”.",
+      "correct_letter": "a",
+      "correct_option_text": "Presentan una alta sensibilidad en el diagnóstico del cáncer gástrico precoz.",
+      "source_text_sha256": "f7ff9d0b60e6170242d97bf888181f1e9f6d840afe8ad651879495921a00e36b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 132,
+          "boundary_end": 133,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Respecto a los marcadores serológicos del cáncer gástrico, antígeno carcinoembrionario (CEA) y antígeno carbohidrato 19.9 (Ca 19.9),",
+          "right_context": "señale la respuesta incorrecta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b452",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b452",
+      "question_text": "¿Cuál de las siguientes recomendaciones de la EASL es correcta en el fallo hepático fulminante?.",
+      "option_a": "No se recomienda la profilaxis venosa antitrombótica.",
+      "option_b": "Solo se recomienda transfusiones venosas si la hemoglobina es menor de 5 g/dl.",
+      "option_c": "No se recomienda el uso de plasma fresca de rutina.",
+      "option_d": "Ninguna de las respuestas es correcta.",
+      "correct_letter": "c",
+      "correct_option_text": "No se recomienda el uso de plasma fresca de rutina.",
+      "source_text_sha256": "66726bf9a6e8c43e589fffa2422eb34a1797254ceb489170b53ebe37811255a2",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes recomendaciones de la EASL es correcta en el fallo hepático fulminante?."
+        }
+      ]
+    },
+    {
+      "question_id": "b452",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b452",
+      "question_text": "¿Cuál de las siguientes recomendaciones de la EASL es correcta en el fallo hepático fulminante?.",
+      "option_a": "No se recomienda la profilaxis venosa antitrombótica.",
+      "option_b": "Solo se recomienda transfusiones venosas si la hemoglobina es menor de 5 g/dl.",
+      "option_c": "No se recomienda el uso de plasma fresca de rutina.",
+      "option_d": "Ninguna de las respuestas es correcta.",
+      "correct_letter": "c",
+      "correct_option_text": "No se recomienda el uso de plasma fresca de rutina.",
+      "source_text_sha256": "66726bf9a6e8c43e589fffa2422eb34a1797254ceb489170b53ebe37811255a2",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de las siguientes recomendaciones de la EASL es correcta en el fallo hepático fulminante?."
+        }
+      ]
+    },
+    {
+      "question_id": "b466",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b466",
+      "question_text": "Según la clasificación de la American Gastroenterological Association (AGA) de las fístulas perianales, se considera una fístula simple:",
+      "option_a": "Fístula con orificio externo único.",
+      "option_b": "Fístula extraesfinteriana.",
+      "option_c": "Con fluctuación que sugiere absceso perianal.",
+      "option_d": "Fístula rectovaginal.",
+      "correct_letter": "a",
+      "correct_option_text": "Fístula con orificio externo único.",
+      "source_text_sha256": "d93090d196cf3ccf8e09a43b48f12fbdb089868af4f2563cf7d164101597445c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b466",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b466",
+      "question_text": "Según la clasificación de la American Gastroenterological Association (AGA) de las fístulas perianales, se considera una fístula simple:",
+      "option_a": "Fístula con orificio externo único.",
+      "option_b": "Fístula extraesfinteriana.",
+      "option_c": "Con fluctuación que sugiere absceso perianal.",
+      "option_d": "Fístula rectovaginal.",
+      "correct_letter": "a",
+      "correct_option_text": "Fístula con orificio externo único.",
+      "source_text_sha256": "d93090d196cf3ccf8e09a43b48f12fbdb089868af4f2563cf7d164101597445c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b481",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b481",
+      "question_text": "La hemorragia por varices esofago-gástricas es una de las principales complicaciones de la cirrosis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?",
+      "option_a": "Cirrosis con varices esofágicas grandes.",
+      "option_b": "Cirrosis grado C 12 de Child-Pugh con presencia de varices esofágicas pequeñas.",
+      "option_c": "Cirrosis sin varices esofágicas con varices gástricas.",
+      "option_d": "Paciente EPOC con cirrosis grado A de Child-Pugh y varices pequeñas.",
+      "correct_letter": "d",
+      "correct_option_text": "Paciente EPOC con cirrosis grado A de Child-Pugh y varices pequeñas.",
+      "source_text_sha256": "2c248b61cad4959fffa1cc18aacfb2f3d330df9637c5c9e348ac2c5d033463cd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 124,
+          "boundary_end": 125,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "La hemorragia por varices esofago-gástricas es una de las principales complicaciones de la cirrosis con hipertensión portal.",
+          "right_context": "Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 267,
+          "boundary_end": 268,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "una de las principales complicaciones de la cirrosis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria.",
+          "right_context": "Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 315,
+          "boundary_end": 316,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "osis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado,",
+          "right_context": "¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 319,
+          "boundary_end": 320,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en",
+          "right_context": "qué situación no contemplarías la profilaxis primaria?"
+        }
+      ]
+    },
+    {
+      "question_id": "b481",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b481",
+      "question_text": "La hemorragia por varices esofago-gástricas es una de las principales complicaciones de la cirrosis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?",
+      "option_a": "Cirrosis con varices esofágicas grandes.",
+      "option_b": "Cirrosis grado C 12 de Child-Pugh con presencia de varices esofágicas pequeñas.",
+      "option_c": "Cirrosis sin varices esofágicas con varices gástricas.",
+      "option_d": "Paciente EPOC con cirrosis grado A de Child-Pugh y varices pequeñas.",
+      "correct_letter": "d",
+      "correct_option_text": "Paciente EPOC con cirrosis grado A de Child-Pugh y varices pequeñas.",
+      "source_text_sha256": "2c248b61cad4959fffa1cc18aacfb2f3d330df9637c5c9e348ac2c5d033463cd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 124,
+          "boundary_end": 125,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "La hemorragia por varices esofago-gástricas es una de las principales complicaciones de la cirrosis con hipertensión portal.",
+          "right_context": "Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 267,
+          "boundary_end": 268,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "una de las principales complicaciones de la cirrosis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria.",
+          "right_context": "Tras la realización de gastroscopia de cribado, ¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 315,
+          "boundary_end": 316,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "osis con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado,",
+          "right_context": "¿en qué situación no contemplarías la profilaxis primaria?"
+        },
+        {
+          "boundary_start": 319,
+          "boundary_end": 320,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " con hipertensión portal. Se recomienda en pacientes cirróticos la realización de gastroscopia de cribado para detección de varices y valoración de profilaxis primaria. Tras la realización de gastroscopia de cribado, ¿en",
+          "right_context": "qué situación no contemplarías la profilaxis primaria?"
+        }
+      ]
+    }
+  ]
+}

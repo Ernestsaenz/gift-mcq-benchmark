@@ -1,0 +1,12 @@
+section,contrast,direction,left_group,right_group,n,estimate,ci_low,ci_high,p_value,p_holm
+arm,OpenRouter A,accuracy,OpenRouter A,,1998,0.8928928928928929,0.8785710149820798,0.9057068772966141,,
+arm,OpenRouter B,accuracy,OpenRouter B,,2000,0.734,0.7141995838511511,0.7529032380212225,,
+arm,GIFT / RAG A,accuracy,GIFT / RAG A,,1932,0.9135610766045549,0.9001954898225306,0.9252853328547015,,
+paired,OpenRouter B minus A,OpenRouter B minus OpenRouter A,OpenRouter B,OpenRouter A,1998,-0.15865865865865866,-0.1827741612418628,-0.13470205307961944,1.1193505694000283e-55,
+paired,GIFT / RAG A minus OpenRouter A,GIFT / RAG A minus OpenRouter A,GIFT / RAG A,OpenRouter A,1930,0.02227979274611399,0.008808290155440414,0.03582554517133956,0.0004896357481684591,
+taxonomy,OpenRouter A,Gemini (proprietary) minus Open-weight set,Gemini (proprietary),Open-weight set,498,0.11445783132530121,0.0923694779116466,0.13721552878179386,2.973965640712669e-25,1.1895862562850677e-24
+taxonomy,OpenRouter B,Gemini (proprietary) minus Open-weight set,Gemini (proprietary),Open-weight set,500,0.21600000000000003,0.18400000000000002,0.24800000000000003,1.7670097504834439e-37,1.0602058502900664e-36
+taxonomy,GIFT / RAG A,Gemini (proprietary) minus Open-weight set,Gemini (proprietary),Open-weight set,480,0.07708333333333334,0.058333333333333334,0.0965277777777778,1.4969826537165457e-18,2.9939653074330914e-18
+capacity,OpenRouter A,High-capacity set minus Low-active-parameter set,High-capacity set,Low-active-parameter set,498,0.1214859437751004,0.0963855421686747,0.1465863453815261,7.683323618457577e-19,2.304997085537273e-18
+capacity,OpenRouter B,High-capacity set minus Low-active-parameter set,High-capacity set,Low-active-parameter set,500,0.2,0.166,0.234,1.9168699250427377e-26,9.584349625213689e-26
+capacity,GIFT / RAG A,High-capacity set minus Low-active-parameter set,High-capacity set,Low-active-parameter set,480,0.096875,0.075,0.11979166666666667,1.803929079454896e-16,1.803929079454896e-16

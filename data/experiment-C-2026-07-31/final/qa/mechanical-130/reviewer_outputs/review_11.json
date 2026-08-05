@@ -1,0 +1,769 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_11",
+  "shard_id": "11",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b193",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 933,
+      "boundary_end": 934,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The serum finding attaches to the described woman and fits as a complete sentence immediately before the final question; no source statement explicitly contradicts an increased value."
+    },
+    {
+      "question_id": "b193",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 933,
+      "boundary_end": 934,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The examination finding has the woman as its available patient referent and can precede the final question without editing. Asymptomatic status does not explicitly exclude elicited tenderness."
+    },
+    {
+      "question_id": "b379",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 1247,
+      "boundary_end": 1248,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The finding attaches to the woman followed through the subsequent colonoscopy and is grammatical directly before the directive. No explicit examination finding conflicts with it."
+    },
+    {
+      "question_id": "b432",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 736,
+      "boundary_end": 738,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The examination sentence attaches to the described woman and cleanly occupies the paragraph break before the question. Elicited tenderness is not explicitly ruled out by asymptomatic status."
+    },
+    {
+      "question_id": "b204",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "This is a standalone knowledge prompt with no patient; both offered seams split the imperative question."
+    },
+    {
+      "question_id": "b204",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "This is a standalone knowledge prompt with no patient; both offered seams split the imperative question."
+    },
+    {
+      "question_id": "b214",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "There is no case narrative or patient, and the only seam follows the opening interrogative word and breaks the question."
+    },
+    {
+      "question_id": "b214",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "There is no case narrative or patient, and the only seam follows the opening interrogative word and breaks the question."
+    },
+    {
+      "question_id": "b226",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This is an unanchored knowledge prompt and provides no offered seam for a mechanical insertion."
+    },
+    {
+      "question_id": "b226",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This is an unanchored knowledge prompt and provides no offered seam for a mechanical insertion."
+    },
+    {
+      "question_id": "b237",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_INDIVIDUAL_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The phrase describes patients generically rather than an individual case, and no insertion seam is offered."
+    },
+    {
+      "question_id": "b237",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_INDIVIDUAL_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The phrase describes patients generically rather than an individual case, and no insertion seam is offered."
+    },
+    {
+      "question_id": "b254",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The text is a general disease-property prompt without a patient narrative or offered insertion seam."
+    },
+    {
+      "question_id": "b254",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The text is a general disease-property prompt without a patient narrative or offered insertion seam."
+    },
+    {
+      "question_id": "b269",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This general statement about chronic pancreatitis supplies neither an individual patient nor a mechanical seam."
+    },
+    {
+      "question_id": "b269",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This general statement about chronic pancreatitis supplies neither an individual patient nor a mechanical seam."
+    },
+    {
+      "question_id": "b283",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This is a standalone factual prompt with no patient context and no offered seam."
+    },
+    {
+      "question_id": "b283",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This is a standalone factual prompt with no patient context and no offered seam."
+    },
+    {
+      "question_id": "b312",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The symptoms and manometric features define a disorder generically, not a patient case, and no seam is offered."
+    },
+    {
+      "question_id": "b312",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The symptoms and manometric features define a disorder generically, not a patient case, and no seam is offered."
+    },
+    {
+      "question_id": "b325",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The item asks a general drug-effect fact and has no patient narrative or offered seam."
+    },
+    {
+      "question_id": "b325",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "The item asks a general drug-effect fact and has no patient narrative or offered seam."
+    },
+    {
+      "question_id": "b343",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This legal knowledge prompt contains no patient context and offers no insertion seam."
+    },
+    {
+      "question_id": "b343",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This legal knowledge prompt contains no patient context and offers no insertion seam."
+    },
+    {
+      "question_id": "b371",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "No patient is described, and both seams interrupt the imperative phrase rather than separate narrative from stem."
+    },
+    {
+      "question_id": "b371",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "No patient is described, and both seams interrupt the imperative phrase rather than separate narrative from stem."
+    },
+    {
+      "question_id": "b385",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNATTACHED_CLINICAL_FINDING"],
+      "rationale": "Although the seam precedes the final directive, the preceding material is a legal premise with no patient to whom the serum finding could attach."
+    },
+    {
+      "question_id": "b385",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNATTACHED_CLINICAL_FINDING"],
+      "rationale": "Although the seam precedes the final directive, the preceding material is a legal premise with no patient to whom the examination finding could attach."
+    },
+    {
+      "question_id": "b401",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This statutory employment question has no clinical patient context and no offered seam."
+    },
+    {
+      "question_id": "b401",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "This statutory employment question has no clinical patient context and no offered seam."
+    },
+    {
+      "question_id": "b419",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "The item is a generic treatment prompt, and both proposed seams split the imperative construction."
+    },
+    {
+      "question_id": "b419",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "The item is a generic treatment prompt, and both proposed seams split the imperative construction."
+    },
+    {
+      "question_id": "b434",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_INDIVIDUAL_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "Patients are referenced only as a generic treatment population; there is no individual case or offered seam."
+    },
+    {
+      "question_id": "b434",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_INDIVIDUAL_PATIENT_ANCHOR", "NO_VALID_OFFERED_SEAM"],
+      "rationale": "Patients are referenced only as a generic treatment population; there is no individual case or offered seam."
+    },
+    {
+      "question_id": "b448",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 186,
+      "boundary_end": 187,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The serum finding unambiguously attaches to the woman and can be inserted as a full sentence immediately before the diagnostic question without conflicting with stated facts."
+    },
+    {
+      "question_id": "b448",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "PASS",
+      "boundary_start": 186,
+      "boundary_end": 187,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The examination finding attaches to the woman and fits directly before the diagnostic question; the source gives no examination result that contradicts it."
+    },
+    {
+      "question_id": "b477",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNATTACHED_CLINICAL_FINDING"],
+      "rationale": "The seam separates a guide reference from its directive, but there is no patient or clinical narrative to anchor the serum finding."
+    },
+    {
+      "question_id": "b477",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNATTACHED_CLINICAL_FINDING"],
+      "rationale": "The seam separates a guide reference from its directive, but there is no patient or clinical narrative to anchor the examination finding."
+    },
+    {
+      "question_id": "b495",
+      "arm": "BM",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "The only seam follows the first word of a standalone knowledge prompt, breaking its syntax, and no patient is present."
+    },
+    {
+      "question_id": "b495",
+      "arm": "AN",
+      "reviewer_id": "review_11",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_QUESTION"],
+      "rationale": "The only seam follows the first word of a standalone knowledge prompt, breaking its syntax, and no patient is present."
+    }
+  ]
+}

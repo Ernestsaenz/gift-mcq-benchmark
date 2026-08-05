@@ -1,0 +1,791 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_05",
+  "shard_id": "05",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b34",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:",
+      "option_a": "Los criterios de Praga de extensión longitudinal y circunferencial (CM).",
+      "option_b": "La presencia y la localización de algún área sospechosa así como su tamaño y morfología (clasificación de Paris).",
+      "option_c": "Presencia o no de lesiones de esofagitis por reflujo.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "ff9daeb014cd09f362957ce952a1463363581fb632519a1d0be338a93e9f26d6",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscó"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        },
+        {
+          "boundary_start": 1333,
+          "boundary_end": 1334,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ntestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta",
+          "right_context": "respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        }
+      ]
+    },
+    {
+      "question_id": "b34",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:",
+      "option_a": "Los criterios de Praga de extensión longitudinal y circunferencial (CM).",
+      "option_b": "La presencia y la localización de algún área sospechosa así como su tamaño y morfología (clasificación de Paris).",
+      "option_c": "Presencia o no de lesiones de esofagitis por reflujo.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "ff9daeb014cd09f362957ce952a1463363581fb632519a1d0be338a93e9f26d6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscó"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la respuesta correcta respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        },
+        {
+          "boundary_start": 1333,
+          "boundary_end": 1334,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ntestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta",
+          "right_context": "respecto a los hallazgos endoscópicos que se deben especificar en la descripción de un esófago de Barrett:"
+        }
+      ]
+    },
+    {
+      "question_id": "b40",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:",
+      "option_a": "Planificar una resección endoscópica de la lesión con displasia de grado alto y posteriormente una ablación con radiofrecuencia de todo el esófago de Barrett.",
+      "option_b": "Hacer directamente una ablación con radiofrecuencia ante la evidencia de displasia.",
+      "option_c": "Proponer una esofagectomía ante la evidencia de displasia de grado alto.",
+      "option_d": "Repetir la endoscopia para confirmar la displasia por parte de un patólogo experto y actuar según el resultado.",
+      "correct_letter": "a",
+      "correct_option_text": "Planificar una resección endoscópica de la lesión con displasia de grado alto y posteriormente una ablación con radiofrecuencia de todo el esófago de Barrett.",
+      "source_text_sha256": "9c1e103a071cbd3792568d3654073bf8a02793ddb904f1f59941c3a1539e3447",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento e"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b40",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:",
+      "option_a": "Planificar una resección endoscópica de la lesión con displasia de grado alto y posteriormente una ablación con radiofrecuencia de todo el esófago de Barrett.",
+      "option_b": "Hacer directamente una ablación con radiofrecuencia ante la evidencia de displasia.",
+      "option_c": "Proponer una esofagectomía ante la evidencia de displasia de grado alto.",
+      "option_d": "Repetir la endoscopia para confirmar la displasia por parte de un patólogo experto y actuar según el resultado.",
+      "correct_letter": "a",
+      "correct_option_text": "Planificar una resección endoscópica de la lesión con displasia de grado alto y posteriormente una ablación con radiofrecuencia de todo el esófago de Barrett.",
+      "source_text_sha256": "9c1e103a071cbd3792568d3654073bf8a02793ddb904f1f59941c3a1539e3447",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento e"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la respuesta correcta en la propuesta de tratamiento en referencia al caso clínico expuesto:"
+        }
+      ]
+    },
+    {
+      "question_id": "b41",
+      "arm": "BM",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas endoscópicas de resección:",
+      "option_a": "El aspecto macroscópico de la lesión visible según la clasificación de Paris se asocia al riesgo de infiltración en profundidad y al riesgo de metástasis linfáticas.",
+      "option_b": "La mucosectomía multibanda es la técnica más usada para la resección endoscópica en los países occidentales.",
+      "option_c": "La disección submucosa es la preferida para lesiones sospechosas de invasión submucosa o de más tamaño para conseguir resecciones en bloque y radicales.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "94ff87f8c102a2a61a2a4eebf65688f1f25c43aed05644906dd2aa489c9f0ef8",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas en"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas endoscópicas de resección:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la afirmación correcta en referencia a las técnicas endoscópicas de resección:"
+        }
+      ]
+    },
+    {
+      "question_id": "b41",
+      "arm": "AN",
+      "region": "Illes Balears",
+      "year": 2022,
+      "exam_part": "caso-2",
+      "cluster": "illes-balears-2022-base-caso-2",
+      "question_text": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas endoscópicas de resección:",
+      "option_a": "El aspecto macroscópico de la lesión visible según la clasificación de Paris se asocia al riesgo de infiltración en profundidad y al riesgo de metástasis linfáticas.",
+      "option_b": "La mucosectomía multibanda es la técnica más usada para la resección endoscópica en los países occidentales.",
+      "option_c": "La disección submucosa es la preferida para lesiones sospechosas de invasión submucosa o de más tamaño para conseguir resecciones en bloque y radicales.",
+      "option_d": "Todas las respuestas anteriores son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas las respuestas anteriores son correctas.",
+      "source_text_sha256": "94ff87f8c102a2a61a2a4eebf65688f1f25c43aed05644906dd2aa489c9f0ef8",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 137,
+          "boundary_end": 138,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años).",
+          "right_context": "El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentar"
+        },
+        {
+          "boundary_start": 181,
+          "boundary_end": 182,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador.",
+          "right_context": "Refiere disfagia a sólidos desde hace un mes. Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagiti"
+        },
+        {
+          "boundary_start": 227,
+          "boundary_end": 228,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 63 años remitido a la unidad de endoscopia para hacerle una gastroscopia por un reflujo de larga evolución (superior a 10 años). El paciente es obeso, hipertenso y fumador. Refiere disfagia a sólidos desde hace un mes.",
+          "right_context": "Se hace una gastroscopia que detecta a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento"
+        },
+        {
+          "boundary_start": 484,
+          "boundary_end": 485,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " a 32 cm de las arcadas dentarias la presencia de una mucosa ectópica que se extiende hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.",
+          "right_context": "Se pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas. En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se "
+        },
+        {
+          "boundary_start": 568,
+          "boundary_end": 569,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e hasta la unión esofagogástrica situada a 38 cm de las arcadas dentarias en donde se aprecian signos de esofagitis por reflujo grado C.\nSe pauta un tratamiento médico y se hace una nueva gastroscopia a las ocho semanas.",
+          "right_context": "En ella se aprecia la mucosa ectópica descrita previamente sugestiva de esófago de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la "
+        },
+        {
+          "boundary_start": 868,
+          "boundary_end": 869,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " de Barrett (C5M6) con una cicatrización completa de la esofagitis por reflujo y a 35 cm de las arcadas dentarias se aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante.",
+          "right_context": "Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de di"
+        },
+        {
+          "boundary_start": 983,
+          "boundary_end": 984,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "e aprecia un área irregular sobreelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett",
+          "right_context": "según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una e"
+        },
+        {
+          "boundary_start": 1014,
+          "boundary_end": 1015,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "reelevada de unos 8 mm (0-Is) diferente al resto de la mucosa circundante. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle.",
+          "right_context": "Los resultados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y segu"
+        },
+        {
+          "boundary_start": 1085,
+          "boundary_end": 1086,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "te. Se hacen biopsias de forma aleatoria de la lesión descrita, suponiendo que puede tratarse de un esófago de Barrett según el protocolo de Seattle. Los resultados de la lesión visible en el esófago confirman un esófago",
+          "right_context": "de Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas en"
+        },
+        {
+          "boundary_start": 1245,
+          "boundary_end": 1246,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ados de la lesión visible en el esófago confirman un esófago\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia.",
+          "right_context": "Se planifica una estrategia de tratamiento y seguimiento.\n\nSeñale la afirmación correcta en referencia a las técnicas endoscópicas de resección:"
+        },
+        {
+          "boundary_start": 1303,
+          "boundary_end": 1305,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "go\nde Barrett con metaplasia intestinal y presencia de focos de displasia de grado alto y las biopsias aleatorias confirmaban el esófago de Barrett sin displasia. Se planifica una estrategia de tratamiento y seguimiento.",
+          "right_context": "Señale la afirmación correcta en referencia a las técnicas endoscópicas de resección:"
+        }
+      ]
+    },
+    {
+      "question_id": "b488",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b488",
+      "question_text": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?",
+      "option_a": "Colocación de prótesis biliar o pancreática.",
+      "option_b": "Polipectomía endoscópica convencional.",
+      "option_c": "Ablación con radiofrecuencia a nivel esofágico o gástrico.",
+      "option_d": "Colocación de gastrostomía endoscópica percutánea.",
+      "correct_letter": "a",
+      "correct_option_text": "Colocación de prótesis biliar o pancreática.",
+      "source_text_sha256": "21076bfa98cbf604179a84ce1dbf63180a5467a067f7c0da5a9bec4a9d7a806b",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?"
+        },
+        {
+          "boundary_start": 88,
+          "boundary_end": 89,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos.",
+          "right_context": "¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?"
+        },
+        {
+          "boundary_start": 94,
+          "boundary_end": 95,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál",
+          "right_context": "de los siguientes es considerado procedimiento de bajo riesgo?"
+        }
+      ]
+    },
+    {
+      "question_id": "b488",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b488",
+      "question_text": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?",
+      "option_a": "Colocación de prótesis biliar o pancreática.",
+      "option_b": "Polipectomía endoscópica convencional.",
+      "option_c": "Ablación con radiofrecuencia a nivel esofágico o gástrico.",
+      "option_d": "Colocación de gastrostomía endoscópica percutánea.",
+      "correct_letter": "a",
+      "correct_option_text": "Colocación de prótesis biliar o pancreática.",
+      "source_text_sha256": "21076bfa98cbf604179a84ce1dbf63180a5467a067f7c0da5a9bec4a9d7a806b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con",
+          "right_context": "respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?"
+        },
+        {
+          "boundary_start": 88,
+          "boundary_end": 89,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos.",
+          "right_context": "¿Cuál de los siguientes es considerado procedimiento de bajo riesgo?"
+        },
+        {
+          "boundary_start": 94,
+          "boundary_end": 95,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Con respecto a la estratificación del riesgo hemorrágico en procedimientos endoscópicos. ¿Cuál",
+          "right_context": "de los siguientes es considerado procedimiento de bajo riesgo?"
+        }
+      ]
+    }
+  ]
+}

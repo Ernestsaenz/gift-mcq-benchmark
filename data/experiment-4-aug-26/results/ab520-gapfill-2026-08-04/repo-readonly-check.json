@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-08-04T14:30:43.068488+00:00",
+  "head": "9660b9a503cf68c45b9a808f38ba597b41769c16",
+  "tracked_unstaged_changes": [],
+  "tracked_staged_changes": [],
+  "tracked_repository_unchanged": true,
+  "status_short": [
+    "?? ab520-output/",
+    "?? data/experiment-4-aug-26/",
+    "?? data/experiment-C-2026-07-31/final/outputs/expC-anatomy-mechanical-100-plus-30-reserve-control-vs-alteration.xlsx",
+    "?? data/experiment-C-2026-07-31/final/outputs/expC-biomarker-mechanical-100-plus-30-reserve-control-vs-alteration.xlsx",
+    "?? data/experiment-C-2026-07-31/final/outputs/mechanical-130-manifest.json",
+    "?? data/experiment-C-2026-07-31/final/qa/mechanical-130/",
+    "?? data/experiment-C-2026-07-31/final/tests/",
+    "?? data/experiment-C-2026-07-31/final/tools/build_mechanical_130_workbooks.py",
+    "?? data/experiment-C-2026-07-31/final/tools/mechanical_130_pipeline.py"
+  ],
+  "note": "The canonical August result tree is under data/experiment-4-aug-26/results; unrelated untracked entries pre-existed this execution."
+}

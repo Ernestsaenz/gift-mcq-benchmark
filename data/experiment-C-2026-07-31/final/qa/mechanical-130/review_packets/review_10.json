@@ -1,0 +1,2368 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_10",
+  "shard_id": "10",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b178",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?",
+      "option_a": "Inicio de fármacos vasoactivos (somatostatina/terlipresina)",
+      "option_b": "Profilaxis antibiótica con cefotaxima 1mg/8h",
+      "option_c": "Reposición de la volemia con cristaloides (o coloides) en caso de inestabilidad hemodinámica",
+      "option_d": "El paciente sería candidatos a TIPS preventivo",
+      "correct_letter": "b",
+      "correct_option_text": "Profilaxis antibiótica con cefotaxima 1mg/8h",
+      "source_text_sha256": "6f53fd305737515d7468428942568bac016728803e3082830ff06623aad933f3",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaci"
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "En cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1130,
+          "boundary_end": 1131,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente,",
+          "right_context": "¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1136,
+          "boundary_end": 1137,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "es. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál",
+          "right_context": "de las siguientes recomendaciones sería INCORRECTA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b178",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?",
+      "option_a": "Inicio de fármacos vasoactivos (somatostatina/terlipresina)",
+      "option_b": "Profilaxis antibiótica con cefotaxima 1mg/8h",
+      "option_c": "Reposición de la volemia con cristaloides (o coloides) en caso de inestabilidad hemodinámica",
+      "option_d": "El paciente sería candidatos a TIPS preventivo",
+      "correct_letter": "b",
+      "correct_option_text": "Profilaxis antibiótica con cefotaxima 1mg/8h",
+      "source_text_sha256": "6f53fd305737515d7468428942568bac016728803e3082830ff06623aad933f3",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaci"
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "En cuanto al manejo inicial del paciente, ¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1130,
+          "boundary_end": 1131,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": " focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente,",
+          "right_context": "¿cuál de las siguientes recomendaciones sería INCORRECTA?"
+        },
+        {
+          "boundary_start": 1136,
+          "boundary_end": 1137,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "es. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nEn cuanto al manejo inicial del paciente, ¿cuál",
+          "right_context": "de las siguientes recomendaciones sería INCORRECTA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b179",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):",
+      "option_a": "Presión arterial pulmonar media 50 mmHg",
+      "option_b": "Insuficiencia tricuspídea grave",
+      "option_c": "Infección sistémica activa o sepsis",
+      "option_d": "Insuficiencia renal estadio 2",
+      "correct_letter": "d",
+      "correct_option_text": "Insuficiencia renal estadio 2",
+      "source_text_sha256": "70b299877aee8f3a4e246d13517a6cf149e6c1f0033491c2b41d94861dd3d491",
+      "assignment": {
+        "variant_id": "BM02",
+        "fabricated_entity": "colangiomirina-8",
+        "inserted_sentence": "La colangiomirina-8 plasmática se encuentra por encima del intervalo de referencia."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugu"
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shu"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "NO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        }
+      ]
+    },
+    {
+      "question_id": "b179",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):",
+      "option_a": "Presión arterial pulmonar media 50 mmHg",
+      "option_b": "Insuficiencia tricuspídea grave",
+      "option_c": "Infección sistémica activa o sepsis",
+      "option_d": "Insuficiencia renal estadio 2",
+      "correct_letter": "d",
+      "correct_option_text": "Insuficiencia renal estadio 2",
+      "source_text_sha256": "70b299877aee8f3a4e246d13517a6cf149e6c1f0033491c2b41d94861dd3d491",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugu"
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shu"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nNO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "NO se considera una contraindicación para la colocación de un TIPS (transjugular intrahepatic portosystemic shunt):"
+        }
+      ]
+    },
+    {
+      "question_id": "b180",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?",
+      "option_a": "Ligadura endoscópica con bandas y bisoprolol",
+      "option_b": "Ligadura endoscópica con bandas y carvedilol",
+      "option_c": "Inyección de cianoacrilato y bisoprolol",
+      "option_d": "Inyección de cianoacrilato y carvedilol",
+      "correct_letter": "b",
+      "correct_option_text": "Ligadura endoscópica con bandas y carvedilol",
+      "source_text_sha256": "d79904d558d9f7dd0acbaeb084501b3cb66d9b008451fe87178ad43c09d612aa",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado "
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la pr"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia "
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "Teniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1194,
+          "boundary_end": 1195,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "lenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial.",
+          "right_context": "¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1200,
+          "boundary_end": 1201,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "galia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál",
+          "right_context": "de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1234,
+          "boundary_end": 1235,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones",
+          "right_context": "respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b180",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?",
+      "option_a": "Ligadura endoscópica con bandas y bisoprolol",
+      "option_b": "Ligadura endoscópica con bandas y carvedilol",
+      "option_c": "Inyección de cianoacrilato y bisoprolol",
+      "option_d": "Inyección de cianoacrilato y carvedilol",
+      "correct_letter": "b",
+      "correct_option_text": "Ligadura endoscópica con bandas y carvedilol",
+      "source_text_sha256": "d79904d558d9f7dd0acbaeb084501b3cb66d9b008451fe87178ad43c09d612aa",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado "
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la pr"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia "
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "Teniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1194,
+          "boundary_end": 1195,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "lenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial.",
+          "right_context": "¿Cuál de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1200,
+          "boundary_end": 1201,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "galia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál",
+          "right_context": "de las siguientes recomendaciones respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        },
+        {
+          "boundary_start": 1234,
+          "boundary_end": 1235,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nTeniendo en cuenta el seguimiento ambulatorio de este paciente, una vez dado de alta del ingreso inicial. ¿Cuál de las siguientes recomendaciones",
+          "right_context": "respecto a la prevención secundaria de la hemorragia varicosa es CORRECTA?"
+        }
+      ]
+    },
+    {
+      "question_id": "b181",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "caso-clinico-3",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?",
+      "option_a": "Sofosbuvir+velpatasvir+ribavirina 24 semanas",
+      "option_b": "Sofosbuvir+velpatasvir 12 semanas",
+      "option_c": "Glecaprevir+pibrentasvir 16 semanas",
+      "option_d": "Grazoprevir+elbasvir 16 semanas",
+      "correct_letter": "b",
+      "correct_option_text": "Sofosbuvir+velpatasvir 12 semanas",
+      "source_text_sha256": "b0b7423fd675277ad550b3c058bb564327df7cf819416269f01ecf06242b0e46",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente"
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control prese"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina "
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué "
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "A los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la má"
+        },
+        {
+          "boundary_start": 1218,
+          "boundary_end": 1219,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía.",
+          "right_context": "En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?"
+        },
+        {
+          "boundary_start": 1255,
+          "boundary_end": 1256,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "pacio esplenorrenal. No líquido libre intraabdominal\n\nA los dos meses del ingreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta:",
+          "right_context": "bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml. ¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?"
+        },
+        {
+          "boundary_start": 1330,
+          "boundary_end": 1331,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "ngreso es valorado en consulta encontrándose el paciente asintomático, sin ascitis, edemas ni encefalopatía. En la analítica de control presenta: bilirrubina 1,2 mg/dL, albúmina 4,1 g/dL e INR 1,2, RNA-VHC 2600000 UI/ml.",
+          "right_context": "¿Qué opción de tratamiento sería la más adecuada para la infección crónica por VHC?"
+        }
+      ]
+    },
+    {
+      "question_id": "b186",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "reserva-casos-clinicos",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál de las siguientes actuaciones sería INCORRECTA?:",
+      "option_a": "Segundo intento de hemostasia endoscópica",
+      "option_b": "Trasfusión de 1 gramo de fibrinógeno",
+      "option_c": "Sería candidato a un TIPS de rescate",
+      "option_d": "El resangrado variceal tras un tratamiento endoscópico inicial puede ocurrir en el 10 -20% de los pacientes",
+      "correct_letter": "b",
+      "correct_option_text": "Trasfusión de 1 gramo de fibrinógeno",
+      "source_text_sha256": "d45b353d4d264a1af617d500b0b1d80af34a2132278c77d1ab398e7b9e1f248b",
+      "assignment": {
+        "variant_id": "BM04",
+        "fabricated_entity": "pancreocerina-K4",
+        "inserted_sentence": "La pancreocerina-K4 sérica está elevada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia "
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado vari"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglob"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, act"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "Pregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrin"
+        },
+        {
+          "boundary_start": 1131,
+          "boundary_end": 1132,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3:",
+          "right_context": "A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirru"
+        },
+        {
+          "boundary_start": 1256,
+          "boundary_end": 1257,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "acio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal.",
+          "right_context": "Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+        },
+        {
+          "boundary_start": 1433,
+          "boundary_end": 1434,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL,",
+          "right_context": "¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+        },
+        {
+          "boundary_start": 1439,
+          "boundary_end": 1440,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "mesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál",
+          "right_context": "de las siguientes actuaciones sería INCORRECTA?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b186",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "reserva-casos-clinicos",
+      "cluster": "navarra-2022-case-03",
+      "question_text": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál de las siguientes actuaciones sería INCORRECTA?:",
+      "option_a": "Segundo intento de hemostasia endoscópica",
+      "option_b": "Trasfusión de 1 gramo de fibrinógeno",
+      "option_c": "Sería candidato a un TIPS de rescate",
+      "option_d": "El resangrado variceal tras un tratamiento endoscópico inicial puede ocurrir en el 10 -20% de los pacientes",
+      "correct_letter": "b",
+      "correct_option_text": "Trasfusión de 1 gramo de fibrinógeno",
+      "source_text_sha256": "d45b353d4d264a1af617d500b0b1d80af34a2132278c77d1ab398e7b9e1f248b",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 144,
+          "boundary_end": 145,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Varón de 65 años con antecedente de cirrosis hepática por VHC genotipo 3 (nunca tratado), sin otras comorbilidades, que ingresa por hematemesis.",
+          "right_context": "Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% "
+        },
+        {
+          "boundary_start": 301,
+          "boundary_end": 302,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ratado), sin otras comorbilidades, que ingresa por hematemesis. Se realiza gastroscopia visualizándose varices esofágicas grandes, una de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica.",
+          "right_context": "El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1"
+        },
+        {
+          "boundary_start": 434,
+          "boundary_end": 435,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "a de ellas con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.",
+          "right_context": "Analítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total"
+        },
+        {
+          "boundary_start": 445,
+          "boundary_end": 446,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "con sangrado activo y dos de ellas con extensión a curvadura menor gástrica. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica:",
+          "right_context": "Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, "
+        },
+        {
+          "boundary_start": 519,
+          "boundary_end": 520,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "a. El paciente no presenta ascitis ni fiebre y desde el punto de vista hemodinámico tiene TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%.",
+          "right_context": "Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aument"
+        },
+        {
+          "boundary_start": 606,
+          "boundary_end": 607,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ne TA 100/60 mmHg, FC 75lpm, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L.",
+          "right_context": "AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. N"
+        },
+        {
+          "boundary_start": 632,
+          "boundary_end": 633,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "m, SatO2 94% FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.",
+          "right_context": "Serologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones fo"
+        },
+        {
+          "boundary_start": 644,
+          "boundary_end": 645,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": " FiO2 21%.\nAnalítica: Hemoglobina 8,5 g/dL, plaquetas 78 x 109/L, actividad de protrombina 52%. Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías:",
+          "right_context": "IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena "
+        },
+        {
+          "boundary_start": 739,
+          "boundary_end": 740,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": " Creatinina 0,98 mg/dL, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.",
+          "right_context": "Ecografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación "
+        },
+        {
+          "boundary_start": 760,
+          "boundary_end": 761,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "L, Sodio 129 mmol/L, bilirrubina total 3,1 mg/dL, albúmina 32 g/L. AST 125 U/L, ALT 101 U/L.\nSerologías: IgM e IgG VHA negativo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal:",
+          "right_context": "Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio "
+        },
+        {
+          "boundary_start": 885,
+          "boundary_end": 886,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "vo, HBsAg negativo, anti-HBs positivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica.",
+          "right_context": "No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia "
+        },
+        {
+          "boundary_start": 919,
+          "boundary_end": 920,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ivo, HBcAc total positivo, VIH negativo.\nEcografía abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales.",
+          "right_context": "Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo"
+        },
+        {
+          "boundary_start": 970,
+          "boundary_end": 971,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "abdominal: Hígado con contornos nodulares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto.",
+          "right_context": "Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado vari"
+        },
+        {
+          "boundary_start": 1007,
+          "boundary_end": 1008,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "ares y aumento de la ecogenicidad hepática con aspecto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm.",
+          "right_context": "Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglob"
+        },
+        {
+          "boundary_start": 1055,
+          "boundary_end": 1056,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "specto granular, sugestivo de hepatopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal.",
+          "right_context": "No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, act"
+        },
+        {
+          "boundary_start": 1087,
+          "boundary_end": 1089,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "patopatía crónica. No se objetivan lesiones focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal",
+          "right_context": "Pregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrin"
+        },
+        {
+          "boundary_start": 1131,
+          "boundary_end": 1132,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "focales. Vena porta de calibre normal con flujo hepatópeto. Esplenomegalia homogénea de 17,5 cm. Circulación colateral en espacio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3:",
+          "right_context": "A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirru"
+        },
+        {
+          "boundary_start": 1256,
+          "boundary_end": 1257,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "acio esplenorrenal. No líquido libre intraabdominal\n\nPregunta de reserva Caso Clínico número 3: A las 72 horas de la gastroscopia inicial el paciente presenta nuevo episodio de hematemesis atribuible a sangrado variceal.",
+          "right_context": "Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+        },
+        {
+          "boundary_start": 1433,
+          "boundary_end": 1434,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "hematemesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL,",
+          "right_context": "¿cuál de las siguientes actuaciones sería INCORRECTA?:"
+        },
+        {
+          "boundary_start": 1439,
+          "boundary_end": 1440,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "mesis atribuible a sangrado variceal. Analíticamente destaca hemoglobina de 7,5g/dL, plaquetas 50 x 109/L, INR 2, actividad de protrombina 33%, fibrinógeno 200mg/dL, creatinina 1 mg/dL, bilirrubina total 2,8 mg/dL, ¿cuál",
+          "right_context": "de las siguientes actuaciones sería INCORRECTA?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b253",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b253",
+      "question_text": "Los siguientes factores incrementan el riesgo de pancreatitis postCPRE EXCEPTO:",
+      "option_a": "Pancreatitis crónica.",
+      "option_b": "Sexo femenino.",
+      "option_c": "Vía biliar no dilatada.",
+      "option_d": "Disfunción del esfínter de Oddi.",
+      "correct_letter": "a",
+      "correct_option_text": "Pancreatitis crónica.",
+      "source_text_sha256": "fcb5260a17510d7c5b0d5f94fdae1e0b952e6a2490fc9858aac651f6d51f81d1",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b253",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b253",
+      "question_text": "Los siguientes factores incrementan el riesgo de pancreatitis postCPRE EXCEPTO:",
+      "option_a": "Pancreatitis crónica.",
+      "option_b": "Sexo femenino.",
+      "option_c": "Vía biliar no dilatada.",
+      "option_d": "Disfunción del esfínter de Oddi.",
+      "correct_letter": "a",
+      "correct_option_text": "Pancreatitis crónica.",
+      "source_text_sha256": "fcb5260a17510d7c5b0d5f94fdae1e0b952e6a2490fc9858aac651f6d51f81d1",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b268",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b268",
+      "question_text": "Uno de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II",
+      "option_a": "Tres o más individuos afectados de CCR o neoplasia relacionada (endometrio, intestino delgado, uréter o pelvis renal), uno de ellos familiar de primer grado de los otros dos.",
+      "option_b": "Afectación de 2 generaciones consecutivas.",
+      "option_c": "Como mínimo un caso diagnosticado antes de los 40 años.",
+      "option_d": "Exclusión del diagnóstico de poliposis adenomatosa familiar.",
+      "correct_letter": "c",
+      "correct_option_text": "Como mínimo un caso diagnosticado antes de los 40 años.",
+      "source_text_sha256": "a65f69e0886b6a3715f85156f55f3d953b4b8587b25857f49c80a47c12343b2e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II"
+        }
+      ]
+    },
+    {
+      "question_id": "b268",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b268",
+      "question_text": "Uno de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II",
+      "option_a": "Tres o más individuos afectados de CCR o neoplasia relacionada (endometrio, intestino delgado, uréter o pelvis renal), uno de ellos familiar de primer grado de los otros dos.",
+      "option_b": "Afectación de 2 generaciones consecutivas.",
+      "option_c": "Como mínimo un caso diagnosticado antes de los 40 años.",
+      "option_d": "Exclusión del diagnóstico de poliposis adenomatosa familiar.",
+      "correct_letter": "c",
+      "correct_option_text": "Como mínimo un caso diagnosticado antes de los 40 años.",
+      "source_text_sha256": "a65f69e0886b6a3715f85156f55f3d953b4b8587b25857f49c80a47c12343b2e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes Criterios del Síndrome de Lynch no se incluye en los Criterios de Ámsterdam II"
+        }
+      ]
+    },
+    {
+      "question_id": "b282",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b282",
+      "question_text": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde según la clasificación de Saint James a un grado:",
+      "option_a": "I",
+      "option_b": "II",
+      "option_c": "III",
+      "option_d": "IV",
+      "correct_letter": "d",
+      "correct_option_text": "IV",
+      "source_text_sha256": "749d493a8676ea39ae8df12a40d328ea620959627a99c59defafeb5595953029",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 90,
+          "boundary_end": 91,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde",
+          "right_context": "según la clasificación de Saint James a un grado:"
+        }
+      ]
+    },
+    {
+      "question_id": "b282",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "reserva",
+      "cluster": "solo:b282",
+      "question_text": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde según la clasificación de Saint James a un grado:",
+      "option_a": "I",
+      "option_b": "II",
+      "option_c": "III",
+      "option_d": "IV",
+      "correct_letter": "d",
+      "correct_option_text": "IV",
+      "source_text_sha256": "749d493a8676ea39ae8df12a40d328ea620959627a99c59defafeb5595953029",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 90,
+          "boundary_end": 91,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una fístula transesfinteriana con trayecto secundario en la fosa isquiorrectal corresponde",
+          "right_context": "según la clasificación de Saint James a un grado:"
+        }
+      ]
+    },
+    {
+      "question_id": "b298",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b298",
+      "question_text": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico: ulceraciones longitudinales superficiales, no circunferenciales. ¿Cuál es la correcta?",
+      "option_a": "Se trata de un Zargar 2A.",
+      "option_b": "Es necesario realizar un TC para valorar la gravedad.",
+      "option_c": "Tiene riesgo elevado de estenosis.",
+      "option_d": "Debe permanecer ingresado con nutrición enteral.",
+      "correct_letter": "a",
+      "correct_option_text": "Se trata de un Zargar 2A.",
+      "source_text_sha256": "782a0a1d8282330589351bf73b6a6700f19451c373701188e2a744879701bee5",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 91,
+          "boundary_end": 92,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico:",
+          "right_context": "ulceraciones longitudinales superficiales, no circunferenciales. ¿Cuál es la correcta?"
+        },
+        {
+          "boundary_start": 156,
+          "boundary_end": 157,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico: ulceraciones longitudinales superficiales, no circunferenciales.",
+          "right_context": "¿Cuál es la correcta?"
+        }
+      ]
+    },
+    {
+      "question_id": "b298",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b298",
+      "question_text": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico: ulceraciones longitudinales superficiales, no circunferenciales. ¿Cuál es la correcta?",
+      "option_a": "Se trata de un Zargar 2A.",
+      "option_b": "Es necesario realizar un TC para valorar la gravedad.",
+      "option_c": "Tiene riesgo elevado de estenosis.",
+      "option_d": "Debe permanecer ingresado con nutrición enteral.",
+      "correct_letter": "a",
+      "correct_option_text": "Se trata de un Zargar 2A.",
+      "source_text_sha256": "782a0a1d8282330589351bf73b6a6700f19451c373701188e2a744879701bee5",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 91,
+          "boundary_end": 92,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico:",
+          "right_context": "ulceraciones longitudinales superficiales, no circunferenciales. ¿Cuál es la correcta?"
+        },
+        {
+          "boundary_start": 156,
+          "boundary_end": 157,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En un paciente, tras ingesta intencionada de cáusticos, presenta en el estudio endoscópico: ulceraciones longitudinales superficiales, no circunferenciales.",
+          "right_context": "¿Cuál es la correcta?"
+        }
+      ]
+    },
+    {
+      "question_id": "b311",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b311",
+      "question_text": "Un cuadro de diarrea aguda con inicio de síntomas en menos de 6 horas tras la exposición al alimento causal, acompañado de náuseas y vómitos, es típico de:",
+      "option_a": "E coli enterotóxico",
+      "option_b": "Estafilococo aureus",
+      "option_c": "Shigella",
+      "option_d": "Salmonella",
+      "correct_letter": "b",
+      "correct_option_text": "Estafilococo aureus",
+      "source_text_sha256": "1338dacae9df98b4a94abdff23f999e316c81b96aed4ac72ee523df819f045bd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b311",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b311",
+      "question_text": "Un cuadro de diarrea aguda con inicio de síntomas en menos de 6 horas tras la exposición al alimento causal, acompañado de náuseas y vómitos, es típico de:",
+      "option_a": "E coli enterotóxico",
+      "option_b": "Estafilococo aureus",
+      "option_c": "Shigella",
+      "option_d": "Salmonella",
+      "correct_letter": "b",
+      "correct_option_text": "Estafilococo aureus",
+      "source_text_sha256": "1338dacae9df98b4a94abdff23f999e316c81b96aed4ac72ee523df819f045bd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b324",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b324",
+      "question_text": "Un fármaco utilizado en la enfermedad de Wilson por su acción quelante es:",
+      "option_a": "D penicilamina.",
+      "option_b": "Eritromicina.",
+      "option_c": "Sulfasalazina.",
+      "option_d": "Zinc.",
+      "correct_letter": "a",
+      "correct_option_text": "D penicilamina.",
+      "source_text_sha256": "b99c75c8877a9ae31a87eaca28721cdd2caaa2d3005c04e6426c869a63127919",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b324",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b324",
+      "question_text": "Un fármaco utilizado en la enfermedad de Wilson por su acción quelante es:",
+      "option_a": "D penicilamina.",
+      "option_b": "Eritromicina.",
+      "option_c": "Sulfasalazina.",
+      "option_d": "Zinc.",
+      "correct_letter": "a",
+      "correct_option_text": "D penicilamina.",
+      "source_text_sha256": "b99c75c8877a9ae31a87eaca28721cdd2caaa2d3005c04e6426c869a63127919",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b341",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b341",
+      "question_text": "De conformidad con el artículo 57 de la Ley 14/1986 de 25 abril, General de Sanidad, las Áreas de Salud, contarán, como mínimo, con los siguientes órganos",
+      "option_a": "El Consejo de Ordenación de Área.",
+      "option_b": "El Consejo de Coordinación de Área.",
+      "option_c": "El Consejo de Salud de Área, el Consejo de Dirección de Área y el Gerente de Área.",
+      "option_d": "El Consejo Interterritorial de Área.",
+      "correct_letter": "c",
+      "correct_option_text": "El Consejo de Salud de Área, el Consejo de Dirección de Área y el Gerente de Área.",
+      "source_text_sha256": "5a757667ebecb78d42418390d40aa58c20cd58b9750923c325cfc1bfc378a215",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b341",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b341",
+      "question_text": "De conformidad con el artículo 57 de la Ley 14/1986 de 25 abril, General de Sanidad, las Áreas de Salud, contarán, como mínimo, con los siguientes órganos",
+      "option_a": "El Consejo de Ordenación de Área.",
+      "option_b": "El Consejo de Coordinación de Área.",
+      "option_c": "El Consejo de Salud de Área, el Consejo de Dirección de Área y el Gerente de Área.",
+      "option_d": "El Consejo Interterritorial de Área.",
+      "correct_letter": "c",
+      "correct_option_text": "El Consejo de Salud de Área, el Consejo de Dirección de Área y el Gerente de Área.",
+      "source_text_sha256": "5a757667ebecb78d42418390d40aa58c20cd58b9750923c325cfc1bfc378a215",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b356",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b356",
+      "question_text": "En el contexto de un episodio de diverticulitis complicada (señale la respuesta incorrecta):",
+      "option_a": "La fístula más frecuente es la colovaginal.",
+      "option_b": "La diverticulitis recurrente puede ocasionar una estenosis crónica del colon.",
+      "option_c": "Un 15% de los pacientes desarrollarán absceso pericolónico o intramesentérico.",
+      "option_d": "Abscesos de menos de 3 - 4 cm se pueden resolver sólo con tratamiento antibiótico.",
+      "correct_letter": "a",
+      "correct_option_text": "La fístula más frecuente es la colovaginal.",
+      "source_text_sha256": "299088e01ae166150246852753338519dd623a12e01e5b7ce02d4c329942664c",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b356",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b356",
+      "question_text": "En el contexto de un episodio de diverticulitis complicada (señale la respuesta incorrecta):",
+      "option_a": "La fístula más frecuente es la colovaginal.",
+      "option_b": "La diverticulitis recurrente puede ocasionar una estenosis crónica del colon.",
+      "option_c": "Un 15% de los pacientes desarrollarán absceso pericolónico o intramesentérico.",
+      "option_d": "Abscesos de menos de 3 - 4 cm se pueden resolver sólo con tratamiento antibiótico.",
+      "correct_letter": "a",
+      "correct_option_text": "La fístula más frecuente es la colovaginal.",
+      "source_text_sha256": "299088e01ae166150246852753338519dd623a12e01e5b7ce02d4c329942664c",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b370",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b370",
+      "question_text": "Una de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria",
+      "option_a": "El mejor predictor de fibrosis en la Hemocromatosis hereditaria es el nivel de ferritina en sangre.",
+      "option_b": "Los pacientes únicamente heterocigotos en la mutación C282Y tienen riesgo de sobrecarga férrica.",
+      "option_c": "La prueba de cribado de elección es la saturación de transferrina en sangre.",
+      "option_d": "El fibroscán ® no está validado en el diagnóstico de fibrosis hepática en esta enfermedad.",
+      "correct_letter": "b",
+      "correct_option_text": "Los pacientes únicamente heterocigotos en la mutación C282Y tienen riesgo de sobrecarga férrica.",
+      "source_text_sha256": "46103fcece532ce424eb7325446f8fcbee87d5f2f7c98635d29e216d05dde99e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria"
+        },
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una de las siguientes afirmaciones no es correcta",
+          "right_context": "en relación con la hemocromatosis hereditaria"
+        }
+      ]
+    },
+    {
+      "question_id": "b370",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b370",
+      "question_text": "Una de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria",
+      "option_a": "El mejor predictor de fibrosis en la Hemocromatosis hereditaria es el nivel de ferritina en sangre.",
+      "option_b": "Los pacientes únicamente heterocigotos en la mutación C282Y tienen riesgo de sobrecarga férrica.",
+      "option_c": "La prueba de cribado de elección es la saturación de transferrina en sangre.",
+      "option_d": "El fibroscán ® no está validado en el diagnóstico de fibrosis hepática en esta enfermedad.",
+      "correct_letter": "b",
+      "correct_option_text": "Los pacientes únicamente heterocigotos en la mutación C282Y tienen riesgo de sobrecarga férrica.",
+      "source_text_sha256": "46103fcece532ce424eb7325446f8fcbee87d5f2f7c98635d29e216d05dde99e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una",
+          "right_context": "de las siguientes afirmaciones no es correcta en relación con la hemocromatosis hereditaria"
+        },
+        {
+          "boundary_start": 49,
+          "boundary_end": 50,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Una de las siguientes afirmaciones no es correcta",
+          "right_context": "en relación con la hemocromatosis hereditaria"
+        }
+      ]
+    },
+    {
+      "question_id": "b384",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b384",
+      "question_text": "En relación a la sensibilidad al gluten no celiaca es correcto:",
+      "option_a": "Los síntomas mejoran tras la retirada del glutén de la dieta durante 6 meses y no suelen recurrir tras la reintroducción",
+      "option_b": "Hay que excluir la alergia a la avena.",
+      "option_c": "Los síntomas siempre aparecen inmediatamente tras la ingesta.",
+      "option_d": "Puede presentarse con síntomas similares al síndrome de intestino irritable o síntomas extraintestinales.",
+      "correct_letter": "d",
+      "correct_option_text": "Puede presentarse con síntomas similares al síndrome de intestino irritable o síntomas extraintestinales.",
+      "source_text_sha256": "ba17e907726a6352a7e8dd72d175832ecf7ed19bb64ef27b6b7801bc85064340",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b384",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b384",
+      "question_text": "En relación a la sensibilidad al gluten no celiaca es correcto:",
+      "option_a": "Los síntomas mejoran tras la retirada del glutén de la dieta durante 6 meses y no suelen recurrir tras la reintroducción",
+      "option_b": "Hay que excluir la alergia a la avena.",
+      "option_c": "Los síntomas siempre aparecen inmediatamente tras la ingesta.",
+      "option_d": "Puede presentarse con síntomas similares al síndrome de intestino irritable o síntomas extraintestinales.",
+      "correct_letter": "d",
+      "correct_option_text": "Puede presentarse con síntomas similares al síndrome de intestino irritable o síntomas extraintestinales.",
+      "source_text_sha256": "ba17e907726a6352a7e8dd72d175832ecf7ed19bb64ef27b6b7801bc85064340",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b418",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b418",
+      "question_text": "Para el diagnóstico de una pancreatitis crónica disponemos de técnicas morfológicas y técnicas de función pancreática, señale la respuesta correcta:",
+      "option_a": "La colangiopancreatografía retrógrada endoscópica (CPRE) es la técnica morfológica de elección por su alta sensibilidad.",
+      "option_b": "La disminución de la elastasa fecal es un marcador muy precoz de pancreatitis crónica.",
+      "option_c": "La ecoendoscopia es la técnica más sensible para el diagnóstico precoz.",
+      "option_d": "La cuantificación de grasa fecal en heces de 72 horas es muy útil por su fácil realización y por no existir alternativas a la misma.",
+      "correct_letter": "c",
+      "correct_option_text": "La ecoendoscopia es la técnica más sensible para el diagnóstico precoz.",
+      "source_text_sha256": "95ed6949d8e81f54d3940a047309ac2bd57d61b054a387190aad82ccb1738e69",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 118,
+          "boundary_end": 119,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Para el diagnóstico de una pancreatitis crónica disponemos de técnicas morfológicas y técnicas de función pancreática,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b418",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b418",
+      "question_text": "Para el diagnóstico de una pancreatitis crónica disponemos de técnicas morfológicas y técnicas de función pancreática, señale la respuesta correcta:",
+      "option_a": "La colangiopancreatografía retrógrada endoscópica (CPRE) es la técnica morfológica de elección por su alta sensibilidad.",
+      "option_b": "La disminución de la elastasa fecal es un marcador muy precoz de pancreatitis crónica.",
+      "option_c": "La ecoendoscopia es la técnica más sensible para el diagnóstico precoz.",
+      "option_d": "La cuantificación de grasa fecal en heces de 72 horas es muy útil por su fácil realización y por no existir alternativas a la misma.",
+      "correct_letter": "c",
+      "correct_option_text": "La ecoendoscopia es la técnica más sensible para el diagnóstico precoz.",
+      "source_text_sha256": "95ed6949d8e81f54d3940a047309ac2bd57d61b054a387190aad82ccb1738e69",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 118,
+          "boundary_end": 119,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Para el diagnóstico de una pancreatitis crónica disponemos de técnicas morfológicas y técnicas de función pancreática,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b433",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b433",
+      "question_text": "Según el artículo 10.1 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, dentro de la información que el facultativo debe proporcionar al paciente, antes de recabar el consentimiento escrito, no se encuentra:",
+      "option_a": "Las contraindicaciones",
+      "option_b": "Los riesgos relacionados con las circunstancias personales o profesionales del paciente",
+      "option_c": "La posibilidad de dictar instrucciones previas.",
+      "option_d": "los riesgos probables en condiciones normales directamente relacionados con el tipo de intervención",
+      "correct_letter": "c",
+      "correct_option_text": "La posibilidad de dictar instrucciones previas.",
+      "source_text_sha256": "d0ad953273fe09f1a4def330482506e563cd11a927b2e1a2b86f9e0755a018ea",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b433",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b433",
+      "question_text": "Según el artículo 10.1 de la ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información sanitaria, dentro de la información que el facultativo debe proporcionar al paciente, antes de recabar el consentimiento escrito, no se encuentra:",
+      "option_a": "Las contraindicaciones",
+      "option_b": "Los riesgos relacionados con las circunstancias personales o profesionales del paciente",
+      "option_c": "La posibilidad de dictar instrucciones previas.",
+      "option_d": "los riesgos probables en condiciones normales directamente relacionados con el tipo de intervención",
+      "correct_letter": "c",
+      "correct_option_text": "La posibilidad de dictar instrucciones previas.",
+      "source_text_sha256": "d0ad953273fe09f1a4def330482506e563cd11a927b2e1a2b86f9e0755a018ea",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b447",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b447",
+      "question_text": "Ante un paciente que acude al Servicio de Urgencias con la sospecha de ingestión aguda accidental de un cáustico, la primera medida a realizar será:",
+      "option_a": "Endoscopia digestiva alta.",
+      "option_b": "Radiografía simple de tórax y abdomen.",
+      "option_c": "Estudio analítico que incluya hemograma y bioquímica general.",
+      "option_d": "Control de la vía respiratoria y estado hemodinámico.",
+      "correct_letter": "d",
+      "correct_option_text": "Control de la vía respiratoria y estado hemodinámico.",
+      "source_text_sha256": "7a860a2969d0908c1532adea0bb1523bd8f9ff62e5163bf14112bba934b53fe6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b447",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b447",
+      "question_text": "Ante un paciente que acude al Servicio de Urgencias con la sospecha de ingestión aguda accidental de un cáustico, la primera medida a realizar será:",
+      "option_a": "Endoscopia digestiva alta.",
+      "option_b": "Radiografía simple de tórax y abdomen.",
+      "option_c": "Estudio analítico que incluya hemograma y bioquímica general.",
+      "option_d": "Control de la vía respiratoria y estado hemodinámico.",
+      "correct_letter": "d",
+      "correct_option_text": "Control de la vía respiratoria y estado hemodinámico.",
+      "source_text_sha256": "7a860a2969d0908c1532adea0bb1523bd8f9ff62e5163bf14112bba934b53fe6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b461",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b461",
+      "question_text": "Los factores de mal pronóstico en la ingesta de cáustico no incluyen:",
+      "option_a": "La neutralización del cáustico tras la ingesta.",
+      "option_b": "La presencia de neutrofilia.",
+      "option_c": "La existencia de acidosis metabólica.",
+      "option_d": "La contraindicación a la endoscopia.",
+      "correct_letter": "a",
+      "correct_option_text": "La neutralización del cáustico tras la ingesta.",
+      "source_text_sha256": "7b2c78e851155d5c803bbcac1558c06ead39683a6f8da4cf0042eb35b9966283",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b461",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b461",
+      "question_text": "Los factores de mal pronóstico en la ingesta de cáustico no incluyen:",
+      "option_a": "La neutralización del cáustico tras la ingesta.",
+      "option_b": "La presencia de neutrofilia.",
+      "option_c": "La existencia de acidosis metabólica.",
+      "option_d": "La contraindicación a la endoscopia.",
+      "correct_letter": "a",
+      "correct_option_text": "La neutralización del cáustico tras la ingesta.",
+      "source_text_sha256": "7b2c78e851155d5c803bbcac1558c06ead39683a6f8da4cf0042eb35b9966283",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b476",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b476",
+      "question_text": "Respecto a las pruebas de laboratorio en pacientes con síndrome de intestino irritable con predominio de estreñimiento (SII-E), es falso que:",
+      "option_a": "El cribado de la enfermedad celíaca mediante serología se recomienda de forma rutinaria en estos pacientes.",
+      "option_b": "La calprotectina fecal no parece de utilidad en pacientes con estreñimiento.",
+      "option_c": "No se dispone de biomarcadores específicos para el SII-E.",
+      "option_d": "La colonoscopia debe realizarse en pacientes con criterios de SII que tengan síntomas de alarma.",
+      "correct_letter": "a",
+      "correct_option_text": "El cribado de la enfermedad celíaca mediante serología se recomienda de forma rutinaria en estos pacientes.",
+      "source_text_sha256": "743cb946038eb740b1447b843898d050b56822a13706edee05d89eb27749d887",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b476",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b476",
+      "question_text": "Respecto a las pruebas de laboratorio en pacientes con síndrome de intestino irritable con predominio de estreñimiento (SII-E), es falso que:",
+      "option_a": "El cribado de la enfermedad celíaca mediante serología se recomienda de forma rutinaria en estos pacientes.",
+      "option_b": "La calprotectina fecal no parece de utilidad en pacientes con estreñimiento.",
+      "option_c": "No se dispone de biomarcadores específicos para el SII-E.",
+      "option_d": "La colonoscopia debe realizarse en pacientes con criterios de SII que tengan síntomas de alarma.",
+      "correct_letter": "a",
+      "correct_option_text": "El cribado de la enfermedad celíaca mediante serología se recomienda de forma rutinaria en estos pacientes.",
+      "source_text_sha256": "743cb946038eb740b1447b843898d050b56822a13706edee05d89eb27749d887",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b493",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b493",
+      "question_text": "Indique una dosis oral diaria de mesalazina para iniciar el tratamiento de un brote moderado de Colitis Ulcerosa:",
+      "option_a": "1 gramo.",
+      "option_b": "2 gramos.",
+      "option_c": "4 gramos.",
+      "option_d": "12 gramos.",
+      "correct_letter": "c",
+      "correct_option_text": "4 gramos.",
+      "source_text_sha256": "5644885e8cd198ac2f80fa3449800bc0dac82771ac21016eda46311f713993fd",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b493",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b493",
+      "question_text": "Indique una dosis oral diaria de mesalazina para iniciar el tratamiento de un brote moderado de Colitis Ulcerosa:",
+      "option_a": "1 gramo.",
+      "option_b": "2 gramos.",
+      "option_c": "4 gramos.",
+      "option_d": "12 gramos.",
+      "correct_letter": "c",
+      "correct_option_text": "4 gramos.",
+      "source_text_sha256": "5644885e8cd198ac2f80fa3449800bc0dac82771ac21016eda46311f713993fd",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_18",
+  "shard_id": "18",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b217",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": 608,
+      "boundary_end": 610,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "PRESENT"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["EXPLICIT_PALPATION_CONTRADICTION"],
+      "rationale": "The final paragraph break is a clean insertion seam and the finding attaches to the patient, but the source explicitly reports no abdominal pain and a non-tender abdomen on palpation; adding pain on palpation creates a direct conflict."
+    },
+    {
+      "question_id": "b189",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_POPULATION_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The cirrhotic patient is a generic population referent rather than a case, and the only seam follows a comma inside the prompt; a complete finding there would break the sentence."
+    },
+    {
+      "question_id": "b189",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_POPULATION_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The cirrhotic patient is only a generic population referent, and inserting an examination finding after the internal comma would split the prompt rather than extend a vignette."
+    },
+    {
+      "question_id": "b200",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no patient vignette, and the offered seam splits 'El tratamiento indicado', so the sentence cannot be inserted mechanically."
+    },
+    {
+      "question_id": "b200",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no examinable patient, and the only proposed boundary interrupts the phrase 'El tratamiento indicado'."
+    },
+    {
+      "question_id": "b211",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_TOPIC_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "This is a general celiaquía knowledge prompt, not a case; the comma boundary is internal to 'En relación..., señale' and does not support a standalone finding."
+    },
+    {
+      "question_id": "b211",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_TOPIC_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The adult with celiaquía is a general topic rather than an identified patient, and the offered comma seam lies inside the directive."
+    },
+    {
+      "question_id": "b223",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The item asks general biopsy facts and contains no patient; inserting after the topic-setting comma would split the interrogative construction."
+    },
+    {
+      "question_id": "b223",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "No patient is available for the examination finding, and the only seam is within the general question syntax."
+    },
+    {
+      "question_id": "b234",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_SPLITS_CLAUSE", "GRAMMATICAL_BREAK"],
+      "rationale": "This is a general diet-fibre statement with no patient, and the seam splits 'es consecuencia de'."
+    },
+    {
+      "question_id": "b234",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_SPLITS_CLAUSE", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no patient for an examination finding, and insertion would interrupt the unit 'es consecuencia de'."
+    },
+    {
+      "question_id": "b248",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "The question is entirely a general interrogative, and the offered seam splits it before 'en relación'."
+    },
+    {
+      "question_id": "b248",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no patient to examine, and the proposed location lies midway through the interrogative sentence."
+    },
+    {
+      "question_id": "b263",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "This is a general treatment prompt; the comma before 'señale' is part of the same sentence and cannot host a standalone laboratory finding unchanged."
+    },
+    {
+      "question_id": "b263",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "No patient is described for the examination, and inserting after the topic comma would disrupt the directive's grammar."
+    },
+    {
+      "question_id": "b277",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_TOPIC_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "A generic diarrhoea scenario is discussed without an identified patient, and the only seam is the internal comma before 'señale'."
+    },
+    {
+      "question_id": "b277",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_TOPIC_NO_PATIENT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The item has no patient for the anatomical finding, and the offered comma boundary is part of the prompt rather than a vignette-to-stem seam."
+    },
+    {
+      "question_id": "b293",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "This is a legal question with no clinical subject and no offered insertion seam."
+    },
+    {
+      "question_id": "b293",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "A patient examination finding cannot attach to this legal prompt, and no whitespace seam was proposed."
+    },
+    {
+      "question_id": "b306",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "The item concerns research ethics, has no patient context, and offers no insertion seam."
+    },
+    {
+      "question_id": "b306",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "No clinical subject exists for the examination finding, and the packet provides no valid boundary."
+    },
+    {
+      "question_id": "b319",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The seam follows the directive phrase and precedes its topic complement, splitting a single general question with no patient."
+    },
+    {
+      "question_id": "b319",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no patient to examine, and the proposed seam splits 'Seleccione ... en relación con'."
+    },
+    {
+      "question_id": "b334",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_DIRECTIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "Both offered seams lie inside 'Indique cuál de las siguientes'; there is no preceding vignette or patient anchor."
+    },
+    {
+      "question_id": "b334",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_DIRECTIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "No patient is described, and either proposed boundary would interrupt the opening directive."
+    },
+    {
+      "question_id": "b350",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "The entire item is a general pharmacotherapy interrogative with no patient and no proposed whitespace seam."
+    },
+    {
+      "question_id": "b350",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "There is no patient or narrative boundary to which an examination finding can attach."
+    },
+    {
+      "question_id": "b364",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "This is only a general topic heading about Whipple disease and supplies neither a patient nor an offered seam."
+    },
+    {
+      "question_id": "b364",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "A patient-specific palpation result has no referent in this general topic item, and no seam is available."
+    },
+    {
+      "question_id": "b378",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "The item concerns health-system law rather than a clinical case and has no suggested insertion point."
+    },
+    {
+      "question_id": "b378",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM", "NONCLINICAL_PROMPT"],
+      "rationale": "No patient exists for the examination finding, and the legal prompt provides no candidate seam."
+    },
+    {
+      "question_id": "b392",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "PASS",
+      "boundary_start": 133,
+      "boundary_end": 134,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The first offered seam is exactly between the complete patient narrative and the interrogative; the serum finding attaches unambiguously to the pregnant patient and does not conflict with the stated viral load or normal transaminases."
+    },
+    {
+      "question_id": "b412",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "The item is a general statement about diverticular haemorrhage, and the comma before 'señale' is not a narrative boundary."
+    },
+    {
+      "question_id": "b412",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "No patient is described for palpation, and the only seam splits the topic phrase from the directive."
+    },
+    {
+      "question_id": "b426",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_CONTEXT_NO_PATIENT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "The ulcer is a generic disease context rather than a patient vignette; the plausible-looking comma seam still belongs to 'En el contexto..., ¿cuál...?' and a full sentence would leave a dangling introductory phrase."
+    },
+    {
+      "question_id": "b426",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["GENERIC_CONTEXT_NO_PATIENT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no individual patient to examine, and insertion after the introductory comma would break the single interrogative construction."
+    },
+    {
+      "question_id": "b441",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "This consists only of a directive followed by independent options; no patient or insertion boundary is present."
+    },
+    {
+      "question_id": "b441",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "NO_SUGGESTED_SEAM"],
+      "rationale": "The examination statement lacks a patient referent and the packet offers no seam before the directive."
+    },
+    {
+      "question_id": "b455",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "There is no patient narrative, and the proposed boundary splits the opening interrogative '¿Con qué'."
+    },
+    {
+      "question_id": "b455",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_INTERROGATIVE", "GRAMMATICAL_BREAK"],
+      "rationale": "No examinable patient is provided, and inserting between '¿Con' and 'qué' is mechanically invalid."
+    },
+    {
+      "question_id": "b469",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "This is a guideline-based general question with no patient; one seam splits 'y respecto' and the other leaves a dangling introductory phrase before the interrogative."
+    },
+    {
+      "question_id": "b469",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "SEAM_INSIDE_PROMPT", "GRAMMATICAL_BREAK"],
+      "rationale": "No patient can receive the examination finding, and neither proposed boundary separates a vignette from a stem."
+    },
+    {
+      "question_id": "b485",
+      "arm": "BM",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "UNANCHORED_CLINICAL_FINDING"],
+      "rationale": "Although the period gives a clean boundary before the directive, the preceding statement is only a classification fact and supplies no patient to whom the serum result could refer."
+    },
+    {
+      "question_id": "b485",
+      "arm": "AN",
+      "reviewer_id": "review_18",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_CONTEXT", "UNANCHORED_CLINICAL_FINDING"],
+      "rationale": "The sentence boundary is mechanically available, but a general classification premise does not anchor a patient examination finding."
+    }
+  ]
+}

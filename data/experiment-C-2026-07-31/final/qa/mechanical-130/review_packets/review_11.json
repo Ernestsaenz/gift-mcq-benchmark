@@ -1,0 +1,1347 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_11",
+  "shard_id": "11",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "instructions": {
+    "scope": "Mechanical audit only; do not claim clinical key preservation.",
+    "placement": "The sentence may be inserted after the patient description and immediately before the final interrogative/directive, including after a declarative premise. It must attach to a patient/context, read grammatically, and not contradict the source explicitly.",
+    "blindness": "Do not inspect canonical guard outcomes, target counts, rankings, or other reviewer files.",
+    "pass": "Choose one suggested whitespace seam and mark PASS only if every hard check passes and explicit_contradiction is NONE."
+  },
+  "candidates": [
+    {
+      "question_id": "b193",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-007",
+      "question_text": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2). ¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?",
+      "option_a": "Iniciar ya colonoscopias, con una periodicidad cada 10 años.",
+      "option_b": "Participar en el programa de cribado poblacional de cáncer colorrectal de Andalucía cuando se le invite.",
+      "option_c": "Iniciar colonoscopias a partir de los 40 años con una periodicidad cada 5 años.",
+      "option_d": "Iniciar colonoscopias a partir de los 50 años con una periodicidad cada 5 años.",
+      "correct_letter": "b",
+      "correct_option_text": "Participar en el programa de cribado poblacional de cáncer colorrectal de Andalucía cuando se le invite.",
+      "source_text_sha256": "82a6127fd808dc88ffb7cba33db9f20d6344260144eb672aa948005b73983d89",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 190,
+          "boundary_end": 191,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía.",
+          "right_context": "Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa d"
+        },
+        {
+          "boundary_start": 307,
+          "boundary_end": 308,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "n heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal.",
+          "right_context": "Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se"
+        },
+        {
+          "boundary_start": 409,
+          "boundary_end": 410,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": ". Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos.",
+          "right_context": "Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en co"
+        },
+        {
+          "boundary_start": 582,
+          "boundary_end": 583,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "funda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado.",
+          "right_context": "No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción posi"
+        },
+        {
+          "boundary_start": 600,
+          "boundary_end": 601,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "po de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron",
+          "right_context": "otras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) d"
+        },
+        {
+          "boundary_start": 616,
+          "boundary_end": 617,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones.",
+          "right_context": "La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro pro"
+        },
+        {
+          "boundary_start": 736,
+          "boundary_end": 738,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "l patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).",
+          "right_context": "Realizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2). ¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, sigu"
+        },
+        {
+          "boundary_start": 933,
+          "boundary_end": 934,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "iego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2).",
+          "right_context": "¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?"
+        }
+      ]
+    },
+    {
+      "question_id": "b193",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-007",
+      "question_text": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2). ¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?",
+      "option_a": "Iniciar ya colonoscopias, con una periodicidad cada 10 años.",
+      "option_b": "Participar en el programa de cribado poblacional de cáncer colorrectal de Andalucía cuando se le invite.",
+      "option_c": "Iniciar colonoscopias a partir de los 40 años con una periodicidad cada 5 años.",
+      "option_d": "Iniciar colonoscopias a partir de los 50 años con una periodicidad cada 5 años.",
+      "correct_letter": "b",
+      "correct_option_text": "Participar en el programa de cribado poblacional de cáncer colorrectal de Andalucía cuando se le invite.",
+      "source_text_sha256": "82a6127fd808dc88ffb7cba33db9f20d6344260144eb672aa948005b73983d89",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 190,
+          "boundary_end": 191,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía.",
+          "right_context": "Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa d"
+        },
+        {
+          "boundary_start": 307,
+          "boundary_end": 308,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "n heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal.",
+          "right_context": "Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se"
+        },
+        {
+          "boundary_start": 409,
+          "boundary_end": 410,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": ". Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos.",
+          "right_context": "Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en co"
+        },
+        {
+          "boundary_start": 582,
+          "boundary_end": 583,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "funda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado.",
+          "right_context": "No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción posi"
+        },
+        {
+          "boundary_start": 600,
+          "boundary_end": 601,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "po de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron",
+          "right_context": "otras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) d"
+        },
+        {
+          "boundary_start": 616,
+          "boundary_end": 617,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones.",
+          "right_context": "La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro pro"
+        },
+        {
+          "boundary_start": 736,
+          "boundary_end": 738,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "l patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).",
+          "right_context": "Realizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2). ¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, sigu"
+        },
+        {
+          "boundary_start": 933,
+          "boundary_end": 934,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "iego-colon ascendente).\n\nRealizado árbol genealógico familiar, no hay historia familiar de cáncer y el estudio inmunohistoquímico muestra tinción positiva (expresión) de las cuatro proteínas MMR (MLH1, MSH2, MSH6, PMS2).",
+          "right_context": "¿Cuál sería la actitud preventiva más adecuada a seguir con su hijo de 35 años, siguiendo las recomendaciones más recientes de las guías de práctica clínica europea y española?"
+        }
+      ]
+    },
+    {
+      "question_id": "b379",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-007",
+      "question_text": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nEn la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no homogéneo (LST-G), de 25mm en colon ascendente, realizándose resección mucosa completa y en bloque. El patólogo informa de la existencia de un adenocarcinoma bien diferenciado sobre adenoma velloso que invade la submucosa, con una profundidad máxima de 4mm, sin evidencia de invasión vascular ni linfática, sin budding, y con distancia al margen de resección de 0,5mm. Señale la interpretación CORRECTA de los hallazgos:",
+      "option_a": "Se trata de una neoplasia no invasiva de alto grado (Tis), sin riesgo de diseminación ganglionar.",
+      "option_b": "Se trata de un adenocarcinoma invasor sobre pólipo (pT1) con criterios insuficientes de buen pronóstico y riesgo alto de diseminación ganglionar.",
+      "option_c": "Se trata de un adenocarcinoma invasor sobre pólipo (pT1), con criterios histológicos de buen pronóstico y bajo riesgo de diseminación ganglionar.",
+      "option_d": "Se trata de un adenocarcinoma T2N0M0.",
+      "correct_letter": "b",
+      "correct_option_text": "Se trata de un adenocarcinoma invasor sobre pólipo (pT1) con criterios insuficientes de buen pronóstico y riesgo alto de diseminación ganglionar.",
+      "source_text_sha256": "50aa3545e59328116b7f1c6f61290804b90bbf184f5859f18a7e58a2f1320f27",
+      "assignment": {
+        "variant_id": "AN10",
+        "fabricated_entity": "órgano liradónico",
+        "inserted_sentence": "La exploración muestra sensibilidad localizada sobre el órgano liradónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 190,
+          "boundary_end": 191,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía.",
+          "right_context": "Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa d"
+        },
+        {
+          "boundary_start": 307,
+          "boundary_end": 308,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "n heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal.",
+          "right_context": "Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se"
+        },
+        {
+          "boundary_start": 409,
+          "boundary_end": 410,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": ". Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos.",
+          "right_context": "Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en co"
+        },
+        {
+          "boundary_start": 582,
+          "boundary_end": 583,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "funda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado.",
+          "right_context": "No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nEn la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón n"
+        },
+        {
+          "boundary_start": 600,
+          "boundary_end": 601,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "po de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron",
+          "right_context": "otras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nEn la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no ho"
+        },
+        {
+          "boundary_start": 616,
+          "boundary_end": 617,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones.",
+          "right_context": "La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\nEn la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no homogéneo (LST-G),"
+        },
+        {
+          "boundary_start": 736,
+          "boundary_end": 738,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": false,
+          "left_context": "l patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).",
+          "right_context": "En la siguiente colonoscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no homogéneo (LST-G), de 25mm en colon ascendente, realizándose resección mucosa completa y en bloque. El patólogo informa de la existencia de"
+        },
+        {
+          "boundary_start": 978,
+          "boundary_end": 979,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "noscopia practicada, se encuentra una lesión de extensión lateral ligeramente elevada 0-IIa, con patrón nodular mixto no homogéneo (LST-G), de 25mm en colon ascendente, realizándose resección mucosa completa y en bloque.",
+          "right_context": "El patólogo informa de la existencia de un adenocarcinoma bien diferenciado sobre adenoma velloso que invade la submucosa, con una profundidad máxima de 4mm, sin evidencia de invasión vascular ni linfática, sin budding, y con distancia al margen de resección de 0,5mm. Señale la i"
+        },
+        {
+          "boundary_start": 1247,
+          "boundary_end": 1248,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "carcinoma bien diferenciado sobre adenoma velloso que invade la submucosa, con una profundidad máxima de 4mm, sin evidencia de invasión vascular ni linfática, sin budding, y con distancia al margen de resección de 0,5mm.",
+          "right_context": "Señale la interpretación CORRECTA de los hallazgos:"
+        }
+      ]
+    },
+    {
+      "question_id": "b432",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-practico",
+      "cluster": "andalucia-2021-22-libre-case-007",
+      "question_text": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\n¿Cuál es la actitud más correcta que se debe seguir a continuación?",
+      "option_a": "Debe completarse el estudio con TAC colonografía/colonoscopia virtual o enema opaco, según disponibilidad.",
+      "option_b": "Debe realizarse un nuevo test de sangre oculta en heces tres meses tras la polipectomía y, si es positivo, repetir la colonoscopia.",
+      "option_c": "Se debe solicitar una nueva colonoscopia, optimizando la limpieza colónica.",
+      "option_d": "Se debe individualizar la pauta de seguimiento endoscópico, con intervalos más estrechos que los recomendados por las guías de práctica clínica.",
+      "correct_letter": "c",
+      "correct_option_text": "Se debe solicitar una nueva colonoscopia, optimizando la limpieza colónica.",
+      "source_text_sha256": "9e58785d4cea626631de0f72d7be6cd498fa487a833d8fa57f9c9e96135d61a0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 190,
+          "boundary_end": 191,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "Una mujer de 62 años acude para realización de colonoscopia por test de sangre oculta en heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía.",
+          "right_context": "Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa d"
+        },
+        {
+          "boundary_start": 307,
+          "boundary_end": 308,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "n heces positivo en el contexto del programa de cribado poblacional de cáncer colorrectal de Andalucía. Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal.",
+          "right_context": "Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se"
+        },
+        {
+          "boundary_start": 409,
+          "boundary_end": 410,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": ". Se encontraba asintomática y no tenía comorbilidades ni antecedentes personales ni familiares de cáncer colorrectal. Se realiza colonoscopia hasta ciego, bajo sedación profunda, con un tiempo de retirada de 18 minutos.",
+          "right_context": "Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en co"
+        },
+        {
+          "boundary_start": 582,
+          "boundary_end": 583,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "funda, con un tiempo de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado.",
+          "right_context": "No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\n¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+        },
+        {
+          "boundary_start": 600,
+          "boundary_end": 601,
+          "separator_repr": "'\\n'",
+          "prompt_like": false,
+          "left_context": "po de retirada de 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron",
+          "right_context": "otras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\n¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+        },
+        {
+          "boundary_start": 616,
+          "boundary_end": 617,
+          "separator_repr": "' '",
+          "prompt_like": false,
+          "left_context": "e 18 minutos. Se encontró un pólipo 0-Ip de 14mm en sigma, que se extirpa de forma completa y en bloque, informado por el patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones.",
+          "right_context": "La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).\n\n¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+        },
+        {
+          "boundary_start": 736,
+          "boundary_end": 738,
+          "separator_repr": "'\\n\\n'",
+          "prompt_like": true,
+          "left_context": "l patólogo como adenoma tubulovelloso con displasia de bajo grado. No se encontraron\notras lesiones. La puntuación de la escala de Boston fue 5 (2 en colon izquierdo, 1 en colon transverso y 1 en ciego-colon ascendente).",
+          "right_context": "¿Cuál es la actitud más correcta que se debe seguir a continuación?"
+        }
+      ]
+    },
+    {
+      "question_id": "b204",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b204",
+      "question_text": "Señale cuál de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:",
+      "option_a": "Eliminación del verde de Indocianina.",
+      "option_b": "Prueba de espiración de aminopirina.",
+      "option_c": "Eliminación de cafeína.",
+      "option_d": "Todas son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas son correctas.",
+      "source_text_sha256": "3df02b7b6159b5a1ddf6697aec710ff8d54916710747c957f37b4e46a3434924",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:"
+        },
+        {
+          "boundary_start": 11,
+          "boundary_end": 12,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál",
+          "right_context": "de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:"
+        }
+      ]
+    },
+    {
+      "question_id": "b204",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b204",
+      "question_text": "Señale cuál de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:",
+      "option_a": "Eliminación del verde de Indocianina.",
+      "option_b": "Prueba de espiración de aminopirina.",
+      "option_c": "Eliminación de cafeína.",
+      "option_d": "Todas son correctas.",
+      "correct_letter": "d",
+      "correct_option_text": "Todas son correctas.",
+      "source_text_sha256": "3df02b7b6159b5a1ddf6697aec710ff8d54916710747c957f37b4e46a3434924",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 6,
+          "boundary_end": 7,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale",
+          "right_context": "cuál de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:"
+        },
+        {
+          "boundary_start": 11,
+          "boundary_end": 12,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale cuál",
+          "right_context": "de las siguientes respuestas hace referencia a una prueba cuantitativa de función hepática:"
+        }
+      ]
+    },
+    {
+      "question_id": "b214",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b214",
+      "question_text": "¿Cuál de los siguientes NO es un índice empleado para cuantificar la actividad inflamatoria intestinal de la enfermedad de Crohn?:",
+      "option_a": "Walmsley.",
+      "option_b": "Harvey-Bradshaw.",
+      "option_c": "Lewis.",
+      "option_d": "IBUS-SAS.",
+      "correct_letter": "a",
+      "correct_option_text": "Walmsley.",
+      "source_text_sha256": "67393baed9798b2f131d965db29e8e3904291c8f96cc681c4d90eec24364f511",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un índice empleado para cuantificar la actividad inflamatoria intestinal de la enfermedad de Crohn?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b214",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b214",
+      "question_text": "¿Cuál de los siguientes NO es un índice empleado para cuantificar la actividad inflamatoria intestinal de la enfermedad de Crohn?:",
+      "option_a": "Walmsley.",
+      "option_b": "Harvey-Bradshaw.",
+      "option_c": "Lewis.",
+      "option_d": "IBUS-SAS.",
+      "correct_letter": "a",
+      "correct_option_text": "Walmsley.",
+      "source_text_sha256": "67393baed9798b2f131d965db29e8e3904291c8f96cc681c4d90eec24364f511",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 5,
+          "boundary_end": 6,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "¿Cuál",
+          "right_context": "de los siguientes NO es un índice empleado para cuantificar la actividad inflamatoria intestinal de la enfermedad de Crohn?:"
+        }
+      ]
+    },
+    {
+      "question_id": "b226",
+      "arm": "BM",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b226",
+      "question_text": "Señale la complicación más frecuente de la úlcera péptica",
+      "option_a": "Perforación.",
+      "option_b": "Hemorragia.",
+      "option_c": "Obstrucción.",
+      "option_d": "Penetración.",
+      "correct_letter": "b",
+      "correct_option_text": "Hemorragia.",
+      "source_text_sha256": "1b4c1cf6ebf0fe2d525838a78a4ca9bc2d0c964a1e9edbb9fbb749a369d82fa9",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b226",
+      "arm": "AN",
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "cluster": "solo:b226",
+      "question_text": "Señale la complicación más frecuente de la úlcera péptica",
+      "option_a": "Perforación.",
+      "option_b": "Hemorragia.",
+      "option_c": "Obstrucción.",
+      "option_d": "Penetración.",
+      "correct_letter": "b",
+      "correct_option_text": "Hemorragia.",
+      "source_text_sha256": "1b4c1cf6ebf0fe2d525838a78a4ca9bc2d0c964a1e9edbb9fbb749a369d82fa9",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b237",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b237",
+      "question_text": "La paracentesis evacuadora en paciente con Cirrosis Hepática y descompensación hidrópica puede realizarse:",
+      "option_a": "Sólo si hay fracaso a tratamiento con diuréticos",
+      "option_b": "Sólo si la ascitis es a tensión",
+      "option_c": "En cualquier circunstancia en que no esté contraindicada",
+      "option_d": "Solo si el paciente presenta datos concomitantes de encefalopatía hepática",
+      "correct_letter": "c",
+      "correct_option_text": "En cualquier circunstancia en que no esté contraindicada",
+      "source_text_sha256": "a09402512743747ebb9b94b0c7e13d218cff616a47655ea8a8c3ef84334d61f3",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b237",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b237",
+      "question_text": "La paracentesis evacuadora en paciente con Cirrosis Hepática y descompensación hidrópica puede realizarse:",
+      "option_a": "Sólo si hay fracaso a tratamiento con diuréticos",
+      "option_b": "Sólo si la ascitis es a tensión",
+      "option_c": "En cualquier circunstancia en que no esté contraindicada",
+      "option_d": "Solo si el paciente presenta datos concomitantes de encefalopatía hepática",
+      "correct_letter": "c",
+      "correct_option_text": "En cualquier circunstancia en que no esté contraindicada",
+      "source_text_sha256": "a09402512743747ebb9b94b0c7e13d218cff616a47655ea8a8c3ef84334d61f3",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b254",
+      "arm": "BM",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b254",
+      "question_text": "En cuanto a la diarrea secretora, es VERDADERO:",
+      "option_a": "Una causa es el déficit adquirido de la lactasa.",
+      "option_b": "Se puede producir por consumo excesivo de sorbitol.",
+      "option_c": "Continúa a pesar del ayuno.",
+      "option_d": "Es el mecanismo de acción de la lactulosa.",
+      "correct_letter": "c",
+      "correct_option_text": "Continúa a pesar del ayuno.",
+      "source_text_sha256": "dd62f95a151fc1d23b905b9f21f90975f8f916703a4187786bbc26d12a5604b0",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b254",
+      "arm": "AN",
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "reserva-especifica",
+      "cluster": "solo:b254",
+      "question_text": "En cuanto a la diarrea secretora, es VERDADERO:",
+      "option_a": "Una causa es el déficit adquirido de la lactasa.",
+      "option_b": "Se puede producir por consumo excesivo de sorbitol.",
+      "option_c": "Continúa a pesar del ayuno.",
+      "option_d": "Es el mecanismo de acción de la lactulosa.",
+      "correct_letter": "c",
+      "correct_option_text": "Continúa a pesar del ayuno.",
+      "source_text_sha256": "dd62f95a151fc1d23b905b9f21f90975f8f916703a4187786bbc26d12a5604b0",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b269",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b269",
+      "question_text": "En la pancreatitis crónica es cierto que:",
+      "option_a": "Se puede producir déficit de B12 secundaria a menor proteolisis del compuesto vitamina B12- proteínas R fijadoras.",
+      "option_b": "La anemia ferropénica es la norma en estos pacientes.",
+      "option_c": "La anemia habitual es mixta, ferropénica y de proceso crónico.",
+      "option_d": "Lo habitual es una anemia asociada al tratamiento con enzimas pancreáticas.",
+      "correct_letter": "a",
+      "correct_option_text": "Se puede producir déficit de B12 secundaria a menor proteolisis del compuesto vitamina B12- proteínas R fijadoras.",
+      "source_text_sha256": "d49c1144cff7837d750364ec14f145ef42026e39b1742bdc1e8363cd4e5bf0a4",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b269",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b269",
+      "question_text": "En la pancreatitis crónica es cierto que:",
+      "option_a": "Se puede producir déficit de B12 secundaria a menor proteolisis del compuesto vitamina B12- proteínas R fijadoras.",
+      "option_b": "La anemia ferropénica es la norma en estos pacientes.",
+      "option_c": "La anemia habitual es mixta, ferropénica y de proceso crónico.",
+      "option_d": "Lo habitual es una anemia asociada al tratamiento con enzimas pancreáticas.",
+      "correct_letter": "a",
+      "correct_option_text": "Se puede producir déficit de B12 secundaria a menor proteolisis del compuesto vitamina B12- proteínas R fijadoras.",
+      "source_text_sha256": "d49c1144cff7837d750364ec14f145ef42026e39b1742bdc1e8363cd4e5bf0a4",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b283",
+      "arm": "BM",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b283",
+      "question_text": "Señale la respuesta INCORRECTA sobre la pancreatitis autoinmune:",
+      "option_a": "La tasa de recaídas tras la suspensión del tratamiento con corticoides es significativamente mayo en la tipo I respecto a la tipo II",
+      "option_b": "Clínicamente suele manifestarse en forma de ictericia obstructiva por masa pancreática",
+      "option_c": "La pancreatitis autoinmune tipo I rara vez presenta flebitis obliterativa",
+      "option_d": "La pancreatitis autoinmune tipo II se asocia con más frecuencia a la enfermedad inflamatoria intestinal",
+      "correct_letter": "c",
+      "correct_option_text": "La pancreatitis autoinmune tipo I rara vez presenta flebitis obliterativa",
+      "source_text_sha256": "d49ebf577c86bbb672997027d3d161c82f4aee43b142b4f0afa8aacf86fb7449",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b283",
+      "arm": "AN",
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "cluster": "solo:b283",
+      "question_text": "Señale la respuesta INCORRECTA sobre la pancreatitis autoinmune:",
+      "option_a": "La tasa de recaídas tras la suspensión del tratamiento con corticoides es significativamente mayo en la tipo I respecto a la tipo II",
+      "option_b": "Clínicamente suele manifestarse en forma de ictericia obstructiva por masa pancreática",
+      "option_c": "La pancreatitis autoinmune tipo I rara vez presenta flebitis obliterativa",
+      "option_d": "La pancreatitis autoinmune tipo II se asocia con más frecuencia a la enfermedad inflamatoria intestinal",
+      "correct_letter": "c",
+      "correct_option_text": "La pancreatitis autoinmune tipo I rara vez presenta flebitis obliterativa",
+      "source_text_sha256": "d49ebf577c86bbb672997027d3d161c82f4aee43b142b4f0afa8aacf86fb7449",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b312",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b312",
+      "question_text": "¿Cuál es el trastorno de la motilidad esofágica que se presenta clínicamente con dolor torácico y/o disfagia, y que se manifiesta en la manometría por contracciones prematuras (o espásticas) en más del 20% de las degluciones líquidas, alternando con contracciones peristálticas normales?",
+      "option_a": "Espasmo esofágico distal",
+      "option_b": "Acalasia tipo III o espástica",
+      "option_c": "Esófago hipercontráctil",
+      "option_d": "Obstrucción al flujo de la unión esófago-gástrica",
+      "correct_letter": "a",
+      "correct_option_text": "Espasmo esofágico distal",
+      "source_text_sha256": "714b0e9bc2296f3303909fd5c64a008de77a0428240259bb610578d390564c7f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b312",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b312",
+      "question_text": "¿Cuál es el trastorno de la motilidad esofágica que se presenta clínicamente con dolor torácico y/o disfagia, y que se manifiesta en la manometría por contracciones prematuras (o espásticas) en más del 20% de las degluciones líquidas, alternando con contracciones peristálticas normales?",
+      "option_a": "Espasmo esofágico distal",
+      "option_b": "Acalasia tipo III o espástica",
+      "option_c": "Esófago hipercontráctil",
+      "option_d": "Obstrucción al flujo de la unión esófago-gástrica",
+      "correct_letter": "a",
+      "correct_option_text": "Espasmo esofágico distal",
+      "source_text_sha256": "714b0e9bc2296f3303909fd5c64a008de77a0428240259bb610578d390564c7f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b325",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b325",
+      "question_text": "La lesión hepática más frecuentemente producida por azatioprina es:",
+      "option_a": "Ductopenia.",
+      "option_b": "Granulomas.",
+      "option_c": "Lesión vascular.",
+      "option_d": "Esteatohepatitis.",
+      "correct_letter": "c",
+      "correct_option_text": "Lesión vascular.",
+      "source_text_sha256": "79fe4dd6d4108c4dcee483a7385c4496b9ccb44ccd8b8f2a5432a81060d9ca95",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b325",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b325",
+      "question_text": "La lesión hepática más frecuentemente producida por azatioprina es:",
+      "option_a": "Ductopenia.",
+      "option_b": "Granulomas.",
+      "option_c": "Lesión vascular.",
+      "option_d": "Esteatohepatitis.",
+      "correct_letter": "c",
+      "correct_option_text": "Lesión vascular.",
+      "source_text_sha256": "79fe4dd6d4108c4dcee483a7385c4496b9ccb44ccd8b8f2a5432a81060d9ca95",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b343",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b343",
+      "question_text": "Conforme al Decreto 101/2005, de 22 de diciembre, por el que se regula la Historia Clínica en Castilla y León, la documentación clínica:",
+      "option_a": "Deberá conservarse como mínimo 10 años, contados desde la fecha del fallecimiento del paciente",
+      "option_b": "Transcurridos 3 años podrán destruirse las hojas de órdenes médicas y de interconsulta cuando no sean trascendentales por motivos asistenciales, de salud pública, epidemiológicos, de investigación, judiciales o por razones de organización y funcionamiento del Sistema Nacional de Salud",
+      "option_c": "El consentimiento informado se conservará de forma indefinida",
+      "option_d": "Todas las respuestas anteriores son incorrectas",
+      "correct_letter": "c",
+      "correct_option_text": "El consentimiento informado se conservará de forma indefinida",
+      "source_text_sha256": "90734dcb950646c9e98547792d7d9445c7e04f89ed3f035433499c1d7256217f",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b343",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b343",
+      "question_text": "Conforme al Decreto 101/2005, de 22 de diciembre, por el que se regula la Historia Clínica en Castilla y León, la documentación clínica:",
+      "option_a": "Deberá conservarse como mínimo 10 años, contados desde la fecha del fallecimiento del paciente",
+      "option_b": "Transcurridos 3 años podrán destruirse las hojas de órdenes médicas y de interconsulta cuando no sean trascendentales por motivos asistenciales, de salud pública, epidemiológicos, de investigación, judiciales o por razones de organización y funcionamiento del Sistema Nacional de Salud",
+      "option_c": "El consentimiento informado se conservará de forma indefinida",
+      "option_d": "Todas las respuestas anteriores son incorrectas",
+      "correct_letter": "c",
+      "correct_option_text": "El consentimiento informado se conservará de forma indefinida",
+      "source_text_sha256": "90734dcb950646c9e98547792d7d9445c7e04f89ed3f035433499c1d7256217f",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b371",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b371",
+      "question_text": "Señale la respuesta incorrecta con respecto a la Linaclotida:",
+      "option_a": "Es un péptido de 14 aminoácidos de absorción mínima.",
+      "option_b": "Está contraindicada en niños menores de 6 años.",
+      "option_c": "Inhibe el receptor de guanilato ciclasa C en la superficie luminal del epitelio intestinal, lo que disminuye los niveles de monofosfato de guanosina cíclico aumentando la secreción de cloruro y bicarbonato en la luz intestinal.",
+      "option_d": "La diarrea es el evento adverso más común de este fármaco.",
+      "correct_letter": "c",
+      "correct_option_text": "Inhibe el receptor de guanilato ciclasa C en la superficie luminal del epitelio intestinal, lo que disminuye los niveles de monofosfato de guanosina cíclico aumentando la secreción de cloruro y bicarbonato en la luz intestinal.",
+      "source_text_sha256": "88d363dc7404af84063543c5764be663b687c510925e0dc18f26e4ffca9433ee",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta incorrecta",
+          "right_context": "con respecto a la Linaclotida:"
+        },
+        {
+          "boundary_start": 34,
+          "boundary_end": 35,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta incorrecta con",
+          "right_context": "respecto a la Linaclotida:"
+        }
+      ]
+    },
+    {
+      "question_id": "b371",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main",
+      "cluster": "solo:b371",
+      "question_text": "Señale la respuesta incorrecta con respecto a la Linaclotida:",
+      "option_a": "Es un péptido de 14 aminoácidos de absorción mínima.",
+      "option_b": "Está contraindicada en niños menores de 6 años.",
+      "option_c": "Inhibe el receptor de guanilato ciclasa C en la superficie luminal del epitelio intestinal, lo que disminuye los niveles de monofosfato de guanosina cíclico aumentando la secreción de cloruro y bicarbonato en la luz intestinal.",
+      "option_d": "La diarrea es el evento adverso más común de este fármaco.",
+      "correct_letter": "c",
+      "correct_option_text": "Inhibe el receptor de guanilato ciclasa C en la superficie luminal del epitelio intestinal, lo que disminuye los niveles de monofosfato de guanosina cíclico aumentando la secreción de cloruro y bicarbonato en la luz intestinal.",
+      "source_text_sha256": "88d363dc7404af84063543c5764be663b687c510925e0dc18f26e4ffca9433ee",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 30,
+          "boundary_end": 31,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta incorrecta",
+          "right_context": "con respecto a la Linaclotida:"
+        },
+        {
+          "boundary_start": 34,
+          "boundary_end": 35,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Señale la respuesta incorrecta con",
+          "right_context": "respecto a la Linaclotida:"
+        }
+      ]
+    },
+    {
+      "question_id": "b385",
+      "arm": "BM",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b385",
+      "question_text": "Conforme al capítulo III, artículo 15 de la Ley 31/1995 de 8 de noviembre, de prevención de riesgos laborales El empresario aplicará las medidas que integren el deber general de prevención con arreglo a los siguientes principios generales, señale la respuesta correcta:",
+      "option_a": "Adoptar medidas que protejan la salud individual de los trabajadores.",
+      "option_b": "Combatir los riesgos en su origen",
+      "option_c": "El empresario desarrollará acciones puntuales en materia de prevención",
+      "option_d": "No se podrán concertar operaciones de seguro",
+      "correct_letter": "b",
+      "correct_option_text": "Combatir los riesgos en su origen",
+      "source_text_sha256": "de9b9984a2d762e0c08bb20fb201d4fc218edc5ed0f85695be26a1663d007dd6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 239,
+          "boundary_end": 240,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "o III, artículo 15 de la Ley 31/1995 de 8 de noviembre, de prevención de riesgos laborales El empresario aplicará las medidas que integren el deber general de prevención con arreglo a los siguientes principios generales,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b385",
+      "arm": "AN",
+      "region": "Castilla y León",
+      "year": 2019,
+      "exam_part": "reserva-general",
+      "cluster": "solo:b385",
+      "question_text": "Conforme al capítulo III, artículo 15 de la Ley 31/1995 de 8 de noviembre, de prevención de riesgos laborales El empresario aplicará las medidas que integren el deber general de prevención con arreglo a los siguientes principios generales, señale la respuesta correcta:",
+      "option_a": "Adoptar medidas que protejan la salud individual de los trabajadores.",
+      "option_b": "Combatir los riesgos en su origen",
+      "option_c": "El empresario desarrollará acciones puntuales en materia de prevención",
+      "option_d": "No se podrán concertar operaciones de seguro",
+      "correct_letter": "b",
+      "correct_option_text": "Combatir los riesgos en su origen",
+      "source_text_sha256": "de9b9984a2d762e0c08bb20fb201d4fc218edc5ed0f85695be26a1663d007dd6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 239,
+          "boundary_end": 240,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "o III, artículo 15 de la Ley 31/1995 de 8 de noviembre, de prevención de riesgos laborales El empresario aplicará las medidas que integren el deber general de prevención con arreglo a los siguientes principios generales,",
+          "right_context": "señale la respuesta correcta:"
+        }
+      ]
+    },
+    {
+      "question_id": "b401",
+      "arm": "BM",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b401",
+      "question_text": "Según el artículo 1 de la ley 5/2001, de 5 de diciembre, de personal estatutario del Servicio Murciano de Salud, el personal que pase a desempeñar funciones en el Servicio Murciano de Salud quedará vinculado al mismo mediante:",
+      "option_a": "Una relación de carácter contractual.",
+      "option_b": "Una relación de carácter laboral.",
+      "option_c": "Una relación de carácter especial.",
+      "option_d": "Una relación de carácter estatutario.",
+      "correct_letter": "d",
+      "correct_option_text": "Una relación de carácter estatutario.",
+      "source_text_sha256": "812067f9b23a8ab6d7837b7e0941ff06be2a107ac920883e94948cacc0eed7ef",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b401",
+      "arm": "AN",
+      "region": "Región de Murcia",
+      "year": 2019,
+      "exam_part": "main",
+      "cluster": "solo:b401",
+      "question_text": "Según el artículo 1 de la ley 5/2001, de 5 de diciembre, de personal estatutario del Servicio Murciano de Salud, el personal que pase a desempeñar funciones en el Servicio Murciano de Salud quedará vinculado al mismo mediante:",
+      "option_a": "Una relación de carácter contractual.",
+      "option_b": "Una relación de carácter laboral.",
+      "option_c": "Una relación de carácter especial.",
+      "option_d": "Una relación de carácter estatutario.",
+      "correct_letter": "d",
+      "correct_option_text": "Una relación de carácter estatutario.",
+      "source_text_sha256": "812067f9b23a8ab6d7837b7e0941ff06be2a107ac920883e94948cacc0eed7ef",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b419",
+      "arm": "BM",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b419",
+      "question_text": "Indique lo correcto con respecto al tratamiento de la enfermedad diverticular del colon:",
+      "option_a": "En la hemorragia diverticular, tanto el tratamiento con clips hemostáticos como el que se realiza con bandas elásticas son alternativas válidas.",
+      "option_b": "La presencia de un absceso diverticular mayor de 2 cm exige el drenaje de este como primera línea terapéutica.",
+      "option_c": "Los pacientes que cumplen criterios para tratamiento ambulatorio, requieren necesariamente un tratamiento con antibióticos orales.",
+      "option_d": "En el tratamiento hospitalario de la diverticulitis complicada, la dieta absoluta, antibióticos y fluidoterapia son las bases imprescindibles del mismo.",
+      "correct_letter": "a",
+      "correct_option_text": "En la hemorragia diverticular, tanto el tratamiento con clips hemostáticos como el que se realiza con bandas elásticas son alternativas válidas.",
+      "source_text_sha256": "6ba3dca022471375923984fed19da2b6e5b1365eeb55a8688a4c7d42b80b91d6",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 19,
+          "boundary_end": 20,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique lo correcto",
+          "right_context": "con respecto al tratamiento de la enfermedad diverticular del colon:"
+        },
+        {
+          "boundary_start": 23,
+          "boundary_end": 24,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique lo correcto con",
+          "right_context": "respecto al tratamiento de la enfermedad diverticular del colon:"
+        }
+      ]
+    },
+    {
+      "question_id": "b419",
+      "arm": "AN",
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "cluster": "solo:b419",
+      "question_text": "Indique lo correcto con respecto al tratamiento de la enfermedad diverticular del colon:",
+      "option_a": "En la hemorragia diverticular, tanto el tratamiento con clips hemostáticos como el que se realiza con bandas elásticas son alternativas válidas.",
+      "option_b": "La presencia de un absceso diverticular mayor de 2 cm exige el drenaje de este como primera línea terapéutica.",
+      "option_c": "Los pacientes que cumplen criterios para tratamiento ambulatorio, requieren necesariamente un tratamiento con antibióticos orales.",
+      "option_d": "En el tratamiento hospitalario de la diverticulitis complicada, la dieta absoluta, antibióticos y fluidoterapia son las bases imprescindibles del mismo.",
+      "correct_letter": "a",
+      "correct_option_text": "En la hemorragia diverticular, tanto el tratamiento con clips hemostáticos como el que se realiza con bandas elásticas son alternativas válidas.",
+      "source_text_sha256": "6ba3dca022471375923984fed19da2b6e5b1365eeb55a8688a4c7d42b80b91d6",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 19,
+          "boundary_end": 20,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique lo correcto",
+          "right_context": "con respecto al tratamiento de la enfermedad diverticular del colon:"
+        },
+        {
+          "boundary_start": 23,
+          "boundary_end": 24,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Indique lo correcto con",
+          "right_context": "respecto al tratamiento de la enfermedad diverticular del colon:"
+        }
+      ]
+    },
+    {
+      "question_id": "b434",
+      "arm": "BM",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b434",
+      "question_text": "¿Qué tratamiento NO se recomienda para el mantenimiento de pacientes con colitis ulcerosa moderada a grave que no responden a tratamientos convencionales?",
+      "option_a": "Adalimumab",
+      "option_b": "Ustekinumab",
+      "option_c": "Ciclosporina",
+      "option_d": "Mirikizumab",
+      "correct_letter": "c",
+      "correct_option_text": "Ciclosporina",
+      "source_text_sha256": "d8ec073cdc42df40988d9b7112591f9cedc2db6bac2a033b28a364a9e2fef6fa",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b434",
+      "arm": "AN",
+      "region": "Comunidad de Madrid",
+      "year": 2021,
+      "exam_part": "main",
+      "cluster": "solo:b434",
+      "question_text": "¿Qué tratamiento NO se recomienda para el mantenimiento de pacientes con colitis ulcerosa moderada a grave que no responden a tratamientos convencionales?",
+      "option_a": "Adalimumab",
+      "option_b": "Ustekinumab",
+      "option_c": "Ciclosporina",
+      "option_d": "Mirikizumab",
+      "correct_letter": "c",
+      "correct_option_text": "Ciclosporina",
+      "source_text_sha256": "d8ec073cdc42df40988d9b7112591f9cedc2db6bac2a033b28a364a9e2fef6fa",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": []
+    },
+    {
+      "question_id": "b448",
+      "arm": "BM",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b448",
+      "question_text": "En una mujer de 60 años se detecta de forma incidental en un TAC una formación quística de 3 cm en la cola del páncreas con el aspecto de “panal de abeja” y con una calcificación central ¿cuál sería la primera sospecha diagnóstica?",
+      "option_a": "Cistoadenoma seroso.",
+      "option_b": "Neoplasia mucinosa papilar intraductal.",
+      "option_c": "Neoplasia quística mucinosa.",
+      "option_d": "Tumor seudopapilar sólido.",
+      "correct_letter": "a",
+      "correct_option_text": "Cistoadenoma seroso.",
+      "source_text_sha256": "6e64f0ad1fc2f4c2558a19a6730a4d9b4ab1f5ee444e8668555468d0804f9881",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una mujer de 60 años se detecta de forma incidental en un TAC una formación quística de 3 cm en la cola del páncreas con el aspecto de “panal de abeja” y con una calcificación central",
+          "right_context": "¿cuál sería la primera sospecha diagnóstica?"
+        }
+      ]
+    },
+    {
+      "question_id": "b448",
+      "arm": "AN",
+      "region": "Comunitat Valenciana",
+      "year": 2022,
+      "exam_part": "main-47-80",
+      "cluster": "solo:b448",
+      "question_text": "En una mujer de 60 años se detecta de forma incidental en un TAC una formación quística de 3 cm en la cola del páncreas con el aspecto de “panal de abeja” y con una calcificación central ¿cuál sería la primera sospecha diagnóstica?",
+      "option_a": "Cistoadenoma seroso.",
+      "option_b": "Neoplasia mucinosa papilar intraductal.",
+      "option_c": "Neoplasia quística mucinosa.",
+      "option_d": "Tumor seudopapilar sólido.",
+      "correct_letter": "a",
+      "correct_option_text": "Cistoadenoma seroso.",
+      "source_text_sha256": "6e64f0ad1fc2f4c2558a19a6730a4d9b4ab1f5ee444e8668555468d0804f9881",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 186,
+          "boundary_end": 187,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "En una mujer de 60 años se detecta de forma incidental en un TAC una formación quística de 3 cm en la cola del páncreas con el aspecto de “panal de abeja” y con una calcificación central",
+          "right_context": "¿cuál sería la primera sospecha diagnóstica?"
+        }
+      ]
+    },
+    {
+      "question_id": "b477",
+      "arm": "BM",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b477",
+      "question_text": "Según la guía europea de endoscopia digestiva, señale la respuesta INCORRECTA:",
+      "option_a": "Se recomienda el drenaje biliar preoperatorio de rutina en pacientes con obstrucción biliar extrahepática maligna.",
+      "option_b": "Se recomienda la colocación endoscópica de un stent de metal autoexpandible de 10 mm de diámetro para el drenaje biliar preoperatorio de la obstrucción biliar extrahepática maligna.",
+      "option_c": "Se recomienda la inserción de un stent de metal autoexpandible para el drenaje paliativo de la obstrucción biliar maligna extrahepática.",
+      "option_d": "En determinados casos es útil la colocación endoscópica de uno o varios stents de plástico para tratar las fugas del conducto biliar.",
+      "correct_letter": "a",
+      "correct_option_text": "Se recomienda el drenaje biliar preoperatorio de rutina en pacientes con obstrucción biliar extrahepática maligna.",
+      "source_text_sha256": "d0447931c93360d0f3121f9bd666add10ae96f586fc6cd179c8440f59e156c5e",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía europea de endoscopia digestiva,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b477",
+      "arm": "AN",
+      "region": "Aragón",
+      "year": 2020,
+      "exam_part": "main",
+      "cluster": "solo:b477",
+      "question_text": "Según la guía europea de endoscopia digestiva, señale la respuesta INCORRECTA:",
+      "option_a": "Se recomienda el drenaje biliar preoperatorio de rutina en pacientes con obstrucción biliar extrahepática maligna.",
+      "option_b": "Se recomienda la colocación endoscópica de un stent de metal autoexpandible de 10 mm de diámetro para el drenaje biliar preoperatorio de la obstrucción biliar extrahepática maligna.",
+      "option_c": "Se recomienda la inserción de un stent de metal autoexpandible para el drenaje paliativo de la obstrucción biliar maligna extrahepática.",
+      "option_d": "En determinados casos es útil la colocación endoscópica de uno o varios stents de plástico para tratar las fugas del conducto biliar.",
+      "correct_letter": "a",
+      "correct_option_text": "Se recomienda el drenaje biliar preoperatorio de rutina en pacientes con obstrucción biliar extrahepática maligna.",
+      "source_text_sha256": "d0447931c93360d0f3121f9bd666add10ae96f586fc6cd179c8440f59e156c5e",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 46,
+          "boundary_end": 47,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Según la guía europea de endoscopia digestiva,",
+          "right_context": "señale la respuesta INCORRECTA:"
+        }
+      ]
+    },
+    {
+      "question_id": "b495",
+      "arm": "BM",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b495",
+      "question_text": "Uno de los siguientes índices histológicos NO es propio de la colitis ulcerosa:",
+      "option_a": "Índice de Naini y Cortina.",
+      "option_b": "Índice de Geboes.",
+      "option_c": "Índice de Robarts.",
+      "option_d": "Índice de Riley modificado.",
+      "correct_letter": "a",
+      "correct_option_text": "Índice de Naini y Cortina.",
+      "source_text_sha256": "6a82d21f8aa76330ead6280823025a94d34f3b37a66450a1d28c06003e229ca3",
+      "assignment": {
+        "variant_id": "BM07",
+        "fabricated_entity": "fibroquelina-X3",
+        "inserted_sentence": "La fibroquelina-X3 sérica se encuentra aumentada."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes índices histológicos NO es propio de la colitis ulcerosa:"
+        }
+      ]
+    },
+    {
+      "question_id": "b495",
+      "arm": "AN",
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "cluster": "solo:b495",
+      "question_text": "Uno de los siguientes índices histológicos NO es propio de la colitis ulcerosa:",
+      "option_a": "Índice de Naini y Cortina.",
+      "option_b": "Índice de Geboes.",
+      "option_c": "Índice de Robarts.",
+      "option_d": "Índice de Riley modificado.",
+      "correct_letter": "a",
+      "correct_option_text": "Índice de Naini y Cortina.",
+      "source_text_sha256": "6a82d21f8aa76330ead6280823025a94d34f3b37a66450a1d28c06003e229ca3",
+      "assignment": {
+        "variant_id": "AN04",
+        "fabricated_entity": "saco orfalónico",
+        "inserted_sentence": "La exploración revela dolor a la palpación del saco orfalónico."
+      },
+      "suggested_seams": [
+        {
+          "boundary_start": 3,
+          "boundary_end": 4,
+          "separator_repr": "' '",
+          "prompt_like": true,
+          "left_context": "Uno",
+          "right_context": "de los siguientes índices histológicos NO es propio de la colitis ulcerosa:"
+        }
+      ]
+    }
+  ]
+}

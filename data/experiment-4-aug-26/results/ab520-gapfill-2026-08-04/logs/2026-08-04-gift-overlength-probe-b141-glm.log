@@ -1,0 +1,4 @@
+{"plan": {"execute": true, "max_concurrency": 1, "model": "z-ai/glm-5.2", "provider": "tailscale_medical_rag", "queued": 1, "selected": 1, "skipped_already_scored": 0}}
+[14:23:27] [1/1 (100%)] tailscale_medical_rag/z-ai/glm-5.2 q=b141 r=1  API_ERROR=server_error  0.1s
+{"outcome": {"attempt_delta": 1, "cell_key": "tailscale_medical_rag|A|b141|illes-balears|2022|caso-6|144|z-ai/glm-5.2|1", "error_message": null, "error_type": "server_error", "failure_class": "tailscale_http500_correlated_overlength_exact_input", "finish_reason": null, "integrity": "ok", "latency_ms": 79, "recovered": false, "score_count": 0, "status_code": 500}}
+{"summary": {"executed": 1, "not_started_after_abort": 0, "recovered": 0, "residual": 1, "stop_reason": null}}

@@ -1,0 +1,329 @@
+{
+  "artifact_version": "ab520-execution-final-v1",
+  "generated_at_utc": "2026-08-04T14:30:43.068488+00:00",
+  "scope": {
+    "primary_questions": 500,
+    "reserve_questions_documented_not_run": 20,
+    "arms": [
+      "openrouter_A",
+      "openrouter_B",
+      "tailscale_A"
+    ],
+    "excluded_arm": "tailscale_B",
+    "required_cells": 6000,
+    "scored_cells": 5930,
+    "unresolved_cells": 70
+  },
+  "provider_condition_summary": [
+    {
+      "arm": "openrouter_A",
+      "required_cells": 2000,
+      "scored_cells": 1998,
+      "unresolved_cells": 2,
+      "july_reused_scored": 1271,
+      "august_gapfill_scored": 727,
+      "strict_correct": 1784,
+      "strict_accuracy_scored": "0.89289289",
+      "coverage_fraction": "0.99900000"
+    },
+    {
+      "arm": "openrouter_B",
+      "required_cells": 2000,
+      "scored_cells": 2000,
+      "unresolved_cells": 0,
+      "july_reused_scored": 1272,
+      "august_gapfill_scored": 728,
+      "strict_correct": 1468,
+      "strict_accuracy_scored": "0.73400000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "tailscale_A",
+      "required_cells": 2000,
+      "scored_cells": 1932,
+      "unresolved_cells": 68,
+      "july_reused_scored": 944,
+      "august_gapfill_scored": 988,
+      "strict_correct": 1765,
+      "strict_accuracy_scored": "0.91356108",
+      "coverage_fraction": "0.96600000"
+    }
+  ],
+  "model_condition_summary": [
+    {
+      "arm": "openrouter_A",
+      "model": "google/gemini-3.6-flash",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 490,
+      "strict_accuracy_scored": "0.98000000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_A",
+      "model": "google/gemma-4-26b-a4b-it",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 393,
+      "strict_accuracy_scored": "0.78600000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_A",
+      "model": "qwen/qwen3.6-35b-a3b",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 438,
+      "strict_accuracy_scored": "0.87600000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_A",
+      "model": "z-ai/glm-5.2",
+      "required_cells": 500,
+      "scored_cells": 498,
+      "unresolved_cells": 2,
+      "strict_correct": 463,
+      "strict_accuracy_scored": "0.92971888",
+      "coverage_fraction": "0.99600000"
+    },
+    {
+      "arm": "openrouter_B",
+      "model": "google/gemini-3.6-flash",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 448,
+      "strict_accuracy_scored": "0.89600000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_B",
+      "model": "google/gemma-4-26b-a4b-it",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 275,
+      "strict_accuracy_scored": "0.55000000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_B",
+      "model": "qwen/qwen3.6-35b-a3b",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 359,
+      "strict_accuracy_scored": "0.71800000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "openrouter_B",
+      "model": "z-ai/glm-5.2",
+      "required_cells": 500,
+      "scored_cells": 500,
+      "unresolved_cells": 0,
+      "strict_correct": 386,
+      "strict_accuracy_scored": "0.77200000",
+      "coverage_fraction": "1.00000000"
+    },
+    {
+      "arm": "tailscale_A",
+      "model": "google/gemini-3.6-flash",
+      "required_cells": 500,
+      "scored_cells": 484,
+      "unresolved_cells": 16,
+      "strict_correct": 471,
+      "strict_accuracy_scored": "0.97314050",
+      "coverage_fraction": "0.96800000"
+    },
+    {
+      "arm": "tailscale_A",
+      "model": "google/gemma-4-26b-a4b-it",
+      "required_cells": 500,
+      "scored_cells": 484,
+      "unresolved_cells": 16,
+      "strict_correct": 403,
+      "strict_accuracy_scored": "0.83264463",
+      "coverage_fraction": "0.96800000"
+    },
+    {
+      "arm": "tailscale_A",
+      "model": "qwen/qwen3.6-35b-a3b",
+      "required_cells": 500,
+      "scored_cells": 484,
+      "unresolved_cells": 16,
+      "strict_correct": 433,
+      "strict_accuracy_scored": "0.89462810",
+      "coverage_fraction": "0.96800000"
+    },
+    {
+      "arm": "tailscale_A",
+      "model": "z-ai/glm-5.2",
+      "required_cells": 500,
+      "scored_cells": 480,
+      "unresolved_cells": 20,
+      "strict_correct": 458,
+      "strict_accuracy_scored": "0.95416667",
+      "coverage_fraction": "0.96000000"
+    }
+  ],
+  "failure_classes": {
+    "openrouter_glm_length_no_parse_after_retries": 2,
+    "tailscale_glm_server_error_150s_after_retries": 4,
+    "tailscale_http500_correlated_overlength_exact_input": 64
+  },
+  "openrouter_paired_ab": {
+    "required_pairs": 2000,
+    "paired_scored": 1998,
+    "unpaired": 2,
+    "A_strict_correct": 1784,
+    "B_strict_correct": 1467,
+    "A_accuracy_paired": 0.8928928928928929,
+    "B_accuracy_paired": 0.7342342342342343,
+    "B_minus_A_accuracy": -0.15865865865865866,
+    "both_correct": 1402,
+    "A_only_correct": 382,
+    "B_only_correct": 65,
+    "both_incorrect": 149
+  },
+  "question_catalog_status": {
+    "COMPLETE_12_OF_12_CELLS": 478,
+    "PARTIAL_11_OF_12_CELLS": 6,
+    "PARTIAL_8_OF_12_CELLS": 16,
+    "RESERVE_NOT_IN_PRIMARY_500_SCOPE": 20
+  },
+  "reserve_reconstruction": {
+    "surviving_reserves_after_three_promotions": [
+      "c0955",
+      "c1474",
+      "c0921",
+      "c0205",
+      "c0232",
+      "c2037",
+      "c1460",
+      "c0176",
+      "c1452",
+      "c0248",
+      "c2033",
+      "c2027",
+      "c2443",
+      "c0291",
+      "c0937",
+      "c1469",
+      "c1514"
+    ],
+    "deterministic_frozen_rank_backfills": [
+      "c0990",
+      "c0275",
+      "c2132"
+    ],
+    "backfill_review_caveat": "Each of the three backfills has a sourcing PASS and one expansion-QA PASS; they are outside the executed primary 500."
+  },
+  "input_hashes": {
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/manifests/benchmark-cell-ledger.csv": "7776b79ceed3e4f7de59cc5861386a8091fa2abf40a571c1a0010700cfc45c2c",
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/manifests/run-manifest.json": "2b7a5f691318e8fc6f1c55836478a519f74b7d3fc6aa0c490e26174cfc074ae0",
+    "data/experiment-31-07-26/experiment.sqlite": "dec53a3d8ed452676672820a758b4571d061c3fe994c45981095d30216744748",
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/runs/ab520-gapfill-2026-08-04.sqlite": "c3dee485f8de1a6f28f2e38c7416ba412f0ebf30bc751c250af79b006a180888",
+    "data/experiment-4-aug-26/flat-A.csv": "c8f02316972aed3e22cbdd4c35ea56cea382613f5ff06b47650bd25684fb3ff6",
+    "data/experiment-4-aug-26/flat-B.csv": "5473a56cc40e1dcfedc7f1012f8d7bf554ddb2d57933f0dfc8be763bef1ddb9c",
+    "/private/tmp/ab182-q5i3oBTb/ab520-master.csv": "676ef08e587cb733583d2d0e641bdd66b20e83a4ec22f10116aa677ecb177dde",
+    "/private/tmp/ab182-q5i3oBTb/ab520-master-manifest.json": "ba3050c8f0639216e7072c27814df3542907a629a73f17601a4f8c6625f9f559",
+    "data/experiment-4-aug-26/flat-A.xlsx": "9376f7e6a55c0584501766e5d5ac16cbf720cefcf5733e9e52903c73eede936a",
+    "data/experiment-4-aug-26/flat-B.xlsx": "c6b3f88442df6020b5d2c9d551d7f168f0dc0deea2427febcf30191a446e301a",
+    "data/experiment-4-aug-26/new-182-flat-A.xlsx": "15ec1375c161bd7570ab0d287ea63e4d5109180b34f97644e5dd0a9dc4643657",
+    "data/experiment-4-aug-26/new-182-flat-B.xlsx": "310dd91ca4d19df36184899be1e8e0b3af475b3a412b702eb5f4940d9b1c7e36",
+    "data/experiment-4-aug-26/inputs/final_182_candidate_ids.json": "5d873be83335cb1f71ce53ec363f2e954a5c4ad8d813cfe8d272f080803a0718",
+    "/private/tmp/ab182-q5i3oBTb/selected-packets.jsonl": "e7d218b191ddc00e0da388063bbe74bc569d957a548e9edd9507bb7f31d47c5a",
+    "/private/tmp/ab182-q5i3oBTb/reserve-packets.jsonl": "e238a1fc135101662c068ad4a8d6e7c1ddd7ea8ee0509aad9f1a72fe70b0a36a",
+    "/private/tmp/ab182-q5i3oBTb/fully-passing-pool.jsonl": "9e12587bfb62ea66d6bb22377cbc2ff3161b129e2dd94b929899b44f17239ef0",
+    "/private/tmp/ab182-q5i3oBTb/negstem-labels.json": "b959787c1860301ea76f99b6c4e03a717d95b1dc2447a79ac152e54a3db45e05",
+    "/private/tmp/ab182-q5i3oBTb/sourcing-reviews.jsonl": "bc730982754d2147894ae34dc457fd44488f70b49f4560fcc0174ebc7d4f47fa",
+    "/private/tmp/ab182-q5i3oBTb/qa-reviews-initial.jsonl": "740ae2fceed1245935b722acfb87e567a4ef20637038609af6e31373a64e9cab",
+    "/private/tmp/ab182-q5i3oBTb/qa-reviews-expansion.jsonl": "d0a276ad4f40cd4b59ea81e758df3c281a15e60ff2dca9cc52cb77980005dc58"
+  },
+  "outputs": {
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/benchmark-6000-cell-results.csv": {
+      "sha256": "c5c27c6f58ccff23365044fe1e11d4a29cfce34d2a3818681f4b12e48163685b",
+      "size_bytes": 14680873
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/benchmark-520-question-catalog.csv": {
+      "sha256": "f6b1b0acc7324f68e16de8f0df7bf5c077e94cc44b8fe0d90ad11bbf44b0896b",
+      "size_bytes": 3123441
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/unresolved-cells.csv": {
+      "sha256": "527d8b0debbf24c6393863cf6e44bd3326b2df0b0559f02857bb5e34ae0cf435",
+      "size_bytes": 78820
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/provider-condition-summary.csv": {
+      "sha256": "b853681c2a0c757fe8e505a6fbd6877b25be883f1dbb5341076c4f41922d21b6",
+      "size_bytes": 332
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/model-condition-summary.csv": {
+      "sha256": "88cc625b399b63adb293cc9b4736705e19c0a00ed5bfabee7fa675f57303a831",
+      "size_bytes": 964
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/openrouter-paired-ab-results.csv": {
+      "sha256": "24c7760428313cd518ec697fc7df890e96afafa6e01ae0abfa3bbfd81c5f7dd3",
+      "size_bytes": 280599
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/exports/benchmark-results-and-traceability.xlsx": {
+      "sha256": "afae0c384f46fb556b64250437b269beda5bdbb1bb812665bd4dcd50451421af",
+      "size_bytes": 4160316
+    },
+    "data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/repo-readonly-check.json": {
+      "sha256": "c2ed947dee97312ec99cd5ec476f48eafb0dfca1a861917e0f7803f38ce4d143",
+      "size_bytes": 1059
+    }
+  },
+  "validation": {
+    "ledger_rows": 6000,
+    "unique_cell_keys": 6000,
+    "exact_database_input_matches": 6000,
+    "workbook": {
+      "sheets": {
+        "QuestionCatalog520": [
+          521,
+          123
+        ],
+        "CellResults6000": [
+          6001,
+          70
+        ],
+        "ProviderSummary": [
+          4,
+          9
+        ],
+        "ModelSummary": [
+          13,
+          8
+        ],
+        "Unresolved": [
+          71,
+          70
+        ],
+        "OpenRouterABPairs": [
+          2001,
+          18
+        ],
+        "Documentation": [
+          9,
+          2
+        ]
+      },
+      "formula_count": 0
+    },
+    "secrets_written": false
+  },
+  "methodology_notes": [
+    "July scores are reused only for hash-pinned retained cells and are labeled by origin.",
+    "August executions use the existing mcq_es_v4 protocol with temperature 0 and GIFT prompt ID 13.",
+    "Unparseable or provider-error responses remain missing; no answer or score was inferred.",
+    "The 64 TailScale overlength cells are exact linked-context failures retained without input alteration.",
+    "TailScale B was not part of the authorized execution scope.",
+    "The archived 520 master predates the final non-negated rebuild and stem-dedup swaps; it was reused only for the unchanged retained-318 traceability, while current new/reserve membership was rebuilt from the final packet IDs."
+  ]
+}

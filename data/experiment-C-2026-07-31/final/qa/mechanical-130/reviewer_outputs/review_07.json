@@ -1,0 +1,425 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_07",
+  "shard_id": "07",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b1",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 302,
+      "boundary_end": 304,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The finding attaches to the sole described patient and fits as a complete sentence between the patient narrative and the general colon-cancer prompt, without contradicting any stated fact."
+    },
+    {
+      "question_id": "b1",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 302,
+      "boundary_end": 304,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The examination finding has one unambiguous patient referent and forms a grammatical standalone sentence immediately before the prompt; the source states no conflicting examination finding."
+    },
+    {
+      "question_id": "b6",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 452,
+      "boundary_end": 453,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The seam follows the patient's positive fecal-blood result and precedes the directive. The biomarker sentence is grammatical, patient-attached, and does not explicitly conflict with the source, although it is close to a management decision."
+    },
+    {
+      "question_id": "b11",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "UNCERTAIN",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "AMBIGUOUS_PATIENT_ANCHOR"
+      ],
+      "rationale": "The context contains both the index patient and his brother, while the recommendation explicitly concerns the brother. The subjectless laboratory statement does not establish whose plasma was tested, so no seam provides unambiguous patient attachment."
+    },
+    {
+      "question_id": "b11",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "UNCERTAIN",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "AMBIGUOUS_PATIENT_ANCHOR"
+      ],
+      "rationale": "Both the index patient and a brother are present, and the final question shifts focus to the brother. The examination statement does not identify which person was examined, making the clinical attachment ambiguous despite an otherwise usable seam."
+    },
+    {
+      "question_id": "b12",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 456,
+      "boundary_end": 457,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [],
+      "rationale": "The biomarker statement follows the returning patient's complete symptom narrative and precedes the directive as a grammatical sentence. No source fact states a conflicting biomarker result."
+    },
+    {
+      "question_id": "b20",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 302,
+      "boundary_end": 304,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The sole patient provides a clear referent, and the complete inserted sentence fits between the narrative and the Kudo-classification prompt without changing or contradicting the source."
+    },
+    {
+      "question_id": "b20",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "PASS",
+      "boundary_start": 302,
+      "boundary_end": 304,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The examination finding attaches unambiguously to the only patient and is grammatical at the paragraph boundary immediately before the Kudo-classification directive; no examination contradiction is stated."
+    },
+    {
+      "question_id": "b396",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "This is a legal-administrative question rather than a patient narrative. It supplies no suggested seam and no individual to whom a serum result could attach."
+    },
+    {
+      "question_id": "b396",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "The item asks about statutory management of clinical records and contains no case patient or narrative-stem boundary. The examination finding cannot be attached without inventing context."
+    },
+    {
+      "question_id": "b415",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "This is a context-free guideline question about a diagnostic technique. There is no patient narrative and no suggested whitespace seam for a patient-specific biomarker finding."
+    },
+    {
+      "question_id": "b415",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "The guideline prompt describes no patient or examination context and offers no candidate seam. Adding a localized examination finding would require supplying context not present in the source."
+    },
+    {
+      "question_id": "b444",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "The left text is a topical preamble, not a patient narrative, and it ends in a comma. Inserting the capitalized standalone sentence at the only seam would leave a comma immediately before it and would require source punctuation editing to read grammatically."
+    },
+    {
+      "question_id": "b444",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "No individual patient is described, and the only boundary follows a comma in a topical preamble. The capitalized examination sentence cannot be inserted there as a grammatical sentence without altering the original punctuation."
+    },
+    {
+      "question_id": "b458",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "The patient anchor and placement before the directive are clear, but the source narrative ends with a comma. Literal insertion of a capitalized standalone sentence at that seam is ungrammatical unless the source comma or inserted sentence is edited."
+    },
+    {
+      "question_id": "b458",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "The finding has a patient referent and precedes the directive, but the only seam is after a source comma. Preserving all source text yields an invalid comma followed by a new capitalized sentence, so grammatical insertion would require a prohibited edit."
+    },
+    {
+      "question_id": "b472",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "This is a generic testing question with no described patient and no suggested whitespace seam. A serum finding cannot be assigned to a source participant mechanically."
+    },
+    {
+      "question_id": "b472",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [
+        "NO_PATIENT_ANCHOR",
+        "NO_SUGGESTED_SEAM"
+      ],
+      "rationale": "The generic chronic-diarrhea testing prompt identifies no patient to examine and provides no candidate boundary. The localized finding cannot be inserted with a valid clinical attachment."
+    },
+    {
+      "question_id": "b490",
+      "arm": "BM",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "A patient is present and the proposed location is before the interrogative, but the preceding source clause ends with a comma. The literal capitalized sentence cannot follow that comma grammatically without modifying punctuation."
+    },
+    {
+      "question_id": "b490",
+      "arm": "AN",
+      "reviewer_id": "review_07",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": [
+        "MALFORMED_COMMA_SEAM"
+      ],
+      "rationale": "The finding refers to the described patient and would occur before the question, but the only seam follows a comma in the same sentence. Exact insertion would be ungrammatical unless the original punctuation or inserted wording were changed."
+    }
+  ]
+}

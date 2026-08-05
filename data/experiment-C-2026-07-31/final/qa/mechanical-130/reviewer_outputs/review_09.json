@@ -1,0 +1,883 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_09",
+  "shard_id": "09",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b172",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_SEAM"],
+      "rationale": "The item concerns program-level colorectal screening requirements and describes no patient. Neither offered seam lets a serum finding attach to a patient without changing the source framing."
+    },
+    {
+      "question_id": "b172",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_SEAM"],
+      "rationale": "The item concerns program-level colorectal screening requirements and describes no patient. Neither offered seam lets an examination finding attach to a patient without changing the source framing."
+    },
+    {
+      "question_id": "b173",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 208,
+      "boundary_end": 209,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The colonoscopy and identified polyp establish an implicit patient. The clean sentence boundary immediately before the final directive accepts the biomarker sentence without source edits or contradiction."
+    },
+    {
+      "question_id": "b173",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 208,
+      "boundary_end": 209,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The colonoscopy and identified polyp establish an implicit patient. The clean sentence boundary immediately before the final directive accepts the examination sentence without source edits or contradiction."
+    },
+    {
+      "question_id": "b174",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 249,
+      "boundary_end": 250,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The specific colonoscopy and lesion provide an implicit patient context. The period before the directive is a complete narrative-to-question seam for the biomarker sentence."
+    },
+    {
+      "question_id": "b174",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 249,
+      "boundary_end": 250,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The specific colonoscopy and lesion provide an implicit patient context. The period before the directive is a complete narrative-to-question seam for the examination sentence."
+    },
+    {
+      "question_id": "b175",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_SEAM"],
+      "rationale": "This is a theoretical classification question, not a patient narrative. The biomarker finding has no referent, and the offered seams are within the theoretical prompt rather than after a patient description."
+    },
+    {
+      "question_id": "b175",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_VALID_SEAM"],
+      "rationale": "This is a theoretical classification question, not a patient narrative. The examination finding has no referent, and the offered seams are within the theoretical prompt rather than after a patient description."
+    },
+    {
+      "question_id": "b176",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 191,
+      "boundary_end": 192,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The specific colonoscopy and transverse-colon polyp establish an implicit patient. The period before the directive permits a grammatical, exact biomarker insertion."
+    },
+    {
+      "question_id": "b176",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 191,
+      "boundary_end": 192,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The specific colonoscopy and transverse-colon polyp establish an implicit patient. The period before the directive permits a grammatical, exact examination-finding insertion."
+    },
+    {
+      "question_id": "b177",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_VALID_SEAM", "PUNCTUATION_REPAIR_REQUIRED"],
+      "rationale": "A patient is implicit in the colonoscopy, but the only late seam follows a comma before the directive. Inserting a capitalized complete sentence there is ungrammatical unless the source comma is changed."
+    },
+    {
+      "question_id": "b177",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_VALID_SEAM", "PUNCTUATION_REPAIR_REQUIRED"],
+      "rationale": "A patient is implicit in the colonoscopy, but the only late seam follows a comma before the directive. Inserting a capitalized complete sentence there is ungrammatical unless the source comma is changed."
+    },
+    {
+      "question_id": "b185",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 254,
+      "boundary_end": 255,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The resected polyp and its histology provide a specific implicit patient. The period before the final interrogative is a clean seam for the biomarker sentence."
+    },
+    {
+      "question_id": "b185",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "PASS",
+      "boundary_start": 254,
+      "boundary_end": 255,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": [],
+      "rationale": "The resected polyp and its histology provide a specific implicit patient. The period before the final interrogative is a clean seam for the examination sentence."
+    },
+    {
+      "question_id": "b252",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a general propofol statement question with no patient. Both offered seams split the directive, so the biomarker sentence cannot be inserted mechanically and grammatically."
+    },
+    {
+      "question_id": "b252",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a general propofol statement question with no patient. Both offered seams split the directive, so the examination sentence cannot be inserted mechanically and grammatically."
+    },
+    {
+      "question_id": "b267",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item is a general statement about biliary mechanical lithotripsy, with no patient narrative. Its only seam splits the directive from its topic."
+    },
+    {
+      "question_id": "b267",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item is a general statement about biliary mechanical lithotripsy, with no patient narrative. Its only seam splits the directive from its topic."
+    },
+    {
+      "question_id": "b281",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The prompt is an abstract diagnostic statement rather than a patient case, and no whitespace seam is offered. A mechanical insertion is therefore unavailable."
+    },
+    {
+      "question_id": "b281",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The prompt is an abstract diagnostic statement rather than a patient case, and no whitespace seam is offered. A mechanical insertion is therefore unavailable."
+    },
+    {
+      "question_id": "b297",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_OFFERED_SEAM"],
+      "rationale": "A patient is specified, but the entire source is a single stem ending in a colon and the packet offers no permissible seam. Placement would require inventing an unreviewed boundary."
+    },
+    {
+      "question_id": "b297",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_OFFERED_SEAM"],
+      "rationale": "A patient is specified, but the entire source is a single stem ending in a colon and the packet offers no permissible seam. Placement would require inventing an unreviewed boundary."
+    },
+    {
+      "question_id": "b310",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a theoretical diagnostic-confirmation prompt with no patient. The only seam separates 'Es falso' from its required complement and cannot accept the sentence grammatically."
+    },
+    {
+      "question_id": "b310",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a theoretical diagnostic-confirmation prompt with no patient. The only seam separates 'Es falso' from its required complement and cannot accept the sentence grammatically."
+    },
+    {
+      "question_id": "b323",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about microscopic colitis and supplies no patient. The seam follows an introductory topic phrase and comma, not a patient narrative, so insertion is ungrammatical."
+    },
+    {
+      "question_id": "b323",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about microscopic colitis and supplies no patient. The seam follows an introductory topic phrase and comma, not a patient narrative, so insertion is ungrammatical."
+    },
+    {
+      "question_id": "b339",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The prompt is a general Helicobacter pylori diagnostic question with no patient. The offered comma seam divides an introductory phrase from its directive and is not a narrative boundary."
+    },
+    {
+      "question_id": "b339",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The prompt is a general Helicobacter pylori diagnostic question with no patient. The offered comma seam divides an introductory phrase from its directive and is not a narrative boundary."
+    },
+    {
+      "question_id": "b355",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about hepatocellular carcinoma and has no patient. The only seam follows an introductory phrase and comma, so the inserted sentence would not attach grammatically."
+    },
+    {
+      "question_id": "b355",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about hepatocellular carcinoma and has no patient. The only seam follows an introductory phrase and comma, so the inserted sentence would not attach grammatically."
+    },
+    {
+      "question_id": "b368",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PHRASE"],
+      "rationale": "This is a general neoplasm question with no patient. The only seam splits the fixed phrase 'una de las siguientes', making literal insertion impossible without rewriting."
+    },
+    {
+      "question_id": "b368",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PHRASE"],
+      "rationale": "This is a general neoplasm question with no patient. The only seam splits the fixed phrase 'una de las siguientes', making literal insertion impossible without rewriting."
+    },
+    {
+      "question_id": "b383",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This guideline question has no patient narrative. Both seams occur within the directive, so a biomarker sentence would split its syntax rather than precede the question."
+    },
+    {
+      "question_id": "b383",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This guideline question has no patient narrative. Both seams occur within the directive, so an examination sentence would split its syntax rather than precede the question."
+    },
+    {
+      "question_id": "b398",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item is a general ECCO recommendation question with no patient, and the packet offers no permissible whitespace seam."
+    },
+    {
+      "question_id": "b398",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item is a general ECCO recommendation question with no patient, and the packet offers no permissible whitespace seam."
+    },
+    {
+      "question_id": "b417",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_OFFERED_SEAM"],
+      "rationale": "The conditional stem describes a patient, but it is a single uninterrupted sentence ending in a colon and no allowable seam is offered."
+    },
+    {
+      "question_id": "b417",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_OFFERED_SEAM"],
+      "rationale": "The conditional stem describes a patient, but it is a single uninterrupted sentence ending in a colon and no allowable seam is offered."
+    },
+    {
+      "question_id": "b431",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a guideline-based prognostic-factor question with no patient. The late seam follows a comma within the prompt, while the early seam also splits the directive."
+    },
+    {
+      "question_id": "b431",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "This is a guideline-based prognostic-factor question with no patient. The late seam follows a comma within the prompt, while the early seam also splits the directive."
+    },
+    {
+      "question_id": "b446",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a direct factual question about the Rockall scale, with neither a patient narrative nor an offered insertion seam."
+    },
+    {
+      "question_id": "b446",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a direct factual question about the Rockall scale, with neither a patient narrative nor an offered insertion seam."
+    },
+    {
+      "question_id": "b475",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about azathioprine and has no patient. Both seams divide the directive from the prepositional phrase that completes it."
+    },
+    {
+      "question_id": "b475",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_SPLITS_PROMPT"],
+      "rationale": "The item asks generally about azathioprine and has no patient. Both seams divide the directive from the prepositional phrase that completes it."
+    },
+    {
+      "question_id": "b492",
+      "arm": "BM",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a general laboratory-test prompt with no patient narrative, and no whitespace seam is offered for a mechanical insertion."
+    },
+    {
+      "question_id": "b492",
+      "arm": "AN",
+      "reviewer_id": "review_09",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a general laboratory-test prompt with no patient narrative, and no whitespace seam is offered for a mechanical insertion."
+    }
+  ]
+}

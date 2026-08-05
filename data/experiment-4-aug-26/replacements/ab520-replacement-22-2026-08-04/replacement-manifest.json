@@ -1,0 +1,2026 @@
+{
+  "artifact_version": "ab520-replacement-22-package-v1",
+  "selection_date": "2026-08-04",
+  "status": "PROVISIONAL_PENDING_PROTOCOL_QA",
+  "execution_status": "NOT_RUN",
+  "interpretation": "This is a new matched replacement cohort. It does not recover or overwrite the original 22 questions or any original unresolved cell.",
+  "scope": {
+    "replacement_questions": 22,
+    "ambiguous_or_model_sensitive_questions": 6,
+    "overlength_questions": 16,
+    "historical_overlength_failures": 64,
+    "planned_arms": [
+      "openrouter_A",
+      "openrouter_B",
+      "tailscale_A"
+    ],
+    "models": [
+      "google/gemini-3.6-flash",
+      "google/gemma-4-26b-a4b-it",
+      "qwen/qwen3.6-35b-a3b",
+      "z-ai/glm-5.2"
+    ],
+    "planned_cells": 264,
+    "excluded_arm": "tailscale_B"
+  },
+  "condition_B_contract": {
+    "replacement_text": "Ninguna de las respuestas anteriores es correcta.",
+    "changed_fields_per_question": [
+      "option_{correct_letter}",
+      "correct_option_text"
+    ],
+    "correct_letter_unchanged": true
+  },
+  "repository_commit": "9660b9a503cf68c45b9a808f38ba597b41769c16",
+  "source_files_sha256": {
+    "/Users/ernestsaenz/Programming/gift-project-compile/second-project/workbook-repairs-2026-07-30/outputs/all-regions-aparato-digestivo.corrected.xlsx": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+    "data/experiment-4-aug-26/benchmark-500.json": "057f8b805d928e90079b8ba80b326581e6e14f65fb9a1644a0b4d53cbc294abc",
+    "/private/tmp/ab182-q5i3oBTb/candidate-packets.jsonl": "780a4c37b962d632f1a55f57a25d3df6c5911872234d85cca63cabe01d8b2053",
+    "/private/tmp/ab182-q5i3oBTb/sourcing-reviews.jsonl": "bc730982754d2147894ae34dc457fd44488f70b49f4560fcc0174ebc7d4f47fa",
+    "/private/tmp/ab182-q5i3oBTb/qa-reviews-initial.jsonl": "740ae2fceed1245935b722acfb87e567a4ef20637038609af6e31373a64e9cab",
+    "/private/tmp/ab182-q5i3oBTb/qa-reviews-expansion.jsonl": "d0a276ad4f40cd4b59ea81e758df3c281a15e60ff2dca9cc52cb77980005dc58",
+    "/private/tmp/ab182-q5i3oBTb/negstem-labels.json": "b959787c1860301ea76f99b6c4e03a717d95b1dc2447a79ac152e54a3db45e05",
+    "code/medrag_eval/prompting.py": "8a29624293631d2a2fef0ec3e8bf58d155f561563a9960b785a58f4a94352bc7"
+  },
+  "replacements": [
+    {
+      "replacement_id": "r001",
+      "replaces_question_id": "n169",
+      "candidate_id": "c2485",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "la-rioja|2021|main|46",
+      "source_row": 2485,
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "question_number": 46,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "En el síndrome hepatopulmonar (SHP) es cierto que:",
+        "A": {
+          "options": {
+            "a": "Existe una relación clara entre la presencia o gravedad del SHP y la gravedad de la enfermedad hepática valorada por la clasificación de Child-Turcotte-Pugh o por el índice MELD.",
+            "b": "La determinación del gradiente alveolo-arterial de oxígeno no es un método más sensible que la presión parcial arterial de oxígeno.",
+            "c": "La gammagrafía pulmonar con macroagregados de albúmina (γMA) marcados con ⁹⁹ᵐTc es considerado el Gold-estándar para el diagnóstico del SHP.",
+            "d": "En pacientes cirróticos con SHP se ha demostrado un incremento de la producción de óxido nítrico en los pulmones medido en el aire espirado."
+          },
+          "correct_option_text": "En pacientes cirróticos con SHP se ha demostrado un incremento de la producción de óxido nítrico en los pulmones medido en el aire espirado."
+        },
+        "B": {
+          "options": {
+            "a": "Existe una relación clara entre la presencia o gravedad del SHP y la gravedad de la enfermedad hepática valorada por la clasificación de Child-Turcotte-Pugh o por el índice MELD.",
+            "b": "La determinación del gradiente alveolo-arterial de oxígeno no es un método más sensible que la presión parcial arterial de oxígeno.",
+            "c": "La gammagrafía pulmonar con macroagregados de albúmina (γMA) marcados con ⁹⁹ᵐTc es considerado el Gold-estándar para el diagnóstico del SHP.",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "b9b6ad648f3ab5132dd3adaf76e13c53fb2f51cd36541bcb1e3b9aed7e4f42a1",
+        "question_text_sha256": "dccb2f6881bb7ca04dd3c74f35afca5553948809a240b097ec46d71c45d16443",
+        "condition_A_gift_user_sha256": "815de3a976fb43a48e2cbbd642ab1cdc1de00ec3f2d45c449be9c5ee410e4ea7",
+        "condition_B_gift_user_sha256": "30961c04f7f14943e2c1e73940dc41b1f45d2dd32d9c3f9216909db63dba58cb"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 675,
+        "condition_A_utf8_bytes": 701,
+        "condition_B_characters": 584,
+        "condition_B_utf8_bytes": 606
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2020-2021__exam_pdf__56ff679329fe.json",
+        "exam_page": 18,
+        "exam_pdf_pages": 39,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/exam/exam__fea-aparato-digestivo-2021.pdf",
+        "exam_pdf_sha256": "56ff679329fe5d132b961051507488284391121682352261871a13066f1d1b36",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2020-2021__answer_key_pdf__6de7cbcc93fa.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf",
+        "key_pdf_sha256": "6de7cbcc93fa45a99d29946a16513a838ece43828d7f66f03736a1ee03ed9172",
+        "workbook_exam_name": "AD_LA_RIOJA_2020_2021__EXAM__exam__fea-aparato-digestivo-2021.pdf",
+        "workbook_key_name": "AD_LA_RIOJA_2020_2021__CORRECTION__correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c2485",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/exam/exam__fea-aparato-digestivo-2021.pdf, PDF page 18",
+            "sha256": "56ff679329fe5d132b961051507488284391121682352261871a13066f1d1b36",
+            "title": "La Rioja 2021 FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf, PDF page 1",
+            "sha256": "6de7cbcc93fa45a99d29946a16513a838ece43828d7f66f03736a1ee03ed9172",
+            "title": "La Rioja 2021 modified definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/decompensated-dyspneic-dilemma",
+            "title": "AASLD Decompensated Dyspneic Dilemma: hepatopulmonary syndrome"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf",
+            "title": "EASL Clinical Practice Guidelines for decompensated cirrhosis"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "AASLD describes increased pulmonary nitric-oxide production, including exhaled NO measurements, in hepatopulmonary syndrome. Severity does not track reliably with Child/MELD, the A–a gradient is more sensitive than PaO2, and contrast echocardiography rather than 99mTc-MAA scanning is the standard characterization test; D is unique and retained choices are false.",
+        "raw_fields_hash": "b9b6ad648f3ab5132dd3adaf76e13c53fb2f51cd36541bcb1e3b9aed7e4f42a1",
+        "reason_codes": [
+          "ALL_CRITERIA_SATISFIED"
+        ],
+        "reviewer_id": "S17",
+        "source_key": "la-rioja|2021|main|46",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r002",
+      "replaces_question_id": "b320",
+      "candidate_id": "c2718",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "navarra|2022|teorico-practica|69",
+      "source_row": 2718,
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "question_number": 69,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Según la clasificación de Todani, la dilatación de la porción intraduodenal del conducto colédoco o coledococele correspondería a un quiste tipo:",
+        "A": {
+          "options": {
+            "a": "II",
+            "b": "Ia",
+            "c": "Ib",
+            "d": "III"
+          },
+          "correct_option_text": "III"
+        },
+        "B": {
+          "options": {
+            "a": "II",
+            "b": "Ia",
+            "c": "Ib",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "05ddbfee8772c2e79d23c89633126a64a552b276e54898c8eddb8b0e1f8ef43c",
+        "question_text_sha256": "bb9868a1810331f4564bd786aee497784569fa3790b92f432853a471808d082e",
+        "condition_A_gift_user_sha256": "d63cab16b1ec05b07d8aa2eaa615e22488b0831542661b8aba8ff26599135c21",
+        "condition_B_gift_user_sha256": "7547f8455d90c410b7fef984effd4f80be9784308ae77b039f7945120d4e9195"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 190,
+        "condition_A_utf8_bytes": 196,
+        "condition_B_characters": 236,
+        "condition_B_utf8_bytes": 242
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/navarra__2022__exam_pdf__4ff9643df309.json",
+        "exam_page": 15,
+        "exam_pdf_pages": 26,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/navarra/2022/040_exam_preguntas-test-examen-digestivo-definitivo-ope-2022-estabili.pdf",
+        "exam_pdf_sha256": "4ff9643df3092f718a8cf33a002f85b7e8da5d0f3e7ae60446d8fdd4e991dfd5",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/navarra__2022__answer_key_pdf__dcdfea63a67c.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/navarra/2022/041_answer-key_respuestas-digestivo-ope-2022-estabilizacion.pdf",
+        "key_pdf_sha256": "dcdfea63a67cc585d96e8468c970426b03baca80e35fc5519804a5aa7ecc0f1b",
+        "workbook_exam_name": "AD_NAVARRA_2022__EXAM__040_exam_preguntas-test-examen-digestivo-definitivo-ope-2022-estabili.pdf",
+        "workbook_key_name": "AD_NAVARRA_2022__ANSWER_KEY__041_answer-key_respuestas-digestivo-ope-2022-estabilizacion.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "In the Todani classification, a choledochocele involving the intraduodenal common bile duct is type III. Types I and II describe different extrahepatic patterns.",
+        "evidence": [
+          {
+            "title": "Diagnosis and management of choledochal cysts",
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S1365182X22016008"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r003",
+      "replaces_question_id": "n031",
+      "candidate_id": "c0205",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "andalucia|2021|cuestionario-teorico|51",
+      "source_row": 205,
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 51,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "Entre los distintos signos y/o síntomas que pueden aparecer en un proceso de hepatitis aguda, señale cual constituye un claro criterio de ingreso hospitalario:",
+        "A": {
+          "options": {
+            "a": "Astenia",
+            "b": "Febrícula",
+            "c": "Dolor en hipocondrio derecho",
+            "d": "Coagulopatía"
+          },
+          "correct_option_text": "Coagulopatía"
+        },
+        "B": {
+          "options": {
+            "a": "Astenia",
+            "b": "Febrícula",
+            "c": "Dolor en hipocondrio derecho",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "e698c3e5e8ee0661967f1955f5470a727138006bf2ef08ccfe3e180a8991279e",
+        "question_text_sha256": "2b59f3ef60a51427746817bef187c4c7f352ce57e183a71d825c08d84782b67d",
+        "condition_A_gift_user_sha256": "6fbeb9dfb7fc196b8020ed6e433444755609ea3ed4aad8a40d2c5996793f04da",
+        "condition_B_gift_user_sha256": "2cc80b13a632e65007659cc2ff69c3a9e3ca1c9cc3a0361d69b9621930a1317b"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 251,
+        "condition_A_utf8_bytes": 255,
+        "condition_B_characters": 288,
+        "condition_B_utf8_bytes": 291
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__exam_pdf__0c2550a488a3.json",
+        "exam_page": 13,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf",
+        "exam_pdf_sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__answer_key_pdf__81bf4e0a24da.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf",
+        "key_pdf_sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+        "workbook_exam_name": "AD_ANDALUCIA_2021_22_LIBRE__EXAM__07__9122-aparato-digestivo-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2021_22_LIBRE__CORRECTION__09__9122-plantilla-respuestas-def-digestivo-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c0205",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf, page 13",
+            "sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+            "title": "andalucia|2021|cuestionario-teorico|51 official exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf, page 1",
+            "sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+            "title": "andalucia|2021|cuestionario-teorico|51 definitive key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://clinicalestablishments.mohfw.gov.in/sites/default/files/standard-treatment-guidelines/3591.pdf",
+            "title": "National viral-hepatitis management guideline"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "The official exam and definitive key agree on D. Coagulopathy in acute hepatitis signals severe hepatic dysfunction and possible progression toward acute liver failure, unlike isolated asthenia, low-grade fever or right-upper-quadrant discomfort, and is a clear reason for hospital assessment/admission. The replacement leaves no other admission criterion.",
+        "raw_fields_hash": "e698c3e5e8ee0661967f1955f5470a727138006bf2ef08ccfe3e180a8991279e",
+        "reason_codes": [],
+        "reviewer_id": "S00",
+        "source_key": "andalucia|2021|cuestionario-teorico|51",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r004",
+      "replaces_question_id": "b199",
+      "candidate_id": "c0211",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "andalucia|2021|cuestionario-teorico|57",
+      "source_row": 211,
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 57,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "¿Cuál es la actitud más adecuada ante el hallazgo incidental en una pieza de apendicectomía de un tumor carcinoide de 8mm NET G1 (bien diferenciado, bajo índice mitótico, Ki-67<3%) con márgenes libres?",
+        "A": {
+          "options": {
+            "a": "Hemicolectomía derecha con vaciamiento ganglionar en un segundo tiempo.",
+            "b": "Ileocequectomía con vaciamiento ganglionar en un segundo tiempo.",
+            "c": "Adyuvancia con octreótido.",
+            "d": "La apendicectomía es suficiente."
+          },
+          "correct_option_text": "La apendicectomía es suficiente."
+        },
+        "B": {
+          "options": {
+            "a": "Hemicolectomía derecha con vaciamiento ganglionar en un segundo tiempo.",
+            "b": "Ileocequectomía con vaciamiento ganglionar en un segundo tiempo.",
+            "c": "Adyuvancia con octreótido.",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "a3504cdc745871daf70c446f5433376060d3192fc8b5ac3fc5c6fafe7aa3ad6a",
+        "question_text_sha256": "59f68a6f3a06f32c5546ba1d3636404f10c1fae5851fb229b2be7d19c3703396",
+        "condition_A_gift_user_sha256": "213b142001ec3aa21551f5e262183c6bca9ad3390a63182a18fd30844fa504bf",
+        "condition_B_gift_user_sha256": "d36be11a51dc3240ac290d05071719f8a05fcb404199ec37bd5bd9a89bb13765"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 430,
+        "condition_A_utf8_bytes": 441,
+        "condition_B_characters": 447,
+        "condition_B_utf8_bytes": 457
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__exam_pdf__0c2550a488a3.json",
+        "exam_page": 14,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf",
+        "exam_pdf_sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__answer_key_pdf__81bf4e0a24da.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf",
+        "key_pdf_sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+        "workbook_exam_name": "AD_ANDALUCIA_2021_22_LIBRE__EXAM__07__9122-aparato-digestivo-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2021_22_LIBRE__CORRECTION__09__9122-plantilla-respuestas-def-digestivo-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": true,
+        "candidate_id": "c0211",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf, page 14",
+            "sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+            "title": "Andalucía FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf, page 1",
+            "sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+            "title": "Andalucía definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://onlinelibrary.wiley.com/doi/10.1111/jne.13332",
+            "title": "ENETS 2023 guidance for appendiceal neuroendocrine tumors"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Official page/key confirm D. A completely resected 8-mm, G1 appendiceal neuroendocrine tumor with negative margins is cured by appendectomy; completion colectomy/ileocecectomy and octreotide adjuvancy are not indicated. Replacement leaves all retained choices false.",
+        "raw_fields_hash": "a3504cdc745871daf70c446f5433376060d3192fc8b5ac3fc5c6fafe7aa3ad6a",
+        "reason_codes": [
+          "A_UNIQUE_KEY_CONFIRMED",
+          "B_VALID"
+        ],
+        "reviewer_id": "S05",
+        "source_key": "andalucia|2021|cuestionario-teorico|57",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r005",
+      "replaces_question_id": "b248",
+      "candidate_id": "c2116",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "galicia|2019|main|65",
+      "source_row": 2116,
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "question_number": 65,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "En una ecografía abdominal describen una lesión ocupante de espacio situada en el segmento antero-superior del lóbulo hepático derecho, entre la vena suprahepática derecha y la media, craneal a la vena porta. ¿En qué segmento del hígado se hallaría según la clasificación de Couinaud?:",
+        "A": {
+          "options": {
+            "a": "IV.",
+            "b": "VI.",
+            "c": "VII.",
+            "d": "VIII."
+          },
+          "correct_option_text": "VIII."
+        },
+        "B": {
+          "options": {
+            "a": "IV.",
+            "b": "VI.",
+            "c": "VII.",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "40a1a595c05c8bd028b5b126369b5f139a2f4fc41b19d3aeda9271a7d8c1e1fe",
+        "question_text_sha256": "6f9fbed6242dd9e33b9090dd1d9e160dbc8fcf6fc18487c8c8bafac319d52a4c",
+        "condition_A_gift_user_sha256": "168712d51cb775166e7b282f16b432982d4c251805c35a54fe82af6722c70f7b",
+        "condition_B_gift_user_sha256": "a1894a0f719f9fd09c03a94680006975facbad1b9e7da17e5a96ee50de04bc90"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 336,
+        "condition_A_utf8_bytes": 347,
+        "condition_B_characters": 380,
+        "condition_B_utf8_bytes": 391
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__exam_pdf__236824bd132c.json",
+        "exam_page": 13,
+        "exam_pdf_pages": 21,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/exam/gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "exam_pdf_sha256": "236824bd132c6f9b76cf5a73b0ccba57fb8b80fac0034d48f9569fa8a660fb4a",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__answer_key_pdf__7cc856ef5cc1.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/correction/gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf",
+        "key_pdf_sha256": "7cc856ef5cc18fdf3c44b8335a2eec900e9366c297cba44ded93616e7ea4c489",
+        "workbook_exam_name": "AD_GALICIA_OPE_2019__EXAM__gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "workbook_key_name": "AD_GALICIA_OPE_2019__CORRECTION__gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "In Couinaud anatomy, segment VIII is the right anterosuperior segment above the portal plane and between the right and middle hepatic veins. Segments IV, VI, and VII do not match all stated landmarks, so the exact D swap is valid.",
+        "evidence": [
+          {
+            "title": "Segmentation of liver, its vessels and lesions from CT images for surgical planning",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3094217/"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r006",
+      "replaces_question_id": "b260",
+      "candidate_id": "c2027",
+      "failure_group": "ambiguous_or_model_sensitive",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "galicia|2016|main|86",
+      "source_row": 2027,
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "main",
+      "question_number": 86,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "En relación con la aparición de un pioderma gangrenoso en un paciente con colitis ulcerosa, ¿qué es cierto?",
+        "A": {
+          "options": {
+            "a": "Es una manifestación extraintestinal que sólo se observa en brotes graves de colitis ulcerosa o enfermedad de Crohn.",
+            "b": "A menudo suelen aparecer tras un pequeño trauma en la zona (patergia).",
+            "c": "El tratamiento de primera línea del pioderma gangrenoso son los antibióticos.",
+            "d": "Cualquier tratamiento biológico, incluyendo Infliximab, adalimumab o vedolizumab se considera adecuado ante un pioderma gangrenoso que no responda a tratamiento esteroideo."
+          },
+          "correct_option_text": "A menudo suelen aparecer tras un pequeño trauma en la zona (patergia)."
+        },
+        "B": {
+          "options": {
+            "a": "Es una manifestación extraintestinal que sólo se observa en brotes graves de colitis ulcerosa o enfermedad de Crohn.",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "El tratamiento de primera línea del pioderma gangrenoso son los antibióticos.",
+            "d": "Cualquier tratamiento biológico, incluyendo Infliximab, adalimumab o vedolizumab se considera adecuado ante un pioderma gangrenoso que no responda a tratamiento esteroideo."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "28cacccb653af0dad2d5967a05880422fe4140f5beabaafb28ec93bbf2e295b8",
+        "question_text_sha256": "d5822a6031e6146d483ea208e553caea11b84e346d8f3d75c3d0e20420b5c00b",
+        "condition_A_gift_user_sha256": "08b2a348cc37284fce3d0ba1876eb101413fdf0d59e5e73c93e6929253f7cb60",
+        "condition_B_gift_user_sha256": "e318d376ee3c9cb6b8d20dfd6db1c4ad1332eb5b2cc089e0f6055b1d41ab9c74"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 578,
+        "condition_A_utf8_bytes": 588,
+        "condition_B_characters": 557,
+        "condition_B_utf8_bytes": 566
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2016__exam_pdf__093a7daea342.json",
+        "exam_page": 21,
+        "exam_pdf_pages": 28,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/exam/gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf",
+        "exam_pdf_sha256": "093a7daea3425d232e83905d30efc01c5b6d749ae2fb1a7162508ef73ac4b66f",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2016__answer_key_pdf__81251757438c.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/correction/gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf",
+        "key_pdf_sha256": "81251757438c17f3e9816680c1639ac1a3d615193ae6f80daa784ad9673b14b7",
+        "workbook_exam_name": "AD_GALICIA_OPE_2016__EXAM__gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf",
+        "workbook_key_name": "AD_GALICIA_OPE_2016__CORRECTION__gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c2027",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/exam/gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf, PDF page 21",
+            "sha256": "093a7daea3425d232e83905d30efc01c5b6d749ae2fb1a7162508ef73ac4b66f",
+            "title": "Galicia OPE 2016 FEA Aparello Dixestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/correction/gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf, PDF page 1",
+            "sha256": "81251757438c17f3e9816680c1639ac1a3d615193ae6f80daa784ad9673b14b7",
+            "title": "Galicia OPE 2016 definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://academic.oup.com/ecco-jcc/article/18/1/1/7205776",
+            "title": "ECCO Guidelines on Extraintestinal Manifestations in IBD"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "ECCO describes pyoderma gangrenosum lesions as often following trauma through pathergy. It is not confined to severe IBD flares, antibiotics are not first-line treatment, and not every biologic is automatically appropriate after steroids. B is unique and all retained answers are false.",
+        "raw_fields_hash": "28cacccb653af0dad2d5967a05880422fe4140f5beabaafb28ec93bbf2e295b8",
+        "reason_codes": [
+          "A_UNIQUE_KEY_CONFIRMED",
+          "B_RETAINED_CHOICES_FALSE"
+        ],
+        "reviewer_id": "S14",
+        "source_key": "galicia|2016|main|86",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r007",
+      "replaces_question_id": "b141",
+      "candidate_id": "c2132",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "galicia|2019|main|81",
+      "source_row": 2132,
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "question_number": 81,
+      "provenance_class": "unrun_fully_passing_backfill",
+      "question": {
+        "stem": "En cuanto al síndrome del intestino irritable, señale la respuesta VERDADERA:",
+        "A": {
+          "options": {
+            "a": "Comienzo de síntomas en mayores de 50 años no es signo de alarma.",
+            "b": "En el hombre es más frecuente el estreñimiento y en la mujer la diarrea.",
+            "c": "El pioderma gangrenoso no es signo de organicidad.",
+            "d": "La malabsorción de fructosa y sorbitol puede contribuir a los síntomas en algunos pacientes."
+          },
+          "correct_option_text": "La malabsorción de fructosa y sorbitol puede contribuir a los síntomas en algunos pacientes."
+        },
+        "B": {
+          "options": {
+            "a": "Comienzo de síntomas en mayores de 50 años no es signo de alarma.",
+            "b": "En el hombre es más frecuente el estreñimiento y en la mujer la diarrea.",
+            "c": "El pioderma gangrenoso no es signo de organicidad.",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "0c63d442a22191d309528e8228cdcaeaaff0f5e72a5eb2d37fa362579b8f0bb8",
+        "question_text_sha256": "90754fc0293b3b1250ab9418c20ef08760cf77e46405fe09955b9db5937c78d7",
+        "condition_A_gift_user_sha256": "86c2a0fa5d744c63d3c72a9ac3dec6afe86c8d4690cb765f12c9c5c170ee3b6d",
+        "condition_B_gift_user_sha256": "364a888148bf7a67280cfca6b306c60a23f9237ca5bd079b9a58886a7aaa3f32"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 392,
+        "condition_A_utf8_bytes": 400,
+        "condition_B_characters": 349,
+        "condition_B_utf8_bytes": 355
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__exam_pdf__236824bd132c.json",
+        "exam_page": 16,
+        "exam_pdf_pages": 21,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/exam/gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "exam_pdf_sha256": "236824bd132c6f9b76cf5a73b0ccba57fb8b80fac0034d48f9569fa8a660fb4a",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__answer_key_pdf__7cc856ef5cc1.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/correction/gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf",
+        "key_pdf_sha256": "7cc856ef5cc18fdf3c44b8335a2eec900e9366c297cba44ded93616e7ea4c489",
+        "workbook_exam_name": "AD_GALICIA_OPE_2019__EXAM__gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "workbook_key_name": "AD_GALICIA_OPE_2019__CORRECTION__gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c2132",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "question E81",
+            "page": 16,
+            "path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/exam/gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+            "sha256": "236824bd132c6f9b76cf5a73b0ccba57fb8b80fac0034d48f9569fa8a660fb4a"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "question E81=D; RESPUESTAS DEFINITIVAS",
+            "page": 1,
+            "path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/correction/gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf",
+            "sha256": "7cc856ef5cc18fdf3c44b8335a2eec900e9366c297cba44ded93616e7ea4c489"
+          },
+          {
+            "accessed": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "ACG IBS guideline on low-FODMAP therapy and poorly absorbed fructose/polyols",
+            "url": "https://doi.org/10.14309/ajg.0000000000001036"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "The official exam and definitive key identify D. Poorly absorbed fructose and polyols such as sorbitol can contribute to IBS symptoms and are targets of low-FODMAP therapy; onset after 50 is an alarm feature, the stated sex distribution is reversed, and pyoderma gangrenosum suggests organic inflammatory disease. D is uniquely true and its replacement leaves A-C false.",
+        "raw_fields_hash": "0c63d442a22191d309528e8228cdcaeaaff0f5e72a5eb2d37fa362579b8f0bb8",
+        "reason_codes": [
+          "ALL_CRITERIA_MET"
+        ],
+        "reviewer_id": "S01",
+        "source_key": "galicia|2019|main|81",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r008",
+      "replaces_question_id": "b142",
+      "candidate_id": "c2644",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "la-rioja|2024|main|95",
+      "source_row": 2644,
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "question_number": 95,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Un paciente con disfagia progresiva sufre pérdida de peso. La endoscopia revela una lesión ulcerada estenosante en el tercio medio esofágico. ¿Cuál de los siguientes hallazgos histológicos sería más característico del diagnóstico más probable?:",
+        "A": {
+          "options": {
+            "a": "Glándulas atípicas infiltrativas con invasión progresiva de la pared.",
+            "b": "Glándulas gástricas ectópicas con metaplasia intestinal.",
+            "c": "Células escamosas atípicas con pérdida de la polaridad nuclear.",
+            "d": "Proliferación linfoide con patrón en cielo estrellado."
+          },
+          "correct_option_text": "Células escamosas atípicas con pérdida de la polaridad nuclear."
+        },
+        "B": {
+          "options": {
+            "a": "Glándulas atípicas infiltrativas con invasión progresiva de la pared.",
+            "b": "Glándulas gástricas ectópicas con metaplasia intestinal.",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "Proliferación linfoide con patrón en cielo estrellado."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "53fb04f87c7274a0054fb0e2aca094fe1a1966008ca36539591db0b5c18f3b23",
+        "question_text_sha256": "2e4bcd57e29c47dda56581d2bfe2c6fa8b931fe18b2a4d20647fb59d88d21f3d",
+        "condition_A_gift_user_sha256": "7633fa11d314b68fb7c7070305b1e8c5758dc083b9a22c0669de126db5bafd00",
+        "condition_B_gift_user_sha256": "4926f923f920de8272a9521d297352b17767d648711dd9fd17a60f6b82003fc7"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 522,
+        "condition_A_utf8_bytes": 544,
+        "condition_B_characters": 508,
+        "condition_B_utf8_bytes": 527
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__exam_pdf__a35e67852216.json",
+        "exam_page": 24,
+        "exam_pdf_pages": 26,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/exam/exam__fea-aparato-digestivo-2025.pdf",
+        "exam_pdf_sha256": "a35e6785221676644dd952daa2a8d791d222991bb9e1944d05d961c4de262e19",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__answer_key_pdf__cb74fcb334e7.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf",
+        "key_pdf_sha256": "cb74fcb334e7ce29e7e5bf4e23d3d0762a19bf707318ee0b73b7c405b42c378c",
+        "workbook_exam_name": "AD_LA_RIOJA_2023_2024__EXAM__exam__fea-aparato-digestivo-2025.pdf",
+        "workbook_key_name": "AD_LA_RIOJA_2023_2024__CORRECTION__correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "Progressive dysphagia, weight loss, and an ulcerated stenosing mid-esophageal lesion most strongly indicate squamous carcinoma; atypical squamous cells with loss of polarity are characteristic. The other histologies describe adenocarcinoma, ectopic/metaplastic glands, or lymphoma.",
+        "evidence": [
+          {
+            "title": "The pathologic and molecular landscape of esophageal squamous cell carcinogenesis",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7465394/"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r009",
+      "replaces_question_id": "b143",
+      "candidate_id": "c0922",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "castilla-la-mancha|2017|main|22",
+      "source_row": 922,
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "question_number": 22,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "¿Mediante técnicas de inmunohistoquímica cuáles serán las características de un schwannoma gástrico y que permitan distinguirlo de un GIST gástrico?",
+        "A": {
+          "options": {
+            "a": "Proteína S 100 positivo, c-Kit positivo.",
+            "b": "Proteína S 100 positivo, c-Kit negativo.",
+            "c": "Proteína S 100 negativo, c-Kit positivo.",
+            "d": "Proteína S 100 negativo, c-Kit negativo."
+          },
+          "correct_option_text": "Proteína S 100 positivo, c-Kit negativo."
+        },
+        "B": {
+          "options": {
+            "a": "Proteína S 100 positivo, c-Kit positivo.",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Proteína S 100 negativo, c-Kit positivo.",
+            "d": "Proteína S 100 negativo, c-Kit negativo."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "96ccb13ce5e05d56f54378057e397ecd8738645e1b7347fb2d39fd9deac767b4",
+        "question_text_sha256": "0cf33a5bc040037632addef1e2114ae854c3522195afecd7c2a1aee1256ea96b",
+        "condition_A_gift_user_sha256": "c9ec0318118b23fc4eadceb72887a78bf43c6e9cc1230948ee5bc87b183c3844",
+        "condition_B_gift_user_sha256": "c2bd189b406022e41e29d216fff7d085b01123c3fa4712dbf2bd780b3248e578"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 344,
+        "condition_A_utf8_bytes": 356,
+        "condition_B_characters": 353,
+        "condition_B_utf8_bytes": 364
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__exam_pdf__d8dee49a9e40.json",
+        "exam_page": 5,
+        "exam_pdf_pages": 20,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf",
+        "exam_pdf_sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__answer_key_pdf__bb2100b8af7a.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf",
+        "key_pdf_sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+        "workbook_exam_name": "AD_CASTILLA_LA_MANCHA_2017_2018__EXAM__exam__cuestionario-fea-aparato-digestivo.pdf",
+        "workbook_key_name": "AD_CASTILLA_LA_MANCHA_2017_2018__CORRECTION__correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "Gastric schwannomas characteristically stain S-100 positive and c-KIT/CD117 negative, unlike GIST. The other three marker combinations are false, so replacing keyed option B leaves no correct retained option.",
+        "evidence": [
+          {
+            "title": "Gastric schwannoma: a diagnosis that should be known",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6963168/"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r010",
+      "replaces_question_id": "b147",
+      "candidate_id": "c0381",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "andalucia|2022|cuestionario-teorico|74",
+      "source_row": 381,
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 74,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Mujer de 27 años, sin antecedentes, consulta por dolor epigástrico y náuseas de 3 meses de evolución y pérdida ponderal de 4 kg. Analíticamente destaca Hb de 13 g/dl, leucocitos de 13.000/mm3, amilasa 190 U/L y lipasa 45 U/L. En un TAC de abdomen se observa una masa sólido-quística, heterogénea de 5 cm de diámetro situada en el cuerpo del páncreas, encapsulada, que comprime vena esplénica desplazando la arteria esplénica. ¿Cuál es el diagnóstico más probable?",
+        "A": {
+          "options": {
+            "a": "Neoplasia mucinosa papilar intraductal.",
+            "b": "Tumor pseudopapilar sólido.",
+            "c": "Cistoadenoma mucinoso quístico.",
+            "d": "Cistoadenoma seroso microquístico"
+          },
+          "correct_option_text": "Tumor pseudopapilar sólido."
+        },
+        "B": {
+          "options": {
+            "a": "Neoplasia mucinosa papilar intraductal.",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Cistoadenoma mucinoso quístico.",
+            "d": "Cistoadenoma seroso microquístico"
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "52da835565b44f8179eda8a15fe2499264052df7e3864003daa63513f49372e9",
+        "question_text_sha256": "b6586585fe92c72225bc47cd0731b9e72c6f7fc5dde1494d4c2f64a1379d1790",
+        "condition_A_gift_user_sha256": "e9fc6d768648caa3ea6cec1a42f9380d3697b6afbb6a393104a5d99e6482f41f",
+        "condition_B_gift_user_sha256": "d43ab6205a095d0fcaf322dbc7ef64735a0e2e2e17559395d511a80a41b3514e"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 629,
+        "condition_A_utf8_bytes": 649,
+        "condition_B_characters": 651,
+        "condition_B_utf8_bytes": 670
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2022-extraordinaria-libre__exam_pdf__e27d2d6edd53.json",
+        "exam_page": 20,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/exam/12__revisado-56007-fea-aparato-digestivo-final-pdf.pdf",
+        "exam_pdf_sha256": "e27d2d6edd530107dfd573381e411b78ccc3d150e9aa2b584ed5737cee6255b5",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2022-extraordinaria-libre__answer_key_pdf__b2afe6861552.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/correction/14__def-feaapdigestivo-sas-2023-pdf.pdf",
+        "key_pdf_sha256": "b2afe686155256f3db238a312aa027edcc0d29f7b7c70cf12817365000270ed8",
+        "workbook_exam_name": "AD_ANDALUCIA_2022_EXTRAORDINARIA_LIBRE__EXAM__12__revisado-56007-fea-aparato-digestivo-final-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2022_EXTRAORDINARIA_LIBRE__CORRECTION__14__def-feaapdigestivo-sas-2023-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": true,
+        "candidate_id": "c0381",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/exam/12__revisado-56007-fea-aparato-digestivo-final-pdf.pdf, page 20",
+            "sha256": "e27d2d6edd530107dfd573381e411b78ccc3d150e9aa2b584ed5737cee6255b5",
+            "title": "Andalucía FEA Aparato Digestivo extraordinary exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/correction/14__def-feaapdigestivo-sas-2023-pdf.pdf, page 1",
+            "sha256": "b2afe686155256f3db238a312aa027edcc0d29f7b7c70cf12817365000270ed8",
+            "title": "Andalucía definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://www.asge.org/home/resources/publications/guidelines/2016_solid_pancreatic_neoplasia",
+            "title": "ASGE guideline on solid pancreatic neoplasia"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Official page/key confirm B. A well-encapsulated heterogeneous solid-cystic pancreatic mass in a woman aged 27 is the characteristic demographic and CT pattern of a solid pseudopapillary neoplasm; the mucinous and serous alternatives usually have different age and morphology profiles. Replacement is valid.",
+        "raw_fields_hash": "52da835565b44f8179eda8a15fe2499264052df7e3864003daa63513f49372e9",
+        "reason_codes": [
+          "A_UNIQUE_KEY_CONFIRMED",
+          "B_VALID"
+        ],
+        "reviewer_id": "S05",
+        "source_key": "andalucia|2022|cuestionario-teorico|74",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r011",
+      "replaces_question_id": "b148",
+      "candidate_id": "c0177",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "andalucia|2021|cuestionario-teorico|23",
+      "source_row": 177,
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 23,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Un hombre de 45 años consulta por diarreas acuosas muy abundantes de cuatro meses de evolución. La diarrea no se controla con el ayuno ni con loperamida. Refiere una pérdida de 7 kg de peso (10%). En la exploración física presenta hipotensión arterial 95/55 mmHg con una frecuencia cardíaca de 110 spm. Refiere dolor a la palpación profunda en mesogastrio. En el TC abdominal se observa una masa de 5,1 x 5,8 x 4 cm en la cola del páncreas. ¿Cuál sería su diagnóstico de sospecha?",
+        "A": {
+          "options": {
+            "a": "Adenocarcinoma de páncreas",
+            "b": "VIPoma",
+            "c": "Peptidoma YY (tirosina/tirosina)",
+            "d": "Somatostatinoma"
+          },
+          "correct_option_text": "VIPoma"
+        },
+        "B": {
+          "options": {
+            "a": "Adenocarcinoma de páncreas",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Peptidoma YY (tirosina/tirosina)",
+            "d": "Somatostatinoma"
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "2d41c19f2b72bb9ce15682165588969b834f0e95f0d746458cd1a19f8a331518",
+        "question_text_sha256": "2d17047841c26239a5956d351edcbfce4d5ecac594d52f5e5c09266b0ac09ab1",
+        "condition_A_gift_user_sha256": "4b61c7d2a73b7aafcfa69936ec840450a13ce1954018d956ec617d34fdeba3df",
+        "condition_B_gift_user_sha256": "1efaeceb59999812a6450cea5ea70a305e921daa94503c695797bed0ff502bb8"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 595,
+        "condition_A_utf8_bytes": 609,
+        "condition_B_characters": 638,
+        "condition_B_utf8_bytes": 652
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__exam_pdf__0c2550a488a3.json",
+        "exam_page": 7,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf",
+        "exam_pdf_sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__answer_key_pdf__81bf4e0a24da.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf",
+        "key_pdf_sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+        "workbook_exam_name": "AD_ANDALUCIA_2021_22_LIBRE__EXAM__07__9122-aparato-digestivo-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2021_22_LIBRE__CORRECTION__09__9122-plantilla-respuestas-def-digestivo-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": true,
+        "candidate_id": "c0177",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf, PDF page 7",
+            "sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+            "title": "Andalucía 2021-22 FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf, PDF page 1",
+            "sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+            "title": "Andalucía 2021-22 definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://www.ncbi.nlm.nih.gov/books/NBK278960/",
+            "title": "Endotext: Vasoactive Intestinal Peptide-Secreting Tumor (VIPoma)"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Profuse fasting-persistent secretory watery diarrhea with dehydration, weight loss, and a pancreatic-tail mass is the classic VIPoma syndrome; most pancreatic VIPomas arise in the body or tail. B is uniquely correct and replacement leaves no retained fitting diagnosis.",
+        "raw_fields_hash": "2d41c19f2b72bb9ce15682165588969b834f0e95f0d746458cd1a19f8a331518",
+        "reason_codes": [
+          "ALL_CRITERIA_MET"
+        ],
+        "reviewer_id": "S06",
+        "source_key": "andalucia|2021|cuestionario-teorico|23",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r012",
+      "replaces_question_id": "b151",
+      "candidate_id": "c0248",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "andalucia|2021|cuestionario-teorico|94",
+      "source_row": 248,
+      "region": "Andalucía",
+      "year": 2021,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 94,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "¿Cuál de las siguientes afirmaciones es correcta en relación a la caracterización de las lesiones neoplásicas del colon?.",
+        "A": {
+          "options": {
+            "a": "Las lesiones de extensión lateral granulares (LST-G) tienen mayor riesgo de invasión submucosa que las no granulares (LST-NG).",
+            "b": "Para la realización de la clasificación de Kudo se requiere magnificación óptica.",
+            "c": "Para la realización de la clasificación de NICE se requiere magnificación y Narrow Band Imaging (NBI).",
+            "d": "En la clasificación JNET las lesiones según su patrón vascular y de superficie se dividen en tres tipos (tipo 1, tipo 2 y tipo 3)."
+          },
+          "correct_option_text": "Para la realización de la clasificación de Kudo se requiere magnificación óptica."
+        },
+        "B": {
+          "options": {
+            "a": "Las lesiones de extensión lateral granulares (LST-G) tienen mayor riesgo de invasión submucosa que las no granulares (LST-NG).",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Para la realización de la clasificación de NICE se requiere magnificación y Narrow Band Imaging (NBI).",
+            "d": "En la clasificación JNET las lesiones según su patrón vascular y de superficie se dividen en tres tipos (tipo 1, tipo 2 y tipo 3)."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "66675bb958a9916ef57e726a0958153676b4016fd0ae1dabe452d40d33eb5ee7",
+        "question_text_sha256": "4cab18089e07ca54ec2f6462302924ee9b6da9d2a6bfbab770bf29cf87f922da",
+        "condition_A_gift_user_sha256": "3d94ed5d4be5073da18748edff1f8ff8a91957b68e5892dc604a5d47c559eac8",
+        "condition_B_gift_user_sha256": "f3bc4d151994d28a04e2e22ba25f7c77b0c9c06d873df203869ae70f8489d286"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 596,
+        "condition_A_utf8_bytes": 613,
+        "condition_B_characters": 564,
+        "condition_B_utf8_bytes": 577
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__exam_pdf__0c2550a488a3.json",
+        "exam_page": 22,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf",
+        "exam_pdf_sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2021-22-libre__answer_key_pdf__81bf4e0a24da.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf",
+        "key_pdf_sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+        "workbook_exam_name": "AD_ANDALUCIA_2021_22_LIBRE__EXAM__07__9122-aparato-digestivo-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2021_22_LIBRE__CORRECTION__09__9122-plantilla-respuestas-def-digestivo-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": true,
+        "candidate_id": "c0248",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/exam/07__9122-aparato-digestivo-pdf.pdf, PDF page 22",
+            "sha256": "0c2550a488a3ff52c35c9585e819e37790ac375690067e1f2cd064b123f0cc2d",
+            "title": "Andalucía 2021-22 FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2021-22-libre/correction/09__9122-plantilla-respuestas-def-digestivo-pdf.pdf, PDF page 1",
+            "sha256": "81bf4e0a24dac59ab6a94cb838e72bb6cf5e68610fbbb7577437aa96b32cafcf",
+            "title": "Andalucía 2021-22 definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://www.esge.com/assets/downloads/pdfs/guidelines/2020_a_1231_5123.pdf",
+            "title": "ESGE Guideline: advanced imaging for detection and differentiation of colorectal neoplasia"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Kudo pit-pattern assessment requires optical magnification; LST non-granular lesions have greater invasion risk, NICE does not require magnification, and JNET has categories 1, 2A, 2B, and 3. B is uniquely correct and its replacement leaves no retained correct option.",
+        "raw_fields_hash": "66675bb958a9916ef57e726a0958153676b4016fd0ae1dabe452d40d33eb5ee7",
+        "reason_codes": [
+          "ALL_CRITERIA_MET"
+        ],
+        "reviewer_id": "S06",
+        "source_key": "andalucia|2021|cuestionario-teorico|94",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r013",
+      "replaces_question_id": "b153",
+      "candidate_id": "c2600",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "la-rioja|2024|main|51",
+      "source_row": 2600,
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "question_number": 51,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "El déficit de alfa-1 antitripsina es un trastorno hereditario con un patrón de herencia:",
+        "A": {
+          "options": {
+            "a": "Intermedio.",
+            "b": "Recesivo.",
+            "c": "Dominante.",
+            "d": "Codominante."
+          },
+          "correct_option_text": "Codominante."
+        },
+        "B": {
+          "options": {
+            "a": "Intermedio.",
+            "b": "Recesivo.",
+            "c": "Dominante.",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "4b74a558be2e42b28471dbc124d53cb48bf1cdbe57e324b2f77a8a517a7a343e",
+        "question_text_sha256": "36777b996f10eacb1eee29f11d0d85dd8bd5ecbd2dd32042f6c1cab2f6d98e4c",
+        "condition_A_gift_user_sha256": "52bad9e31622e20cd67722fc74e50151abf3a3eb768c0aa4027e4daaec003e4a",
+        "condition_B_gift_user_sha256": "777d7f4f44e2ed83fc0dc0edd300442c042c3f387a2209a268c82aab6a224ccb"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 166,
+        "condition_A_utf8_bytes": 168,
+        "condition_B_characters": 203,
+        "condition_B_utf8_bytes": 205
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__exam_pdf__a35e67852216.json",
+        "exam_page": 14,
+        "exam_pdf_pages": 26,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/exam/exam__fea-aparato-digestivo-2025.pdf",
+        "exam_pdf_sha256": "a35e6785221676644dd952daa2a8d791d222991bb9e1944d05d961c4de262e19",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__answer_key_pdf__cb74fcb334e7.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf",
+        "key_pdf_sha256": "cb74fcb334e7ce29e7e5bf4e23d3d0762a19bf707318ee0b73b7c405b42c378c",
+        "workbook_exam_name": "AD_LA_RIOJA_2023_2024__EXAM__exam__fea-aparato-digestivo-2025.pdf",
+        "workbook_key_name": "AD_LA_RIOJA_2023_2024__CORRECTION__correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "SERPINA1-related alpha-1 antitrypsin deficiency is inherited in an autosomal codominant manner. The other named inheritance patterns are not correct.",
+        "evidence": [
+          {
+            "title": "GeneReviews: Alpha-1 Antitrypsin Deficiency",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK1519/"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r014",
+      "replaces_question_id": "b154",
+      "candidate_id": "c0955",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "castilla-la-mancha|2017|main|55",
+      "source_row": 955,
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "question_number": 55,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "La clasificación de Atlanta permite diferenciar las colecciones fluidas peripancreáticas en función de la presencia de necrosis y de su tiempo de evolución. ¿Cómo se denomina una colección peripancreatica que se presenta en las primeras 4 semanas de una pancreatitis aguda intersticial edematosa?",
+        "A": {
+          "options": {
+            "a": "Pseudoquiste pancreático",
+            "b": "Necrosis encapsulada",
+            "c": "Colección liquida aguda peripancreática",
+            "d": "Colección necrótica aguda"
+          },
+          "correct_option_text": "Colección liquida aguda peripancreática"
+        },
+        "B": {
+          "options": {
+            "a": "Pseudoquiste pancreático",
+            "b": "Necrosis encapsulada",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "Colección necrótica aguda"
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "5b5904213e4f70b40eab2a71604b9df09e4fdd48b2d6db6fbc02b79488f6f46a",
+        "question_text_sha256": "2340999814844ea46282cde7815be2622ae424011d8b7f978d69b55e254cb05c",
+        "condition_A_gift_user_sha256": "9a1c3c49f897830a21edb1454f4c4010ca71eff71eff1b0e0e33ba5e45243c2f",
+        "condition_B_gift_user_sha256": "6be5675d868e31e2e8a3656fcac963c71cdfee45c7898aa1b77da5ac177f9384"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 440,
+        "condition_A_utf8_bytes": 452,
+        "condition_B_characters": 450,
+        "condition_B_utf8_bytes": 460
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__exam_pdf__d8dee49a9e40.json",
+        "exam_page": 10,
+        "exam_pdf_pages": 20,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf",
+        "exam_pdf_sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__answer_key_pdf__bb2100b8af7a.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf",
+        "key_pdf_sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+        "workbook_exam_name": "AD_CASTILLA_LA_MANCHA_2017_2018__EXAM__exam__cuestionario-fea-aparato-digestivo.pdf",
+        "workbook_key_name": "AD_CASTILLA_LA_MANCHA_2017_2018__CORRECTION__correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": true,
+        "candidate_id": "c0955",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf, page 10",
+            "sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+            "title": "Castilla-La Mancha FEA Aparato Digestivo examination"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf, page 1",
+            "sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+            "title": "Castilla-La Mancha definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://gut.bmj.com/content/62/1/102",
+            "title": "Revised Atlanta classification international consensus"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "A fluid collection arising within four weeks of interstitial edematous pancreatitis is uniquely an acute peripancreatic fluid collection. Pseudocyst is a later encapsulated fluid collection, while acute necrotic collection and walled-off necrosis require necrotizing pancreatitis, leaving all retained choices false.",
+        "raw_fields_hash": "5b5904213e4f70b40eab2a71604b9df09e4fdd48b2d6db6fbc02b79488f6f46a",
+        "reason_codes": [
+          "A_UNIQUE_KEY_CONFIRMED",
+          "B_REMAINDER_ALL_FALSE"
+        ],
+        "reviewer_id": "S03",
+        "source_key": "castilla-la-mancha|2017|main|55",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r015",
+      "replaces_question_id": "b155",
+      "candidate_id": "c2647",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "la-rioja|2024|main|98",
+      "source_row": 2647,
+      "region": "La Rioja",
+      "year": 2024,
+      "exam_part": "main",
+      "question_number": 98,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Respecto a la puntuación de Glasgow-Blatchford en la hemorragia digestiva alta, ¿Cuál de los siguientes parámetros forma parte de la puntuación?:",
+        "A": {
+          "options": {
+            "a": "Edad.",
+            "b": "Vaso visible",
+            "c": "Nivel de urea en sangre.",
+            "d": "Presión arterial media."
+          },
+          "correct_option_text": "Nivel de urea en sangre."
+        },
+        "B": {
+          "options": {
+            "a": "Edad.",
+            "b": "Vaso visible",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "Presión arterial media."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "5e6b1c416fec0a72ab34bc77ac97929007fcd35467acef544f0f6a9be0313d26",
+        "question_text_sha256": "e760f5995df48fca6233fb5cc202420252392aa77e9fc4a06fa5a7f78aff42b5",
+        "condition_A_gift_user_sha256": "a0b6352e04cf6745d3c27161eb311569df03c64a129742c416e1630c4ad12366",
+        "condition_B_gift_user_sha256": "c7d0fc6220333e167dc058144ba92c7338478ea3b00da2063eb39628bf15149f"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 245,
+        "condition_A_utf8_bytes": 251,
+        "condition_B_characters": 270,
+        "condition_B_utf8_bytes": 276
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__exam_pdf__a35e67852216.json",
+        "exam_page": 25,
+        "exam_pdf_pages": 26,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/exam/exam__fea-aparato-digestivo-2025.pdf",
+        "exam_pdf_sha256": "a35e6785221676644dd952daa2a8d791d222991bb9e1944d05d961c4de262e19",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2023-2024__answer_key_pdf__cb74fcb334e7.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2023-2024/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf",
+        "key_pdf_sha256": "cb74fcb334e7ce29e7e5bf4e23d3d0762a19bf707318ee0b73b7c405b42c378c",
+        "workbook_exam_name": "AD_LA_RIOJA_2023_2024__EXAM__exam__fea-aparato-digestivo-2025.pdf",
+        "workbook_key_name": "AD_LA_RIOJA_2023_2024__CORRECTION__correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2025.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "The Glasgow-Blatchford score includes blood urea. It does not use age, an endoscopic visible vessel, or mean arterial pressure, so replacing keyed option C leaves no correct retained option.",
+        "evidence": [
+          {
+            "title": "GGC Medicines: Glasgow Blatchford score",
+            "url": "https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r016",
+      "replaces_question_id": "b156",
+      "candidate_id": "c2033",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "galicia|2016|main|92",
+      "source_row": 2033,
+      "region": "Galicia",
+      "year": 2016,
+      "exam_part": "main",
+      "question_number": 92,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "¿Como clasificaría según la Clasificación de Forrest a un paciente de 56 años con una úlcera duodenal de 3 cms que en el momento de realizarse la endoscopia presenta un vaso visible, pero que no está sangrando en ese instante?.",
+        "A": {
+          "options": {
+            "a": "Ia.",
+            "b": "Ib.",
+            "c": "IIa",
+            "d": "IIb."
+          },
+          "correct_option_text": "IIa"
+        },
+        "B": {
+          "options": {
+            "a": "Ia.",
+            "b": "Ib.",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "IIb."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "340877645268b213bd76a4f0c9c36622acd44ebed3c52395220f748c8ce69eed",
+        "question_text_sha256": "c5dd0cce1196a3741c0984aa56ba5ef194da2479f739be7b8511a625f114d2a7",
+        "condition_A_gift_user_sha256": "6654ea25cfe42c76990f1f1dc22a0bae4657391cade85103caac4be1c3bede0f",
+        "condition_B_gift_user_sha256": "afee48f8ce1bf63b4d82e6eafbe6ea7ac5b9dad014953415e89bb9d6e19f69c3"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 276,
+        "condition_A_utf8_bytes": 283,
+        "condition_B_characters": 322,
+        "condition_B_utf8_bytes": 329
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2016__exam_pdf__093a7daea342.json",
+        "exam_page": 22,
+        "exam_pdf_pages": 28,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/exam/gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf",
+        "exam_pdf_sha256": "093a7daea3425d232e83905d30efc01c5b6d749ae2fb1a7162508ef73ac4b66f",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2016__answer_key_pdf__81251757438c.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/correction/gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf",
+        "key_pdf_sha256": "81251757438c17f3e9816680c1639ac1a3d615193ae6f80daa784ad9673b14b7",
+        "workbook_exam_name": "AD_GALICIA_OPE_2016__EXAM__gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf",
+        "workbook_key_name": "AD_GALICIA_OPE_2016__CORRECTION__gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c2033",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/exam/gal-02__aparato-digestivo-cas-20171029192531-cas-pdf.pdf, PDF page 22",
+            "sha256": "093a7daea3425d232e83905d30efc01c5b6d749ae2fb1a7162508ef73ac4b66f",
+            "title": "Galicia OPE 2016 FEA Aparello Dixestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2016/correction/gal-03__aparello-dixestivo-20180201084525-cas-pdf.pdf, PDF page 1",
+            "sha256": "81251757438c17f3e9816680c1639ac1a3d615193ae6f80daa784ad9673b14b7",
+            "title": "Galicia OPE 2016 definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://www.esge.com/assets/downloads/pdfs/guidelines/2021_a_1369_5274.pdf",
+            "title": "ESGE guideline on nonvariceal upper gastrointestinal hemorrhage"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "A nonbleeding visible vessel is Forrest IIa; Ia denotes spurting hemorrhage, Ib oozing hemorrhage, and IIb an adherent clot. C is unique and all retained classifications are false.",
+        "raw_fields_hash": "340877645268b213bd76a4f0c9c36622acd44ebed3c52395220f748c8ce69eed",
+        "reason_codes": [
+          "A_UNIQUE_KEY_CONFIRMED",
+          "B_RETAINED_CHOICES_FALSE"
+        ],
+        "reviewer_id": "S14",
+        "source_key": "galicia|2016|main|92",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r017",
+      "replaces_question_id": "b157",
+      "candidate_id": "c0931",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "castilla-la-mancha|2017|main|31",
+      "source_row": 931,
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "question_number": 31,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "En la clasificación de Montreal para colitis ulcerosa (señale la verdadera)",
+        "A": {
+          "options": {
+            "a": "E0: colitis quiescente.",
+            "b": "E1: colitis extensa.",
+            "c": "E2: colitis izquierda.",
+            "d": "E3: proctitis ulcerosa."
+          },
+          "correct_option_text": "E2: colitis izquierda."
+        },
+        "B": {
+          "options": {
+            "a": "E0: colitis quiescente.",
+            "b": "E1: colitis extensa.",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "E3: proctitis ulcerosa."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "daac89657522c023bb9e3e998ee38be2bc95c69f4a78c30d56db7cb3f8d15ea9",
+        "question_text_sha256": "95155925cb2a73e34dca5c52ac8c2a8213130302d128193aa79cda15046b8104",
+        "condition_A_gift_user_sha256": "83b66cf5c54c2443ce5ecf85bb3de48009cc96562fe6656f5f41ee41f237ef5f",
+        "condition_B_gift_user_sha256": "5c8b7e228a2c2766ab3bf9e5b35ca77395475eb4f967639da762e76fa45855bf"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 199,
+        "condition_A_utf8_bytes": 201,
+        "condition_B_characters": 226,
+        "condition_B_utf8_bytes": 228
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__exam_pdf__d8dee49a9e40.json",
+        "exam_page": 6,
+        "exam_pdf_pages": 20,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf",
+        "exam_pdf_sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__answer_key_pdf__bb2100b8af7a.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf",
+        "key_pdf_sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+        "workbook_exam_name": "AD_CASTILLA_LA_MANCHA_2017_2018__EXAM__exam__cuestionario-fea-aparato-digestivo.pdf",
+        "workbook_key_name": "AD_CASTILLA_LA_MANCHA_2017_2018__CORRECTION__correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c0931",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf, PDF page 6",
+            "sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+            "title": "Castilla-La Mancha 2017-2018 FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf, PDF page 1",
+            "sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+            "title": "Castilla-La Mancha definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://academic.oup.com/ecco-jcc/article/11/6/649/2966917",
+            "title": "ECCO Consensus: Definitions and diagnosis of ulcerative colitis"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Montreal extent E2 is left-sided ulcerative colitis; E1 is proctitis and E3 is extensive disease, while E0 is not quiescent colitis. C is uniquely true and the retained options are all false after replacement.",
+        "raw_fields_hash": "daac89657522c023bb9e3e998ee38be2bc95c69f4a78c30d56db7cb3f8d15ea9",
+        "reason_codes": [
+          "ALL_REQUIREMENTS_MET"
+        ],
+        "reviewer_id": "S10",
+        "source_key": "castilla-la-mancha|2017|main|31",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r018",
+      "replaces_question_id": "b158",
+      "candidate_id": "c2443",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "la-rioja|2021|main|4",
+      "source_row": 2443,
+      "region": "La Rioja",
+      "year": 2021,
+      "exam_part": "main",
+      "question_number": 4,
+      "provenance_class": "unrun_reserve_promotion",
+      "question": {
+        "stem": "Los criterios Roma IV de la hinchazón/distensión abdominal funcional incluyen:",
+        "A": {
+          "options": {
+            "a": "Distensión o hinchazón abdominal recurrente que sucede al menos una vez al mes y que sea el síntoma predominante.",
+            "b": "Que no se cumplan criterios diagnósticos de síndrome de intestino irritable, diarrea funcional, estreñimiento funcional o síndrome de distrés postprandial.",
+            "c": "Cumplir lo anterior al menos los 6 últimos meses, con inicio de los síntomas 12 meses previo al diagnóstico.",
+            "d": "Que no exista dolor ni molestia abdominal además de la distensión."
+          },
+          "correct_option_text": "Que no se cumplan criterios diagnósticos de síndrome de intestino irritable, diarrea funcional, estreñimiento funcional o síndrome de distrés postprandial."
+        },
+        "B": {
+          "options": {
+            "a": "Distensión o hinchazón abdominal recurrente que sucede al menos una vez al mes y que sea el síntoma predominante.",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Cumplir lo anterior al menos los 6 últimos meses, con inicio de los síntomas 12 meses previo al diagnóstico.",
+            "d": "Que no exista dolor ni molestia abdominal además de la distensión."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "a60acd1a7953ddf3d21ea9cc60fcfd8852432abae84ccd79bcc81d27bed526ad",
+        "question_text_sha256": "9cd51d09ec0e398d2a93432f937d2020e7e81b0941368bcdcbb7101b501bb258",
+        "condition_A_gift_user_sha256": "b0ffddf27454f0df106808e04cf050edd52ed6a6388c6da711eb9fcccb55a3c4",
+        "condition_B_gift_user_sha256": "858d390d01f6284c8a785358019380074c4a980a70a4e624a0ef262c604efb09"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 556,
+        "condition_A_utf8_bytes": 571,
+        "condition_B_characters": 450,
+        "condition_B_utf8_bytes": 460
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2020-2021__exam_pdf__56ff679329fe.json",
+        "exam_page": 4,
+        "exam_pdf_pages": 39,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/exam/exam__fea-aparato-digestivo-2021.pdf",
+        "exam_pdf_sha256": "56ff679329fe5d132b961051507488284391121682352261871a13066f1d1b36",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/la-rioja__2020-2021__answer_key_pdf__6de7cbcc93fa.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf",
+        "key_pdf_sha256": "6de7cbcc93fa45a99d29946a16513a838ece43828d7f66f03736a1ee03ed9172",
+        "workbook_exam_name": "AD_LA_RIOJA_2020_2021__EXAM__exam__fea-aparato-digestivo-2021.pdf",
+        "workbook_key_name": "AD_LA_RIOJA_2020_2021__CORRECTION__correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf"
+      },
+      "prior_sourcing_review": {
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "blinded": false,
+        "candidate_id": "c2443",
+        "corpus_sha256": "18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46",
+        "evidence": [
+          {
+            "kind": "official_exam",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/exam/exam__fea-aparato-digestivo-2021.pdf, PDF page 4",
+            "sha256": "56ff679329fe5d132b961051507488284391121682352261871a13066f1d1b36",
+            "title": "La Rioja 2021 FEA Aparato Digestivo exam"
+          },
+          {
+            "kind": "definitive_key",
+            "locator": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/la-rioja/2020-2021/correction/correction__plantilla-respuestas-modificada-fea-aparato-digestivo-2021.pdf, PDF page 1",
+            "sha256": "6de7cbcc93fa45a99d29946a16513a838ece43828d7f66f03736a1ee03ed9172",
+            "title": "La Rioja 2021 modified definitive answer key"
+          },
+          {
+            "accessed_date": "2026-08-02",
+            "kind": "medical_guidance",
+            "locator": "https://theromefoundation.org/rome-iv/rome-iv-criteria/",
+            "title": "Rome IV diagnostic criteria"
+          }
+        ],
+        "model": "gpt-5.6-sol",
+        "protocol_version": "ab182-readonly-v1",
+        "rationale": "Rome IV functional bloating/distension requires symptoms at least one day per week, insufficient criteria for IBS, functional constipation, functional diarrhea, or postprandial distress syndrome, and criteria for the last three months with onset six months earlier; mild pain may occur. B is unique and A, C, and D are false after replacement.",
+        "raw_fields_hash": "a60acd1a7953ddf3d21ea9cc60fcfd8852432abae84ccd79bcc81d27bed526ad",
+        "reason_codes": [
+          "ALL_CRITERIA_SATISFIED"
+        ],
+        "reviewer_id": "S17",
+        "source_key": "la-rioja|2021|main|4",
+        "verdict": "PASS"
+      },
+      "prior_blinded_qa_pass_count": 1,
+      "manual_research_adjudication": null
+    },
+    {
+      "replacement_id": "r019",
+      "replaces_question_id": "b159",
+      "candidate_id": "c0973",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "castilla-la-mancha|2017|main|73",
+      "source_row": 973,
+      "region": "Castilla-La Mancha",
+      "year": 2017,
+      "exam_part": "main",
+      "question_number": 73,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Para la determinación de la Fibrosis Hepática con Test No Invasivos (pruebas no invasivas) señale la RESPUESTA CORRECTA",
+        "A": {
+          "options": {
+            "a": "No se deben usar los test no invasivos para la valoración de la fibrosis hepática.",
+            "b": "El FIB-4 incluye el recuento de plaquetas sérico, el sexo, la AST y la ALT.",
+            "c": "El FIB-4 incluye el recuento de plaquetas sérico, la edad, la AST y la ALT.",
+            "d": "El FIB-4 incluye el recuento de plaquetas sérico, el sexo, la AST y la GGT."
+          },
+          "correct_option_text": "El FIB-4 incluye el recuento de plaquetas sérico, la edad, la AST y la ALT."
+        },
+        "B": {
+          "options": {
+            "a": "No se deben usar los test no invasivos para la valoración de la fibrosis hepática.",
+            "b": "El FIB-4 incluye el recuento de plaquetas sérico, el sexo, la AST y la ALT.",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "El FIB-4 incluye el recuento de plaquetas sérico, el sexo, la AST y la GGT."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "b064a1644e22b83bd53dd50223451b6b7b20a9752e2cc3fb6756a441c4f61a32",
+        "question_text_sha256": "303ffbe533cf6ac1fded494ca6baf8026a6168c1d5b5e9b7582946fa79135916",
+        "condition_A_gift_user_sha256": "ac354572c302f5acca05b54d6e93200dc864b990143f57dbdfa99c421118995c",
+        "condition_B_gift_user_sha256": "55866cfa241d83d0e890a9fb954d570db05408743106491bbbd3f6e0f7823b29"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 462,
+        "condition_A_utf8_bytes": 470,
+        "condition_B_characters": 436,
+        "condition_B_utf8_bytes": 443
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__exam_pdf__d8dee49a9e40.json",
+        "exam_page": 13,
+        "exam_pdf_pages": 20,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/exam/exam__cuestionario-fea-aparato-digestivo.pdf",
+        "exam_pdf_sha256": "d8dee49a9e40314807cc689f6d8a75a9683ce10e13132704793ef4aaa03723f8",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/castilla-la-mancha__2017-2018__answer_key_pdf__bb2100b8af7a.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/castilla-la-mancha/2017-2018/correction/correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf",
+        "key_pdf_sha256": "bb2100b8af7a6f3bf445e7ebefff14a698a356bda3520b75930aa24b24860e9e",
+        "workbook_exam_name": "AD_CASTILLA_LA_MANCHA_2017_2018__EXAM__exam__cuestionario-fea-aparato-digestivo.pdf",
+        "workbook_key_name": "AD_CASTILLA_LA_MANCHA_2017_2018__CORRECTION__correction__plantilla-correctora-definitiva-fea-aparato-digestivo.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "FIB-4 uses age, AST, ALT, and platelet count. The remaining options either reject non-invasive tests or substitute sex/GGT, so the exact C swap leaves no correct retained option.",
+        "evidence": [
+          {
+            "title": "AASLD: Why are non-invasive risk scores such as FIB-4 used in clinical practice?",
+            "url": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-are-non-invasive-risk-scores-such-fib-4-used"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r020",
+      "replaces_question_id": "b160",
+      "candidate_id": "c2714",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "d",
+      "new_correct_letter": "d",
+      "source_key": "navarra|2022|teorico-practica|65",
+      "source_row": 2714,
+      "region": "Navarra",
+      "year": 2022,
+      "exam_part": "teorico-practica",
+      "question_number": 65,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "Respecto a la enfermedad de Wilson, señale la CORRECTA:",
+        "A": {
+          "options": {
+            "a": "La D-penicilamina se tolera mejor que la trientina",
+            "b": "Es autosómica dominante",
+            "c": "Presentan mutación en el gen ATP7 localizado en el cromosoma 8",
+            "d": "El Zinc bloquea la absorción intestinal de cobre"
+          },
+          "correct_option_text": "El Zinc bloquea la absorción intestinal de cobre"
+        },
+        "B": {
+          "options": {
+            "a": "La D-penicilamina se tolera mejor que la trientina",
+            "b": "Es autosómica dominante",
+            "c": "Presentan mutación en el gen ATP7 localizado en el cromosoma 8",
+            "d": "Ninguna de las respuestas anteriores es correcta."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "23379f07f99746f4b2370bcfa291bf8513a40939c6bffc25fb9f7c0d6d375ce0",
+        "question_text_sha256": "3da2679aa1c492d88a67222151f4f9f2b7788f5b4617a2252fe5fbfbeaedebfe",
+        "condition_A_gift_user_sha256": "b498af340965b74d196bd9808098d5f2a28aa82f62165228b6e8f92a252360e3",
+        "condition_B_gift_user_sha256": "34fac98bd0cf53b567fe9aae51778bae6f111d31bfa6392c147f1318d60166f1"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 274,
+        "condition_A_utf8_bytes": 278,
+        "condition_B_characters": 275,
+        "condition_B_utf8_bytes": 278
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/navarra__2022__exam_pdf__4ff9643df309.json",
+        "exam_page": 14,
+        "exam_pdf_pages": 26,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/navarra/2022/040_exam_preguntas-test-examen-digestivo-definitivo-ope-2022-estabili.pdf",
+        "exam_pdf_sha256": "4ff9643df3092f718a8cf33a002f85b7e8da5d0f3e7ae60446d8fdd4e991dfd5",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/navarra__2022__answer_key_pdf__dcdfea63a67c.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/navarra/2022/041_answer-key_respuestas-digestivo-ope-2022-estabilizacion.pdf",
+        "key_pdf_sha256": "dcdfea63a67cc585d96e8468c970426b03baca80e35fc5519804a5aa7ecc0f1b",
+        "workbook_exam_name": "AD_NAVARRA_2022__EXAM__040_exam_preguntas-test-examen-digestivo-definitivo-ope-2022-estabili.pdf",
+        "workbook_key_name": "AD_NAVARRA_2022__ANSWER_KEY__041_answer-key_respuestas-digestivo-ope-2022-estabilizacion.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "Zinc salts interfere with gastrointestinal copper absorption in Wilson disease. The remaining claims about inheritance, ATP7 location, and tolerability are false, so the exact D swap is valid.",
+        "evidence": [
+          {
+            "title": "GeneReviews: Wilson Disease",
+            "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK1512/?report=reader"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r021",
+      "replaces_question_id": "b161",
+      "candidate_id": "c0369",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "b",
+      "new_correct_letter": "b",
+      "source_key": "andalucia|2022|cuestionario-teorico|62",
+      "source_row": 369,
+      "region": "Andalucía",
+      "year": 2022,
+      "exam_part": "cuestionario-teorico",
+      "question_number": 62,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "¿Cuál de las siguientes es una contraindicación absoluta para la inserción de una prótesis autoexpandible de colon, en un paciente con cáncer colorrectal obstructivo?",
+        "A": {
+          "options": {
+            "a": "Localización del margen distal a menos de 5 cm del margen anal.",
+            "b": "Perforación de colon.",
+            "c": "Situación del tumor en el colon proximal.",
+            "d": "Metástasis peritoneales asociadas al tumor."
+          },
+          "correct_option_text": "Perforación de colon."
+        },
+        "B": {
+          "options": {
+            "a": "Localización del margen distal a menos de 5 cm del margen anal.",
+            "b": "Ninguna de las respuestas anteriores es correcta.",
+            "c": "Situación del tumor en el colon proximal.",
+            "d": "Metástasis peritoneales asociadas al tumor."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "47dc3941d33d8661f153cd85e0ca7c2933a54539ba0f1cc0906c09093629807e",
+        "question_text_sha256": "b29f4b44de32986a466f84c1589c3a0e83e8d9e3e3ebd33b1e104347f6f6a030",
+        "condition_A_gift_user_sha256": "c4b0e443148cfa7df7522d4493a885b15094c2e2a7856bdb921d0c313ef8a738",
+        "condition_B_gift_user_sha256": "b1f65e521008f4238bca735c7c4dae63ac6a419fa3a537fd0deeed4f07250de9"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 370,
+        "condition_A_utf8_bytes": 380,
+        "condition_B_characters": 398,
+        "condition_B_utf8_bytes": 407
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2022-extraordinaria-libre__exam_pdf__e27d2d6edd53.json",
+        "exam_page": 17,
+        "exam_pdf_pages": 44,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/exam/12__revisado-56007-fea-aparato-digestivo-final-pdf.pdf",
+        "exam_pdf_sha256": "e27d2d6edd530107dfd573381e411b78ccc3d150e9aa2b584ed5737cee6255b5",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/andalucia__2022-extraordinaria-libre__answer_key_pdf__b2afe6861552.json",
+        "key_pdf_pages": 1,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/andalucia/2022-extraordinaria-libre/correction/14__def-feaapdigestivo-sas-2023-pdf.pdf",
+        "key_pdf_sha256": "b2afe686155256f3db238a312aa027edcc0d29f7b7c70cf12817365000270ed8",
+        "workbook_exam_name": "AD_ANDALUCIA_2022_EXTRAORDINARIA_LIBRE__EXAM__12__revisado-56007-fea-aparato-digestivo-final-pdf.pdf",
+        "workbook_key_name": "AD_ANDALUCIA_2022_EXTRAORDINARIA_LIBRE__CORRECTION__14__def-feaapdigestivo-sas-2023-pdf.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "ESGE states that perforation is the only absolute contraindication to colonic stenting. The other three choices are not absolute contraindications; after the keyed B option is replaced, none is correct.",
+        "evidence": [
+          {
+            "title": "ESGE Guideline: Self-expandable metal stents for obstructing colonic and extracolonic cancer, Update 2020",
+            "url": "https://www.esge.com/assets/downloads/pdfs/guidelines/2020_a_1140_3017.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "replacement_id": "r022",
+      "replaces_question_id": "b163",
+      "candidate_id": "c2093",
+      "failure_group": "gift_request_overlength",
+      "old_correct_letter": "c",
+      "new_correct_letter": "c",
+      "source_key": "galicia|2019|main|42",
+      "source_row": 2093,
+      "region": "Galicia",
+      "year": 2019,
+      "exam_part": "main",
+      "question_number": 42,
+      "provenance_class": "newly_screened_unused_candidate",
+      "question": {
+        "stem": "En una ecografía abdominal la presencia de una lesión hepática quística con vesículas hijas es muy sugestivo de:",
+        "A": {
+          "options": {
+            "a": "Poliquistosis hepática.",
+            "b": "Absceso hepático.",
+            "c": "Quiste hidatídico.",
+            "d": "Candidiasis hepática."
+          },
+          "correct_option_text": "Quiste hidatídico."
+        },
+        "B": {
+          "options": {
+            "a": "Poliquistosis hepática.",
+            "b": "Absceso hepático.",
+            "c": "Ninguna de las respuestas anteriores es correcta.",
+            "d": "Candidiasis hepática."
+          },
+          "correct_option_text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      },
+      "hashes": {
+        "raw_fields_sha256": "dc34541b28cb632965da2626f800456cb361e501aca1d4c1d9c5cf74a48670dd",
+        "question_text_sha256": "b5cb8a45fc7e1e32234bf58ed77807c1bc4edf3ee7ebaa98687c0727ef609f1c",
+        "condition_A_gift_user_sha256": "3726ad011e8abb6d2be2a1d523779e4955143b6a709dae467c64923f15489ea6",
+        "condition_B_gift_user_sha256": "eb696fef10005f3f3f4f1391b275973e45b37b84acc9bd6845cb067e7a62d139"
+      },
+      "gift_user_lengths": {
+        "condition_A_characters": 227,
+        "condition_A_utf8_bytes": 236,
+        "condition_B_characters": 258,
+        "condition_B_utf8_bytes": 266
+      },
+      "official_source": {
+        "exam_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__exam_pdf__236824bd132c.json",
+        "exam_page": 10,
+        "exam_pdf_pages": 21,
+        "exam_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/exam/gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "exam_pdf_sha256": "236824bd132c6f9b76cf5a73b0ccba57fb8b80fac0034d48f9569fa8a660fb4a",
+        "key_extraction_evidence": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/pdf-source-qc-2026-07-30/evidence/text/galicia__ope-2019__answer_key_pdf__7cc856ef5cc1.json",
+        "key_pdf_pages": 2,
+        "key_pdf_path": "/Users/ernestsaenz/Programming/gift-project-compile/second-project/exams-other-regions-spain-pdfs/galicia/ope-2019/correction/gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf",
+        "key_pdf_sha256": "7cc856ef5cc18fdf3c44b8335a2eec900e9366c297cba44ded93616e7ea4c489",
+        "workbook_exam_name": "AD_GALICIA_OPE_2019__EXAM__gal-05__cas-especifico-digestivo-20210925132858-cas-pdf.pdf",
+        "workbook_key_name": "AD_GALICIA_OPE_2019__CORRECTION__gal-07__fea-aparello-dixestivo-20211214124928-cas-pdf.pdf"
+      },
+      "prior_sourcing_review": null,
+      "prior_blinded_qa_pass_count": 0,
+      "manual_research_adjudication": {
+        "non_negated": true,
+        "a_validity": "PASS",
+        "b_validity": "PASS",
+        "rationale": "Daughter vesicles within a hepatic cyst are a pathognomonic ultrasound pattern of cystic echinococcosis. Polycystic disease, pyogenic abscess, and hepatic candidiasis do not fit that finding.",
+        "evidence": [
+          {
+            "title": "WHO guideline table: staging of cystic echinococcosis cysts",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK616291/table/ch1.tab1/"
+          }
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "candidate_count": 22,
+    "letter_distribution": {
+      "b": 7,
+      "c": 7,
+      "d": 8
+    },
+    "context_free_count": 22,
+    "source_key_collisions_with_canonical_500": 0,
+    "exact_stem_collisions_with_retained_478": 0,
+    "known_adverse_qa_records": 0,
+    "gift_target_characters": 4500,
+    "gift_hard_limit_characters": 5000,
+    "max_gift_A_characters": 675,
+    "max_gift_B_characters": 651,
+    "max_retained_token_jaccard": 0.242424,
+    "all_machine_assertions_passed": true
+  }
+}

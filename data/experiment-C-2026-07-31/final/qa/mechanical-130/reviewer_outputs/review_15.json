@@ -1,0 +1,788 @@
+{
+  "protocol_version": "expc-mechanical-130-v1",
+  "reviewer_id": "review_15",
+  "shard_id": "15",
+  "source_sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5",
+  "canonical_sha256": "7414e0bbf7a9e7f8e7054662f847bca2ec61a1edf782dfd934174dca13f19911",
+  "decisions": [
+    {
+      "question_id": "b484",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "PASS",
+      "boundary_start": 1064,
+      "boundary_end": 1065,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": [],
+      "rationale": "The selected period-space seam follows the complete patient work-up and immediately precedes the diagnostic directive; the examination finding attaches to that patient without contradicting an explicit finding."
+    },
+    {
+      "question_id": "b196",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The only offered seam follows an unpunctuated patient phrase, so the fixed capitalized sentence cannot be inserted there grammatically without altering punctuation or capitalization."
+    },
+    {
+      "question_id": "b196",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The only offered seam follows an unpunctuated patient phrase, so the fixed capitalized sentence cannot be inserted there grammatically without altering punctuation or capitalization."
+    },
+    {
+      "question_id": "b208",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "This is a standalone donor-definition prompt; the offered seam splits 'Cuál de los siguientes' and provides neither a patient narrative nor a valid insertion boundary."
+    },
+    {
+      "question_id": "b208",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "This is a standalone donor-definition prompt; the offered seam splits 'Cuál de los siguientes' and provides neither a patient narrative nor a valid insertion boundary."
+    },
+    {
+      "question_id": "b231",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The generic management topic contains no individual patient, and placing a capitalized sentence after its introductory comma leaves the source phrase syntactically incomplete."
+    },
+    {
+      "question_id": "b231",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The generic management topic contains no individual patient, and placing a capitalized sentence after its introductory comma leaves the source phrase syntactically incomplete."
+    },
+    {
+      "question_id": "b245",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The item is a question without a patient narrative, and the offered seam splits the interrogative phrase 'Cuál de los siguientes'."
+    },
+    {
+      "question_id": "b245",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The item is a question without a patient narrative, and the offered seam splits the interrogative phrase 'Cuál de los siguientes'."
+    },
+    {
+      "question_id": "b260",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The offered seam divides a single directive ('Señale la respuesta FALSA en relación...') and there is no case patient to receive the fabricated finding."
+    },
+    {
+      "question_id": "b260",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The offered seam divides a single directive ('Señale la respuesta FALSA en relación...') and there is no case patient to receive the fabricated finding."
+    },
+    {
+      "question_id": "b274",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item consists only of a generic directive and supplies no offered seam or patient narrative."
+    },
+    {
+      "question_id": "b274",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item consists only of a generic directive and supplies no offered seam or patient narrative."
+    },
+    {
+      "question_id": "b287",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a standalone factual stem with no patient context and no offered insertion seam."
+    },
+    {
+      "question_id": "b287",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This is a standalone factual stem with no patient context and no offered insertion seam."
+    },
+    {
+      "question_id": "b303",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The question has no patient narrative, and the only offered seam interrupts 'Cuál de las siguientes'."
+    },
+    {
+      "question_id": "b303",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The question has no patient narrative, and the only offered seam interrupts 'Cuál de las siguientes'."
+    },
+    {
+      "question_id": "b316",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This pathogenesis question has no patient case and no offered seam."
+    },
+    {
+      "question_id": "b316",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This pathogenesis question has no patient case and no offered seam."
+    },
+    {
+      "question_id": "b331",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "This legal question has no clinical patient; both seams follow commas inside its introductory construction and cannot accept the fixed capitalized sentence grammatically."
+    },
+    {
+      "question_id": "b331",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "This legal question has no clinical patient; both seams follow commas inside its introductory construction and cannot accept the fixed capitalized sentence grammatically."
+    },
+    {
+      "question_id": "b347",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item is only a diagnostic-label stem followed by options; it has neither a patient narrative nor an offered seam."
+    },
+    {
+      "question_id": "b347",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item is only a diagnostic-label stem followed by options; it has neither a patient narrative nor an offered seam."
+    },
+    {
+      "question_id": "b361",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The context is a quality program rather than a patient, and both offered seams split the prompt; the first also follows a comma with an incompatible capitalized insertion."
+    },
+    {
+      "question_id": "b361",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The context is a quality program rather than a patient, and both offered seams split the prompt; the first also follows a comma with an incompatible capitalized insertion."
+    },
+    {
+      "question_id": "b375",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The patient anchor is clear, but the actual narrative-to-question boundary follows a comma; inserting the fixed capitalized sentence there is ungrammatical unless source or insertion capitalization is edited."
+    },
+    {
+      "question_id": "b375",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "PASS",
+        "narrative_stem_seam": "PASS",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The patient anchor is clear, but the actual narrative-to-question boundary follows a comma; inserting the fixed capitalized sentence there is ungrammatical unless source or insertion capitalization is edited."
+    },
+    {
+      "question_id": "b389",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The introductory category is not a patient narrative, and its comma seam cannot accept the fixed capitalized sentence without a grammatical defect."
+    },
+    {
+      "question_id": "b389",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The introductory category is not a patient narrative, and its comma seam cannot accept the fixed capitalized sentence without a grammatical defect."
+    },
+    {
+      "question_id": "b407",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "NO_OFFERED_SEAM"],
+      "rationale": "This data-protection definition question has no clinical patient and no offered insertion seam."
+    },
+    {
+      "question_id": "b407",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "LOW",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NONCLINICAL_CONTEXT", "NO_OFFERED_SEAM"],
+      "rationale": "This data-protection definition question has no clinical patient and no offered insertion seam."
+    },
+    {
+      "question_id": "b423",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item asks about diagnostic criteria in general and supplies neither an individual patient narrative nor an offered seam."
+    },
+    {
+      "question_id": "b423",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "The item asks about diagnostic criteria in general and supplies neither an individual patient narrative nor an offered seam."
+    },
+    {
+      "question_id": "b438",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The marker list is a generic topic rather than a patient narrative, and the offered comma seam makes the capitalized biomarker sentence syntactically invalid without editing."
+    },
+    {
+      "question_id": "b438",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "UNGRAMMATICAL_INSERTION", "SOURCE_EDIT_REQUIRED"],
+      "rationale": "The marker list is a generic topic rather than a patient narrative, and the offered comma seam makes the capitalized examination sentence syntactically invalid without editing."
+    },
+    {
+      "question_id": "b452",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The item is a standalone guideline question, and the offered seam interrupts 'Cuál de las siguientes recomendaciones' rather than separating narrative from stem."
+    },
+    {
+      "question_id": "b452",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "SEAM_INSIDE_PROMPT", "UNGRAMMATICAL_INSERTION"],
+      "rationale": "The item is a standalone guideline question, and the offered seam interrupts 'Cuál de las siguientes recomendaciones' rather than separating narrative from stem."
+    },
+    {
+      "question_id": "b466",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This classification question has no patient narrative and no offered seam."
+    },
+    {
+      "question_id": "b466",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "FAIL",
+        "no_source_edit_required": "FAIL",
+        "grammatical_fit": "FAIL",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "MEDIUM",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "NO_OFFERED_SEAM"],
+      "rationale": "This classification question has no patient narrative and no offered seam."
+    },
+    {
+      "question_id": "b481",
+      "arm": "BM",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "ORPHANED_INSERTION"],
+      "rationale": "Although a period seam permits grammatical insertion before the final question construction, the source is general guideline exposition and identifies no individual patient to whom the serum result can attach."
+    },
+    {
+      "question_id": "b481",
+      "arm": "AN",
+      "reviewer_id": "review_15",
+      "verdict": "FAIL",
+      "boundary_start": null,
+      "boundary_end": null,
+      "checks": {
+        "patient_anchor": "FAIL",
+        "narrative_stem_seam": "FAIL",
+        "insertion_before_question": "PASS",
+        "no_source_edit_required": "PASS",
+        "grammatical_fit": "PASS",
+        "explicit_contradiction": "NONE"
+      },
+      "semantic_risk": "HIGH",
+      "failure_codes": ["NO_PATIENT_ANCHOR", "ORPHANED_INSERTION"],
+      "rationale": "Although a period seam permits grammatical insertion before the final question construction, the source is general guideline exposition and identifies no individual patient whose examination could yield the finding."
+    }
+  ]
+}
