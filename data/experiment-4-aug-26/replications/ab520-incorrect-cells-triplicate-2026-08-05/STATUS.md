@@ -110,6 +110,39 @@ Pool availability measured against the frozen payload, all on 2026-08-06:
 Availability degrades as our own traffic consumes the shared pool, so sustained
 batches make their own conditions worse.
 
+### No alternative provider exists — checked 2026-08-06
+
+The OpenRouter catalogue was queried directly for every endpoint of each model in
+this study. `require_parameters: true` in the harness demands a provider supporting
+`temperature` and `top_p`, so only compatible providers can serve a frozen request.
+
+| Model | Providers | Compatible with temperature + top_p |
+| --- | --- | --- |
+| google/gemini-3.6-flash | 2 | **1** — Google AI Studio only |
+| google/gemma-4-26b-a4b-it | 9 | 9 |
+| qwen/qwen3.6-35b-a3b | 9 | 9 |
+| z-ai/glm-5.2 | 27 | 27 |
+
+gemini is closed-weights, so only Google serves it: AI Studio (supports temperature,
+rate-limited) or Vertex (does not support temperature). The `:batch` variant is
+Vertex-only. No third party can offer this model, so provider substitution is not
+available. The other three models never stalled precisely because OpenRouter could
+fall back across 9-27 interchangeable providers.
+
+Vertex was measured as a fallback: it served 5/5, but with `temperature` and `top_p`
+dropped it is not deterministic. Repeating one frozen request three times per question
+gave `['c','c','c']`, `['d','d','d']`, `['b','c','b']` — the third question returned
+two different answers. Since this study measures run-to-run variance at temperature 0,
+routing gemini_B through Vertex would fold provider sampling noise into the very
+quantity being measured, and its variance would not be comparable to gemini_A or to
+run 1.
+
+Note that `require_parameters: true`
+(`code/medrag_eval/providers/openrouter.py:176`) is what forces this to fail loudly
+rather than silently serving a request stripped of `temperature=0`. It is an integrity
+guarantee, not a routing preference, and it is shared by every experiment in this
+repository.
+
 ### Recommended remedy
 
 Add a Google AI Studio key to the OpenRouter account at
