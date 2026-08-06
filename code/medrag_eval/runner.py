@@ -6,7 +6,7 @@ import time
 from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from dataclasses import dataclass
 from datetime import UTC, datetime
-from typing import Iterable
+from typing import Any, Iterable
 
 from . import db
 from .config import Settings
@@ -587,6 +587,7 @@ def _execute_call(
     no_retry: bool,
     tailscale_prompt_id: int | None,
     tailscale_top_k: int | None,
+    provider_routing: dict[str, Any] | None = None,
 ) -> None:
     conn = _get_thread_conn(db_path)
     try:
@@ -600,6 +601,7 @@ def _execute_call(
             no_retry=no_retry,
             tailscale_prompt_id=tailscale_prompt_id,
             tailscale_top_k=tailscale_top_k,
+            provider_routing=provider_routing,
         )
     except Exception:
         conn.rollback()
@@ -617,6 +619,7 @@ def _execute_call_with_conn(
     no_retry: bool,
     tailscale_prompt_id: int | None,
     tailscale_top_k: int | None,
+    provider_routing: dict[str, Any] | None = None,
 ) -> None:
     question = db.get_question_by_pk(conn, call.question_pk)
     is_tailscale = call.provider == TAILSCALE_PROVIDER
@@ -660,6 +663,7 @@ def _execute_call_with_conn(
         ),
         prompt_id=tailscale_prompt_id if is_tailscale else None,
         top_k=tailscale_top_k if is_tailscale else None,
+        provider_routing=None if is_tailscale else provider_routing,
     )
     # Wall-clock timer using monotonic_ns so laptop-sleep doesn't corrupt the
     # latency. Populates response.latency_ms IF the adapter didn't already set it.

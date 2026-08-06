@@ -173,7 +173,7 @@ class OpenRouterProvider:
                 "messages": request.messages,
                 "temperature": request.temperature,
                 "stream": request.stream,
-                "provider": {"require_parameters": True},
+                "provider": request.provider_routing or {"require_parameters": True},
             }
         )
         if request.top_p is not None:

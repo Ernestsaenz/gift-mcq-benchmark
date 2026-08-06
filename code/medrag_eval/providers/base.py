@@ -66,6 +66,12 @@ class ProviderRequest:
     response_schema: dict[str, Any] | None = None
     request_json: dict[str, Any] | None = None
     request_body: bytes | str | None = None
+    # OpenRouter-specific routing override. None keeps the adapter's default of
+    # {"require_parameters": True}, which refuses any upstream that would silently
+    # drop temperature/top_p. Set it only to record a deliberate, documented
+    # protocol deviation: relaxing require_parameters means the provider MAY ignore
+    # the sampling parameters this request declares. TailScale ignores this field.
+    provider_routing: dict[str, Any] | None = None
     # TailScale-specific controls. OpenRouter ignores these.
     # prompt_id maps to the backend's stored prompt template (`X-Prompt-ID` header).
     # top_k maps to retrieval depth (`X-Top-K` header). `metadata.top_k` in the body
