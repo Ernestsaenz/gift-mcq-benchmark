@@ -1,0 +1,56 @@
+{
+  "status": "READY_NOT_RUN",
+  "prepared_at_utc": "2026-08-05T16:16:49Z",
+  "scope": "two new independent runs for every strict-incorrect run-1 cell",
+  "source_results": "data/experiment-4-aug-26/replacements/ab520-replacement-22-2026-08-04/exports/benchmark-6000-cell-results-adjusted.csv",
+  "source_results_sha256": "ce91b3f3eb90cd0b125a170a6f0a0a967c02d63da17cfa97161e62f739c4b721",
+  "repository_commit": "c7f96131485671a406485d4d73987c0b0481fca5",
+  "prompt_version": "mcq_es_v4",
+  "temperature": 0,
+  "top_p": 1,
+  "tailscale_prompt_id": 13,
+  "wrong_run1_cells": 898,
+  "target_replicate_calls": 1796,
+  "target_counts_by_arm": {
+    "openrouter_A": 406,
+    "openrouter_B": 1064,
+    "tailscale_A": 326
+  },
+  "target_counts_by_arm_model": {
+    "openrouter_A|google/gemini-3.6-flash": 18,
+    "openrouter_A|google/gemma-4-26b-a4b-it": 210,
+    "openrouter_A|qwen/qwen3.6-35b-a3b": 116,
+    "openrouter_A|z-ai/glm-5.2": 62,
+    "openrouter_B|google/gemini-3.6-flash": 100,
+    "openrouter_B|google/gemma-4-26b-a4b-it": 458,
+    "openrouter_B|qwen/qwen3.6-35b-a3b": 284,
+    "openrouter_B|z-ai/glm-5.2": 222,
+    "tailscale_A|google/gemini-3.6-flash": 26,
+    "tailscale_A|google/gemma-4-26b-a4b-it": 162,
+    "tailscale_A|qwen/qwen3.6-35b-a3b": 98,
+    "tailscale_A|z-ai/glm-5.2": 40
+  },
+  "database": "data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/runs/ab520-incorrect-cell-triplicates-2026-08-05.sqlite",
+  "database_sha256": "823f92e01d9526e51204eb0fe082d69d8aa4e216830bd6b32d0cef0881ca3d6f",
+  "pre_execution_snapshot": "data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/manifests/ab520-incorrect-cell-triplicates.pre-execution.sqlite",
+  "pre_execution_snapshot_sha256": "823f92e01d9526e51204eb0fe082d69d8aa4e216830bd6b32d0cef0881ca3d6f",
+  "ledger": "data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/manifests/frozen-replicate-cell-ledger.csv",
+  "ledger_sha256": "026bab787956cbe421fe1b380a5250beea0951f226e834a550b2b8cf153b3530",
+  "input_files": {
+    "A": {
+      "path": "data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/inputs/adjusted-500-condition-A.csv",
+      "sha256": "6363e298a27a088dc2afdb83d32eec99a3ac7d72945df9c352b312d1c42c6aa9"
+    },
+    "B": {
+      "path": "data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/inputs/adjusted-500-condition-B.csv",
+      "sha256": "d608ca7e250600407189e18f5cd438e05e63e193c3799751c9e9a79c6672d694"
+    }
+  },
+  "production_gate": {
+    "required_commit": "29af9a4f1581f6ffc1921a44d96a2a2cbe36a84e",
+    "deployment_run": 30629235833,
+    "latest_main_deployment_verified": true,
+    "authenticated_openrouter_check": "passed",
+    "authenticated_tailscale_check": "passed"
+  }
+}

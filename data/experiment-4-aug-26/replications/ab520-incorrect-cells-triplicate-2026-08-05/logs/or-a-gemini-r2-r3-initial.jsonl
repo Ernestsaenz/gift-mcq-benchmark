@@ -1,0 +1,2 @@
+{"at_utc": "2026-08-05T16:17:16Z", "event": "start", "plan": {"arm": "openrouter_A", "execute": true, "exhausted": 0, "max_concurrency": 10, "model": "google/gemini-3.6-flash", "provider": "openrouter", "queued": 18, "run_indices": [2, 3], "selected": 18, "skipped_already_scored": 0}}
+{"at_utc": "2026-08-05T16:17:16Z", "error_type": "auth_error", "event": "auth_failure", "status_code": null}

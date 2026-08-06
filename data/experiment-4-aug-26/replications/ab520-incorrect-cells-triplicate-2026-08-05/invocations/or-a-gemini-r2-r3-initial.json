@@ -1,0 +1,30 @@
+{
+  "invocation_id": "or-a-gemini-r2-r3-initial",
+  "arm": "openrouter_A",
+  "condition": "A",
+  "provider": "openrouter",
+  "model": "google/gemini-3.6-flash",
+  "run_indices": [
+    2,
+    3
+  ],
+  "dataset": "ab520_adjusted_A_replication",
+  "experiment": "ab520_incorrect_triplicates_or_A_20260805",
+  "target_count": 18,
+  "concurrency": 10,
+  "max_provider_attempts": 5,
+  "start_time_utc": "2026-08-05T16:17:16Z",
+  "end_time_utc": "2026-08-05T16:17:16Z",
+  "status": "aborted_authentication_failure",
+  "executed_count": 0,
+  "scored_count": 0,
+  "failure_count": 0,
+  "skipped_already_scored": 0,
+  "exhausted_before_invocation": [],
+  "not_started_after_abort": 18,
+  "stop_reason": "authentication_failure",
+  "redacted_command": "uv run python execute_replicates.py --arm openrouter_A --model google/gemini-3.6-flash --max-concurrency 10 --execute --invocation-id or-a-gemini-r2-r3-initial --db [REDACTED_PATH]",
+  "log_path": "logs/or-a-gemini-r2-r3-initial.jsonl",
+  "ledger_sha256": "026bab787956cbe421fe1b380a5250beea0951f226e834a550b2b8cf153b3530",
+  "outcomes": []
+}
