@@ -1,22 +1,28 @@
 # Replication status
 
-Updated: 2026-08-06T14:05:00Z
+Updated: 2026-08-06T21:20:00Z
 
-Status: **PARTIALLY_EXECUTED — 1,697 / 1,796 scored (94.5%)**
+Status: **COMPLETE TO PROTOCOL CEILING — 1,788 / 1,796 scored (99.6%)**
 
 The frozen queue contains 1,796 run-2/run-3 calls derived from 898 strict-incorrect
-run-1 cells. 99 cells remain outstanding, 8 of which are unrecoverable.
+run-1 cells. Execution ran 2026-08-05T16:17Z to 17:11Z and 2026-08-06T09:21Z to 21:16Z.
+No runnable work remains: the 8 outstanding cells are all exhausted at the five-attempt
+ceiling, so 1,788 is the maximum achievable without a further protocol change.
+
+**Read the PROTOCOL DEVIATION section before analysing.** 91 of the 93 scored gemini_B
+cells were collected through Google Vertex at default temperature, not the frozen
+`temperature=0`. They are not comparable to the rest of the study without stratifying.
 
 ## Progress by arm
 
 | Arm | Scored | Total | Outstanding |
 | --- | --- | --- | --- |
 | openrouter_A | 406 | 406 | 0 |
-| openrouter_B | 966 | 1064 | 98 |
+| openrouter_B | 1057 | 1064 | 7 |
 | tailscale_A | 325 | 326 | 1 |
-| **Total** | **1697** | **1796** | **99** |
+| **Total** | **1788** | **1796** | **8** |
 
-openrouter_B: gemma 458/458, qwen 284/284, glm 222/222, gemini 2/100.
+openrouter_B: gemma 458/458, qwen 284/284, glm 222/222, gemini 93/100.
 tailscale_A: gemini 26/26, gemma 162/162, qwen 98/98, glm 39/40.
 
 ## Exhausted cells — unrecoverable under the frozen protocol
@@ -143,7 +149,84 @@ rather than silently serving a request stripped of `temperature=0`. It is an int
 guarantee, not a routing preference, and it is shared by every experiment in this
 repository.
 
-### Recommended remedy
+## PROTOCOL DEVIATION — gemini_B routed to Google Vertex, 2026-08-06
+
+Authorised by the principal investigator after the evidence below was presented.
+Recorded here because the affected cells are **not comparable** to the rest of the
+study and must not be pooled with them without stratifying.
+
+**What changed.** `openrouter_B` / `google/gemini-3.6-flash` cells are now issued with
+
+```json
+"provider": {"order": ["google-vertex"], "allow_fallbacks": false, "require_parameters": false}
+```
+
+instead of the frozen `{"require_parameters": true}`. Everything else in the request is
+unchanged: same prompt, same `mcq_es_v4` version, same JSON schema, and `temperature: 0`
+and `top_p: 1.0` are still transmitted.
+
+**What it costs.** Vertex does not support `temperature` or `top_p`. Per OpenRouter's
+documentation, with `require_parameters: false` a provider "can still receive the
+request, but will ignore unknown parameters". So the declared `temperature=0` is
+**silently discarded** and the model samples at its default temperature of 1.0.
+Measured before authorising: three repeats of one frozen request returned
+`['b','c','b']`. Vertex without a seed is not deterministic.
+
+Because this study measures run-to-run variance at temperature 0, the variance observed
+in these cells includes provider sampling noise that no other cell in the study carries.
+
+**Seed was considered and rejected.** Fixing a seed does restore stability (measured:
+`['b','b','b','b']`), but it does not restore `temperature=0` — it only makes a
+temperature-1.0 draw repeatable. A shared seed across runs 2 and 3 would force their
+variance to zero by construction; distinct seeds would measure injected sampling noise.
+Neither is the quantity this study is estimating, and neither arm A nor run 1 sent a
+seed.
+
+### How to identify affected cells
+
+The deviation is machine-detectable from the audit record; it does not rely on reading
+this document:
+
+```sql
+SELECT ... FROM provider_attempts
+WHERE json_extract(request_json, '$.provider.order[0]') = 'google-vertex';
+```
+
+Affected attempts also record `"provider": "Google"` in `response_json` (Vertex) rather
+than `"Google AI Studio"`, and carry a different `request_sha256` from the frozen shape.
+
+### The gemini_B slice is stratified, not uniform
+
+| Cells | Regime |
+| --- | --- |
+| 2 | Google AI Studio, real `temperature=0`, collected 2026-08-05 before the pool blocked |
+| 91 | Google Vertex, default temperature, collected 2026-08-06 |
+| 7 | Exhausted at the five-attempt ceiling, no data |
+
+Attributed by the upstream that served the scoring attempt, not by attempt history:
+three of the 91 Vertex cells also carry earlier failed AI Studio attempts.
+
+Those 2 AI Studio cells cannot be re-collected under the new route: they are already
+scored and the executor skips scored cells, which is the guard that prevents
+overwriting data. Treat them as a separate stratum — they are the only two gemini_B
+cells whose expected variance is structurally lower than the rest.
+
+### Harness change backing this
+
+`ProviderRequest` gained an optional `provider_routing` field
+(`code/medrag_eval/providers/base.py`), consumed by `_chat_payload`
+(`code/medrag_eval/providers/openrouter.py`) and threaded through `_execute_call` /
+`_execute_call_with_conn` (`code/medrag_eval/runner.py`). It defaults to `None`
+everywhere, which reproduces the previous payload byte for byte — verified by
+constructing both payloads and diffing them. No other experiment is affected.
+
+The executor exposes it as `--deviation-route-upstream`, named so the deviation is
+legible in the recorded command line of any invocation that used it, and it prints a
+`protocol_deviation` banner to the log before issuing any call. `allow_fallbacks:false`
+is deliberate: if Vertex is unavailable the call fails rather than quietly reverting to
+AI Studio, which would mix two sampling regimes inside one slice.
+
+## Recommended remedy
 
 Add a Google AI Studio key to the OpenRouter account at
 `https://openrouter.ai/settings/integrations`. This moves the model onto the account's
@@ -176,13 +259,19 @@ The 1,796 ledger rows collapse to exactly the 898 unique (arm, source_key, model
 triples that carry `strict_correct == "0"` in the source CSV, with zero mismatches
 against `run1_selected_letter` / `run1_correct_letter`.
 
-Of the 1,697 scored results, 1,696 parsed `ok` and 1 `ok_conflict`. No score exists
+Of the 1,788 scored results, 1,787 parsed `ok` and 1 `ok_conflict`. No score exists
 without a provider attempt. No logical call exceeds the five-attempt ceiling.
 
 ## Caveat for analysis
 
-The 99 outstanding cells are not randomly distributed. 98 of them are the
-openrouter_B/gemini slice, which has only 2 of 100 cells scored. Any variance analysis
-run against the current data has effectively no run-2/run-3 estimate for that model on
-the B condition, while having complete coverage for the same model on the A condition —
-an asymmetry that would bias any A-vs-B comparison involving gemini.
+Coverage is now effectively complete: 8 missing cells out of 1,796 (0.4%), spread
+across 4 questions of gemini_B and 1 of tailscale_A/glm. That level of missingness is
+immaterial to any aggregate.
+
+The live hazard is no longer coverage but **heterogeneity**. 91 of the 93 scored
+gemini_B cells were collected through Google Vertex at default temperature rather than
+the frozen `temperature=0`, while gemini_A's 18 cells and every other slice ran at
+`temperature=0`. A gemini A-vs-B comparison therefore contrasts two sampling regimes,
+not two prompt conditions. Stratify on the upstream provider (see the deviation section
+above for the SQL) before pooling, and treat the 2 AI Studio gemini_B cells as a third
+stratum.

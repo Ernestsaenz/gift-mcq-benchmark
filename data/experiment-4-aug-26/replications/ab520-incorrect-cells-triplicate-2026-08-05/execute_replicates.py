@@ -92,6 +92,29 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--invocation-id")
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
     parser.add_argument("--ledger", type=Path, default=DEFAULT_LEDGER)
+    # PROTOCOL DEVIATION SWITCH. Named so the deviation is legible in the recorded
+    # command line of any invocation that used it.
+    #
+    # The frozen request pins temperature=0 and top_p=1 and relies on
+    # provider.require_parameters=true to guarantee the serving provider honours
+    # them. google/gemini-3.6-flash is closed-weights: only Google AI Studio
+    # supports those parameters, and its shared pool has been returning 429 since
+    # 2026-08-05T16:33Z. Routing to google-vertex reaches the model but SILENTLY
+    # DROPS temperature and top_p, so the model samples at its default
+    # temperature and is not deterministic (measured: one question returned
+    # ['b','c','b'] across three repeats).
+    #
+    # Cells collected with this flag are therefore NOT comparable to cells
+    # collected without it. See STATUS.md.
+    parser.add_argument(
+        "--deviation-route-upstream",
+        default=None,
+        help=(
+            "Protocol deviation. Pin the OpenRouter upstream provider (e.g. "
+            "'google-vertex') and relax require_parameters, allowing the provider "
+            "to ignore temperature/top_p. Omit for normal frozen behaviour."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -465,6 +488,33 @@ def main() -> None:
         skipped_count=skipped_scored + len(exhausted),
         total=len(selected),
     )
+    # allow_fallbacks=False keeps the deviation honest: if the pinned upstream is
+    # unavailable the call fails rather than quietly reverting to a different
+    # provider, which would mix two sampling regimes inside one slice.
+    provider_routing: dict[str, Any] | None = None
+    if args.deviation_route_upstream:
+        provider_routing = {
+            "order": [args.deviation_route_upstream],
+            "allow_fallbacks": False,
+            "require_parameters": False,
+        }
+        print(
+            json.dumps(
+                {
+                    "protocol_deviation": {
+                        "upstream": args.deviation_route_upstream,
+                        "require_parameters": False,
+                        "consequence": (
+                            "temperature and top_p may be ignored by the upstream; "
+                            "results are not comparable to cells collected without "
+                            "this flag"
+                        ),
+                    }
+                }
+            ),
+            flush=True,
+        )
+
     pending = iter(targets)
     futures: dict[Future[None], Target] = {}
     outcomes: list[dict[str, Any]] = []
@@ -498,6 +548,7 @@ def main() -> None:
                 else None
             ),
             tailscale_top_k=None,
+            provider_routing=provider_routing,
         )
         futures[future] = target
         return True
