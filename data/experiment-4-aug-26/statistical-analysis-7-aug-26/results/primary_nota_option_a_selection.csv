@@ -1,0 +1,5 @@
+model,selected_a_rate_A,selected_a_rate_B
+google/gemini-3.6-flash,0.002,0.03
+google/gemma-4-26b-a4b-it,0.07,0.15
+qwen/qwen3.6-35b-a3b,0.024,0.068
+z-ai/glm-5.2,0.01,0.052

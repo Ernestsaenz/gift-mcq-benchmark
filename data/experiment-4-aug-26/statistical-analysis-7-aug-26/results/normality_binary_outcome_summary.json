@@ -1,0 +1,147 @@
+{
+  "strict_correct": {
+    "overall": {
+      "n": 6000,
+      "n_correct": 5102,
+      "rate": 0.8503333333333334
+    },
+    "by_arm": {
+      "openrouter_A": {
+        "n": 2000,
+        "n_correct": 1797,
+        "rate": 0.8985
+      },
+      "openrouter_B": {
+        "n": 2000,
+        "n_correct": 1468,
+        "rate": 0.734
+      },
+      "tailscale_A": {
+        "n": 2000,
+        "n_correct": 1837,
+        "rate": 0.9185
+      }
+    },
+    "by_model": {
+      "google/gemini-3.6-flash": {
+        "n": 1500,
+        "n_correct": 1428,
+        "rate": 0.952
+      },
+      "google/gemma-4-26b-a4b-it": {
+        "n": 1500,
+        "n_correct": 1085,
+        "rate": 0.7233333333333334
+      },
+      "qwen/qwen3.6-35b-a3b": {
+        "n": 1500,
+        "n_correct": 1251,
+        "rate": 0.834
+      },
+      "z-ai/glm-5.2": {
+        "n": 1500,
+        "n_correct": 1338,
+        "rate": 0.892
+      }
+    },
+    "per_question_cluster_histogram_0to12_correct_of_12": {
+      "0": 1,
+      "1": 0,
+      "2": 3,
+      "3": 4,
+      "4": 4,
+      "5": 11,
+      "6": 9,
+      "7": 24,
+      "8": 34,
+      "9": 53,
+      "10": 71,
+      "11": 100,
+      "12": 186
+    },
+    "per_question_cluster_histogram_by_arm_0to4_correct_of_4": {
+      "openrouter_A": {
+        "0": 2,
+        "1": 13,
+        "2": 36,
+        "3": 84,
+        "4": 365
+      },
+      "openrouter_B": {
+        "0": 19,
+        "1": 48,
+        "2": 83,
+        "3": 146,
+        "4": 204
+      },
+      "tailscale_A": {
+        "0": 5,
+        "1": 7,
+        "2": 19,
+        "3": 84,
+        "4": 385
+      }
+    },
+    "boundary_counts": {
+      "n_questions_ceiling_12of12": 186,
+      "n_questions_floor_0of12": 1,
+      "n_questions_at_boundary": 187,
+      "n_questions_interior": 313,
+      "pct_at_boundary": 0.374
+    },
+    "boundary_counts_by_arm_0to4": {
+      "openrouter_A": {
+        "n_ceiling_4of4": 365,
+        "n_floor_0of4": 2,
+        "n_boundary": 367,
+        "n_interior": 133
+      },
+      "openrouter_B": {
+        "n_ceiling_4of4": 204,
+        "n_floor_0of4": 19,
+        "n_boundary": 223,
+        "n_interior": 277
+      },
+      "tailscale_A": {
+        "n_ceiling_4of4": 385,
+        "n_floor_0of4": 5,
+        "n_boundary": 390,
+        "n_interior": 110
+      }
+    }
+  },
+  "flip": {
+    "definition": "strict_correct==TRUE on a scored replicate (run 2 or 3), conditioned on the parent run-1 cell having been strict-incorrect. Unconditional flip rate over all 6000 run-1 cells is NOT estimable: the 5102 run-1-correct cells were never replicated (see STATS_SPEC.md).",
+    "overall": {
+      "n_scored_replicates": 1788,
+      "n_flip": 240,
+      "rate": 0.1342281879194631
+    },
+    "by_arm": {
+      "openrouter_A": {
+        "n": 406,
+        "n_flip": 77,
+        "rate": 0.1896551724137931
+      },
+      "openrouter_B": {
+        "n": 1057,
+        "n_flip": 120,
+        "rate": 0.11352885525070956
+      },
+      "tailscale_A": {
+        "n": 325,
+        "n_flip": 43,
+        "rate": 0.13230769230769232
+      }
+    },
+    "per_cell_flip_count_histogram_0to2": {
+      "n_cells_with_at_least_one_scored_replicate": 895,
+      "histogram": {
+        "0": 725,
+        "1": 100,
+        "2": 70
+      }
+    },
+    "caveat": "openrouter_B / gemini carries the Vertex protocol deviation for 91 of its scored replicates; see STATS_SPEC.md and agent 2/3 sensitivity analyses. This summary does not exclude those cells \u2014 it is a description of the raw replicate data, not an adjusted estimate."
+  }
+}
