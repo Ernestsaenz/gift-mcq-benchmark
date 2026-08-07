@@ -1,0 +1,15 @@
+arm,model,upstream_subgroup,n_cells_both_runs,n_agree,agreement_rate,agreement_rate_wilson_lower,agreement_rate_wilson_upper,temperature_regime
+openrouter_A,google/gemini-3.6-flash,all,9,8,0.888889,0.565000,0.980109,temperature_0
+openrouter_A,google/gemma-4-26b-a4b-it,all,105,96,0.914286,0.845077,0.954251,temperature_0
+openrouter_A,qwen/qwen3.6-35b-a3b,all,58,40,0.689655,0.561969,0.793779,temperature_0
+openrouter_A,z-ai/glm-5.2,all,31,27,0.870968,0.711476,0.948657,temperature_0
+openrouter_B,google/gemini-3.6-flash,ai_studio_only,1,1,1.000000,0.206549,1.000000,temperature_0
+openrouter_B,google/gemini-3.6-flash,all,46,40,0.869565,0.743341,0.938822,mixed
+openrouter_B,google/gemini-3.6-flash,vertex_only,45,39,0.866667,0.738227,0.937429,vertex_default
+openrouter_B,google/gemma-4-26b-a4b-it,all,229,207,0.903930,0.858833,0.935699,temperature_0
+openrouter_B,qwen/qwen3.6-35b-a3b,all,142,109,0.767606,0.691648,0.829466,temperature_0
+openrouter_B,z-ai/glm-5.2,all,111,90,0.810811,0.728032,0.872797,temperature_0
+tailscale_A,google/gemini-3.6-flash,all,13,10,0.769231,0.497436,0.918205,temperature_0
+tailscale_A,google/gemma-4-26b-a4b-it,all,81,76,0.938272,0.863508,0.973347,temperature_0
+tailscale_A,qwen/qwen3.6-35b-a3b,all,49,29,0.591837,0.452473,0.717848,temperature_0
+tailscale_A,z-ai/glm-5.2,all,19,16,0.842105,0.624345,0.944795,temperature_0

@@ -1,0 +1,4 @@
+arm,n_cells,n_with_both_runs,n_run2_scored,n_run3_scored,flips_run2,flips_run3,cells_flipped_at_least_once,cells_flipped_both,flip_denominator_runs,flip_rate_per_run,flip_rate_wilson_lower,flip_rate_wilson_upper,temperature_regime
+openrouter_A,203,203,203,203,38,39,51,26,406,0.189655,0.154499,0.230629,temperature_0
+openrouter_B,532,528,528,529,63,57,85,35,1057,0.113529,0.095787,0.134070,mixed
+tailscale_A,163,162,162,163,22,21,34,9,325,0.132308,0.099731,0.173475,temperature_0

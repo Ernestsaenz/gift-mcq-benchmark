@@ -1,0 +1,13 @@
+arm,model,n_cells,n_with_both_runs,n_run2_scored,n_run3_scored,flips_run2,flips_run3,cells_flipped_at_least_once,cells_flipped_both,flip_denominator_runs,flip_rate_per_run,flip_rate_wilson_lower,flip_rate_wilson_upper,temperature_regime
+openrouter_A,google/gemini-3.6-flash,9,9,9,9,0,0,0,0,18,0.000000,0.000000,0.175879,temperature_0
+openrouter_A,google/gemma-4-26b-a4b-it,105,105,105,105,11,10,14,7,210,0.100000,0.066340,0.148032,temperature_0
+openrouter_A,qwen/qwen3.6-35b-a3b,58,58,58,58,20,19,27,12,116,0.336207,0.256715,0.426199,temperature_0
+openrouter_A,z-ai/glm-5.2,31,31,31,31,7,10,10,7,62,0.274194,0.178811,0.395925,temperature_0
+openrouter_B,google/gemini-3.6-flash,50,46,46,47,6,8,10,4,93,0.150538,0.091842,0.236958,mixed
+openrouter_B,google/gemma-4-26b-a4b-it,229,229,229,229,9,12,16,5,458,0.045852,0.030183,0.069075,temperature_0
+openrouter_B,qwen/qwen3.6-35b-a3b,142,142,142,142,33,23,41,15,284,0.197183,0.155083,0.247365,temperature_0
+openrouter_B,z-ai/glm-5.2,111,111,111,111,15,14,18,11,222,0.130631,0.092515,0.181311,temperature_0
+tailscale_A,google/gemini-3.6-flash,13,13,13,13,2,0,2,0,26,0.076923,0.021355,0.241416,temperature_0
+tailscale_A,google/gemma-4-26b-a4b-it,81,81,81,81,6,5,7,4,162,0.067901,0.038335,0.117485,temperature_0
+tailscale_A,qwen/qwen3.6-35b-a3b,49,49,49,49,11,13,20,4,98,0.244898,0.170450,0.338591,temperature_0
+tailscale_A,z-ai/glm-5.2,20,19,19,20,3,3,5,1,39,0.153846,0.072475,0.297295,temperature_0
