@@ -1,0 +1,5 @@
+model,bm_control_accuracy,bm_altered_accuracy,bm_altered_minus_control_delta,an_control_accuracy,an_altered_accuracy,an_altered_minus_control_delta,unique_control_accuracy,n_unique_control_questions,n_shared_control_questions,shared_control_letter_agreement
+google/gemini-3.5-flash,0.97,0.97,0.0,0.96,0.96,0.0,0.9714,140,60,60/60
+qwen/qwen3.7-max,0.92,0.92,0.0,0.92,0.92,0.0,0.9286,140,60,60/60
+qwen/qwen3.6-35b-a3b,0.84,0.87,0.03,0.91,0.87,-0.04,0.8786,140,60,54/60
+google/gemma-4-26b-a4b-it,0.88,0.84,-0.04,0.88,0.81,-0.07,0.8643,140,60,60/60

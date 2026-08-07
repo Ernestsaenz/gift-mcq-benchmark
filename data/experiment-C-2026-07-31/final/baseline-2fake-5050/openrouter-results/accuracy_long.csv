@@ -1,0 +1,17 @@
+model,experiment,arm,condition,n_scored,n_parsed_ok,n_correct,strict_accuracy
+google/gemini-3.5-flash,expC_2f_bm_control,BM,control,100,100,97,0.97
+google/gemini-3.5-flash,expC_2f_bm_altered,BM,altered,100,100,97,0.97
+google/gemini-3.5-flash,expC_2f_an_control,AN,control,100,100,96,0.96
+google/gemini-3.5-flash,expC_2f_an_altered,AN,altered,100,100,96,0.96
+qwen/qwen3.7-max,expC_2f_bm_control,BM,control,100,100,92,0.92
+qwen/qwen3.7-max,expC_2f_bm_altered,BM,altered,100,100,92,0.92
+qwen/qwen3.7-max,expC_2f_an_control,AN,control,100,100,92,0.92
+qwen/qwen3.7-max,expC_2f_an_altered,AN,altered,100,100,92,0.92
+qwen/qwen3.6-35b-a3b,expC_2f_bm_control,BM,control,100,100,84,0.84
+qwen/qwen3.6-35b-a3b,expC_2f_bm_altered,BM,altered,100,100,87,0.87
+qwen/qwen3.6-35b-a3b,expC_2f_an_control,AN,control,100,100,91,0.91
+qwen/qwen3.6-35b-a3b,expC_2f_an_altered,AN,altered,100,100,87,0.87
+google/gemma-4-26b-a4b-it,expC_2f_bm_control,BM,control,100,100,88,0.88
+google/gemma-4-26b-a4b-it,expC_2f_bm_altered,BM,altered,100,100,84,0.84
+google/gemma-4-26b-a4b-it,expC_2f_an_control,AN,control,100,100,88,0.88
+google/gemma-4-26b-a4b-it,expC_2f_an_altered,AN,altered,100,100,81,0.81

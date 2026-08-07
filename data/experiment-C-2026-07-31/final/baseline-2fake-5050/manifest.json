@@ -1,0 +1,110 @@
+{
+  "protocol": "expc-2fake-5050-baseline-v1",
+  "generated_at": "2026-08-05T01:53:43Z",
+  "builder": "Builder B (build_workbooks.py) -- renders baseline.json into workbooks; assignment logic owned by Builder A (build_baseline.py)",
+  "inputs": {
+    "baseline_json": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-C-2026-07-31/final/baseline-2fake-5050/baseline.json",
+      "sha256": "e941e25b7d4bcecd1e26173c1e1340c9ac30935f06ad5c7bd2be93eebe60d15f"
+    },
+    "source_workbook": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-31-07-26/balanced-flat-A.xlsx",
+      "sha256": "3aca1a61fd3e641c0a698a500194f342cf61cb13cff3e271bf8e5479453e2fc5"
+    },
+    "bm_input_workbook": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-C-2026-07-31/final/outputs/expC-biomarker-mechanical-100-plus-30-reserve-control-vs-alteration.xlsx",
+      "sha256": "422b3a0d424fd29eece3ac50bc15d059c0ba1a09579f37dbb17d32441fa4c832"
+    },
+    "an_input_workbook": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-C-2026-07-31/final/outputs/expC-anatomy-mechanical-100-plus-30-reserve-control-vs-alteration.xlsx",
+      "sha256": "3d925d52fd0a9f95419d6b93db6551225a2963339fc937a079dd9ddd700711ae"
+    }
+  },
+  "outputs": {
+    "bm_workbook": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-C-2026-07-31/final/baseline-2fake-5050/expC-biomarker-2fake-5050-baseline.xlsx",
+      "sha256": "93d7a7feaf00169070d577bd7304e25187356960b01d85cc4b3013bd4a9cdd93",
+      "kept_fakes": {
+        "A": "fibroquelina-X3",
+        "B": "colangiomirina-8"
+      },
+      "primary_counts": {
+        "colangiomirina-8": 50,
+        "fibroquelina-X3": 50
+      },
+      "reserve_counts": {
+        "colangiomirina-8": 15,
+        "fibroquelina-X3": 15
+      },
+      "exact_5050_achieved": true,
+      "reassigned_rows": 48,
+      "role_changed_rows": 0
+    },
+    "an_workbook": {
+      "path": "/Users/ernestsaenz/Programming/gift-project-compile/tier1_mcq/data/experiment-C-2026-07-31/final/baseline-2fake-5050/expC-anatomy-2fake-5050-baseline.xlsx",
+      "sha256": "8e6bae92b64208f0c0940beeff9d47e95c7c0356376d46834ce17e90295914ad",
+      "kept_fakes": {
+        "A": "saco orfalónico",
+        "B": "órgano liradónico"
+      },
+      "primary_counts": {
+        "órgano liradónico": 50,
+        "saco orfalónico": 50
+      },
+      "reserve_counts": {
+        "órgano liradónico": 16,
+        "saco orfalónico": 14
+      },
+      "exact_5050_achieved": true,
+      "reassigned_rows": 14,
+      "role_changed_rows": 0
+    }
+  },
+  "verification": {
+    "BM": {
+      "rows_total": 130,
+      "rows_primary": 100,
+      "rows_reserve": 30,
+      "distinct_fabricated_entities": [
+        "colangiomirina-8",
+        "fibroquelina-X3"
+      ],
+      "primary_split_5050": {
+        "colangiomirina-8": 50,
+        "fibroquelina-X3": 50
+      },
+      "matches_baseline_json_row_for_row": true,
+      "sheet_names": [
+        "control_vs_alteration",
+        "primary_control_rows",
+        "primary_alteration_rows",
+        "reserve_control_rows",
+        "reserve_alteration_rows",
+        "README"
+      ]
+    },
+    "AN": {
+      "rows_total": 130,
+      "rows_primary": 100,
+      "rows_reserve": 30,
+      "distinct_fabricated_entities": [
+        "saco orfalónico",
+        "órgano liradónico"
+      ],
+      "primary_split_5050": {
+        "órgano liradónico": 50,
+        "saco orfalónico": 50
+      },
+      "matches_baseline_json_row_for_row": true,
+      "sheet_names": [
+        "control_vs_alteration",
+        "primary_control_rows",
+        "primary_alteration_rows",
+        "reserve_control_rows",
+        "reserve_alteration_rows",
+        "README"
+      ]
+    }
+  },
+  "matches_baseline_json": true
+}
