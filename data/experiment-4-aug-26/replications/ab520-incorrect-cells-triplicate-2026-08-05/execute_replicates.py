@@ -118,6 +118,33 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _redacted_command() -> str:
+    """Reconstruct the invoking command from the real argv, redacting paths.
+
+    Anything that looks like a filesystem path is replaced, so the record stays
+    reproducible without leaking the local layout. Every other flag is preserved
+    verbatim, including --deviation-route-upstream: an invocation that departed
+    from the frozen request must say so in its own record.
+    """
+    parts = ["uv run python execute_replicates.py"]
+    redact_next = False
+    for token in sys.argv[1:]:
+        if redact_next:
+            parts.append("[REDACTED_PATH]")
+            redact_next = False
+            continue
+        if token in ("--db", "--ledger"):
+            parts.append(token)
+            redact_next = True
+            continue
+        # Only filesystem-looking tokens are redacted. Model ids such as
+        # "google/gemini-3.6-flash" contain a slash but are NOT paths and must
+        # survive verbatim, or the record stops identifying what was run.
+        looks_like_path = token.startswith(("/", "~", "./", "../"))
+        parts.append("[REDACTED_PATH]" if looks_like_path else token)
+    return " ".join(parts)
+
+
 def read_ledger(path: Path, args: argparse.Namespace) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8-sig") as handle:
         rows = list(csv.DictReader(handle))
@@ -394,11 +421,26 @@ def write_invocation(
         "exhausted_before_invocation": exhausted,
         "not_started_after_abort": not_started,
         "stop_reason": stop_reason,
-        "redacted_command": (
-            "uv run python execute_replicates.py "
-            f"--arm {args.arm} --model {args.model} "
-            f"--max-concurrency {args.max_concurrency} --execute "
-            f"--invocation-id {args.invocation_id} --db [REDACTED_PATH]"
+        # Derived from the real argv, not a template. The previous hand-built
+        # string listed a fixed five arguments, so any invocation using
+        # --question-id, --run-index or --deviation-route-upstream recorded a
+        # command that would NOT reproduce it. Records written before 2026-08-07
+        # carry that templated form; see the consolidation folder's ledger notes.
+        "redacted_command": _redacted_command(),
+        # Explicit, machine-readable statement of whether this invocation departed
+        # from the frozen request. Recorded even when false, so silence in the
+        # record is never ambiguous.
+        "protocol_deviation": (
+            {
+                "upstream_override": args.deviation_route_upstream,
+                "require_parameters": False,
+                "allow_fallbacks": False,
+                "consequence": (
+                    "temperature and top_p may be ignored by the pinned upstream"
+                ),
+            }
+            if args.deviation_route_upstream
+            else None
         ),
         "log_path": str(log_path.relative_to(HERE)),
         "ledger_sha256": sha256_file(args.ledger),

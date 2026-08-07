@@ -1,0 +1,371 @@
+# Ledger — column dictionary, derivation, and execution narrative
+
+Base directory: `data/experiment-4-aug-26/consolidate-triplicates-7-aug-26/ledger/`
+Agent 2 of 5 (ledger). Owns this directory only; all sources below are read-only.
+
+Sources (see `../SPEC.md` for full paths):
+- `invocations/*.json` (34 files) — one JSON document per executor invocation, each
+  carrying invocation-level metadata plus a per-outcome array.
+- `logs/*.jsonl` (34 files) — one line per lifecycle event (`start`, `outcome`,
+  `auth_failure`, `end`) for the matching invocation.
+- `runs/ab520-incorrect-cell-triplicates-2026-08-05.sqlite` — opened read-only via
+  `sqlite3 "file:<abs-path>?mode=ro"`. Tables used: `provider_attempts`,
+  `logical_calls`, `experiments`, `questions`, `parsed_answers`, `scores`.
+
+**Note on file count.** The task brief said "the ~20 files"; there are actually
+**34** invocation/log file pairs. All 34 are included below — nothing was excluded.
+
+---
+
+## 1. `RUN_LEDGER.csv` — one row per invocation (34 rows, chronological)
+
+| Column | Meaning | Source |
+| --- | --- | --- |
+| `invocation_id` | Unique name of the executor run | invocation JSON `invocation_id` |
+| `arm` | `openrouter_A` / `openrouter_B` / `tailscale_A` | invocation JSON `arm` |
+| `condition` | `A` or `B` | invocation JSON `condition` |
+| `model` | Model slug | invocation JSON `model` |
+| `dataset` | Dataset name | invocation JSON `dataset` |
+| `experiment_id` | Experiment name (maps 1:1 to a row in the DB `experiments` table) | invocation JSON `experiment` |
+| `target_count` | Cells the invocation planned to touch (queued + already-scored + exhausted) | invocation JSON `target_count` |
+| `concurrency` | `--max-concurrency` used | invocation JSON `concurrency` |
+| `start_time_utc` / `end_time_utc` | Wall-clock bounds | invocation JSON |
+| `status` | Executor's own terminal status string | invocation JSON `status` |
+| `scored_count` | New scores banked by *this* invocation (not cumulative) | invocation JSON `scored_count` |
+| `failure_count` | Outcomes in this invocation that did not score | invocation JSON `failure_count` |
+| `stop_reason` | Why the invocation stopped early; empty if it ran to completion | invocation JSON `stop_reason` (null → empty) |
+| `not_started` | Cells never attempted because the invocation aborted first | invocation JSON `not_started_after_abort` |
+| `skipped_already_scored` | Cells the executor found already scored and left untouched | invocation JSON `skipped_already_scored` |
+| `upstream_override` | `google-vertex` for the two invocations confirmed (via DB, see §4) to have routed gemini_B through Vertex; empty otherwise | derived, see §4 |
+| `deviation` | `TRUE`/`FALSE`, same two invocations as `upstream_override` | derived, see §4 |
+| `redacted_command` | Command line as recorded by the invocation JSON, with the DB path already redacted to `[REDACTED_PATH]` by the source file | invocation JSON `redacted_command`, passed through unmodified |
+| `log_path` | Relative path to the matching `.jsonl` log | invocation JSON `log_path` |
+| `notes` | Free-text description of what happened and why, written from the log/DB evidence — not a repackaging of the columns above | derived, see §5 |
+
+No absolute paths or secrets appear in this repo's `redacted_command` values; they
+were already redacted at generation time. No additional redaction was needed.
+
+---
+
+## 2. `ATTEMPT_TIMELINE.csv` — one row per provider attempt (1,856 rows)
+
+Derived directly from `provider_attempts`, joined to `logical_calls`, `experiments`,
+and `questions`. Query (abbreviated):
+
+```sql
+SELECT pa.created_at, <arm from experiments.name>, lc.model, q.question_id,
+       lc.run_index, pa.attempt_index, pa.status_code, pa.error_type,
+       pa.latency_ms,
+       CASE
+         WHEN json_extract(pa.request_json,'$.provider.order[0]') IS NOT NULL
+           THEN json_extract(pa.request_json,'$.provider.order[0]')
+         WHEN lc.provider = 'openrouter' THEN 'google-ai-studio'
+         ELSE ''
+       END AS upstream,
+       EXISTS(SELECT 1 FROM parsed_answers paw JOIN scores s
+              ON s.parsed_answer_id = paw.id
+              WHERE paw.provider_attempt_id = pa.id) AS scored
+FROM provider_attempts pa
+JOIN logical_calls lc ON lc.id = pa.logical_call_id
+JOIN experiments ex ON ex.id = lc.experiment_id
+JOIN questions q ON q.id = lc.question_id
+ORDER BY pa.created_at, pa.id;
+```
+
+| Column | Meaning |
+| --- | --- |
+| `created_at` | Attempt timestamp, DB `provider_attempts.created_at` |
+| `arm` | Derived from `experiments.name` (`*_or_A_*` → `openrouter_A`, `*_or_B_*` → `openrouter_B`, `*_ts_A_*` → `tailscale_A`) |
+| `model` | `logical_calls.model` |
+| `question_id` | `questions.question_id` (human-readable id, e.g. `b470`) |
+| `run_index` | 2 or 3 |
+| `attempt_index` | 1-based attempt counter within the logical call |
+| `status_code` | HTTP-ish status recorded for the attempt (`200`, `429`, `500`, empty for transport-level failures with no response) |
+| `error_type` | e.g. `rate_limited`, `auth_error`; empty when none |
+| `latency_ms` | Attempt latency |
+| `upstream` | The upstream that served the attempt. For OpenRouter rows, taken from `request_json.provider.order[0]` when present, else defaulted to `google-ai-studio` (OpenRouter's default route when no `order` override was sent). **Left empty for `tailscale_A` rows** — Tailscale is not OpenRouter and has no upstream-provider concept, so defaulting it to `google-ai-studio` (as the SPEC's illustrative SQL does) would be wrong; that SPEC query was written only to isolate the gemini_B OpenRouter cells, not as a general-purpose rule. |
+| `scored` | `TRUE` if this specific attempt is the one referenced by a `parsed_answers` row that has a `scores` row; `FALSE` otherwise (failed attempt, or attempt superseded by a later retry) |
+
+---
+
+## 3. Total counts (all cross-checked against the DB; none invented)
+
+| Quantity | Value | Check |
+| --- | --- | --- |
+| Invocation files | 34 | `ls invocations/*.json \| wc -l` |
+| `RUN_LEDGER.csv` rows | 34 | 1:1 with invocation files |
+| `ATTEMPT_TIMELINE.csv` rows | 1,856 | `SELECT count(*) FROM provider_attempts` = 1,856; matches |
+| Outcome log lines (all invocations) | 1,835 | `grep event==outcome` across all 34 `.jsonl` |
+| Total scores | 1,788 | `SELECT count(*) FROM scores` = 1,788 |
+| `RUN_LEDGER.scored_count` summed | 1,788 | **Exact match**, see §6 |
+| Parse status | 1,787 `ok`, 1 `ok_conflict` | matches SPEC exactly |
+| Logical calls at max_attempts = 5 | 10 | of which 8 never scored (SPEC's "8 outstanding") and 2 scored on the 5th attempt |
+| Logical calls, attempt distribution | 1 attempt: 1,770 · 2: 12 · 3: 4 · 5: 10 | sums to 1,796, matches SPEC total |
+
+---
+
+## 4. Discrepancy found and how it was resolved: the Vertex deviation flag
+
+The task brief states "the final gemini batch used `--deviation-route-upstream
+google-vertex`." **The recorded `redacted_command` string and the log's `start`
+event `plan` object for `or-b-gemini-vertex-run1` and
+`or-b-gemini-vertex-TEST-4cells` do NOT show this flag** — both record a plain
+`execute_replicates.py --arm openrouter_B --model google/gemini-3.6-flash
+--max-concurrency <N> --execute --invocation-id <id> --db [REDACTED_PATH]`, with no
+`--deviation-route-upstream` argument visible anywhere in either invocation JSON or
+its log file (`grep -il deviation invocations/*.json logs/*.jsonl` → no matches).
+
+Per SPEC instructions ("verify any figure it depends on against the primary
+sources... where a check disagrees with this file, report the disagreement"), this
+was checked directly against the database, which is the authoritative record of what
+was actually sent on the wire:
+
+```sql
+SELECT COALESCE(json_extract(pa.request_json,'$.provider.order[0]'),'google-ai-studio'),
+       json_extract(pa.request_json,'$.provider.require_parameters'),
+       json_extract(pa.request_json,'$.provider.allow_fallbacks'),
+       count(*)
+FROM provider_attempts pa
+JOIN logical_calls lc ON lc.id = pa.logical_call_id
+WHERE lc.model = 'google/gemini-3.6-flash' AND lc.provider = 'openrouter' AND pa.status_code = 200
+GROUP BY 1,2,3;
+```
+
+Result:
+
+| upstream | require_parameters | allow_fallbacks | attempts |
+| --- | --- | --- | --- |
+| `google-ai-studio` | `true` | (unset) | 20 |
+| `google-vertex` | `false` | `false` | 91 |
+
+Grouped further by experiment (arm), this splits exactly as the SPEC states:
+`openrouter_A` gemini 18 AI Studio, `tailscale_A` gemini 26 AI Studio,
+`openrouter_B` gemini **2 AI Studio + 91 Vertex**. The 91 Vertex attempts carry
+`request_json.provider = {"order":["google-vertex"],"allow_fallbacks":false,
+"require_parameters":false}` — i.e. the deviation **was** in effect for those two
+invocations; only the human-readable `redacted_command`/log-`plan` fields fail to
+surface it (most likely because the executor logs the command template before
+argument-specific routing overrides are appended, or redacts that argument along
+with the path — we did not have access to `execute_replicates.py`'s logging code to
+confirm which).
+
+**Resolution:** `RUN_LEDGER.csv` sets `deviation=TRUE` and
+`upstream_override=google-vertex` for `or-b-gemini-vertex-run1` and
+`or-b-gemini-vertex-TEST-4cells` based on the DB evidence, not on the
+(silent-on-this-point) command string, and the `notes` column for both rows
+documents the discrepancy inline. All other 32 invocations show
+`deviation=FALSE` — confirmed by the same query returning no other
+`google-vertex` rows anywhere in the database.
+
+No other invocation-level number (`scored_count`, `failure_count`,
+`not_started_after_abort`, `skipped_already_scored`) was found to disagree with the
+database; see §6 for the reconciliation.
+
+---
+
+## 5. Chronological narrative
+
+All times UTC. Source: `start_time_utc` on each invocation, cross-checked against
+the `start`/`outcome`/`end` lines in each `.jsonl` log.
+
+### Day 1 — 2026-08-05 (16:17Z–17:11Z): the productive window
+
+1. **16:17:16Z — `or-a-gemini-r2-r3-initial`.** First invocation of the whole
+   replication. Issued **zero** provider calls: the log shows only a `start` event
+   immediately followed by an `auth_failure` event (`error_type: auth_error`) and no
+   `outcome` lines. All 18 target cells were left not-started. Root cause not
+   further diagnosed in these artifacts (no error body was logged); resolved by the
+   next invocation 17 seconds later.
+2. **16:17:33–16:18:06Z — `or-a-gemini-r2-r3-run1`.** Clean retry; completed all 18
+   `openrouter_A` gemini cells, 0 failures.
+3. **16:18:15–16:20:06Z — `or-a-gemma-r2-r3-run1`.** `openrouter_A` gemma, 210/210,
+   one pass.
+4. **16:20:20–16:33:14Z — `or-a-qwen-r2-r3-run1`.** `openrouter_A` qwen, 116/116,
+   one pass (the longest single invocation of the day, ~13 minutes for 116 cells).
+5. **16:33:21–16:33:40Z — `or-a-glm-r2-r3-run1`.** `openrouter_A` glm, 62/62. Arm A
+   now complete: 406/406.
+6. **16:33:47–16:33:49Z — `or-b-gemini-r2-r3-run1`.** First full-batch attempt at
+   `openrouter_B` gemini, concurrency 10. Aborted after 10 calls — **all 10
+   rate-limited** — on `rate_limit_or_circuit_open`; 90 cells not started. This is
+   the first sign of the OpenRouter shared-pool exhaustion documented in STATUS.md.
+7. **16:35:04–16:35:05Z — `or-b-gemini-probe-b323-r2`.** Single-cell pool-health
+   probe; also rate-limited.
+8. **16:35:22–16:36:08Z — `or-b-glm-r2-r3-run1`.** `openrouter_B` glm, 222/222 —
+   unaffected by the gemini-specific pool problem (27 interchangeable providers).
+9. **16:36:21–16:37:51Z — `or-b-gemma-r2-r3-run1`.** `openrouter_B` gemma, 458/458.
+10. **16:37:59–16:50:45Z — `or-b-qwen-r2-r3-run1`.** `openrouter_B` qwen, 284/284.
+    `openrouter_B` now stands at 964/1064; only gemini remains outstanding.
+11. **16:50:54–16:50:55Z — `or-b-gemini-r2-r3-resume1`.** Resume attempt at reduced
+    concurrency 2; aborted after 2 calls, both rate-limited. Lowering concurrency did
+    not help the shared-pool limit (confirmed later in STATUS.md).
+12. **16:51:40–16:52:06Z — `ts-a-gemini-probe-b22-r2`.** Warm-up probe for the
+    TailScale arm; completed (1/1). Attention shifts to `tailscale_A` while the
+    OpenRouter gemini pool is left to recover.
+13. **16:52:12–16:54:30Z — `ts-a-gemini-r2-r3-run1`.** `tailscale_A` gemini, 25/25
+    new + 1 skipped-already-scored (from the probe) = 26/26 complete.
+14. **16:54:36–17:06:08Z — `ts-a-gemma-r2-r3-run1`.** `tailscale_A` gemma at
+    concurrency 5. Aborted at `three_consecutive_transport_failures` after scoring
+    103/162; 52 cells not started. This is the concurrency finding from STATUS.md —
+    TailScale fails under request rate, not on specific questions.
+15. **17:10:18–17:11:14Z — `ts-a-gemma-probe-b61-r3-retry1`.** Single-cell retry of
+    one previously-failed gemma cell; completed.
+
+Day 1 closes with 1,500 cells scored (per `ATTEMPT_TIMELINE.csv`, matching
+`RUN_LEDGER.csv`'s per-day sum). Outstanding: `openrouter_B` gemini (0/100 after
+resume1's abort), the remaining 52 `tailscale_A` gemma cells, and all of
+`tailscale_A` qwen/glm not yet attempted.
+
+### Day 2 — 2026-08-06 (09:21Z–21:16Z): mop-up, a failed loop, and the deviation
+
+16. **09:21:09Z — `or-b-gemini-probe-b101-r2-20260806`.** First probe of the day on
+    the OpenRouter gemini pool; still rate-limited (pool availability measured at
+    ~2 of 4 per STATUS.md).
+17. **09:21:37–09:45:42Z — `ts-a-qwen-r2-r3-run1`.** `tailscale_A` qwen at
+    concurrency 3 (learned from yesterday's transport-failure finding); 97/98
+    scored, `completed_with_unresolved` (1 failure).
+18. **09:45:56–09:57:59Z — `ts-a-glm-r2-r3-run1`.** `tailscale_A` glm at
+    concurrency 3; 34/40 scored, `completed_with_unresolved` (6 failures) — the
+    first sign of what becomes the b264 problem cell.
+19. **09:58:17–10:10:26Z — `ts-a-gemma-r2-r3-run2`.** Resume of yesterday's aborted
+    gemma batch, now at concurrency 2: **58/58, zero failures.** Confirms
+    concurrency 2 clears the transport-failure problem entirely; `tailscale_A` gemma
+    now complete at 162/162.
+20. **10:11:07–10:15:06Z — `ts-a-glm-r2-r3-retry1`.** Retry pass over the 6
+    unresolved glm cells at concurrency 2; recovers 4/6, 2 still failing.
+21. **10:15:06–10:15:55Z — `ts-a-qwen-r2-r3-retry1`.** Retries the 1 unresolved
+    qwen cell; succeeds. `tailscale_A` qwen now complete, 98/98.
+22. **10:16:19–10:19:35Z — `ts-a-glm-probe-b264-retry2`.** Retries the last 2 glm
+    cells; 1/2 recovers, question `b264` run 2 still failing.
+23. **10:19:48–10:22:19Z — `ts-a-glm-probe-b264-retry3`.** Retries `b264` r2 alone;
+    fails again.
+24. **10:29:01–10:29:03Z — `or-b-gemini-probe-b101-r2-retry2`.** Second gemini pool
+    probe of the day; still rate-limited.
+25. **10:29:56–10:32:27Z — `ts-a-glm-probe-b264-retry4`.** Retries `b264` r2 again;
+    fails with **500s, four attempts hanging 150.1–150.2s** per STATUS.md. This is
+    the cell that ends up permanently exhausted for `tailscale_A`.
+26. **10:32:01–10:32:02Z — `or-b-gemini-r2-r3-resume2`.** Second resume attempt at
+    concurrency 2; aborted after 2 calls, both rate-limited.
+
+`tailscale_A` is now at its final state: 325/326 (only `b264` r2 outstanding).
+Attention returns fully to `openrouter_B` gemini, still at 0/100.
+
+27–32. **15:51:44–15:52:00Z — the 6-round bounded resume loop
+    (`or-b-gemini-resume3-r1` through `-r6`).** A tight loop re-invoked the executor
+    6 times in ~16 seconds total wall-clock against `openrouter_B` gemini.
+    Round 1 banked **2 scores** (the only scores the whole loop produced); rounds
+    2–6 banked 0. Per-round `exhausted_before_invocation` counts step 2 → 2 → 3 → 4
+    → 5 → 6, i.e. **5 additional cells were pushed to the 5-attempt ceiling** across
+    rounds 2–6 while nothing new was gained — net negative, confirming STATUS.md's
+    diagnosis: the executor selects targets in a fixed queue order and aborts the
+    whole run on a single 429, so every round re-attacked the same already-damaged
+    head-of-queue cells and never reached the 88 untouched cells behind them.
+33. **21:05:38–21:06:03Z — `or-b-gemini-vertex-TEST-4cells`.** A 4-cell test batch
+    confirming Google Vertex routing works as a fallback; 4/4 scored. DB evidence
+    (§4) confirms this used `provider.order=["google-vertex"]`,
+    `require_parameters=false`, even though neither the command string nor the log
+    plan shows it.
+34. **21:13:01–21:16:17Z — `or-b-gemini-vertex-run1`.** The authorized full deviation
+    run at concurrency 3. Scored 87/87 executed; skipped 6 already-scored (the 2
+    real-`temperature=0` AI Studio cells from Day 1 plus the loop's 2 banked
+    scores... — see note below); 7 cells entered already exhausted from the resume
+    loop. `openrouter_B` gemini finishes at 93/100 (2 AI Studio + 91 Vertex),
+    matching the SPEC's authoritative figures exactly.
+
+Study closes at 1,788/1,796 scored (99.6%), 8 cells permanently exhausted at the
+5-attempt ceiling: `openrouter_B` gemini `n012` (r2+r3), `n036` (r2+r3), `b326`
+(r2+r3), `b373` (r2), and `tailscale_A` glm `b264` (r2).
+
+*(Note on the "6 skipped_already_scored" in `or-b-gemini-vertex-run1`: this is a
+consistency check, not independently re-derived here — it is taken as recorded in
+the invocation JSON and is plausible given the day's history (2 AI Studio cells +
+resume-loop's 2 banked scores + 2 more from the probes/tests), but the exact
+identities of all 6 were not individually traced against the DB. Flagging as
+recorded-but-not-fully-traced rather than asserting it as independently verified.)*
+
+---
+
+## 6. Per-day summary
+
+| Day | Invocations | Attempts (DB) | Outcomes (log) | Scored | Failures | Key events |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-08-05 | 15 | 1,533 | — | 1,500 | 20 | Arm A + most of arm B completed; `openrouter_B` gemini pool exhaustion begins; `tailscale_A` gemma aborts on transport failures |
+| 2026-08-06 | 19 | 323 | — | 288 | 27 | `tailscale_A` mop-up (concurrency 2 fixes gemma; `b264` r2 permanently fails); 6-round resume loop nets +2/-5 on `openrouter_B` gemini; Vertex deviation authorized and executed |
+| **Total** | **34** | **1,856** | **1,835** | **1,788** | **47** | |
+
+(Attempts and outcomes are DB/log counts and don't split cleanly by day in a single
+query column here beyond what's shown; the 1,533/323 attempt split and 1,500/288
+scored split were computed directly from `ATTEMPT_TIMELINE.csv` and cross-checked
+against `RUN_LEDGER.csv`'s per-day `scored_count` sum — both agree exactly.)
+
+---
+
+## 7. Reconciliation: scored_count sum vs. total scores
+
+`RUN_LEDGER.scored_count` summed across all 34 rows = **1,788**, exactly equal to
+`SELECT count(*) FROM scores` = **1,788**, and exactly equal to the SPEC's
+authoritative total. No forcing was needed — every invocation's `scored_count`
+represents *newly* banked scores in that invocation (not a running cumulative
+total), so a plain sum is the correct reconciliation and it lines up perfectly with
+no double-counting and no gap.
+
+A secondary check surfaced a **non-problem worth documenting**: summing
+`executed_count` across all invocations gives 1,835, which is 21 less than the DB's
+1,856 `provider_attempts` rows. This is not a discrepancy in the data — it is
+explained by the log schema itself: each `outcome` log line carries
+`attempts_before`/`attempts_after`, and for most outcomes `attempts_after -
+attempts_before = 1`, but for outcomes following an internal retry within the same
+invocation this delta is 2 (occasionally more). Summing `(attempts_after -
+attempts_before)` over all 1,835 outcome lines gives **exactly 1,856** — full
+reconciliation with the DB attempt count. `RUN_LEDGER.csv` reports `executed_count`
+as-recorded (i.e. counts of outcomes, not raw DB attempt rows) to stay consistent
+with the invocation JSON's own definition; `ATTEMPT_TIMELINE.csv` is the row-level
+DB truth for anyone who needs the finer-grained 1,856 count.
+
+No invocation's `scored_count` or `failure_count` was found to contradict the DB.
+The one confirmed contradiction between the invocation-level record and the DB is
+the Vertex deviation flag documented in §4 — a gap in what the command string
+*shows*, not in what it *did*.
+
+---
+
+## Known limitation of the historical `redacted_command` field (added 2026-08-07)
+
+All 34 invocation records in this ledger carry a `redacted_command` that was
+**reconstructed from a fixed template**, not from the real argv. The template
+emitted exactly five arguments — `--arm`, `--model`, `--max-concurrency`,
+`--execute`, `--invocation-id` — plus a redacted `--db`.
+
+Consequences for these records:
+
+- The two Vertex invocations (`or-b-gemini-vertex-run1`,
+  `or-b-gemini-vertex-TEST-4cells`) do **not** show
+  `--deviation-route-upstream google-vertex`, even though they used it.
+- Every single-cell probe and retry is recorded without its `--question-id` /
+  `--run-index`, so the command shown would re-run the whole slice rather than
+  the one cell actually targeted.
+
+**No recorded command in this ledger reproduces its invocation exactly.** Do not
+copy one and expect the same behaviour.
+
+The deviation itself is not lost — it is recorded in the database, which is the
+authoritative source:
+
+```sql
+SELECT COUNT(*) FROM provider_attempts
+WHERE json_extract(request_json,'$.provider.order[0]') = 'google-vertex';
+-- 91 attempts, all openrouter_B / gemini
+```
+
+91 Vertex attempts carry `require_parameters=false, allow_fallbacks=false`
+against 2 AI Studio attempts at `require_parameters=true`, splitting exactly as
+the upstream attribution states. The `deviation` and `upstream_override` columns
+in `RUN_LEDGER.csv` were populated from that database evidence, not from the
+command strings.
+
+`execute_replicates.py` was fixed on 2026-08-07 to derive `redacted_command`
+from the real argv and to write an explicit `protocol_deviation` object into
+every invocation record — including as `null` when there was none, so that
+silence is never ambiguous. Records written from that date onward are faithful;
+the 34 already in this ledger are not, and were left unmodified rather than
+retro-fitted, because rewriting a historical execution record to say something
+it did not say would defeat the purpose of keeping one.
