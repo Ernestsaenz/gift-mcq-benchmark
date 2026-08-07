@@ -58,9 +58,12 @@ exactly the DB as last committed — no uncommitted writes, no drift.
 
 ## 2. Git commits relevant to this work
 
-`git log --oneline -15` (repository root, run 2026-08-07):
+`git log --oneline -16` (repository root; first run 2026-08-07 at the start
+of this audit, re-run 2026-08-07 later the same day after `HEAD` advanced by
+one commit — both runs shown are from the second, current pass):
 
 ```
+dd3a6b8 Record the real argv in invocation records, not a five-argument template
 7ef8436 Complete gemini_B via Google Vertex: 1,788/1,796, the protocol ceiling
 2070a96 Allow an experiment to pin the OpenRouter upstream, off by default
 ef04b53 Record that no alternative provider can serve gemini under the frozen request
@@ -72,10 +75,31 @@ c7f9613 Add ExpC mechanical-130 addendum and the aug-26 ab520 500-item experimen
 9660b9a Add the 2026-07-31 balanced-MCQ A/B experiment and its analysis
 ```
 
-Current `HEAD` (`git rev-parse HEAD`): `7ef843650ffcff3e6a7ffbca06882c0ff2a930cf`.
+`HEAD` at the time the facts in §3 were last verified (2026-08-07):
+`dd3a6b8688a80bbf0e55c6590ddf9e25d1c2e71d`. **`HEAD` has continued to
+advance since**, as this shared consolidation session's coordinator commits
+the finished output folder (e.g. `6d11fe6`, "Add the consolidated triplicate
+evidence folder for runs 1-3" — which adds this `provenance/` package itself
+to git, among other agents' deliverables, and touches none of the source
+files this document verifies). Treat every hash and code-reading claim in
+this document as anchored to the specific commit named next to it
+(`dd3a6b8`, `7ef8436`, `2070a96`, etc.), not to "whatever `HEAD` is" — those
+commits, and what they contain, do not change as `HEAD` moves forward.
+
+This commit (`dd3a6b8`) landed **during** this audit: this agent first
+hashed `execute_replicates.py` while it was an
+uncommitted working-tree edit by another agent (recorded then as
+`e8e17d413efe3cce89c6cb6d49635c00b3ac2389df79f19629c451b608eeda27`), then
+re-hashed it as a further-edited uncommitted file
+(`24109aa200ae4be2d0f1edcfe7e1bda5e45c9023ff25acf40b83c89ee7065b38`), and it
+is now committed at `dd3a6b8` with the hash recorded in §3 below. All three
+observations are kept here for the audit trail rather than silently
+replaced, since each was an accurate snapshot of a real, distinct state of
+that file at the time it was taken.
 
 | Commit (full SHA) | Subject | Files touched (this experiment) |
 | --- | --- | --- |
+| `dd3a6b8688a80bbf0e55c6590ddf9e25d1c2e71d` | Record the real argv in invocation records, not a five-argument template | `execute_replicates.py` (+47/-5 — replaces the 5-flag `redacted_command` template with one derived from real `sys.argv`, adds an explicit `protocol_deviation` field to invocation records); `ledger/LEDGER_README.md` (new, 371 lines — owned by agent 2/ledger, not this agent). Per the commit message, the 34 pre-existing invocation records are deliberately left unmodified (not backfilled), so this fix is prospective only. |
 | `7ef843650ffcff3e6a7ffbca06882c0ff2a930cf` | Complete gemini_B via Google Vertex: 1,788/1,796, the protocol ceiling | `STATUS.md`; `execute_replicates.py` (+51 lines, the `provider_routing` opt-in plumbing at the script level); `invocations/or-b-gemini-vertex-{TEST-4cells,run1}.json`; `logs/or-b-gemini-vertex-{TEST-4cells,run1}.jsonl`; the live `.sqlite` (Bin 33517568 → 34721792 bytes) |
 | `2070a9609cc1508508ba5d8b72537dcded0a9996` | Allow an experiment to pin the OpenRouter upstream, off by default | `code/medrag_eval/providers/base.py` (+6), `code/medrag_eval/providers/openrouter.py` (+1/-1), `code/medrag_eval/runner.py` (+5/-1) — **the harness change**; no data files touched |
 | `ef04b53e6a19274c6a6bfbfb9126a07ca0a0fadf` | Record that no alternative provider can serve gemini under the frozen request | `STATUS.md` only (+33) |
@@ -93,14 +117,18 @@ introduced together in `7571ab7` — there is no separate "prepare" commit.
 
 ## 3. Exact code version — the `provider_routing` mechanism
 
-Current repository state: `git status --short` shows the harness directory
-(`code/medrag_eval/`) has **no local modifications** — the working tree
-matches `HEAD` (`7ef8436`) there. (Elsewhere in the repo, outside this
-provenance package's remit, `git status` shows unrelated deletions of
+Current repository state, re-checked 2026-08-07 after `HEAD` advanced to
+`dd3a6b8`: `git status --short code/medrag_eval/` returns nothing — the
+harness directory has **no local modifications**, working tree matches
+`HEAD` (`dd3a6b8`) there (unaffected by that commit, which touched only
+`execute_replicates.py` and a new `ledger/LEDGER_README.md`, neither inside
+`code/medrag_eval/`). (Elsewhere in the repo, outside this provenance
+package's remit, `git status` continues to show unrelated deletions of
 top-level files such as `README.md`/`LICENSE`/`CITATION.cff` and other
-uncommitted changes belonging to other agents' work in this shared
-session; those are reported here for completeness but are not part of this
-replication's code path and this agent made no changes outside
+uncommitted changes belonging to other agents' work in this shared session;
+re-observed at both checkpoints of this audit, unchanged in substance
+between them. Reported here for completeness — not part of this
+replication's code path, and this agent made no changes outside
 `provenance/`.)
 
 Read directly from the files at `HEAD`:
@@ -147,24 +175,36 @@ field under any caller input, by construction of line 666.
 ### Replication-local orchestration scripts
 
 Workspace files, not part of the `code/medrag_eval/` package, both
-introduced in `7571ab7`:
+introduced in `7571ab7`. Current hashes, re-verified 2026-08-07 against the
+now-committed `dd3a6b8` state (`git status --short` on both paths returns
+nothing — disk matches `HEAD` exactly, zero uncommitted diff):
 
-| Role | Path | SHA-256 |
+| Role | Path | SHA-256 (current, `HEAD` = `dd3a6b8`) |
 | --- | --- | --- |
-| Prepare frozen replicate execution inputs | `data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/prepare_replicates.py` | `03df9bfbee2010e8d84b21f6f162445e6f9ef77aacd7e523e2e312f2f3c4f6ae` (recomputed 2026-08-07, unmodified since) |
-| Issue and record replicate calls (runs 2–3, incl. the `provider_routing` pin used for the Vertex round) | `data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/execute_replicates.py` | `24109aa200ae4be2d0f1edcfe7e1bda5e45c9023ff25acf40b83c89ee7065b38` (current, recomputed after the edit below) |
+| Prepare frozen replicate execution inputs | `data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/prepare_replicates.py` | `03df9bfbee2010e8d84b21f6f162445e6f9ef77aacd7e523e2e312f2f3c4f6ae` (unmodified since first recorded) |
+| Issue and record replicate calls (runs 2–3, incl. the `provider_routing` pin used for the Vertex round) | `data/experiment-4-aug-26/replications/ab520-incorrect-cells-triplicate-2026-08-05/execute_replicates.py` | `8b5e4306ad7af988339903aa58412cd460fc43f3874065bce6370993788f60c2` |
 
 Neither script has a hash recorded in `preparation-summary.json` to check
 against (that manifest records data/DB hashes only, not script hashes), so
 these rows are first-recorded here, not a MATCH/DIFFERS comparison.
 
-**`execute_replicates.py` was edited by another agent during this audit,
-after this agent's first hash of it (`e8e17d413efe3cce89c6cb6d49635c00b3ac2389df79f19629c451b608eeda27`,
-recorded 2026-08-07 before the edit).** `git diff` (uncommitted, working
-tree only — not yet part of any commit in §2) shows two changes, both to
-`write_invocation`'s recorded metadata, neither touching call-execution
-logic or the `provider_routing`/`--deviation-route-upstream` mechanism
-itself:
+**Chain of custody for `execute_replicates.py`'s hash, kept in full because
+it changed twice during this audit and each value was a true snapshot at
+the time it was taken:**
+
+1. `e8e17d413efe3cce89c6cb6d49635c00b3ac2389df79f19629c451b608eeda27` —
+   this agent's first hash, taken before any edit, matching the version
+   `7ef8436` last committed.
+2. `24109aa200ae4be2d0f1edcfe7e1bda5e45c9023ff25acf40b83c89ee7065b38` —
+   recorded when another agent's edit was still uncommitted working-tree
+   state.
+3. `8b5e4306ad7af988339903aa58412cd460fc43f3874065bce6370993788f60c2` —
+   **current.** That edit is now commit `dd3a6b8` (§2); this hash matches
+   both the committed blob and the on-disk file exactly.
+
+The change itself (`git show dd3a6b8`) touches only `write_invocation`'s
+recorded metadata, not call-execution logic or the
+`provider_routing`/`--deviation-route-upstream` mechanism:
 
 1. A new `_redacted_command()` helper reconstructs `redacted_command` from
    the real `sys.argv` (redacting path-shaped tokens) instead of a
@@ -176,13 +216,14 @@ itself:
    structured object (`upstream_override`, `require_parameters: false`,
    `allow_fallbacks: false`, consequence note) when it was.
 
-Net effect: this is a **recording-fidelity fix for future invocations**, not
-a change to how the 1,796 frozen calls already in the live DB were executed
-— the 20 (now 34) `invocations/*.json` files already committed (§2) were
-written by the pre-edit code and are unaffected retroactively. Both hashes
-are recorded above for chain-of-custody completeness; the current hash
-(`24109aa2…`) is the one that will apply to any future invocation of this
-script from this point in the working tree.
+Net effect, confirmed by the commit message: this is a **recording-fidelity
+fix for future invocations**, not a change to how the 1,796 frozen calls
+already in the live DB were executed — the commit explicitly leaves the 34
+`invocations/*.json` files already committed (§2) unmodified, since they
+were written by the pre-edit code and rewriting a record to say something it
+did not say would defeat its purpose. The limitation is instead documented
+in `ledger/LEDGER_README.md` (new in `dd3a6b8`, owned by agent 2/ledger —
+not reproduced here).
 
 ## 4. Python / uv environment
 
