@@ -1,0 +1,12 @@
+{
+  "protocol_version": "ab182-readonly-v1",
+  "eligible_reviewers": {
+    "sourcing_new": "RSRC22",
+    "qa1_batches_01_03": "RQA22A",
+    "qa2_batch_01": "RQA22B",
+    "qa2_batches_02_03": "RQA22C"
+  },
+  "coverage_path": "protocol-qa/qa-coverage.csv",
+  "summary_path": "protocol-qa/final-review-summary.json",
+  "all_22_gates_pass": true
+}

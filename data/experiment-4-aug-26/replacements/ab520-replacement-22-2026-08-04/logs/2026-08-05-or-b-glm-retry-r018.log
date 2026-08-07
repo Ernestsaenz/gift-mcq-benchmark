@@ -1,0 +1,4 @@
+{"plan": {"arm": "openrouter_B", "execute": true, "max_concurrency": 1, "model": "z-ai/glm-5.2", "provider": "openrouter", "queued": 1, "selected": 1, "skipped_already_scored": 0}}
+[01:23:01] [1/1 (100%)] openrouter/z-ai/glm-5.2 q=r018 r=1  parse=ok letter=b/b ✓  4.7s
+{"outcome": {"attempt_delta": 1, "cell_key": "openrouter|B|r018|la-rioja|2021|main|4|z-ai/glm-5.2|1", "error_message": null, "error_type": null, "finish_reason": "stop", "integrity": "ok", "latency_ms": 4718, "parse_status": "ok", "replacement_id": "r018", "score_count": 1, "scored": true, "selected_letter": "b", "status_code": 200, "strict_correct": 1}}
+{"summary": {"executed": 1, "not_started": 0, "scored": 1, "skipped_already_scored": 0, "stop_reason": null, "unresolved": 0}}

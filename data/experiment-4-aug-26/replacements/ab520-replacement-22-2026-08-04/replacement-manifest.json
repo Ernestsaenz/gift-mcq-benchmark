@@ -1,8 +1,8 @@
 {
   "artifact_version": "ab520-replacement-22-package-v1",
   "selection_date": "2026-08-04",
-  "status": "PROVISIONAL_PENDING_PROTOCOL_QA",
-  "execution_status": "NOT_RUN",
+  "status": "QA_COMPLETE_READY_FOR_EXECUTION",
+  "execution_status": "READY_NOT_RUN",
   "interpretation": "This is a new matched replacement cohort. It does not recover or overwrite the original 22 questions or any original unresolved cell.",
   "scope": {
     "replacement_questions": 22,
@@ -147,7 +147,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 0,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S17",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
+      }
     },
     {
       "replacement_id": "r002",
@@ -222,6 +228,12 @@
             "url": "https://www.sciencedirect.com/science/article/abs/pii/S1365182X22016008"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -320,7 +332,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S00",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r004",
@@ -421,7 +439,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 0,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S05",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r005",
@@ -496,6 +520,12 @@
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3094217/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -597,7 +627,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S14",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
+      }
     },
     {
       "replacement_id": "r007",
@@ -699,7 +735,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S01",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
+      }
     },
     {
       "replacement_id": "r008",
@@ -774,6 +816,12 @@
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7465394/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -849,6 +897,12 @@
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6963168/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
       }
     },
     {
@@ -950,7 +1004,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 0,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S05",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r011",
@@ -1050,7 +1110,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 0,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S06",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r012",
@@ -1150,7 +1216,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S06",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r013",
@@ -1225,6 +1297,12 @@
             "url": "https://www.ncbi.nlm.nih.gov/books/NBK1519/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -1326,7 +1404,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S03",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r015",
@@ -1401,6 +1485,12 @@
             "url": "https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -1502,7 +1592,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S14",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
+      }
     },
     {
       "replacement_id": "r017",
@@ -1602,7 +1698,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 0,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S10",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
+      }
     },
     {
       "replacement_id": "r018",
@@ -1702,7 +1804,13 @@
         "verdict": "PASS"
       },
       "prior_blinded_qa_pass_count": 1,
-      "manual_research_adjudication": null
+      "manual_research_adjudication": null,
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "S17",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
+      }
     },
     {
       "replacement_id": "r019",
@@ -1777,6 +1885,12 @@
             "url": "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-are-non-invasive-risk-scores-such-fib-4-used"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
       }
     },
     {
@@ -1852,6 +1966,12 @@
             "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK1512/?report=reader"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     },
     {
@@ -1927,6 +2047,12 @@
             "url": "https://www.esge.com/assets/downloads/pdfs/guidelines/2020_a_1140_3017.pdf"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22B"
       }
     },
     {
@@ -2002,6 +2128,12 @@
             "url": "https://www.ncbi.nlm.nih.gov/books/NBK616291/table/ch1.tab1/"
           }
         ]
+      },
+      "protocol_gate": {
+        "status": "PASS",
+        "sourcing_reviewer": "RSRC22",
+        "qa1_reviewer": "RQA22A",
+        "qa2_reviewer": "RQA22C"
       }
     }
   ],
@@ -2022,5 +2154,14 @@
     "max_gift_B_characters": 651,
     "max_retained_token_jaccard": 0.242424,
     "all_machine_assertions_passed": true
+  },
+  "protocol_qa": {
+    "summary_path": "protocol-qa/final-review-summary.json",
+    "coverage_path": "protocol-qa/qa-coverage.csv",
+    "source_passes": 22,
+    "qa1_passes": 22,
+    "qa2_passes": 22,
+    "all_candidates_ready": true,
+    "validated_at_utc": "2026-08-05T01:02:29Z"
   }
 }

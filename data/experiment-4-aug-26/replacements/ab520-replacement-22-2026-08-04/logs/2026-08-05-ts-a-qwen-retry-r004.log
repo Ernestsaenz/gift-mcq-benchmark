@@ -1,0 +1,4 @@
+{"plan": {"arm": "tailscale_A", "execute": true, "max_concurrency": 1, "model": "qwen/qwen3.6-35b-a3b", "provider": "tailscale_medical_rag", "queued": 1, "selected": 1, "skipped_already_scored": 0}}
+[01:28:42] [1/1 (100%)] tailscale_medical_rag/qwen/qwen3.6-35b-a3b q=r004 r=1  parse=ok letter=d/d ✓  16.1s
+{"outcome": {"attempt_delta": 1, "cell_key": "tailscale_medical_rag|A|r004|andalucia|2021|cuestionario-teorico|57|qwen/qwen3.6-35b-a3b|1", "error_message": null, "error_type": null, "finish_reason": "stop", "integrity": "ok", "latency_ms": 16085, "parse_status": "ok", "replacement_id": "r004", "score_count": 1, "scored": true, "selected_letter": "d", "status_code": 200, "strict_correct": 1}}
+{"summary": {"executed": 1, "not_started": 0, "scored": 1, "skipped_already_scored": 0, "stop_reason": null, "unresolved": 0}}

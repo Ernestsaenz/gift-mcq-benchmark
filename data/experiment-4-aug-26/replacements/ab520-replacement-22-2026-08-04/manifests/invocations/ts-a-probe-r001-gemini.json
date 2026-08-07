@@ -1,0 +1,40 @@
+{
+  "invocation_id": "ts-a-probe-r001-gemini",
+  "arm": "tailscale_A",
+  "condition": "A",
+  "provider": "tailscale_medical_rag",
+  "model": "google/gemini-3.6-flash",
+  "dataset": "aug26_replacement22_A",
+  "experiment_id": "ab520_replacement22_ts_A_20260804",
+  "target_count": 1,
+  "concurrency": 1,
+  "start_time_utc": "2026-08-05T01:23:34Z",
+  "end_time_utc": "2026-08-05T01:23:52Z",
+  "status": "completed",
+  "scored_count": 1,
+  "failure_count": 0,
+  "skipped_already_scored": 0,
+  "not_started_after_abort": 0,
+  "stop_reason": null,
+  "redacted_command": "uv run python execute_replacement_cells.py --arm tailscale_A --model google/gemini-3.6-flash --max-concurrency 1 --db [REDACTED_PATH] --execute",
+  "log_path": "logs/2026-08-05-ts-a-probe-r001-gemini.log",
+  "ledger_sha256": "b9289c5a7dda8b750b80be9077a0f6240bd4a8153d00f36eed6b3c77b6114e40",
+  "outcomes": [
+    {
+      "cell_key": "tailscale_medical_rag|A|r001|la-rioja|2021|main|46|google/gemini-3.6-flash|1",
+      "replacement_id": "r001",
+      "attempt_delta": 1,
+      "score_count": 1,
+      "scored": true,
+      "selected_letter": "d",
+      "strict_correct": 1,
+      "parse_status": "ok",
+      "status_code": 200,
+      "latency_ms": 17409,
+      "finish_reason": "stop",
+      "error_type": null,
+      "error_message": null,
+      "integrity": "ok"
+    }
+  ]
+}

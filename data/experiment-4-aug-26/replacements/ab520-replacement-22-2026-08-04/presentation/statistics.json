@@ -1,0 +1,547 @@
+{
+  "protocol": {
+    "analysis_date": "2026-08-05",
+    "input_csv": "ab520-replacement-22-2026-08-04/exports/benchmark-6000-cell-results-adjusted.csv",
+    "input_sha256": "ce91b3f3eb90cd0b125a170a6f0a0a967c02d63da17cfa97161e62f739c4b721",
+    "bootstrap_repetitions": 100000,
+    "bootstrap_base_seed": 20260804,
+    "bootstrap_seed_derivation": "base seed + integer from first 8 hex digits of SHA-256(contrast label)",
+    "alpha": 0.05,
+    "outcome": "strict_correct",
+    "pairing_key": [
+      "source_key",
+      "model"
+    ],
+    "cluster_key": "source_key",
+    "multiplicity": "Holm correction across six user-requested exploratory taxonomy contrasts"
+  },
+  "dataset": {
+    "required_cells": 6000,
+    "scored_cells": 6000,
+    "unresolved_cells": 0,
+    "questions": 500,
+    "models": 4,
+    "failure_classes": {}
+  },
+  "arm_summaries": [
+    {
+      "arm": "OpenRouter A",
+      "provider": "openrouter",
+      "condition": "A",
+      "required": 2000,
+      "scored": 2000,
+      "correct": 1797,
+      "missing": 0,
+      "accuracy": 0.8985,
+      "wilson_ci": [
+        0.8844916613108394,
+        0.9109804520060018
+      ],
+      "coverage": 1.0
+    },
+    {
+      "arm": "OpenRouter B",
+      "provider": "openrouter",
+      "condition": "B",
+      "required": 2000,
+      "scored": 2000,
+      "correct": 1468,
+      "missing": 0,
+      "accuracy": 0.734,
+      "wilson_ci": [
+        0.7141995838511511,
+        0.7529032380212225
+      ],
+      "coverage": 1.0
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "provider": "tailscale_medical_rag",
+      "condition": "A",
+      "required": 2000,
+      "scored": 2000,
+      "correct": 1837,
+      "missing": 0,
+      "accuracy": 0.9185,
+      "wilson_ci": [
+        0.9056914879040412,
+        0.92970394352155
+      ],
+      "coverage": 1.0
+    }
+  ],
+  "model_summaries": [
+    {
+      "arm": "OpenRouter A",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 491,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.982,
+      "wilson_ci": [
+        0.9661483290912607,
+        0.990501806703803
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 141.48275862068965,
+      "cochran_q_df": 3,
+      "cochran_q_p": 1.810251172677184e-30
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 395,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.79,
+      "wilson_ci": [
+        0.7521551530407024,
+        0.8234227294915976
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 141.48275862068965,
+      "cochran_q_df": 3,
+      "cochran_q_p": 1.810251172677184e-30
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 442,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.884,
+      "wilson_ci": [
+        0.8529581630365658,
+        0.9091863434889621
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 141.48275862068965,
+      "cochran_q_df": 3,
+      "cochran_q_p": 1.810251172677184e-30
+    },
+    {
+      "arm": "OpenRouter A",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 469,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.938,
+      "wilson_ci": [
+        0.9133402868983618,
+        0.9559807908573184
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 141.48275862068965,
+      "cochran_q_df": 3,
+      "cochran_q_p": 1.810251172677184e-30
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 450,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.9,
+      "wilson_ci": [
+        0.8705780903680599,
+        0.9233224372626984
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 218.8621444201313,
+      "cochran_q_df": 3,
+      "cochran_q_p": 3.537410673665014e-47
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 271,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.542,
+      "wilson_ci": [
+        0.49817416517608065,
+        0.585185390225149
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 218.8621444201313,
+      "cochran_q_df": 3,
+      "cochran_q_p": 3.537410673665014e-47
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 358,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.716,
+      "wilson_ci": [
+        0.674944056876268,
+        0.7537622280443413
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 218.8621444201313,
+      "cochran_q_df": 3,
+      "cochran_q_p": 3.537410673665014e-47
+    },
+    {
+      "arm": "OpenRouter B",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 389,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.778,
+      "wilson_ci": [
+        0.739530218085007,
+        0.8122306486183701
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 218.8621444201313,
+      "cochran_q_df": 3,
+      "cochran_q_p": 3.537410673665014e-47
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Gemini",
+      "model_id": "google/gemini-3.6-flash",
+      "correct": 487,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.974,
+      "wilson_ci": [
+        0.9560285091657758,
+        0.9847436160766728
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 99.32664756446991,
+      "cochran_q_df": 3,
+      "cochran_q_p": 2.169070522258962e-21
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Gemma",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "correct": 419,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.838,
+      "wilson_ci": [
+        0.8031477342378299,
+        0.8676982116101608
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 99.32664756446991,
+      "cochran_q_df": 3,
+      "cochran_q_p": 2.169070522258962e-21
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "Qwen",
+      "model_id": "qwen/qwen3.6-35b-a3b",
+      "correct": 451,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.902,
+      "wilson_ci": [
+        0.8727939491335183,
+        0.9250760811353939
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 99.32664756446991,
+      "cochran_q_df": 3,
+      "cochran_q_p": 2.169070522258962e-21
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "model": "GLM",
+      "model_id": "z-ai/glm-5.2",
+      "correct": 480,
+      "scored": 500,
+      "missing": 0,
+      "accuracy": 0.96,
+      "wilson_ci": [
+        0.9390264041651492,
+        0.9739592026102227
+      ],
+      "complete_question_n_for_omnibus": 500,
+      "cochran_q": 99.32664756446991,
+      "cochran_q_df": 3,
+      "cochran_q_p": 2.169070522258962e-21
+    }
+  ],
+  "per_model_ab": [
+    {
+      "model": "Gemini",
+      "n_pairs": 500,
+      "a_accuracy": 0.982,
+      "b_accuracy": 0.9,
+      "difference": -0.082,
+      "difference_ci": [
+        -0.108,
+        -0.056
+      ],
+      "a_only": 44,
+      "b_only": 3,
+      "mcnemar_exact_p": 2.4647306418046355e-10
+    },
+    {
+      "model": "Gemma",
+      "n_pairs": 500,
+      "a_accuracy": 0.79,
+      "b_accuracy": 0.542,
+      "difference": -0.248,
+      "difference_ci": [
+        -0.296,
+        -0.2
+      ],
+      "a_only": 150,
+      "b_only": 26,
+      "mcnemar_exact_p": 2.1624066561172456e-22
+    },
+    {
+      "model": "Qwen",
+      "n_pairs": 500,
+      "a_accuracy": 0.884,
+      "b_accuracy": 0.716,
+      "difference": -0.168,
+      "difference_ci": [
+        -0.208,
+        -0.128
+      ],
+      "a_only": 103,
+      "b_only": 19,
+      "mcnemar_exact_p": 3.7616493492859476e-15
+    },
+    {
+      "model": "GLM",
+      "n_pairs": 500,
+      "a_accuracy": 0.938,
+      "b_accuracy": 0.778,
+      "difference": -0.16,
+      "difference_ci": [
+        -0.196,
+        -0.124
+      ],
+      "a_only": 88,
+      "b_only": 8,
+      "mcnemar_exact_p": 3.673235528056121e-18
+    }
+  ],
+  "openrouter_a_vs_b": {
+    "label": "OpenRouter B minus A",
+    "baseline_name": "OpenRouter A",
+    "comparator_name": "OpenRouter B",
+    "n_pairs": 2000,
+    "n_questions": 500,
+    "baseline_correct": 1797,
+    "comparator_correct": 1468,
+    "baseline_accuracy": 0.8985,
+    "comparator_accuracy": 0.734,
+    "risk_difference": -0.1645,
+    "risk_difference_ci": [
+      -0.1875,
+      -0.1415
+    ],
+    "both_wrong": 147,
+    "baseline_only": 385,
+    "comparator_only": 56,
+    "both_correct": 1412,
+    "mcnemar_exact_p": 1.8483188392835404e-61,
+    "matched_odds_ratio": 0.14545454545454545,
+    "matched_odds_ratio_ci": [
+      0.10989722756368187,
+      0.1925164561692753
+    ],
+    "shapiro_w": 0.8422901455989951,
+    "shapiro_p": 6.718700773146296e-22,
+    "wilcoxon_w": 8476.5,
+    "wilcoxon_p": 9.3012496330314e-38
+  },
+  "openrouter_a_vs_gift_a": {
+    "label": "GIFT / RAG A minus OpenRouter A",
+    "baseline_name": "OpenRouter A",
+    "comparator_name": "GIFT / RAG A",
+    "n_pairs": 2000,
+    "n_questions": 500,
+    "baseline_correct": 1797,
+    "comparator_correct": 1837,
+    "baseline_accuracy": 0.8985,
+    "comparator_accuracy": 0.9185,
+    "risk_difference": 0.02,
+    "risk_difference_ci": [
+      0.0075,
+      0.033
+    ],
+    "both_wrong": 111,
+    "baseline_only": 52,
+    "comparator_only": 92,
+    "both_correct": 1745,
+    "mcnemar_exact_p": 0.001081290068447198,
+    "matched_odds_ratio": 1.7692307692307692,
+    "matched_odds_ratio_ci": [
+      1.2592240255013498,
+      2.4857987549488225
+    ],
+    "shapiro_w": 0.6167717468065642,
+    "shapiro_p": 8.004527013556598e-32,
+    "wilcoxon_w": 16112.0,
+    "wilcoxon_p": 0.0027134805045291276
+  },
+  "closed_open": [
+    {
+      "arm": "OpenRouter A",
+      "n_questions": 500,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.982,
+      "right_accuracy": 0.8706666666666666,
+      "difference": 0.11133333333333334,
+      "difference_ci": [
+        0.09,
+        0.13333333333333333
+      ],
+      "shapiro_w": 0.6325810654012012,
+      "shapiro_p": 2.62155337639647e-31,
+      "wilcoxon_w": 2922.0,
+      "p_raw": 4.904167931895511e-25,
+      "p_holm": 1.9616671727582043e-24
+    },
+    {
+      "arm": "OpenRouter B",
+      "n_questions": 500,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.9,
+      "right_accuracy": 0.6786666666666668,
+      "difference": 0.22133333333333338,
+      "difference_ci": [
+        0.19000000000000003,
+        0.2526666666666667
+      ],
+      "shapiro_w": 0.8823967593938883,
+      "shapiro_p": 4.745656298717856e-19,
+      "wilcoxon_w": 9741.0,
+      "p_raw": 1.87395910416513e-39,
+      "p_holm": 1.124375462499078e-38
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "n_questions": 500,
+      "left_name": "Gemini (proprietary)",
+      "right_name": "Open-weight set",
+      "left_accuracy": 0.974,
+      "right_accuracy": 0.9,
+      "difference": 0.07400000000000001,
+      "difference_ci": [
+        0.05600000000000001,
+        0.09266666666666669
+      ],
+      "shapiro_w": 0.5796996263420323,
+      "shapiro_p": 5.735446679508473e-33,
+      "wilcoxon_w": 3683.0,
+      "p_raw": 5.663454330364777e-19,
+      "p_holm": 1.1326908660729553e-18
+    }
+  ],
+  "capacity": [
+    {
+      "arm": "OpenRouter A",
+      "n_questions": 500,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.96,
+      "right_accuracy": 0.837,
+      "difference": 0.123,
+      "difference_ci": [
+        0.099,
+        0.149
+      ],
+      "shapiro_w": 0.6176588500120164,
+      "shapiro_p": 8.546601880901757e-32,
+      "wilcoxon_w": 4708.0,
+      "p_raw": 1.552930708342144e-19,
+      "p_holm": 4.658792125026432e-19
+    },
+    {
+      "arm": "OpenRouter B",
+      "n_questions": 500,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.839,
+      "right_accuracy": 0.629,
+      "difference": 0.21,
+      "difference_ci": [
+        0.177,
+        0.244
+      ],
+      "shapiro_w": 0.8395461677180682,
+      "shapiro_p": 4.499457806126009e-22,
+      "wilcoxon_w": 12959.5,
+      "p_raw": 2.351691587443361e-28,
+      "p_holm": 1.1758457937216805e-27
+    },
+    {
+      "arm": "GIFT / RAG A",
+      "n_questions": 500,
+      "left_name": "High-capacity set",
+      "right_name": "Low-active-parameter set",
+      "left_accuracy": 0.967,
+      "right_accuracy": 0.87,
+      "difference": 0.097,
+      "difference_ci": [
+        0.075,
+        0.119
+      ],
+      "shapiro_w": 0.5808560516281831,
+      "shapiro_p": 6.209155931318527e-33,
+      "wilcoxon_w": 4074.0,
+      "p_raw": 2.5545406331694203e-17,
+      "p_holm": 2.5545406331694203e-17
+    }
+  ],
+  "missing_data_sensitivity": {
+    "gift_a_accuracy_if_all_missing_wrong": 0.9185,
+    "gift_a_accuracy_if_all_missing_correct": 0.9185,
+    "openrouter_a_accuracy_if_all_missing_wrong": 0.8985,
+    "openrouter_a_accuracy_if_all_missing_correct": 0.8985,
+    "gift_minus_openrouter_extreme_bounds": [
+      0.020000000000000018,
+      0.020000000000000018
+    ]
+  },
+  "coverage_context": {
+    "gift_a_unresolved": 0,
+    "openrouter_a_unresolved": 0,
+    "overlength_failures": 0,
+    "overlength_questions": 0
+  },
+  "taxonomy": {
+    "access": {
+      "proprietary_api": [
+        "Gemini"
+      ],
+      "open_weight": [
+        "Gemma",
+        "Qwen",
+        "GLM"
+      ]
+    },
+    "capacity_user_defined_exploratory": {
+      "high_capacity": [
+        "Gemini",
+        "GLM"
+      ],
+      "low_active_parameter": [
+        "Gemma",
+        "Qwen"
+      ]
+    }
+  }
+}

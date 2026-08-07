@@ -1,0 +1,4 @@
+arm,required_cells,scored_cells,unresolved_cells,july_reused_scored,august_gapfill_scored,replacement22_scored,strict_correct,strict_accuracy_scored,coverage_fraction
+openrouter_A,2000,2000,0,1192,720,88,1797,0.89850000,1.00000000
+openrouter_B,2000,2000,0,1192,720,88,1468,0.73400000,1.00000000
+tailscale_A,2000,2000,0,932,980,88,1837,0.91850000,1.00000000

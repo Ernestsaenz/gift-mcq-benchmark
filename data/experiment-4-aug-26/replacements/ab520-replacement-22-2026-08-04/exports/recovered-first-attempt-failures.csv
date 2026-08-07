@@ -1,0 +1,3 @@
+replacement_id,replaces_question_id,arm,provider,condition,model,cell_key,rejected_attempt_count,rejected_attempt_status_code,rejected_attempt_finish_reason,rejected_attempt_parse_status,rejected_attempt_latency_ms,recovery_attempt_status_code,recovery_attempt_finish_reason,recovery_attempt_parse_status,recovery_attempt_latency_ms,final_score_count,final_status
+r018,b158,openrouter_B,openrouter,B,z-ai/glm-5.2,openrouter|B|r018|la-rioja|2021|main|4|z-ai/glm-5.2|1,1,200,length,failed_no_answer_found,359824,200,stop,ok,4718,1,RECOVERED_SCORED
+r004,b199,tailscale_A,tailscale_medical_rag,A,qwen/qwen3.6-35b-a3b,tailscale_medical_rag|A|r004|andalucia|2021|cuestionario-teorico|57|qwen/qwen3.6-35b-a3b|1,1,200,stop,failed_no_answer_found,52900,200,stop,ok,16085,1,RECOVERED_SCORED

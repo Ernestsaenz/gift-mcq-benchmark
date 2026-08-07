@@ -1,29 +1,139 @@
 {
   "artifact_version": "ab520-replacement-22-selection-v1",
   "selection_date": "2026-08-04",
-  "status": "PROVISIONAL_PENDING_PROTOCOL_QA",
+  "status": "QA_COMPLETE_READY_FOR_EXECUTION",
   "mappings": [
-    {"replacement_id": "r001", "replaces_question_id": "n169", "candidate_id": "c2485", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r002", "replaces_question_id": "b320", "candidate_id": "c2718", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r003", "replaces_question_id": "n031", "candidate_id": "c0205", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r004", "replaces_question_id": "b199", "candidate_id": "c0211", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r005", "replaces_question_id": "b248", "candidate_id": "c2116", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r006", "replaces_question_id": "b260", "candidate_id": "c2027", "failure_group": "ambiguous_or_model_sensitive"},
-    {"replacement_id": "r007", "replaces_question_id": "b141", "candidate_id": "c2132", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r008", "replaces_question_id": "b142", "candidate_id": "c2644", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r009", "replaces_question_id": "b143", "candidate_id": "c0922", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r010", "replaces_question_id": "b147", "candidate_id": "c0381", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r011", "replaces_question_id": "b148", "candidate_id": "c0177", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r012", "replaces_question_id": "b151", "candidate_id": "c0248", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r013", "replaces_question_id": "b153", "candidate_id": "c2600", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r014", "replaces_question_id": "b154", "candidate_id": "c0955", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r015", "replaces_question_id": "b155", "candidate_id": "c2647", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r016", "replaces_question_id": "b156", "candidate_id": "c2033", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r017", "replaces_question_id": "b157", "candidate_id": "c0931", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r018", "replaces_question_id": "b158", "candidate_id": "c2443", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r019", "replaces_question_id": "b159", "candidate_id": "c0973", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r020", "replaces_question_id": "b160", "candidate_id": "c2714", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r021", "replaces_question_id": "b161", "candidate_id": "c0369", "failure_group": "gift_request_overlength"},
-    {"replacement_id": "r022", "replaces_question_id": "b163", "candidate_id": "c2093", "failure_group": "gift_request_overlength"}
+    {
+      "replacement_id": "r001",
+      "replaces_question_id": "n169",
+      "candidate_id": "c2485",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r002",
+      "replaces_question_id": "b320",
+      "candidate_id": "c2718",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r003",
+      "replaces_question_id": "n031",
+      "candidate_id": "c0205",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r004",
+      "replaces_question_id": "b199",
+      "candidate_id": "c0211",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r005",
+      "replaces_question_id": "b248",
+      "candidate_id": "c2116",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r006",
+      "replaces_question_id": "b260",
+      "candidate_id": "c2027",
+      "failure_group": "ambiguous_or_model_sensitive"
+    },
+    {
+      "replacement_id": "r007",
+      "replaces_question_id": "b141",
+      "candidate_id": "c2132",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r008",
+      "replaces_question_id": "b142",
+      "candidate_id": "c2644",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r009",
+      "replaces_question_id": "b143",
+      "candidate_id": "c0922",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r010",
+      "replaces_question_id": "b147",
+      "candidate_id": "c0381",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r011",
+      "replaces_question_id": "b148",
+      "candidate_id": "c0177",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r012",
+      "replaces_question_id": "b151",
+      "candidate_id": "c0248",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r013",
+      "replaces_question_id": "b153",
+      "candidate_id": "c2600",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r014",
+      "replaces_question_id": "b154",
+      "candidate_id": "c0955",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r015",
+      "replaces_question_id": "b155",
+      "candidate_id": "c2647",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r016",
+      "replaces_question_id": "b156",
+      "candidate_id": "c2033",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r017",
+      "replaces_question_id": "b157",
+      "candidate_id": "c0931",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r018",
+      "replaces_question_id": "b158",
+      "candidate_id": "c2443",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r019",
+      "replaces_question_id": "b159",
+      "candidate_id": "c0973",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r020",
+      "replaces_question_id": "b160",
+      "candidate_id": "c2714",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r021",
+      "replaces_question_id": "b161",
+      "candidate_id": "c0369",
+      "failure_group": "gift_request_overlength"
+    },
+    {
+      "replacement_id": "r022",
+      "replaces_question_id": "b163",
+      "candidate_id": "c2093",
+      "failure_group": "gift_request_overlength"
+    }
   ]
 }

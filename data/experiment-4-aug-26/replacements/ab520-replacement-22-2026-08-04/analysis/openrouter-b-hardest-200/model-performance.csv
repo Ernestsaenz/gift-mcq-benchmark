@@ -1,0 +1,5 @@
+model_slug,model_label,model,full_B_correct,full_B_total,full_B_accuracy,core150_B_correct,core150_B_total,core150_B_accuracy,hard200_B_correct,hard200_B_incorrect,hard200_B_accuracy,hard200_A_correct,hard200_A_accuracy,B_minus_A_percentage_points,boundary_pool_model_errors,selected_boundary_model_errors,any_valid_tie_selection_accuracy_min,any_valid_tie_selection_accuracy_max
+gemini,Gemini 3.6 Flash,google/gemini-3.6-flash,450,500,0.90000000,102,150,0.68000000,152,48,0.76000000,193,0.96500000,-20.50,2,0,0.75000000,0.76000000
+glm,GLM 5.2,z-ai/glm-5.2,389,500,0.77800000,56,150,0.37333333,101,99,0.50500000,176,0.88000000,-37.50,17,5,0.44500000,0.53000000
+qwen,Qwen 3.6 35B,qwen/qwen3.6-35b-a3b,358,500,0.71600000,31,150,0.20666667,74,126,0.37000000,156,0.78000000,-41.00,23,7,0.29000000,0.40500000
+gemma,Gemma 4 26B,google/gemma-4-26b-a4b-it,271,500,0.54200000,25,150,0.16666667,37,163,0.18500000,135,0.67500000,-49.00,104,38,0.12500000,0.33500000

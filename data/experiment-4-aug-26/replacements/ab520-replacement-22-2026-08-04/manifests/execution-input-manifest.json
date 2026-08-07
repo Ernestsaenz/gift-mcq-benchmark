@@ -1,0 +1,74 @@
+{
+  "artifact_version": "ab520-replacement22-execution-input-v1",
+  "generated_at_utc": "2026-08-05T01:02:37Z",
+  "status": "READY_NOT_RUN",
+  "qa_summary": {
+    "path": "protocol-qa/final-review-summary.json",
+    "sha256": "6b2ad27f6db0b506e55a50ef42b9d2058d31b4c0b74b1e0bd6e383d677ecbee7"
+  },
+  "qa_coverage": {
+    "path": "protocol-qa/qa-coverage.csv",
+    "sha256": "719cee96a210902b15413dc0e1807ebbb6e843bbcb00367277322d8514a2a84f"
+  },
+  "source_csvs": {
+    "A": {
+      "path": "replacement-22-A.csv",
+      "sha256": "ef70ee85a48f885f4fa980980b687b15565f5b7c072602220583fa4608ed547f"
+    },
+    "B": {
+      "path": "replacement-22-B.csv",
+      "sha256": "fffdc2b09a172616827397ed647e9cb0eb16be1c4b5abb1723aae88dbaf9a120"
+    }
+  },
+  "workbooks": {
+    "A": {
+      "path": "inputs/replacement-22-A.xlsx",
+      "sha256": "6e7bc9f9ce5198f8b6fb53bca49e4f3126982eceb661e1c41a72314c84010845",
+      "sheet": "questions",
+      "rows": 22,
+      "columns": 26,
+      "font": "Arial",
+      "formulas": 0,
+      "excel_error_cells": 0,
+      "harness_imported_rows": 22
+    },
+    "B": {
+      "path": "inputs/replacement-22-B.xlsx",
+      "sha256": "70429540fcb2ba5411eebe2d457db7f028ebdc3187811ea17d117aa11eaa9459",
+      "sheet": "questions",
+      "rows": 22,
+      "columns": 26,
+      "font": "Arial",
+      "formulas": 0,
+      "excel_error_cells": 0,
+      "harness_imported_rows": 22
+    }
+  },
+  "database": "runs/ab520-replacement22-2026-08-05.sqlite",
+  "cell_ledger": {
+    "path": "manifests/frozen-replacement-cell-ledger.csv",
+    "sha256": "b9289c5a7dda8b750b80be9077a0f6240bd4a8153d00f36eed6b3c77b6114e40",
+    "cells": 264,
+    "cells_per_arm": 88
+  },
+  "datasets": {
+    "aug26_replacement22_A": "inputs/replacement-22-A.xlsx",
+    "aug26_replacement22_B": "inputs/replacement-22-B.xlsx"
+  },
+  "experiments": [
+    "ab520_replacement22_or_A_20260804",
+    "ab520_replacement22_or_B_20260804",
+    "ab520_replacement22_ts_A_20260804"
+  ],
+  "models": [
+    "google/gemini-3.6-flash",
+    "google/gemma-4-26b-a4b-it",
+    "qwen/qwen3.6-35b-a3b",
+    "z-ai/glm-5.2"
+  ],
+  "prompt_version": "mcq_es_v4",
+  "temperature": 0,
+  "runs": 1,
+  "tailscale_prompt_id": 13,
+  "excluded_arm": "tailscale_B"
+}

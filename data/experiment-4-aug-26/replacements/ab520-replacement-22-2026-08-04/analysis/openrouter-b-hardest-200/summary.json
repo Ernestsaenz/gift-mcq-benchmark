@@ -1,0 +1,276 @@
+{
+  "artifact_version": "openrouter-b-hardest-200-v1",
+  "generated_at_utc": "2026-08-05T10:58:17.352561+00:00",
+  "source": {
+    "cell_csv": "data/experiment-4-aug-26/replacements/ab520-replacement-22-2026-08-04/exports/benchmark-6000-cell-results-adjusted.csv",
+    "cell_csv_sha256": "ce91b3f3eb90cd0b125a170a6f0a0a967c02d63da17cfa97161e62f739c4b721",
+    "catalog_csv": "data/experiment-4-aug-26/replacements/ab520-replacement-22-2026-08-04/exports/benchmark-500-question-catalog-adjusted.csv",
+    "catalog_csv_sha256": "351f5044854c285f3546ae49d65a041a5dacec3ff6c6de98177dd3b058c3c2ba",
+    "arm_filter": "openrouter_B"
+  },
+  "definition": {
+    "primary": "4 - sum(strict_correct) across the four OpenRouter B models",
+    "model_weighting": "equal",
+    "sort": [
+      "difficulty_tier_wrong_models descending",
+      "sha256(tie namespace + source_key) ascending",
+      "source_key ascending",
+      "question_id ascending"
+    ],
+    "tie_namespace": "openrouter_B-hard200-v1|",
+    "interpretation": "The first 150 are invariant. The final 50 form a deterministic sample of a 146-question one-error tie."
+  },
+  "validation": {
+    "source_rows": 6000,
+    "openrouter_B_cells": 2000,
+    "openrouter_B_questions": 500,
+    "models": [
+      "google/gemini-3.6-flash",
+      "z-ai/glm-5.2",
+      "qwen/qwen3.6-35b-a3b",
+      "google/gemma-4-26b-a4b-it"
+    ],
+    "cells_per_question": 4,
+    "unique_B_cell_keys": 2000,
+    "unique_B_logical_call_ids": 2000,
+    "strict_correct_cells": 1468,
+    "strict_incorrect_cells": 532,
+    "all_scored": true,
+    "all_parse_ok": true,
+    "all_exact_input_match": true,
+    "technical_failures_counted_incorrect": 0
+  },
+  "difficulty_distribution": [
+    {
+      "wrong_models": 4,
+      "correct_models": 0,
+      "question_count": 19,
+      "question_fraction": "0.03800000",
+      "difficulty_rank_min": 1,
+      "difficulty_rank_max": 19,
+      "cumulative_hardest_questions": 19,
+      "strict_incorrect_cells": 76
+    },
+    {
+      "wrong_models": 3,
+      "correct_models": 1,
+      "question_count": 48,
+      "question_fraction": "0.09600000",
+      "difficulty_rank_min": 20,
+      "difficulty_rank_max": 67,
+      "cumulative_hardest_questions": 67,
+      "strict_incorrect_cells": 144
+    },
+    {
+      "wrong_models": 2,
+      "correct_models": 2,
+      "question_count": 83,
+      "question_fraction": "0.16600000",
+      "difficulty_rank_min": 68,
+      "difficulty_rank_max": 150,
+      "cumulative_hardest_questions": 150,
+      "strict_incorrect_cells": 166
+    },
+    {
+      "wrong_models": 1,
+      "correct_models": 3,
+      "question_count": 146,
+      "question_fraction": "0.29200000",
+      "difficulty_rank_min": 151,
+      "difficulty_rank_max": 296,
+      "cumulative_hardest_questions": 296,
+      "strict_incorrect_cells": 146
+    },
+    {
+      "wrong_models": 0,
+      "correct_models": 4,
+      "question_count": 204,
+      "question_fraction": "0.40800000",
+      "difficulty_rank_min": 297,
+      "difficulty_rank_max": 500,
+      "cumulative_hardest_questions": 500,
+      "strict_incorrect_cells": 0
+    }
+  ],
+  "selection": {
+    "top_n": 200,
+    "invariant_core_questions": 150,
+    "boundary_tie_questions": 146,
+    "boundary_selected": 50,
+    "boundary_not_selected": 96,
+    "ordered_source_keys_sha256": "9035f0e99364460f0036f5c210e35d59c3e2786bb409d2dbeb9fd9325dab1128",
+    "sorted_source_keys_sha256": "ee9484af0041f05cad216f1e6368e30d88970765ccaff03a84314105f325d13e",
+    "rank_200_question_id": "n046",
+    "rank_200_source_key": "comunidad-de-madrid|2021|main|61",
+    "rank_201_question_id": "b471",
+    "rank_201_source_key": "comunidad-de-madrid|2021|main|37"
+  },
+  "model_performance": [
+    {
+      "model_slug": "gemini",
+      "model_label": "Gemini 3.6 Flash",
+      "model": "google/gemini-3.6-flash",
+      "full_B_correct": 450,
+      "full_B_total": 500,
+      "full_B_accuracy": "0.90000000",
+      "core150_B_correct": 102,
+      "core150_B_total": 150,
+      "core150_B_accuracy": "0.68000000",
+      "hard200_B_correct": 152,
+      "hard200_B_incorrect": 48,
+      "hard200_B_accuracy": "0.76000000",
+      "hard200_A_correct": 193,
+      "hard200_A_accuracy": "0.96500000",
+      "B_minus_A_percentage_points": "-20.50",
+      "boundary_pool_model_errors": 2,
+      "selected_boundary_model_errors": 0,
+      "any_valid_tie_selection_accuracy_min": "0.75000000",
+      "any_valid_tie_selection_accuracy_max": "0.76000000"
+    },
+    {
+      "model_slug": "glm",
+      "model_label": "GLM 5.2",
+      "model": "z-ai/glm-5.2",
+      "full_B_correct": 389,
+      "full_B_total": 500,
+      "full_B_accuracy": "0.77800000",
+      "core150_B_correct": 56,
+      "core150_B_total": 150,
+      "core150_B_accuracy": "0.37333333",
+      "hard200_B_correct": 101,
+      "hard200_B_incorrect": 99,
+      "hard200_B_accuracy": "0.50500000",
+      "hard200_A_correct": 176,
+      "hard200_A_accuracy": "0.88000000",
+      "B_minus_A_percentage_points": "-37.50",
+      "boundary_pool_model_errors": 17,
+      "selected_boundary_model_errors": 5,
+      "any_valid_tie_selection_accuracy_min": "0.44500000",
+      "any_valid_tie_selection_accuracy_max": "0.53000000"
+    },
+    {
+      "model_slug": "qwen",
+      "model_label": "Qwen 3.6 35B",
+      "model": "qwen/qwen3.6-35b-a3b",
+      "full_B_correct": 358,
+      "full_B_total": 500,
+      "full_B_accuracy": "0.71600000",
+      "core150_B_correct": 31,
+      "core150_B_total": 150,
+      "core150_B_accuracy": "0.20666667",
+      "hard200_B_correct": 74,
+      "hard200_B_incorrect": 126,
+      "hard200_B_accuracy": "0.37000000",
+      "hard200_A_correct": 156,
+      "hard200_A_accuracy": "0.78000000",
+      "B_minus_A_percentage_points": "-41.00",
+      "boundary_pool_model_errors": 23,
+      "selected_boundary_model_errors": 7,
+      "any_valid_tie_selection_accuracy_min": "0.29000000",
+      "any_valid_tie_selection_accuracy_max": "0.40500000"
+    },
+    {
+      "model_slug": "gemma",
+      "model_label": "Gemma 4 26B",
+      "model": "google/gemma-4-26b-a4b-it",
+      "full_B_correct": 271,
+      "full_B_total": 500,
+      "full_B_accuracy": "0.54200000",
+      "core150_B_correct": 25,
+      "core150_B_total": 150,
+      "core150_B_accuracy": "0.16666667",
+      "hard200_B_correct": 37,
+      "hard200_B_incorrect": 163,
+      "hard200_B_accuracy": "0.18500000",
+      "hard200_A_correct": 135,
+      "hard200_A_accuracy": "0.67500000",
+      "B_minus_A_percentage_points": "-49.00",
+      "boundary_pool_model_errors": 104,
+      "selected_boundary_model_errors": 38,
+      "any_valid_tie_selection_accuracy_min": "0.12500000",
+      "any_valid_tie_selection_accuracy_max": "0.33500000"
+    }
+  ],
+  "aggregate": {
+    "full_B_correct": 1468,
+    "full_B_total": 2000,
+    "full_B_accuracy": 0.734,
+    "core150_B_correct": 214,
+    "core150_B_total": 600,
+    "hard200_B_correct": 364,
+    "hard200_B_total": 800,
+    "hard200_A_correct": 660,
+    "hard200_A_total": 800,
+    "paired_transitions": {
+      "both_correct": 343,
+      "A_correct_B_wrong": 317,
+      "A_wrong_B_correct": 21,
+      "both_wrong": 119
+    }
+  },
+  "unanimously_wrong": {
+    "questions": 19,
+    "same_wrong_letter_all_models": 10,
+    "two_distinct_wrong_letters": 9,
+    "question_ids": [
+      "b370",
+      "b455",
+      "n088",
+      "b170",
+      "b470",
+      "b322",
+      "b425",
+      "n147",
+      "b374",
+      "b168",
+      "n112",
+      "b355",
+      "b196",
+      "n130",
+      "b211",
+      "b326",
+      "n176",
+      "b123",
+      "b134"
+    ]
+  },
+  "composition": {
+    "origin_counts": {
+      "retained318": 119,
+      "new182": 72,
+      "replacement22_2026-08-04": 9
+    },
+    "origin_text": "new182=72, replacement22_2026-08-04=9, retained318=119",
+    "negated_count": 40,
+    "correct_letter_counts": {
+      "b": 78,
+      "d": 44,
+      "c": 78
+    },
+    "correct_letter_text": "B=78, C=78, D=44"
+  },
+  "length_exploration": {
+    "spearman_input_chars_vs_wrong_model_count": 0.020989129108634836,
+    "spearman_stem_chars_vs_wrong_model_count": 0.00394312510538963
+  },
+  "strength_adjusted_sensitivity": {
+    "definition": "Within equal wrong-model tiers, sort by the sum of full-B accuracies of the models that erred, descending; then use the neutral hash.",
+    "intersection_questions": 170,
+    "union_questions": 230,
+    "jaccard": 0.7391304347826086,
+    "model_B_accuracy": {
+      "gemini": 0.75,
+      "glm": 0.445,
+      "qwen": 0.29,
+      "gemma": 0.335
+    },
+    "aggregate_B_accuracy": 0.455
+  },
+  "limitations": [
+    "One observed binary response per model and question.",
+    "Outcome-selected descriptive subset; not an unbiased condition comparison.",
+    "Ranks 151-296 are tied on the primary equal-model difficulty measure.",
+    "Metadata comparisons are unadjusted and exploratory.",
+    "Condition-B answer-form sensitivity and content difficulty are inseparable."
+  ]
+}

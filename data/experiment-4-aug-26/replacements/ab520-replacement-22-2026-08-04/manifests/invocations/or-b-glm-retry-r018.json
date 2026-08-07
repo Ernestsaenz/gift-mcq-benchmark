@@ -1,0 +1,40 @@
+{
+  "invocation_id": "or-b-glm-retry-r018",
+  "arm": "openrouter_B",
+  "condition": "B",
+  "provider": "openrouter",
+  "model": "z-ai/glm-5.2",
+  "dataset": "aug26_replacement22_B",
+  "experiment_id": "ab520_replacement22_or_B_20260804",
+  "target_count": 1,
+  "concurrency": 1,
+  "start_time_utc": "2026-08-05T01:22:57Z",
+  "end_time_utc": "2026-08-05T01:23:01Z",
+  "status": "completed",
+  "scored_count": 1,
+  "failure_count": 0,
+  "skipped_already_scored": 0,
+  "not_started_after_abort": 0,
+  "stop_reason": null,
+  "redacted_command": "uv run python execute_replacement_cells.py --arm openrouter_B --model z-ai/glm-5.2 --max-concurrency 1 --db [REDACTED_PATH] --execute",
+  "log_path": "logs/2026-08-05-or-b-glm-retry-r018.log",
+  "ledger_sha256": "b9289c5a7dda8b750b80be9077a0f6240bd4a8153d00f36eed6b3c77b6114e40",
+  "outcomes": [
+    {
+      "cell_key": "openrouter|B|r018|la-rioja|2021|main|4|z-ai/glm-5.2|1",
+      "replacement_id": "r018",
+      "attempt_delta": 1,
+      "score_count": 1,
+      "scored": true,
+      "selected_letter": "b",
+      "strict_correct": 1,
+      "parse_status": "ok",
+      "status_code": 200,
+      "latency_ms": 4718,
+      "finish_reason": "stop",
+      "error_type": null,
+      "error_message": null,
+      "integrity": "ok"
+    }
+  ]
+}

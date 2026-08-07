@@ -1,0 +1,133 @@
+{
+  "protocol_version": "ab182-readonly-v1",
+  "validated_at_utc": "2026-08-05T01:02:29Z",
+  "status": "PASS_QA_COMPLETE_READY_FOR_EXECUTION",
+  "candidate_count": 22,
+  "formal_sourcing_passes": 22,
+  "blinded_qa1_passes": 22,
+  "blinded_qa2_passes": 22,
+  "distinct_qa_reviewers_per_candidate": true,
+  "unresolved_or_adverse_findings": 0,
+  "eligible_calibrations": [
+    {
+      "reviewer_id": "RSRC22",
+      "path": "protocol-qa/reviews/calibration/RSRC22.jsonl",
+      "sha256": "56622d62d5b3d700afe576f689c763b7e46969504018410ba20ebd55579aa1c1",
+      "score": 8,
+      "required_score": 8,
+      "eligible": true,
+      "verdict_counts": {
+        "PASS": 4,
+        "REJECT": 4
+      }
+    },
+    {
+      "reviewer_id": "RQA22A",
+      "path": "protocol-qa/reviews/calibration/RQA22A.jsonl",
+      "sha256": "4e6ff8c0c92ba5e8d461780df97150c145b45267f0b17adc15902627a9dc849d",
+      "score": 8,
+      "required_score": 8,
+      "eligible": true,
+      "verdict_counts": {
+        "PASS": 4,
+        "REJECT": 4
+      }
+    },
+    {
+      "reviewer_id": "RQA22B",
+      "path": "protocol-qa/reviews/calibration/RQA22B.jsonl",
+      "sha256": "119b5b8358ccdf8c6f85e964569ca2fce3f7016a860f4d09e10fd2bc909c29b6",
+      "score": 8,
+      "required_score": 8,
+      "eligible": true,
+      "verdict_counts": {
+        "PASS": 4,
+        "REJECT": 4
+      }
+    },
+    {
+      "reviewer_id": "RQA22C",
+      "path": "protocol-qa/reviews/calibration/RQA22C-attempt2.jsonl",
+      "sha256": "b874687f596548aa9a747c82d702bc22f7282216d7d1f6f7867e67b7babd0729",
+      "score": 8,
+      "required_score": 8,
+      "eligible": true,
+      "verdict_counts": {
+        "PASS": 4,
+        "REJECT": 4
+      }
+    }
+  ],
+  "quarantined_calibration_attempts": [
+    {
+      "reviewer_id": "RQA22C",
+      "path": "protocol-qa/reviews/calibration/RQA22C.jsonl",
+      "sha256": "5d962225fb574159f25d00cea9c79cc808d737e88cb09a54215027487cc82dff",
+      "score": 7,
+      "required_score": 8,
+      "eligible": false,
+      "verdict_counts": {
+        "PASS": 5,
+        "REJECT": 3
+      }
+    }
+  ],
+  "contamination_incidents": [
+    {
+      "reviewer_id": "RQA22B",
+      "affected_assignment": "qa2-batch-02",
+      "detected_before_output": true,
+      "contaminated_candidate_records_counted": 0,
+      "action": "ABORTED_AND_REASSIGNED_TO_FRESH_RQA22C",
+      "unaffected_frozen_output_retained": "qa2-batch-01"
+    }
+  ],
+  "mechanical_validation": {
+    "workbook_rows_exact": 22,
+    "official_pdf_bindings_exact": 44,
+    "unique_official_pdfs": 16,
+    "raw_field_hashes_recomputed": 22,
+    "b_simulations_recomputed": 22,
+    "rows_A": 22,
+    "rows_B": 22,
+    "matrix_cells": 264,
+    "max_gift_characters": 675,
+    "canonical_questions": 500,
+    "retained_questions": 478,
+    "replacement_questions": 22,
+    "retained_scored_cells": 5736,
+    "retained_scored_cells_per_arm": 1912,
+    "removed_original_cells": 264,
+    "removed_original_unresolved_cells": 70,
+    "target_replacement_cells_per_arm": 88,
+    "target_adjusted_cells_per_arm": 2000
+  },
+  "duplicate_adjudication": {
+    "candidate_id": "c0369",
+    "historical_source_key": "castilla-y-leon|2022|reserva|95",
+    "same_stem_and_keyed_answer": true,
+    "historical_option_count": 3,
+    "selected_option_count": 4,
+    "different_distractor_set": true,
+    "historical_item_in_active_benchmark": false,
+    "full_content_duplicate": false,
+    "adjudication": "PASS_NOT_AN_ACTIVE_OR_FULL_CONTENT_DUPLICATE"
+  },
+  "execution_authorization": {
+    "authorized_arms": [
+      "openrouter_A",
+      "openrouter_B",
+      "tailscale_A"
+    ],
+    "excluded_arm": "tailscale_B",
+    "models": [
+      "google/gemini-3.6-flash",
+      "google/gemma-4-26b-a4b-it",
+      "qwen/qwen3.6-35b-a3b",
+      "z-ai/glm-5.2"
+    ],
+    "replacement_cells_per_arm": 88,
+    "total_replacement_cells": 264,
+    "provider_calls_issued_by_this_script": 0
+  }
+}

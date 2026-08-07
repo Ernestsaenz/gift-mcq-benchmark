@@ -1,0 +1,42 @@
+scope,wrong_models,wrong_model_count,question_count,scope_question_count,scope_fraction
+all_500,NONE,0,204,500,0.40800000
+all_500,Gemma 4 26B,1,104,500,0.20800000
+all_500,Qwen 3.6 35B;Gemma 4 26B,2,43,500,0.08600000
+all_500,GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,3,32,500,0.06400000
+all_500,Qwen 3.6 35B,1,23,500,0.04600000
+all_500,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,4,19,500,0.03800000
+all_500,GLM 5.2;Gemma 4 26B,2,18,500,0.03600000
+all_500,GLM 5.2,1,17,500,0.03400000
+all_500,GLM 5.2;Qwen 3.6 35B,2,9,500,0.01800000
+all_500,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B,3,7,500,0.01400000
+all_500,Gemini 3.6 Flash;GLM 5.2;Gemma 4 26B,3,5,500,0.01000000
+all_500,Gemini 3.6 Flash;Qwen 3.6 35B,2,5,500,0.01000000
+all_500,Gemini 3.6 Flash;GLM 5.2,2,4,500,0.00800000
+all_500,Gemini 3.6 Flash;Gemma 4 26B,2,4,500,0.00800000
+all_500,Gemini 3.6 Flash;Qwen 3.6 35B;Gemma 4 26B,3,4,500,0.00800000
+all_500,Gemini 3.6 Flash,1,2,500,0.00400000
+invariant_core_150,Qwen 3.6 35B;Gemma 4 26B,2,43,150,0.28666667
+invariant_core_150,GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,3,32,150,0.21333333
+invariant_core_150,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,4,19,150,0.12666667
+invariant_core_150,GLM 5.2;Gemma 4 26B,2,18,150,0.12000000
+invariant_core_150,GLM 5.2;Qwen 3.6 35B,2,9,150,0.06000000
+invariant_core_150,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B,3,7,150,0.04666667
+invariant_core_150,Gemini 3.6 Flash;GLM 5.2;Gemma 4 26B,3,5,150,0.03333333
+invariant_core_150,Gemini 3.6 Flash;Qwen 3.6 35B,2,5,150,0.03333333
+invariant_core_150,Gemini 3.6 Flash;GLM 5.2,2,4,150,0.02666667
+invariant_core_150,Gemini 3.6 Flash;Gemma 4 26B,2,4,150,0.02666667
+invariant_core_150,Gemini 3.6 Flash;Qwen 3.6 35B;Gemma 4 26B,3,4,150,0.02666667
+operational_hard_200,Qwen 3.6 35B;Gemma 4 26B,2,43,200,0.21500000
+operational_hard_200,Gemma 4 26B,1,38,200,0.19000000
+operational_hard_200,GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,3,32,200,0.16000000
+operational_hard_200,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B,4,19,200,0.09500000
+operational_hard_200,GLM 5.2;Gemma 4 26B,2,18,200,0.09000000
+operational_hard_200,GLM 5.2;Qwen 3.6 35B,2,9,200,0.04500000
+operational_hard_200,Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B,3,7,200,0.03500000
+operational_hard_200,Qwen 3.6 35B,1,7,200,0.03500000
+operational_hard_200,GLM 5.2,1,5,200,0.02500000
+operational_hard_200,Gemini 3.6 Flash;GLM 5.2;Gemma 4 26B,3,5,200,0.02500000
+operational_hard_200,Gemini 3.6 Flash;Qwen 3.6 35B,2,5,200,0.02500000
+operational_hard_200,Gemini 3.6 Flash;GLM 5.2,2,4,200,0.02000000
+operational_hard_200,Gemini 3.6 Flash;Gemma 4 26B,2,4,200,0.02000000
+operational_hard_200,Gemini 3.6 Flash;Qwen 3.6 35B;Gemma 4 26B,3,4,200,0.02000000

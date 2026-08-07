@@ -1,0 +1,7 @@
+model_a,model_b,model_a_error_questions,model_b_error_questions,shared_error_questions,union_error_questions,jaccard,phi,all_shared_errors_in_core150
+Gemini 3.6 Flash,GLM 5.2,50,111,35,126,0.27777778,0.38338963,True
+Gemini 3.6 Flash,Qwen 3.6 35B,50,142,35,157,0.22292994,0.30750798,True
+Gemini 3.6 Flash,Gemma 4 26B,50,229,32,247,0.12955466,0.12176368,True
+GLM 5.2,Qwen 3.6 35B,111,142,67,186,0.36021505,0.37860180,True
+GLM 5.2,Gemma 4 26B,111,229,74,266,0.27819549,0.22372133,True
+Qwen 3.6 35B,Gemma 4 26B,142,229,98,273,0.35897436,0.29344171,True

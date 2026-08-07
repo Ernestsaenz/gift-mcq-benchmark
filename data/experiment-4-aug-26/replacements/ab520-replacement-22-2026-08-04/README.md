@@ -1,51 +1,32 @@
-# Proposed 22-question August replacement cohort
+# QA-approved 22-question replacement and adjusted August benchmark
 
-Status: **provisional, pending the remaining protocol QA; no provider calls were issued**.
+This directory is the auditable replacement workspace for the August 26 experiment. Formal sourcing and two distinct blinded QA passes approved all 22 questions. The cohort was then run across four models in OpenRouter condition A, OpenRouter condition B, and GIFT/TailScale condition A. TailScale condition B remains outside the authorized design.
 
-This isolated workspace proposes 22 new questions for the six ambiguous/model-sensitive items and the 16 unique overlength questions. The often-quoted 64 long-question failures are 16 questions × four GIFT models, not 64 distinct questions.
+The adjusted benchmark is complete: **2,000/2,000 scored cells per arm and 6,000/6,000 overall**. It retains 478 original benchmark questions (5,736 scored cells), removes the 22 rejected originals and all their prior cells, and inserts 22 newly identified replacement questions (264 scored cells). The replacements are new questions, not retroactive answers to the rejected originals.
 
-The replacements are a **new matched cohort**. They do not overwrite the old question IDs, do not recover any original unresolved cell, and must not be reported as if they were the same items. If approved, the 22 new questions should be run across the same four models in OpenRouter A, OpenRouter B, and GIFT/TailScale A: 22 × 4 × 3 = **264 new cells**. GIFT B remains outside the original design.
+## Models and conditions
 
-## What is here
+- `google/gemini-3.6-flash`
+- `google/gemma-4-26b-a4b-it`
+- `qwen/qwen3.6-35b-a3b`
+- `z-ai/glm-5.2`
+- Condition A preserves the official answer option.
+- Condition B performs the verified two-field substitution at the keyed option and `correct_option_text`.
 
-- `selection-spec.json`: exact old-question → candidate → new-ID map.
-- `replacement-manifest.json`: full A/B text, official provenance, hashes, review state, and prompt lengths.
-- `replacement-22-A.csv` and `replacement-22-B.csv`: audit-ready 22-row forms using the benchmark column contract.
-- `benchmark-500-with-provisional-replacements.json`: a proposed 500-item JSON with replacements applied in place; the canonical 500 is untouched.
-- `run-matrix-264.csv`: exact planned provider/condition/model matrix, with every row marked not run.
-- `selected-source-packets.jsonl`, `selected-sourcing-reviews.jsonl`, and `selected-prior-qa-reviews.jsonl`: compact provenance extracts from the pinned dossier.
-- `manual-adjudications.json`: current medical checks for candidates that lacked an upstream sourcing record.
-- `similarity-audit.json`: nearest retained question under a reproducible token-overlap heuristic.
-- `REJECTED_CANDIDATES.md`: important exclusions, including B-condition traps.
-- `QA_REPORT.md`: independent QA-agent result; generated after the package audit.
-- `checksums.sha256`: file hashes for the package.
+## Main outputs
 
-The source workbook remains read-only at:
+- `exports/benchmark-6000-cell-results-adjusted.csv`: all 6,000 scored cells with exact inputs, selected answers, correctness, attempts, hashes, and score origin.
+- `exports/benchmark-500-question-catalog-adjusted.csv`: the complete adjusted primary benchmark.
+- `exports/benchmark-514-active-question-catalog-adjusted.csv`: 500 primary questions plus the 14 currently active, collision-free reserves.
+- `exports/reserve-20-historical-status-adjusted.csv`: all 20 historical reserve slots, showing seven promotions, one reviewed backfill, and six explicit vacancies pending QA.
+- `exports/replacement-question-map.csv`: old ID → replacement ID → source/QA/execution mapping.
+- `exports/recovered-first-attempt-failures.csv`: the two fail-closed first attempts and their successful isolated retries, without raw response text.
+- `presentation/benchmark-results-presentation.html` and `presentation/statistics.json`: regenerated adjusted analysis.
+- `manifests/execution-manifest-final.json`: final validation, provenance, counts, and hashes.
+- `RUN_LEDGER.csv` and `STATUS.md`: one row per invocation and the final operational state.
 
-`/Users/ernestsaenz/Programming/gift-project-compile/second-project/workbook-repairs-2026-07-30/outputs/all-regions-aparato-digestivo.corrected.xlsx`
+The original result set remains unchanged at `data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/`. The benchmark source corpus is `/Users/ernestsaenz/Programming/gift-project-compile/second-project/workbook-repairs-2026-07-30/outputs/all-regions-aparato-digestivo.corrected.xlsx` (SHA-256 `18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46`). The execution harness is `code/medrag_eval/`.
 
-Pinned SHA-256: `18f6becd4e51f1b9ef6a5a8ab68421e905cfe2584ec32a0e303b76f3cacf1e46`.
+No input question, prompt, model identifier, answer key, or provider condition was edited during execution. GIFT calls used prompt ID 13, temperature 0, and the production SHA gate recorded in `manifests/production-evidence-2026-08-05.json`.
 
-## Selection rules
-
-Every proposed item has four distinct options, a key in B/C/D, no inherited case context, no visual dependency, no pre-existing none/aggregate option, and an unchanged keyed letter. Condition B changes only the keyed option and `correct_option_text` to:
-
-`Ninguna de las respuestas anteriores es correcta.`
-
-The original answer-letter distribution is preserved exactly: B=7, C=7, D=8. Exact source keys and stems do not collide with the retained 478 questions. The GIFT user-message target is ≤4,500 characters, below the downstream 5,000-character hard limit.
-
-No eligible unused Illes Balears clinical-case question survives the self-contained, non-negated filter, so region/year/formal-type matching for the 16 long questions is impossible. These replacements prioritize short, self-contained, medically stable questions.
-
-## QA gate
-
-The upstream protocol calls for a sourcing PASS and two distinct blinded QA PASS records per question. The user requested one QA subagent for this pass, so this package remains provisional wherever that second independent review is still missing. Do not execute `run-matrix-264.csv` until the QA report and remaining review deficits are resolved.
-
-## Rebuild
-
-From the repository root:
-
-```bash
-python3 data/experiment-4-aug-26/replacements/ab520-replacement-22-2026-08-04/build_replacement_package.py
-```
-
-The builder is deterministic and writes only in this directory. It performs no network or provider operations. Spreadsheet authoring support required by the workspace spreadsheet policy was not available in this session, so the package intentionally uses CSV/JSON rather than creating an unverified `.xlsx`; convert only after protocol approval.
+The adjusted CSV/JSON/HTML deliverables are complete. A new adjusted `.xlsx` could not be authored because the workspace-required `load_workspace_dependencies`/`@oai/artifact-tool` runtime was not available; the canonical pre-replacement workbook is therefore not presented as an adjusted output.

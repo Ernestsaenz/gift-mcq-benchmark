@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-05",
+  "url": "http://127.0.0.1:51354/presentation/benchmark-results-presentation.html",
+  "healthScore": 99,
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "title": "Mobile slide content is clipped",
+      "severity": "medium",
+      "category": "visual"
+    }
+  ],
+  "categoryScores": {
+    "console": 100,
+    "links": 100,
+    "visual": 92,
+    "functional": 100,
+    "ux": 100,
+    "performance": 100,
+    "content": 100,
+    "accessibility": 100
+  }
+}

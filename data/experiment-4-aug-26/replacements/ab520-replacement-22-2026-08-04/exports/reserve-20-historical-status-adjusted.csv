@@ -1,0 +1,21 @@
+historical_reserve_rank,historical_master_position,historical_candidate_id,historical_source_key,adjusted_status,promoted_to_replacement_id,active_backfill_candidate_id,active_backfill_source_key,note
+1,501,c0955,castilla-la-mancha|2017|main|55,BACKFILLED_ACTIVE_RESERVE_NOT_EXECUTED,r014,c0989,castilla-la-mancha|2017|main|89,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+2,502,c1474,comunidad-de-madrid|2021|main|100,ACTIVE_RESERVE_NOT_EXECUTED,,c1474,comunidad-de-madrid|2021|main|100,Unchanged active reserve.
+3,503,c0921,castilla-la-mancha|2017|main|21,ACTIVE_RESERVE_NOT_EXECUTED,,c0921,castilla-la-mancha|2017|main|21,Unchanged active reserve.
+4,504,c0205,andalucia|2021|cuestionario-teorico|51,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r003,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+5,505,c0232,andalucia|2021|cuestionario-teorico|78,ACTIVE_RESERVE_NOT_EXECUTED,,c0232,andalucia|2021|cuestionario-teorico|78,Unchanged active reserve.
+6,506,c2037,galicia|2016|main|96,ACTIVE_RESERVE_NOT_EXECUTED,,c2037,galicia|2016|main|96,Unchanged active reserve.
+7,507,c1460,comunidad-de-madrid|2021|main|86,ACTIVE_RESERVE_NOT_EXECUTED,,c1460,comunidad-de-madrid|2021|main|86,Unchanged active reserve.
+8,508,c0176,andalucia|2021|cuestionario-teorico|22,ACTIVE_RESERVE_NOT_EXECUTED,,c0176,andalucia|2021|cuestionario-teorico|22,Unchanged active reserve.
+9,509,c1452,comunidad-de-madrid|2021|main|78,ACTIVE_RESERVE_NOT_EXECUTED,,c1452,comunidad-de-madrid|2021|main|78,Unchanged active reserve.
+10,510,c0248,andalucia|2021|cuestionario-teorico|94,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r012,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+11,511,c2033,galicia|2016|main|92,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r016,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+12,512,c2027,galicia|2016|main|86,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r006,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+13,513,c2443,la-rioja|2021|main|4,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r018,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
+14,514,c0291,andalucia|2021|cuestionario-practico|137,ACTIVE_RESERVE_NOT_EXECUTED,,c0291,andalucia|2021|cuestionario-practico|137,Unchanged active reserve.
+15,515,c0937,castilla-la-mancha|2017|main|37,ACTIVE_RESERVE_NOT_EXECUTED,,c0937,castilla-la-mancha|2017|main|37,Unchanged active reserve.
+16,516,c1469,comunidad-de-madrid|2021|main|95,ACTIVE_RESERVE_NOT_EXECUTED,,c1469,comunidad-de-madrid|2021|main|95,Unchanged active reserve.
+17,517,c1514,comunidad-de-madrid|2021|main|140,ACTIVE_RESERVE_NOT_EXECUTED,,c1514,comunidad-de-madrid|2021|main|140,Unchanged active reserve.
+18,518,c0990,castilla-la-mancha|2017|main|90,ACTIVE_RESERVE_NOT_EXECUTED,,c0990,castilla-la-mancha|2017|main|90,Unchanged active reserve.
+19,519,c0275,andalucia|2021|cuestionario-practico|121,ACTIVE_RESERVE_NOT_EXECUTED,,c0275,andalucia|2021|cuestionario-practico|121,Unchanged active reserve.
+20,520,c2132,galicia|2019|main|81,VACANT_PENDING_NEW_QA_APPROVED_RESERVE,r007,,,Historical reserve was promoted into the executed primary cohort; a blank backfill means the reserve slot remains vacant pending QA.
