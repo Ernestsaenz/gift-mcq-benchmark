@@ -34,6 +34,18 @@ venv/
 # still verifiable against it. See data/experiment-31-07-26/DATABASE_NOT_IN_GIT.md.
 data/experiment-31-07-26/experiment.sqlite
 
+# The ab520 gapfill databases are 56 MB + 55 MB. Neither exceeds the 100 MB hard limit
+# on its own, so this is a size policy decision, not a hard rejection: 111 MB of raw
+# provider logs would be added permanently to a public repo for two files that are only
+# inputs to already-committed exports. Both stay on disk and both are SHA-256 pinned —
+# see data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/DATABASE_NOT_IN_GIT.md.
+data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/runs/ab520-gapfill-2026-08-04.sqlite
+data/experiment-4-aug-26/results/ab520-gapfill-2026-08-04/manifests/ab520-gapfill-2026-08-04.pre-retry.sqlite
+
+# SQLite work-in-progress sidecars left by an interrupted prepare step.
+*.sqlite.preparing-shm
+*.sqlite.preparing-wal
+
 # --- Symlinks to ignored targets ---
 # The `__pycache__/` rule above ends in a slash, so it matches directories but NOT a
 # symlink named `__pycache__`. The organized-view navigation tree contains one such
