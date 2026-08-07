@@ -1,0 +1,2 @@
+variant,output_mode,qwen_acc%,gemma_acc%,qwen_correct,gemma_correct,overall_acc%,overall_correct_of,delta_vs_baseline_pp
+v11,cot_json,10.0,20.0,1/10,2/10,15.0,3/20,

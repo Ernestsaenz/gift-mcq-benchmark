@@ -1,0 +1,160 @@
+{
+ "overall_pass": false,
+ "per_variant": [
+  {
+   "id": "v01-recall-then-match",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "Clean. Note (not a defect): strict_json + internal-only recall means the recall step is unauditable from the output, as the author acknowledges."
+   ]
+  },
+  {
+   "id": "v02-nota-calibration-balanced",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "Clean. Best-balanced NOTA policy of the strict_json set: explicit symmetric rule (pick only on absolute failure of a-d; do not avoid when genuinely correct)."
+   ]
+  },
+  {
+   "id": "v03",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "STRICT-JSON LEAK RISK: the few-shot exemplars display a 'Razonamiento:' prose line immediately before the JSON. In a strict_json (no-visible-reasoning) variant the model is likely to imitate the pattern and emit reasoning text OUTSIDE the JSON, breaking the 3-key parse on the live API. The declared output contract is 3-key so mode_schema_consistent is technically true, but the demonstration undermines it.",
+    "GIFT injection label 'Contexto medico recuperado' is missing the accent (should be 'médico').",
+    "Both worked exemplars are clinically correct (band ligation first-line for variceal bleed; IBP+claritromicina+amoxicilina 10-14 d first-line H. pylori), which is good."
+   ]
+  },
+  {
+   "id": "v04",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "GIFT injection label 'Contexto medico recuperado' missing accent (should be 'médico').",
+    "NOTA guidance is intentionally minimal (CoT-only control); the single reminder is conditional and correct, not over-biasing."
+   ]
+  },
+  {
+   "id": "v05",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "Clean. Per-option verdadera/falsa (OR) / respaldada-no-respaldada vs {chunks} (GIFT) with explicit if-all-false-then-NOTA and symmetric guard; GIFT label correctly accented."
+   ]
+  },
+  {
+   "id": "v06",
+   "render_safe": true,
+   "placeholder_ok": false,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "GIFT PLACEHOLDER DEFECT: {chunks} appears TWICE — inline as '...contexto médico recuperado ({chunks}) cuando sea relevante...' in the recall paragraph AND again in the terminal 'Contexto médico recuperado:\\n{chunks}' injection block. Violates the 'once each' rule and will inject the entire retrieved context twice (once mid-sentence). Verified programmatically (chunks count = 2). OR form is unaffected and safe."
+   ]
+  },
+  {
+   "id": "v07",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "GIFT injection label 'Contexto medico recuperado' missing accent (should be 'médico').",
+    "GIFT places the {chunks}/{question} injection mid-prompt (before the reasoning scaffold) rather than at the end — allowed (each token appears once) and OR still ends with the required question block.",
+    "Self-critique names both failure modes (answer-absence and anchoring); acceptable balance, though a one-directional critique carries a mild over-abstention tilt the author flags."
+   ]
+  },
+  {
+   "id": "v08",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": false,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "NOTA OVER-PICK DEFECT: the decision rule forces 'Ninguna de las respuestas anteriores es correcta' whenever confidence is 'media' OR 'baja' ('...tu respuesta final debe ser Ninguna..., aunque esa opción te parezca la mejor disponible entre las cuatro'). This routes mere uncertainty — not genuine answer-absence — to the sentinel, so on Condition-A items with a correct-but-atypically-worded option the model is compelled to pick NOTA. Directly biases over-picking and will depress Condition-A accuracy; conflates 'retriever/uncertainty gap' with 'answer absent'.",
+    "GIFT injection label 'Contexto medico recuperado' missing accent (should be 'médico')."
+   ]
+  },
+  {
+   "id": "v09",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "Minor NOTA wording: step 2 asks whether each option 'coincide EXACTAMENTE' with the reference fact, which could over-trigger the sentinel for correct-but-paraphrased options; the explicit step-3 symmetry clause ('ambos errores son igual de graves') largely mitigates this. GIFT label correctly accented; strong per-option grounding in {chunks}."
+   ]
+  },
+  {
+   "id": "v10",
+   "render_safe": true,
+   "placeholder_ok": true,
+   "mode_schema_consistent": true,
+   "nota_appropriate": true,
+   "spanish_ok": true,
+   "faithful_to_baseline": true,
+   "gift_uses_chunks": true,
+   "issues": [
+    "Clean. Stacked step-back recall + absolute per-option POE verdict + symmetric decision rule; GIFT grounds steps 1-2 in {chunks} with a guideline fallback; {chunks}/{question} once each; label correctly accented. Strongest, best-balanced of the cot_json set."
+   ]
+  }
+ ],
+ "research_quality": {
+  "citations_plausible": true,
+  "notes": "Foundational citations are real and correctly attributed: Kojima zero-shot reasoners (2205.11916), Step-Back (2310.06117), Generated Knowledge (2110.08387), Plan-and-Solve (2305.04091), Medprompt/Nori (2311.16452), Self-RAG/Asai (2310.11511), Liévin medical-QA (2207.08143), Self-Verification/Weng (2212.09561), Chain-of-Verification/Dhuliawala (2309.11495). The 2025 NOTA/abstention preprints (Tam 2503.01550, WiCkeD/Elhady 2502.18316, abstention-artifact 2507.16199, Wang least-incorrect 2402.01349, Madhusudhan 2407.16221, Wu clinical-CoT 2509.21933, Balepur POE 2310.15575) are topically apt and internally consistent across variants and thus plausible, but sit at/after my Jan-2026 cutoff — do a quick arXiv/DOI existence check before publication. ONE RED FLAG: v07 cites 'Quantifying and Mitigating Premature Closure in Frontier LLMs (arXiv:2605.15000, Handler, Bedi & Shah 2026)'. The identifier (2026-05, round sequence .15000) looks fabricated/unverifiable even though the named authors are real digital-health researchers — verify or replace. Overall the set reads as genuine scholarship with a single suspect entry."
+ },
+ "blocking_issues": [
+  "v06 GIFT: {chunks} appears twice — inline '({chunks})' in the recall paragraph AND in the terminal injection block — violating the 'once each' rule and double-injecting the retrieved context (verified: chunks count = 2). placeholder_ok fails.",
+  "v08: the confidence rule forces the sentinel whenever confidence is not 'alta' (media/baja -> 'Ninguna...'), over-selecting NOTA on uncertainty rather than genuine answer-absence; this will systematically misfire on Condition-A and biases the metric. nota_appropriate fails.",
+  "v03: the strict_json few-shot exemplars show a 'Razonamiento:' line before the JSON; the model will likely imitate and emit prose outside the 3-key JSON, breaking strict-JSON parsing on the live OpenRouter API."
+ ],
+ "recommended_fixes": [
+  "v06: delete the inline '({chunks})' token and refer to retrieved context in prose only (e.g., '...en el contexto médico recuperado indicado más abajo'), so {chunks} appears exactly once, in the terminal injection block.",
+  "v08: decouple uncertainty from answer-absence — select 'Ninguna...' only when the guideline-correct fact is absent from all four options, not on 'media/baja' confidence; add an explicit Condition-A guard ('no elijas Ninguna si una opción listada es correcta, aunque no estés seguro').",
+  "v03: remove or rename the exemplar 'Razonamiento:' line, or convert v03 to cot_json. If kept strict_json, the exemplars' visible completion must be ONLY the 3-key JSON so the demonstrated contract matches the mode.",
+  "Fix the diacritic in the GIFT injection label 'Contexto medico recuperado' -> 'Contexto médico recuperado' in v03, v04, v07, v08 (v01/v02/v05/v09/v10 already correct).",
+  "cot_json GIFT variants (v04-v10) add a leading 'razonamiento' key; confirm the GIFT/prompt-13 server accepts a 4-key schema (its 'solo el objeto JSON'/3-key validation must be relaxed) or the razonamiento key will be rejected/stripped. OR arm is unaffected.",
+  "Verify or replace v07 citation arXiv:2605.15000 (premature closure); the ID and 2026 date appear fabricated/unverifiable.",
+  "Optional: v09 soften 'coincide EXACTAMENTE' to 'coincide en su contenido clínico' (as in v01/v06) to avoid over-triggering the sentinel on correctly-paraphrased options.",
+  "Recommended ranking for the RAG endgame: v10 (strongest, best-balanced) and v05/v09 are the safest, most NOTA-appropriate {chunks}-grounded cot_json variants; v02 is the cleanest strict_json control. Hold v06 and v08 until fixed."
+ ]
+}

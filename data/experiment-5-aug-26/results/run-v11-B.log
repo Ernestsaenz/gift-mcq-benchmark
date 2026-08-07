@@ -1,0 +1,29 @@
+variants=1 models=2 questions=10 => 20 calls | workbook=hard10-flat-B.xlsx
+  - v11        mode=cot_json    version=exp5_v11
+[1/20] v11        gemma  q=b455  b/d ✗
+[2/20] v11        gemma  q=b221  a/c ✗
+[3/20] v11        gemma  q=b284  c/c ✓
+[4/20] v11        gemma  q=n088  a/b ✗
+[5/20] v11        gemma  q=r010  c/b ✗
+[6/20] v11        gemma  q=b370  a/b ✗
+[7/20] v11        gemma  q=b170  d/d ✓
+[8/20] v11        gemma  q=b184  c/d ✗
+[9/20] v11        gemma  q=b470  d/b ✗
+[10/20] v11        gemma  q=n111  a/b ✗
+[11/20] v11        qwen   q=b470  d/b ✗
+[12/20] v11        qwen   q=b184  a/d ✗
+[13/20] v11        qwen   q=n111  a/b ✗
+[14/20] v11        qwen   q=r010  c/b ✗
+[15/20] v11        qwen   q=b170  b/d ✗
+[16/20] v11        qwen   q=n088  b/b ✓
+[17/20] v11        qwen   q=b284  d/c ✗
+[18/20] v11        qwen   q=b455  b/d ✗
+[19/20] v11        qwen   q=b370  a/b ✗
+[20/20] v11        qwen   q=b221  b/c ✗
+
+==================== RESULTS (strict accuracy) ====================
+variant     mode            qwen    gemma   overall   Δbase
+-----------------------------------------------------------
+v11         cot_json       10.0%    20.0%     15.0%        
+
+wrote comparison.csv, summary.json, per-variant jsonl, and appended experiment-log.*

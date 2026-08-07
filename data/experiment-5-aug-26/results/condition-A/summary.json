@@ -1,0 +1,31 @@
+{
+ "generated": "2026-08-05T13:58:35+00:00",
+ "workbook": "hard10-flat-A.xlsx",
+ "n_questions": 10,
+ "models": {
+  "qwen": "qwen/qwen3.6-35b-a3b",
+  "gemma": "google/gemma-4-26b-a4b-it"
+ },
+ "temperature": 0.0,
+ "baseline_overall_acc%": null,
+ "variants": [
+  {
+   "id": "v11",
+   "output_mode": "cot_json",
+   "technique": "Proper integration of the two genuine winners: v10's 3-step reasoning scaffold (independent recall -> absolute per-option verdict -> balanced NOTA rule) PLUS v03's two balanced worked exemplars, rewritten to demonstrate the 4-key cot output (razonamiento walking the 3 steps). cot_json.",
+   "overall_acc%": 55.0,
+   "overall_correct": "11/20",
+   "delta_vs_baseline_pp": null,
+   "by_model": {
+    "qwen": {
+     "acc%": 80.0,
+     "correct": "8/10"
+    },
+    "gemma": {
+     "acc%": 30.0,
+     "correct": "3/10"
+    }
+   }
+  }
+ ]
+}

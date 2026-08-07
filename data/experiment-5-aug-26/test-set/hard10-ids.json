@@ -1,0 +1,102 @@
+[
+ {
+  "question_id": "b370",
+  "source_key": "castilla-la-mancha|2017|main|84",
+  "origin": "retained318",
+  "correct_letter": "b",
+  "negated_stem": "True",
+  "deterministic_rank": 1,
+  "difficulty_tier_wrong_models": 4,
+  "wrong_models_B": "Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b455",
+  "source_key": "aragon|2017|main|79",
+  "origin": "retained318",
+  "correct_letter": "d",
+  "negated_stem": "False",
+  "deterministic_rank": 2,
+  "difficulty_tier_wrong_models": 4,
+  "wrong_models_B": "Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "n088",
+  "source_key": "castilla-y-leon|2019|main|43",
+  "origin": "new182",
+  "correct_letter": "b",
+  "negated_stem": "False",
+  "deterministic_rank": 3,
+  "difficulty_tier_wrong_models": 4,
+  "wrong_models_B": "Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b170",
+  "source_key": "navarra|2022|caso-clinico-1|95",
+  "origin": "retained318",
+  "correct_letter": "d",
+  "negated_stem": "False",
+  "deterministic_rank": 4,
+  "difficulty_tier_wrong_models": 4,
+  "wrong_models_B": "Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b470",
+  "source_key": "aragon|2017|reserva-especifica|108",
+  "origin": "retained318",
+  "correct_letter": "b",
+  "negated_stem": "False",
+  "deterministic_rank": 5,
+  "difficulty_tier_wrong_models": 4,
+  "wrong_models_B": "Gemini 3.6 Flash;GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "n111",
+  "source_key": "la-rioja|2021|main|8",
+  "origin": "new182",
+  "correct_letter": "b",
+  "negated_stem": "False",
+  "deterministic_rank": 20,
+  "difficulty_tier_wrong_models": 3,
+  "wrong_models_B": "GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b184",
+  "source_key": "navarra|2022|reserva-casos-clinicos|109",
+  "origin": "retained318",
+  "correct_letter": "d",
+  "negated_stem": "True",
+  "deterministic_rank": 21,
+  "difficulty_tier_wrong_models": 3,
+  "wrong_models_B": "GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "r010",
+  "source_key": "andalucia|2022|cuestionario-teorico|74",
+  "origin": "replacement22_2026-08-04",
+  "correct_letter": "b",
+  "negated_stem": "False",
+  "deterministic_rank": 22,
+  "difficulty_tier_wrong_models": 3,
+  "wrong_models_B": "GLM 5.2;Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b284",
+  "source_key": "castilla-y-leon|2019|reserva-especifica|158",
+  "origin": "retained318",
+  "correct_letter": "c",
+  "negated_stem": "True",
+  "deterministic_rank": 68,
+  "difficulty_tier_wrong_models": 2,
+  "wrong_models_B": "Qwen 3.6 35B;Gemma 4 26B"
+ },
+ {
+  "question_id": "b221",
+  "source_key": "castilla-la-mancha|2017|main|87",
+  "origin": "retained318",
+  "correct_letter": "c",
+  "negated_stem": "True",
+  "deterministic_rank": 69,
+  "difficulty_tier_wrong_models": 2,
+  "wrong_models_B": "GLM 5.2;Qwen 3.6 35B"
+ }
+]

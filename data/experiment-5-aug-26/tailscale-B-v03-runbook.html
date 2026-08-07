@@ -1,0 +1,456 @@
+<title>GIFT/Tailscale Condition-B test with the v03 prompt — runbook</title>
+<style>
+  :root{
+    --bg:#eef3f4; --surface:#ffffff; --surface-2:#e6edee; --code-bg:#f3f7f7;
+    --ink:#132227; --muted:#54666c; --faint:#7c8d92; --line:#d3dedf;
+    --accent:#0f766e; --accent-strong:#0b5a53; --accent-soft:#d6ebe8;
+    --warn:#a15c07; --warn-bg:#fbefd8; --warn-line:#e6cf9b;
+    --danger:#b42318; --danger-bg:#fbe6e3; --danger-line:#eeb7b0;
+    --ok:#15803d; --ok-bg:#dcf0e2; --ok-line:#acd8b8;
+    --font-sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    --maxw:880px; --radius:10px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0b1315; --surface:#111c1f; --surface-2:#16242a; --code-bg:#0e191c;
+      --ink:#dde8ea; --muted:#93a6ac; --faint:#6f8288; --line:#233840;
+      --accent:#2fd0c0; --accent-strong:#63e6d6; --accent-soft:#0f2f2c;
+      --warn:#e0a94a; --warn-bg:#2a2011; --warn-line:#4a3a1c;
+      --danger:#f0847a; --danger-bg:#2c1512; --danger-line:#4d211d;
+      --ok:#57c47e; --ok-bg:#122a1b; --ok-line:#204b31;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#eef3f4; --surface:#ffffff; --surface-2:#e6edee; --code-bg:#f3f7f7;
+    --ink:#132227; --muted:#54666c; --faint:#7c8d92; --line:#d3dedf;
+    --accent:#0f766e; --accent-strong:#0b5a53; --accent-soft:#d6ebe8;
+    --warn:#a15c07; --warn-bg:#fbefd8; --warn-line:#e6cf9b;
+    --danger:#b42318; --danger-bg:#fbe6e3; --danger-line:#eeb7b0;
+    --ok:#15803d; --ok-bg:#dcf0e2; --ok-line:#acd8b8;
+  }
+  :root[data-theme="dark"]{
+    --bg:#0b1315; --surface:#111c1f; --surface-2:#16242a; --code-bg:#0e191c;
+    --ink:#dde8ea; --muted:#93a6ac; --faint:#6f8288; --line:#233840;
+    --accent:#2fd0c0; --accent-strong:#63e6d6; --accent-soft:#0f2f2c;
+    --warn:#e0a94a; --warn-bg:#2a2011; --warn-line:#4a3a1c;
+    --danger:#f0847a; --danger-bg:#2c1512; --danger-line:#4d211d;
+    --ok:#57c47e; --ok-bg:#122a1b; --ok-line:#204b31;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);
+    font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(20px,4vw,56px) clamp(16px,4vw,32px) 72px;}
+  a{color:var(--accent);text-underline-offset:2px}
+  h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0}
+  code,kbd,pre,.mono{font-family:var(--font-mono)}
+  .eyebrow{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-strong);font-weight:600;margin:0 0 14px}
+  header.masthead{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px}
+  h1{font-size:clamp(28px,4.6vw,40px);font-weight:680;letter-spacing:-.02em}
+  .lede{color:var(--muted);font-size:clamp(16px,2.2vw,18px);margin:14px 0 0;max-width:62ch}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .chip{font-family:var(--font-mono);font-size:12.5px;padding:5px 10px;border-radius:999px;
+    background:var(--surface-2);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+  .chip b{color:var(--ink);font-weight:600}
+  .chip.key{background:var(--accent-soft);border-color:transparent;color:var(--accent-strong)}
+  section{margin-top:40px}
+  h2{font-size:20px;font-weight:660;letter-spacing:-.01em;display:flex;align-items:baseline;gap:12px}
+  h2 .num{font-family:var(--font-mono);font-size:14px;color:var(--accent);font-weight:600;
+    border:1px solid var(--line);border-radius:7px;padding:2px 8px;background:var(--surface)}
+  h2+p,h2+.grid,h2+.callout,h2+ol,h2+.steps{margin-top:14px}
+  p{margin:0 0 12px;max-width:66ch}
+  .muted{color:var(--muted)}
+  strong{font-weight:640}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+  .summary{display:grid;grid-template-columns:1fr;gap:0}
+  .summary .obj{font-size:17px;margin-bottom:16px}
+  .facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .fact{background:var(--surface);padding:14px 16px}
+  .fact .k{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+  .fact .v{margin-top:5px;font-size:14.5px;color:var(--ink)}
+  .fact .v b{color:var(--accent-strong)}
+  .callout{border:1px solid var(--line);border-left-width:3px;border-radius:8px;padding:15px 18px;
+    background:var(--surface);margin:16px 0}
+  .callout .tag{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+    font-weight:700;margin-bottom:6px;display:block}
+  .callout p:last-child{margin-bottom:0}
+  .callout.key{border-left-color:var(--accent);background:var(--accent-soft)}
+  .callout.key .tag{color:var(--accent-strong)}
+  .callout.key p{color:var(--ink)}
+  .callout.warn{border-left-color:var(--warn);background:var(--warn-bg);border-color:var(--warn-line)}
+  .callout.warn .tag{color:var(--warn)}
+  .callout.danger{border-left-color:var(--danger);background:var(--danger-bg);border-color:var(--danger-line)}
+  .callout.danger .tag{color:var(--danger)}
+  .callout.ok{border-left-color:var(--ok);background:var(--ok-bg);border-color:var(--ok-line)}
+  .callout.ok .tag{color:var(--ok)}
+  ul.check{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+  ul.check li{padding-left:26px;position:relative;color:var(--ink)}
+  ul.check li::before{content:"";position:absolute;left:2px;top:8px;width:9px;height:9px;border-radius:3px;
+    border:2px solid var(--accent);}
+  ul.check li b{font-weight:620}
+  .steps{display:flex;flex-direction:column;gap:2px;counter-reset:step}
+  .step{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+  .step:first-child{border-top:none}
+  .step .badge{counter-increment:step;font-family:var(--font-mono);font-weight:600;font-size:15px;
+    color:var(--accent-strong);background:var(--accent-soft);border-radius:8px;height:34px;width:34px;
+    display:flex;align-items:center;justify-content:center}
+  .step .badge::before{content:counter(step,decimal-leading-zero)}
+  .step h3{font-size:16px;font-weight:640;margin-bottom:5px}
+  .step p{font-size:14.5px;color:var(--muted);margin:0}
+  .step .swap{color:var(--danger);font-weight:640}
+  pre{margin:12px 0;background:var(--code-bg);border:1px solid var(--line);border-radius:9px;
+    padding:14px 16px;overflow-x:auto;font-size:13px;line-height:1.55;color:var(--ink)}
+  pre.tall{max-height:340px;overflow-y:auto}
+  code.inl{background:var(--surface-2);border:1px solid var(--line);border-radius:5px;
+    padding:1px 5px;font-size:.9em;color:var(--accent-strong);white-space:nowrap}
+  .codelabel{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--faint);margin:18px 0 -4px}
+  .cmt{color:var(--faint)}
+  .tok{color:var(--accent-strong);font-weight:600}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+  th{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  td.n{font-variant-numeric:tabular-nums}
+  .verdict-ok{color:var(--ok);font-weight:640}
+  .verdict-bad{color:var(--danger);font-weight:640}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);color:var(--faint);font-size:13px}
+  footer code{color:var(--muted)}
+  @media (max-width:560px){
+    .facts{grid-template-columns:1fr}
+    .step{grid-template-columns:1fr;gap:8px}
+    .step .badge{height:30px;width:30px}
+  }
+  @media (prefers-reduced-motion:no-preference){a{transition:color .15s ease}}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow">GIFT · Tailscale · RAG arm</p>
+    <h1>Running the Condition-B test with the v03 prompt</h1>
+    <p class="lede">A manual procedure to swap the backend's stored prompt&nbsp;13 for the v03 prompt and
+      measure whether it improves GIFT (RAG) accuracy under the &ldquo;none-of-the-above&rdquo;
+      transform — without trusting the B number alone.</p>
+    <div class="chips">
+      <span class="chip key">Prompt <b>v03</b> · few-shot NOTA</span>
+      <span class="chip">X-Prompt-ID <b>13</b></span>
+      <span class="chip">Output <b>strict_json</b> (3-key)</span>
+      <span class="chip">Temperature <b>0</b></span>
+      <span class="chip">Provider <b>tailscale_medical_rag</b></span>
+    </div>
+  </header>
+
+  <div class="card summary">
+    <p class="obj"><strong>Objective.</strong> Confirm that v03 &mdash; the prompt that genuinely improved
+      Condition-B on the no-RAG proxy (+15&nbsp;pp, with <em>no</em> cost to normal questions) &mdash;
+      also lifts the <strong>GIFT/RAG</strong> arm on Condition&nbsp;B, where retrieved evidence
+      (<code class="inl">{chunks}</code>) is available. This is the endgame the OpenRouter run only
+      approximated.</p>
+    <div class="facts">
+      <div class="fact"><div class="k">The change</div><div class="v">Replace stored prompt&nbsp;13 with
+        v03's GIFT form. <b>Instructions live server-side</b> — this swap <em>is</em> the experiment.</div></div>
+      <div class="fact"><div class="k">No schema change</div><div class="v">v03 is <b>strict_json</b> (3 keys).
+        Unlike the reasoning variants, the backend needs <b>no</b> JSON-contract change.</div></div>
+      <div class="fact"><div class="k">Always pair B with A</div><div class="v">Run Condition&nbsp;A too.
+        A B-only gain can be <b>over-abstention</b> that quietly breaks normal items.</div></div>
+      <div class="fact"><div class="k">Swap is global</div><div class="v">One stored prompt serves all calls,
+        so <b>sequence</b> the runs: baseline first, then swap, then v03. Back up prompt&nbsp;13 first.</div></div>
+    </div>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> Why v03, and why RAG should help more</h2>
+    <p>Across ten of the hardest Condition-B questions, v03 was one of only two variants that raised B
+      accuracy <strong>without</strong> hurting Condition&nbsp;A. It works by adding two short worked
+      examples to the existing prompt &mdash; one whose answer <em>is</em> &ldquo;Ninguna de las respuestas
+      anteriores es correcta&rdquo; and one whose answer is a real option. That <strong>balance</strong> is
+      what stops the model from over-selecting the sentinel.</p>
+    <p>On GIFT the retrieved <code class="inl">{chunks}</code> give the model an independent way to establish
+      the guideline-correct fact and check whether it is actually among the four options. The hypothesis:
+      <strong>RAG evidence + v03's balanced demonstration should detect &ldquo;the right answer is
+      absent&rdquo; more reliably than either piece alone.</strong></p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> The key mechanic (read this first)</h2>
+    <div class="callout key">
+      <span class="tag">How GIFT gets its instructions</span>
+      <p>On the GIFT/Tailscale arm the harness sends <strong>only the question and its four options</strong>
+        in the user message. The instructions, the JSON contract, and the retrieval slot
+        (<code class="inl">{chunks}</code>) all come from the <strong>server-side stored prompt&nbsp;13</strong>.
+        So the <code class="inl">--prompt-version</code> flag &mdash; and the OpenRouter-only
+        <code class="inl">run_variants.py</code> from this experiment &mdash; do <strong>not</strong> change
+        GIFT behavior. The only way to test v03 here is to replace prompt&nbsp;13 in the backend.</p>
+    </div>
+    <div class="callout warn">
+      <span class="tag">Keep the injection points</span>
+      <p>The v03 GIFT form keeps the two placeholders the backend fills:
+        <code class="inl">{chunks}</code> (retrieved context) and <code class="inl">{question}</code>
+        (the question + options block), each exactly once. Do not rename or remove them, or retrieval /
+        question injection will break.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Prerequisites</h2>
+    <ul class="check">
+      <li>Access to the <b>Tailscale/GIFT backend</b> where stored prompt&nbsp;13 can be edited manually,
+        and the production backend is deployed and healthy (repo <code class="inl">carneiran/handmade-gift</code>).</li>
+      <li>Retrieval is <b>live</b> — <code class="inl">{chunks}</code> actually returns context. (If it
+        returns empty, v03 gracefully falls back to clinical judgement, but you're then not testing RAG.)</li>
+      <li>GIFT credentials in <code class="inl">.env</code>: <code class="inl">GIFT_API</code>,
+        <code class="inl">GIFT_EMAIL</code>, <code class="inl">GIFT_PASSWORD</code>.</li>
+      <li>The evaluation harness runs from the repo root with <code class="inl">.venv/bin/python</code>.</li>
+      <li>Test workbooks on hand: <code class="inl">test-set/hard10-flat-B.xlsx</code> and
+        <code class="inl">hard10-flat-A.xlsx</code> (or a larger set — the full hard-200 / 500 for powered numbers).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> The v03 prompt to paste into prompt 13</h2>
+    <p>Copy this verbatim into the backend's stored prompt&nbsp;13. Source of truth:
+      <code class="inl">data/experiment-5-aug-26/variants/gift13/exp5_v03_prompt13_es.txt</code>.
+      It is the current baseline prompt&nbsp;13 <strong>plus</strong> the <code class="inl">EJEMPLOS
+      RESUELTOS</code> block &mdash; nothing else changed.</p>
+    <p class="codelabel">variants/gift13/exp5_v03_prompt13_es.txt</p>
+    <pre class="tall">Eres un especialista en aparato digestivo (gastroenterología y hepatología) con amplia
+experiencia clínica, razonamiento diagnóstico experto y conocimiento exhaustivo de la
+literatura académica actual y de las guías de práctica clínica. Tu tarea es seleccionar la
+única mejor respuesta entre las cuatro opciones.
+
+Aplica un razonamiento clínico riguroso antes de responder. Interpreta la pregunta:
+identifica la clave diagnóstica, terapéutica, pronóstica, epidemiológica o fisiopatológica;
+distingue entre opciones similares y plausibles; y prioriza la respuesta más correcta según
+la práctica clínica estándar y la medicina basada en guías.
+
+Ten en cuenta los siguientes principios:
+- Elige la opción que mejor se ajuste al contexto clínico completo, no a un dato aislado.
+- Prefiere las respuestas coherentes con las guías y basadas en la evidencia.
+- Presta especial atención a los términos absolutos, las contraindicaciones, los tratamientos
+  de primera línea, los patrones de referencia diagnósticos, los signos de alarma, las
+  complicaciones y las asociaciones clásicas.
+- Si la pregunta solicita la opción falsa o incorrecta, identifica la afirmación clínicamente
+  menos exacta.
+- Si dos opciones parecen plausibles, aplica el principio de «única mejor respuesta» y elige
+  la más correcta desde el punto de vista clínico.
+- No sobreinterpretes más allá de la información proporcionada.
+- No inventes suposiciones que no estén respaldadas por el enunciado.
+- Elige únicamente entre las cuatro opciones tal como están redactadas.
+
+Debes usar el contexto médico recuperado cuando esté disponible y sea relevante, pero no
+debes resumirlo, citarlo ni explicarlo. Si el contexto recuperado es insuficiente o
+irrelevante, responde usando el mejor juicio médico disponible a partir de la pregunta y las
+opciones.
+
+Devuelve exactamente un objeto JSON con estas tres claves, y nada más: sin markdown, sin
+bloques de código, sin comentarios, sin citas, sin explicaciones y sin texto fuera del JSON.
+
+{
+  "question_id": "&lt;el question_id indicado en el mensaje del usuario&gt;",
+  "selected_letter": "&lt;una de: a, b, c, d&gt;",
+  "selected_option_text": "&lt;el texto de la opción elegida, copiado carácter por carácter&gt;"
+}
+
+Requisitos de salida:
+- selected_letter es una única letra minúscula: a, b, c o d.
+- selected_option_text reproduce exactamente la opción elegida, conservando los acentos, la
+  puntuación, las mayúsculas, las minúsculas y el espaciado del español.
+- Elige únicamente entre las cuatro opciones tal como están redactadas; no inventes ni
+  parafrasees opciones.
+- Si no estás seguro, elige igualmente la única mejor opción.
+- Nunca devuelvas más de una respuesta.
+
+REGLAS DE CITACIÓN:
+No cites fuentes. No incluyas referencias. No incluyas bibliografía. La respuesta final debe
+ser solo el objeto JSON requerido.
+
+REGLAS DE IMÁGENES:
+No incluyas imágenes. No solicites imágenes. No menciones imágenes. La respuesta final debe
+ser solo el objeto JSON requerido.
+
+EJEMPLOS RESUELTOS (referencia de formato; no son la pregunta que debes responder):
+
+Ejemplo 1:
+Pregunta: Paciente de 58 años con cirrosis hepática Child-Pugh B que presenta hematemesis.
+La endoscopia digestiva alta muestra varices esofágicas grandes con sangrado activo en
+"spurting". ¿Cuál es el tratamiento endoscópico de primera línea para el control del
+sangrado?
+Opciones:
+a) Escleroterapia con etanolamina
+b) Colocación de balón de Sengstaken-Blakemore como primera línea
+c) Terapia fotodinámica
+d) Ninguna de las respuestas anteriores es correcta.
+{
+  "question_id": "EJEMPLO-1",
+  "selected_letter": "d",
+  "selected_option_text": "Ninguna de las respuestas anteriores es correcta."
+}
+
+Ejemplo 2:
+Pregunta: Paciente de 44 años con dispepsia crónica y test de ureasa positivo para
+Helicobacter pylori, sin alergias a antibióticos conocidas. ¿Cuál es el tratamiento
+erradicador de primera línea recomendado en zonas de baja resistencia a claritromicina?
+Opciones:
+a) Terapia triple con IBP, claritromicina y amoxicilina durante 10-14 días
+b) Monoterapia con amoxicilina durante 10 días
+c) IBP en monoterapia indefinida
+d) Ninguna de las respuestas anteriores es correcta.
+{
+  "question_id": "EJEMPLO-2",
+  "selected_letter": "a",
+  "selected_option_text": "Terapia triple con IBP, claritromicina y amoxicilina durante 10-14 días"
+}
+
+Usa el contexto médico recuperado a continuación, si está disponible y es relevante, para
+verificar cuál opción coincide con la evidencia, siguiendo el mismo patrón que los ejemplos
+anteriores. Si el contexto es insuficiente, está vacío o es irrelevante, responde con tu
+mejor juicio clínico.
+
+Contexto médico recuperado:
+{chunks}
+
+Pregunta tipo test:
+{question}</pre>
+    <div class="callout warn">
+      <span class="tag">Note on the exemplars</span>
+      <p>The two worked examples are invented but clinically standard (band ligation is first-line for
+        variceal bleeding; IBP + clarithromycin + amoxicillin is first-line H.&nbsp;pylori eradication).
+        If you'd rather they be drawn from real corpus questions, swap them before deploying &mdash; keep
+        the one-sentinel / one-real balance intact.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Procedure</h2>
+    <div class="steps">
+      <div class="step"><div class="badge"></div><div><h3>Back up the current prompt 13</h3>
+        <p>Copy the existing stored prompt&nbsp;13 text somewhere safe. This is your rollback and your
+          baseline arm.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Verify the backend and retrieval</h3>
+        <p>Confirm GIFT auth and that retrieval returns context. Run
+          <code class="inl">check-auth --provider tailscale</code> and one probe question; confirm
+          <code class="inl">{chunks}</code> is non-empty in the sent payload.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Import the test workbooks</h3>
+        <p>Import <code class="inl">hard10-flat-B.xlsx</code> and <code class="inl">hard10-flat-A.xlsx</code>
+          as two datasets (see commands below).</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Run the BASELINE arm (prompt 13 unchanged)</h3>
+        <p>Score Condition&nbsp;B <em>and</em> Condition&nbsp;A on GIFT with the current prompt&nbsp;13.
+          Name them <code class="inl">gift_baseline_B</code> / <code class="inl">gift_baseline_A</code>.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3 class="swap">Swap prompt 13 → v03</h3>
+        <p>In the backend, replace the stored prompt&nbsp;13 body with the v03 text from step&nbsp;04.
+          Keep <code class="inl">{chunks}</code> and <code class="inl">{question}</code> intact. Save/deploy.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Verify the swap took effect</h3>
+        <p>Re-run one probe question and confirm the served prompt now contains the
+          <code class="inl">EJEMPLOS RESUELTOS</code> block.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Run the v03 arm</h3>
+        <p>Score Condition&nbsp;B and A again, named <code class="inl">gift_v03_B</code> /
+          <code class="inl">gift_v03_A</code>. Identical questions, identical everything except prompt&nbsp;13.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Export and compare</h3>
+        <p>Export all four experiments to CSV. Compute ΔB (v03&nbsp;B − baseline&nbsp;B) and ΔA
+          (v03&nbsp;A − baseline&nbsp;A). See <a href="#criteria">success criteria</a>.</p></div></div>
+      <div class="step"><div class="badge"></div><div><h3>Restore or adopt</h3>
+        <p>If v03 doesn't clear the bar, restore the backed-up prompt&nbsp;13. If it does, keep v03 as the
+          new prompt&nbsp;13 and re-run at scale to confirm.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Commands</h2>
+    <p class="muted">Run from the repo root. The GIFT model identifier below
+      (<code class="inl">medical-rag</code>) is the backend's own model string used by the prior benchmark
+      &mdash; substitute yours if different. <code class="inl">--tailscale-prompt-id 13</code> is required
+      for GIFT runs.</p>
+
+    <p class="codelabel">verify auth (do before and after the swap)</p>
+    <pre>.venv/bin/python -m medrag_eval.cli check-auth <span class="tok">--provider</span> tailscale</pre>
+
+    <p class="codelabel">import the two datasets (once)</p>
+    <pre>DB=data/experiment-5-aug-26/results/gift/gift.sqlite
+
+.venv/bin/python -m medrag_eval.cli import-questions <span class="tok">--dataset</span> exp5-hard10-B \
+  <span class="tok">--xlsx</span> data/experiment-5-aug-26/test-set/hard10-flat-B.xlsx <span class="tok">--db</span> $DB
+.venv/bin/python -m medrag_eval.cli import-questions <span class="tok">--dataset</span> exp5-hard10-A \
+  <span class="tok">--xlsx</span> data/experiment-5-aug-26/test-set/hard10-flat-A.xlsx <span class="tok">--db</span> $DB</pre>
+
+    <p class="codelabel">BASELINE arm — run BEFORE swapping prompt 13</p>
+    <pre>.venv/bin/python -m medrag_eval.cli run <span class="tok">--dataset</span> exp5-hard10-B \
+  <span class="tok">--experiment-name</span> gift_baseline_B \
+  <span class="tok">--providers</span> tailscale <span class="tok">--models</span> medical-rag \
+  <span class="tok">--tailscale-prompt-id</span> 13 <span class="tok">--temperature</span> 0 <span class="tok">--db</span> $DB
+<span class="cmt"># repeat with --dataset exp5-hard10-A --experiment-name gift_baseline_A</span></pre>
+
+    <p class="codelabel">— now perform step 05: swap prompt 13 → v03 in the backend —</p>
+
+    <p class="codelabel">v03 arm — run AFTER the swap</p>
+    <pre>.venv/bin/python -m medrag_eval.cli run <span class="tok">--dataset</span> exp5-hard10-B \
+  <span class="tok">--experiment-name</span> gift_v03_B \
+  <span class="tok">--providers</span> tailscale <span class="tok">--models</span> medical-rag \
+  <span class="tok">--tailscale-prompt-id</span> 13 <span class="tok">--temperature</span> 0 <span class="tok">--db</span> $DB
+<span class="cmt"># repeat with --dataset exp5-hard10-A --experiment-name gift_v03_A</span></pre>
+
+    <p class="codelabel">read accuracy + export per-arm CSV</p>
+    <pre>.venv/bin/python -m medrag_eval.cli status <span class="tok">--experiment-name</span> gift_v03_B <span class="tok">--db</span> $DB
+.venv/bin/python -m medrag_eval.cli export <span class="tok">--experiment-name</span> gift_v03_B <span class="tok">--format</span> csv <span class="tok">--db</span> $DB
+<span class="cmt"># status reports strict_accuracy per model; export writes the per-question ledger</span></pre>
+    <div class="callout warn">
+      <span class="tag">Sequence, don't parallelize</span>
+      <p>Because prompt&nbsp;13 is a single global stored prompt, the baseline and v03 arms cannot run at
+        the same time &mdash; they would hit the same served prompt. Finish both baseline runs, swap, then
+        run both v03 runs.</p>
+    </div>
+  </section>
+
+  <section id="criteria">
+    <h2><span class="num">07</span> Success criteria — read B and A together</h2>
+    <p>v03 is a real improvement <strong>only</strong> if it lifts Condition&nbsp;B while holding
+      Condition&nbsp;A. A B gain with an A drop is over-abstention, not robustness.</p>
+    <table>
+      <thead><tr><th>Outcome</th><th>ΔB</th><th>ΔA</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>Genuine win</td><td class="n">↑ up</td><td class="n">≈ 0</td><td class="verdict-ok">Adopt v03</td></tr>
+        <tr><td>Over-abstention</td><td class="n">↑ up</td><td class="n">↓ down</td><td class="verdict-bad">Reject — breaks normal items</td></tr>
+        <tr><td>No effect</td><td class="n">≈ 0</td><td class="n">≈ 0</td><td class="muted">Keep baseline</td></tr>
+      </tbody>
+    </table>
+    <div class="callout ok">
+      <span class="tag">What to expect</span>
+      <p>On the no-RAG proxy v03 gave <strong>B +15&nbsp;pp, A +0</strong>. With retrieval feeding real
+        evidence into the same balanced prompt, a <strong>larger</strong> B lift is plausible &mdash; that
+        is the reason to test on GIFT at all. Watch the A number regardless.</p>
+    </div>
+    <div class="callout warn">
+      <span class="tag">Sample size</span>
+      <p>Ten questions × the backend model is a directional probe (each item moves the rate a lot). Treat a
+        promising result as a signal, then re-run on the full hard-200 and the full 500 (both A and B) for
+        a number you can report.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span> Cautions &amp; rollback</h2>
+    <ul class="check">
+      <li><b>Back up first.</b> Keep the original prompt&nbsp;13 text; rollback is a paste-back.</li>
+      <li><b>strict_json means no contract change.</b> v03 keeps the 3-key JSON, so the backend's response
+        validation and the harness parser are unaffected. (The reasoning variants v09/v10 would need the
+        server to accept a 4-key object — v03 does not.)</li>
+      <li><b>Confirm retrieval isn't empty.</b> If <code class="inl">{chunks}</code> comes back blank, you're
+        measuring v03's parametric fallback, not RAG. Check a payload before trusting the numbers.</li>
+      <li><b>Change one thing.</b> Keep model, temperature (0), question set, and top-k identical across the
+        baseline and v03 arms so the only difference is prompt&nbsp;13.</li>
+    </ul>
+    <div class="callout danger">
+      <span class="tag">Rollback</span>
+      <p>To revert: paste the backed-up prompt&nbsp;13 body back into the backend and re-verify with a probe
+        question. No harness or database change is needed &mdash; results already written stay attributed to
+        their experiment names.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Runbook for <code>data/experiment-5-aug-26</code> · prompt <code>v03</code> GIFT form:
+      <code>variants/gift13/exp5_v03_prompt13_es.txt</code> · full analysis: <code>RESULTS.md</code>.
+      GIFT sends the question in-message; instructions + retrieval come from server-side prompt&nbsp;13.
+      Generated 2026-08-06.</p>
+  </footer>
+</div>

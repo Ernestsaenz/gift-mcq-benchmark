@@ -1,0 +1,753 @@
+[
+ {
+  "cluster": "RAG-grounded answering & faithfulness/grounding prompting — using retrieved evidence to verify each option and detect answer-absence (NOTA)",
+  "techniques": [
+   {
+    "name": "Explicit grounding + license-to-abstain (\"answer only from context\", permission to say unknown)",
+    "summary": "Anthropic's own hallucination-reduction guidance for Claude: (1) explicitly instruct the model to use ONLY the supplied context/documents and not its parametric/background knowledge, and (2) explicitly grant permission to state uncertainty or 'I don't know' rather than guessing. Both are basic, single-call, zero-extra-tokens instructions placed directly in the system/user prompt.",
+    "nota_applicability": "Directly maps onto the sentinel policy your prompt is currently missing: the prompt must say, in plain terms, that the correct option may be intentionally ABSENT from the list, that {chunks} is the sole source of truth, and that the sentinel option exists precisely to be chosen when no listed option is supported by {chunks}. Without this explicit permission, models default to picking the least-bad surviving distractor because nothing in the prompt tells them 'answer absent' is a valid, expected outcome.",
+    "spanish_tips": "Usa una frase de política explícita cerca de las instrucciones de salida, no solo en el system prompt: 'Basa tu respuesta EXCLUSIVAMENTE en el contexto clínico proporcionado entre <contexto>{chunks}</contexto>. No uses conocimiento médico general ni supuestos externos al contexto.' Y añade el permiso explícito: 'Es posible que ninguna de las opciones A-D esté respaldada por el contexto. En ese caso, es la respuesta CORRECTA y ESPERADA seleccionar la opción \"Ninguna de las respuestas anteriores es correcta.\" No selecciones una opción por descarte o por parecerse a la respuesta correcta si el contexto no la respalda explícitamente.'",
+    "expected_effect": "Reduces false negatives on NOTA items (model wrongly picks a distractor instead of recognizing absence) by removing the implicit assumption that one of the labeled options must be correct. Typically the single highest-leverage, lowest-cost change per hallucination-reduction literature.",
+    "risks": "Over-broad 'only use context' language can cause the model to invoke the sentinel even on Condition-A items where the correct answer IS present but the retrieved chunk phrases it differently/less literally than the option text — i.e. it can shift bias toward over-selecting 'Ninguna'. Mitigate by pairing with an explicit per-option verification step (see next technique) rather than a bare abstention license."
+   },
+   {
+    "name": "Per-option evidence verification (RAGAS-style faithfulness check applied to MCQ options)",
+    "summary": "RAGAS's faithfulness metric checks a generated answer by decomposing it into atomic claims and testing whether each claim is entailed by the retrieved context; the answer is only 'faithful' if every claim is grounded. Adapted to MCQ: instead of verifying claims in a free-text answer, treat EACH option (A, B, C, D, and the NOTA sentinel) as a claim-to-be-verified against {chunks}, and require the model to output a support judgment per option before selecting.",
+    "nota_applicability": "This is the most direct way to operationalize NOTA detection: the model cannot 'anchor' on a plausible-sounding distractor if it must first produce an explicit entailed/contradicted/not-mentioned judgment for that specific option against the retrieved text. If all four labeled options come back not-entailed (or contradicted), the sentinel becomes the only option with a passing verification — a structural forcing function rather than a vibe-based choice.",
+    "spanish_tips": "Pide una verificación interna antes de la respuesta final: 'Para cada opción (A, B, C, D), indica en una palabra si el contexto la RESPALDA, la CONTRADICE, o NO LA MENCIONA. Solo puedes marcar RESPALDA si hay una frase del contexto que confirme literalmente esa opción como el diagnóstico/manejo correcto. Después de verificar las cuatro opciones, si ninguna fue marcada RESPALDA, tu respuesta final debe ser \"Ninguna de las respuestas anteriores es correcta.\"' Combina con la salida JSON estricta convirtiendo esta verificación en un campo interno (p. ej. \"verificacion\": {\"A\":\"no_mencionada\",...}) antes del campo final \"respuesta\", o como razonamiento breve si el esquema no lo permite, emitiendo después solo el JSON requerido.",
+    "expected_effect": "Strong, targeted lift on Condition-B accuracy since it forces symmetric evidence-checking of all options (breaking the default asymmetric behavior of 'find support for my first guess'). Should also preserve/slightly improve Condition-A accuracy since the correct answer will pass verification cleanly.",
+    "risks": "Verification quality is bottlenecked by retrieval quality — if {chunks} paraphrases the correct answer loosely, an overly strict RESPALDA bar can cause false negatives (correct answer marked no_mencionada, sentinel wrongly picked) on Condition-A items. Also increases output length/latency and, if not carefully scoped, can leak the verification step into the required strict-JSON output format."
+   },
+   {
+    "name": "Chain-of-Note (CoN): per-chunk relevance notes before answering",
+    "summary": "Yu et al. (2023/EMNLP 2024), 'Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models,' has the model generate a short 'reading note' assessing the relevance of each retrieved document to the question before producing an answer, and was specifically designed/evaluated for robustness to noisy/irrelevant retrieved documents and for correctly recognizing 'unknown' (unanswerable) scenarios — the paper reports improved rejection rates when the retrieved context does not actually support any answer.",
+    "nota_applicability": "Directly targets the 'retrieved context is empty or irrelevant' branch of the cluster: instead of silently using whatever was retrieved, the model first notes whether {chunks} is even topically relevant to the question stem. If the notes conclude the chunks are irrelevant/insufficient, that becomes a strong prior for the NOTA sentinel rather than for guessing among the listed options based on background medical knowledge.",
+    "spanish_tips": "Antes de razonar sobre las opciones, pide una nota de lectura breve: 'Primero, en una frase, evalúa la relevancia del contexto recuperado para esta pregunta: ¿el contexto aborda directamente el cuadro clínico y las opciones planteadas, o es irrelevante/insuficiente? Si el contexto es irrelevante o insuficiente, indícalo explícitamente y usa eso como señal para considerar \"Ninguna de las respuestas anteriores es correcta.\"'",
+    "expected_effect": "Especially valuable for the RAG arm's edge cases (empty/off-topic retrieval), reducing cases where the model falls back on parametric knowledge to confidently answer from a distractor despite unusable context. Complements per-option verification by adding a coarse global relevance gate first.",
+    "risks": "A single relevance note is coarser than per-option verification and can produce false negatives if only part of the retrieved context is relevant (model dismisses the whole chunk set as irrelevant when one sentence actually answers the question). Adds a small amount of extra generation before the JSON answer, which must be fenced off from the strict-JSON output."
+   },
+   {
+    "name": "Corrective-RAG-style retrieval-quality gate (Correct / Incorrect / Ambiguous)",
+    "summary": "Yan et al. (2024), 'Corrective Retrieval Augmented Generation' (CRAG), introduces a lightweight evaluator that classifies retrieved documents as Correct, Incorrect, or Ambiguous with respect to the query, and routes downstream behavior accordingly (refine-and-use vs. discard vs. blend). In a single-call prompt without an external evaluator, this becomes a self-graded confidence gate the model applies to {chunks} before committing to an option.",
+    "nota_applicability": "Gives a principled three-way branch instead of a binary guess: 'Correct' (context clearly supports one specific option → answer it), 'Incorrect' (context is off-topic/contradicts all options → sentinel), 'Ambiguous' (context is partially relevant but doesn't clearly single out one option → sentinel, since partial/ambiguous support should not be treated as sufficient to override the requirement of clear entailment). This explicitly formalizes 'what to do when retrieval is empty or irrelevant' for the RAG arm.",
+    "spanish_tips": "Añade una autoevaluación de confianza en la recuperación: 'Clasifica la calidad del contexto recuperado respecto a la pregunta en una de tres categorías: SUFICIENTE (identifica claramente una opción como correcta), AMBIGUO (roza el tema pero no confirma ninguna opción con claridad) o IRRELEVANTE (no trata el tema de la pregunta). Si la categoría es AMBIGUO o IRRELEVANTE, tu respuesta debe ser \"Ninguna de las respuestas anteriores es correcta.\", salvo que una opción esté respaldada de forma inequívoca.'",
+    "expected_effect": "Reduces overconfident answering under weak/partial retrieval, which is exactly the failure mode that produces anchoring on the closest distractor when the true answer is absent. Pairs well with per-option verification as the top-level gate, with per-option verification as the tie-breaker when the gate says 'Ambiguous'.",
+    "risks": "A 3-way self-graded classification is itself an LLM judgment and can be miscalibrated — models are known to over-rate their own retrieval's relevance (this is the reason CRAG used a trained evaluator, not just a prompted one). Without calibration data, the AMBIGUO/IRRELEVANTE bar may be set too loosely (rubber-stamping everything as SUFICIENTE) or too strictly (over-selecting the sentinel on Condition-A). Needs a few Spanish few-shot examples of each category to calibrate at temperature 0."
+   },
+   {
+    "name": "Adapted Chain-of-Verification (CoVe): draft → targeted verification question → independent check → finalize",
+    "summary": "Dhuliawala et al. (2023, ACL Findings 2024), 'Chain-of-Verification Reduces Hallucination in Large Language Models,' has the model draft an initial answer, generate specific verification question(s) about that draft, answer the verification question(s) independently (without being anchored by the draft's reasoning), and then revise the final answer based on that independent check. This is compressible into one call as a structured four-step reasoning scaffold.",
+    "nota_applicability": "Targets anchoring specifically: instead of a single forward pass that locks onto the first plausible option, the model is forced to draft a candidate answer, then ask itself an independent, falsifiable verification question ('¿El contexto confirma explícitamente que X es el manejo/diagnóstico correcto para este caso?') and answer that narrower question fresh. If the independent check fails, the scaffold requires switching to the sentinel rather than keeping the anchored draft.",
+    "spanish_tips": "Estructura en 4 pasos internos: '1) Borrador: ¿cuál opción parece más plausible a primera vista? 2) Pregunta de verificación: formula una pregunta puntual que confirmaría o refutaría ese borrador usando solo el contexto. 3) Verificación independiente: responde esa pregunta puntual basándote únicamente en <contexto>{chunks}</contexto>, ignorando tu borrador inicial. 4) Conclusión: si la verificación NO confirma el borrador de forma explícita, cambia tu respuesta a \"Ninguna de las respuestas anteriores es correcta.\"'",
+    "expected_effect": "Empirically reduces hallucination/overconfidence versus zero-shot and plain CoT in the original paper's tasks; the independent-verification step is the key mechanism for breaking anchoring, since the model is forced to re-derive support rather than rationalize its first guess.",
+    "risks": "Longer generation (more steps to fence off from strict JSON output), and the 'independence' of the verification step is imperfect within a single context window — the model can still see and be biased by its own draft even when told to ignore it (no true separation of calls at temperature 0 in a single request). Also raises latency/token cost, which matters if this technique is combined with a large {chunks} context."
+   },
+   {
+    "name": "Process-of-elimination reasoning requiring refutation of every option, not just confirmation of one",
+    "summary": "POE (Ma et al., 2023, 'POE: Process of Elimination for Multiple Choice Reasoning') and the critical follow-up analysis by Balepur et al. (2024, ACL Findings, 'It's Not Easy Being Wrong: LLMs Struggle with Process of Elimination Reasoning') both study having the model explicitly reason about why each WRONG option is wrong (not just why the chosen option is right) before answering. The follow-up paper is an important caution: elimination-style reasoning toward 'this option is incorrect' underperforms confirmation-style reasoning UNLESS it's explicitly grounded in evidence per option rather than open-ended plausibility judgment.",
+    "nota_applicability": "For NOTA specifically, symmetric refutation is the mechanism that catches anchoring: the model must state, for each surviving distractor, what in {chunks} rules it out — not just what supports the top pick. If it cannot produce a grounded refutation while also failing to confirm any option, that combination is the signal for the sentinel. Given the Balepur et al. finding, this should be evidence-grounded elimination (tied to {chunks}), not free-form plausibility elimination, or it can hurt accuracy.",
+    "spanish_tips": "Pide refutación anclada en evidencia, no solo plausibilidad: 'Para cada opción que NO elijas, cita brevemente por qué el contexto la descarta (contradicción explícita) o señala que el contexto simplemente no la menciona. Evita frases como \"es menos probable\"; usa solo lo que el contexto afirma o no afirma.' Añade además una advertencia contra el sesgo de anclaje: 'No selecciones automáticamente la opción que más se parece al contenido del contexto si esa opción no está confirmada explícitamente: la similitud parcial no es suficiente para elegirla en lugar de \"Ninguna de las respuestas anteriores es correcta.\"'",
+    "expected_effect": "Can raise Condition-B accuracy by making the anchoring behavior ('pick the closest surviving distractor') structurally harder to justify in the required output. The cited follow-up paper's finding that naive elimination underperforms confirmation is itself useful: it argues for grounding elimination in retrieved evidence (this cluster's RAG arm) rather than using elimination in a vacuum, which is exactly the setup here.",
+    "risks": "Balepur et al.'s central result is a direct risk warning: elimination-oriented reasoning, if not evidence-anchored, tends to underperform straightforward confirmation-oriented reasoning on standard MCQ — so this technique should be layered ON TOP of per-option evidence verification (grounded in {chunks}), never used as a bare 'explain why each option is wrong' instruction without a context-grounding constraint."
+   },
+   {
+    "name": "Explicit anti-anchoring counter-instruction, motivated by measured LLM/NOTA failure patterns",
+    "summary": "Tam et al. (2025, ACL Findings), 'None of the Above, Less of the Right: Parallel Patterns between Humans and LLMs on Multi-Choice Questions Answering,' ran 28 LLMs on MMLU with the correct answer swapped for a 'None of the Above' option and measured a consistent 30-50% accuracy drop across model scales, concluding that models 'lack the meta-cognitive ability to systematically evaluate and reject all given options when none are correct' — i.e., the exact anchoring failure this project is measuring in Condition B. This motivates a prompt instruction that names the failure mode directly and instructs the model to guard against it.",
+    "nota_applicability": "This is less a novel mechanism and more a citation-backed justification for making the anchoring risk explicit in the prompt itself — telling the model, in-context, that this specific class of question is known to cause models to default to the most similar-looking wrong option, and that it must actively resist that default. Best combined with one of the structural techniques above (per-option verification or CoVe) rather than used alone, since a bare warning without a verification mechanism is weak.",
+    "spanish_tips": "Incluye una frase de calibración de sesgo conocida: 'Ten en cuenta que los modelos de lenguaje tienden a evitar la opción \"Ninguna de las respuestas anteriores es correcta\" incluso cuando es la respuesta correcta, seleccionando en su lugar la opción distractora más parecida a la respuesta real. Corrige activamente ese sesgo: la opción \"Ninguna\" debe evaluarse con el mismo rigor que las demás, ni con más ni con menos resistencia a seleccionarla.'",
+    "expected_effect": "Marginal on its own (a generic debiasing statement rarely fixes a structural reasoning gap by itself, per the same literature's general skepticism of one-line anti-hallucination instructions), but useful as a cheap, zero-risk addition layered on top of per-option verification or CoVe to reinforce the policy and reduce residual anchoring bias.",
+    "risks": "Purely a priming statement — if used alone (without a verification structure forcing the model to check evidence per option) it risks overcorrecting toward the sentinel just as easily as undercorrecting, since it doesn't give the model new evidence, only a new prior. Should never be the sole NOTA-handling technique in the prompt."
+   }
+  ],
+  "citations": [
+   {
+    "title": "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models",
+    "source": "arXiv / EMNLP 2024 (Yu, Zhang, Pan, Ma, Wang, Yu)",
+    "url": "https://arxiv.org/abs/2311.09210",
+    "year": "2023/2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "source": "arXiv (Asai, Wu, Wang, Sil, Hajishirzi)",
+    "url": "https://arxiv.org/abs/2310.11511",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "source": "arXiv / ACL Findings 2024 (Dhuliawala, Komeili, Xu, Raileanu, Li, Celikyilmaz, Weston)",
+    "url": "https://arxiv.org/abs/2309.11495",
+    "year": "2023/2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Corrective Retrieval Augmented Generation",
+    "source": "arXiv (Yan, Gu, Zhu, Ling)",
+    "url": "https://arxiv.org/abs/2401.15884",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Reduce hallucinations (Claude Platform Docs)",
+    "source": "Anthropic Claude Platform documentation",
+    "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+    "year": "n.d.",
+    "found_via_web": true
+   },
+   {
+    "title": "Faithfulness (RAGAS metric documentation)",
+    "source": "Ragas docs",
+    "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/",
+    "year": "n.d.",
+    "found_via_web": true
+   },
+   {
+    "title": "None of the Above, Less of the Right: Parallel Patterns between Humans and LLMs on Multi-Choice Questions Answering",
+    "source": "ACL Findings 2025 (Tam, Wu, Lin, Chen)",
+    "url": "https://aclanthology.org/2025.findings-acl.1031/",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "POE: Process of Elimination for Multiple Choice Reasoning",
+    "source": "arXiv (Ma et al.)",
+    "url": "https://arxiv.org/abs/2310.15575",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "It's Not Easy Being Wrong: Large Language Models Struggle with Process of Elimination Reasoning",
+    "source": "ACL Findings 2024 (Balepur et al.)",
+    "url": "https://aclanthology.org/2024.findings-acl.604/",
+    "year": "2024",
+    "found_via_web": true
+   }
+  ],
+  "top_recommendations": [
+   "Per-option evidence verification (RAGAS-style faithfulness applied to each MCQ option, including the sentinel) as the core mechanism — pairs the explicit grounding/abstention policy with a structural, per-option support check that directly breaks anchoring.",
+   "Layer the Corrective-RAG-style retrieval-quality gate (Suficiente / Ambiguo / Irrelevante) on top, as the first-pass triage for the RAG arm's empty/off-topic retrieval cases before per-option verification runs.",
+   "Add the explicit grounding + license-to-abstain instruction and the anti-anchoring counter-instruction as cheap, zero-risk framing that reinforces the above two mechanisms rather than replacing them.",
+   "Reserve Chain-of-Verification and evidence-grounded process-of-elimination as higher-cost, higher-rigor variants to A/B against the simpler per-option verification prompt, given their added latency/output length and (for elimination) the documented risk of underperforming confirmation-style reasoning when not evidence-anchored."
+  ]
+ },
+ {
+  "citations": [
+   {
+    "title": "Large Language Models are Zero-Shot Reasoners",
+    "source": "arXiv:2205.11916 (Kojima, Gu, Reid, Matsuo, Iwasawa; NeurIPS 2022)",
+    "url": "https://arxiv.org/abs/2205.11916",
+    "year": "2022",
+    "found_via_web": true
+   },
+   {
+    "title": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models",
+    "source": "arXiv:2305.04091 / ACL 2023 (Wang, Xu, Lan, et al.)",
+    "url": "https://arxiv.org/pdf/2305.04091",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "None of the Above, Less of the Right: Parallel Patterns between Humans and LLMs on Multi-Choice Questions Answering",
+    "source": "arXiv:2503.01550 (Tam, Wu, Lin, Chen)",
+    "url": "https://arxiv.org/html/2503.01550v1",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "WiCkeD: A Simple Method to Make Multiple Choice Benchmarks More Challenging",
+    "source": "arXiv:2502.18316 (Elhady, Agirre, Artetxe)",
+    "url": "https://arxiv.org/abs/2502.18316",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "POE: Process of Elimination for Multiple Choice Reasoning",
+    "source": "arXiv:2310.15575 / EMNLP 2023 (Ma, Du)",
+    "url": "https://arxiv.org/abs/2310.15575",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "It's Not Easy Being Wrong: Large Language Models Struggle with Process of Elimination Reasoning",
+    "source": "arXiv:2311.07532 (Balepur, Palta, Rudinger)",
+    "url": "https://arxiv.org/abs/2311.07532",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Can large language models reason about medical questions?",
+    "source": "arXiv:2207.08143; Patterns (2024) (Liévin, Hother, Motzfeldt, Winther)",
+    "url": "https://arxiv.org/abs/2207.08143",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "To Reason or Not to: Selective Chain-of-Thought in Medical Question Answering",
+    "source": "arXiv:2602.20130 (Zhan, Zeng, Zhou, Song, Chen, Hou, Wu, Ruan, Zhang)",
+    "url": "https://arxiv.org/abs/2602.20130",
+    "year": "2026",
+    "found_via_web": true
+   },
+   {
+    "title": "Why Chain of Thought Fails in Clinical Text Understanding",
+    "source": "arXiv:2509.21933 (Wu, Xie, Gu, Krüger, Lin, Yang — Harvard Medical School / MIT / Broad Institute)",
+    "url": "https://arxiv.org/html/2509.21933v1",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "source": "arXiv:2309.11495 / ACL Findings 2024 (Dhuliawala et al., Meta AI)",
+    "url": "https://arxiv.org/abs/2309.11495",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine (Medprompt)",
+    "source": "arXiv:2311.16452 (Nori et al., Microsoft Research)",
+    "url": "https://arxiv.org/abs/2311.16452",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+    "source": "arXiv:2310.06117 (Zheng, Mishra, Chen, Cheng, Chi, Le, Zhou — Google DeepMind)",
+    "url": "https://arxiv.org/abs/2310.06117",
+    "year": "2023",
+    "found_via_web": true
+   }
+  ],
+  "cluster": "Chain-of-thought / step-by-step clinical reasoning for medical MCQ, focused on NOTA (none-of-the-above / answer-absent) detection at temperature 0 in a single model call",
+  "techniques": [
+   {
+    "name": "Explicit NOTA decision rule (make 'Ninguna...' a real, rule-governed option)",
+    "summary": "The single highest-leverage lever identified by the NOTA-specific literature: both Tam et al. (2025, 'None of the Above, Less of the Right') and Elhady et al. (2025, WiCkeD) show LLMs suffer a 12-50 percentage-point accuracy drop specifically because they 'lack the meta-cognitive ability to systematically evaluate and reject all given options when none are correct' — and crucially, both papers found that adding generic 0-shot CoT does NOT close this gap on its own. The current live prompt gives the sentinel zero policy, which is exactly the failure condition these papers diagnose. The fix is a short, explicit instruction stating that the NOTA option is valid, non-trick, and must be selected under a stated criterion.",
+    "nota_applicability": "Directly targets the diagnosed failure mode: models must be told, in-prompt, that 'Ninguna de las respuestas anteriores es correcta' is evaluated with the same rigor as A-D and is selected only when NONE of A-D is fully and absolutely correct — not merely 'less good' than the others.",
+    "spanish_tips": "\"'Ninguna de las respuestas anteriores es correcta' es una opción tan válida como A, B, C o D, y NO es una opción trampa ni un relleno. Evalúa las cuatro opciones clínicas frente al caso con el mismo rigor. Selecciona 'Ninguna de las respuestas anteriores es correcta' únicamente si, tras esa evaluación, NINGUNA opción es clínicamente correcta y completa — no selecciones una opción solo por ser la más parecida, la más plausible o 'la menos incorrecta'.\"",
+    "expected_effect": "Should directly raise Condition-B recall on the sentinel by removing the default pretrained bias against selecting an NA-style option, per the mechanism both cited papers attribute the baseline gap to.",
+    "risks": "Symmetry risk: an aggressively worded rule can flip the model into over-selecting NOTA on Condition-A (normal) items where a genuinely correct option is present, trading false negatives for false positives. Must pair with 'correcta en términos absolutos, no relativos' language and be validated against Condition-A accuracy, not Condition-B alone."
+   },
+   {
+    "name": "Step-back / independent-derivation before viewing the anchor-inducing option list",
+    "summary": "Adapted from Zheng et al.'s (2023) Step-Back Prompting ('Take a Step Back: Evoking Reasoning via Abstraction'), which has the model first derive a high-level answer/concept independently, then use that to guide comparison against candidates, improving accuracy 7-27 points on knowledge and reasoning benchmarks. Applied here: have the model state the clinically indicated diagnosis/management BEFORE scanning the option list, so it has an independent target to match rather than scanning for 'the option that looks closest.'",
+    "nota_applicability": "This is the direct countermeasure to anchoring: the failure mode described in the task (model gravitates to the closest surviving distractor) happens because the model reasons *from* the options inward. Deriving the answer first, then checking for a match, structurally prevents that inward pull — if nothing matches the independently derived answer, NOTA is the natural, not effortful, choice.",
+    "spanish_tips": "\"Antes de mirar las opciones, indica en un campo interno cuál sería, según los hallazgos clínicos del caso, el diagnóstico o la conducta correcta. Después, compara tu respuesta independiente con las opciones A-D y con 'Ninguna de las respuestas anteriores es correcta'. Marca como correcta la opción que coincida EXACTAMENTE en contenido clínico con tu respuesta independiente; si ninguna coincide, selecciona 'Ninguna de las respuestas anteriores es correcta'.\"",
+    "expected_effect": "Reduces anchoring-driven false negatives on Condition-B items without necessarily costing Condition-A accuracy, since the derivation step happens before option exposure and is unaffected by which distractors are present.",
+    "risks": "If the model's independently derived answer is itself wrong (a genuine knowledge gap, not a NOTA case), it may mismatch a correct listed option and over-select NOTA. Also adds tokens/latency. The matching criterion must be 'same clinical substance,' not literal string match, or paraphrased-but-correct options get wrongly rejected."
+   },
+   {
+    "name": "Per-option evidence-support checklist, framed as verification not elimination",
+    "summary": "A single-call adaptation of Chain-of-Verification (Dhuliawala et al. 2023) and Process-of-Elimination (Ma & Du 2023), but deliberately reframed to avoid a documented failure mode: Balepur, Palta & Rudinger (2023, 'It's Not Easy Being Wrong') found that CoT reasoning explicitly toward WHY options are incorrect always underperforms direct answering — models rationalize themselves into bad picks when asked to argue against options. The safer framing is 'does the evidence support this option?' (verification) rather than 'why is this option wrong?' (elimination/argumentation).",
+    "nota_applicability": "Forces the model to explicitly test the one surviving option that most resembles the removed correct answer — the exact spot where silent anchoring happens — instead of implicitly waving it through.",
+    "spanish_tips": "\"Para cada opción (A, B, C, D), escribe en una línea si el cuadro clínico la respalda ('Compatible') o no la respalda ('No compatible'), con una justificación breve. Solo si NINGUNA opción resulta 'Compatible' con el cuadro clínico, selecciona 'Ninguna de las respuestas anteriores es correcta'.\" Avoid verbs like \"descarta\"/\"refuta\" (argue-against framing); prefer \"¿el caso respalda...?\" (evidence-support framing).",
+    "expected_effect": "Should raise NOTA recall by making the last-survivor check explicit and mandatory rather than implicit, while sidestepping the specific 'reasoning toward wrongness' failure mode Balepur et al. documented.",
+    "risks": "Wu et al. (2025, 'Why Chain of Thought Fails in Clinical Text Understanding' — 95 models, 87 clinical tasks) found longer reasoning traces correlate with worse clinical-QA performance (86.3% of models degraded under CoT), so each option line must stay to one short sentence, not a full differential-diagnosis paragraph, or the added length itself becomes a new error source."
+   },
+   {
+    "name": "Plan-and-Solve scaffolding (extract findings before touching options)",
+    "summary": "Wang et al.'s (2023) Plan-and-Solve Prompting replaces the bare 'let's think step by step' with an explicit two-phase template — first devise a plan / understand the problem, then execute — to fix Zero-shot-CoT's missing-step and semantic-misunderstanding errors.",
+    "nota_applicability": "Used as scaffolding around techniques 1-3: forces key-finding extraction to happen before any option is read, delaying the anchoring-vulnerable comparison step until after the clinical picture is fully framed.",
+    "spanish_tips": "\"Primero, enumera brevemente los hallazgos clínicos clave del caso, sin mirar las opciones de respuesta. A continuación, deriva la conducta o el diagnóstico que dichos hallazgos justifican clínicamente. Finalmente, compara esa conclusión con las opciones ofrecidas (incluida 'Ninguna de las respuestas anteriores es correcta') y elige.\"",
+    "expected_effect": "Modest general accuracy gains on reasoning-heavy items (per the original paper's benchmark results); mainly useful as structure that other techniques attach to.",
+    "risks": "On its own, structuring does NOT fix the NOTA gap — both WiCkeD and Tam et al. explicitly tested CoT variants and found the NA/NOTA degradation persisted regardless of reasoning quality. This must be combined with technique 1 (explicit decision rule) to have any NOTA-specific effect; used alone it is a no-op on the target metric."
+   },
+   {
+    "name": "Scope reasoning tightly; do not apply blanket CoT (selective / short-form reasoning)",
+    "summary": "A caution, not an add-on: Zhan et al. (2026, 'To Reason or Not to: Selective Chain-of-Thought in Medical Question Answering') show CoT should be invoked only when a question needs it, cutting tokens 8-47% with minimal accuracy loss, because forcing full reasoning on straightforward items can hurt. Wu et al. (2025) reinforce this specifically for clinical text: reasoning-trace length correlates negatively with accuracy, with hallucination, omission, and incompleteness as the dominant failure modes as traces grow.",
+    "nota_applicability": "For a NOTA-detection task specifically, deliberate reasoning is warranted (it's exactly the 'needs reasoning' case these papers describe), but it should be bounded and targeted (findings -> per-option check -> decision) rather than open-ended free-form deliberation, to avoid the length-correlated degradation both papers report.",
+    "spanish_tips": "Cap the reasoning with explicit brevity constraints: \"Sé breve en cada paso (una frase por hallazgo u opción); no repitas el enunciado del caso.\" Keep the internal reasoning field length-bounded if the JSON schema allows a short 'razonamiento' field alongside the answer field.",
+    "expected_effect": "Preserves the accuracy benefit of deliberate reasoning on the hard NOTA case while avoiding the accuracy cost that long, unscoped CoT traces impose on clinical text tasks specifically.",
+    "risks": "If reasoning is cut too short, the per-option verification checklist (technique 3) loses fidelity and reverts to anchoring; the right length is an empirical tuning question for this specific prompt/model, not a fixed rule from the literature."
+   },
+   {
+    "name": "Evidence-grounded verification against retrieved {chunks} (RAG-arm specific)",
+    "summary": "For the planned RAG arm, extend the per-option verification step (technique 3) so each option must be checked against the retrieved clinical context, not parametric memory — echoing CoVe's 'answer verification questions independently of the draft' and Medprompt's (Nori et al. 2023) finding that retrieval and CoT are synergistic on medical MCQ (their combined pipeline drove GPT-4 past 90% on MedQA-USMLE).",
+    "nota_applicability": "This is expected to be the single biggest NOTA lift once retrieval is added: 'not supported by the retrieved text' is a much cleaner, checkable signal for answer-absence than 'not remembered from parametric knowledge,' directly serving the stated ultimate target (retrieval + NOTA-aware technique = biggest lift).",
+    "spanish_tips": "\"Usando ÚNICAMENTE el contexto clínico recuperado a continuación ({chunks}), verifica si cada opción está respaldada explícitamente por ese texto. Si el contexto no respalda de forma clara y completa ninguna opción, selecciona 'Ninguna de las respuestas anteriores es correcta'. No utilices conocimiento externo al contexto proporcionado para justificar una opción que el texto no respalda.\"",
+    "expected_effect": "Should sharply increase NOTA precision/recall once RAG is live, per the retrieval+CoT synergy reported in Liévin et al. (2024) and Nori et al. (2023) on medical MCQ benchmarks.",
+    "risks": "Retrieval-recall failures masquerade as answer-absence: if {chunks} misses the passage that would have supported the true correct option (a retrieval bug, not a genuine NOTA case), this technique will confidently over-select NOTA. Needs a distinction in phrasing between 'context does not support' and 'answer does not exist,' and should be monitored jointly with retrieval quality metrics, not evaluated in isolation."
+   }
+  ],
+  "top_recommendations": [
+   "Add an explicit NOTA decision rule to the prompt (technique 1) — this is the top priority: the NOTA-specific literature (Tam et al. 2025; Elhady et al. 2025/WiCkeD) shows the current gap is a meta-cognitive/policy gap that generic CoT alone does not fix, so a stated selection rule is necessary before any reasoning-structure change will help.",
+   "Layer step-back independent-derivation (technique 2) on top of the decision rule: have the model state its own answer before reading the option list, so it has a target to match instead of scanning for 'closest' — this is the mechanism-level fix for anchoring specifically.",
+   "Use per-option 'Compatible/No compatible' verification (technique 3), not argue-against-wrong-answers elimination — Balepur et al. (2023) found the latter underperforms direct answering, so keep the framing evidential rather than adversarial, and keep each line short given Wu et al.'s (2025) length-degradation finding.",
+   "Do not rely on bare 'piensa paso a paso' zero-shot CoT alone — WiCkeD and Tam et al. both show it leaves the NOTA gap essentially unchanged; treat CoT as necessary scaffolding, not sufficient by itself.",
+   "For the future RAG arm, bind the verification step to {chunks} explicitly (technique 6) — this is where the biggest combined lift is expected per Medprompt/Liévin et al.'s retrieval+CoT synergy results, but instrument retrieval recall separately so a missing chunk isn't misread as a genuine NOTA case."
+  ]
+ },
+ {
+  "cluster": "Recall-first / closed-book \"generate-then-answer\" (self-generated knowledge) + abstention & confidence calibration for MCQ — applied to NOTA (none-of-the-above / answer-absence) detection in Spanish gastroenterology MCQs, single call, temperature 0.",
+  "techniques": [
+   {
+    "name": "Generated Knowledge / \"recall-then-compare\" prompting (self-generated knowledge before viewing options)",
+    "summary": "Liu et al. (2022) show that having the model first generate task-relevant knowledge, then condition its final answer on that self-generated knowledge, beats answering directly — the model commits to what it independently knows before being biased by the option set. Adapted to a single call: instruct the model to first state, in 2-3 lines, what the clinically correct fact/answer to the vignette is BEFORE reading option text critically, then compare that recalled fact against each option.",
+    "nota_applicability": "Anchoring on the closest distractor happens because the model evaluates options relative to each other rather than against an independently-recalled ground truth. Forcing recall-before-comparison gives the model an external reference point: if none of options A-D match the recalled fact, that mismatch is the trigger to pick the sentinel instead of the 'least wrong' survivor.",
+    "spanish_tips": "\"Antes de leer las opciones con atención, redacta brevemente (2-3 líneas) cuál es, según tu conocimiento clínico, la respuesta correcta a esta pregunta de gastroenterología. Después, compara ese conocimiento con cada opción (A-D). Si ninguna opción coincide con lo que has recordado, selecciona 'Ninguna de las respuestas anteriores es correcta.'\"",
+    "expected_effect": "In the original commonsense-reasoning tasks this technique produced state-of-the-art gains (NumerSense, CommonsenseQA2.0, QASC) by grounding answers in independently retrieved knowledge rather than option-relative plausibility; analogous effect expected here is fewer false positives caused by picking the closest surviving distractor.",
+    "risks": "The self-generated 'recalled fact' can itself be hallucinated or subtly wrong, which would then falsely justify rejecting a genuinely correct option (over-selecting Ninguna) or falsely validating a wrong one; adds output length/tokens (must be embedded as an internal reasoning field before the final strict JSON answer, not a second API call)."
+   },
+   {
+    "name": "Structured per-option Chain-of-Thought evaluation for abstention",
+    "summary": "Madhusudhan et al. 2024 (arXiv:2407.16221) tested three prompting strategies for LLM abstention — Strict Prompting, Verbal Confidence Thresholding, and Chain-of-Thought — and found CoT ('verbalize the thought process step-by-step leading up to the response') outperformed the other two on precision, unanswerable-accuracy, and abstention-rate metrics.",
+    "nota_applicability": "Require the model to reason explicitly about EACH option's correctness against the clinical vignette (not just jump to the best-sounding one) and only emit the final choice after all options — including the sentinel — have been considered. This directly targets anchoring, which happens when the model locks onto the first plausible-looking option.",
+    "spanish_tips": "\"Antes de responder, razona brevemente sobre cada opción (A, B, C, D), indicando si es correcta o incorrecta según los datos clínicos del caso. Solo después de evaluar las cuatro, decide tu respuesta final. Si ninguna opción A-D es correcta, tu respuesta debe ser 'Ninguna de las respuestas anteriores es correcta.'\"",
+    "expected_effect": "Per the source paper, CoT was the strongest of the three tested single/few-call strategies for raising unanswerable-question accuracy while best preserving answerable-question accuracy.",
+    "risks": "Same paper found CoT increased over-abstention specifically in under-represented knowledge domains — abstention rate rose but 'answerable accuracy often decreased,' i.e. the model started abstaining on questions it could have answered correctly. In a gastroenterology-specialist setting this risk is lower (well-represented domain) but should still be monitored via Condition-A accuracy, not just Condition-B."
+   },
+   {
+    "name": "Process of Elimination (POE) — binary discard-or-keep per option before final selection",
+    "summary": "Ma et al. 2023 (EMNLP, arXiv:2310.15575) propose a two-phase method: score and eliminate options that are clearly wrong, then select the final answer only from the surviving set (or none, if all are eliminated). Mirrors how humans approach MCQs.",
+    "nota_applicability": "Operationalizes elimination as an explicit binary judgment per option ('DESCARTABLE' vs 'NO DESCARTABLE') rather than a relative ranking. This matters because arXiv:2402.01349 found LLMs tend to pick the 'least incorrect' option rather than recognize all options as wrong — POE's absolute discard criterion is a structural fix: if all four clinical options end up discarded, the sentinel is the only one left standing, which is a more mechanical/robust trigger than 'which do I like best.'",
+    "spanish_tips": "\"Evalúa cada opción clínica de forma independiente y clasifícala como DESCARTABLE (claramente incompatible con el caso) o NO DESCARTABLE. Si las cuatro opciones (A-D) resultan DESCARTABLES, selecciona automáticamente 'Ninguna de las respuestas anteriores es correcta' como la única opción NO DESCARTABLE restante.\"",
+    "expected_effect": "POE showed measurable zero-shot gains across 8 reasoning tasks, with the largest gains on logical-reasoning-style tasks — a good match for the structured elimination needed in clinical vignette MCQs.",
+    "risks": "If the discard judgment is still implicitly relative ('this is less wrong than that, so I'll call it NOT DESCARTABLE'), the technique degenerates back into anchoring; the instruction must anchor 'DESCARTABLE' to an absolute clinical-correctness standard, not to inter-option comparison. Also risks discarding a correct-but-atypically-worded option (over-selecting Ninguna)."
+   },
+   {
+    "name": "Explicit least-incorrect-bias countermeasure + legitimized/absolute-correctness instruction for the sentinel option",
+    "summary": "arXiv:2402.01349 ('LLMs May Perform MCQA by Selecting the Least Incorrect Option') documents that when correct options are swapped for 'None of the above,' accuracy collapses (e.g., 74.44% -> 3.54% in one setup) because models select whichever surviving option is 'least wrong' rather than truly correct. The authors' own probe instruction — 'If you think there is no correct answer, you can respond with \"no answer\"' — raised GPT-4o's answer-absence detection to ~60%.",
+    "nota_applicability": "Directly names the failure mode to the model and gives it permission/expectation to use the sentinel: options may ALL be wrong; correctness must be judged on an absolute clinical standard (matches the case data fully and precisely), not by comparison to the other three distractors.",
+    "spanish_tips": "\"Ten en cuenta que ninguna de las opciones A-D tiene por qué ser correcta: pueden ser todas incorrectas. No elijas la opción 'menos incorrecta' ni la más parecida a la respuesta correcta. Elige una opción A-D solo si es COMPLETA y CLÍNICAMENTE EXACTA para este caso. Si ninguna cumple ese estándar exacto, la respuesta correcta es 'Ninguna de las respuestas anteriores es correcta.'\"",
+    "expected_effect": "Measured lift in the source paper (up to ~60% detection for GPT-4o vs much lower baselines on other models), making this one of the few interventions with a directly reported before/after NOTA-detection number.",
+    "risks": "Even with the instruction, ~40% of cases were still missed in the cited study — insufficient alone, best combined with per-option CoT/POE above; also risk of over-triggering Ninguna on correct options phrased less precisely than the source material (excessive literalism)."
+   },
+   {
+    "name": "Premature-closure / anchoring-bias mitigation via forced alternative-consideration and delayed commitment",
+    "summary": "Handler, Bedi & Shah (2026, arXiv:2605.15000) show frontier LLMs replicate the classic medical cognitive error of 'premature closure' — anchoring on an initial diagnostic hypothesis and resisting revision even against contradicting evidence. Their tested mitigations: explicit consideration of alternative hypotheses, delayed commitment (withhold a final judgment until all information/options are reviewed), and structured stepwise reasoning frameworks — all reported to measurably reduce anchoring versus baseline.",
+    "nota_applicability": "This is the clinical-reasoning-literature analogue of the exact NOTA-anchoring failure mode described in the prompt: don't let the model 'settle' on the first plausible distractor. Instruct it not to commit to any answer until it has explicitly reviewed all options INCLUDING the sentinel, and to explicitly list at least one alternative to its initial impression before finalizing.",
+    "spanish_tips": "\"No te comprometas con ninguna respuesta hasta haber evaluado las cinco opciones, incluida 'Ninguna de las respuestas anteriores es correcta.' Antes de decidir, considera explícitamente si existe una alternativa diagnóstica o terapéutica distinta a tu primera impresión que también podría encajar con el caso.\"",
+    "expected_effect": "Paper reports measurable reduction in premature-closure-driven errors with structured/delayed-commitment prompting relative to unconstrained baseline responses.",
+    "risks": "Adds reasoning length/latency (manageable within a single call); does not eliminate anchoring entirely — it's a mitigation, not a fix, and the paper's own framing implies frontier models still exhibit residual anchoring after intervention."
+   },
+   {
+    "name": "Chain-of-Verification (CoVe), compressed to a single-call draft-then-verify step",
+    "summary": "Dhuliawala et al. 2023 (arXiv:2309.11495): the model (i) drafts an initial answer, (ii) plans targeted verification questions, (iii) answers them, (iv) produces a final response revised in light of the verification. Reduces hallucination by decoupling verification from the possibly-biased initial draft.",
+    "nota_applicability": "Single-call adaptation: after drafting a preliminary option pick, force an explicit self-check — 'does the vignette EXPLICITLY state/support this exact option's clinical claim?' — for the draft AND for the sentinel. If the draft fails its own verification and no other option passes either, switch the final answer to Ninguna.",
+    "spanish_tips": "\"Redacta una respuesta preliminar. A continuación, verifícala: ¿el caso clínico confirma de forma explícita y completa esa opción con los datos proporcionados? Si la respuesta preliminar no supera esta verificación y ninguna otra opción la supera tampoco, tu respuesta final debe ser 'Ninguna de las respuestas anteriores es correcta.'\"",
+    "expected_effect": "CoVe reduced hallucinated/unsupported claims across list-based QA, closed-book multi-span QA, and long-form generation in the original paper.",
+    "risks": "The original design's benefit partly comes from answering verification questions independently/without seeing the biased draft (often via separate calls); compressing everything into one context/one call weakens that independence and may let the same anchoring bias leak into the 'verification' step, producing false confidence rather than a genuine check."
+   },
+   {
+    "name": "Context-faithful / opinion-based grounding prompting (for the RAG arm)",
+    "summary": "Zhou et al. 2023 (arXiv:2303.11315): reframing provided context as an authoritative narrator's statement ('according to the passage...') and prompting the model to answer strictly from that framing — plus counterfactual demonstrations where context conflicts with prior/parametric knowledge — measurably improves reliance on given context over the model's own memorized priors, with no additional training required.",
+    "nota_applicability": "This is the key lever for the planned RAG arm: with retrieved clinical chunks ({chunks}) in context, instruct the model to answer ONLY from what the retrieved text explicitly supports. If the chunks don't explicitly support any of the surviving options, that is the trigger to pick the sentinel — turning 'is the answer present' into a literal grounding check instead of a knowledge-recall guess, which should substantially blunt anchoring on the closest distractor.",
+    "spanish_tips": "\"Basándote ÚNICAMENTE en el contexto clínico recuperado a continuación (y no en conocimiento externo), ¿cuál de las siguientes opciones es correcta? Si el contexto no respalda explícitamente ninguna de las opciones A-D, la respuesta correcta es 'Ninguna de las respuestas anteriores es correcta.' No utilices conocimiento médico general para justificar una opción que el contexto no confirma directamente.\"",
+    "expected_effect": "Reported to improve context-faithfulness in knowledge-conflict situations across the paper's benchmarks without fine-tuning — directly relevant since it is a pure prompting technique compatible with single-call, temperature-0 use.",
+    "risks": "Over-literal grounding can cause over-selection of Ninguna when the retrieved chunk paraphrases or implies the answer without stating it verbatim; also fully dependent on retrieval quality — if the relevant chunk wasn't retrieved, a genuinely correct option will look 'unsupported,' driving false NOTA selection. Needs a middle-ground instruction ('explicitly supports or logically follows from') rather than requiring verbatim string match."
+   },
+   {
+    "name": "Verbalized confidence thresholding (self-rated confidence gating the final choice)",
+    "summary": "Ask the model to rate its confidence (e.g., 1-5) in its selected option and instruct that low-confidence picks should be reconsidered in favor of the sentinel. Tested as one of the three strategies in arXiv:2407.16221; general calibration literature (arXiv:2410.04315, 'Calibrating Expressions of Certainty') documents that verbalized confidence is frequently miscalibrated.",
+    "nota_applicability": "Could serve as a final gate ('if confidence <= 2, switch to Ninguna') layered on top of one of the reasoning-based techniques above, but should not be relied on as the primary NOTA-detection mechanism.",
+    "spanish_tips": "\"Indica tu nivel de confianza (escala 1-5) en la opción elegida. Si tu confianza es baja (1-2), reconsidera si 'Ninguna de las respuestas anteriores es correcta' sería la respuesta más apropiada.\"",
+    "expected_effect": "In the cited abstention study this strategy showed inconsistent results across models, with only GPT-4 Turbo showing a slight, non-uniform improvement — weaker than CoT.",
+    "risks": "Verbalized confidence scores are broadly documented as poorly calibrated (stated confidence does not track true correctness likelihood); in a strict-JSON single-call pipeline this adds a gameable/unreliable signal that could just as easily cause under- as over-selection of the sentinel. Lowest-priority technique of this set."
+   },
+   {
+    "name": "Self-consistency (majority vote over multiple sampled reasoning chains) — noted but deprioritized",
+    "summary": "Wang et al. 2022: sample several chain-of-thought reasoning paths at non-zero temperature and take a majority vote over the final answers, rather than trusting a single greedy decode.",
+    "nota_applicability": "In principle, majority-voting whether the answer is present vs. absent would reduce the chance that a single greedy trace anchors on a distractor — this is well-documented to work for reasoning tasks generally.",
+    "spanish_tips": "Not applicable as a single-prompt phrasing technique — it is a decoding-time/inference-architecture method, not a prompt wording change.",
+    "expected_effect": "Large reported gains on reasoning benchmarks in the literature via multi-sample majority voting.",
+    "risks": "Directly conflicts with the stated experimental constraints (temperature 0, single model call): requires multiple calls and stochastic sampling, which increases cost/latency and breaks the pipeline's determinism requirement. Flagged only as a possible future multi-call ablation, not a candidate for the current single-call temp-0 arms."
+   }
+  ],
+  "citations": [
+   {
+    "title": "Generated Knowledge Prompting for Commonsense Reasoning",
+    "source": "arXiv / ACL 2022",
+    "url": "https://arxiv.org/abs/2110.08387",
+    "year": "2022",
+    "found_via_web": true
+   },
+   {
+    "title": "Do LLMs Know When to NOT Answer? Investigating Abstention Abilities of Large Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2407.16221",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "POE: Process of Elimination for Multiple Choice Reasoning",
+    "source": "arXiv / EMNLP 2023",
+    "url": "https://arxiv.org/abs/2310.15575",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "LLMs May Perform MCQA by Selecting the Least Incorrect Option",
+    "source": "arXiv (COLING 2025)",
+    "url": "https://arxiv.org/html/2402.01349v3",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Quantifying and Mitigating Premature Closure in Frontier LLMs",
+    "source": "arXiv",
+    "url": "https://arxiv.org/pdf/2605.15000",
+    "year": "2026",
+    "found_via_web": true
+   },
+   {
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2309.11495",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Context-faithful Prompting for Large Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2303.11315",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "The Art of Refusal: A Survey of Abstention in Large Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/html/2407.18418v1",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "None of the Others: a General Technique to Distinguish Reasoning from Memorization in Multiple-Choice LLM Evaluation Benchmarks",
+    "source": "arXiv",
+    "url": "https://arxiv.org/pdf/2502.12896",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "Calibrating Expressions of Certainty",
+    "source": "arXiv",
+    "url": "https://arxiv.org/pdf/2410.04315",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "source": "ResearchGate (arXiv preprint)",
+    "url": "https://www.researchgate.net/publication/359390115_Self-Consistency_Improves_Chain_of_Thought_Reasoning_in_Language_Models",
+    "year": "2022",
+    "found_via_web": true
+   }
+  ],
+  "top_recommendations": [
+   "For the base (no-RAG) arm: combine (1) explicit least-incorrect-bias countermeasure ['options may ALL be wrong; judge on absolute clinical accuracy, not relative plausibility'] with (2) structured per-option CoT evaluation that reviews all four clinical options plus the sentinel before committing — this pairing directly targets the two documented failure modes (least-incorrect selection bias and premature closure/anchoring) and is fully single-call, temperature-0 compatible.",
+   "Layer a Process-of-Elimination (POE) instruction on top: require an absolute DESCARTABLE/NO-DESCARTABLE judgment per option so 'all four discarded' becomes a mechanical trigger for selecting Ninguna, rather than leaving the sentinel decision to holistic judgment alone.",
+   "Optionally prepend a brief self-generated-knowledge recall step ('state the clinically correct answer before reading options') as an independent reference point the model can compare options against — cheap to add, directly counters option-relative anchoring.",
+   "For the RAG arm specifically, prioritize context-faithful/opinion-based grounding prompting ('answer ONLY from what the retrieved context explicitly supports; if no option is supported, answer Ninguna') — this is the single highest-leverage technique once {chunks} are available, since it converts NOTA detection from a knowledge-recall guess into a literal grounding check.",
+   "Deprioritize verbalized confidence thresholding (weak, miscalibrated per cited literature) and exclude self-consistency/majority-voting (requires multiple non-zero-temperature calls, violating the single-call temperature-0 constraint) from the current experiment; keep both only as candidates for a future multi-call ablation.",
+   "Whichever combination is chosen, explicitly guard against over-selection: pair every NOTA-encouraging instruction with a countervailing line ('do not select Ninguna merely because an option is imperfectly worded or you are moderately uncertain — only when no option is clinically supported') since every cited abstention study reports over-abstention as the mirror-image risk to anchoring."
+  ]
+ },
+ {
+  "cluster": "Medprompt-style ensembling, kNN few-shot exemplar selection, self-consistency, and self-verification/self-refine for medical MCQ — applied to the NOTA (Ninguna de las respuestas anteriores es correcta) answer-absence problem in a Spanish gastroenterology single-call, temperature-0, strict-JSON prompt.",
+  "techniques": [
+   {
+    "name": "Medprompt: dynamic kNN few-shot selection + self-generated CoT (single-call components only)",
+    "summary": "Nori et al. (Microsoft, 2023) combine three components to push GPT-4 to SOTA on MedQA/MultiMedQA: (1) kNN-retrieved few-shot exemplars most similar to the test question, each paired with a GPT-4-generated chain-of-thought explanation, (2) self-generated CoT instead of hand-written rationales, and (3) answer-choice-shuffle ensembling across multiple calls (majority vote). On MedQA this yielded a 9-point absolute accuracy gain and first-time >90%. Components 1-2 are single-call and temperature-0 compatible; component 3 (shuffle ensemble) requires multiple calls and is a separate cost tier.",
+    "nota_applicability": "The exemplar pool is the lever for NOTA: seed the kNN index (or a small fixed exemplar set if no embedding infra exists) with worked examples where the sentinel is the correct choice, each showing a full reasoning trace that explicitly rules out A-D before landing on 'Ninguna'. Without at least one such exemplar, the model has zero demonstrated precedent for ever picking the sentinel and will default to anchoring on the closest distractor, exactly as your no-policy prompt does today.",
+    "spanish_tips": "Ejemplo de exemplar (few-shot, en el mismo bloque de instrucciones): 'Pregunta: [enunciado]. Opciones: A) ... B) ... C) ... D) ... E) Ninguna de las respuestas anteriores es correcta. Razonamiento: A es incorrecta porque [motivo clínico específico]; B es incorrecta porque [motivo]; C es incorrecta porque [motivo]; D es incorrecta porque [motivo]. Como ninguna opción literal cumple el criterio diagnóstico/terapéutico exigido por el enunciado, la respuesta correcta es E) Ninguna de las respuestas anteriores es correcta.' Keep 1-3 such exemplars mixed with ordinary (non-NOTA) worked examples so the model doesn't learn 'always suspect E'.",
+    "expected_effect": "Reported +9 points absolute on MedQA from the full Medprompt stack (ensembling included); the few-shot+CoT-only subset is reported as the largest single contributor in ablations discussed in secondary write-ups. For your Condition B specifically, expect the effect to concentrate on recognition (fewer missed-NOTA cases) rather than raw accuracy, since Condition A is already easy.",
+    "risks": "kNN retrieval requires an embedding index and exemplar bank — infra cost, and a bad/unrepresentative NOTA exemplar can just teach a new anchoring pattern (e.g., 'pick E when the question mentions rare complications'). If you fix the exemplar set (no kNN) instead of retrieving dynamically, watch for the model pattern-matching on exemplar surface features rather than the clinical logic."
+   },
+   {
+    "name": "NOTA-aware explicit selection policy with a symmetric guardrail",
+    "summary": "Grounded in two empirical findings: (a) 'None of the Others' (Sánchez Salido, Gonzalo & Marco, UNED, 2025, arXiv:2502.12896) shows that replacing the correct MMLU/UNED-Access answer with a Spanish 'ninguna de las otras' option causes large, domain-dependent accuracy drops (their DeepSeek-R1-70B example: -16.7% on MMLU-English vs -38.9% on the same content in Spanish) — the failure is worse in Spanish than in English on their data; (b) 'LLM Abstention Can Be a Prompt Artifact' (arXiv:2507.16199) shows the opposite failure mode: simply adding an 'Unknown'/'None of the above' option, with no other change, causes LLMs to over-abstain far beyond genuine uncertainty — abstention rate is driven by the option's mere presence, not by evidence. Your prompt currently has neither guardrail, so it is exposed to whichever failure mode the base model defaults to.",
+    "nota_applicability": "This is the direct diagnostic literature for your exact experiment design (NOTA replacing the correct option). It implies your prompt needs an explicit, symmetric policy statement: name the sentinel as a legitimate answer AND set an explicit bar for selecting it (evidence-based rejection of all four literal options), so you fix anchoring (under-selection of NOTA) without introducing artifact-driven over-selection.",
+    "spanish_tips": "Añade una frase de política explícita y simétrica, p. ej.: 'La opción \"Ninguna de las respuestas anteriores es correcta\" es una respuesta válida y debe elegirse si, y solo si, ninguna de las opciones A-D es correcta según los datos clínicos del enunciado. No la elijas por incertidumbre, complejidad percibida o simple prudencia: elígela únicamente cuando puedas justificar por qué las cuatro opciones A-D son incorrectas.' This single sentence targets both failure directions the literature documents.",
+    "expected_effect": "Directionally raises Condition-B accuracy by giving the model permission plus a bar to clear; magnitude not quantified in a single-call temp-0 medical-MCQ setting in the literature retrieved — treat as a hypothesis to A/B test, not a guaranteed lift.",
+    "risks": "If the 'evidence bar' language is too weak, you get artifact-style over-abstention (2507.16199's finding); if too strong/narrow, you get anchoring persistence (2502.12896's finding). This is a tuning knob, not a one-shot fix — validate on a held-out slice before locking wording."
+   },
+   {
+    "name": "Process of Elimination (POE) structured reasoning",
+    "summary": "POE (EMNLP 2023, arXiv:2310.15575) has the model score/justify each option individually before committing, mimicking how humans solve MCQs by ruling out wrong answers rather than jumping to the most-plausible one. A follow-up critique, 'It's Not Easy Being Wrong: LLMs Struggle with Process of Elimination Reasoning' (arXiv:2311.07532), found that PoE-style prompting can underperform direct answer-selection prompting on some tasks/models — the technique is not universally positive.",
+    "nota_applicability": "This is arguably the single most direct lever for the anchoring failure mode you describe: 'LLMs May Perform MCQA by Selecting the Least Incorrect Option' (Wang et al., COLING 2025, arXiv:2402.01349) documents that models often select the option that's merely LESS wrong rather than verifying it is actually correct — this is precisely the anchoring-on-closest-distractor mechanism named in your task. Forcing per-option justification against the clinical stem, with a required verdict (correcta/incorrecta) for A-D before the final choice, structurally blocks the shortcut of picking 'least bad' without ever checking absolute correctness.",
+    "spanish_tips": "Estructura de razonamiento interna (aunque la salida final sea JSON estricto, puedes exigir un campo de razonamiento breve o un paso de \"borrador\" antes del JSON): 'Antes de decidir, evalúa CADA opción de forma independiente frente a los datos clínicos del caso: marca cada una como CORRECTA o INCORRECTA y da el motivo clínico en una frase. Solo si TODAS las opciones A-D quedan marcadas como INCORRECTAS, elige la opción \"Ninguna de las respuestas anteriores es correcta\". Si al menos una opción es CORRECTA, elige esa opción, incluso si otras opciones también parecen razonables.' The last clause directly counters the 'least-incorrect' shortcut.",
+    "expected_effect": "Positive on tasks requiring absolute (not relative) correctness judgments per Wang et al.'s diagnosis — mechanistically well-matched to your anchoring problem. No quantified medical-MCQ NOTA-specific number was retrieved; treat magnitude as untested for this exact setup.",
+    "risks": "arXiv:2311.07532's finding is the key caution: explicit elimination reasoning is not free — on some benchmarks it underperformed straightforward answer selection, possibly because forcing a verdict on every option invites the model to talk itself into rejecting a genuinely correct option (hypercorrection), which would show up as NOTA over-selection in Condition A/B both. Needs empirical validation on your held-out set, not blind adoption."
+   },
+   {
+    "name": "Single-pass self-verification (constraint restatement + check)",
+    "summary": "Weng et al. (2022, arXiv:2212.09561) show LLMs can verify their own conclusions by using the answer as a premise and checking it against the original conditions, improving arithmetic/commonsense/logical reasoning without extra training. MedReflect (Huang et al., 2025, arXiv:2510.03687) adapts this to medicine as a single-pass reflection chain — hypothesis generation, self-questioning, self-answering, decision refinement — all within one generation, i.e. compatible with a single call at temperature 0.",
+    "nota_applicability": "After drafting a tentative answer, the model restates the clinical criteria the correct option must satisfy (from the stem) and checks the chosen option against them. If the check fails for the tentative pick, this creates a natural branch point where 'Ninguna' becomes reachable — it directly targets the metacognitive gap ('lack the meta-cognitive ability to systematically evaluate and reject all given options when none are correct') that the NOTA-drop literature attributes the failure to.",
+    "spanish_tips": "'Paso de verificación (antes de responder): identifica los criterios clínicos exactos que la respuesta correcta debe cumplir según el enunciado. Comprueba si tu opción elegida cumple TODOS esos criterios. Si falla en alguno, reconsidera: revisa las demás opciones y, si ninguna cumple todos los criterios, selecciona \"Ninguna de las respuestas anteriores es correcta\".' Keep this as an internal reasoning instruction even if final output is constrained to strict JSON (e.g., a hidden/short 'verificacion' field or an instruction to reason silently before emitting JSON, depending on your JSON schema tolerance).",
+    "expected_effect": "Self-verification improved reasoning-task accuracy in the original paper (exact medical-QA numbers not retrieved in this session); the mechanism is well-suited to catching absent-answer cases because it forces an explicit sufficiency check rather than a relative best-of-4 comparison.",
+    "risks": "A single self-pass check is weaker than iterative multi-call verification (see Self-Refine below) and can inherit the model's original blind spot if the 'criteria extraction' step itself is wrong — verification is only as good as the restated criteria. Also adds output-length/latency cost even in one call, and if you're constraining to strict JSON, you need a place for the reasoning to live (either a schema field, or a 'think then answer' instruction that discards the reasoning before the final JSON)."
+   },
+   {
+    "name": "Self-Refine compressed into a single generation (draft → self-critique → final)",
+    "summary": "Madaan et al. (2023, arXiv:2303.17651) propose iterative generate-feedback-refine using the same LLM as generator, critic, and refiner, with no extra training. The canonical version is multi-turn/multi-call; for a strict single-call temperature-0 budget, the three roles can be compressed into one structured generation: draft answer → self-critique paragraph → revised final answer, all in one completion.",
+    "nota_applicability": "The self-critique step is where you insert a NOTA-specific check: 'Does my draft answer actually satisfy the clinical requirement, or is it merely the closest of four options?' This reframes the anchoring problem as a critique target instead of leaving it implicit in a single forward pass.",
+    "spanish_tips": "'Genera primero un borrador de respuesta. Luego, en un paso de autocrítica, cuestiona ese borrador: ¿es realmente correcto según los datos clínicos, o solo es la opción menos mala de las cuatro? Si detectas que el borrador no cumple plenamente los criterios clínicos, corrige tu respuesta, considerando explícitamente \"Ninguna de las respuestas anteriores es correcta\" como alternativa antes de finalizar.'",
+    "expected_effect": "Self-Refine reported gains concentrated on tasks with clear feedback signal (code, generation quality); gains on classification-style medical MCQ specifically were not found in this search session's sources, so treat as a plausible-but-unverified transfer.",
+    "risks": "Compressing generate+critique+refine into one temperature-0 call risks the critique being a rubber-stamp of the draft (self-critique sycophancy is a known failure mode in the broader self-refine literature) rather than genuine reconsideration — the critique step needs a concrete, falsifiable question (as above) rather than an open-ended 'check your work.'"
+   },
+   {
+    "name": "Self-Consistency / choice-shuffle ensembling (flagged: NOT single-call/temp-0 compatible)",
+    "summary": "Wang et al. (2022, arXiv:2203.11171) sample multiple diverse reasoning paths at T>0 and take a majority vote over final answers, giving large gains on reasoning benchmarks (e.g., +17.9% GSM8K). Medprompt's choice-shuffle ensemble is the MCQ-specific analog: permute answer-option order across several calls and majority-vote, explicitly to cancel out position/anchoring bias.",
+    "nota_applicability": "This is mechanistically the best-fit technique for anchoring specifically (shuffling breaks the model's association between 'closest surviving distractor' and a fixed option letter), but it inherently requires multiple calls per question and non-zero temperature (or multiple deterministic permutation prompts), which conflicts with your single-call, temperature-0 constraint.",
+    "spanish_tips": "Not applicable as a single-call technique; if the constraint is ever relaxed, the Spanish framing is identical to the base prompt with options re-lettered per call and a majority vote taken post-hoc outside the model (no special Spanish wording needed).",
+    "expected_effect": "Reported as the primary bias-cancellation mechanism behind part of Medprompt's 9-point MedQA gain; for NOTA specifically, could reduce anchoring by preventing the model from ever seeing the sentinel in a fixed, ignorable position (e.g., always last/'E').",
+    "risks": "Multiplies cost/latency by the number of ensemble members (Medprompt used 5 permutations); breaks the single-call/temp-0 experimental design constraint as stated. Recommended as a future/RAG-arm upgrade path, not for the current live prompt, unless the cost budget is revisited."
+   },
+   {
+    "name": "Retrieval-grounded elimination for the RAG arm (POE/self-verification + {chunks})",
+    "summary": "Combines the retrieved clinical context ({chunks}) with the per-option elimination and self-verification techniques above: instead of eliminating options against the model's parametric knowledge alone, each option is checked against retrieved evidence spans. 'Improving medical reasoning through retrieval and self-reflection with retrieval-augmented large language models' (PMC11211826, self-reflection + RAG) is the closest retrieved precedent for pairing retrieval with a reflective/verification step in medical QA.",
+    "nota_applicability": "This is the highest-leverage combination for your stated end goal: retrieval supplies the missing ground truth needed to definitively rule out A-D (addressing the knowledge gap), while the elimination/verification prompting supplies the metacognitive habit of actually checking each option against that evidence rather than picking the closest match (addressing the anchoring gap). The two failure modes are complementary, so pairing them should give a larger lift than either alone — this matches your stated hypothesis about the RAG arm.",
+    "spanish_tips": "'Utiliza EXCLUSIVAMENTE la evidencia clínica proporcionada en {chunks} para evaluar cada opción. Para cada opción A-D, cita o parafrasea el fragmento relevante de {chunks} que la confirma o refuta. Si ningún fragmento de {chunks} respalda ninguna de las opciones A-D como correcta, selecciona \"Ninguna de las respuestas anteriores es correcta\". Si {chunks} no contiene información suficiente para evaluar una opción, indícalo explícitamente en tu razonamiento antes de decidir.' Grounding the elimination in cited evidence spans also gives you a debuggable trace for error analysis.",
+    "expected_effect": "Expected to be the largest lift in the cluster per the research directions retrieved (retrieval addresses the knowledge/absence-detection problem directly; reflection/verification addresses the selection-mechanism problem) — no single retrieved paper quantifies this exact combination on a NOTA-style benchmark, so this is a well-motivated hypothesis to validate empirically, not a cited effect size.",
+    "risks": "If retrieval is noisy or the chunks are only tangentially relevant, forcing the model to 'find support in {chunks}' for one of A-D can manufacture false grounding (the model may over-interpret weak textual overlap as confirmation) — the citation-based elimination should include an explicit 'insufficient evidence in {chunks}' escape valve to avoid forcing a non-NOTA answer when retrieval simply failed to surface the relevant passage."
+   }
+  ],
+  "citations": [
+   {
+    "title": "Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine",
+    "source": "arXiv:2311.16452 (Nori et al., Microsoft Research)",
+    "url": "https://arxiv.org/abs/2311.16452",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "source": "arXiv:2203.11171 (Wang et al.)",
+    "url": "https://arxiv.org/abs/2203.11171",
+    "year": "2022",
+    "found_via_web": true
+   },
+   {
+    "title": "Large Language Models are Better Reasoners with Self-Verification",
+    "source": "arXiv:2212.09561 (Weng et al.)",
+    "url": "https://arxiv.org/abs/2212.09561",
+    "year": "2022",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+    "source": "arXiv:2303.17651 (Madaan et al.)",
+    "url": "https://arxiv.org/abs/2303.17651",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "None of the Others: a General Technique to Distinguish Reasoning from Memorization in Multiple-Choice LLM Evaluation Benchmarks",
+    "source": "arXiv:2502.12896 (Sánchez Salido, Gonzalo, Marco — UNED)",
+    "url": "https://arxiv.org/pdf/2502.12896",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "LLMs May Perform MCQA by Selecting the Least Incorrect Option",
+    "source": "arXiv:2402.01349 / COLING 2025 (Wang et al.)",
+    "url": "https://arxiv.org/abs/2402.01349",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "LLM Abstention Can Be a Prompt Artifact, in Addition to Genuine Uncertainty",
+    "source": "arXiv:2507.16199",
+    "url": "https://arxiv.org/pdf/2507.16199",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "Reasoning Models are Test Exploiters: Rethinking Multiple-Choice",
+    "source": "arXiv:2507.15337 (Raman, Lundy, Leyton-Brown)",
+    "url": "https://arxiv.org/abs/2507.15337",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "POE: Process of Elimination for Multiple Choice Reasoning",
+    "source": "arXiv:2310.15575 / EMNLP 2023",
+    "url": "https://arxiv.org/abs/2310.15575",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "It's Not Easy Being Wrong: Large Language Models Struggle with Process of Elimination Reasoning",
+    "source": "arXiv:2311.07532",
+    "url": "https://arxiv.org/html/2311.07532",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "MedReflect: Teaching Medical LLMs to Self-Improve via Reflective Correction",
+    "source": "arXiv:2510.03687 (Huang et al.)",
+    "url": "https://arxiv.org/abs/2510.03687",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "Improving medical reasoning through retrieval and self-reflection with retrieval-augmented large language models",
+    "source": "PMC11211826",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11211826/",
+    "year": "2024",
+    "found_via_web": true
+   }
+  ],
+  "top_recommendations": [
+   "Add an explicit, symmetric NOTA policy sentence in Spanish: the sentinel is a valid, expected answer that must be chosen ONLY when all four literal options are demonstrably wrong — this alone addresses your 'no policy given' gap and is the cheapest single-call fix (grounded in arXiv:2502.12896 for under-selection risk and arXiv:2507.16199 for over-selection risk).",
+   "Structure the reasoning as Process-of-Elimination: require an explicit correcta/incorrecta verdict with a one-line clinical justification for each of the 4 literal options before the final choice, with an instruction that 'closest/most plausible' is not sufficient grounds to select it over the sentinel — this directly targets the least-incorrect-option anchoring mechanism documented in arXiv:2402.01349.",
+   "Seed 1-3 few-shot exemplars (Medprompt-style, arXiv:2311.16452) showing a full worked reasoning trace ending correctly in the sentinel selection, mixed with ordinary non-NOTA exemplars, so the model has in-context precedent for actually choosing 'Ninguna' rather than defaulting to never using it.",
+   "Add a single-pass self-verification step (Weng et al. arXiv:2212.09561 / MedReflect arXiv:2510.03687 pattern): restate the clinical criteria the correct answer must satisfy, then check the tentative pick against them before finalizing — keeps everything in one call at temperature 0.",
+   "For the RAG arm, bind the elimination step to {chunks}: require citation/paraphrase of the specific retrieved evidence that confirms or refutes each option, with an explicit 'insufficient evidence' escape hatch to avoid manufacturing false grounding — this pairing (retrieval for the knowledge gap + elimination/verification for the metacognitive gap) is the best-motivated candidate for the largest lift.",
+   "Treat self-consistency and Medprompt's choice-shuffle ensembling as a separate, higher-cost upgrade tier — both require multiple calls and/or T>0, which violates your single-call temperature-0 constraint; revisit only if single-call techniques plateau."
+  ]
+ },
+ {
+  "cluster": "Process-of-elimination / option-by-option verification prompting for answer-absent (\"none of the above\", NOTA) MCQ items, targeting the distractor-anchoring failure mode where models default to the nearest surviving option instead of concluding all options are false.",
+  "techniques": [
+   {
+    "name": "Forced per-option verdict schema (Process-of-Elimination / POE, operationalized as a single-call JSON structure)",
+    "summary": "POE is a two-step strategy: score/judge every option's truth value independently, eliminate the false ones, then answer only from survivors. In a single temperature-0 call you operationalize this by requiring a JSON field per option (e.g. veredicto_A/B/C/D: correcta|incorrecta) with a one-line justification, computed BEFORE the final answer field, so the model cannot skip straight to picking a favorite.",
+    "nota_applicability": "Directly targets the gap the 'None of the Above, Less of the Right' paper attributes the 30-50pp NOTA-correct accuracy drop to: models 'lack the meta-cognitive ability to systematically evaluate and reject all given options when none are correct.' Forcing an explicit verdict on all four options makes the all-false condition visible to the model instead of implicit.",
+    "spanish_tips": "\"veredicto_opcion_A\": \"correcta\"|\"incorrecta\" (repetir para B, C, D) con un campo \"justificacion_A\" breve. Instrucción: 'Evalúa CADA opción (A, B, C y D) de forma independiente frente al caso clínico, antes de decidir. No compares las opciones entre sí; compara cada una únicamente con los datos del enunciado. Si las cuatro opciones son incorrectas, la respuesta es \"Ninguna de las respuestas anteriores es correcta.\"'",
+    "expected_effect": "WiCkeD found that CoT/elimination-style reasoning roughly halves the NOTA-induced drop for instruction-tuned/reasoning models (drop stayed just above 5% vs over 12% without such structure on some MMLU variants), and POE reported gains especially on logical-reasoning-type tasks.",
+    "risks": "'It's Not Easy Being Wrong' (arXiv 2311.07532) found elimination-style prompting can underperform direct answering: models produce 'misaligned rationales' that justify an option as correct even when asked to argue it's wrong, and elimination errors compound over multiple options — mitigate with strict JSON schema enforcement and explicit negation-safe wording (\"incorrecta\" fields, not \"esta opción NO es...\" double negatives)."
+   },
+   {
+    "name": "Explicit if-all-false-then-NOTA decision rule",
+    "summary": "State the logical policy as an explicit numbered rule rather than leaving the sentinel unaddressed: (1) evaluate each option's truth independently, (2) if none is fully correct, the answer MUST be the NOTA sentinel, (3) never pick the sentinel if any option is correct.",
+    "nota_applicability": "The live prompt currently gives 'NO policy for the sentinel option' — this is precisely the gap the None-of-the-Above paper's meta-cognitive-ability argument describes. Making the IF-ALL-FALSE-THEN-NOTA rule explicit removes the ambiguity and gives the model a named target behavior instead of an implicit one.",
+    "spanish_tips": "'Regla de decisión: (1) Evalúa la veracidad clínica de cada opción A, B, C y D de forma independiente. (2) Si NINGUNA opción A-D es completamente correcta, tu respuesta DEBE ser \"Ninguna de las respuestas anteriores es correcta.\" (3) No elijas la opción más cercana o \"menos incorrecta\": una opción parcialmente correcta o incompleta sigue siendo incorrecta. (4) No selecciones \"Ninguna\" si alguna opción A-D es correcta.'",
+    "expected_effect": "Cheapest possible fix — zero added latency, single call, no schema change required. Should recover a meaningful share of the reported 30-50pp NOTA-specific drop from None-of-the-Above without degrading Condition-A behavior, since rule (2) and (4) are symmetric and rule (3) explicitly blocks the anchoring shortcut.",
+    "risks": "Any explicit instruction that legitimizes picking an 'absent answer' option can itself induce over-selection, per 'LLM Abstention Can Be a Prompt Artifact' (arXiv 2507.16199) — models nudged toward abstention-like options can over-select them even on items they'd otherwise answer correctly. Mitigate by keeping rule (4) equally explicit and by not adding any additional permissive/hedging language beyond the rule itself."
+   },
+   {
+    "name": "\"Least-incorrect\" vs. \"truly-correct\" distinction framing",
+    "summary": "Explicitly warn the model against its default MCQA heuristic of picking the option that is comparatively closest to correct (least wrong) rather than verifying that an option's full statement is absolutely, completely correct on its own merits.",
+    "nota_applicability": "This directly names the anchoring mechanism: 'LLMs May Perform MCQA by Selecting the Least Incorrect Option' argues models often default to comparative ranking among the presented options rather than independent verification against ground truth — exactly the distractor-anchoring behavior this project needs to suppress for NOTA items.",
+    "spanish_tips": "'No selecciones la opción \"menos incorrecta\" o la que más se parezca a la respuesta correcta. Verifica si el enunciado COMPLETO de cada opción es clínicamente correcto y completo, de forma absoluta e independiente de las demás opciones. Una opción parcialmente correcta, incompleta o con matices erróneos debe marcarse como incorrecta.'",
+    "expected_effect": "Counters the comparative-selection default described as the mechanism of the anchoring failure; best used to reinforce technique 1/2 rather than stand alone.",
+    "risks": "The retrieved summary of this paper's proposed mitigations was reconstructed generically from a garbled PDF extraction rather than quoted verbatim — treat the mechanism claim as credible (it matches the paper's title/abstract framing found via search) but the exact mitigation wording is our own adaptation, not a verified quote from the paper."
+   },
+   {
+    "name": "Grounded per-option verification against retrieved context (Self-RAG-style critique tags) — for the RAG arm",
+    "summary": "Self-RAG uses reflection/critique tokens ([Relevant], [Supported], [No support]) so the model checks each claim against retrieved passages before finalizing. Adapted per MCQ option: for each of A-D, require a verdict of respaldada (supported)/contradicha (contradicted)/no mencionada (not found) against {chunks}, before the final answer.",
+    "nota_applicability": "This is the highest-leverage technique for the target RAG arm: grounding each option's falsity in retrieved evidence — rather than the model's own relative judgment — gives an external, checkable reason to reject a distractor, directly cutting the anchoring behavior. If none of A-D is 'respaldada' by {chunks}, the rule from technique 2 fires and the model selects the sentinel.",
+    "spanish_tips": "\"opcion_A\": {\"veredicto\": \"respaldada\"|\"contradicha\"|\"no_mencionada\", \"cita\": \"...\"} (repetir B-D). Instrucción: 'Usa el contexto clínico recuperado ({chunks}) para respaldar o refutar cada opción. Si el contexto no menciona o contradice una opción, márcala como incorrecta aunque te parezca plausible por conocimiento general. Si NINGUNA opción A-D está respaldada por el contexto, selecciona \"Ninguna de las respuestas anteriores es correcta.\"'",
+    "expected_effect": "Self-RAG's grounding+critique substantially improved factual/citation-supported accuracy versus ungrounded generation in its original evaluation; applied here it should reduce confident selection of a plausible-sounding but evidence-unsupported distractor, which is the core anchoring failure this project is trying to fix — and matches the task's own hypothesis that retrieval + a NOTA-aware technique gives the biggest lift.",
+    "risks": "Retrieval-quality-dependent: if {chunks} are incomplete and fail to cover the true correct answer's key fact, the model may wrongly mark a genuinely correct option 'no_mencionada' and over-select the sentinel (a retrieval-induced false negative on Condition A). Needs high retrieval recall, and ideally a fallback allowing parametric knowledge with an explicit lower-confidence tag rather than blind chunk-only reliance."
+   },
+   {
+    "name": "Backward self-verification of the tentative answer",
+    "summary": "After reaching a tentative pick (including a tentative NOTA pick), have the model argue backward: assume the tentative answer is correct and check whether that assumption stays consistent with every clinical detail in the stem; revise if an inconsistency surfaces.",
+    "nota_applicability": "Adds an audit pass on the tentative verdict itself — including a tentative NOTA verdict — catching both a reflexive pick of the nearest distractor without real checking, and an overly hasty jump to the sentinel.",
+    "spanish_tips": "'Antes de responder de forma definitiva, verifica tu respuesta tentativa: si fuese correcta, ¿es consistente con TODOS los datos clínicos del enunciado? Si detectas una inconsistencia, reconsidera y, si corresponde, cambia tu respuesta.' Field: \"verificacion_retrospectiva\" before \"respuesta_final\".",
+    "expected_effect": "Weng et al.'s backward/self-verification improved accuracy on arithmetic, commonsense, and logical reasoning benchmarks in the original study; here it should catch anchoring errors and premature-NOTA errors alike via one extra structured field, staying single-call.",
+    "risks": "Adds output length/latency and only helps if the verification step genuinely re-examines the case rather than rubber-stamping the first answer — must be scoped with concrete instructions (\"busca al menos un dato del enunciado que contradiga tu respuesta tentativa\") rather than a generic \"revisa tu respuesta\" prompt, which tends to be a no-op."
+   },
+   {
+    "name": "Chain-of-Verification-style per-option question decomposition (CoVe, compressed to one call)",
+    "summary": "CoVe's original pipeline drafts an answer, plans targeted verification questions, answers them independently (ideally without seeing the draft, to reduce confirmation bias), then finalizes. Compressed into one call: draft a tentative answer, generate one verification question per option testing a specific clinical fact, answer each using only the case/context, then finalize based on those answers.",
+    "nota_applicability": "The independent verification-question-answering step is designed to reduce rubber-stamping of an initially anchored choice; per-option adaptation operationalizes systematic option-by-option checking rather than a single holistic judgment.",
+    "spanish_tips": "\"pregunta_verificacion_A\": \"...\", \"respuesta_verificacion_A\": \"...\" (repetir B-D), luego: 'Basándote SOLO en las respuestas de verificación anteriores, y no en tu respuesta inicial, decide la opción final.'",
+    "expected_effect": "CoVe reduced hallucinated/factually wrong content across list-based and long-form tasks in the original evaluation; per-option adaptation should reduce confirmation-bias-driven anchoring on the nearest distractor.",
+    "risks": "True independence (answering verification questions without having seen the draft) is hard to enforce inside one continuous generation — the model still conditions on its own earlier tokens — so the original paper's bias-reduction benefit is only partially preserved versus a true multi-call CoVe pipeline; still cheaper and simpler than the original design."
+   },
+   {
+    "name": "Symmetric-cost \"Abstain Clause\" for the sentinel option (Abstain-QA framing)",
+    "summary": "Abstain-QA distinguishes a 'Standard Clause' (sentinel just shown, no guidance — the live prompt's current status quo) from an explicit 'Abstain Clause' that states the consequences of getting the sentinel decision wrong in either direction, changing measured abstention behavior.",
+    "nota_applicability": "Names exactly the gap in the current live prompt (no policy for the sentinel) and gives a citable pattern for how to close it responsibly: state that choosing the sentinel when a real answer exists is an error, AND choosing a distractor when the sentinel is correct is an equally serious error — a both-directions framing rather than one-sided encouragement to abstain.",
+    "spanish_tips": "'La opción \"Ninguna de las respuestas anteriores es correcta\" es tan válida como cualquier otra: selecciónala si y solo si ninguna de las opciones A-D es correcta. Elegir una opción incorrecta cuando la respuesta real es \"Ninguna\" es un error; elegir \"Ninguna\" cuando una opción A-D sí es correcta también es un error. Ambos errores son igual de graves.'",
+    "expected_effect": "Frames the sentinel as a first-class, symmetric-cost option rather than an invisible one (current baseline) or an over-encouraged one, matching the calibration axis the Abstain-QA framework was built to measure.",
+    "risks": "'LLM Abstention Can Be a Prompt Artifact' (arXiv 2507.16199) is the direct counter-warning: any explicit legitimization of the sentinel, even symmetrically worded, can shift selection rates in ways decoupled from genuine correctness (over-abstention as a prompt artifact rather than real answer-absence detection). Only an A/B measurement on Condition A (where the sentinel is never correct) can confirm this framing doesn't cost Condition-A accuracy — track Condition-A false-NOTA-selection rate as a guardrail metric alongside Condition-B recall."
+   },
+   {
+    "name": "Self-consistency / majority vote over sampled option-verdicts (lower priority — flagged incompatible)",
+    "summary": "Sample multiple independent reasoning paths at temperature > 0 and majority-vote the final answer.",
+    "nota_applicability": "Could in principle reduce single-sample noise on the low-frequency, high-variance NOTA decision by aggregating several independent option-by-option judgments.",
+    "spanish_tips": "Not phrasing-dependent — this is a decoding/sampling-level technique, not a prompt-wording technique.",
+    "expected_effect": "Wang et al. showed self-consistency reliably improves chain-of-thought accuracy across reasoning benchmarks broadly.",
+    "risks": "Explicitly incompatible with this project's stated constraint of a single model call at temperature 0: at temperature 0 with a fixed prompt, repeated samples are identical, so majority voting adds no signal. Listed only as a future extension if the pipeline later allows a multi-sample budget at temperature > 0; not implementable as specified for the current live prompt."
+   }
+  ],
+  "citations": [
+   {
+    "title": "POE: Process of Elimination for Multiple Choice Reasoning",
+    "source": "arXiv (EMNLP 2023 Main, 2023.emnlp-main.273)",
+    "url": "https://arxiv.org/abs/2310.15575",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "It's Not Easy Being Wrong: Large Language Models Struggle with Process of Elimination Reasoning",
+    "source": "arXiv",
+    "url": "https://arxiv.org/html/2311.07532",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "None of the Above, Less of the Right: Parallel Patterns between Humans and LLMs on Multi-Choice Question Answering",
+    "source": "arXiv / ACL 2025 Findings",
+    "url": "https://arxiv.org/html/2503.01550v1",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "WiCkeD: A Simple Method to Make Multiple Choice Benchmarks More Challenging",
+    "source": "arXiv / ACL 2025 short (2025.acl-short.94)",
+    "url": "https://arxiv.org/html/2502.18316v1",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "LLMs May Perform MCQA by Selecting the Least Incorrect Option",
+    "source": "arXiv",
+    "url": "https://arxiv.org/pdf/2402.01349",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "source": "arXiv / ACL 2024 Findings",
+    "url": "https://arxiv.org/abs/2309.11495",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Large Language Models are Better Reasoners with Self-Verification",
+    "source": "arXiv / EMNLP 2023 Findings",
+    "url": "https://arxiv.org/abs/2212.09561",
+    "year": "2022",
+    "found_via_web": true
+   },
+   {
+    "title": "Do LLMs Know When to NOT Answer? Investigating Abstention Abilities of Large Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/html/2407.16221v1",
+    "year": "2024",
+    "found_via_web": true
+   },
+   {
+    "title": "LLM Abstention Can Be a Prompt Artifact, in Addition to Genuine Uncertainty",
+    "source": "arXiv",
+    "url": "https://arxiv.org/pdf/2507.16199",
+    "year": "2025",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2310.11511",
+    "year": "2023",
+    "found_via_web": true
+   },
+   {
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2203.11171",
+    "year": "2022",
+    "found_via_web": true
+   }
+  ],
+  "top_recommendations": [
+   "For the immediate live prompt (single call, temp 0): combine technique 2 (explicit if-all-false-then-NOTA decision rule) with technique 3 (least-incorrect vs. truly-correct framing) and technique 7 (symmetric-cost Abstain Clause) — this is the cheapest, zero-schema-change intervention and directly targets the 'no policy for the sentinel' gap.",
+   "For a stronger single-call version, add technique 1 (forced per-option verdict schema / POE) so the JSON output makes the all-false condition explicit and auditable, not just implicit in a chain-of-thought paragraph.",
+   "For the target RAG arm specifically: technique 4 (grounded per-option verification against {chunks}, Self-RAG-style) is expected to give the largest lift, since it replaces the model's self-judgment of 'this option looks wrong' with an evidence-checkable 'this option is not supported by the retrieved context' — but it must be paired with a retrieval-recall guardrail (track Condition-A over-NOTA rate) to catch cases where thin retrieval wrongly flags a true option as unsupported.",
+   "Whatever combination is chosen, explicitly A/B-monitor Condition-A accuracy alongside Condition-B recall — every technique that helps the model recognize answer-absence (2, 4, 7 especially) carries a documented risk of inducing over-selection of the sentinel on items where a real answer exists (WiCkeD, Abstention-as-Prompt-Artifact); the win condition is Condition-B recall up with Condition-A precision on the sentinel unchanged, not just raw Condition-B accuracy."
+  ]
+ }
+]

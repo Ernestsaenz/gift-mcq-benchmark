@@ -1,0 +1,13 @@
+variant,B_acc%,dB_pp,A_acc%,dA_pp,net_pp(dB+dA),verdict
+baseline,5,+0,70,+0,+0,reference
+v01,5,+0,65,-5,-5,no effect
+v02,5,+0,70,+0,+0,no effect
+v03,20,+15,70,+0,+15,"GENUINE (B↑, A held)"
+v04,10,+5,50,-20,-15,"HARMFUL (A↓, no B gain)"
+v05,25,+20,55,-15,+5,OVER-ABSTENTION (B↑ but A↓)
+v06,5,+0,35,-35,-35,"HARMFUL (A↓, no B gain)"
+v07,5,+0,70,+0,+0,no effect
+v08,20,+15,55,-15,+0,OVER-ABSTENTION (B↑ but A↓)
+v09,15,+10,60,-10,+0,OVER-ABSTENTION (B↑ but A↓)
+v10,15,+10,70,+0,+10,"GENUINE (B↑, A held)"
+v11,15,+10,55,-15,-5,OVER-ABSTENTION (B↑ but A↓)
